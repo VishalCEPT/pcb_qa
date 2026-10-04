@@ -1,0 +1,50 @@
+[project]
+name = "pcb-qa"
+version = "0.1.0"
+description = "PCB-QA Desktop App — a Tkinter desktop tool for PCB netlist/SPICE processing, LLM-powered circuit Q&A, and benchmarking."
+readme = "visual_manual_guide_user_testing.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    # Core netlist / SPICE processing
+    "skidl",
+    "simp-sexp",
+    # RAG pipeline (datasheet retrieval)
+    "pdfplumber",
+    "sentence-transformers",
+    "langchain-text-splitters",
+    "faiss-cpu",
+    # LLM access
+    "google-genai",
+    # OS certificate store for TLS (corporate proxies)
+    "truststore",
+    # Offline evaluation / scoring
+    "scikit-learn",
+    # Backend facade retry/backoff
+    "tenacity",
+    # .env configuration loading
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+pcb-qa = "main:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["main"]
+
+[tool.setuptools.packages.find]
+include = ["backend*", "core*", "gui*", "evaluation*", "llm_evaluation*", "validation*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "integration: needs real external tools/services (ngspice on PATH, GEMINI_API_KEY); skipped when unavailable",
+]
+addopts = "-p no:cacheprovider"

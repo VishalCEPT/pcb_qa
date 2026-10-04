@@ -1,5 +1,2 @@
-.env
-.venv/
-__pycache__/
-Boards.zip
-_e2e_gui_check.py
+# Excluded only because it exceeds GitHub's 100MB per-file push limit
+.venv/Lib/site-packages/torch/lib/torch_cpu.dll

@@ -1,0 +1,2 @@
+[console_scripts]
+kinet2pcb = kinet2pcb.kinet2pcb:main

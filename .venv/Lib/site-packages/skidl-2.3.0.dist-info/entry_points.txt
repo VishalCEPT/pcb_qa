@@ -1,0 +1,3 @@
+[console_scripts]
+netlist_to_skidl = skidl.scripts.netlist_to_skidl_main:main
+skidl-part-search = skidl.scripts.part_search_cli:main
