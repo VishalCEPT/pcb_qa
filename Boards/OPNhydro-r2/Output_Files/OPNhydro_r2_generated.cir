@@ -106,15 +106,9 @@ V_5V +5V 0 DC 5.0
 V_24V +24V 0 DC 24.0
 
 
-tran 100u 10m 
-set filetype=ascii 
-write ./outputs/spice_circuits/OPNhydro_r2_raw.raw all 
 
 
  
-V_24V +24V 0 DC 24.0
-V_3V3 +3V3 0 DC 3.3
-V_5V +5V 0 DC 5.0
 V_24VF /+24VF 0 DC 24.0
 
 

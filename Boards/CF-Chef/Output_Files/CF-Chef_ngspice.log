@@ -4,8 +4,57 @@ Note: No compatibility mode selected!
 
 Circuit: KiCad schematic
 
-Error on line 43 or its substitute:
-  set filetype=ascii
-Unable to find definition of model 
-    Simulation interrupted due to error!
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
+Using SPARSE 1.3 as Direct Linear Solver
+Warning: singular matrix:  check node net-_u8-bst_
+
+Note: Starting dynamic gmin stepping
+Warning: singular matrix:  check node net-_u8-bst_
+
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: singular matrix:  check node net-_u8-bst_
+
+Warning: singular matrix:  check node net-_u8-bst_
+
+Warning: singular matrix:  check node net-_u8-bst_
+
+Warning: singular matrix:  check node net-_u8-bst_
+
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Note: Transient op finished successfully
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net-_j12-cc1_                                0
+net-_j12-cc2_                                0
++3v3                                       3.3
+net-_d2-k_                       -1.09237e-184
+/microcontroller/heater           2.18474e-175
++12v                                        12
+net-_u1-gpio2/adc1_ch2_                    3.3
+nc-d4-0                                  1.655
+net-_d4-a_                                 3.3
+nc-d3-0                                  1.655
+net-_d3-a_                                 3.3
+net-_u1-en/chip_pu_                0.000329984
+net-_u8-sw_                                3.3
+vbus                                         0
+net-_u8-bst_                               3.3
+net-_u5-ss_                                  0
+net-_u5-ilim_                                0
+l1#branch                         -3.30029e-12
+v_12v#branch                      -1.18234e-11
+v_3v3#branch                      -0.000329967
+
+
+No. of Data Rows : 108
+ASCII raw file "C:\Users\vishalkr\cept\pcb_qa\CODE_BASE\Boards\CF-Chef\Output_Files/CF-Chef_generated_raw.raw"
+Note: Simulation executed from .control section 

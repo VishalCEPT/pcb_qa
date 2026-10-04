@@ -4,8 +4,145 @@ Note: No compatibility mode selected!
 
 Circuit: KiCad schematic
 
-Error on line 137 or its substitute:
-  set filetype=ascii
-Unable to find definition of model 
-    Simulation interrupted due to error!
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
+Using SPARSE 1.3 as Direct Linear Solver
+Warning: singular matrix:  check node /can0_n
+
+Note: Starting dynamic gmin stepping
+Warning: singular matrix:  check node net-_d23-k_
+
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: singular matrix:  check node net-_d16-k_
+
+Warning: singular matrix:  check node net-_d16-k_
+
+Warning: singular matrix:  check node net-_d16-k_
+
+Warning: singular matrix:  check node net-_d16-k_
+
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Note: Transient op finished successfully
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+serial_can_pwr_3.3v                          0
+irq2                                         0
+net-_u14-_reset_                             0
+irq1                                         0
+net-_u13-_reset_                             0
+net-_u14-xtal2_                              0
+net-_u14-xtal1_                              0
+net-_u13-xtal1_                              0
+net-_u13-xtal2_                              0
+/_vbus_5v_ena                                0
+usbc_vbus_in                                 0
++3v3                                       3.3
+net-_u32-sdo/sa1_                            0
+net-_u32-c1_                                 0
++5v                                          5
+usb_otg                                      0
+net-_j3-cc2_                                 0
+net-_j3-cc1_                                 0
+ser_select                                 3.3
+net-_d25-k_                        3.29938e-77
+net-_d24-a_                        3.29938e-77
+voutp                              3.29938e-77
+net-_d16-k_                        1.64969e-77
+voutn                              3.29938e-77
+net-_d23-k_                                  0
+eth_ledg                                     0
+net-_d17-a_                                3.3
+net-_d1-k_                                   0
+net-_u1-y_                                   0
+/led_3.3v_power_noninv                       0
+pi_n_led_act                                 0
+net-_d4-k_                                   0
+net-_d2-k_                                   0
+5v_switched                                  0
+net-_d12-a_                                3.3
++12v                                        12
+fb                                     2.13822
+net-_d11-a_                                  5
+net-_d14-k_                                  0
+eth_ledy                                     0
+net-_c44-pad2_                               0
+net-_c43-pad1_                               0
+net-_c42-pad2_                               0
+vc4                                          0
+vc3                                          0
+net-_c45-pad2_                               0
+vc1                                          0
+net-_c46-pad2_                               0
+vc2                                          0
+net-_c47-pad2_                               0
+5v_switched_can                              0
+net-_u9-osc1_                                0
+net-_u8-osc1_                                0
+net-_u8-osc2_                                0
+net-_u9-osc2_                                0
+/can1_n                                      0
+net-_r35-pad2_                               0
+/can0_n                                      0
+net-_r34-pad2_                               0
+net-_u8-_reset_                              0
+net-_u9-_reset_                              0
+vmot                                         0
+/_vin_5v_en                                  0
+net-_d3-k_                                   5
+estop_sink_local                           3.3
+net-_u15-y_                                3.3
+net-_q9-g_                                   5
+estop_sink2                                3.3
+estop_sink1                                3.3
+net-_d29-k_                                3.3
+net-_u15-a_                                3.3
+net-_q6-g_                                   5
+5v_can_enable                                0
+net-_jp15-a_                                 0
+net-_d8-k_                                 3.3
+/estop_sink_all                            3.3
+net-_d28-k_                                3.3
+/hdmi_5v                                     0
+net-_r53-pad2_                               0
+/vmeas                                       0
+/root/led_en                               3.3
+net-_d30-k1_                                 0
+net-_d30-k2_                                 0
+estop_out                                    0
+net-_jp10-b_                                 0
+usb_serial_d+                                0
+/usb_dp                                      0
+usb_serial_d-                                0
+/usb_dn                                      0
+sda0_gpio44                                3.3
+scl0_gpio45                                3.3
+rc_sbus                                      0
+net-_q5-g_                                   0
+sbus_rx                                    3.3
+3.3v_pi_out                                  0
+scl6                                         0
+sda6                                         0
+a1                                           0
+net-_q2-g_                                   0
+a2                                           0
+net-_q3-g_                                   0
+a3                                           0
+net-_q4-g_                                   0
+l1#branch                                    0
+l2#branch                                    0
+v_12v#branch                      -1.04303e-05
+v_5v#branch                       -3.26539e-06
+v_3v3#branch                      -2.41822e-11
+
+
+No. of Data Rows : 109
+ASCII raw file "C:\Users\vishalkr\cept\pcb_qa\CODE_BASE\Boards\AcornRobotElectronics\Output_Files/cm4_robot_board_generated_raw.raw"
+Note: Simulation executed from .control section 

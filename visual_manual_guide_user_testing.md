@@ -118,9 +118,9 @@ all your real boards.
     of simulated variables (voltages/currents) with sample counts.
   - **Expected on failure:** status line turns red, reads `Operation
     failed.`, and a popup titled "SPICE operation failed" explains why (for
-    most boards other than `stack-chan`, a failure here is a **known,
-    already-understood limitation** — see the note at the bottom of this
-    guide — not something you need to re-report).
+    `PortalHardware`, a failure here is a **known, already-understood
+    limitation** — see the note at the bottom of this guide — not something
+    you need to re-report; all other boards are expected to fully simulate).
 - Try the **"Check expected voltage"** box:
   - Type a net name, e.g. `+3V3`, into **"Net:"**.
   - Type `3.3V` into **"Expected voltage:"**.
@@ -174,21 +174,29 @@ Go back to Step 1, pick the next board from the dropdown, and repeat Steps
 
 By the end you should be able to say, for each of the 8 boards:
 
-| Tab | stack-chan | Other 7 boards |
+| Tab | stack-chan + 6 others | PortalHardware |
 |---|---|---|
 | Board | ✅ loads cleanly | ✅ loads cleanly |
-| SPICE Simulation | ✅ fully simulates | ⚠️ may fail — see note below |
+| SPICE Simulation | ✅ fully simulates | ⚠️ fails — see note below |
 | Q&A | ✅ answers | ✅ answers |
 | Benchmark | ✅ completes | ✅ completes |
 
-**Note on SPICE failures:** 7 of the 8 boards contain real chips
-(microcontrollers, regulators, sensors, etc.) that the app does not have
-electrical models for — only LEDs and simple resistor/capacitor/inductor
-parts can currently be fully simulated. So a SPICE failure on those 7 boards
-is an **expected, already-known limitation**, not a new bug, as long as:
+**Note on the PortalHardware SPICE failure:** `PortalHardware` contains a
+real IC (an OLED charge-pump driver, `U4`) that the app does not have an
+electrical model for — only LEDs and simple resistor/capacitor/inductor
+parts, plus ICs whose pins are all otherwise driven, can currently be
+simulated. `U4`'s charge-pump pins are only connected to passives with no
+other driving source, so ngspice can't find an operating point (singular
+matrix / "timestep too small"). This is an **expected, already-known
+limitation**, not a new bug, as long as:
 - the app shows a clear red "Operation failed." message with an
   understandable popup explanation (not a crash, not a frozen window, not a
   confusing wall of text).
+
+All other 7 boards (including `AcornRobotElectronics`, `CF-Chef`, `HadesFCS`,
+`Meshinger`, `OPNhydro-r2`, `fan_controller`, and `stack-chan`) are expected
+to fully simulate successfully — if one of them fails, that IS a new bug
+worth reporting.
 
 If you ever see the app **freeze completely** (window stops responding, you
 can't click anything, no popup ever appears), that IS a real bug worth

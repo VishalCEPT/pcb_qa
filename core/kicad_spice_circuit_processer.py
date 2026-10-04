@@ -203,15 +203,40 @@ class KiCadSPICECircuitProcesser:
         last_line = original_content[-1]
 
         spice_model_defs = self.generate_spice_models(self._find_component_spice_models())
-        
+
+        in_control_block = False
         for line in original_content[1:-1]:
+            stripped = line.strip()
+            if stripped.lower().startswith(".control"):
+                # Some KiCad-exported .cir inputs already carry a full
+                # .control/.endc block (simulation commands + a now-stale
+                # output path). Drop the whole block here instead of just the
+                # .control/.endc wrapper lines, so the tran/set/write commands
+                # inside it don't leak through as bare, unwrapped netlist
+                # lines (ngspice then misparses them as element cards, e.g.
+                # "set filetype=ascii" looks like an "S" switch needing a
+                # .model). We append our own, correctly-pathed block below.
+                in_control_block = True
+                continue
+            if stripped.lower().startswith(".endc"):
+                in_control_block = False
+                continue
+            if in_control_block:
+                continue
+
             entries = line.split(" ")
             if (len(entries)) == 2:
                 pass
             else:
                 # Replace GND with 0 in line
                 line = re.sub(r"\bGND\b", "0", line, flags=re.IGNORECASE)
-                if "LED" in line.split(" ")[0]:
+                # Only rewrite genuine "LEDxx ..." refs into the "DLEDxx ...
+                # LED_D_<color>" diode form. Use startswith (not "in") so an
+                # already-converted "DLEDxx ... LED_D_<color>" line (e.g. from
+                # a board whose input .cir is itself a prior conversion
+                # output) isn't matched and double-prefixed into a bogus
+                # "LED_D_LED_D_<color>" model reference.
+                if line.split(" ")[0].upper().startswith("LED"):
                     first_word = re.sub(r"LED", "DLED", line.split(" ")[0] + " ", flags=re.IGNORECASE)
                     last_token = line.split(" ")[-1]
                     last_word = f"LED_D_{last_token}"
@@ -226,7 +251,20 @@ class KiCadSPICECircuitProcesser:
                 if len(matches) > 0 and not entry.startswith("Net"): 
                     power_lines[entry] = True
 
+        # Some input .cir files already carry an explicit independent
+        # voltage source for a power rail (e.g. a prior run of this same
+        # converter, or a manually-added SPICE directive in the schematic).
+        # Skip regenerating one for any rail that's already driven, or
+        # ngspice rejects the duplicate element with "device already exists".
+        rails_with_existing_source = set()
+        for line in new_lines:
+            entries = [e for e in line.split(" ") if e]
+            if len(entries) >= 2 and entries[0].upper().startswith("V"):
+                rails_with_existing_source.add(entries[1])
+
         for power in power_lines.keys():
+            if power in rails_with_existing_source:
+                continue
             # power is the raw net token (e.g. "+3V3" or, for a hierarchical
             # net, "/+24VF"), so split on '+' rather than assuming it's
             # always the first character.

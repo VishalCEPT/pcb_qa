@@ -24,13 +24,9 @@ C12 BAT+ 0 2.2u
 V_3V3 +3.3V 0 DC 3.3 
 V_BAT BAT+ 0 DC 25.0
 
-tran 100u 10m 
-set filetype=ascii 
-write ./outputs/spice_circuits/Meshinger_raw.raw all 
 
 
  
-V_3.3V +3.3V 0 DC 3.3
 
 
 .control 

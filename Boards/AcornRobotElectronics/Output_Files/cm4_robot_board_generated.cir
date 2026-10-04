@@ -133,15 +133,9 @@ V_5V +5V 0 DC 5.0
 V_12V +12V 0 DC 12.0
 
 
-tran 100u 10m
-set filetype=ascii 
-write ./outputs/spice_circuits/cm4_robot_board_raw.raw all 
 
 
  
-V_3V3 +3V3 0 DC 3.3
-V_5V +5V 0 DC 5.0
-V_12V +12V 0 DC 12.0
 
 
 .control 

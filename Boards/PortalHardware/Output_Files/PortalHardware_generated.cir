@@ -29,9 +29,6 @@ C17 VCC 0 1u
 
 V_VCC VCC 0 DC 3.3
 
-tran 1m 10m 
-set filetype=ascii 
-write ./outputs/spice_circuits/PortalHardware_raw.raw all 
 
 
  

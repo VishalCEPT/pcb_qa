@@ -4,8 +4,95 @@ Note: No compatibility mode selected!
 
 Circuit: KiCad schematic
 
-Error on line 110 or its substitute:
-  set filetype=ascii
-Unable to find definition of model 
-    Simulation interrupted due to error!
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
+Using SPARSE 1.3 as Direct Linear Solver
+Warning: singular matrix:  check node /bstbk
+
+Note: Starting dynamic gmin stepping
+Warning: singular matrix:  check node /vcpph
+
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: singular matrix:  check node /vcpph
+
+Warning: singular matrix:  check node /vcpph
+
+Warning: singular matrix:  check node /vcpph
+
+Warning: singular matrix:  check node /vcpph
+
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Note: Transient op finished successfully
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+float_low                            0.0328355
++24v                                        24
+/gpump                                     3.3
++3v3                                       3.3
+float_high                             3.26716
++5v                                          5
+/gato                                        0
+/bato                                  3.26716
+ato_valve                                    0
+/bpump                               0.0328355
+pump_main                                  3.3
+/sclec                                       0
+/vec                                         0
+/sdaec                                       0
+/5vph                                        0
+/vrefph                                      0
+/cp0ph                                       0
+/cp1ph                                       0
+/vcpph                                      24
+/braph                                       0
+/brbph                                       0
+/cp0na                                       0
+/cp1na                                       0
+/brbnb                                       0
+/branb                                       0
+/cp0nb                                       0
+/cp1nb                                       0
+/vcpnb                                      24
+/vcpna                                      24
+/brbna                                       0
+/brana                                       0
+/vselec                                      0
+/0isoec                                      0
+/visoec                                      0
+/vrefnb                                      0
+/5vnb                                        0
+/vrefna                                      0
+/5vna                                        0
+/0v8bk                                0.802568
+/0isoph                                      0
+/visoph                                      0
+/vph                                         0
+/5vbk                                        5
+/bstbk                                       5
+/rtbk                                        0
+/sdaph                                       0
+/vselph                                      0
+/sclph                                       0
+/ssbk                                        0
+/grpp                                       24
+/+24vf                                      24
+i2c_sda                                    3.3
+i2c_scl                                    3.3
+l1#branch                         -5.00045e-12
+v_24vf#branch                         -2.4e-11
+v_24v#branch                       9.31323e-10
+v_5v#branch                       -8.02568e-05
+v_3v3#branch                      -0.000653433
+
+
+No. of Data Rows : 108
+ASCII raw file "C:\Users\vishalkr\cept\pcb_qa\CODE_BASE\Boards\OPNhydro-r2\Output_Files/OPNhydro_r2_generated_raw.raw"
+Note: Simulation executed from .control section 

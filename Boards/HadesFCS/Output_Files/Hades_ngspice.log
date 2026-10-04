@@ -1,41 +1,161 @@
 
 Note: No compatibility mode selected!
 
-warning, can't find model 'led_d_led_d_g' from line
-    ddled2 net-_led2-k_ +3v3 led_d_led_d_g
-warning, can't find model 'led_d_led_d_g' from line
-    ddled1 net-_led1-k_ +5v led_d_led_d_g
-warning, can't find model 'led_d_led_d_b' from line
-    ddled8 net-_led8-k_ led_f_fcc led_d_led_d_b
-warning, can't find model 'led_d_led_d_y' from line
-    ddled5 net-_led5-k_ led_c_fcc led_d_led_d_y
-warning, can't find model 'led_d_led_d_b' from line
-    ddled6 net-_led6-k_ led_d_fcc led_d_led_d_b
-warning, can't find model 'led_d_led_d_b' from line
-    ddled7 net-_led7-k_ led_e_fcc led_d_led_d_b
-warning, can't find model 'led_d_led_d_r' from line
-    ddled4 net-_led4-k_ led_b_fcc led_d_led_d_r
-warning, can't find model 'led_d_led_d_r' from line
-    ddled3 net-_led3-k_ led_a_fcc led_d_led_d_r
-warning, can't find model 'led_d_led_d_b' from line
-    ddled12 net-_led12-k_ led_d_navc led_d_led_d_b
-warning, can't find model 'led_d_led_d_y' from line
-    ddled11 net-_led11-k_ led_c_navc led_d_led_d_y
-warning, can't find model 'led_d_led_d_r' from line
-    ddled9 net-_led9-k_ led_a_navc led_d_led_d_r
-warning, can't find model 'led_d_led_d_r' from line
-    ddled10 net-_led10-k_ led_b_navc led_d_led_d_r
-warning, can't find model 'led_d_led_d_g' from line
-    ddled14 net-_led14-k_ net-_d5-a_ led_d_led_d_g
-warning, can't find model 'led_d_led_d_g' from line
-    ddled13 net-_led13-k_ net-_d4-a_ led_d_led_d_g
 
 Circuit: KiCad schematic
 
 Warning: Value of resistor r50 is too small, set to 1.000000e-12
 Warning: Value of resistor r51 is too small, set to 1.000000e-12
-Error on line 14 or its substitute:
-  ddled2 net-_led2-k_ +3v3 led_d_led_d_g
-could not find a valid modelname
-    Simulation interrupted due to error!
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
+Using SPARSE 1.3 as Direct Linear Solver
+Warning: singular matrix:  check node gpio_b_navc
+
+Note: Starting dynamic gmin stepping
+Warning: singular matrix:  check node gpio_e_fcc
+
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: singular matrix:  check node gpio_e_fcc
+
+Warning: singular matrix:  check node gpio_e_fcc
+
+Warning: singular matrix:  check node gpio_e_fcc
+
+Warning: singular matrix:  check node gpio_e_fcc
+
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Note: Transient op finished successfully
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
++5v                                          5
++3v3                                       3.3
+net-_led2-k_                         1.032e-09
+net-_reg1-pvdd_                              0
+reg_vin                                      0
+reg_en                                       0
+reg_pg                                       0
+net-_d1-a_                                   0
+vin+                                         0
+reg_fb                                 1.53126
+net-_led1-k_                          3.36e-09
+reg_cs                                 4.99992
+net-_c6-pad2_                          4.98826
+reg_bst                                4.99992
+hse_in_fcc                                   0
+net-_c33-pad1_                               0
+hse_out_fcc                                  0
+vref+_fcc                                    0
+vdda_fcc                                     0
+i2c1_scl_fcc                           2.87591
+net-_led8-k_                      -1.87575e-74
+led_f_fcc                          1.87575e-64
+net-_led5-k_                      -8.05146e-75
+led_c_fcc                          2.43984e-65
+net-_led6-k_                      -1.87575e-74
+led_d_fcc                          1.87575e-64
+i2c1_sda_fcc                           2.87591
+i2c2_scl_fcc                               3.3
+i2c3_scl_fcc                               3.3
+i2c3_sda_fcc                               3.3
+i2c2_sda_fcc                               3.3
+net-_led7-k_                      -1.87575e-74
+led_e_fcc                          1.87575e-64
+net-_fcc1-vcap1_                             0
+net-_fcc1-vcap2_                             0
+net-_led4-k_                      -8.05146e-75
+led_b_fcc                          2.43984e-65
+net-_led3-k_                      -8.05146e-75
+led_a_fcc                          2.43984e-65
+nrst_fcc                                     0
+net-_sw2-c_                                  0
+boot0_fcc                                    0
+net-_led12-k_                     -1.87575e-74
+led_d_navc                         1.87575e-64
+net-_led11-k_                     -8.05146e-75
+led_c_navc                         2.43984e-65
+net-_led9-k_                      -8.05146e-75
+led_a_navc                         2.43984e-65
+net-_led10-k_                     -8.05146e-75
+led_b_navc                         2.43984e-65
+net-_navc1-vcap_2_                           0
+net-_navc1-vcap_1_                           0
+net-_c53-pad1_                               0
+hse_out_navc                                 0
+hse_in_navc                                  0
+nrst_navc                                    0
+i2c1_sda_navc                              3.3
+i2c3_scl_navc                              3.3
+i2c1_scl_navc                              3.3
+i2c3_sda_navc                              3.3
+vdda_navc                                    0
+net-_sw3-c_                                  0
+boot0_navc                                   0
+net-_sw4-c_                                  0
+boot1_navc                                   0
+i2c2_scl_navc                          2.87591
+i2c2_sda_navc                          2.87591
+unconnected-_c69-pad2_                       0
+uart2_rx_navc                                0
+uart2_tx_fcc                                 0
+uart2_tx_navc                                0
+uart2_rx_fcc                                 0
+net-_led14-k_                     -9.68812e-69
+net-_d5-a_                        -1.73002e-59
+unconnected-_c71-pad2_                       0
+net-_led13-k_                     -9.68812e-69
+net-_d4-a_                        -1.73002e-59
+usb_id_navc                                  0
+net-_usb2-id_                                0
+usb_dm_navc                                  0
+net-_usb2-d-_                                0
+usb_dp_navc                                  0
+net-_usb2-d+_                                0
+usb_dp_fcc                                   0
+net-_usb1-d+_                                0
+usb_dm_fcc                                   0
+net-_usb1-d-_                                0
+usb_id_fcc                                   0
+net-_usb1-id_                                0
+gpio_b_navc                                  0
+gpio_b_fcc                                   0
+gpio_e_navc                                  0
+gpio_e_fcc                                   0
+gpio_a_navc                                  0
+gpio_a_fcc                                   0
+gpio_f_navc                                  0
+gpio_f_fcc                                   0
+gpio_g_navc                                  0
+gpio_g_fcc                                   0
+gpio_c_navc                                  0
+gpio_c_fcc                                   0
+gpio_d_navc                                  0
+gpio_d_fcc                                   0
+gpio_h_navc                                  0
+gpio_h_fcc                                   0
+net-_u4-_hold__io3__                       3.3
+net-_u4-_wp__io2__                         3.3
+gps_nrst_navc                              3.3
+net-_u8-c1_                                  0
+net-_u7-vo-_                                 0
+net-_u7-vo+_                                 0
+bar_nrst_navc                              3.3
+net-_ant1-pad1_                              0
+net-_u10-rf_in_                              0
+net-_l2-pad1_                                0
+net-_u10-vcc_rf_                             0
+l1#branch                         -0.000176378
+v_3v3#branch                      -0.000180462
+v_5v#branch                        -0.00117789
+
+
+No. of Data Rows : 109
+ASCII raw file "C:\Users\vishalkr\cept\pcb_qa\CODE_BASE\Boards\HadesFCS\Output_Files/Hades_generated_raw.raw"
+Note: Simulation executed from .control section 

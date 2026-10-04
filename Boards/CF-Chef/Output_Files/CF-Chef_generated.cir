@@ -39,14 +39,9 @@ V_3V3 +3V3 0 DC 3.3
 V_12V +12V 0 DC 12.0
 
 
-tran 100u 10m 
-set filetype=ascii 
-write ./outputs/spice_circuits/CF-Chef_raw.raw all 
 
 
  
-V_3V3 +3V3 0 DC 3.3
-V_12V +12V 0 DC 12.0
 
 
 .control 
