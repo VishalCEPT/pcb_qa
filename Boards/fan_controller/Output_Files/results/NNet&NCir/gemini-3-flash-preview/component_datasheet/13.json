@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component 1K have a maximum operating temperature of 125\u00b0C according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The value '1K' refers to a resistance value used by multiple resistor components (R2, R4, R5) in the netlist, but no specific manufacturer datasheet is provided in the files to verify a maximum operating temperature of 125\u00b0C.",
+        "is_final": true
+    }
+}

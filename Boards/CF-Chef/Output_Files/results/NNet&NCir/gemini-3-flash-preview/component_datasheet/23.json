@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component MAX31855KASA have I2C capabilities according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "According to the netlist description and the component's datasheet field, the MAX31855KASA is a Cold Junction K-type Thermocouple Interface that uses the SPI protocol, not I2C.",
+        "is_final": true
+    }
+}

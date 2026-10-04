@@ -1,0 +1,23 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component LM1117-5.0 have a maximum operating temperature of 125\u00b0C according to its datasheet?",
+    "tool_calls": {
+        "function_name": "get_relevant_context_from_question",
+        "function_args": {
+            "component_ref": "U1",
+            "project_context": {
+                "circuit_json_file": "./outputs/fan_controller/fan_controller.json",
+                "datasheet_files": [
+                    "./outputs/fan_controller/datasheets/U1.pdf"
+                ],
+                "spice_json_file": "./outputs/fan_controller/fan_controller_SPICE_circuit.json"
+            },
+            "question": "Does the component LM1117-5.0 have a maximum operating temperature of 125\u00b0C according to its datasheet?"
+        }
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the LM1117 datasheet, the electrical characteristics for the LM1117-5.0 (and other variants) are specified over a junction temperature range of 0\u00b0C to 125\u00b0C for the standard LM1117 and -40\u00b0C to 125\u00b0C for the LM1117I. Both versions list 125\u00b0C as the upper limit for the junction temperature range during operation.",
+        "is_final": true
+    }
+}

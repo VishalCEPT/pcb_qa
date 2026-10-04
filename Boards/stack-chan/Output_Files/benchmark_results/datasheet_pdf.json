@@ -1,0 +1,55 @@
+{
+    "board_name": "stack-chan",
+    "strategy": "datasheet_pdf",
+    "accuracy": 0.8,
+    "precision": 0.4,
+    "recall": 0.5,
+    "f1": 0.4444444444444444,
+    "confusion_matrix": [
+        [
+            0,
+            1
+        ],
+        [
+            0,
+            4
+        ]
+    ],
+    "results": [
+        {
+            "question_number": 1,
+            "question": "Does the component Q2 have flash capabilities according to its datasheet?",
+            "expected": "NO",
+            "predicted": "NO",
+            "correct": true
+        },
+        {
+            "question_number": 2,
+            "question": "Does the component U1 have flash capabilities according to its datasheet?",
+            "expected": "NO",
+            "predicted": "NO",
+            "correct": true
+        },
+        {
+            "question_number": 3,
+            "question": "Does the component Q1 have a maximum drain voltage of 35V according to its datasheet?",
+            "expected": "NO",
+            "predicted": "NO",
+            "correct": true
+        },
+        {
+            "question_number": 4,
+            "question": "Does the component Q2 have a collector current of -100mA according to its datasheet?",
+            "expected": "YES",
+            "predicted": "NO",
+            "correct": false
+        },
+        {
+            "question_number": 5,
+            "question": "Does the component U1 have a supply voltage of 10V according to its datasheet?",
+            "expected": "NO",
+            "predicted": "NO",
+            "correct": true
+        }
+    ]
+}

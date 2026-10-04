@@ -1,0 +1,518 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "TPS61040, TPS61041\nSLVS413K – OCTOBER 2002 – REVISED JULY 2022\nTPS6104x Low-Power DC-DC Boost Converter in SOT-23 and WSON Packages\n1 Features 3 Description\n• 1.8-V to 6-V Input Voltage Range The TPS6104x is a high-frequency boost converter\n• Adjustable Output Voltage Range up to 28 V dedicated for small to medium LCD bias supply and\n• 400-mA (TPS61040) and 250-mA (TPS61041) white LED backlight supplies. The device is ideal to"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "Internal Switch Current generate output voltages up to 28 V from a dual-cell\n• Up to 1-MHz Switching Frequency NiMH/NiCd or a single-cell Li-Ion battery. The part can\n• 28-μA Typical No-Load Quiescent Current also be used to generate standard 3.3-V or 5-V to\n• 1-μA Typical Shutdown Current 12-V power conversions.\n• Internal Soft Start\nThe TPS6104x operates with a switching frequency\n• Available in SOT23-5, TSOT23-5,\nup to 1 MHz. This frequency allows the use of"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "up to 1 MHz. This frequency allows the use of\nand 2-mm × 2-mm × 0.8-mm WSON Packages\nsmall external components using ceramic as well\n2 Applications as tantalum output capacitors. Together with the\nthin WSON package, the TPS6104x gives a very\n• LCD Bias Supply\nsmall overall solution size. The TPS61040 device\n• White-LED Supply for LCD Backlights\nhas an internal 400-mA switch current limit, while the\n• Digital Still Camera\nTPS61041 device has a 250-mA switch current limit,"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "• PDAs, Organizers, and Handheld PCs\noffering lower output voltage ripple and allows the\n• Cellular Phones\nuse of a smaller form factor inductor for lower power\n• Internet Audio Players\napplications. The low quiescent current (typically 28\n• Standard 3.3-V or 5-V to 12-V Conversion\nμA) together with an optimized control scheme, allows\ndevice operation at very high efficiencies over the\nentire load current range.\nDevice Information\nPART NUMBER PACKAGE(1) BODY SIZE (NOM)"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "PART NUMBER PACKAGE(1) BODY SIZE (NOM)\nSOT-23 (5) 2.90 mm × 1.60 mm\nTPS61040 SOT (5) 2.90 mm ×1.60 mm\nWSON (6) 2.00 mm × 2.00 mm\nSOT-23 (5) 2.90 mm ×1.60 mm\nTPS61041\nWSON (6) 2.00 mm × 2.00 mm\n(1) For all available packages, see the orderable addendum at\nthe end of the datasheet.\nEfficiencyvsOutputCurrent\nL1 90\n1.8 V to V 6 I V N\n10mH D1\nV V O IN U t T o 28 V 8\n8\n6\n8 VO=18V VI=5V\nCFF\n%\n84 VI=3.6V\n5 VIN SW 1 R1\nCO n c\ny −\n8\n8\n0\n2\ne\nFB 3 1mF Effi ci 78 VI=2.4V\nCIN 76\n4.7mF 4 2\nEN GND R2 74\n72\n70"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "CIN 76\n4.7mF 4 2\nEN GND R2 74\n72\n70\n0.1 1 10 100\nIO−Output Current−mA\nCopyright © 2016,Texas Instruments Incorporated\nTypical Application Schematic\nAn IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,\nintellectual property matters and other important disclaimers. PRODUCTION DATA.TPS61040, TPS61041\nSLVS413K – OCTOBER 2002 – REVISED JULY 2022 www.ti.com\nTable of Contents"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "Table of Contents\n1 Features............................................................................1 8 Application and Implementation..................................11\n2 Applications.....................................................................1 8.1 Application Information..............................................11\n3 Description.......................................................................1 8.2 Typical Application....................................................11"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "4 Revision History..............................................................2 8.3 System Examples.....................................................16\n5 Pin Configuration and Functions...................................3 9 Power Supply Recommendations................................19\n6 Specifications..................................................................4 10 Layout...........................................................................19"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "6.1 Absolute Maximum Ratings........................................4 10.1 Layout Guidelines...................................................19\n6.2 ESD Ratings...............................................................4 10.2 Layout Example......................................................19\n6.3 Recommended Operating Conditions.........................4 11 Device and Documentation Support..........................20"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "6.4 Thermal Information....................................................4 11.1 Third-Party Products Disclaimer.............................20\n6.5 Electrical Characteristics.............................................5 11.2 Support Resources.................................................20\n6.6 Typical Characteristics................................................6 11.3 Trademarks.............................................................20"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "7 Detailed Description........................................................9 11.4 Electrostatic Discharge Caution..............................20\n7.1 Overview.....................................................................9 11.5 Glossary..................................................................20\n7.2 Functional Block Diagram...........................................9 12 Mechanical, Packaging, and Orderable"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "7.3 Feature Description.....................................................9 Information....................................................................20\n7.4 Device Functional Modes..........................................10\n4 Revision History\nChanges from Revision J (December 2019) to Revision K (July 2022) Page\n• Updated the numbering format for tables, figures, and cross-references throughout the document..................1"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "Changes from Revision I (December 2016) to Revision J (December 2019) Page\n• Changed DRV package pinout image to show thermal pad outline and transparent top view ..........................3\nChanges from Revision H (October 2015) to Revision I (December 2016) Page\n• Changed C from: 4.7 mF To: 4.7 µF and C From: 1 mF To: 1 µF in the Typical Application Schematic .......1\nIN O\nChanges from Revision G (December 2014) to Revision H (October 2015) Page"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "• Added 500 µs/div label to X-axis of Figure 8-4. ...............................................................................................15\nChanges from Revision F (December 2010) to Revision G (December 2014) Page\n• Added ESD Ratings table, Feature Description section, Device Functional Modes, Application and\nImplementation section, Power Supply Recommendations section, Layout section, Device and"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "Documentation Support section, and Mechanical, Packaging, and Orderable Information section...................1\n2 Submit Document Feedback Copyright © 2022 Texas Instruments Incorporated\nProduct Folder Links: TPS61040 TPS61041TPS61040, TPS61041\nwww.ti.com SLVS413K – OCTOBER 2002 – REVISED JULY 2022\n5 Pin Configuration and Functions\nSW 1 5 V IN\nGND 2\nFB 3 4 EN\nFigure 5-1. DDC Package, DBV Package SOT 5 Pins Top View\nGND 1 6 SW\nV IN 2 Th P e A rm D al 5 NC\nEN 3 4 FB"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "GND 1 6 SW\nV IN 2 Th P e A rm D al 5 NC\nEN 3 4 FB\nFigure 5-2. DRV Package WSON 6 Pins Transparent Top View\nTable 5-1. Pin Functions\nPIN\nDDC, I/O DESCRIPTION\nNAME DRV NO.\nDBV NO.\nThis is the enable pin of the device. Pulling this pin to ground forces the device into\nEN 4 3 I shutdown mode reducing the supply current to less than 1 μA. This pin should not be left\nfloating and needs to be terminated.\nThis is the feedback pin of the device. Connect this pin to the external voltage divider to"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "FB 3 4 I\nprogram the desired output voltage.\nGND 2 1 – Ground\nNC – 5 – No connection\nConnect the inductor and the Schottky diode to this pin. This is the switch pin and is\nSW 1 6 I\nconnected to the drain of the internal power MOSFET.\nV 5 2 I Supply voltage pin\nIN\n- ThermalPAD - Solder to ground plane for heat sink\nCopyright © 2022 Texas Instruments Incorporated Submit Document Feedback 3\nProduct Folder Links: TPS61040 TPS61041TPS61040, TPS61041"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "SLVS413K – OCTOBER 2002 – REVISED JULY 2022 www.ti.com\n6 Specifications\n6.1 Absolute Maximum Ratings\nover operating free-air temperature range (unless otherwise noted) (1)\nMIN MAX UNIT\nSupply voltages on pin V (2) –0.3 7 V\nIN\nVoltages on pins EN, FB (2) –0.3 V + 0.3 V\nIN\nSwitch voltage on pin SW (2) 30 30 V\nOperating junction temperature, T –40 150 °C\nJ\nStorage temperature, T –65 150 °C\nstg"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "J\nStorage temperature, T –65 150 °C\nstg\n(1) Stresses beyond those listed under Absolute Maximum Ratings may cause permanent damage to the device. These are stress\nratings only, which do not imply functional operation of the device at these or any other conditions beyond those indicated under\nRecommended Operating Conditions. Exposure to absolute-maximum-rated conditions for extended periods may affect device\nreliability.\n(2) All voltage values are with respect to network ground terminal."
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "6.2 ESD Ratings\nVALUE UNIT\nHuman body model (HBM), per ANSI/ESDA/JEDEC JS-001(1) ±2000\nV (ESD) Electrostatic discharge Charged-device model (CDM), per JEDEC specification JESD22- ±750 V\nC101(2)\n(1) JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process. Manufacturing with\nless than 500-V HBM is possible with the necessary precautions. Pins listed as ±XXX V may actually have higher performance."
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "(2) JEDEC document JEP157 states that 250-V CDM allows safe manufacturing with a standard ESD control process. Manufacturing with\nless than 250-V CDM is possible with the necessary precautions. Pins listed as ±YYY V may actually have higher performance.\n6.3 Recommended Operating Conditions\nMIN NOM MAX UNIT\nV Input voltage range 1.8 6 V\nIN\nV Output voltage range 28 V\nOUT\nL Inductor(1) 2.2 10 μH\nf Switching frequency(1) 1 MHz\nC Input capacitor (1) 4.7 μF\nIN\nC Output capacitor (1) 1 μF\nOUT"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "IN\nC Output capacitor (1) 1 μF\nOUT\nT Operating ambient temperature –40 85 °C\nA\nT Operating junction temperature –40 125 °C\nJ\n(1) See application section for further information.\n6.4 Thermal Information\nTPS61040 TPS61041\nTHERMAL METRIC(1) DBV DDC DRV DBV DRV UNIT\n5 PINS 5 PINS 6 PINS 5 PINS 6 PINS\nR Junction-to-ambient thermal resistance 205.2 214.7 83.0 205.2 83.0 °C/W\nθJA\nR Junction-to-case (top) thermal resistance 118.3 38.5 57.1 118.3 57.1 °C/W\nθJC(top)"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "θJC(top)\nR Junction-to-board thermal resistance 34.8 35.4 52.9 34.8 52.9 °C/W\nθJB\nψ Junction-to-top characterization parameter 12.2 0.4 2.4 12.2 2.4 °C/W\nJT\nψ Junction-to-board characterization parameter 33.9 34.8 53.4 33.9 53.4 °C/W\nJB\nR Junction-to-case (bottom) thermal resistance — — 26.9 — 26.9 °C/W\nθJC(bot)\n(1) For more information about traditional and new thermal metrics, see the IC Package Thermal Metrics application report, SPRA953."
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "4 Submit Document Feedback Copyright © 2022 Texas Instruments Incorporated\nProduct Folder Links: TPS61040 TPS61041TPS61040, TPS61041\nwww.ti.com SLVS413K – OCTOBER 2002 – REVISED JULY 2022\n6.5 Electrical Characteristics\nV = 2.4 V, EN = V , T = –40°C to 85°C, typical values are at T = 25°C (unless otherwise noted)\nIN IN A A\nPARAMETER TEST CONDITIONS MIN TYP MAX UNIT\nSUPPLY CURRENT\nV Input voltage range 1.8 6 V\nIN\nI Operating quiescent current I = 0 mA, not switching, V = 1.3 V 28 50 μA\nQ OUT FB"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "Q OUT FB\nI Shutdown current EN = GND 0.1 1 μA\nSD\nV Undervoltage lockout threshold 1.5 1.7 V\nUVLO\nENABLE\nV EN high level input voltage 1.3 V\nIH\nV EN low level input voltage 0.4 V\nIL\nI EN input leakage current EN = GND or V 0.1 1 μA\nI IN\nPOWER SWITCH AND CURRENT LIMIT\nVsw Maximum switch voltage 30 V\nt Minimum off time 250 400 550 ns\noff\nt Maximum on time 4 6 7.5 μs\non\nR MOSFET on-resistance V = 2.4 V; I = 200 mA; TPS61040 600 1000 mΩ\nDS(on) IN SW"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "DS(on) IN SW\nR MOSFET on-resistance V = 2.4 V; I = 200 mA; TPS61041 750 1250 mΩ\nDS(on) IN SW\nMOSFET leakage current V = 28 V 1 10 μA\nSW\nI MOSFET current limit TPS61040 350 400 450 mA\nLIM\nI MOSFET current limit TPS61041 215 250 285 mA\nLIM\nOUTPUT\nV Adjustable output voltage range V 28 V\nOUT IN\nV Internal voltage reference 1.233 V\nref\nI Feedback input bias current V = 1.3 V 1 μA\nFB FB\nV Feedback trip point voltage 1.8 V ≤ V ≤ 6 V 1.208 1.233 1.258 V\nFB IN\n1.8 V ≤ V ≤ 6 V; V = 18 V; I = 10 mA;"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "FB IN\n1.8 V ≤ V ≤ 6 V; V = 18 V; I = 10 mA;\nLine regulation (1) IN OUT load 0.05 %/V\nC = not connected\nFF\nLoad regulation(1) V = 2.4 V; V = 18 V; 0 mA ≤ I ≤ 30 mA 0.15 %/mA\nIN OUT OUT\n(1) The line and load regulation depend on the external component selection. See the application section for further information.\nCopyright © 2022 Texas Instruments Incorporated Submit Document Feedback 5\nProduct Folder Links: TPS61040 TPS610416.6 Typical Characteristics\nTable 6-1. Table of Graphs\nFIGURE"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "Table 6-1. Table of Graphs\nFIGURE\nFigure 6-1,\nvs Load current Figure 6-2,\nη Efficiency Figure 6-3\nvs Input voltage Figure 6-4\nI Quiescent current vs Input voltage and temperature Figure 6-5\nQ\nV Feedback voltage vs Temperature Figure 6-6\nFB\nI Switch current limit vs Temperature Figure 6-7\nSW\nvs Supply voltage, TPS61041 Figure 6-8\nI Switch current limit\nCL\nvs Supply voltage, TPS61040 Figure 6-9\nvs Temperature Figure 6-10\nR R\nDS(on) DS(on)\nvs Supply voltage Figure 6-11"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "R R\nDS(on) DS(on)\nvs Supply voltage Figure 6-11\nLine transient response Figure 8-2\nLoad transient response Figure 8-3\nStart-up behavior Figure 8-4\n%\n−\nycneiciffE\n90 90\nVO = 18 V L = 10 µH\n88 VI = 5 V 88 VO = 18 V\n86 86 TPS61040\n84 VI = 3.6 V 84\nTPS61041 82 82\n80 80\nVI = 2.4 V\n78 78\n76 76\n74 74\n72 72\n70 70\n0.1 1 10 100 0.1 1 10 100\nIO − Output Current − mA IL − Load Current − mA\nFigure 6-1. Efficiency vs Output Current\n%\n−\nycneiciffE\nFigure 6-2. Efficiency vs Load Current\n90\nVO = 18 V\n88"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "90\nVO = 18 V\n88\n86 L = 10 µH\n84\nL = 3.3 µH 82\n80\n78\n76\n74\n72\n70\n0.1 1 10 100\nIL − Load Current − mA\n%\n−\nycneiciffE\n90\nL = 10 µH\n88 VO = 18 V\nIO = 10 mA\n86\n84\nIO = 5 mA\n82\n80\n78\n76\n74\n72\n70\n1 2 3 4 5 6\nVI − Input Voltage − V\nFigure 6-3. Efficiency vs Load Current\n%\n−\nycneiciffE\nTPS61040, TPS61041\nSLVS413K – OCTOBER 2002 – REVISED JULY 2022 www.ti.com\nFigure 6-4. Efficiency vs Input Voltage\n6 Submit Document Feedback Copyright © 2022 Texas Instruments Incorporated"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "Product Folder Links: TPS61040 TPS610416.6 Typical Characteristics (continued)\n40\n35\nTA = 85°C\n30 TA = 27°C\n25\nTA = −40°C\n20\n15\n10\n5\n0\n1.8 2.4 3 3.6 4.2 4.8 5.4 6\nVI − Input Voltage − V\nAµ\n−\ntnerruC\ntnecseiuQ\n1.24\n1.238\n1.236\nVCC = 2.4 V\n1.234\n1.232\n1.23\n−40 −20 0 20 40 60 80 100 120\nTA − Temperature − °C\nFigure 6-5. TPS61040 Quiescent Current vs Input Voltage\nV −\negatloV\nkcabdeeF\n−\nBFV\nFigure 6-6. Feedback Voltage vs Free-Air Temperature\n430\n410 TPS61040\n390\n370\n350\n330\n310\n290\n270\nTPS61041"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "410 TPS61040\n390\n370\n350\n330\n310\n290\n270\nTPS61041\n250\n230\n−40−30−20−10 0 10 20 30 40 50 60 70 80 90\nTA − Temperature − °C\nAm\n−\ntimiL\ntnerruC\nhctiwS\n−\n)WS(I\n260\n258\n256\n254 TA = 27°C\n252\n250\n248\n246\n244\n242\n240\n1.8 2.4 3 3.6 4.2 4.8 5.4 6\nVCC − Supply Voltage − V\nFigure 6-7. TPS6104x Switch Current Limit vs Free-Air\nTemperature\nAm\n−\ntimiL\ntnerruC\n−\n)LC(I\nFigure 6-8. TPS61041 Current Limit vs Supply Voltage\n420\n415\n410\n405\nTA = 27°C\n400\n395\n390\n385\n380\n1.8 2.4 3 3.6 4.2 4.8 5.4 6"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "400\n395\n390\n385\n380\n1.8 2.4 3 3.6 4.2 4.8 5.4 6\nVCC − Supply Voltage − V\nAm\n− timiL\ntnerruC\n− )LC(I\n1200\n1000\nTPS61041\n800\n600 TPS61040\n400\n200\n0\n−40−30−20−10 0 10 20 30 40 50 60 70 80 90\nTA − Temperature − °C\nFigure 6-9. TPS61040 Current Limit vs Supply Voltage\nΩm\n−\necnatsiseR\netatS-nO\necruoS-niarD\ncitatS\n−\n)no(SDr\nTPS61040, TPS61041\nwww.ti.com SLVS413K – OCTOBER 2002 – REVISED JULY 2022\nFigure 6-10. TPS6104x Static Drain-Source On-State Resistance\nvs Free-Air Temperature"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "vs Free-Air Temperature\nCopyright © 2022 Texas Instruments Incorporated Submit Document Feedback 7\nProduct Folder Links: TPS61040 TPS610416.6 Typical Characteristics (continued)\n1000\n900\n800\nTPS61041\n700\n600\n500 TPS61040\n400\n300\n200\n100\n0\n1.8 2.4 3 3.6 4.2 4.8 5.4 6\nVCC − Supply Voltage − V\nΩm\n−\necnatsiseR\netatS-nO\necruoS-niarD\ncitatS\n−\n)no(SDr\nTPS61040, TPS61041\nSLVS413K – OCTOBER 2002 – REVISED JULY 2022 www.ti.com"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "Figure 6-11. TPS6104x Static Drain-Source On-State Resistance vs Supply Voltage\n8 Submit Document Feedback Copyright © 2022 Texas Instruments Incorporated\nProduct Folder Links: TPS61040 TPS61041TPS61040, TPS61041\nwww.ti.com SLVS413K – OCTOBER 2002 – REVISED JULY 2022\n7 Detailed Description\n7.1 Overview\nThe TPS6104x is a high-frequency boost converter dedicated for small to medium LCD bias supply and white"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "LED backlight supplies. The device is ideal to generate output voltages up to 28 V from a dual-cell NiMH/NiCd or\na single cell device Li-Ion battery.\n7.2 Functional Block Diagram\nSW\nUnder Voltage\nVIN Lockout\nBias Supply\n400 ns Min\nOffTime\nError Comparator\nFB - S\nPower MOSFET\n+\nRS Latch Gate N-Channel\nLogic Driver\nVREF= 1.233 V\nR\nCurrent Limit\n6ms Max + RSENSE\nEN OnTime _\nSoft\nStart\nGND\nCopyright © 2016,Texas Instruments Incorporated\n7.3 Feature Description\n7.3.1 Peak Current Control"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "7.3.1 Peak Current Control\nThe internal switch turns on until the inductor current reaches the typical dc current limit (I ) of 400 mA\nLIM\n(TPS61040) or 250 mA (TPS61041). Due to the internal propagation delay of typical 100 ns, the actual current\nexceeds the dc current limit threshold by a small amount. The typical peak current limit can be calculated:\nV\nI = I + IN × 100ns\npeak(typ) LIM L\nV\nI = 400mA + IN × 100ns for theTPS61040-Q1\npeak(typ) L\nV\nI = 250mA + IN × 100ns for theTPS61041-Q1"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "V\nI = 250mA + IN × 100ns for theTPS61041-Q1\npeak(typ) L (1)\nThe higher the input voltage and the lower the inductor value, the greater the peak.\nBy selecting the TPS6104x, it is possible to tailor the design to the specific application current limit requirements.\nA lower current limit supports applications requiring lower output power and allows the use of an inductor with a\nlower current rating and a smaller form factor. A lower current limit usually has a lower output voltage ripple as\nwell."
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "well.\nCopyright © 2022 Texas Instruments Incorporated Submit Document Feedback 9\nProduct Folder Links: TPS61040 TPS61041TPS61040, TPS61041\nSLVS413K – OCTOBER 2002 – REVISED JULY 2022 www.ti.com\n7.3.2 Soft Start\nAll inductive step-up converters exhibit high inrush current during start-up if no special precaution is made. This\ncan cause voltage drops at the input rail during start up and may result in an unwanted or early system shut\ndown.\nI\nLIM\n4"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "down.\nI\nLIM\n4\nThe TPS6104x limits this inrush current by increasing the current limit in two steps starting from for 256\nI\nLIM\n2\ncycles to for the next 256 cycles, and then full current limit (see Figure 8-4).\n7.3.3 Enable\nPulling the enable (EN) to ground shuts down the device reducing the shutdown current to 1 μA (typical).\nBecause there is a conductive path from the input to the output through the inductor and Schottky diode, the"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "output voltage is equal to the input voltage during shutdown. The enable pin needs to be terminated and should\nnot be left floating. Using a small external transistor disconnects the input from the output during shutdown as\nshown in Figure 8-6.\n7.3.4 Undervoltage Lockout\nAn undervoltage lockout prevents misoperation of the device at input voltages below typical 1.5 V. When the\ninput voltage is below the undervoltage threshold, the main switch is turned off.\n7.3.5 Thermal Shutdown"
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "7.3.5 Thermal Shutdown\nAn internal thermal shutdown is implemented and turns off the internal MOSFETs when the typical junction\ntemperature of 168°C is exceeded. The thermal shutdown has a hysteresis of typically 25°C. This data is based\non statistical means and is not tested during the regular mass production of the IC.\n7.4 Device Functional Modes\n7.4.1 Operation\nThe TPS6104x operates with an input voltage range of 1.8 V to 6 V and can generate output voltages up to 28"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "V. The device operates in a pulse-frequency-modulation (PFM) scheme with constant peak current control. This\ncontrol scheme maintains high efficiency over the entire load current range, and with a switching frequency up to\n1 MHz, the device enables the use of very small external components.\nThe converter monitors the output voltage, and as soon as the feedback voltage falls below the reference"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "voltage of typically 1.233 V, the internal switch turns on and the current ramps up. The switch turns off as\nsoon as the inductor current reaches the internally set peak current of typically 400 mA (TPS61040) or 250 mA\n(TPS61041). See Peak Current Control for more information. The second criteria that turns off the switch is the\nmaximum on-time of 6 μs (typical). This is just to limit the maximum on-time of the converter to cover for extreme"
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "conditions. As the switch is turned off the external Schottky diode is forward biased delivering the current to the\noutput. The switch remains off for a minimum of 400 ns (typical), or until the feedback voltage drops below the\nreference voltage again. Using this PFM peak current control scheme the converter operates in discontinuous\nconduction mode (DCM) where the switching frequency depends on the output current, which results in very"
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "high efficiency over the entire load current range. This regulation scheme is inherently stable, allowing a wider\nselection range for the inductor and output capacitor.\n10 Submit Document Feedback Copyright © 2022 Texas Instruments Incorporated\nProduct Folder Links: TPS61040 TPS61041TPS61040, TPS61041\nwww.ti.com SLVS413K – OCTOBER 2002 – REVISED JULY 2022\n8 Application and Implementation\nNote\nInformation in the following applications sections is not part of the TI component specification,"
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "and TI does not warrant its accuracy or completeness. TI’s customers are responsible for\ndetermining suitability of components for their purposes, as well as validating and testing their design\nimplementation to confirm system functionality.\n8.1 Application Information\nThe TPS6104x is designed for output voltages up to 28 V with an input voltage range of 1.8 V to 6 V and\na switch peak current limit of 400 mA (250 mA for the TPS61041). The device operates in a pulse-frequency-"
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "modulation (PFM) scheme with constant peak current control. This control scheme maintains high efficiency over\nthe entire load current range, and with a switching frequency up to 1 MHz, the device enables the use of very\nsmall external components. The following section provides a step-by-step design approach for configuring the\nTPS61040 as a voltage regulating boost converter for LCD bias power supply, as shown in Figure 8-1.\n8.2 Typical Application"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "8.2 Typical Application\nThe following section provides a step-by-step design approach for configuring the TPS611040 as a voltage\nregulating boost converter for LCD bias supply, as shown in Figure 8-1.\nL1\nD1\n10μH\nVIN VOUT\n1.8 V to 6 V 18 V\nTPS61040\nR1\nCFF\nVIN SW 2.2 MΩ 22 pF\nC2\n1μF\nFB\nC1\nL1: Sumida CR32-100\n4.7μF\nEN GND R2 D1:Motorola MBR0530\n160 kΩ C1:TayoYuden JMK212BY475MG\nC2:TayoYudenTMK316BJ105KL\nCopyright © 2016,Texas Instruments Incorporated\nFigure 8-1. LCD Bias Supply"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "Figure 8-1. LCD Bias Supply\n8.2.1 Design Requirements\nTable 8-1. Design Parameters\nDESIGN PARAMETER EXAMPLE VALUE\nInput Voltage 1.8 V to 6 V\nOutput Voltage 18 V\nOutput Current 10 mA\n8.2.2 Detailed Design Procedure\n8.2.2.1 Inductor Selection, Maximum Load Current\nBecause the PFM peak current control scheme is inherently stable, the inductor value does not affect the\nstability of the regulator. The selection of the inductor together with the nominal load current, input and output"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "voltage of the application determines the switching frequency of the converter. Depending on the application,\ninductor values from 2.2 μH to 47 μH are recommended. The maximum inductor value is determined by the\nmaximum on time of the switch, typically 6 μs. The peak current limit of 400 mA/250 mA (typically) should be\nreached within this 6-μs period for proper operation.\nCopyright © 2022 Texas Instruments Incorporated Submit Document Feedback 11"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "Product Folder Links: TPS61040 TPS61041TPS61040, TPS61041\nSLVS413K – OCTOBER 2002 – REVISED JULY 2022 www.ti.com\nThe inductor value determines the maximum switching frequency of the converter. Therefore, select the inductor\nvalue that ensures the maximum switching frequency at the converter maximum load current is not exceeded.\nThe maximum switching frequency is calculated by the following formula:\nV ´(V -V )\nf = IN(min) OUT IN\nS(max) I ´L´V\nP OUT (2)\nwhere"
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "f = IN(min) OUT IN\nS(max) I ´L´V\nP OUT (2)\nwhere\n• I = Peak current as described in Peak Current Control\nP\n• L = Selected inductor value\n• V = The highest switching frequency occurs at the minimum input voltage\nIN(min)\nIf the selected inductor value does not exceed the maximum switching frequency of the converter, the next step\nis to calculate the switching frequency at the nominal load current using the following formula:\n2´I ´(V -V +V )\nf (I )= load OUT IN d\nS load I 2´L\nP (3)\nwhere"
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "f (I )= load OUT IN d\nS load I 2´L\nP (3)\nwhere\n• I = Peak current as described in Peak Current Control\nP\n• L = Selected inductor value\n• I = Nominal load current\nload\n• Vd = Rectifier diode forward voltage (typically 0.3 V)\nA smaller inductor value gives a higher converter switching frequency, but lowers the efficiency.\nThe inductor value has less effect on the maximum available load current and is only of secondary order. The"
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "best way to calculate the maximum available load current under certain operating conditions is to estimate the\nexpected converter efficiency at the maximum load current. This number can be taken out of the efficiency\ngraphs shown in Figure 6-1 through Figure 6-4. The maximum load current can then be estimated as follows:\nI 2 ´L ´ f\nP S(max)\nI = h\nload(max)\n2´(V - V )\nOUT IN (4)\nwhere\n• I = Peak current as described in Peak Current Control\nP\n• L = Selected inductor value"
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "P\n• L = Selected inductor value\n• fS = Maximum switching frequency as calculated previously\nmax\n• η = Expected converter efficiency. Typically 70% to 85%\nThe maximum load current of the converter is the current at the operation point where the converter starts to\nenter the continuous conduction mode. Usually the converter should always operate in discontinuous conduction\nmode.\nLast, the selected inductor should have a saturation current that meets the maximum peak current of the"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "converter (as calculated in Peak Current Control). Use the maximum value for I for this calculation.\nLIM\nAnother important inductor parameter is the dc resistance. The lower the dc resistance, the higher the efficiency\nof the converter. See Table 8-2 and the typical applications for the inductor selection.\n12 Submit Document Feedback Copyright © 2022 Texas Instruments Incorporated\nProduct Folder Links: TPS61040 TPS61041TPS61040, TPS61041\nwww.ti.com SLVS413K – OCTOBER 2002 – REVISED JULY 2022"
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "Table 8-2. Recommended Inductor for Typical LCD Bias Supply (see Figure\n10-1)\nDEVICE INDUCTOR VALUE COMPONENT SUPPLIER(1) COMMENTS\n10 μH Sumida CR32-100 High efficiency\n10 μH Sumida CDRH3D16-100 High efficiency\nTPS61040 10 μH Murata LQH4C100K04 High efficiency\n4.7 μH Sumida CDRH3D16-4R7 Small solution size\n4.7 μH Murata LQH3C4R7M24 Small solution size\nHigh efficiency\nTPS61041 10 μH Murata LQH3C100K24\nSmall solution size\n(1) See Third-Party Products disclaimer\n8.2.2.2 Setting the Output Voltage"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "8.2.2.2 Setting the Output Voltage\nThe output voltage is calculated as:\nV 1.233V (cid:4)1 R1(cid:5)\nOUT(cid:3) (cid:1) (cid:2)R2\n(5)\nFor battery-powered applications, a high-impedance voltage divider should be used with a typical value for R2 of\n≤200 kΩ and a maximum value for R1 of 2.2 MΩ. Smaller values might be used to reduce the noise sensitivity of\nthe feedback pin.\nA feedforward capacitor across the upper feedback resistor R1 is required to provide sufficient overdrive for the"
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "error comparator. Without a feedforward capacitor, or one whose value is too small, the TPS6104x shows double\npulses or a pulse burst instead of single pulses at the switch node (SW), causing higher output voltage ripple. If\nthis higher output voltage ripple is acceptable, the feedforward capacitor can be left out.\nThe lower the switching frequency of the converter, the larger the feedforward capacitor value required. A good"
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "starting point is to use a 10-pF feedforward capacitor. As a first estimation, the required value for the feedforward\ncapacitor at the operation point can also be calculated using the following formula:\n1\nC (cid:2)\nFF fS\n2(cid:1)(cid:1)(cid:1) (cid:1)R1\n20\n(6)\nwhere\n• R1 = Upper resistor of voltage divider\n• fS = Switching frequency of the converter at the nominal load current (See Inductor Selection, Maximum Load\nCurrent for calculating the switching frequency)"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "Current for calculating the switching frequency)\n• C = Choose a value that comes closest to the result of the calculation\nFF\nThe larger the feedforward capacitor the worse the line regulation of the device. Therefore, when concern for line\nregulation is paramount, the selected feedforward capacitor should be as small as possible. See the following\nsection for more information about line and load regulation.\n8.2.2.3 Line and Load Regulation"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "8.2.2.3 Line and Load Regulation\nThe line regulation of the TPS6104x depends on the voltage ripple on the feedback pin. Usually a 50 mV\npeak-to-peak voltage ripple on the feedback pin FB gives good results.\nSome applications require a very tight line regulation and can only allow a small change in output voltage over\na certain input voltage range. If no feedforward capacitor C is used across the upper resistor of the voltage\nFF"
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "FF\nfeedback divider, the device has the best line regulation. Without the feedforward capacitor the output voltage\nripple is higher because the TPS6104x shows output voltage bursts instead of single pulses on the switch pin\n(SW), increasing the output voltage ripple. Increasing the output capacitor value reduces the output voltage\nripple.\nCopyright © 2022 Texas Instruments Incorporated Submit Document Feedback 13\nProduct Folder Links: TPS61040 TPS61041TPS61040, TPS61041"
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "SLVS413K – OCTOBER 2002 – REVISED JULY 2022 www.ti.com\nIf a larger output capacitor value is not an option, a feed-forward capacitor C can be used as described in\nFF\nthe previous section. The use of a feedforward capacitor increases the amount of voltage ripple present on the\nfeedback pin (FB). The greater the voltage ripple on the feedback pin (≥50 mV), the worse the line regulation.\nThere are two ways to improve the line regulation further:"
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "1. Use a smaller inductor value to increase the switching frequency which will lower the output voltage ripple,\nas well as the voltage ripple on the feedback pin.\n2. Add a small capacitor from the feedback pin (FB) to ground to reduce the voltage ripple on the feedback pin\ndown to 50 mV again. As a starting point, the same capacitor value as selected for the feedforward capacitor\nC can be used.\nFF\n8.2.2.4 Output Capacitor Selection"
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "FF\n8.2.2.4 Output Capacitor Selection\nFor best output voltage filtering, a low ESR output capacitor is recommended. Ceramic capacitors have a low\nESR value but tantalum capacitors can be used as well, depending on the application.\nAssuming the converter does not show double pulses or pulse bursts on the switch node (SW), the output\nvoltage ripple can be calculated as:\n(cid:1)V out(cid:3)\nC\nI o\no\nu\nu\nt\nt\n(cid:1) (cid:4)\nfS(I\n1\nout)\n–\nVout\nI P\n(cid:2)\n(cid:1)\nVd\nL\n–Vin"
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "fS(I\n1\nout)\n–\nVout\nI P\n(cid:2)\n(cid:1)\nVd\nL\n–Vin\n(cid:5) (cid:2)I P(cid:1)ESR\n(7)\nwhere\n• I = Peak current as described in Peak Current Control\nP\n• L = Selected inductor value\n• I = Nominal load current\nout\n• fS (I ) = Switching frequency at the nominal load current as calculated previously\nout\n• Vd = Rectifier diode forward voltage (typically 0.3 V)\n• C = Selected output capacitor\nout\n• ESR = Output capacitor ESR value"
+  },
+  {
+    "faiss_index_id": 68,
+    "text": "out\n• ESR = Output capacitor ESR value\nSee Table 8-3 and the Typical Application for choosing the output capacitor.\nTable 8-3. Recommended Input and Output Capacitors\nDEVICE CAPACITOR VOLTAGE RATING COMPONENT SUPPLIER(1) COMMENTS\n4.7 μF/X5R/0805 6.3 V Tayo Yuden JMK212BY475MG C /C\nIN OUT\n10 μF/X5R/0805 6.3 V Tayo Yuden JMK212BJ106MG C /C\nIN OUT\nTPS6104x 1 μF/X7R/1206 25 V Tayo Yuden TMK316BJ105KL C\nOUT\n1 μF/X5R/1206 35 V Tayo Yuden GMK316BJ105KL C\nOUT"
+  },
+  {
+    "faiss_index_id": 69,
+    "text": "1 μF/X5R/1206 35 V Tayo Yuden GMK316BJ105KL C\nOUT\n4.7 μF/X5R/1210 25 V Tayo Yuden TMK325BJ475MG C\nOUT\n(1) See Third-Party Products disclaimer.\n8.2.2.5 Input Capacitor Selection\nFor good input voltage filtering, low ESR ceramic capacitors are recommended. A 4.7-μF ceramic input capacitor\nis sufficient for most of the applications. For better input voltage filtering this value can be increased. See Table\n8-3 and typical applications for input capacitor recommendations.\n8.2.2.6 Diode Selection"
+  },
+  {
+    "faiss_index_id": 70,
+    "text": "8.2.2.6 Diode Selection\nTo achieve high efficiency a Schottky diode should be used. The current rating of the diode should meet the\npeak current rating of the converter as it is calculated in Peak Current Control. Use the maximum value for I\nLIM\nfor this calculation. See Table 8-4 and the typical applications for the selection of the Schottky diode.\n14 Submit Document Feedback Copyright © 2022 Texas Instruments Incorporated\nProduct Folder Links: TPS61040 TPS61041TPS61040, TPS61041"
+  },
+  {
+    "faiss_index_id": 71,
+    "text": "www.ti.com SLVS413K – OCTOBER 2002 – REVISED JULY 2022\nTable 8-4. Recommended Schottky Diode for Typical LCD Bias Supply (see Figure 10-1)\nDEVICE REVERSE VOLTAGE COMPONENT SUPPLIER(1) COMMENTS\n30 V ON Semiconductor MBR0530\n20 V ON Semiconductor MBR0520\nTPS6104x\n20 V ON Semiconductor MBRM120L High efficiency\n30 V Toshiba CRS02\n(1) See Third-Party Products disclaimer.\nspacer\n8.2.3 Application Curves\nVO = 18 V IO= 18 V\nVI\n2.4 V to 3.4 V\nIO\n100 mV/div\n100 mV/d\nV\ni\nO\nv\nIO\n1 mAto 10 mA\n200mS/div"
+  },
+  {
+    "faiss_index_id": 72,
+    "text": "100 mV/d\nV\ni\nO\nv\nIO\n1 mAto 10 mA\n200mS/div\n200 µS/div Figure 8-3. Load Transient Response\nFigure 8-2. Line Transient Response\nVO= 18 V\nVO\n5 V/div\nEN\n1 V/div\nII\n50 mA/div\n500 us/div\nFigure 8-4. Start-Up Behavior\nCopyright © 2022 Texas Instruments Incorporated Submit Document Feedback 15\nProduct Folder Links: TPS61040 TPS61041TPS61040, TPS61041\nSLVS413K – OCTOBER 2002 – REVISED JULY 2022 www.ti.com\n8.3 System Examples\nL1\nD1\n10μH\nVO\n18 V\nTPS61040\nCFF\nR1 22 pF\nVIN VIN SW\n2.2 MΩ\n1.8 V to 6 V C2\n1μF"
+  },
+  {
+    "faiss_index_id": 73,
+    "text": "R1 22 pF\nVIN VIN SW\n2.2 MΩ\n1.8 V to 6 V C2\n1μF\nFB\nC1\n4.7μF DAC orAnalog Voltage\nEN GND R2 0 V = 25 V\n160 kΩ\n1.233 V = 18 V\nL1: Sumida CR32-100\nD1:Motorola MBR0530\nC1:TayoYuden JMK212BY475MG\nC2:TayoYuden GMK316BJ105KL\nCopyright © 2016,Texas Instruments Incorporated\nFigure 8-5. LCD Bias Supply With Adjustable Output Voltage\nR3\n200 k\nL1 BC857C\n10μH D1\nVIN VOUT\n1.8 V to 6 V 18 V / 10 mA\nTPS61040 R1 CFF\n2.2 MΩ 22 pF\nVIN SW\nC2 C3\n1μF 0.1μF\nFB\n(Optional)\nC1\n4.7μF EN GND R2\nL1:Sumida CR32-100\n160 kΩ"
+  },
+  {
+    "faiss_index_id": 74,
+    "text": "C1\n4.7μF EN GND R2\nL1:Sumida CR32-100\n160 kΩ\nD1:Motorola MBR0530\nC1:TayoYuden JMK212BY475MG\nC2:TayoYudenTMK316BJ105KL\nCopyright © 2016,Texas Instruments Incorporated\nFigure 8-6. LCD Bias Supply With Load Disconnect\n16 Submit Document Feedback Copyright © 2022 Texas Instruments Incorporated\nProduct Folder Links: TPS61040 TPS61041TPS61040, TPS61041\nwww.ti.com SLVS413K – OCTOBER 2002 – REVISED JULY 2022\nD3\nV2 =–10 V/15μA\nD2 C4\nC3 4.7μF\n1μF\nL1\nD1\n6.8μH\nV1 = 10 V/15 mA\nTPS61040\nCFF"
+  },
+  {
+    "faiss_index_id": 75,
+    "text": "1μF\nL1\nD1\n6.8μH\nV1 = 10 V/15 mA\nTPS61040\nCFF\nVIN= 2.7 V to 5 V VIN SW\n1.5 M\nR\nΩ\n1 22 pF\nC2\n1μF\nFB\nC1 L1: Murata LQH4C6R8M04\n4.7μF EN GND R2 D1, D2, D3: Motorola MBR0530\nC1: TayoYuden JMK212BY475MG\n210 kΩ\nC2, C3, C4: TayoYuden EMK316BJ105KF\nCopyright © 2016,Texas Instruments Incorporated\nFigure 8-7. Positive and Negative Output LCD Bias Supply\nL1\nD1\n6.8μH\nVO=12 V/35 mA\nTPS61040\nCFF\nR1 4.7 pF\nVIN3.3 V VIN SW 1.8 MΩ\nC2\n4.7μF\nFB\nC1\n10μF EN GND R2 L1: Murata LQH4C6R8M04\n205 kΩ D1: Motorola MBR0530"
+  },
+  {
+    "faiss_index_id": 76,
+    "text": "205 kΩ D1: Motorola MBR0530\nC1: TayoYuden JMK212BJ106MG\nC2: TayoYuden EMK316BJ475ML\nCopyright © 2016,Texas Instruments Incorporated\nFigure 8-8. Standard 3.3-V to 12-V Supply\n3.3μH D1\n5 V/45 mA\nTPS61040 CFF\n3.3 pF\nR1\n1.8 V to 4 V VIN SW\n620 kΩ\nC2\nFB 4.7μF\nC1\n4.7μF R2\nEN GND\n200 kΩ L1:Murata LQH4C3R3M04\nD1:Motorola MBR0530\nC1, C2:TayoYuden JMK212BY475MG\nCopyright © 2016,Texas Instruments Incorporated"
+  },
+  {
+    "faiss_index_id": 77,
+    "text": "Copyright © 2016,Texas Instruments Incorporated\nFigure 8-9. Dual Battery Cell to 5-V/50-mA Conversion Efficiency Approximately Equals 84% at V = 2.4\nIN\nV to Vo = 5 V/45 mA\nCopyright © 2022 Texas Instruments Incorporated Submit Document Feedback 17\nProduct Folder Links: TPS61040 TPS61041TPS61040, TPS61041\nSLVS413K – OCTOBER 2002 – REVISED JULY 2022 www.ti.com\nL1\n10μH D1\nVCC= 2.7 V to 6 V D2\nVIN SW 24 V\n(Optional)\nC1\nFB\n4.7μF\nC2 L1:Murata LQH4C100K04\nPWM EN GND 1μF RS D1:Motorola MBR0530"
+  },
+  {
+    "faiss_index_id": 78,
+    "text": "PWM EN GND 1μF RS D1:Motorola MBR0530\n100 Hz to 500 Hz 82Ω C1:TayoYuden JMK212BY475MG\nC2:TayoYudenTMK316BJ105KL\nCopyright © 2016,Texas Instruments Incorporated\nFigure 8-10. White LED Supply With Adjustable Brightness Control Using a PWM Signal on the Enable\nPin, Efficiency Approximately Equals 86% at V = 3 V, I = 15 mA\nIN LED\nD1\nL1\nMBRM120L\n10μH\nVCC= 2.7 V to 6 V D2 C2\nVIN SW 24 V 100 nF\n(Optional) (See\nNoteA)\nFB\nC1\n4.7μF R1\nEN GND\n120 kΩ\nRS\n110Ω\nL1: Murata LQH4C3R3M04\nD1:Motorola MBR0530"
+  },
+  {
+    "faiss_index_id": 79,
+    "text": "110Ω\nL1: Murata LQH4C3R3M04\nD1:Motorola MBR0530\nAnalog Brightness Control C1:TayoYuden JMK212BY475MG\n3.3 V@Led Off R2 C2:Standard Ceramic Capacitor\n0 V@Iled = 20 mA 160 kΩ\nCopyright © 2016,Texas Instruments Incorporated\nA. A smaller output capacitor value for C2 causes a larger LED ripple.\nFigure 8-11. White LED Supply With Adjustable Brightness Control Using an Analog Signal on the\nFeedback Pin\n18 Submit Document Feedback Copyright © 2022 Texas Instruments Incorporated"
+  },
+  {
+    "faiss_index_id": 80,
+    "text": "Product Folder Links: TPS61040 TPS61041TPS61040, TPS61041\nwww.ti.com SLVS413K – OCTOBER 2002 – REVISED JULY 2022\n9 Power Supply Recommendations\nThe device is designed to operate from an input voltage supply range between 1.8 V and 6 V. The output current\nof the input power supply must be rated according to the supply voltage, output voltage and output current of\nTPS6104x.\n10 Layout\n10.1 Layout Guidelines"
+  },
+  {
+    "faiss_index_id": 81,
+    "text": "TPS6104x.\n10 Layout\n10.1 Layout Guidelines\nTypical for all switching power supplies, the layout is an important step in the design; especially at high peak\ncurrents and switching frequencies. If the layout is not carefully done, the regulator might show noise problems\nand duty cycle jitter.\nThe input capacitor should be placed as close as possible to the input pin for good input voltage filtering. The"
+  },
+  {
+    "faiss_index_id": 82,
+    "text": "inductor and diode should be placed as close as possible to the switch pin to minimize the noise coupling into\nother circuits. Because the feedback pin and network is a high-impedance circuit, the feedback network should\nbe routed away from the inductor. The feedback pin and feedback network should be shielded with a ground\nplane or trace to minimize noise coupling into this circuit.\nWide traces should be used for connections in bold as shown in Figure 10-1. A star ground connection or ground"
+  },
+  {
+    "faiss_index_id": 83,
+    "text": "plane minimizes ground shifts and noise.\n10.2 Layout Example\nVOUT VIN\nSW 1 5 VIN\nT\nP\nS\nGND 2 6\n1\n0\n4\nFB 3 0 4 EN\nGND\nFigure 10-1. Layout Diagram\nCopyright © 2022 Texas Instruments Incorporated Submit Document Feedback 19\nProduct Folder Links: TPS61040 TPS61041TPS61040, TPS61041\nSLVS413K – OCTOBER 2002 – REVISED JULY 2022 www.ti.com\n11 Device and Documentation Support\n11.1 Third-Party Products Disclaimer\nTI'S PUBLICATION OF INFORMATION REGARDING THIRD-PARTY PRODUCTS OR SERVICES DOES NOT"
+  },
+  {
+    "faiss_index_id": 84,
+    "text": "CONSTITUTE AN ENDORSEMENT REGARDING THE SUITABILITY OF SUCH PRODUCTS OR SERVICES\nOR A WARRANTY, REPRESENTATION OR ENDORSEMENT OF SUCH PRODUCTS OR SERVICES, EITHER\nALONE OR IN COMBINATION WITH ANY TI PRODUCT OR SERVICE.\n11.2 Support Resources\nTI E2E™ support forums are an engineer's go-to source for fast, verified answers and design help — straight\nfrom the experts. Search existing answers or ask your own question to get the quick design help you need."
+  },
+  {
+    "faiss_index_id": 85,
+    "text": "Linked content is provided \"AS IS\" by the respective contributors. They do not constitute TI specifications and do\nnot necessarily reflect TI's views; see TI's Terms of Use.\n11.3 Trademarks\nTI E2E™ is a trademark of Texas Instruments.\nAll trademarks are the property of their respective owners.\n11.4 Electrostatic Discharge Caution\nThis integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled"
+  },
+  {
+    "faiss_index_id": 86,
+    "text": "with appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.\nESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may\nbe more susceptible to damage because very small parametric changes could cause the device not to meet its published\nspecifications.\n11.5 Glossary\nTI Glossary This glossary lists and explains terms, acronyms, and definitions."
+  },
+  {
+    "faiss_index_id": 87,
+    "text": "12 Mechanical, Packaging, and Orderable Information\nThe following pages include mechanical, packaging, and orderable information. This information is the most\ncurrent data available for the designated devices. This data is subject to change without notice and revision of\nthis document. For browser-based versions of this data sheet, refer to the left-hand navigation.\n20 Submit Document Feedback Copyright © 2022 Texas Instruments Incorporated"
+  },
+  {
+    "faiss_index_id": 88,
+    "text": "Product Folder Links: TPS61040 TPS61041PACKAGE OPTION ADDENDUM\nwww.ti.com 9-Nov-2025\nPACKAGING INFORMATION\nOrderable part number Status Material type Package | Pins Package qty | Carrier RoHS Lead finish/ MSL rating/ Op temp (°C) Part marking\n(1) (2) (3) Ball material Peak reflow (6)\n(4) (5)\nTPS61040DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 125 PHOI"
+  },
+  {
+    "faiss_index_id": 89,
+    "text": "TPS61040DBVR.B Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 PHOI\nTPS61040DDCR Active Production SOT-23- 3000 | LARGE T&R Yes NIPDAU Level-2-260C-1 YEAR -40 to 125 QXK\nTHIN (DDC) | 5\nTPS61040DDCR.B Active Production SOT-23- 3000 | LARGE T&R Yes NIPDAU Level-2-260C-1 YEAR -40 to 125 QXK\nTHIN (DDC) | 5\nTPS61040DDCT Active Production SOT-23- 250 | SMALL T&R Yes NIPDAU Level-2-260C-1 YEAR -40 to 125 QXK\nTHIN (DDC) | 5"
+  },
+  {
+    "faiss_index_id": 90,
+    "text": "THIN (DDC) | 5\nTPS61040DDCT.B Active Production SOT-23- 250 | SMALL T&R Yes NIPDAU Level-2-260C-1 YEAR -40 to 125 QXK\nTHIN (DDC) | 5\nTPS61040DRVR Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 CCL\nTPS61040DRVR.B Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 CCL\nTPS61040DRVRG4 Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 CCL"
+  },
+  {
+    "faiss_index_id": 91,
+    "text": "TPS61040DRVRG4.B Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 CCL\nTPS61040DRVT Active Production WSON (DRV) | 6 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 CCL\nTPS61040DRVT.B Active Production WSON (DRV) | 6 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 CCL\nTPS61040DRVTG4 Active Production WSON (DRV) | 6 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 125 CCL"
+  },
+  {
+    "faiss_index_id": 92,
+    "text": "TPS61041DBVR Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU | SN Level-1-260C-UNLIM -40 to 85 PHPI\nTPS61041DBVR.B Active Production SOT-23 (DBV) | 5 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 85 PHPI\nTPS61041DRVR Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 85 CAW\nTPS61041DRVR.B Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 85 CAW"
+  },
+  {
+    "faiss_index_id": 93,
+    "text": "TPS61041DRVRG4 Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 85 CAW\nTPS61041DRVRG4.B Active Production WSON (DRV) | 6 3000 | LARGE T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 85 CAW\nTPS61041DRVT Active Production WSON (DRV) | 6 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 85 CAW\nTPS61041DRVT.B Active Production WSON (DRV) | 6 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 85 CAW"
+  },
+  {
+    "faiss_index_id": 94,
+    "text": "TPS61041DRVTG4 Active Production WSON (DRV) | 6 250 | SMALL T&R Yes NIPDAU Level-1-260C-UNLIM -40 to 85 CAW\n(1) Status: For more details on status, see our product life cycle.\nAddendum-Page 1PACKAGE OPTION ADDENDUM\nwww.ti.com 9-Nov-2025\n(2) Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,"
+  },
+  {
+    "faiss_index_id": 95,
+    "text": "reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional\nwaiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.\n(3) RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition."
+  },
+  {
+    "faiss_index_id": 96,
+    "text": "(4) Lead finish/Ball material: Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum\ncolumn width.\n(5) MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown."
+  },
+  {
+    "faiss_index_id": 97,
+    "text": "Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.\n(6) Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part."
+  },
+  {
+    "faiss_index_id": 98,
+    "text": "Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a \"~\" will appear on a part. If a line is indented then it is a continuation of the previous line and the two\ncombined represent the entire part marking for that device."
+  },
+  {
+    "faiss_index_id": 99,
+    "text": "Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and\nmakes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative"
+  },
+  {
+    "faiss_index_id": 100,
+    "text": "and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers\nand other limited information may not be available for release.\nIn no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis."
+  },
+  {
+    "faiss_index_id": 101,
+    "text": "OTHER QUALIFIED VERSIONS OF TPS61040, TPS61041 :\n•Automotive : TPS61040-Q1, TPS61041-Q1\nNOTE: Qualified Version Definitions:\n•Automotive - Q100 devices qualified for high-reliability automotive applications targeting zero defects\nAddendum-Page 2PACKAGE MATERIALS INFORMATION\nwww.ti.com 18-Jun-2025\nTAPE AND REEL INFORMATION\nREEL DIMENSIONS TAPE DIMENSIONS\nK0 P1\nW\nB0\nReel\nDiameter\nCavity A0\nA0 Dimension designed to accommodate the component width"
+  },
+  {
+    "faiss_index_id": 102,
+    "text": "B0 Dimension designed to accommodate the component length\nK0 Dimension designed to accommodate the component thickness\nW Overall width of the carrier tape\nP1 Pitch between successive cavity centers\nReel Width (W1)\nQUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE\nSprocket Holes\nQ1 Q2 Q1 Q2\nQ3 Q4 Q3 Q4 User Direction of Feed\nPocket Quadrants\n*All dimensions are nominal\nDevice Package Package Pins SPQ Reel Reel A0 B0 K0 P1 W Pin1\nType Drawing Diameter Width (mm) (mm) (mm) (mm) (mm) Quadrant"
+  },
+  {
+    "faiss_index_id": 103,
+    "text": "(mm) W1 (mm)\nTPS61040DBVR SOT-23 DBV 5 3000 178.0 9.0 3.23 3.17 1.37 4.0 8.0 Q3\nTPS61040DDCR SOT-23- DDC 5 3000 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3\nTHIN\nTPS61040DDCT SOT-23- DDC 5 250 180.0 8.4 3.2 3.2 1.4 4.0 8.0 Q3\nTHIN\nTPS61040DRVR WSON DRV 6 3000 178.0 8.4 2.25 2.25 1.0 4.0 8.0 Q2\nTPS61040DRVRG4 WSON DRV 6 3000 178.0 8.4 2.25 2.25 1.0 4.0 8.0 Q2\nTPS61040DRVT WSON DRV 6 250 178.0 8.4 2.25 2.25 1.0 4.0 8.0 Q2\nTPS61041DBVR SOT-23 DBV 5 3000 178.0 9.0 3.23 3.17 1.37 4.0 8.0 Q3"
+  },
+  {
+    "faiss_index_id": 104,
+    "text": "TPS61041DRVR WSON DRV 6 3000 178.0 8.4 2.25 2.25 1.0 4.0 8.0 Q2\nTPS61041DRVRG4 WSON DRV 6 3000 178.0 8.4 2.25 2.25 1.0 4.0 8.0 Q2\nTPS61041DRVT WSON DRV 6 250 178.0 8.4 2.25 2.25 1.0 4.0 8.0 Q2\nTPS61041DRVT WSON DRV 6 250 179.0 8.4 2.2 2.2 1.2 4.0 8.0 Q2\nPack Materials-Page 1PACKAGE MATERIALS INFORMATION\nwww.ti.com 18-Jun-2025\nTAPE AND REEL BOX DIMENSIONS\nWidth (mm) H\nW L\n*All dimensions are nominal\nDevice Package Type Package Drawing Pins SPQ Length (mm) Width (mm) Height (mm)"
+  },
+  {
+    "faiss_index_id": 105,
+    "text": "TPS61040DBVR SOT-23 DBV 5 3000 180.0 180.0 18.0\nTPS61040DDCR SOT-23-THIN DDC 5 3000 213.0 191.0 35.0\nTPS61040DDCT SOT-23-THIN DDC 5 250 213.0 191.0 35.0\nTPS61040DRVR WSON DRV 6 3000 205.0 200.0 33.0\nTPS61040DRVRG4 WSON DRV 6 3000 205.0 200.0 33.0\nTPS61040DRVT WSON DRV 6 250 205.0 200.0 33.0\nTPS61041DBVR SOT-23 DBV 5 3000 180.0 180.0 18.0\nTPS61041DRVR WSON DRV 6 3000 205.0 200.0 33.0\nTPS61041DRVRG4 WSON DRV 6 3000 205.0 200.0 33.0\nTPS61041DRVT WSON DRV 6 250 205.0 200.0 33.0"
+  },
+  {
+    "faiss_index_id": 106,
+    "text": "TPS61041DRVT WSON DRV 6 250 205.0 200.0 33.0\nTPS61041DRVT WSON DRV 6 250 203.0 203.0 35.0\nPack Materials-Page 2PACKAGE OUTLINE\nDBV0005A SOT-23 - 1.45 mm max height\nSCALE 4.000\nSMALL OUTLINE TRANSISTOR\n3.0 C\n2.6\n0.1 C\n1.75\n1.45 B A\nPIN 1\nINDEX AREA\n1 5\n2X 0.95 (0.1)\n3.05\n2.75\n1.9 1.9\n2\n(0.15)\n4\n3\n0.5\n5X\n0.3\n0.15\n0.2 C A B NOTE 5 4X 0 -15 (1.1) 0.00 TYP\n1.45\n0.90\n4X 4 -15\n0.25\nGAGE PLANE 0.22\nTYP\n0.08\n8\nTYP 0.6\n0 0.3 TYP SEATING PLANE\n4214839/K 08/2024\nNOTES:"
+  },
+  {
+    "faiss_index_id": 107,
+    "text": "0 0.3 TYP SEATING PLANE\n4214839/K 08/2024\nNOTES:\n1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing\nper ASME Y14.5M.\n2. This drawing is subject to change without notice.\n3. Refernce JEDEC MO-178.\n4. Body dimensions do not include mold flash, protrusions, or gate burrs. Mold flash, protrusions, or gate burrs shall not\nexceed 0.25 mm per side.\n5. Support pin may differ or may not be present."
+  },
+  {
+    "faiss_index_id": 108,
+    "text": "5. Support pin may differ or may not be present.\nwww.ti.comEXAMPLE BOARD LAYOUT\nDBV0005A SOT-23 - 1.45 mm max height\nSMALL OUTLINE TRANSISTOR\nPKG\n5X (1.1)\n1\n5\n5X (0.6)\nSYMM\n(1.9)\n2\n2X (0.95)\n3 4\n(R0.05) TYP (2.6)\nLAND PATTERN EXAMPLE\nEXPOSED METAL SHOWN\nSCALE:15X\nSOLDER MASK\nSOLDER MASK METAL UNDER\nMETAL OPENING\nOPENING SOLDER MASK\nEXPOSED METAL EXPOSED METAL\n0.07 MAX 0.07 MIN\nARROUND ARROUND\nNON SOLDER MASK SOLDER MASK\nDEFINED DEFINED\n(PREFERRED)\nSOLDER MASK DETAILS\n4214839/K 08/2024"
+  },
+  {
+    "faiss_index_id": 109,
+    "text": "(PREFERRED)\nSOLDER MASK DETAILS\n4214839/K 08/2024\nNOTES: (continued)\n6. Publication IPC-7351 may have alternate designs.\n7. Solder mask tolerances between and around signal pads can vary based on board fabrication site.\nwww.ti.comEXAMPLE STENCIL DESIGN\nDBV0005A SOT-23 - 1.45 mm max height\nSMALL OUTLINE TRANSISTOR\nPKG\n5X (1.1)\n1\n5\n5X (0.6)\nSYMM\n2 (1.9)\n2X(0.95)\n3 4\n(R0.05) TYP\n(2.6)\nSOLDER PASTE EXAMPLE\nBASED ON 0.125 mm THICK STENCIL\nSCALE:15X\n4214839/K 08/2024\nNOTES: (continued)"
+  },
+  {
+    "faiss_index_id": 110,
+    "text": "SCALE:15X\n4214839/K 08/2024\nNOTES: (continued)\n8. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate\ndesign recommendations.\n9. Board assembly site may have different recommendations for stencil design.\nwww.ti.comGENERIC PACKAGE VIEW\nDRV 6 WSON - 0.8 mm max height\nPLASTIC SMALL OUTLINE - NO LEAD\nImages above are just a representation of the package family, actual package may vary."
+  },
+  {
+    "faiss_index_id": 111,
+    "text": "Refer to the product data sheet for package details.\n4206925/FPACKAGE OUTLINE\nDRV0006D WSON - 0.8 mm max height\nSCALE 5.500\nPLASTIC SMALL OUTLINE - NO LEAD\nB 2.1 A\n1.9\nPIN 1 INDEX AREA\n2.1\n1.9\n0.8\nC\n0.7\nSEATING PLANE\n0.08 C\n(0.2) TYP\n1 0.1 0.05\nEXPOSED 0.00\nTHERMAL PAD\n3\n4\n2X\n7\n1.3 1.6 0.1\n6\n1\n4X 0.65\n0.35\n6X\nPIN 1 ID 0.3 0.25\n6X\n(OPTIONAL) 0.2 0.1 C A B\n0.05 C\n4225563/A 12/2019\nNOTES:"
+  },
+  {
+    "faiss_index_id": 112,
+    "text": "0.05 C\n4225563/A 12/2019\nNOTES:\n1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing\nper ASME Y14.5M.\n2. This drawing is subject to change without notice.\n3. The package thermal pad must be soldered to the printed circuit board for thermal and mechanical performance.\nwww.ti.comEXAMPLE BOARD LAYOUT\nDRV0006D WSON - 0.8 mm max height\nPLASTIC SMALL OUTLINE - NO LEAD\n6X (0.45)\n(1)\n1 7\n6X (0.3) 6\nSYMM (1.6)\n(1.1)\n4X (0.65)\n4\n3"
+  },
+  {
+    "faiss_index_id": 113,
+    "text": "(1)\n1 7\n6X (0.3) 6\nSYMM (1.6)\n(1.1)\n4X (0.65)\n4\n3\n(R0.05) TYP SYMM\n( 0.2) VIA\n(1.95)\nTYP\nLAND PATTERN EXAMPLE\nEXPOSED METAL SHOWN\nSCALE:25X\n0.07 MAX 0.07 MIN\nALL AROUND ALL AROUND\nEXPOSED EXPOSED\nMETAL METAL\nSOLDER MASK METAL METAL UNDER SOLDER MASK\nOPENING SOLDER MASK OPENING\nNON SOLDER MASK\nDEFINED SOLDER MASK\n(PREFERRED) DEFINED\nSOLDER MASK DETAILS\n4225563/A 12/2019\nNOTES: (continued)"
+  },
+  {
+    "faiss_index_id": 114,
+    "text": "4225563/A 12/2019\nNOTES: (continued)\n4. This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature\nnumber SLUA271 (www.ti.com/lit/slua271).\n5. Vias are optional depending on application, refer to device data sheet. If some or all are implemented, recommended via locations are shown.\nwww.ti.comEXAMPLE STENCIL DESIGN\nDRV0006D WSON - 0.8 mm max height\nPLASTIC SMALL OUTLINE - NO LEAD\nSYMM\n6X (0.45)\nMETAL\n1 7\n6X (0.3) 6\n(0.45)\nSYMM"
+  },
+  {
+    "faiss_index_id": 115,
+    "text": "SYMM\n6X (0.45)\nMETAL\n1 7\n6X (0.3) 6\n(0.45)\nSYMM\n4X (0.65)\n(0.7)\n4\n3\n(R0.05) TYP\n(1)\n(1.95)\nSOLDER PASTE EXAMPLE\nBASED ON 0.125 mm THICK STENCIL\nEXPOSED PAD #7\n88% PRINTED SOLDER COVERAGE BY AREA UNDER PACKAGE\nSCALE:30X\n4225563/A 12/2019\nNOTES: (continued)\n6. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate\ndesign recommendations.\nwww.ti.comPACKAGE OUTLINE\nDRV0006A WSON - 0.8 mm max height\nSCALE 5.500"
+  },
+  {
+    "faiss_index_id": 116,
+    "text": "DRV0006A WSON - 0.8 mm max height\nSCALE 5.500\nPLASTIC SMALL OUTLINE - NO LEAD\nB 2.1 A\n1.9\nPIN 1 INDEX AREA\n2.1\n1.9\n0.1 MIN\n0.08 MAX\nOPTIONAL: SIDE WALL PIN DETAIL\nNOTE 4\n0.8\nC\n0.7\nSEATING PLANE\n0.08 C\n(0.2) TYP\n1 0.1 0.05\nEXPOSED 0.00\nTHERMAL PAD\n3\n4\n2X\n7\n1.3 1.6 0.1\n6\n1\n4X 0.65\n0.35\n6X\nPIN 1 ID 0.3 0.25\n6X\n(OPTIONAL) 0.2 0.1 C A B\n0.05 C\n4222173/C 11/2025\nNOTES:\n1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing"
+  },
+  {
+    "faiss_index_id": 117,
+    "text": "per ASME Y14.5M.\n2. This drawing is subject to change without notice.\n3. The package thermal pad must be soldered to the printed circuit board for thermal and mechanical performance.\n4. Minimum 0.1 mm solder wetting on pin side wall. Available for wettable flank version only.\nwww.ti.comEXAMPLE BOARD LAYOUT\nDRV0006A WSON - 0.8 mm max height\nPLASTIC SMALL OUTLINE - NO LEAD\n6X (0.45)\n(1)\n1 7\n6X (0.3) 6\nSYMM (1.6)\n(1.1)\n4X (0.65)\n4\n3\n(R0.05) TYP SYMM\n( 0.2) VIA\n(1.95)\nTYP\nLAND PATTERN EXAMPLE"
+  },
+  {
+    "faiss_index_id": 118,
+    "text": "( 0.2) VIA\n(1.95)\nTYP\nLAND PATTERN EXAMPLE\nSCALE:25X\n0.07 MAX 0.07 MIN\nALL AROUND ALL AROUND\nSOLDER MASK METAL METAL UNDER SOLDER MASK\nOPENING SOLDER MASK OPENING\nNON SOLDER MASK\nDEFINED SOLDER MASK\n(PREFERRED) DEFINED\nSOLDER MASK DETAILS\n4222173/C 11/2025\nNOTES: (continued)\n5. This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature\nnumber SLUA271 (www.ti.com/lit/slua271)."
+  },
+  {
+    "faiss_index_id": 119,
+    "text": "number SLUA271 (www.ti.com/lit/slua271).\n6. Vias are optional depending on application, refer to device data sheet. If some or all are implemented, recommended via locations\nare shown.\nwww.ti.comEXAMPLE STENCIL DESIGN\nDRV0006A WSON - 0.8 mm max height\nPLASTIC SMALL OUTLINE - NO LEAD\nSYMM\n6X (0.45)\nMETAL\n1 7\n6X (0.3) 6\n(0.45)\nSYMM\n4X (0.65)\n(0.7)\n4\n3\n(R0.05) TYP\n(1)\n(1.95)\nSOLDER PASTE EXAMPLE\nBASED ON 0.125 mm THICK STENCIL\nEXPOSED PAD #7\n88% PRINTED SOLDER COVERAGE BY AREA UNDER PACKAGE"
+  },
+  {
+    "faiss_index_id": 120,
+    "text": "88% PRINTED SOLDER COVERAGE BY AREA UNDER PACKAGE\nSCALE:30X\n4222173/C 11/2025\nNOTES: (continued)\n7. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate\ndesign recommendations.\nwww.ti.comPACKAGE OUTLINE\nDDC0005A SOT-23 - 1.1 max height\nSCALE 4.000\nSMALL OUTLINE TRANSISTOR\n3.05\n1.1\n2.55\n0.7\n1 1 . . 7 4 5 5 B A 0.1 C\nPIN 1\nINDEX AREA\n1 5\nNOTE 4\n0.95\n(0.15)\n3.05\n1.9\n2 2.75\n(0.2)\n3 4X 0 -15\n4\n0.1\n0.5 TYP\n5X 0.0\n0.3"
+  },
+  {
+    "faiss_index_id": 121,
+    "text": "2 2.75\n(0.2)\n3 4X 0 -15\n4\n0.1\n0.5 TYP\n5X 0.0\n0.3\n00..22 CC AA BB\n4X 4 -15\n0.25\nGAGE PLANE 0.20\nTYP\n0.12\n0 -8 TYP C\nSEATING PLANE\n0.6\nTYP\n0.3\n4220752/C 08/2024\nNOTES:\n1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing\nper ASME Y14.5M.\n2. This drawing is subject to change without notice.\n3. Reference JEDEC MO-193.\n4. Support pin may differ or may not be present.\nwww.ti.comEXAMPLE BOARD LAYOUT"
+  },
+  {
+    "faiss_index_id": 122,
+    "text": "www.ti.comEXAMPLE BOARD LAYOUT\nDDC0005A SOT-23 - 1.1 max height\nSMALL OUTLINE TRANSISTOR\nSYMM\n5X (1.1)\n5X (0.6)\n1 5\nSYMM\n2\n4X (0.95)\n4\n3\n(R0.05) TYP\n(2.7)\nLAND PATTERN EXAMPLE\nEXPLOSED METAL SHOWN\nSCALE:15X\nMETAL UNDER SOLDER MASK\nSOLDER MASK\nMETAL SOLDER MASK OPENING\nOPENING\nEXPOSED METAL\nEXPOSED METAL\n0.07 MAX 0.07 MIN\nARROUND ARROUND\nNON SOLDER MASK SOLDER MASK\nDEFINED DEFINED\nSOLDERMASK DETAILS\n4220752/C 08/2024\nNOTES: (continued)\n4. Publication IPC-7351 may have alternate designs."
+  },
+  {
+    "faiss_index_id": 123,
+    "text": "5. Solder mask tolerances between and around signal pads can vary based on board fabrication site.\nwww.ti.comEXAMPLE STENCIL DESIGN\nDDC0005A SOT-23 - 1.1 max height\nSMALL OUTLINE TRANSISTOR\nSYMM\n5X (1.1)\n5X (0.6)\n1 5\nSYMM\n2\n4X(0.95)\n4\n3\n(R0.05) TYP\n(2.7)\nSOLDER PASTE EXAMPLE\nBASED ON 0.125 THICK STENCIL\nSCALE:15X\n4220752/C 08/2024\nNOTES: (continued)\n6. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate"
+  },
+  {
+    "faiss_index_id": 124,
+    "text": "design recommendations.\n7. Board assembly site may have different recommendations for stencil design.\nwww.ti.comIMPORTANT NOTICE AND DISCLAIMER\nTI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE\nDESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”\nAND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY"
+  },
+  {
+    "faiss_index_id": 125,
+    "text": "IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD\nPARTY INTELLECTUAL PROPERTY RIGHTS.\nThese resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate\nTI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable\nstandards, and any other safety, security, regulatory or other requirements."
+  },
+  {
+    "faiss_index_id": 126,
+    "text": "These resources are subject to change without notice. TI grants you permission to use these resources only for development of an\napplication that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license\nis granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully"
+  },
+  {
+    "faiss_index_id": 127,
+    "text": "indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.\nTI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on\nti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable"
+  },
+  {
+    "faiss_index_id": 128,
+    "text": "warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products\nare standard, catalog, general purpose devices.\nTI objects to and rejects any additional or different terms you may propose.\nIMPORTANT NOTICE\nCopyright © 2026, Texas Instruments Incorporated\nLast updated 10/2025"
+  }
+]

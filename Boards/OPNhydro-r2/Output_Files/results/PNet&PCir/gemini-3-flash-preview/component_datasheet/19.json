@@ -1,0 +1,13 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component TMC2209 have a maximum input voltage of 29V according to its datasheet?",
+    "tool_calls": {
+        "arguments": "{\"project_context\":{\"spice_json_file\":\"./outputs/OPNhydro-r2/OPNhydro_r2_SPICE_circuit.json\",\"datasheet_files\":[\"./outputs/OPNhydro-r2/datasheets/U5.pdf\"],\"circuit_json_file\":\"./outputs/OPNhydro-r2/OPNhydro_r2.json\"},\"component_ref\":\"U5\",\"question\":\"Does the component TMC2209 have a maximum input voltage of 29V according to its datasheet?\"}",
+        "name": "get_relevant_context_from_question"
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "The TMC2209 datasheet specifies an absolute maximum rating for the motor supply voltage (VS) of 29V.",
+        "is_final": true
+    }
+}

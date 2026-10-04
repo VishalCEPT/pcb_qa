@@ -1,0 +1,1454 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and\nenergy harvesting\nRev. 3.6 — 21 July 2023 Product data sheet\n1 General description\nDesigned to be the perfect enabler for NFC in home-automation and consumer applications, this feature-\npacked, second-generation connected NFC tag is the fastest, least expensive way to add tap-and-go\nconnectivity to just about any electronic device.\n2 2"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "2 2\nNXPNTAG I C plus is a family of connected NFC tags that combine a passive NFC interface with a contact I C\ninterface. As the second generation of NXP’s industry leading connected-tag technology, these devices maintain\n2\nfull backward compatibility with first-generation NTAG I C products, while adding new, advanced features for\npassword protection, full memory-access configuration from both interfaces, and an originality signature for\nprotection against cloning."
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "protection against cloning.\nThe second-generation technology provides four times higher pass-through performance, along with energy\n2\nharvesting capabilities, yet NTAG I C plus devices are optimized for use in entry-level NFC applications and\noffer the lowest BoM of any NFC solution.\n2\nI C and NFC communications are based on simple, standard command sets, and are augmented by the\ndemo board OM5569/NT322E, which includes online reference source code. All that is required is a simple"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "antenna design, with no or only limited extra components, and there are plenty of reference designs online for\n2\ninspiration. NTAG I C plus development board is certified as NFC Forum Type 2 Tag (Certification ID: 58514).\nI2C\nSRAM\n1 0 1 0 1 0\nEEPROM\nData Energy harvesting\nEvent detection\naaa-030257\n34441\nCEI/OSI MCU\nData\nEnergy Energy\nFigure 1. Contactless and contact systemNXP Semiconductors NT3H2111_2211\n2 2"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2 Features and benefits\n2.1 Key features\n• Interoperability\n–ISO/IEC 14443 Part 2 and 3 compliant\n2\n–NTAG I C plus development board is certified as NFC Forum Type 2 Tag (Certification ID: 58514)\n–Unique 7 byte UID\n–GET_VERSION command for easy identification of chip type and supported features\n–Input capacitance of 50 pF\n• Host interface\n2\n–I C slave"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "• Host interface\n2\n–I C slave\n–Configurable field detection pin based on open-drain implementation to signal NFC events or synchronize\npass-through data transfer\n• Memory\n–2k bytes EEPROM\n2\n–64 bytes SRAM buffer for transfer of data between NFC and I C interfaces with memory mirror or pass-\nthrough mode\n2\n–Clear arbitration between NFC and I C memory access\n• Data transfer\n–Pass-through mode with 64 byte SRAM buffer\n–FAST_WRITE and FAST_READ NFC commands for higher data throughput"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "• Security and memory-access management\n–Full, read-only, or no memory access from NFC interface, based on 32-bit password\n2\n–Full, read-only, or no memory access from I C interface\n–NFC silence feature to disable the NFC interface\n–Originality signature based on Elliptic Curve Cryptography (ECC) for simple, genuine authentication\n• Power Management\n–Configurable field-detection output signal for data-transfer synchronization and device wake-up"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "–Energy harvesting from NFC field, so as to power external devices (e.g. connected microcontroller)\n• Industrial requirements\n–Temperature range from -40 °C up to 105 °C\n2.2 NFC interface\n• NFC Forum Type 2 Tag compliant\n• Contactless transmission of data at 106 kbit/s\n2\n• NTAG I C plus development board is certified as NFC Forum Type 2 Tag (Certification ID: 58514)\n• ISO/IEC 14443A compliant\n• Data transfer of 106 kbit/s"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "• Data transfer of 106 kbit/s\n• 4 bytes (one page) written including all overhead in 4.8 ms via EEPROM or 0.8 ms via SRAM\n• 64 bytes (whole SRAM) written including all overhead in 6.1 ms using FAST_WRITE command\n• Data integrity of 16-bit CRC, parity, bit coding, bit counting\n• Operating distance of up to 100 mm (depending on various parameters, such as field strength and antenna\ngeometry)\n• True anticollision\n• Unique 7 byte serial number (UID) according to ISO/IEC 14443-3"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "NT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n2 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2.3 Memory\n• 2k bytes EEPROM\n• 64 bytes SRAM volatile memory without write endurance limitation\n• Data retention time of minimum 20 years\n• EEPROM write endurance minimum 500.000 cycles\n2"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "• EEPROM write endurance minimum 500.000 cycles\n2\n2.4 I C interface\n2\n• I C slave interface supports frequencies up to 400 kHz\n2\n• Fail-safe I C operation\n2\n• I C slave supports 7-bit slave address.\n• As the least significant R/W bit is used to indicate data transfer direction, default slave address 55h\n2 2\nrecalculates to an I C write address AAh and an I C read address ABh respectively.\n• 16 bytes (one block) written in 4 ms (EEPROM) or 0.4 ms (SRAM)\n2 2 2"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "2 2 2\n• NTAG I C plus can be used as standard I C EEPROM and I C SRAM\n2.5 Security\n• Manufacturer-programmed 7-byte UID for each device\n• Capability container with one time programmable bits\n• Field programmable read-only locking function per page for first 12 pages and per 16 (1k version) or 32 (2k\nversion) pages for the extended memory section\n• ECC-based originality signature\n• 32-bit password protection to prevent unauthorized memory operations from NFC perspective may be"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "enabled for parts of, or complete memory\n2\n• Access to password protected data area may be restricted from I C perspective\n• Pass-through and mirror mode operation may be password protected\n• Protected data can be safeguarded against limited number of negative password authentication attempts\n2.6 Key benefits\n• Full interoperability with every NFC-enabled device\n2\n• Smooth end-user experience with super-fast data exchange (up to 40 kbit/s) via NFC and I C interface"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "• Zero-power operation with non-volatile data storage\n• Energy harvesting feature delivers up to 15 mW out of NFC field to power (parts of) host system\n• Data protection to prevent unauthorized data manipulation\n• Multi-application support, enabled by memory size and segmentation options\n• Lowest bill of materials and smallest footprint for NFC wireless charging solution in embedded electronics"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "NT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n3 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n3 Applications\n2\nNXP NTAG I C plus is a family of connected NFC tags that combine a passive NFC interface with a contact\n2"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "2\nI C interface. As the second generation of NXP’s industry-leading connected-tag technology, these devices\n2\nmaintain full backward compatibility with first-generation NTAG I C products, while adding new, advanced\nfeatures for password protection, full memory-access configuration from both interfaces, and an originality\nsignature for protection against cloning.\nThe second-generation technology provides four times higher pass-through performance, along with energy\n2"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "2\nharvesting capabilities, yet NTAG I C plus devices are optimized for use in NFC applications like:\n• IoT nodes (home automation, smart home, etc.)\n• Pairing and configuration of consumer applications\n• NFC accessories (headsets, speakers, etc.)\n• Wearable infotainment\n• Fitness equipment\n• Consumer electronics\n• Healthcare\n• Smart printers\n• Meters\n• Electronic shelf labels"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "• Meters\n• Electronic shelf labels\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n4 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n4 Ordering information\nTable 1. Ordering information\nOrderable part Package\nnumber\nName Description Version"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "number\nName Description Version\nNT3H2111W0 XQFN8 Plastic, extremely thin quad flat package; no leads; 8 terminals; body 1.6 x SOT902-3\nFHKH 1.6 x 0.5 mm; 1k bytes memory, 50 pF input capacitance; 4000 pcs. on 7''\nreel\nNT3H2211W0 XQFN8 Plastic, extremely thin quad flat package; no leads; 8 terminals; body 1.6 x SOT902-3\nFHKH 1.6 x 0.5 mm; 2k bytes memory, 50 pF input capacitance; 4000 pcs. on 7''\nreel"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "reel\nNT3H2111W0FTTJ TSSOP8 Plastic thin shrink small outline package; 8 leads; body width 3 mm; 1k SOT505-1\nbytes memory; 50 pF input capacitance; 2500 pcs. on 13'' reel\nNT3H2211W0FTTJ TSSOP8 Plastic thin shrink small outline package; 8 leads; body width 3 mm; 2k SOT505-1\nbytes memory; 50 pF input capacitance; 2500 pcs. on 13'' reel\nNT3H2111W0FT1X SO8 Plastic small outline package; 8 leads; body width 3.9 mm, 1k bytes SOT96-1\nmemory; 50 pF input capacitance; 1000 pcs. on 7'' reel"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "NT3H2211W0FT1X SO8 Plastic small outline package; 8 leads; body width 3.9 mm, 2k bytes SOT96-1\nmemory; 50 pF input capacitance; 1000 pcs. on 7'' reel\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n5 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n5 Marking\nTable 2. Marking codes"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "5 Marking\nTable 2. Marking codes\nMarking code\nOrderable part number\nLine 1 Line 2 Line 3\nNT3H2111W0FHKH 211 - -\nNT3H2211W0FHKH 221 - -\nNT3H2111W0FTTJ 32111 DBSN ASID YWW\nNT3H2211W0FTTJ 32211 DBSN ASID YWW\nNT3H2111W0FT1X NT32111 DBSN ASID nDYWW\nNT3H2211W0FT1X NT32211 DBSN ASID nDYWW\nUsed abbreviations:\nDBSN: Diffusion Batch Sequence Number\nASID: Assembly Sequence ID\nn: Assembly Centre Code\nD: RHF-2006 indicator\nY: year\nWW: week"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "D: RHF-2006 indicator\nY: year\nWW: week\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n6 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n6 Block diagram\nVCC GND Vout\nPOWER MANAGEMENT/ I2C\nENERGY HARVESTING SLAVE\nLA DIGITAL CONTROL UNIT MEMORY SDA\nRF ARBITER/STATUS\nINTERFACE REGISTERS I2C"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "RF ARBITER/STATUS\nINTERFACE REGISTERS I2C\nCONTROL\nEEPROM\nLB ANTICOLLISION SCL\nMEMORY\nCOMMAND INTERFACE\nINTERPRETER SRAM\nFD\naaa-010358\nFigure 2. Block diagram\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n7 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n7 Pinning information\n7.1 Pinning"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "7 Pinning information\n7.1 Pinning\n7.1.1 XQFN8\nLB\n8\nLA 1\n7 VOUT\nVSS 2 6 VCC\nSCL 3 5 SDA\n4\nFD\nTransparent top view\naaa-021647\nFigure 3. Pin configuration for XQFN8\nCenter pad - metal area - not for soldering.\nDetailed package and soldering information may be found here.\n7.1.2 TSSOP8\nLA 1 8 LB\nVSS 2 7 VOUT\nSCL 3 6 VCC\nFD 4 5 SDA\naaa-021648\nFigure 4. Pin configuration for TSSOP8\nDetailed package and soldering information may be found here.\n7.1.3 SO8\nLA 1 8 LB\nVSS 2 7 VOUT\nSCL 3 6 VCC\nFD 4 5 SDA"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "LA 1 8 LB\nVSS 2 7 VOUT\nSCL 3 6 VCC\nFD 4 5 SDA\naaa-021649\nFigure 5. Pin configuration for SO8\nDetailed package and soldering information may be found here.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n8 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n7.2 Pin description"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "7.2 Pin description\nTable 3. Pin description for XQFN8, TSSOP8 and SO8\nPin Symbol Description\n1 LA Antenna connection LA\n2 VSS GND\n2\n3 SCL Serial clock I C\n4 FD Field detection\n2\n5 SDA Serial data I C\n6 VCC VCC in connection (external power supply)\n7 VOUT Voltage out (energy harvesting)\n8 LB Antenna connection LB\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "Product data sheet Rev. 3.6 — 21 July 2023\n9 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n8 Functional description\n8.1 Block description\n2\nThe NTAG I C plus IC consist of EEPROM, SRAM, NFC interface, Digital Control Unit (Command interpreter,\n2\nAnticollision, Arbiter/Status registers, I C control and Memory Interface), Power Management and Energy\n2"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "2\nHarvesting Unit and an I C slave interface. Energy and data are transferred via an antenna consisting of a coil\n2\nwith a few turns, which is directly connected to NTAG I C plus IC.\n8.2 NFC interface\nThe passive NFC-interface is based on the ISO/IEC 14443-3 Type A standard.\nIt requires to be supplied by an NFC field (e.g. NFC enabled device) always to be able to receive appropriate\ncommands and send the related responses."
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "commands and send the related responses.\nAs defined in ISO/IEC 14443-3 Type A for both directions of data communication, there is one start bit (start of\ncommunication) at the beginning of each frame. Each byte is transmitted with an odd parity bit at the end. The\nleast significant bit of the byte 0 of the selected block is transmitted first.\nFor a multi-byte parameter, the least significant byte is always transmitted first. For example, when reading from"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "the memory using the READ command, byte 0 from the addressed block is transmitted first, followed by bytes 1\nto byte 3 out of this block. The same sequence continues for the next block and all subsequent blocks.\n8.2.1 Data integrity\nThe following mechanisms are implemented in the contactless communication link between the NFC device and\n2\nthe NTAG I C plus IC to ensure very reliable data transmission:\n• 16 bits CRC per block\n• Parity bits for each byte\n• Bit count checking"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "• Parity bits for each byte\n• Bit count checking\n• Bit coding to distinguish between \"1\", \"0\" and \"no information\"\n• Channel monitoring (protocol sequence and bit stream analysis)\n2\nThe commands are initiated by the NFC device and controlled by the Digital Control Unit of the NTAG I C plus\nIC. The command response depends on the state of the IC, and for memory operations, the access conditions\nvalid for the corresponding page."
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "valid for the corresponding page.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n10 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n8.2.2 NFC state machine\nPOR\nHALT IDLE\nREQA identification\nWUPA\nWUPA and\nselection\nprocedure\nREADY 1 ANTICOLLISION\nSELECT\ncascade level 1"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "READY 1 ANTICOLLISION\nSELECT\ncascade level 1\nHLTA READY 2 ANTICOLLISION\nHLTA\nSELECT\ncascade level 2\nREAD\nFAST_READ\nWRITE\nACTIVE\nFAST_WRITE\nGET_VERSION\nREAD_SIG\nmemory\nPWD_AUTH\noperations\nREAD\nFAST_READ\nWRITE\nAUTHENTICATED\nPWD_AUTH\nGET_VERSION\nREAD_SIG\naaa-021650\n2\nFigure 6. NFC state machine of NTAG I C plus\nThe overall NFC state machine is summarized in Figure 6. When an error is detected or an unexpected"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "command is received, in each state the tag returns to IDLE or HALT state as defined in ISO/IEC 14443-3 Type\nA.\n8.2.2.1 IDLE state\n2\nAfter a Power-On Reset (POR), the NTAG I C plus switches to the default waiting state, namely the IDLE state.\nIt exits IDLE towards READY 1 state when a REQA or a WUPA command is received from the NFC device. Any\n2\nother data received while in IDLE state is interpreted as an error, and the NTAG I C plus remains in the IDLE\nstate.\n8.2.2.2 READY 1 state"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "state.\n8.2.2.2 READY 1 state\nIn the READY 1 state, the NFC device resolves the first part of the UID (3 bytes) using the ANTICOLLISION or\nSELECT commands for cascade level 1. READY 1 state is correctly exited after.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n11 / 84NXP Semiconductors NT3H2111_2211\n2 2"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "11 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n• receiving SELECT command from cascade level 1 with the matching of complete first part of the UID. In this\n2\ncase, the NFC device switches the NTAG I C plus into READY 2 state where the second part of the UID gets\nresolved.\n2\nRemark: The response of the NTAG I C plus to the SELECT command is the Select AcKnowledge (SAK) byte"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "with cascade bit set to 1b indicating that UID is not complete.\n8.2.2.3 READY 2 state\nIn the READY 2 state, the NFC device resolves the second part of the UID (4 bytes) using the ANTICOLLISION\nor SELECT command for cascade level 2. READY2 state is correctly exited after.\n• receiving SELECT command from cascade level 2 with the matching of complete second part of the UID.\n2\nIn this case, the NFC device switches the NTAG I C plus into ACTIVE state where all application-related"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "commands can be executed.\n2\nRemark: The response of the NTAG I C plus to the SELECT command in READY 2 state is the Select\n2\nAcKnowledge (SAK) byte with cascade bit cleared to indicate, that NTAG I C plus is now uniquely selected and\nonly this device will communicate with the NFC device even when other contactless devices are present in the\nNFC device field.\n8.2.2.4 ACTIVE state\nAll unprotected memory operations are operated in the ACTIVE and AUTHENTICATED states."
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "The ACTIVE state is exited with the PWD_AUTH command or with the HLTA command.\n2\nUpon reception of a correct password within PWD_AUTH command, the NTAG I C plus transits to\nAUTHENTICATED state after responding with PACK.\n2\nWith the HLTA command, the NTAG I C plus transits to the HALT state.\nAny other invalid command in ACTIVE state is interpreted as an error. Depending on its previous state, the\n2\nNTAG I C plus returns to either to the IDLE or HALT state.\n8.2.2.5 AUTHENTICATED state"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "8.2.2.5 AUTHENTICATED state\nProtected memory operations are only operated in the AUTHENTICATED state, however access to the\nunprotected memory is possible, too.\n2\nThe AUTHENTICATED state is exited with the HLTA command and upon reception, the NTAG I C plus transits\nto the HALT state.\nAny other invalid command in AUTHENTICATED state is interpreted as an error. Depending on its previous\n2\nstate, the NTAG I C plus returns to either to the IDLE or HALT state.\n8.2.2.6 HALT state\n2"
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "8.2.2.6 HALT state\n2\nHALT and IDLE states constitute the two waiting states implemented in the NTAG I C plus. An already\n2\nprocessed NTAG I C plus in ACTIVE or AUTHENTICATED state can be set into the HALT state using the HLTA\ncommand. In the anticollision phase, this state helps the NFC device distinguish between processed tags and\n2\ntags yet to be selected. The NTAG I C plus can only exit HALT state upon execution of the WUPA command.\n2"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "2\nAny other data received when the device is in this state is interpreted as an error, and NTAG I C plus state\nremains unchanged.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n12 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n8.3 Memory organization"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "8.3 Memory organization\nThe memory map is detailed in Table 4 (1k memory) and Table 5 (2k memory) from the NFC interface and in\n2\nTable 6 (1k memory) and Table 7 (2k memory) from the I C interface. The SRAM memory is only available and\naccessible when powered via VCC. Please refer to Section 11 for examples of memory map from the NFC\ninterface with SRAM mapping.\nThe structure of manufacturing data, static and dynamic lock bytes, capability container and user memory"
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "pages are compatible with other NTAG products.\nAny memory access which starts at a valid address and extends into an invalid access region will return 00h\nvalue for the invalid region.\nBits and bytes marked as reserved for future use (RFU) SHALL NOT be changed, as it may lead to unintended\ntag behavior.\n8.3.1 Memory map from NFC perspective\nMemory access from the NFC perspective is organized in pages of 4 bytes each. If password protection is not\nused, complete user memory is unprotected."
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "used, complete user memory is unprotected.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n13 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2\nTable 4. NTAG I C plus 1k memory organization from the NFC perspective\nSector Page address Byte number within a page Access cond. Access cond."
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "address Dec. Hex. 0 1 2 3 ACTIVE state AUTH. state\n0 0 00h Serial number (UID) READ\n1 01h Serial number (UID) Internal READ\n2 02h Internal Static lock bytes READ/R&W\n3 03h Capability Container (CC) READ&WRITE\n4 04h\nUnprotected user memory READ&WRITE\n... ...\nAUTH0 AUTH0\n1\n... ... Protected user memory READ READ&WRITE\n225 E1h\n226 E2h Dynamic lock bytes 00h R&W/READ\n1\n227 E3h RFU RFU RFU AUTH0 READ READ&WRITE\n1\n228 E4h ACCESS RFU RFU RFU READ READ&WRITE\n2 1\n229 E5h PWD READ READ&WRITE\n2 1"
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "2 1\n229 E5h PWD READ READ&WRITE\n2 1\n230 E6h PACK RFU RFU READ READ&WRITE\n1\n231 E7h PT_I2C RFU RFU RFU READ READ&WRITE\n232 E8h\nConfiguration registers see Table 11\n233 E9h\n234 EAh\nInvalid access - returns NAK n.a.\n235 EBh\n236 ECh\nSession registers see Table 12\n237 EDh\n238 EEh\nInvalid access - returns NAK n.a.\n239 EFh\n240 F0h\n... ... Invalid access - returns NAK n.a.\n255 FFh\n1 ... ... Invalid access - returns NAK n.a.\n2 ... ... Invalid access - returns NAK n.a.\n3 0 00h"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "3 0 00h\nInvalid access - returns NAK n.a.\n... ...\n248 F8h\nMirrored session registers see Table 12\n249 F9h\n... ...\nInvalid access - returns NAK n.a.\n255 FFh\n1 2\nIf NFC_PROT bit is set to 1b, NTAG I C plus returns NAK, and Password authentication will not be effective.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n14 / 84NXP Semiconductors NT3H2111_2211\n2 2"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "14 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2\nTable 4. NTAG I C plus 1k memory organization from the NFC perspective...continued\nSector Page address Byte number within a page Access cond. Access cond.\naddress Dec. Hex. 0 1 2 3 ACTIVE state AUTH. state\n2 2\nOn reading PWD or PACK, NTAG I C plus always returns 00h for all bytes"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "NT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n15 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2\nTable 5. NTAG I C plus 2k memory organization from the NFC perspective\nSector Page address Byte number within a page Access cond. Access cond."
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "address Dec. Hex. 0 1 2 3 ACTIVE state AUTH. state\n0 0 00h Serial number (UID) READ\n1 01h Serial number (UID) Internal READ\n2 02h Internal Static lock bytes READ/R&W\n3 03h Capability Container (CC) READ&WRITE\n4 04h\nUnprotected user memory READ&WRITE\n... ...\nAUTH0 AUTH0\n1\n... ... Protected user memory READ READ&WRITE\n225 E1h\n226 E2h Dynamic lock bytes 00h R&W/READ\n1\n227 E3h RFU RFU RFU AUTH0 READ READ&WRITE\n1\n228 E4h ACCESS RFU RFU RFU READ READ&WRITE\n2 1\n229 E5h PWD READ READ&WRITE\n2 1"
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "2 1\n229 E5h PWD READ READ&WRITE\n2 1\n230 E6h PACK RFU RFU READ READ&WRITE\n1\n231 E7h PT_I2C RFU RFU RFU READ READ&WRITE\n232 E8h\nConfiguration registers see Table 11\n233 E9h\n234 EAh\nInvalid access - returns NAK n.a.\n235 EBh\n236 ECh\nSession registers see Table 12\n237 EDh\n238 EEh\n... ... Invalid access - returns NAK n.a.\n255 FFh\n0 00h\n3,4 see protected user\n1 ... ... (Un-)protected user memory\nmemory in Sector 0\n255 FFh\n2 ... ... Invalid access - returns NAK n.a.\n3 0 00h"
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "3 0 00h\nInvalid access - returns NAK n.a.\n... ...\n248 F8h\nMirrored session registers see Table 12\n249 F9h\n... ...\nInvalid access - returns NAK n.a.\n255 FFh\n1 2\nIf NFC_PROT bit is set to 1b, NTAG I C plus returns NAK, and Password authentication will not be effective.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n16 / 84NXP Semiconductors NT3H2111_2211\n2 2"
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "16 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2\nTable 5. NTAG I C plus 2k memory organization from the NFC perspective...continued\nSector Page address Byte number within a page Access cond. Access cond.\naddress Dec. Hex. 0 1 2 3 ACTIVE state AUTH. state\n2 2\nOn reading PWD or PACK, NTAG I C plus always returns 00h for all bytes\n3 2"
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "3 2\nIf 2K_PROT bit is set to 1b, complete Sector 1 of NTAG I C plus is password protected\n4 2\nIf NFC_DIS_SEC1 bit is set to 1b, complete Sector 1 of NTAG I C plus is not accessible from NFC perspective\n2\nRemark: Although NTAG I C plus is fully compliant to the standard, some outdated mobiles might not parse it well.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "Product data sheet Rev. 3.6 — 21 July 2023\n17 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2\n8.3.2 Memory map from I C interface\n2 2\nThe memory access of NTAG I C plus from the I C interface is organized in blocks of 16 bytes each.\n2\nI C slave address is stored in most significant 7 bits of byte 0 in block 0. However, when reading block 0, NTAG\n2\nI C plus always returns 04h for byte 0."
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "2\nI C plus always returns 04h for byte 0.\nWARNING: When configuring Static lock bytes and Capability container, Address byte gets updated, too.\nAddress byte consists of slave address (coded in most significant 7 bits) and least significant bit set to 0b.\nREMARK: For convenience reasons it is recommended to configure Address byte (block 0, byte 0) to 04h.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved."
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "Product data sheet Rev. 3.6 — 21 July 2023\n18 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2 2\nTable 6. NTAG I C plus 1k memory organization from the I C perspective\nByte number within a block Access conditions\nI 2 C block 0 1 2 3\n2\nI C_PROT\naddress 4 5 6 7\n8 9 10 11\n00b 01b 1xb\nDec. Hex. 12 13 14 15\n1\n0 00h Addr. Serial number (UID)\nSerial number (UID) Internal\nREAD&WRITE\nInternal Static lock bytes"
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "READ&WRITE\nInternal Static lock bytes\nCapability Container (CC)\n1 01h\nUnprotected user memory READ&WRITE\n... ...\nAUTH0 AUTH0\n... ... Protected user memory READ&WRITE READ NAK\n55 37h\n56 38h Protected user memory READ&WRITE READ NAK\nDynamic lock bytes 00h\nRFU RFU RFU AUTH0\n57 39h ACCESS RFU RFU RFU\nREAD&WRITE\n2\nPWD\n2\nPACK RFU RFU\nPT_I2C RFU RFU RFU\n58 3Ah Configuration\nsee Table 11\nregisters\n00h 00h 00h 00h\nREAD\n00h 00h 00h 00h\n59 3Bh\n... ... Invalid access - returns NAK n.a.\n247 F7h\n248 F8h"
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "247 F7h\n248 F8h\n... ... SRAM memory (64 bytes) READ&WRITE\n251 FBh\n... ... Invalid access - returns NAK n.a.\n254 FEh Session\nsee Table 12\nregisters\n00h 00h 00h 00h\nREAD\n00h 00h 00h 00h\n255 FFh Invalid access - returns NAK n.a.\n1 The byte 0 of block 0 is always read as 04h (UID0). Writing to block 0 updates the I 2 C address.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "Product data sheet Rev. 3.6 — 21 July 2023\n19 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2 2\nTable 6. NTAG I C plus 1k memory organization from the I C perspective...continued\nByte number within a block Access conditions\nI 2 C block 0 1 2 3\n2\nI C_PROT\naddress 4 5 6 7\n8 9 10 11\n00b 01b 1xb\nDec. Hex. 12 13 14 15\n2 On reading PWD and PACK, NTAG I 2 C plus always returns 00h for all bytes"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "NT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n20 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2 2\nTable 7. NTAG I C plus 2k memory organization from the I C perspective\nByte number within a block Access conditions\nI 2 C block 0 1 2 3\n2\nI C_PROT\naddress 4 5 6 7\n8 9 10 11\n00b 01b 1xb"
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "2\nI C_PROT\naddress 4 5 6 7\n8 9 10 11\n00b 01b 1xb\nDec. Hex. 12 13 14 15\n1\n0 00h Addr. Serial number (UID)\nSerial number (UID) Internal\nREAD&WRITE\nInternal Static lock bytes\nCapability Container (CC)\n1 01h\nUnprotected user memory READ&WRITE\n... ...\nAUTH0 AUTH0\nProtected user memory READ&WRITE READ NAK\n... ...\n56 38h Protected user memory READ&WRITE READ NAK\nProtected user memory\nDynamic lock bytes 00h\nRFU RFU RFU AUTH0\n57 39h ACCESS RFU RFU RFU\nREAD&WRITE\nPWD2\nPACK2 RFU RFU\nPT_I2C RFU RFU RFU"
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "READ&WRITE\nPWD2\nPACK2 RFU RFU\nPT_I2C RFU RFU RFU\n58 3Ah Configuration\nsee Table 11\nregisters\n00h 00h 00h 00h\nREAD\n00h 00h 00h 00h\n... ... Invalid access - returns NAK n.a.\n64 40h\n... ... (Un-)protected user memory READ&WRITE READ NAK\n127 7Fh\n... ... Invalid access - returns NAK n.a.\n248 F8h\n... ... SRAM memory (64 bytes) READ&WRITE\n251 FBh\n... ... Invalid access - returns NAK n.a.\n254 FEh Session\nsee Table 12\nregisters\n00h 00h 00h 00h\nREAD\n00h 00h 00h 00h"
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "registers\n00h 00h 00h 00h\nREAD\n00h 00h 00h 00h\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n21 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2 2\nTable 7. NTAG I C plus 2k memory organization from the I C perspective...continued\nByte number within a block Access conditions"
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "Byte number within a block Access conditions\nI 2 C block 0 1 2 3\n2\nI C_PROT\naddress 4 5 6 7\n8 9 10 11\n00b 01b 1xb\nDec. Hex. 12 13 14 15\n255 FFh Invalid access - returns NAK n.a.\n1 The byte 0 of block 0 is always read as 04h (UID0). Writing to block 0 updates the I 2 C address.\n2 On reading PWD and PACK, NTAG I 2 C plus always returns 00h for all bytes\n8.3.3 EEPROM\nThe EEPROM is a non-volatile memory that stores the 7 byte UID, the memory lock conditions, IC configuration"
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "information and the user memory.\n2\nSector 0 memory map looks totally the same for NTAG I C plus 1k and 2k version, the only difference is the\ndynamic lock bit granularity.\n2\nNXP introduced with NTAG I C plus the possibility to split the memory in an open and a password protected\narea see Section 8.3.11.\n8.3.4 SRAM\nFor frequently changing data, a volatile memory of 64 bytes with unlimited endurance is built in. The 64 bytes"
+  },
+  {
+    "faiss_index_id": 68,
+    "text": "are mapped in a similar way as done in the EEPROM, i.e., 64 bytes are seen as 16 pages of 4 bytes from NFC\nperspective.\nThe SRAM is only available when the tag is powered via the VCC pin.\n2\nThe SRAM is located at the end of the memory space and it is always directly accessible by the I C host\n(addresses F8h to FBh). An NFC device cannot access the SRAM memory in normal mode (i.e., outside\nthe pass-through mode). The SRAM is only accessible by the NFC device if the SRAM is mirrored onto the"
+  },
+  {
+    "faiss_index_id": 69,
+    "text": "EEPROM memory space.\nWith SRAM mirror enabled (SRAM_MIRROR_ON_OFF = 1b - see Section 11.2), the SRAM can be mirrored in\nthe User Memory from start page 01h to 74h for access from the NFC side.\nThe Memory mirror must be enabled once both interfaces are ON as this feature is disabled after each POR.\nThe register SRAM_MIRROR_BLOCK (see Table 11) indicates the address of the first page of the SRAM buffer."
+  },
+  {
+    "faiss_index_id": 70,
+    "text": "In the case where the SRAM mirror is enabled and the READ command is addressing blocks where the SRAM\nmirror is located, the SRAM byte values will be returned instead of the EEPROM byte values. Similarly, if the tag\nis not VCC powered, the SRAM mirror is disabled and reading out the bytes related to the SRAM mirror position\nwould return the values from the EEPROM.\nIn the pass-through mode (PTHRU_ON_OFF = 1b - see Table 11), the SRAM is mirrored to the fixed address\n2"
+  },
+  {
+    "faiss_index_id": 71,
+    "text": "2\nF0h - FFh for NFC access (see Section 11) in the first memory sector (Sector 0) of NTAG I C plus.\n8.3.5 Serial number (UID)\nThe unique 7 byte serial number (UID) is programmed into the first 7 bytes of memory covering page addresses\n00h and 01h - see Figure 7. These bytes are programmed and write protected during production.\nUID0 is fixed to the value 04h - the manufacturer ID for NXP Semiconductors in accordance with ISO/\nIEC 7816-6."
+  },
+  {
+    "faiss_index_id": 72,
+    "text": "IEC 7816-6.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n22 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nMSB LSB\n0 0 0 0 0 1 0 0 manufacturer ID for NXP Semiconductors (04h)\npage 0 page 1 page 2\nbyte UID0 UID1 UID2 UID3 UID4 UID5 UID6 SAK 0 1 2 3\n7 bytes UID ATQA0\nATQA1\nlock bytes"
+  },
+  {
+    "faiss_index_id": 73,
+    "text": "7 bytes UID ATQA0\nATQA1\nlock bytes\naaa-012802\nFigure 7. Serial number (UID)\n8.3.6 Static Lock Bytes\nAccording to NFC Forum Type 2 Tag specification, the bits of byte 2 and byte 3 of page 02h (via NFC) or byte\n2\n10 and 11 address 00h (via I C) represent the field programmable, read-only locking mechanism (see Figure 8).\nEach page from 03h (CC) to 0Fh can be individually locked by setting the corresponding locking bit to logic 1b"
+  },
+  {
+    "faiss_index_id": 74,
+    "text": "to prevent further write access. After locking, the corresponding page becomes read-only memory.\nThis read only locking is address-based. This means, when SRAM is mirrored to these blocks, also SRAM\nblocks are read only from NFC perspective.\n2\nIn addition, NTAG I C plus uses the three least significant bits of lock byte 0 as the block-locking bits. Bit 2\ncontrols pages 0Ah to 0Fh (via NFC), bit 1 controls pages 04h to 09h (via NFC) and bit 0 controls page 03h"
+  },
+  {
+    "faiss_index_id": 75,
+    "text": "(CC). Once the block-locking bits are set, the locking configuration for the corresponding memory area is frozen,\ne.g. cannot be changed to read-only anymore.\nMSB LSB MSB LSB\nL L L L L BL BL BL L L L L L L L L\n7 6 5 4 CC 15-10 9-4 CC 15 14 13 12 11 10 9 8\npage 2\n0 1 2 3\nlock byte 0 Lx locks page x to read-only\nlock byte 1 BLx blocks further locking for the memory area x aaa-006983\nFigure 8. Static lock bytes 0 and 1"
+  },
+  {
+    "faiss_index_id": 76,
+    "text": "Figure 8. Static lock bytes 0 and 1\nFor example, if BL15-10 is set to logic 1b, then bits L15 to L10 (lock byte 1, bit[7:2]) can no longer be changed.\nThe static locking and block-locking bits are set by the bytes 2 and 3 of the WRITE command to page 02h. The\ncontents of the lock bytes are bit-wise OR’ed and the result then becomes the new content of the lock bytes.\nThis process is irreversible from NFC perspective. If a bit is set to logic 1b, it cannot be changed back to logic\n2 2"
+  },
+  {
+    "faiss_index_id": 77,
+    "text": "2 2\n0b. From I C perspective, the bits can be reset to 0b by writing bytes 10 and 11 of block 00h. As I C address is\ncoded in byte 0 of block 0, it may be changed unintentionally.\nThe contents of bytes 0 and 1 of page 02h (via NFC) are unaffected by the corresponding data bytes of the\nWRITE command.\nThe default value of the static lock bytes is 0000h.\n8.3.7 Dynamic Lock Bytes\n2\nTo lock the pages of NTAG I C plus starting at page address 16 and onwards, the dynamic lock bytes are used."
+  },
+  {
+    "faiss_index_id": 78,
+    "text": "The dynamic lock bytes are located in Sector 0 at page E2h. The three lock bytes cover the memory area of\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n23 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2 2"
+  },
+  {
+    "faiss_index_id": 79,
+    "text": "2 2\n840 data bytes (NTAG I C plus 1k) or 1864 data bytes (NTAG I C plus 2k). The granularity is 16 pages for\n2 2\nNTAG I C plus 1k (see Figure 9) and 32 pages for NTAG I C plus 2k (see Figure 10) compared to a single page\nfor the first 48 bytes.\n2\nNTAG I C plus needs a Lock Control TLV as specified in NFC Forum Type 2 Tag specification to ensure NFC\nForum Type 2 Tag compliancy.\nWhen NFC Forum Type 2 Tag transition to READ ONLY state is intended, all bits marked as RFUI and dynamic"
+  },
+  {
+    "faiss_index_id": 80,
+    "text": "lock bits related to the protected area shall be set to 0b when writing to the dynamic lock bytes.\nThe default value of the dynamic lock bytes is 000000h. The value of Byte 3 is always 00h.\nLike for the static lock bytes, this process of modifying the dynamic lock bits is irreversible from NFC\nperspective and applies also for potentially mirrored SRAM. If a bit is set to logic 1b, it cannot be changed back\n2\nto logic 0b. From I C interface, these bits can be set to 0b again."
+  },
+  {
+    "faiss_index_id": 81,
+    "text": "page 226 (E2h) 0 1 2 3\naaa-008092\nEGAP\nKCOL\n341-821\nMSB LSB\nbit 7 6\nEGAP\nKCOL\n721-211\nEGAP\nKCOL\n111-69\nEGAP\nKCOL\n59-08\nEGAP\nKCOL\n97-46\nEGAP\nKCOL\n36-84\nEGAP\nKCOL\n74-23\nEGAP\nKCOL\n13-61\nEGAP\nKCOL\n522-422\n5 4 3 2 1 0\nIUFR\nMSB LSB\nbit 7 6\nIUFR\nEGAP\nKCOL\n322-802\nEGAP\nKCOL\n702-291\nEGAP\nKCOL\n191-671\nEGAP\nKCOL\n571-061\nEGAP\nKCOL\n951-441\n5 4 3 2 1 0\nIUFR\nMSB LSB\nbit 7 6\n522-802\nLB\n702-671\nLB\n571-441\nLB\n341-211\nLB\n111-08\nLB\n97-84\nLB\n74-61\nLB\n5 4 3 2 1 0\n2"
+  },
+  {
+    "faiss_index_id": 82,
+    "text": "LB\n111-08\nLB\n97-84\nLB\n74-61\nLB\n5 4 3 2 1 0\n2\nFigure 9. NTAG I C plus1k Dynamic lock bytes 0, 1 and 2\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n24 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\npage 226 (E2h)\n0 1 2 3\nSector 0\nBlock Locking (BL) bits\nEGAP\nKCOL\n172-652\nMSB LSB MSB LSB"
+  },
+  {
+    "faiss_index_id": 83,
+    "text": "EGAP\nKCOL\n172-652\nMSB LSB MSB LSB\nbit 7 6 5 4 3 2 1 0 bit 7 6 5 4 3 2 1 0\nMSB LSB\nbit 7 6 5 4 3 2 1 0\naaa-021651\nEGAP\nKCOL\n522-802\nEGAP\nKCOL\n702-671\nEGAP\nKCOL\n571-441\nEGAP\nKCOL\n341-211\nEGAP\nKCOL\n111-08\nEGAP\nKCOL\n97-84\nEGAP\nKCOL\n74-61\nEGAP\nKCOL\n115-464\nLB\n115-694\nEGAP\nKCOL\n364-004\nLB\n594-464\nEGAP\nKCOL\n993-633\nLB\n364-234\nEGAP\nKCOL\n533-272\nLB\n134-004\nEGAP\nKCOL\n172-802\nLB\n993-863\nEGAP\nKCOL\n702-441\nLB\n763-633\nEGAP\nKCOL\n341-08\nLB\n533-403\nEGAP\nKCOL\n97-61\nLB\n303-272\n2"
+  },
+  {
+    "faiss_index_id": 84,
+    "text": "341-08\nLB\n533-403\nEGAP\nKCOL\n97-61\nLB\n303-272\n2\nFigure 10. NTAG I C plus 2k Dynamic lock bytes 0, 1 and 2\n8.3.8 Capability Container (CC)\nAccording to NFC Forum Type 2 Tag specification the CC is located on page 03h. To keep full flexibility to split\nthe memory into an open and protected area, the default value of the CC is initialized with 00000000h during\nthe IC production.\nNDEF messages can only be written with NFC Forum devices, after setting these CC bytes according to\n2"
+  },
+  {
+    "faiss_index_id": 85,
+    "text": "2\napplication-specific needs and NFC Forum specification by a WRITE command from the I C or NFC interface.\nAccording to NFC Forum specification, a bit once set to 1b, an NFC Forum Device cannot set bits of the CC\n2\nback to 0b. However, similar to the lock bits, setting these bits back to 0b is again possible from I C perspective.\n2 2\nWARNING: As I C address (byte 0) and static lock bytes (byte 10 and byte 11) are coded in block 00h from I C\n2"
+  },
+  {
+    "faiss_index_id": 86,
+    "text": "2\nside, the I C address may be changed or the tag may be locked unintentionally, when changing CC.\n2\nREMARK: When reading out byte 0, NTAG I C plus always returns 04h (UID0). Therefore, for convenience\n2\nreasons it is recommended to configure I C address byte to 04h.\nNXP recommends setting the size parameter of the CC only to values that the T2T_Area ends at lock bit\ngranularity boundaries when using only part of the memory for storing NDEF messages. Consequently"
+  },
+  {
+    "faiss_index_id": 87,
+    "text": "T2T_Area size should be 112 + 64*N or 888 bytes with N less or equal to 13 for the 1k version, or 176 + 128*N\nor 2032 bytes with N less or equal to 14 for the 2k version.\nIn Figure 11 it is shown how the CC is changed when going from READ/WRITE to READ ONLY state according\nto NFC Forum.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023"
+  },
+  {
+    "faiss_index_id": 88,
+    "text": "Product data sheet Rev. 3.6 — 21 July 2023\n25 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\npage 3 Example\nbyte 0 1 2 3 possible content after initialization CC bytes\nbyte E1h 10h 6Dh 00h 11100001 00010000 01101101 00000000\nwrite command to page 3 over RF\nCC bytes\n00000000 00000000 00000000 00001111\nresult in page 3 (read-only state over RF)\n11100001 00010000 01101101 00001111\naaa-021725\n2"
+  },
+  {
+    "faiss_index_id": 89,
+    "text": "11100001 00010000 01101101 00001111\naaa-021725\n2\nFigure 11. Possible configuration of CC bytes of NTAG I C plus 1k version\n8.3.9 User Memory pages\nPages 04h to E1h of Sector 0 via the NFC interface - Block 01h to 37h, plus the first 8 bytes of block 38h via the\n2 2\nI C interface is the user memory area for NTAG I C plus 1k and 2k version.\n2\nIn addition, complete Sector 1 (page 00h to FFh) via the NFC interface - block 40h to 7Fh via the I C interface is\n2"
+  },
+  {
+    "faiss_index_id": 90,
+    "text": "2\nused as user memory area for NTAG I C plus 2k version.\n8.3.10 Memory content at delivery\nAs described above the CC in page 03h is set to all 00h to keep the full flexibility. To allow NFC Forum NDEF\n2\nmessage reading and writing page 03h (CC) and the following data page (NDEF TLV) of NTAG I C plus need\nto be initialized by the user according to the NFC Forum Type 2 Tag specification. Table 8 shows an example of\nNFC Forum-compliant content using the whole memory of sector 0 for NDEF messages."
+  },
+  {
+    "faiss_index_id": 91,
+    "text": "Remark: The default content of the data pages from page 04h onwards is not defined at delivery.\n2\nTable 8. Minimum memory content to be in initialized state for NTAG I C plus\nPage Address Byte number within page\n0 1 2 3\n03h E1h 10h 6Dh 00h\n04h 03h 00h FEh 00h\n8.3.11 Password and Access Configuration\n2\nNTAG I C plus can be configured to have password protected memory areas.\nIf this feature is used, NXP recommends changing and diversify the PWD and PACK for every single chip."
+  },
+  {
+    "faiss_index_id": 92,
+    "text": "The password and access configuration area of pages E3h to E7h (Sector 0 - see Table 9) via the NFC\n2\ninterface or blocks 38h and 39h via the I C interface are used to configure the password and access conditions\n2\nof the NTAG I C plus. Those bit values are stored in the EEPROM. Their values can be read and written by both\ninterfaces when applicable and when not locked by the register lock bits (see REG_LOCK in Table 11)."
+  },
+  {
+    "faiss_index_id": 93,
+    "text": "AUTH0 defines the starting page address of the protected area in Sector 0. NXP recommends setting AUTH0 in\na way always respecting the lock bit granularity. Setting AUTH0 greater EBh, disables password protection.\nThe NFC_PROT bit is used to either only require a PWD_AUTH for writing data to the protected area or even\nprotect reading data from the protected area.\nIf password authentication is used, even the SRAM access can be protected by setting SRAM_PROT bit to 1b."
+  },
+  {
+    "faiss_index_id": 94,
+    "text": "NT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n26 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2\nI2C_PROT enables the possibility to limit access to the protected area from I C perspective to read only or no\naccess at all.\nAUTLIM value can be used to limit negative PWD_AUTH attempts.\n2"
+  },
+  {
+    "faiss_index_id": 95,
+    "text": "2\nFor the 2k version of NTAG I C plus NFC_DIS_SEC1 bit can be used to disable the access to Sector 1 from\nNFC perspective with the 2K_PROT bit password protection for Sector 1 can be enabled.\nOnce password protection is enabled, writing to Password and Access Configuration bytes is only possible after\n2 2\na successful password authentication. On reading the PWD or PACK, from NFC or I C perspective, NTAG I C\nplus always returns all 00h bytes."
+  },
+  {
+    "faiss_index_id": 96,
+    "text": "plus always returns all 00h bytes.\nA detailed description of the mechanism and how to program all the parameters is given in Section 8.7.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n27 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nTable 9. Password and Access Configuration Register"
+  },
+  {
+    "faiss_index_id": 97,
+    "text": "NFC page address\n2\nI C block address Byte number from NFC perspective\n(Sector 0)\nDec Hex Dec Hex 0 1 2 3\n224 E0h 56 38h\nUser Memory\n225 E1h\n226 E2h Dynamic lock bytes 00h\n227 E3h RFU RFU RFU AUTH0\n228 E4h 57 39h ACCESS RFU RFU RFU\n229 E5h PWD\n230 E6h PACK RFU RFU\n231 E7h PT_I2C RFU RFU RFU\nTable 10. Password and Access Configuration bytes\nAccess Access Default\nBit Field Description\n2\nvia NFC via I C values\nAuthentication Pointer (AUTH0)"
+  },
+  {
+    "faiss_index_id": 98,
+    "text": "Authentication Pointer (AUTH0)\n7-0 AUTH0 R&W R&W FFh Page address of Sector 0 from which onwards the password\nauthentication is required to access the user memory from NFC\nperspective, dependent on NFC_PROT bit.\nIf AUTH0 is set to a page address greater than EBh, the\npassword protection is effectively disabled. Password protected\narea starts from page AUTH0 and ends at page EBh.\nPassword protection is excluded for Dynamic Lock Bits, session\nregisters and mirrored SRAM pages.\n2"
+  },
+  {
+    "faiss_index_id": 99,
+    "text": "registers and mirrored SRAM pages.\n2\nREMARK: From I C interface, you have access to all\nconfiguration pages until REG_LOCK_I2C bit is set to 1b.\nAccess Conditions (ACCESS)\n7 NFC_PROT R&W R&W 0b Memory protection bit:\n0b: write access to protected area is protected by the password\n1b: read and write access to protected area is protected by the\npassword\n6 RFU R&W R&W 0b RFU - SHALL be 0b\n5 NFC_DIS_SEC1 R&W R&W 0b NFC access protection to Sector 1\n0b: Sector 1 is accessible in 2k version"
+  },
+  {
+    "faiss_index_id": 100,
+    "text": "0b: Sector 1 is accessible in 2k version\n1b: Sector 1 in inaccessible and returns NAK0\n4-3 RFU R&W R&W 00b RFU - SHALL be 00b\n2-0 AUTHLIM R&W R&W 000b Limitation of negative password authentication attempts. After\nreaching the limit, protected area is not accessible any longer.\n000b: limiting of negative password authentication attempts\ndisabled.\n001b-111b: maximum number of negative password\nAUTHLIM\nauthentication attempts is 2\nPassword (PWD)"
+  },
+  {
+    "faiss_index_id": 101,
+    "text": "authentication attempts is 2\nPassword (PWD)\n31-0 PWD R&W R&W FFFFFFFFh 32-bit password used for memory access protection.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n28 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nTable 10. Password and Access Configuration bytes...continued"
+  },
+  {
+    "faiss_index_id": 102,
+    "text": "Access Access Default\nBit Field Description\n2\nvia NFC via I C values\nReading PWD always returns 00000000h\nPassword Acknowledge (PACK)\n15-0 PACK R&W R&W 0000h 16-bit password acknowledge used during the password\nauthentication process.\nReading PACK always returns 0000h\nProtection bits (PT_I2C)\n7-4 RFU R&W R&W 0000b RFU - SHALL be 0000b\n3 2K_PROT R&W R&W 0b Password protection for Sector 1 for 2k version\n0b: password authentication for Sector 1 disabled"
+  },
+  {
+    "faiss_index_id": 103,
+    "text": "0b: password authentication for Sector 1 disabled\n1b: password authentication needed to access Sector 1\n2 SRAM_PROT R&W R&W 0b Password protection for pass-through and mirror mode\n0b: password authentication for pass-through mode disabled\n1b: password authentication needed to access SRAM in pass-\nthrough mode\n2\n1-0 I2C_PROT R&W R&W 00b Access to protected area from I C perspective\n2\n00b: Entire user memory accessible from I C\n01b: read and write access to unprotected user area, read only"
+  },
+  {
+    "faiss_index_id": 104,
+    "text": "access to protected area\n1Xb: read and write access to unprotected area, no access to\nprotected area.\n2\nREMARK: Independent from these bits I C always has R&W\naccess to:\n• Session registers\n• SRAM\n• Configuration pages including PWD Configuration area, but\ndependent on REG_LOCK_I2C bit\n2\n8.3.12 NTAG I C plus configuration and session registers\n2\nNTAG I C plus behavior can be configured and read in two separate locations depending if the configurations"
+  },
+  {
+    "faiss_index_id": 105,
+    "text": "shall be effective within the communication session (use session registers) or by default after Power-On Reset\n(POR) (use configuration registers).\nThe configuration registers of pages E8h to E9h (Sector 0 - see Table 11) via the NFC interface or block 3Ah via\n2 2\nthe I C interface are used to configure the default behavior of the NTAG I C plus. Those bit values are stored in\nthe EEPROM and represent the default settings to be effective after POR. Their values can be read and written"
+  },
+  {
+    "faiss_index_id": 106,
+    "text": "by both interfaces when applicable and when not locked by the register lock bits (see REG_LOCK in Table 13).\n2\nTable 11. Configuration bytes NTAG I C plus\nNFC address 2\nI C Address Byte number from NFC perspective\n(Sector 0)\nDec Hex Dec Hex 0 1 2 3\n232 E8h 58 3Ah NC_REG LAST_NDEF_BLOCK SRAM_MIRROR_BLOCK WDT_LS\n233 E9h WDT_MS I2C_CLOCK_STR REG_LOCK RFU\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved."
+  },
+  {
+    "faiss_index_id": 107,
+    "text": "Product data sheet Rev. 3.6 — 21 July 2023\n29 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2\nThe session register on pages ECh to EDh (Sector 0) via the NFC interface or block FEh via I C, see Table 12,\nare used to configure or monitor the values of the current communication session. Those bits are read only via\n2\nthe NFC interface but may be read and written via the I C interface."
+  },
+  {
+    "faiss_index_id": 108,
+    "text": "For backward compatibility reasons, the session registers are mirrored to Sector 3 (page F8h and F9h via the\nNFC interface).\n2\nTable 12. Session bytes NTAG I C plus\nNFC\n2\naddress I C Address Byte number\n(Sector 0)\nDec Hex Dec Hex 0 1 2 3\n236 ECh 254 FEh NC_REG LAST_NDEF_BLOCK SRAM_MIRROR _BLOCK WDT_LS\n237 EDh WDT_MS I2C_CLOCK_STR NS_REG RFU\nBoth, the session and the configuration registers have the same configuration options and parameters except"
+  },
+  {
+    "faiss_index_id": 109,
+    "text": "the REG_LOCK bits, which are only available in the configuration register and the NS_REG bits which are only\navailable in the session register. After POR, the content of the configuration register is loaded into the session\nregister.\nThe values of both registers can be changed during a communication session. If the desired effect should be\nvisible immediately, but only for the current communication session, the session registers must be used. After"
+  },
+  {
+    "faiss_index_id": 110,
+    "text": "POR, the session registers values will again contain the configuration register values as before.\nTo change the default behavior, changes to the configuration register are needed, but the related effect will only\nbe visible after the next POR.\nTo make the effect immediately and after next POR visible, changes to configuration and session registers are\nneeded.\nAll registers and configuration default values, access conditions and descriptions are defined in Table 13 and\nTable 14.\n2"
+  },
+  {
+    "faiss_index_id": 111,
+    "text": "Table 14.\n2\nReading and writing the session registers via I C can only be done via the READ and WRITE registers\noperation - see Section 9.8.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n30 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nTable 13. Configuration bytes"
+  },
+  {
+    "faiss_index_id": 112,
+    "text": "Table 13. Configuration bytes\nAccess Access Default\nBit Field 2 Description\nvia NFC via I C values\nConfiguration register: NC_REG\n7 NFCS_I2C_RST_ON_OFF R&W R&W 0b Enables the NFC disable feature and enables soft\n2\nreset through I C repeated start - see Section 9.3\n6 PTHRU_ON_OFF R&W R&W 0b 1b: pass-through mode using SRAM enabled and\nSRAM mapped to end of Sector 0.\n0b: pass-through mode disabled\n5-4 FD_OFF R&W R&W 00b defines the event upon which the signal output on the\nFD pin is released"
+  },
+  {
+    "faiss_index_id": 113,
+    "text": "FD pin is released\n00b: if the field is switched off\n01b: if the field is switched off or the tag is set to the\nHALT state\n10b: if the field is switched off or the last page of the\nNDEF message has been read (defined in LAST_\nNDEF_BLOCK)\n11b: (if FD_ON = 11b) if the field is switched off or if\n2\nlast data is read by I C (in pass-through mode NFC\n2 2\n---> I C) or last data is written by I C (in pass-through\n2\nmode I C---> NFC)\n11b: (if FD_ON = 00b or 01b or 10b) if the field is\nswitched off"
+  },
+  {
+    "faiss_index_id": 114,
+    "text": "switched off\nSee Section 8.4 for more details\n3-2 FD_ON R&W R&W 00b defines the event upon which the signal output on the\nFD pin is pulled low\n00b: if the field is switched on\n01b: by first valid start of communication (SoC)\n10b: by selection of the tag\n2\n11b: (in pass-through mode NFC-->I C) if the data is\n2\nready to be read from the I C interface\n2\n11b: (in pass-through mode I C--> NFC) if the data is\nread by the NFC interface\nSee Section 8.4 for more details"
+  },
+  {
+    "faiss_index_id": 115,
+    "text": "See Section 8.4 for more details\n1 SRAM_MIRROR_ON_OFF R&W R&W 0b 1b: SRAM mirror enabled and mirrored SRAM starts at\npage SRAM_MIRROR_BLOCK\n0b: SRAM mirror disabled\n0 TRANSFER_DIR R&W R&W 1b defines the data flow direction when pass-through\nmode is enabled\n2\n0b: from I C to NFC interface\n2\n1b: from NFC to I C interface\nIn case the pass-through mode is NOT enabled, this\nbit should be set to 1b, otherwise there is no WRITE\naccess from the NFC perspective\nConfiguration register: LAST_NDEF_BLOCK"
+  },
+  {
+    "faiss_index_id": 116,
+    "text": "Configuration register: LAST_NDEF_BLOCK\n2 2\n7-0 LAST_NDEF_BLOCK R&W R&W 00h I C block address of I C block, which contains last\nbyte(s) of stored NDEF message. An NFC read of the\n2\nlast page of this I C block sets the register NDEF_\nDATA_READ to 1b and triggers field detection pin if\nFD_OFF is set to 10b.\nValid range starts\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023"
+  },
+  {
+    "faiss_index_id": 117,
+    "text": "Product data sheet Rev. 3.6 — 21 July 2023\n31 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nTable 13. Configuration bytes...continued\nAccess Access Default\nBit Field 2 Description\nvia NFC via I C values\nfrom 01h (NFC page 04h)\n2\nup to 37h (NFC page DCh) NTAG I C plus 1k\nor up to 7Fh (NFC page FCh on Sector 1) forNTAG\n2\nI C plus 2k.\nConfiguration register: SRAM_MIRROR_BLOCK\n2"
+  },
+  {
+    "faiss_index_id": 118,
+    "text": "Configuration register: SRAM_MIRROR_BLOCK\n2\n7-0 SRAM_MIRROR_BLOCK R&W R&W F8h I C block address of SRAM when mirrored into the\nUser memory.\nValid range starts\nfrom 01h (NFC page 04h)\n2\nup to 34h (NFC page D0h) NTAG I C plus 1k\nor up to 7Ch (NFC page F0h on memory Sector 1) for\n2\nNTAG I C plus 2k\nConfiguration register: WDT_LS\n7-0 WDT_LS R&W R&W 48h Least Significant byte of watchdog time control register\nConfiguration register: WDT_MS"
+  },
+  {
+    "faiss_index_id": 119,
+    "text": "Configuration register: WDT_MS\n7-0 WDT_MS R&W R&W 08h Most Significant byte of watchdog time control register.\nWhen writing WDT_MS byte, the content of WDT_MS\nand WDT_LS gets active for the watchdog timer.\nConfiguration register: I2C_CLOCK_STR\n7-1 RFU R&W R&W 0000000b RFU - all 7 bits SHALL be 0b\n2\n0 I2C_CLOCK_STR R&W R&W 1b Enables (1b) or disable (0b) the I C clock stretching\nConfiguration register: REG_LOCK\n7-2 RFU R&W R&W 000000b RFU - all 6 bits SHALL be 0b\n1 2"
+  },
+  {
+    "faiss_index_id": 120,
+    "text": "1 2\n1 REG_LOCK_I2C R&W R&W 0b I C Configuration Lock Bit\n2\n0b: Configuration bytes may be changed via I C\n2\n1b: Configuration bytes cannot be changed via I C\nOnce set to 1b, cannot be reset to 0b anymore.\n1\n0 REG_LOCK_NFC R&W R&W 0b NFC Configuration Lock Bit\n0b: Configuration bytes may be changed via NFC\n1b… Configuration bytes cannot be changed via NFC\nOnce set to 1b, cannot be reset to 0b anymore.\n1"
+  },
+  {
+    "faiss_index_id": 121,
+    "text": "Once set to 1b, cannot be reset to 0b anymore.\n1\nSetting both bits REG_LOCK_I2C and REG_LOCK_NFC to 1b, permanently locks write access to register default values\n(as no write is allowed anymore). As long as one bit is still 0b, the corresponding interface can still access and change the\nregister lock bytes.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023"
+  },
+  {
+    "faiss_index_id": 122,
+    "text": "Product data sheet Rev. 3.6 — 21 July 2023\n32 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nTable 14. Session register bytes\nAccess Access Default\nBit Field 2 Description\nvia NFC via I C values\nSession register: NC_REG\n7 NFCS_I2C_RST_ON_OFF READ R&W - see configuration bytes description\n6 PTHRU_ON_OFF READ R&W - see configuration bytes description, the bit is\ncleared automatically, when one of the interfaces"
+  },
+  {
+    "faiss_index_id": 123,
+    "text": "cleared automatically, when one of the interfaces\nis OFF\n5-4 FD_OFF READ R&W - see configuration bytes description\n3-2 FD_ON READ R&W\n1 SRAM_MIRROR_ON_ READ R&W - see configuration bytes description, the bit is\nOFF cleared automatically, when there is no Vcc power.\n0 TRANSFER_DIR READ R&W see configuration bytes description\nSession register: LAST_NDEF_BLOCK\n7-0 LAST_NDEF_BLOCK READ R&W - see configuration bytes description\nSession register: SRAM_MIRROR_BLOCK"
+  },
+  {
+    "faiss_index_id": 124,
+    "text": "Session register: SRAM_MIRROR_BLOCK\n7-0 SRAM_MIRROR_BLOCK READ R&W - see configuration bytes description\nSession register: WDT_LS\n7-0 WDT_LS READ R&W - see configuration bytes description\nSession register: WDT_MS\n7-0 WDT_MS READ R&W - see configuration bytes description\nSession register: I2C_CLOCK_STR\n7-2 RFU READ READ - RFU, all 6 bits locked to 0b\n1 NEG_AUTH_REACHED READ READ 0b Status bit to show the number of negative PWD_\nAUTH attempts reached\n0b: PWD_AUTH still possible"
+  },
+  {
+    "faiss_index_id": 125,
+    "text": "AUTH attempts reached\n0b: PWD_AUTH still possible\n1b: PWD_AUTH locked\n0 I2C_CLOCK_STR READ READ - See configuration bytes description\nSession register: NS_REG\n7 NDEF_DATA_READ READ READ 0b 1b: all data bytes read from the address specified\nin LAST_NDEF_BLOCK. Bit is reset to 0b when\nread\n2\n6 I2C_LOCKED READ R&W 0b 1b: Memory access is locked to the I C interface\n5 RF_LOCKED READ READ 0b 1b: Memory access is locked to the NFC interface"
+  },
+  {
+    "faiss_index_id": 126,
+    "text": "4 SRAM_I2C_READY READ READ 0b 1b: data is ready in SRAM buffer to be read by I2C\n3 SRAM_RF_READY READ READ 0b 1b: data is ready in SRAM buffer to be read by\nNFC\n2 EEPROM_WR_ERR READ R&W 0b 1b: HV voltage error during EEPROM write or\nerase cycle\n2\nNeeds to be written back via I C to 0b to be\ncleared\n1 EEPROM_WR_BUSY READ READ 0b 1b: EEPROM write cycle in progress - access to\nEEPROM disabled"
+  },
+  {
+    "faiss_index_id": 127,
+    "text": "EEPROM disabled\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n33 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nTable 14. Session register bytes...continued\nAccess Access Default\nBit Field 2 Description\nvia NFC via I C values\n0b: EEPROM access possible"
+  },
+  {
+    "faiss_index_id": 128,
+    "text": "via NFC via I C values\n0b: EEPROM access possible\n0 RF_FIELD_PRESENT READ READ 0b 1b: NFC field is detected\n8.4 Configurable Field Detection Pin\nThe field detection pin based on open-drain implementation provides the capability to trigger an external device\n(e.g. μController) or switch on the connected circuitry by an external power management unit depending on\nactivities on the NFC interface."
+  },
+  {
+    "faiss_index_id": 129,
+    "text": "activities on the NFC interface.\nAs the field detection pin functionality is operated via NFC field power, V supply for the tag itself is not\nCC\nrequired.\nNOTE: In some cases V pin might be used as field detection trigger.\nOUT\nThe conditions for pulling the field detection signal to low, FD_ON can be:\n• The presence of the NFC field\n• The detection of a valid command (Start of Communication)\n• The selection of the IC"
+  },
+  {
+    "faiss_index_id": 130,
+    "text": "• The selection of the IC\nRemark: When FD_ON is configured to trigger on NFC field presence (00b), FD will be pulled low again, when\n2\nhost is reading the NDEF_DATA_READ bit of NS_REG session register from I C perspective.\nThe conditions for releasing the field detection signal defined with FD_OFF can be:\n• The absence of the NFC field\n• The detection of the HALT state\n• The NFC interface has read the last part of the NDEF message defined with LAST_NDEF_BLOCK"
+  },
+  {
+    "faiss_index_id": 131,
+    "text": "All the various combinations of configurations are described in Table 13 and illustrated in the Figures below for\nall various combinations of the field detection signal configuration. The timing diagrams are not in scale and all\ngiven timing values are typical values.\nThe field detection pin can be used also as a handshake mechanism in the pass-through mode to signal to the\nexternal μController if\n• New data is written to SRAM on the NFC interface"
+  },
+  {
+    "faiss_index_id": 132,
+    "text": "• Data written to SRAM from the μController is read via the NFC interface.\nSee Section 11 for more information on this handshake mechanism.\nIn Figure 12 an example how to connect the FD pin is given. All given values are typical values and may vary\nfrom application to application.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n34 / 84NXP Semiconductors NT3H2111_2211\n2 2"
+  },
+  {
+    "faiss_index_id": 133,
+    "text": "34 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nAPPLICATION\nsupply\n(1.2 V ~ 3.6 V)\nLA LB\n1 8\nRpu VSS VOUT\n>2 kΩ GND 2 7\nSCL VCC\n3 6\nFD SDA\nevent detect signal 4 5\naaa-021652\nFigure 12. FD pin example circuit\naaa-021653\ndleif\nFR\nNO\nsehctiws\nfo trats\ndilav\ntsriF\nnoitacinummoc detceles\ngaT\nTLAH\not\ntes\ngaT\ndleif\nFR\nFFO\nsehctiws\nON\nRF field\nOFF\nHIGH\nFD pin\nLOW\n0 0\nFD_ON = 00b\n01h\nFD_OFF = 00b\nt\nEvent\nGER_CN"
+  },
+  {
+    "faiss_index_id": 134,
+    "text": "0 0\nFD_ON = 00b\n01h\nFD_OFF = 00b\nt\nEvent\nGER_CN\nRF_FIELD_PRESENT\nGER_SN\n1\nFigure 13. Illustration of the field detection feature when configured for simple field detection\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n35 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\naaa-021654\ndleif\nFR"
+  },
+  {
+    "faiss_index_id": 135,
+    "text": "aaa-021654\ndleif\nFR\nNO\nsehctiws\nfo\ntrats\ndilav\ntsriF\nnoitacinummoc detceles\ngaT\ndleif\nFR\nFFO\nsehctiws\nON\nRF field\nOFF\nHIGH\nFD pin\nLOW\n0 0\nFD_ON = 01b\n15h\nFD_OFF = 01b\nt\nEvent\nGER_CN\nRF_FIELD_PRESENT\nGER_SN\nTLAH\nfo\ntratS\ndnammoc\n1\nFigure 14. Illustration of the field detection feature when configured for first valid start of communication\ndetection\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved."
+  },
+  {
+    "faiss_index_id": 136,
+    "text": "Product data sheet Rev. 3.6 — 21 July 2023\n36 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\naaa-021655\ndleif\nFR\nNO\nsehctiws\nfo trats\ndilav\ntsriF\nnoitacinummoc\ndleif\nFR\nFFO\nsehctiws\nON\nRF field\nOFF\nHIGH\nFD pin\nLOW\n0 0\nFD_ON = 10b\n29h\nFD_OFF = 10b\nt\nEvent\nGER_CN\nRF_FIELD_PRESENT\nGER_SN\n2LC\nLES\nfo\ntratS\ndnammoc\ntsal\nfo\nDAER\nfo tratS\n.gsm\nFEDN\nfo egap\n1"
+  },
+  {
+    "faiss_index_id": 137,
+    "text": "dnammoc\ntsal\nfo\nDAER\nfo tratS\n.gsm\nFEDN\nfo egap\n1\nFigure 15. Illustration of the field detection feature when configured for selection of the tag detection\n8.5 Watchdog timer\n2\nIn order to allow the I C interface to perform all necessary commands (READ, WRITE, ..), the memory access\n2\nremains locked to the I C interface until the register I2C_LOCKED is cleared by the host - see Table 13.\n2"
+  },
+  {
+    "faiss_index_id": 138,
+    "text": "2\nHowever, to avoid that the memory stays 'locked' to the I C for a long period of time, it is possible to program\n2\na watchdog timer to unlock the I C host from the tag, so that the NFC device can access the tag after a period\nof time of inactivity. The host itself will not be notified of this event directly, but the NS_REG register is updated\naccordingly (the register bit I2C_LOCKED will be cleared - see Table 13)."
+  },
+  {
+    "faiss_index_id": 139,
+    "text": "The default value is set to 20 ms (848h), but the watchdog timer can be freely set from 0001h (9.43 μs) up to\n2 2\nFFFFh (617.995 ms). The timer starts ticking when the communication between the NTAG I C plus and the I C\n2\ninterface starts. In case the communication with the I C is still going on after the watchdog timer expires, the\ncommunication will continue until the communication has completed. Then the status register I2C_LOCKED will\nbe immediately cleared.\n2"
+  },
+  {
+    "faiss_index_id": 140,
+    "text": "be immediately cleared.\n2\nIn the case where the communication with the I C interface has completed before the end of the timer and the\nstatus register I2C_LOCKED was not cleared by the host, it will be cleared at the end of the watchdog timer.\n2\nThe watchdog timer is only effective if the VCC pin is powered and will be reset and stopped if the NTAG I C\nplus is not VCC powered or if the register status I2C_LOCKED is set to 0 and RF_LOCKED is set to 1b."
+  },
+  {
+    "faiss_index_id": 141,
+    "text": "NT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n37 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n8.6 Energy harvesting\n2\nThe NTAG I C plus provides the capability to supply external low-power devices with energy harvested from the"
+  },
+  {
+    "faiss_index_id": 142,
+    "text": "NFC field of an NFC device as illustrated in Figure 16. All given values are typical values. For more details, refer\nto the energy harvesting application note.\nThe voltage and current from the energy harvesting depend on various parameters, such as the strength of the\n2\nNFC field, the tag antenna size, or the distance from the NFC device. NTAG I C plus provides typically 5 mA at\n2 V on the VOUT pin with an NFC Phone.\n2"
+  },
+  {
+    "faiss_index_id": 143,
+    "text": "2 V on the VOUT pin with an NFC Phone.\n2\nOperating NTAG I C plus in energy harvesting mode requires a number of precautions:\n• A complete total connected capacitor in the range of typically 150 nF up to 220 nF maximum shall be\nconnected between VOUT and GND close to the terminals to ensure that the voltage does not drop below\nVCC min during modulation or during any application operation.\n• Start up load current on VOUT should be limited until sufficient voltage is built on VOUT.\n2 2"
+  },
+  {
+    "faiss_index_id": 144,
+    "text": "2 2\n• If NTAG I C plus also powers the I C bus, then VCC must be connected to VOUT, and pull-up resistors on\nthe SCL and SDA pins must be sized to control SCL and SDA sink current when those lines are pulled low by\n2 2\nNTAG I C plus or the I C host\n2\n• If NTAG I C plus also powers the Field Detect bus, then the pull-up resistor on the Field Detect line must be\n2\nsized to control the sink current into the Field Detect pin when NTAG I C plus pulls it low\n2"
+  },
+  {
+    "faiss_index_id": 145,
+    "text": "2\n• The NFC reader device communicating with NTAG I C plus shall apply polling cycles including an NFC Field\nOff condition of at least 5.1 ms as defined in NFC Forum Activity specification.\nREMARK: increasing the output current on V decreases the NFC communication range.\nout\nAPPLICATION supply\n(2.2 V ~ 3 V)\nFD SCL VSS LA\n4 3 2 1\nCload Rpu Rpu Rpu\n150 nF ~ 220 nF >5 kΩ >5 kΩ >5 kΩ\nGND\n5 6 7 8\nSCL SDA VCC VOUT LB\nevent detect signal\nSDA\naaa-021656\nFigure 16. Energy harvesting example circuit"
+  },
+  {
+    "faiss_index_id": 146,
+    "text": "Figure 16. Energy harvesting example circuit\n8.7 Password authentication\nThe memory write or read/write access to a configurable part of the memory can be constrained to a positive\npassword authentication. The 32-bit secret password (PWD) and the 16-bit password acknowledge (PACK)\nresponse shall be typically programmed into the configuration pages at the tag personalization stage.\nThe AUTHLIM parameter specified in Table 10 can be used to limit the negative authentication attempts.\n2"
+  },
+  {
+    "faiss_index_id": 147,
+    "text": "2\nIn the initial state of NTAG I C plus, password protection is disabled by an AUTH0 value of FFh. PWD and\nPACK are freely writable in this state. Access to the configuration pages and any part of the user memory can\nbe restricted by setting AUTH0 to a page address within the available memory space. This page address is the\nfirst one protected.\nFor a comprehensive description of all protection mechanism, refer to the application note."
+  },
+  {
+    "faiss_index_id": 148,
+    "text": "NT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n38 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2\nRemark: The password protection method provided in NTAG I C plus has to be intended as an easy"
+  },
+  {
+    "faiss_index_id": 149,
+    "text": "and convenient way to prevent unauthorized memory accesses. If a higher level of protection is required,\ncryptographic methods can be implemented at application layer to increase overall system security.\n8.7.1 Programming of PWD and PACK\nThe 32-bit PWD and the 16-bit PACK need to be programmed into the configuration pages, see Table 9. The\npassword as well as the password acknowledge are written LSByte first. This byte order is the same as the byte"
+  },
+  {
+    "faiss_index_id": 150,
+    "text": "order used during the PWD_AUTH command and its response.\nThe PWD and PACK bytes can never be read out of the memory. Instead of transmitting the real value on any\n2\nvalid read command from both - NFC and I C - interface, only 00h bytes are replied.\nIf the password authentication is disabled, PWD and PACK can be written at any time.\nIf the password authentication is enabled, PWD and PACK can be written after a successful PWD_AUTH\ncommand only."
+  },
+  {
+    "faiss_index_id": 151,
+    "text": "command only.\nRemark: To improve the overall system security, it is advisable to diversify the password and the password\n2\nacknowledge using a die individual parameter of the IC, which can be the 7 byte UID available on NTAG I C\nplus.\n8.7.2 Limiting negative verification attempts\nTo prevent brute-force attacks on the password, the maximum allowed number of negative password\nauthentication attempts can be set using AUTHLIM. This mechanism is disabled by setting AUTHLIM to a value\n2"
+  },
+  {
+    "faiss_index_id": 152,
+    "text": "2\nof 000b, which is also the initial state of NTAG I C plus.\nIf AUTHLIM is not equal to 000b, each negative authentication verification is internally counted. As soon as\nAUTHLIM\nthis internal counter reaches the number 2 , any further negative password authentication leads to a\npermanent locking of the protected part of the memory for the specified access modes. Independently, whether\nthe provided password is correct or not, each subsequent PWD_AUTH fails."
+  },
+  {
+    "faiss_index_id": 153,
+    "text": "Any successful password verification, before reaching the limit of negative password verification attempts,\nresets the internal counter to zero.\n8.7.3 Protection of configuration segments\nThe configuration pages can be protected by the password authentication as well. The protection level is\ndefined with the NFC_PROT bit.\nThe protection is enabled by setting the AUTH0 byte (see Table 9) to a value that is within the addressable\nmemory space.\n8.8 Originality signature\n2"
+  },
+  {
+    "faiss_index_id": 154,
+    "text": "memory space.\n8.8 Originality signature\n2\nNTAG I C plus features a cryptographically supported originality check. With this feature, it is possible to\nverify that the tag is using an IC manufactured by NXP Semiconductors. This check can be performed on\npersonalized tags as well.\n2\nNTAG I C plus digital signature is based on standard Elliptic Curve Cryptography (ECC), according to the\nECDSA algorithm. The use of a standard algorithm and curve ensures easy software integration of the"
+  },
+  {
+    "faiss_index_id": 155,
+    "text": "originality check procedure in an application running on an NFC device without specific hardware requirements.\n2\nEach NTAG I C plus UID is signed with an NXP private key and the resulting 32-byte signature is stored in a\n2\nhidden part of the NTAG I C plus memory during IC production.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n39 / 84NXP Semiconductors NT3H2111_2211"
+  },
+  {
+    "faiss_index_id": 156,
+    "text": "39 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nThis signature can be retrieved using the READ_SIG command and can be verified in the NFC device by using\nthe corresponding ECC public key provided by NXP. In case the NXP public key is stored in the NFC device, the\ncomplete signature verification procedure can be performed offline."
+  },
+  {
+    "faiss_index_id": 157,
+    "text": "To verify the signature (for example with the use of the public domain crypto library OpenSSL) the tool domain\nparameters shall be set to secp128r1, defined within the standards for elliptic curve cryptography SEC.\nDetails on how to check the signature value are provided in corresponding application note. It is foreseen to\n2\noffer not only offline, as well as online way to verify originality of NTAG I C plus."
+  },
+  {
+    "faiss_index_id": 158,
+    "text": "NT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n40 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2\n9 I C commands\n2\nFor details about I C interface, refer to the NXP user manual.\nSCL\nSDA\nStart SDA SDA Stop\nCondition Input Change Condition\nSCL 1 2 3 7 8 9\nSDA MSB ACK\nStart\nCondition"
+  },
+  {
+    "faiss_index_id": 159,
+    "text": "SCL 1 2 3 7 8 9\nSDA MSB ACK\nStart\nCondition\nSCL 1 2 3 7 8 9\nSDA MSB ACK\nStop\nCondition\n001aao231\n2\nFigure 17. I C bus protocol\n2 2\nThe NTAG I C plus supports the I C protocol. This protocol is summarized in Figure 17. Any device that sends\ndata onto the bus is defined as a transmitter, and any device that reads the data from the bus is defined as a\nreceiver. The device that controls the data transfer is known as the \"bus master\", and the other as the \"slave\""
+  },
+  {
+    "faiss_index_id": 160,
+    "text": "device. A data transfer can only be initiated by the bus master, which will also provide the serial clock for\n2\nsynchronization. The NTAG I C plus is always a slave in all communications.\n9.1 Start condition\nStart is identified by a falling edge of Serial Data (SDA), while Serial Clock (SCL) is stable in the high state.\n2\nA Start condition must precede any data transfer command. The NTAG I C plus continuously monitors SDA"
+  },
+  {
+    "faiss_index_id": 161,
+    "text": "(except during a Write cycle) and SCL for a Start condition, and will not respond unless one is given.\n9.2 Stop condition\nStop is identified by a rising edge of SDA while SCL is stable and driven high. A Stop condition terminates\n2\ncommunication between the NTAG I C plus and the bus master. A Stop condition at the end of a Write\ncommand triggers the internal Write cycle.\nWARNING: Host shall respect EEPROM programming time (~4 ms) after this Stop condition in any case. If"
+  },
+  {
+    "faiss_index_id": 162,
+    "text": "host sends next command too early, the memory may be corrupted as ongoing EEPROM write cycle might get\nterminated.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n41 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2\n9.3 I C soft reset and NFC disable feature\n2"
+  },
+  {
+    "faiss_index_id": 163,
+    "text": "2\n9.3 I C soft reset and NFC disable feature\n2\nWith the bit NFCS_I2C_RST_ON_OFF (see Table 13) NTAG I C plus enables two features: a soft reset of the\n2\nI C subsystem, and NFC disable, in which the NFC demodulator is disabled.\n2 2 2\nThe I C soft reset feature interprets an I C repeated start (no I C stop in between) as a command to execute a\n2 2\nsoft reset of the I C subsystem. This is useful when heavy bus interference can cause the I C interface to get"
+  },
+  {
+    "faiss_index_id": 164,
+    "text": "stuck. A drawback of this feature is that every start symbol then has to be terminated with a Stop, slowing down\n2\ncommunication. If a Stop is forgotten, the I C interface is cleared and previous communication, if any, is lost.\nConsequently when this feature is used, stop conditions after MEMA for READ/WRITE (see Figure 18) and after\nREGA for READ/WRITE registers (see Figure 19) shall be send."
+  },
+  {
+    "faiss_index_id": 165,
+    "text": "The NFC disable feature disables the demodulator. When feature is set, no NFC commands are received, and\nno replies are issued to commands that were not fully received when NFC disable was set. This feature allows\n2\nthe tag to \"disappear\" even if it still is in the reader field. NTAG I C plus will remain in the ISO state it was in\nwhen NFC disable was enabled, until NFC disable is cleared.\n2"
+  },
+  {
+    "faiss_index_id": 166,
+    "text": "2\nThe combination of these two features in a single bit means that I C soft reset is only active during NFC disable.\n9.4 Acknowledge bit (ACK)\nThe acknowledge bit is used to indicate a successful byte transfer. The bus transmitter, whether it is the bus\nmaster or slave device, releases Serial Data (SDA) after sending 8 bits of data. During the ninth clock pulse\nperiod, the receiver pulls Serial Data (SDA) low to acknowledge the receipt of the 9th data bits.\n9.5 Data input\n2"
+  },
+  {
+    "faiss_index_id": 167,
+    "text": "9.5 Data input\n2\nDuring data input, the NTAG I C plus samples SDA on the rising edge of SCL. For correct device operation,\nSDA must be stable during the rising edge of SCL, and the SDA signal must change only when SCL is driven\nlow.\n9.6 Addressing\n2\nTo start communication between a bus master and the NTAG I C plus slave device, the bus master must initiate\na Start condition (see Section 9.1). Following this initiation, the bus master sends the 7-bit device address,"
+  },
+  {
+    "faiss_index_id": 168,
+    "text": "called Slave Address (SA) in following figures.\nThe 8th bit is the Read/Write bit (R/W). This bit is set to 1b for Read and 0b for Write operations.\n2 2\nDefault device address of 55h results in AAh default I C write address and ABh default I C read address.\n2 2\nAs from I C perspective I C address can be configured via byte 0 of block 0. Reading this block gives 04h, as it\n2\nis returning UID0 (see Section 8.3.2). Therefore it is recommended to us 04h as I C write address (02h device\naddress)."
+  },
+  {
+    "faiss_index_id": 169,
+    "text": "address).\nNOTE: Byte 0 of block 0 is used to configure the device address. The 7-bit device address needs to be\nprogrammed in the 7 most significant bits of this byte. Least significant bit needs to be set to 0b when\nprogramming the device address. E.g. to keep default device address of 55h, byte 0 of block 0 needs to be set\nto AAh.\n2\nIf a match occurs on the device address, the NTAG I C plus gives an acknowledgment on SDA during the 9th\n2"
+  },
+  {
+    "faiss_index_id": 170,
+    "text": "2\nbit time. If the NTAG I C plus address does not match, it deselects itself from the bus and clears the register\nI2C_LOCKED (see Table 14).\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n42 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2 2"
+  },
+  {
+    "faiss_index_id": 171,
+    "text": "2 2\nTable 15. Default NTAG I C plus address from I C\nDevice / Slave Address (SA) R/W\nb7 b6 b5 b4 b3 b2 b1 b0\n[1]\nValue 1 0 1 0 1 0 1 1/0\n[1] Initial values can be changed from I2C perspective\n2 2 2\nThe I C address of the NTAG I C plus (byte 0 - block 0h) can only be modified by the I C interface. Both\n2\ninterfaces cannot read the device address and a READ command from the NFC or I C interface to this byte will\nreturn 04h (UID 0 - manufacturer ID for NXP Semiconductors - see Figure 7)."
+  },
+  {
+    "faiss_index_id": 172,
+    "text": "9.7 READ and WRITE Operation\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n43 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nWrite:\nHost Start 7 bits SA and `0' MEMA D0 D1 D15 Stop\nTag A A A A A\nRead:\nHost Start 7 bits SA and `0' MEMA Stop Start 7 bits SA and `1' A A A Stop"
+  },
+  {
+    "faiss_index_id": 173,
+    "text": "Tag A A A D0 D1 D15\naaa-012811\n2\nFigure 18. I C READ and WRITE operation\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n44 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nThe READ and WRITE operation always handle 16 bytes to be read or written (one block - see Table 6)\n2"
+  },
+  {
+    "faiss_index_id": 174,
+    "text": "2\nFor the READ operation (see Figure 18), following a Start condition, the bus master/host sends the NTAG I C\n2\nplus slave address code (SA - 7 bits) with the Read/Write bit (R/W) set to 0b. The NTAG I C plus acknowledges\nthis (A), and waits for one address byte (MEMA), which should correspond to the address of the block of\n2\nmemory (SRAM or EEPROM) that is intended to be read. The NTAG I C plus responds to a valid address byte"
+  },
+  {
+    "faiss_index_id": 175,
+    "text": "with an acknowledge (A). A Stop condition can be then issued. Then the host again issues a start condition\n2\nfollowed by the NTAG I C plus slave address with the Read/Write bit set to 1b. When I2C_CLOCK_STR is set\n2\nto 0b, a pause of at least 50 μs shall be kept before this start condition. The NTAG I C plus acknowledges this\n2\n(A) and sends the first byte of data read (D0).The bus master/host acknowledges it (A) and the NTAG I C plus"
+  },
+  {
+    "faiss_index_id": 176,
+    "text": "will subsequently transmit the following 15 bytes of memory read with an acknowledge from the host after every\n2\nbyte. After the last byte of memory data has been transmitted by the NTAG I C plus, the bus master/host will\nacknowledge it and issue a Stop condition.\nWARNING: READ sequence shall be atomic. Complete sequence of above figure needs to be executed,\notherwise that tag may go to undefined state and stretches the clock infinitely.\n2"
+  },
+  {
+    "faiss_index_id": 177,
+    "text": "2\nFor the WRITE operation (see Figure 18), following a Start condition, the bus master/host sends the NTAG I C\n2\nplus slave address code (SA - 7 bits) with the Read/Write bit (R/W) set to 0b. The NTAG I C plus acknowledges\nthis (A), and waits for one address byte (MEMA), which should correspond to the address of the block of\n2\nmemory (SRAM or EEPROM) that is intended to be written. The NTAG I C plus responds to a valid address"
+  },
+  {
+    "faiss_index_id": 178,
+    "text": "byte with an acknowledge (A) and, in the case of a WRITE operation, the bus master/host starts transmitting\n2\nevery 16 bytes (D0...D15) that shall be written at the specified address with an acknowledge of the NTAG I C\n2\nplus after each byte (A). After the last byte acknowledge from the NTAG I C plus, the bus master/host issues a\nStop condition.\nWARNING: Host shall respect EEPROM programming time (~4 ms) after this Stop condition in any case. If"
+  },
+  {
+    "faiss_index_id": 179,
+    "text": "host sends next command too early, the memory may be corrupted as ongoing EEPROM write cycle will get\nterminated.\nThe memory address accessible via the READ and WRITE operations can only correspond to the EEPROM or\n2 2\nSRAM (respectively 00h to 3Ah or F8h to FBh for NTAG I C plus 1k and 00h to 7Ah or F8h to FBh for NTAG I C\nplus 2k).\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved."
+  },
+  {
+    "faiss_index_id": 180,
+    "text": "Product data sheet Rev. 3.6 — 21 July 2023\n45 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n9.8 WRITE and READ register operation\n2\nIn order to modify or read the session register bytes (see Table 12), NTAG I C plus requires the WRITE and\nREAD register operation (see Figure 19).\nWrite:\nHost Start 7 bits SA and `0' MEMA REGA MASK REGDAT Stop\nTag A A A A A\nRead:"
+  },
+  {
+    "faiss_index_id": 181,
+    "text": "Tag A A A A A\nRead:\nHost Start 7 bits SA and `0' MEMA REGA Stop Start 7 bits SA and `1' A Stop\nTag A A A A REGDAT\naaa-012812\nFigure 19. WRITE and READ register operation\n2\nFor the READ register operation, following a Start condition the bus master/host sends the NTAG I C plus slave\n2\naddress code (SA - 7 bits) with the Read/Write bit (R/W) set to 0b. The NTAG I C plus acknowledges this (A),\nand waits for one address byte (MEMA) which corresponds to the address of the block of memory with the\n2"
+  },
+  {
+    "faiss_index_id": 182,
+    "text": "2\nsession register bytes (FEh). The NTAG I C plus responds to the address byte with an acknowledge (A). Then\nthe bus master/host issues a register address (REGA), which corresponds to the address of the targeted byte\ninside the block FEh (00h, 01h...to 07h) and then waits for the Stop condition.\n2\nThen the bus master/host again issues a start condition followed by the NTAG I C plus slave address with the\n2"
+  },
+  {
+    "faiss_index_id": 183,
+    "text": "2\nRead/Write bit set to 1b. The NTAG I C plus acknowledges this (A), and sends the selected byte of session\nregister data (REGDAT) within the block FEh. The bus master/host will acknowledge it and issue a Stop\ncondition.\nWARNING: READ sequence shall be atomic. Complete sequence of above figure needs to be executed,\notherwise that tag may go to undefined state and stretches the clock infinitely.\n2"
+  },
+  {
+    "faiss_index_id": 184,
+    "text": "2\nFor the WRITE register operation, following a Start condition, the bus master/host sends the NTAG I C plus\n2\nslave address code (SA - 7 bits) with the Read/Write bit (R/W) set to 0b. The NTAG I C plus acknowledges\nthis (A), and waits for one address byte (MEMA), which corresponds to the address of the block of memory\n2\nwithin the session register bytes (FEh). After the NTAG I C plus acknowledge (A), the bus master/host issues"
+  },
+  {
+    "faiss_index_id": 185,
+    "text": "a register address (REGA), which corresponds to the address of the targeted byte inside the block FEh (00h,\n2\n01h...to 07h). After acknowledgment (A) by NTAG I C plus, the bus master/host issues a MASK byte that\ndefines exactly which bits shall be modified by a 1b bit value at the corresponding bit position. Following the\n2\nNTAG I C plus acknowledge (A), the new register data (one byte - REGDAT) to be written is transmitted by the\n2"
+  },
+  {
+    "faiss_index_id": 186,
+    "text": "2\nbus master/host. The NTAG I C plus acknowledges it (A), and the bus master/host issues a stop condition.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n46 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n10 NFC Command\n2"
+  },
+  {
+    "faiss_index_id": 187,
+    "text": "10 NFC Command\n2\nNTAG I C plus activation follows the ISO/IEC 14443-3 Type ANFC Forum Activity specification. After NTAG\n2\nI C plus has been selected, it can either be deactivated using the ISO/IEC 14443 HALT command, or NTAG\ncommands (e.g. READ_SIG, PWD_AUTH, SECTOR_SELECT, READ or WRITE) can be performed. For more\ndetails about the card activation, refer to ISO/IEC 14443-3 or NFC Forum Activity specification.\n2\n10.1 NTAG I C plus command overview\n2"
+  },
+  {
+    "faiss_index_id": 188,
+    "text": "2\n10.1 NTAG I C plus command overview\n2\nAll available commands for NTAG I C plus are shown in Table 16.\nTable 16. Command overview\n[1]\nCommand ISO/IEC 14443 NFC Forum Command code\n(hexadecimal)\nRequest REQA SENS_REQ 26h (7 bit)\nWake-up WUPA ALL_REQ 52h (7 bit)\nAnticollision CL1 Anticollision CL1 SDD_REQ CL1 93h 20h\nSelect CL1 Select CL1 SEL_REQ CL1 93h 70h\nAnticollision CL2 Anticollision CL2 SDD_REQ CL2 95h 20h\nSelect CL2 Select CL2 SEL_REQ CL2 95h 70h\nHalt HLTA SLP_REQ 50h 00h"
+  },
+  {
+    "faiss_index_id": 189,
+    "text": "Halt HLTA SLP_REQ 50h 00h\nGET_VERSION - - 60h\nREAD - READ 30h\nFAST_READ - - 3Ah\nWRITE - WRITE A2h\nFAST_WRITE - - A6h\nSECTOR_SELECT - SECTOR_SELECT C2h\nPWD_AUTH - - 1Bh\nREAD_SIG - - 3Ch\n[1] Unless otherwise specified, all commands use the coding and framing as described in ISO/IEC 14443 or NFC Forum Digital specification.\n10.2 Timing\nThe command and response timing shown in this document are not to scale and values are rounded to 1 μs."
+  },
+  {
+    "faiss_index_id": 190,
+    "text": "All given command and response times refer to the data frames, including start of communication and end\nof communication. They do not include the encoding (like the Miller pulses). An NFC device data frame\ncontains the start of communication (1 \"start bit\") and the end of communication (one logic 0 + 1-bit length of\nunmodulated carrier). An NFC tag data frame contains the start of communication (1 \"start bit\") and the end of\ncommunication (1-bit length of no subcarrier)."
+  },
+  {
+    "faiss_index_id": 191,
+    "text": "communication (1-bit length of no subcarrier).\nThe minimum and maximum command response time is specified according to the standard. The minimum\nframe delay time from NFC tag to NFC device is 86.43 μs. The maximum command response time is specified\nas a timeout value. Depending on the command, the T value specified for command responses defines the\nACK\nNFC device to NFC tag frame delay time. It does it for either the 4-bit ACK value specified or for a data frame."
+  },
+  {
+    "faiss_index_id": 192,
+    "text": "All timing can be measured according to the ISO/IEC 14443-3 frame specification as shown for the Frame\nDelay Time in Figure 20. For more details, refer to ISO/IEC 14443 or NFC Forum specification.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n47 / 84NXP Semiconductors NT3H2111_2211\n2 2"
+  },
+  {
+    "faiss_index_id": 193,
+    "text": "47 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nlast data bit transmitted by the NFC device first modulation of the NFC TAG\nFDT = (n* 128 + 84)/fc\n128/fc 256/fc 128/fc\nlogic „1“ end of communication (E) start of\ncommunication (S)\nFDT = (n* 128 + 20)/fc\n128/fc 256/fc 128/fc\nlogic „0“ end of communication (E) start of\ncommunication (S)\naaa-006986\nFigure 20. Frame Delay Time (from NFC device to NFC tag), T and T"
+  },
+  {
+    "faiss_index_id": 194,
+    "text": "ACK NAK\nRemark: Due to the coding of commands, the measured timings usually exclude (a part of) the end of\ncommunication. Consider this factor when comparing the specified with the measured times.\n10.3 NTAG ACK and NAK\n2\nNTAG I C plus uses a 4-bit ACK / NAK as shown in Table 17.\nTable 17. ACK and NAK values\nCode (4 bit) ACK/NAK\nAh Acknowledge (ACK)\n0h NAK for invalid argument (i.e. invalid page address or wrong password)\n1h NAK for parity or CRC error\n2\n3h NAK for Arbiter locked to I C"
+  },
+  {
+    "faiss_index_id": 195,
+    "text": "2\n3h NAK for Arbiter locked to I C\n4h Number of negative PWD_AUTH commands limit reached\n7h NAK for EEPROM write error\n10.4 ATQA and SAK responses\n2\nNTAG I C plus replies to a REQA or WUPA command with the ATQA value shown below. It replies to a Select\nCL2 command with the SAK value shown below. The 2 byte ATQA value is transmitted with the least significant\nbyte first (44h).\n2\nTable 18. ATQA response of the NTAG I C plus\nBit number\nSales type Hex value 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0\n2"
+  },
+  {
+    "faiss_index_id": 196,
+    "text": "2\nNTAG I C plus 00 44h 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n48 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2\nTable 19. SAK response of the NTAG I C plus\nBit number\nSales type Hex value 7 6 5 4 3 2 1 0\n2\nNTAG I C plus 00h 0 0 0 0 0 0 0 0"
+  },
+  {
+    "faiss_index_id": 197,
+    "text": "2\nNTAG I C plus 00h 0 0 0 0 0 0 0 0\nRemark: The ATQA coding in bits 7 and 6 indicates the UID size according to ISO/IEC 14443.\nRemark: The bit numbering in ISO/IEC 14443 specification starts with bit 1 as least significant bit.\n10.5 GET_VERSION\nThe GET_VERSION command is used to retrieve information about the NTAG family, the product version,\n2\nstorage size and other product data required to identify the specific NTAG I C plus."
+  },
+  {
+    "faiss_index_id": 198,
+    "text": "This command is also available on other NTAG products to have a common way of identifying products across\nplatforms and evolution steps.\n2\nThe GET_VERSION command has no arguments and returns the version information for the specific NTAG I C\nplus type. The command structure is shown in Figure 21 and Table 20.\nTable 21 shows the required timing.\nNFC device Cmd CRC\nNTAG ,,ACK'' Data CRC\n283 µs TACK 868 µs\nNTAG ,,NAK'' NAK\nTNAK 57 µs\nTime out TTimeOut\naaa-006987\nFigure 21. GET_VERSION command"
+  },
+  {
+    "faiss_index_id": 199,
+    "text": "aaa-006987\nFigure 21. GET_VERSION command\nTable 20. GET_VERSION command\nName Code Description Length\nCmd 60h Get product version 1 byte\nCRC - CRC according to ISO/IEC 14443 2 bytes\nData - Product version information 8 bytes\nNAK see Table 17 see Section 10.3 4 bit\nTable 21. GET_VERSION timing\nThese times exclude the end of communication of the NFC device.\nT min T max T\nACK/NAK ACK/NAK TimeOut\n[1]\nGET_VERSION n=9 T 5 ms\nTimeOut"
+  },
+  {
+    "faiss_index_id": 200,
+    "text": "[1]\nGET_VERSION n=9 T 5 ms\nTimeOut\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n49 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n[1] Refer to Section 10.2.\nTable 22. GET_VERSION response\n2 2 2\nByte no. Description NTAG I C plus 512 NTAG I C plus 1k NTAG I C plus 2k Interpretation"
+  },
+  {
+    "faiss_index_id": 201,
+    "text": "0 fixed Header 00h 00h 00h\n1 vendor ID 04h 04h 04h NXP\nSemiconductors\n2 product type 04h 04h 04h NTAG\n2\n3 product subtype 05h 05h 05h 50 pF I C, Event\ndetection\n4 major product 02h 02h 02h\nversion\n5 minor product 02h 02h 02h\nversion\n6 storage size 12h 13h 15h see following\ninformation\n7 protocol type 03h 03h 03h ISO/IEC 14443-3\ncompliant\nThe most significant 7 bits of the storage size byte are interpreted as an unsigned integer value n. As a result,\nn"
+  },
+  {
+    "faiss_index_id": 202,
+    "text": "n\nit codes the total available user memory size as 2 . If the least significant bit is 0b, the user memory size is\nn n n+1\nexactly 2 . If the least significant bit is 1b, the user memory size is between 2 and 2 .\n10.6 READ_SIG\nThe READ_SIG command returns an IC specific, 32-byte ECC signature, to verify NXP Semiconductors as\nthe silicon vendor. The signature is programmed at chip production and cannot be changed afterwards. The\ncommand structure is shown in Figure 24 and Table 27."
+  },
+  {
+    "faiss_index_id": 203,
+    "text": "Table 28 shows the required timing.\nNFC device Cmd Addr CRC\nData CRC\nNTAG ,,ACK''\n368 µs TACK 2907 µs\nNTAG ,,NAK'' NAK\nTNAK 57 µs\nTime out TTimeOut\naaa-021657\nFigure 22. READ_SIG command\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n50 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting"
+  },
+  {
+    "faiss_index_id": 204,
+    "text": "Table 23. READ_SIG command\nName Code Description Length\nCmd 3Ch read ECC signature 1 byte\nAddr 00h RFU, is set to 00h 1 byte\nCRC - CRC according to ISO/IEC 14443 2 bytes\nSignature - ECC Signature 32 bytes\nNAK see Table 17 see Section 10.3 4 bit\nTable 24. READ_SIG timing\nThese times exclude the end of communication of the NFC device.\nT min T max T\nACK/NAK ACK/NAK TimeOut\n[1]\nREAD_SIG n=9 T 5 ms\nTimeOut\n[1] Refer to Section 10.2 \"Timing\"."
+  },
+  {
+    "faiss_index_id": 205,
+    "text": "TimeOut\n[1] Refer to Section 10.2 \"Timing\".\nDetails on how to check the signature value are provided in the corresponding application note. It is foreseen to\n2\noffer an online and offline way to verify originality of NTAG I C plus.\n10.7 PWD_AUTH\nA protected memory area can be accessed only after a successful password verification using the PWD_AUTH\ncommand. The AUTH0 configuration byte defines the start of the protected area. It specifies the first page that"
+  },
+  {
+    "faiss_index_id": 206,
+    "text": "the password mechanism protects. The level of protection can be configured using the NFC_PROT bit either\nfor write protection or read/write protection. The PWD_AUTH command takes the password as parameter and,\nif successful, returns the password authentication acknowledge, PACK. By setting the AUTHLIM configuration\nbits to a value larger than 000b, the number of unsuccessful password verifications can be limited. Each\nAUTHLIM"
+  },
+  {
+    "faiss_index_id": 207,
+    "text": "AUTHLIM\nunsuccessful authentication is then counted. After reaching the limit (2 ) of unsuccessful attempts, the\nmemory write access or the memory access at all (specified in NFC_PROT) to the protected area, is no longer\npossible. The PWD_AUTH command is shown in Figure 23 and Table 25.\nTable 26 shows the required timing.\nNFC device Cmd Pwd CRC\nNTAG ,,ACK'' PACK CRC\n623 µs TACK 368 µs\nNTAG ,,NAK'' NAK\nTNAK 57 µs\nTime out TTimeOut\naaa-021658\nFigure 23. PWD_AUTH command"
+  },
+  {
+    "faiss_index_id": 208,
+    "text": "aaa-021658\nFigure 23. PWD_AUTH command\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n51 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nTable 25. PWD_AUTH command\nName Code Description Length\nCmd 1Bh password authentication 1 byte\nPwd - password 4 bytes"
+  },
+  {
+    "faiss_index_id": 209,
+    "text": "Pwd - password 4 bytes\nCRC - CRC according to ISO/IEC 14443 2 bytes\nPACK - password authentication acknowledge 2 bytes\nNAK see Table 17 see Section 10.3 4-bit\nTable 26. PWD_AUTH timing\nThese times exclude the end of communication of the NFC device.\nT min T max T\nACK/NAK ACK/NAK TimeOut\n[1]\nPWD_AUTH n=9 T 5 ms\nTimeOut\n[1] Refer to Section 10.2.\nRemark: It is strongly recommended to change - and diversify for each tag - the password and PACK from its\ndelivery state at tag issuing.\n10.8 READ\n2"
+  },
+  {
+    "faiss_index_id": 210,
+    "text": "delivery state at tag issuing.\n10.8 READ\n2\nThe READ command requires a start page address, and returns the 16 bytes of four NTAG I C plus pages. For\nexample, if address (Addr) is 03h then pages 03h, 04h, 05h, 06h are returned. Special conditions apply if the\nREAD command address is near the end of the accessible memory area. For details on those cases and the\ncommand structure, refer to Figure 24 and Table 27.\nTable 28 shows the required timing.\nNFC device Cmd Addr CRC\nData CRC\nNTAG ,,ACK''"
+  },
+  {
+    "faiss_index_id": 211,
+    "text": "NFC device Cmd Addr CRC\nData CRC\nNTAG ,,ACK''\n368 µs TACK 1548 µs\nNTAG ,,NAK'' NAK\nTNAK 57 µs\nTime out TTimeOut\naaa-006988\nFigure 24. READ command\nTable 27. READ command\nName Code Description Length\nCmd 30h read four pages 1 byte\nAddr - start page address 1 byte\nCRC - CRC according to ISO/IEC 14443 2 bytes\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023"
+  },
+  {
+    "faiss_index_id": 212,
+    "text": "Product data sheet Rev. 3.6 — 21 July 2023\n52 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nTable 27. READ command...continued\nName Code Description Length\nData - Data content of the addressed pages 16 bytes\nNAK see Table 17 see Section 10.3 4 bit\nTable 28. READ timing\nThese times exclude the end of communication of the NFC device.\nT min T max T\nACK/NAK ACK/NAK TimeOut\n[1]\nREAD n=9 T 5 ms\nTimeOut"
+  },
+  {
+    "faiss_index_id": 213,
+    "text": "[1]\nREAD n=9 T 5 ms\nTimeOut\n[1] Refer to Section 10.2.\n2\nIn the initial state of NTAG I C plus, all memory pages are allowed as Addr parameter to the READ command:\n2\n• Page address from 00h to E9h and pages ECh and EDh for NTAG I C plus 1k and 2k\n2\n• Page address from 00h to FFh (Sector 1) for NTAG I C plus 2k only\n• SRAM buffer address when pass-through mode is enabled\n2\nAddressing a start memory page beyond the limits above results in a NAK response from NTAG I C plus."
+  },
+  {
+    "faiss_index_id": 214,
+    "text": "In case a READ command addressing start with a valid memory area but extends over an invalid memory area,\nthe content of the invalid memory area will be reported as 00h.\n10.9 FAST_READ\nThe FAST_READ command requires a start page address and an end page address and returns all n*4 bytes\nof the addressed pages. For example, if the start address is 03h and the end address is 07h, then pages 03h,\n04h, 05h, 06h and 07h are returned."
+  },
+  {
+    "faiss_index_id": 215,
+    "text": "04h, 05h, 06h and 07h are returned.\nFor details on those cases and the command structure, refer to Figure 25 and Table 29.\nTable 30 shows the required timing.\nNFC device Cmd StartAddr EndAddr CRC\nNTAG ,,ACK'' Data CRC\n453 µs TACK depending on nr of read pages\nNTAG ,,NAK'' NAK\nTNAK 57 µs\nTime out TTimeOut aaa-006989\nFigure 25. FAST_READ command\nTable 29. FAST_READ command\nName Code Description Length\nCmd 3Ah read multiple pages 1 byte"
+  },
+  {
+    "faiss_index_id": 216,
+    "text": "Cmd 3Ah read multiple pages 1 byte\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n53 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nTable 29. FAST_READ command...continued\nName Code Description Length\nStartAddr - start page address 1 byte\nEndAddr - end page address 1 byte"
+  },
+  {
+    "faiss_index_id": 217,
+    "text": "EndAddr - end page address 1 byte\nCRC - CRC according to ISO/IEC 14443 2 bytes\nData - data content of the addressed pages n*4 bytes\nNAK see Table 17 see Section 10.3 4 bit\nTable 30. FAST_READ timing\nThese times exclude the end of communication of the NFC device.\nT min T max T\nACK/NAK ACK/NAK TimeOut\n[1]\nFAST_READ n=9 T 5 ms\nTimeOut\n[1] Refer to Section 10.2.\n2\nIn the initial state of NTAG I C plus, all memory pages are allowed as StartAddr parameter to the FAST_READ\ncommand:\n2"
+  },
+  {
+    "faiss_index_id": 218,
+    "text": "command:\n2\n• Page address from 00h to E9h and pages ECh and EDh for NTAG I C plus 1k and 2k\n2\n• Page address from 00h to FFh (Sector 1) for NTAG I C plus 2k only\n• SRAM buffer address when pass-through mode is enabled\n2\nIf the start addressed memory page (StartAddr) is outside of accessible area, NTAG I C plus replies a NAK.\nIn case the FAST_READ command starts with a valid memory area but extends over an invalid memory area,\nthe content of the invalid memory area will be reported as 00h."
+  },
+  {
+    "faiss_index_id": 219,
+    "text": "The EndAddr parameter must be equal to or higher than the StartAddr.\nRemark: The FAST_READ command is able to read out the entire memory of one sector with one command.\nNevertheless, the receive buffer of the NFC device must be able to handle the requested amount of data as no\nchaining is possible.\n10.10 WRITE\n2\nThe WRITE command requires a page address, and writes 4 bytes of data into the addressed NTAG I C plus\npage. The WRITE command is shown in Figure 26 and Table 31."
+  },
+  {
+    "faiss_index_id": 220,
+    "text": "Table 32 shows the required timing.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n54 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nNFC device Cmd Addr Data CRC\nNTAG ,,ACK'' ACK\n708 µs TACK 57 µs\nNTAG ,,NAK'' NAK\nTNAK 57 µs\nTime out TTimeOut\naaa-006990\nFigure 26. WRITE command"
+  },
+  {
+    "faiss_index_id": 221,
+    "text": "aaa-006990\nFigure 26. WRITE command\nTable 31. WRITE command\nName Code Description Length\nCmd A2h write one page 1 byte\nAddr - page address 1 byte\nData - data 4 bytes\nCRC - CRC according to ISO/IEC 14443 2 bytes\nNAK see Table 17 see Section 10.3 4 bit\nTable 32. WRITE timing\nThese times exclude the end of communication of the NFC device.\nT min T max T\nACK/NAK ACK/NAK TimeOut\n[1]\nWRITE n=9 T 5 ms\nTimeOut\n[1] Refer to Section 10.2.\n2"
+  },
+  {
+    "faiss_index_id": 222,
+    "text": "TimeOut\n[1] Refer to Section 10.2.\n2\nIn the initial state of NTAG I C plus, the following memory pages are valid Addr parameters to the WRITE\ncommand:\n2\n• Page address from 02h to E9h (Sector 0) for NTAG I C plus 1k and 2k\n2\n• Page address from 00h to FFh (Sector 1) for NTAG I C plus 2k\n• SRAM buffer addresses when pass-through mode is enabled\n2\nAddressing a memory page beyond the limits above results in a NAK response from NTAG I C plus."
+  },
+  {
+    "faiss_index_id": 223,
+    "text": "Pages that are locked against writing cannot be reprogrammed using any write command. The locking\nmechanisms include static and dynamic lock bits, as well as the locking of the configuration pages.\n10.11 FAST_WRITE\nThe FAST_WRITE allows writing data in ACTIVE state to the complete SRAM (64 bytes) in pass-through mode.\n2\nIt requires the start block address (F0h), end address (FFh) and writes 64 bytes of data into the NTAG I C plus\nSRAM. The FAST_WRITE command is shown in Figure 27 and Table 33."
+  },
+  {
+    "faiss_index_id": 224,
+    "text": "NT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n55 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nWARNING: Data is written directly to SRAM. If received CRC at the end of transmission is wrong and response"
+  },
+  {
+    "faiss_index_id": 225,
+    "text": "was a NAK, received (corrupted) data is still in SRAM. Hence it is recommended to implement a protocol on top\nto ensure data integrity (e.g. include own CRC at the end of the payload) when using SRAM.\nTable 34 shows the required timing.\nNFC device Cmd Start End Data CRC\nNTAG ,,ACK'' ACK\n5881 µs TACK 57 µs\nNTAG ,,NAK'' NAK\nTNAK 57 µs\nTime out TTimeOut\naaa-021659\nFigure 27. FAST_WRITE command\nTable 33. FAST_WRITE command\nName Code Description Length\nCmd A6h write complete SRAM 1 byte"
+  },
+  {
+    "faiss_index_id": 226,
+    "text": "Cmd A6h write complete SRAM 1 byte\nSTART_ADDR F0h start SRAM in pass-through mode 1 byte\nEND_ADDR FFh end SRAM in pass-through mode 1 byte\nData - data 64 bytes\n- CRC CRC according to ISO/IEC 14443 2 bytes\nACK see Table 17 see Section 10.3 4 bit\nNAK see Table 17 see Section 10.3 4 bit\nTable 34. FAST_WRITE timing\nThese times exclude the end of communication of the NFC device.\nT min T max T\nACK/NAK ACK/NAK TimeOut\n[1]\nFAST_WRITE n=9 T 5 ms\nTimeOut\n[1] Refer to Section 10.2.\n10.12 SECTOR SELECT"
+  },
+  {
+    "faiss_index_id": 227,
+    "text": "[1] Refer to Section 10.2.\n10.12 SECTOR SELECT\nThe SECTOR SELECT command consists of two commands packet: the first one is the SECTOR SELECT\ncommand (C2h), FFh and CRC. Upon an ACK answer from the Tag, the second command packet needs to be\nissued with the related sector address to be accessed and 3 bytes RFU.\nTo successfully access to the requested memory sector, the tag shall issue a passive ACK, which is sending NO\nREPLY for more than 1 ms after the CRC of the second command set."
+  },
+  {
+    "faiss_index_id": 228,
+    "text": "The SECTOR SELECT command is shown in Figure 28 and Table 35.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n56 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nTable 36 shows the required timing.\nNFC device Cmd FFh CRC SECTOR SELECT packet 1\nACK\nNTAG I2C ,,ACK''\n368 µs TACK 57 µs"
+  },
+  {
+    "faiss_index_id": 229,
+    "text": "ACK\nNTAG I2C ,,ACK''\n368 µs TACK 57 µs\nNTAG I2C ,,NAK'' NAK\nTNAK 57 µs\nTime out TTimeOut\nSECTOR SELECT packet 2\nNFC device SecNo 00h 00h 00h CRC\n(no reply) Passive ACK\nNTAG I2C ,,ACK''\n537 µs >1ms\nNTAG I2C ,,NAK'' (any reply) NAK\n<1ms 57 µs\naaa-014051\nFigure 28. SECTOR_SELECT command\nTable 35. SECTOR_SELECT command\nName Code Description Length\nCmd C2h sector select 1 byte\nFFh - 1 byte\nCRC - CRC according to ISO/IEC 14443 2 bytes\nSecNo - Memory sector to be selected 1 byte\n(00h - FEh)"
+  },
+  {
+    "faiss_index_id": 230,
+    "text": "(00h - FEh)\nNAK see Table 17 see Section 10.3 4 bit\nTable 36. SECTOR_SELECT timing\nThese times exclude the end of communication of the NFC device.\nT min T max T\nACK/NAK ACK/NAK TimeOut\n[1]\nSECTOR_SELECT n=9 T 5 ms\nTimeOut\n[1] Refer to Section 10.2 \"Timing\".\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n57 / 84NXP Semiconductors NT3H2111_2211\n2 2"
+  },
+  {
+    "faiss_index_id": 231,
+    "text": "57 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2\n11 Communication and arbitration between NFC and I C interface\nIf both interfaces are powered by their corresponding source, only one interface shall have access to the\nmemory according to the \"first-come, first-serve\" principle.\n2\nIn NS_REG, the two status bits I2C_LOCKED and RF_LOCKED reflect the status of the NTAG I C plus"
+  },
+  {
+    "faiss_index_id": 232,
+    "text": "memory access and indicate which interface is locking the memory access. At power-on, both bits are 0b,\nsetting the arbitration in idle mode.\n2\nIn the case arbiter locks to the I C interface, an NFC device can still read the session registers. If the NFC state\nmachine is in ACTIVE state, only the SECTOR SELECT command is allowed. But any other command requiring\nEEPROM access like READ or WRITE is handled as an illegal command and replied to with a NAK value.\n2"
+  },
+  {
+    "faiss_index_id": 233,
+    "text": "2\nIn the case where the memory access is locked to the NFC interface, the I C host can still access the session\nregister, by issuing a 'Register READ/WRITE' command. All other read or write commands will be replied to with\n2\na NACK to the I C host.\n11.1 Pass-through mode not activated\nPTHRU_ON_OFF = 0b (see Table 13) indicates non-pass-through mode.\n2\n11.1.1 I C interface access\n2\nIf the tag is in the IDLE or HALT state (NFC state after POR or HALT-command) and the correct I C slave\n2"
+  },
+  {
+    "faiss_index_id": 234,
+    "text": "2\naddress of NTAG I C plus is received following the START condition, the bit I2C_LOCKED will be automatically\n2\nset to 1b. If I2C_LOCKED = 1b, the I C interface has access to the tag memory and the tag will respond with\na NACK to any memory READ/WRITE command on the NFC interface other than reading the session register\nbytes during this time.\n2\nI2C_LOCKED must be either reset to 0b at the end of the I C sequence or will be cleared automatically after the\nend of the watchdog timer."
+  },
+  {
+    "faiss_index_id": 235,
+    "text": "end of the watchdog timer.\n11.1.2 NFC interface access\nThe arbitration allows the NFC interface read and write accesses to EEPROM only when I2C_LOCKED is set to\n0b.\nRF_LOCKED is automatically set to 1b if the tag receives a valid command (EEPROM access commands)\non the NFC interface. If RF_LOCKED = 1b, the tag is locked to the NFC interface and will not respond to any\n2\ncommand from the I C interface other than READ register command (see Table 13)."
+  },
+  {
+    "faiss_index_id": 236,
+    "text": "RF_LOCKED is automatically set to 0b in one of the following conditions:\n• At POR or if the NFC field is switched off\n• If the tag is set to the HALT state with a HALT command on the NFC interface\n• If the memory access command is finished on the NFC interface\nWhen the NFC interface has read the last page of the NDEF message specified in LAST_NDEF_BLOCK (see\nTable 11 and Table 12) the bit NDEF_DATA_READ - in the register NS_REG see Table 13 - is set to 1b and\n2"
+  },
+  {
+    "faiss_index_id": 237,
+    "text": "2\nindicates to the I C interface that, for example, new NDEF data can be written.\n11.2 SRAM buffer mapping with Memory Mirror enabled\nWith SRAM_MIRROR_ON_OFF= 1b, the SRAM buffer mirroring is enabled. This mode cannot be combined\nwith the pass-through mode (see Section 11.3).\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n58 / 84NXP Semiconductors NT3H2111_2211\n2 2"
+  },
+  {
+    "faiss_index_id": 238,
+    "text": "58 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nWith the memory mirror enabled, the SRAM is now mapped into the user memory from the NFC interface\nperspective using the SRAM mirror lower page address specified in SRAM_MIRROR_BLOCK byte (Table 11\n2 2\nand Table 12). See Table 37 (NTAG I C plus 1k) and Table 38 (NTAG I C plus 2k) for an illustration of this"
+  },
+  {
+    "faiss_index_id": 239,
+    "text": "SRAM memory mapping when SRAM_MIRROR_BLOCK is set to 01h.\nPassword protection to this mapped SRAM may be enabled by enabling password authentication and setting\nSRAM_PROT bit to 1b.\nIn contrary to password protection, for read only locking there are no special lock bits for the SRAM. Whenever\nuser EEPROM blocks are locked to read-only with static and/or dynamic lock bits, potential mirrored SRAM\nblocks are read-only, too."
+  },
+  {
+    "faiss_index_id": 240,
+    "text": "blocks are read-only, too.\nThe tag must be VCC powered to make this mode work, because without VCC, the SRAM will not be accessible\nvia NFC powered only.\nWhen mapping the SRAM buffer to the user memory, the user shall be aware that all data written into the SRAM\n2 2\nwill be lost once the NTAG I C plus is no longer powered from the I C side (as SRAM is a volatile memory).\nTable 37. Illustration of the SRAM memory addressing via the NFC interface (with SRAM_MIRROR_ON_OFF set to\n2"
+  },
+  {
+    "faiss_index_id": 241,
+    "text": "2\n1b and SRAM_MIRROR_BLOCK set to 01h) for the NTAG I C plus 1k\nSector Page address Byte number within a page Access cond. Access cond.\naddress Dec. Hex. 0 1 2 3 ACTIVE state AUTH. state\n0 0 00h Serial number (UID) READ\n1 01h Serial number (UID) Internal READ\n2 02h Internal Static lock bytes READ/R&W\n3 03h Capability Container (CC) READ&WRITE\n4 04h\n... ... SRAM READ&WRITE\n19 13h\n... ... Unprotected user memory READ&WRITE\nAUTH0 AUTH0\n... ... Protected user memory READ READ&WRITE\n225 E1h"
+  },
+  {
+    "faiss_index_id": 242,
+    "text": "225 E1h\n226 E2h Dynamic lock bytes 00h R&W/READ\n227 E3h RFU RFU RFU AUTH0 READ READ&WRITE\n228 E4h ACCESS RFU RFU RFU READ READ&WRITE\n229 E5h PWD READ READ&WRITE\n230 E6h PACK RFU RFU READ READ&WRITE\n231 E7h PT_I2C RFU RFU RFU READ READ&WRITE\n232 E8h\nConfiguration registers see Table 11\n233 E9h\n234 EAh\nInvalid access - returns NAK n.a.\n235 EBh\n236 ECh\nSession registers see Table 12\n237 EDh"
+  },
+  {
+    "faiss_index_id": 243,
+    "text": "236 ECh\nSession registers see Table 12\n237 EDh\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n59 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nTable 37. Illustration of the SRAM memory addressing via the NFC interface (with SRAM_MIRROR_ON_OFF set to\n2"
+  },
+  {
+    "faiss_index_id": 244,
+    "text": "2\n1b and SRAM_MIRROR_BLOCK set to 01h) for the NTAG I C plus 1k...continued\nSector Page address Byte number within a page Access cond. Access cond.\naddress Dec. Hex. 0 1 2 3 ACTIVE state AUTH. state\n238 EEh\nInvalid access - returns NAK n.a.\n239 EFh\n240 F0h\n... ... Invalid access - returns NAK n.a.\n255 FFh\n1 ... ... Invalid access - returns NAK n.a.\n2 ... ... Invalid access - returns NAK n.a.\n3 0 00h\nInvalid access - returns NAK n.a.\n... ...\n248 F8h\nSession registers see Table 12\n249 F9h\n... ..."
+  },
+  {
+    "faiss_index_id": 245,
+    "text": "Session registers see Table 12\n249 F9h\n... ...\nInvalid access - returns NAK n.a.\n255 FFh\nTable 38. Illustration of the SRAM memory addressing via the NFC interface (with SRAM_MIRROR_ON_OFF set to\n2\n1b and SRAM_MIRROR_BLOCK set to 01h) for the NTAG I C plus 2k\nSector Page address Byte number within a page Access cond. Access cond.\naddress Dec. Hex. 0 1 2 3 ACTIVE state AUTH. state\n0 0 00h Serial number (UID) READ\n1 01h Serial number (UID) Internal READ\n2 02h Internal Static lock bytes READ/R&W"
+  },
+  {
+    "faiss_index_id": 246,
+    "text": "2 02h Internal Static lock bytes READ/R&W\n3 03h Capability Container (CC) READ&WRITE\n4 04h\n... ... SRAM READ&WRITE\n19 13h\n... ... Unprotected user memory READ&WRITE\nAUTH0 AUTH0\n... ... Protected user memory READ READ&WRITE\n225 E1h\n226 E2h Dynamic lock bytes 00h R&W/READ\n227 E3h RFU RFU RFU AUTH0 READ READ&WRITE\n228 E4h ACCESS RFU RFU RFU READ READ&WRITE\n229 E5h PWD READ READ&WRITE\n230 E6h PACK RFU RFU READ READ&WRITE"
+  },
+  {
+    "faiss_index_id": 247,
+    "text": "230 E6h PACK RFU RFU READ READ&WRITE\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n60 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nTable 38. Illustration of the SRAM memory addressing via the NFC interface (with SRAM_MIRROR_ON_OFF set to\n2"
+  },
+  {
+    "faiss_index_id": 248,
+    "text": "2\n1b and SRAM_MIRROR_BLOCK set to 01h) for the NTAG I C plus 2k...continued\nSector Page address Byte number within a page Access cond. Access cond.\naddress Dec. Hex. 0 1 2 3 ACTIVE state AUTH. state\n231 E7h PT_I2C RFU RFU RFU READ READ&WRITE\n232 E8h\nConfiguration registers see Table 11\n233 E9h\n234 EAh\nInvalid access - returns NAK n.a.\n235 EBh\n236 ECh\nSession registers see Table 12\n237 EDh\n238 EEh\nInvalid access - returns NAK n.a.\n239 EFh\n240 F0h\n... ... Invalid access - returns NAK n.a.\n255 FFh"
+  },
+  {
+    "faiss_index_id": 249,
+    "text": "... ... Invalid access - returns NAK n.a.\n255 FFh\n0 00h\n1 ... ... (Un-)protected user memory READ&WRITE\n255 FFh\n2 ... ... Invalid access - returns NAK n.a.\n3 0 00h\nInvalid access - returns NAK n.a.\n... ...\n248 F8h\nSession registers see Table 12\n249 F9h\n... ...\nInvalid access - returns NAK n.a.\n255 FFh\n11.3 Pass-through mode\nPTHRU_ON_OFF = 1b (see Table 13) enables and indicates pass-through mode."
+  },
+  {
+    "faiss_index_id": 250,
+    "text": "Password protection for pass-through mode may be enabled by enabling password authentication and setting\nSRAM_PROT bit to 1b.\n2\nTo handle large amount of data transfer from one interface to the other, NTAG I C plus offers the pass-through\nmode where data is transferred via a 64 byte SRAM. This buffer offers fast write access and unlimited write\nendurance as well as an easy handshake mechanism between the two interfaces.\n2"
+  },
+  {
+    "faiss_index_id": 251,
+    "text": "2\nThis buffer is mapped directly at the end of the Sector 0 of NTAG I C plus.\n2\nIn both directions, the principle of access to the SRAM buffer via the NFC and I C interface is exactly the same\n(see Section 11.3.2 and Section 11.3.3).\nThe data flow direction must be set with the TRANSFER_DIR bit (see Table 14) within the current\n2\ncommunication session using the session registers (it can only be set via the I C interfaces) or for the"
+  },
+  {
+    "faiss_index_id": 252,
+    "text": "NT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n61 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n2\nconfiguration bits after POR (in this case both NFC and I C interface can set it). This pass-through direction"
+  },
+  {
+    "faiss_index_id": 253,
+    "text": "setting avoids locking the memory access during the data transfer from one interface to the SRAM buffer.\n2\nThe pass-through mode can only be enabled via I C interface when both interfaces are powered. The\nPTHRU_ON_OFF bit, located in the session registers NC_REG (see Table 14), needs to be set to 1b. In case\none interface powers off, the pass-through mode is disabled automatically.\n2\nNTAG I C plus introduces in addition to the FAST_READ command a FAST_WRITE command. With this"
+  },
+  {
+    "faiss_index_id": 254,
+    "text": "new command in ACTIVE state whole SRAM can be written at once, which improves the total pass-through\nperformance significantly.\nFor more information read related application note.\n11.3.1 SRAM buffer mapping\n2\nIn pass-through mode, the SRAM of NTAG I C plus is mirrored to pages F0h to FFh of Sector 0.\nThe last page/block of the SRAM (page FFh) is used as the terminator page. Once the terminator page/block\n2"
+  },
+  {
+    "faiss_index_id": 255,
+    "text": "2\nin the respective interfaces is read/written, the control would be transferred to other interface (NFC/I C) - see\nSection 11.3.2 and Section 11.3.3 for more details.\nAccordingly, the application can align on the reader and host side to transfer 16/32/48/64 bytes of data in one\npass-through step by only using the last blocks/page of the SRAM buffer.\nFor best performance in addition to the FAST_READ, the FAST_WRITE command should be used."
+  },
+  {
+    "faiss_index_id": 256,
+    "text": "Table 39. Illustration of the SRAM memory addressing via the NFC interface in pass-through mode\n2\n(PTHRU_ON_OFF set to 1b) for the NTAG I C plus 1k\nSector Page address Byte number within a page Access cond. Access cond.\naddress Dec. Hex. 0 1 2 3 ACTIVE state AUTH. state\n0 0 00h Serial number (UID) READ\n1 01h Serial number (UID) Internal READ\n2 02h Internal Static lock bytes READ/R&W\n3 03h Capability Container (CC) READ&WRITE\n4 04h\nUnprotected user memory READ&WRITE\n... ...\nAUTH0 AUTH0"
+  },
+  {
+    "faiss_index_id": 257,
+    "text": "... ...\nAUTH0 AUTH0\n... ... Protected user memory READ READ&WRITE\n225 E1h\n226 E2h Dynamic lock bytes 00h R&W/READ\n227 E3h RFU RFU RFU AUTH0 READ READ&WRITE\n228 E4h ACCESS RFU RFU RFU READ READ&WRITE\n229 E5h PWD READ READ&WRITE\n230 E6h PACK RFU RFU READ READ&WRITE\n231 E7h PT_I2C RFU RFU RFU READ READ&WRITE\n232 E8h\nConfiguration registers see Table 11\n233 E9h\n234 EAh Invalid access - returns NAK n.a."
+  },
+  {
+    "faiss_index_id": 258,
+    "text": "233 E9h\n234 EAh Invalid access - returns NAK n.a.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n62 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nTable 39. Illustration of the SRAM memory addressing via the NFC interface in pass-through mode\n2"
+  },
+  {
+    "faiss_index_id": 259,
+    "text": "2\n(PTHRU_ON_OFF set to 1b) for the NTAG I C plus 1k...continued\nSector Page address Byte number within a page Access cond. Access cond.\naddress Dec. Hex. 0 1 2 3 ACTIVE state AUTH. state\n235 EBh\n236 ECh\nSession registers see Table 12\n237 EDh\n238 EEh\nInvalid access - returns NAK n.a.\n239 EFh\n240 F0h\n... ... SRAM READ&WRITE\n255 FFh\n1 ... ... Invalid access - returns NAK n.a.\n2 ... ... Invalid access - returns NAK n.a.\n3 0 00h\nInvalid access - returns NAK n.a.\n... ...\n248 F8h"
+  },
+  {
+    "faiss_index_id": 260,
+    "text": "Invalid access - returns NAK n.a.\n... ...\n248 F8h\nSession registers see Table 12\n249 F9h\n... ...\nInvalid access - returns NAK n.a.\n255 FFh\nTable 40. Illustration of the SRAM memory addressing via the NFC interface in pass-through mode\n2\n(PTHRU_ON_OFF set to 1b) for the NTAG I C plus 2k\nSector Page address Byte number within a page Access cond. Access cond.\naddress Dec. Hex. 0 1 2 3 ACTIVE state AUTH. state\n0 0 00h Serial number (UID) READ\n1 01h Serial number (UID) Internal READ"
+  },
+  {
+    "faiss_index_id": 261,
+    "text": "1 01h Serial number (UID) Internal READ\n2 02h Internal Static lock bytes READ/R&W\n3 03h Capability Container (CC) READ&WRITE\n4 04h\nUnprotected user memory READ&WRITE\n... ...\nAUTH0 AUTH0\n... ... Protected user memory READ READ&WRITE\n225 E1h\n226 E2h Dynamic lock bytes 00h R&W/READ\n227 E3h RFU RFU RFU AUTH0 READ READ&WRITE\n228 E4h ACCESS RFU RFU RFU READ READ&WRITE\n229 E5h PWD READ READ&WRITE"
+  },
+  {
+    "faiss_index_id": 262,
+    "text": "229 E5h PWD READ READ&WRITE\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n63 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nTable 40. Illustration of the SRAM memory addressing via the NFC interface in pass-through mode\n2\n(PTHRU_ON_OFF set to 1b) for the NTAG I C plus 2k...continued"
+  },
+  {
+    "faiss_index_id": 263,
+    "text": "Sector Page address Byte number within a page Access cond. Access cond.\naddress Dec. Hex. 0 1 2 3 ACTIVE state AUTH. state\n230 E6h PACK RFU RFU READ READ&WRITE\n231 E7h PT_I2C RFU RFU RFU READ READ&WRITE\n232 E8h\nConfiguration registers see Table 11\n233 E9h\n234 EAh\nInvalid access - returns NAK n.a.\n235 EBh\n236 ECh\nSession registers see Table 12\n237 EDh\n238 EEh\nInvalid access - returns NAK n.a.\n239 EFh\n240 F0h\n... ... SRAM READ&WRITE\n255 FFh\n0 00h\n1 ... ... (Un-)protected user memory READ&WRITE"
+  },
+  {
+    "faiss_index_id": 264,
+    "text": "1 ... ... (Un-)protected user memory READ&WRITE\n255 FFh\n2 ... ... Invalid access - returns NAK n.a.\n3 0 00h\nInvalid access - returns NAK n.a.\n... ...\n248 F8h\nSession registers see Table 12\n249 F9h\n... ...\nInvalid access - returns NAK n.a.\n255 FFh\n2\n11.3.2 NFC to I C data transfer\nIf the NFC interface is enabled (RF_LOCKED = 1b) and data is written to the terminator page FFh of the\nSRAM via the NFC interface, at the end of the WRITE command, bit SRAM_I2C_READY is set to 1b and bit\n2 2"
+  },
+  {
+    "faiss_index_id": 265,
+    "text": "2 2\nRF_LOCKED is set to 0b automatically, and the NTAG I C plus is locked to the I C interface.\nTo signal the host that data is ready to be read following mechanisms are in place:\n• The host polls/reads bit SRAM_I2C_READY from NS_REG (see Table 14) to know if data is ready in SRAM\n• A trigger on the FD pin indicates to the host that data is ready to be read from SRAM. This feature can be\nenabled by programming bits 5:2 (FD_OFF, FD_ON) of the NC_REG appropriately (see Table 13)"
+  },
+  {
+    "faiss_index_id": 266,
+    "text": "This is illustrated in the Figure 29.\n2\nIf the tag is addressed with the correct I C slave address, the I2C_LOCKED bit is automatically set\nto 1b (according to the interface arbitration). After a READ from the terminator page of the SRAM, bit\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n64 / 84NXP Semiconductors NT3H2111_2211\n2 2"
+  },
+  {
+    "faiss_index_id": 267,
+    "text": "64 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nSRAM_I2C_READY and bit I2C_LOCKED are automatically reset to 0b. The tag returns to the arbitration idle\nmode where, for example, further data from the NFC interface can be transferred.\naaa-021660\nhguorht\nssap\nelbanE\nb1\n= FFO_NO_URHTP\natad\ngnitirw\nstrats\nFR\nreffub\nMARS\not\nfo setyb\n4\ntsaL\nFR\nyb nettirw\nMARS\ngnidaer\ntratS\nC2I yb\nMARS\nsetyb\n61\ntsaL\nC2I yb\nMARS\nON"
+  },
+  {
+    "faiss_index_id": 268,
+    "text": "tratS\nC2I yb\nMARS\nsetyb\n61\ntsaL\nC2I yb\nMARS\nON\nRF field\nOFF\nHIGH\nFD pin\nLOW\nI2C_LOCKED 0 0\nRF_LOCKED\nSRAM_I2C_READY\nRF_FIELD_PRESENT\n3Dh 7Dh 3Dh\nt\nEvent\nmore data available?\nGER_SN\nPTHRU_ON_OFF = 0b,\nFD_ON = 11b, FD_OFF = 11b\nSRAM_MIRROR_ON_OFF = 0b\nTRANSFER_DIR = 1b\nGER_CN\nFFO\nFR\n1\n0 1 0 1 0\n0 1 0\n1 0\nFigure 29. Illustration of the Field detection feature in combination with the pass-through mode for data transfer\n2\nfrom NFC to I C\n2\n11.3.3 I C to NFC data transfer\n2"
+  },
+  {
+    "faiss_index_id": 269,
+    "text": "2\n11.3.3 I C to NFC data transfer\n2\nIf the I C interface is enabled (I2C_LOCKED is 1b) and data is written to the terminator block FBh of the\n2\nSRAM via the I C interface, at the end of the WRITE command, bit SRAM_RF_READY is set to 1b and bit\nI2C_LOCKED is automatically reset to 0b to set the tag in the arbitration idle state.\nThe RF_LOCKED bit is then automatically set to 1b (according to the interface arbitration). After a READ"
+  },
+  {
+    "faiss_index_id": 270,
+    "text": "or FAST_READ command involving the terminator page of the SRAM, bit SRAM_RF_READY and bit\n2\nRF_LOCKED are automatically reset to 0b allowing the I C interface to further write data into the SRAM buffer.\nTo signal to the host that further data is ready to be written, the following mechanisms are in place:\n• The NFC interface polls/reads the bit SRAM_RF_READY from NS_REG (see Table 14) to know if new data\n2\nhas been written by the I C interface in the SRAM"
+  },
+  {
+    "faiss_index_id": 271,
+    "text": "has been written by the I C interface in the SRAM\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n65 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n• A trigger on the FD pin indicates to the host that data has been read from SRAM by the NFC interface. This"
+  },
+  {
+    "faiss_index_id": 272,
+    "text": "feature can be enabled by programming bits 5:2 (FD_OFF, FD_ON) of the NC_REG appropriately (see\nTable 13)\nThe above mechanism is illustrated in the Figure 30.\n1\naaa-021661\nhguorht\nssap\nelbanE\nb1\n=\nFFO_NO_URHTP\ngnitirw\nstrats\nC2I\nreffub\nMARS\not\natad\nnettirw\nsetyb\n4\ntsaL\nC2I\nyb MARS\not\ngnidaer\ntratS\nFR\nyb MARS\nsetyb\n4\ntsaL\nFR\nyb\ndaer\nON\nRF field\nOFF\nHIGH\nFD pin\nLOW\nI2C_LOCKED 0 0 0\nRF_LOCKED\nSRAM_RF_READY\nRF_FIELD_PRESENT\n3Ch 7Ch 3Ch\nt\nEvent\nmore data available?\nGER_SN\nPTHRU_ON_OFF = 0b,"
+  },
+  {
+    "faiss_index_id": 273,
+    "text": "more data available?\nGER_SN\nPTHRU_ON_OFF = 0b,\nFD_ON = 11b, FD_OFF = 11b\nSRAM_MIRROR_ON_OFF = 0b\nTRANSFER_DIR = 0b\nGER_CN\nFFO\nFR\n1\n0 1 0\n0 1 0\n1 0\nFigure 30. Illustration of the Field detection signal feature in combination with pass-through mode for data\n2\ntransfer from I C to NFC\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n66 / 84NXP Semiconductors NT3H2111_2211\n2 2"
+  },
+  {
+    "faiss_index_id": 274,
+    "text": "66 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n12 Limiting values\nExceeding the limits of one or more values in reference may cause permanent damage to the device. Exposure\nto limiting values for extended periods may affect device reliability.\nTable 41. Limiting values\n[1][2]\nIn accordance with the Absolute Maximum Rating System (IEC 60134).\nSymbol Parameter Conditions Min Max Unit"
+  },
+  {
+    "faiss_index_id": 275,
+    "text": "Symbol Parameter Conditions Min Max Unit\nT storage temperature -55 +125 °C\nstg\nT maximum junction temperature - +105 °C\nj(max)\n[3]\nV electrostatic discharge voltage human body model (HBM) - 2 kV\nESD\n[4]\ncharge device model (CDM) - 1 kV\nV supply voltage on pin VCC -0.5 4.6 V\nDD\nV input voltage on pin FD, SDA, SCL -0.5 4.6 V\ni\nI input current on pin LA, LB - 40 mA\ni\nV RF input voltage on pin LA, LB - 4.6 V\ni(RF) peak"
+  },
+  {
+    "faiss_index_id": 276,
+    "text": "i(RF) peak\n[1] Stresses above one or more of the limiting values may cause permanent damage to the device.\n[2] Exposure to limiting values for extended periods may affect device reliability.\n[3] According to ANSI/ESDA/JEDEC JS-001.\n[4] According to ANSI/ESDA/JEDEC JS-002.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n67 / 84NXP Semiconductors NT3H2111_2211\n2 2"
+  },
+  {
+    "faiss_index_id": 277,
+    "text": "67 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n13 Characteristics\n13.1 Electrical characteristics\nTable 42. Characteristics\nSymbol Parameter Conditions Min Typ Max Unit\nC input capacitance LA - LB, on-chip - C , f=13.56 44 50 56 pF\ni IC\nMHz,\nV =2.4 V\nLA-LB RMS\nf input frequency - 13.56 - MHz\ni\n[1]\nT operating ambient -40 25 +105 °C\namb\ntemperature\nR thermal resistance JEDEC 2s2p board and XQFN8 - 150 - K/W"
+  },
+  {
+    "faiss_index_id": 278,
+    "text": "TH_JA\npackage\nR thermal resistance JEDEC 2s2p board and TSSOP8 - 211 - K/W\nTH_JA\npackage\nR thermal resistance JEDEC 2s2p board and SO8 - 115 - K/W\nTH_JA\npackage\nEnergy harvesting characteristics\n[2]\nV output voltage generated at the V pin, Class 5 - 3.3 V\nout,max out\nantenna, 14 A/m, load current 1 mA\n2\nI C interface characteristics\nV supply voltage supplied via V only 1.67 - 3.6 V\nCC CC\n2\nI supply current V =1.8 V I C; idle bus - 160 - μA\nDD CC\n2\nV =3.3 V I C; idle bus - 195 - μA\nCC\n2"
+  },
+  {
+    "faiss_index_id": 279,
+    "text": "DD CC\n2\nV =3.3 V I C; idle bus - 195 - μA\nCC\n2\nI supply current V =1.8 V I C@400KHz - - 185 μA\nDD CC\n2\nV =2.5 V I C@400KHz - - 210 μA\nCC\n2\nV =3.3 V I C@400KHz - - 240 μA\nCC\n2\nI C pin characteristics\nV LOW-level output voltage I = 3 mA; V > 2 V - - 0.4 V\nOL OL CC\nI = 2 mA; V < 2 V - - 0.2*V V\nOL CC CC\nV HIGH-level input voltage 0.7*V - - V\nIH CC\nV LOW-level input voltage - - 0.3*V V\nIL CC\nC input capacitance SCL and SDA pin - 2.4 - pF\ni\nI leakage current 0 V and V - - 10 μA\nL CC,max"
+  },
+  {
+    "faiss_index_id": 280,
+    "text": "i\nI leakage current 0 V and V - - 10 μA\nL CC,max\nt SCL high time fast mode 400 kHz 950 - - ns\nhigh\nFD pin characteristics\nV LOW-level output voltage I = 4 mA; V > 2 V - - 0.4 V\nOL OL CC\nI = 3 mA; V < 2 V - - 0.2*V V\nOL CC CC\nI leakage current - 1.5 10 μA\nL\nEEPROM characteristics\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n68 / 84NXP Semiconductors NT3H2111_2211\n2 2"
+  },
+  {
+    "faiss_index_id": 281,
+    "text": "68 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nTable 42. Characteristics...continued\nSymbol Parameter Conditions Min Typ Max Unit\nt retention time T 20 50 - year\nret amb\nN write endurance T 200000 - - cycle\nendu(W) amb\nN write endurance -40 °C to 95 °C 500000 1000000 - cycle\nendu(W)\n[1] Dependent on PCB design and operating conditions"
+  },
+  {
+    "faiss_index_id": 282,
+    "text": "[2] Minimum value depends on available field strength and load current conditions. For details refer to energy harvesting application note\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n69 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n14 Package outline"
+  },
+  {
+    "faiss_index_id": 283,
+    "text": "14 Package outline\nXQFN8: plastic, extremely thin quad flat package; no leads;\n8 terminals; body 1.6 x 1.6 x 0.5 mm SOT902-3\nX\nD B A\nterminal 1\nindex area\nA\nE\nA1\ndetail X\ne e\nC\nv C A B\nL\nw C y1C y\n4\nb\n3 5\ne1\nL1 2 6\nterminal 1\nindex area e1\n7\nb1 1\nv C A B L2 8 metal area\nw C not for soldering\nL1\n0 1 2 mm\nscale\nDimensions\nUnit A A1 b b1 D E e e1 L L1 L2 v w y y1\nmax 0.5 0.05 0.25 0.35 1.65 1.65 0.45 0.35 0.35\nmm nom 0.20 0.30 1.60 1.60 0.6 0.5 0.40 0.30 0.30 0.1 0.05 0.05 0.05"
+  },
+  {
+    "faiss_index_id": 284,
+    "text": "min 0.00 0.15 0.25 1.55 1.55 0.35 0.25 0.25\nNote\n1. Plastic or metal protrusions of 0.075 mm maximum per side are not included. sot902-3_po\nOutline References European\nIssue date\nversion IEC JEDEC JEITA projection\n11-08-16\nSOT902-3 - - - MO-255 - - -\n20-10-09\nFigure 31. Package outline SOT902-3 (XQFN8)\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023"
+  },
+  {
+    "faiss_index_id": 285,
+    "text": "Product data sheet Rev. 3.6 — 21 July 2023\n70 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nFootprint information for reflow soldering of XQFN8 package SOT902-3\nHx\nD\n0.025\n(8×)\n0.025\nC (7×)\nHy Ay SLy 1.000\n0.110\n0.320\nSLx\n1.200\nsolder land\nsolder paste deposit\nsolder land plus solder paste\noccupied area\nDIMENSIONS in mm\nAy C D SLx SLy Hx Hy\n1.2 0.22 0.4 0.5 0.5 1.9 1.9\n12-12-19\nIssue date sot902-3_fr\n13-01-02"
+  },
+  {
+    "faiss_index_id": 286,
+    "text": "12-12-19\nIssue date sot902-3_fr\n13-01-02\nFigure 32. Footprint information for reflow soldering of XQFN8 package - SOT902-3\nFind here detailed package and soldering information.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n71 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting"
+  },
+  {
+    "faiss_index_id": 287,
+    "text": "TSSOP8: plastic thin shrink small outline package; 8 leads; body width 3 mm SOT505-1\nD E A\nX\nc\ny HE v M A\nZ\n8 5\nA2\nA1\n(A3) A\npin 1 index\nθ\nLp\nL\n1 4\ndetail X\ne w M\nbp\n0 2.5 5 mm\nscale\nDIMENSIONS (mm are the original dimensions)\nUNIT\nm\nA\nax .\nA1 A2 A3 bp c D(1) E(2) e HE L Lp v w y Z(1) θ\n0.15 0.95 0.45 0.28 3.1 3.1 5.1 0.7 0.70 6°\nmm 1.1 0.25 0.65 0.94 0.1 0.1 0.1\n0.05 0.80 0.25 0.15 2.9 2.9 4.7 0.4 0.35 0°\nNotes\n1. Plastic or metal protrusions of 0.15 mm maximum per side are not included."
+  },
+  {
+    "faiss_index_id": 288,
+    "text": "2. Plastic or metal protrusions of 0.25 mm maximum per side are not included.\nOUTLINE REFERENCES EUROPEAN\nISSUE DATE\nVERSION IEC JEDEC JEITA PROJECTION\n99-04-09\nSOT505-1\n03-02-18\nFigure 33. Package outline SOT505-1 (TSSOP8)\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n72 / 84NXP Semiconductors NT3H2111_2211\n2 2"
+  },
+  {
+    "faiss_index_id": 289,
+    "text": "72 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n3.600\n2.950\n0.725 0.125\n0.125\n5.750 3.600 3.200 5.500\n1.150\n0.600 0.450\n0.650\nsolder lands occupied area Dimensions in mm sot505-1_fr\nFigure 34. Footprint information for reflow soldering of TSSOP8 package - SOT505-1\nFind here detailed package and soldering information."
+  },
+  {
+    "faiss_index_id": 290,
+    "text": "NT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n73 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nSO8: plastic small outline package; 8 leads; body width 3.9 mm SOT96-1\nD E A\nX\nc\ny\nH E v M A\nZ\n8 5\nQ\nA 2 A 1 (A 3 ) A\npin 1 index\nθ\nL p\n1 4 L\ne w M detail X\nb p\n0 2.5 5 mm\nscale"
+  },
+  {
+    "faiss_index_id": 291,
+    "text": "θ\nL p\n1 4 L\ne w M detail X\nb p\n0 2.5 5 mm\nscale\nDIMENSIONS (inch dimensions are derived from the original mm dimensions)\nUNIT m A ax . A 1 A 2 A 3 b p c D (1) E (2) e H E L L p Q v w y Z (1) θ\n0.25 1.45 0.49 0.25 5.0 4.0 6.2 1.0 0.7 0.7\nmm 1.75 0.25 1.27 1.05 0.25 0.25 0.1\n0.10 1.25 0.36 0.19 4.8 3.8 5.8 0.4 0.6 0.3 8 o\n0.010 0.057 0.019 0.0100 0.20 0.16 0.244 0.039 0.028 0.028 0 o\ninches 0.069 0.01 0.05 0.041 0.01 0.01 0.004\n0.004 0.049 0.014 0.0075 0.19 0.15 0.228 0.016 0.024 0.012\nNotes"
+  },
+  {
+    "faiss_index_id": 292,
+    "text": "Notes\n1. Plastic or metal protrusions of 0.15 mm (0.006 inch) maximum per side are not included.\n2. Plastic or metal protrusions of 0.25 mm (0.01 inch) maximum per side are not included.\nOUTLINE REFERENCES EUROPEAN\nISSUE DATE\nVERSION IEC JEDEC JEITA PROJECTION\n99-12-27\nSOT96-1 076E03 MS-012\n03-02-18\nFigure 35. Package outline SOT96-1 (SO8)\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved."
+  },
+  {
+    "faiss_index_id": 293,
+    "text": "Product data sheet Rev. 3.6 — 21 July 2023\n74 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n3.600\n2.950\n0.725 0.125\n0.125\n5.750 3.600 3.200 5.500\n1.150\n0.600 0.450\n0.650\nsolder lands occupied area Dimensions in mm sot505-1_fr\nFigure 36. Footprint information for reflow soldering of SO8 package - SOT96-1\n1.20(2×)\n0.60(6×) 0.3(2×) enlargedsolderland\n1.30\n4.00 6.60 7.00\n1.27(6×)\n5.50\nboarddirection"
+  },
+  {
+    "faiss_index_id": 294,
+    "text": "1.30\n4.00 6.60 7.00\n1.27(6×)\n5.50\nboarddirection\nsolderlands solderresist\noccupiedarea placementaccurracy±0.25 Dimensionsinmm sot096-1_fw\nFigure 37. Footprint information for wave soldering of SO8 package - SOT96-1\nFind here detailed package and soldering information.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n75 / 84NXP Semiconductors NT3H2111_2211\n2 2"
+  },
+  {
+    "faiss_index_id": 295,
+    "text": "75 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n15 Handling information\nCAUTION\nThis device is sensitive to ElectroStatic Discharge (ESD). Observe precautions for handling\nelectrostatic sensitive devices.\nSuch precautions are described in the ANSI/ESD S20.20, IEC/ST 61340-5, JESD625-A or equivalent\nstandards.\nFor assembly guidelines refer to AN1902."
+  },
+  {
+    "faiss_index_id": 296,
+    "text": "For assembly guidelines refer to AN1902.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n76 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n16 Abbreviations\nTable 43. Abbreviations\nAcronym Description\nACK ACKnowledge\nASID Assembly Sequence ID\nCC Capability Container"
+  },
+  {
+    "faiss_index_id": 297,
+    "text": "ASID Assembly Sequence ID\nCC Capability Container\nCRC Cyclic Redundancy Check\nDBSN Diffusion Batch Sequence number\nEEPROM Electrically Erasable Programmable Read-Only Memory\nfc carrier frequency\nGND GrouND\nIC Integrated Circuit\n2\nI C Inter-Integrated Circuit\nLSB Least Significant Bit\nMCU Micro-Controller Unit\nMSB Most Significant Bit\nNAK Not-AcKnowledge\nNDEF NFC Data Exchange Format\nNFC Near Field Communication\nPOR Power-On Reset\nRF Radio Frequency\nRFU Reserved for Future Use"
+  },
+  {
+    "faiss_index_id": 298,
+    "text": "RF Radio Frequency\nRFU Reserved for Future Use\nSRAM Static Random-Access Memory\nTLV Tag - Length - Value\nUID Unique IDentifier\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n77 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n17 References"
+  },
+  {
+    "faiss_index_id": 299,
+    "text": "17 References\n[1] NFC Forum - Digital Protocol Technical Specification\nhttps://nfc-forum.org/product-category/specification/\n[2] NFC Forum - Activity Technical Specification\nhttps://nfc-forum.org/product-category/specification/\n[3] NFC Forum - Type 2 Tag Technical Specification\nhttps://nfc-forum.org/product-category/specification/\n[4] Explorer Kit Development NFC Forum Certificate\nhttps://nfc-forum.org/wp-content/uploads/2017/08/NXP_NTAG_I%C2%B2C-_CertID_58514.pdf"
+  },
+  {
+    "faiss_index_id": 300,
+    "text": "[5] ISO/IEC 14443 - Identification cards - Contactless integrated circuit cards - Proximity cards\nhttps://www.iso.org/ics/35.240.15/x/\n[6] ISO/IEC 7816-6 - Identification cards - Integrated circuit cards - Interindustry data elements for interchange\nhttps://www.iso.org/ics/35.240.15/x/\n2\n[7] UM10204 I C-bus specification and user manual\nhttps://www.nxp.com/docs/en/user-guide/UM10204.pdf\n[8] AN11276 NTAG Antenna Design Guide\nhttps://www.nxp.com/docs/en/application-note/AN11276.zip"
+  },
+  {
+    "faiss_index_id": 301,
+    "text": "[9] AN11350 NTAG21x Originality Signature Validation\nhttps://www.nxp.com/confidential/AN11350\n2\n[10] AN11578 NTAG I C energy harvesting\nhttp://www.nxp.com/documents/application_note/AN11578.pdf\n2\n[11] AN11579 How to use the NTAG I C (plus) for bidirectional communication\nhttp://www.nxp.com/documents/application_note/AN11579.pdf\n[12] AN11786 Memory Configuration Options\nhttp://www.nxp.com/documents/application_note/AN11786.pdf\n[13] XQFN8 - SOT902-3 package and soldering information"
+  },
+  {
+    "faiss_index_id": 302,
+    "text": "https://www.nxp.com/docs/en/package-information/SOT902-3.pdf\n[14] TSSOP8 - SOT505-1 package and soldering information\nhttps://www.nxp.com/docs/en/package-information/SOT505-1.pdf\n[15] SO8 - SOT96-1 package and soldering information\nhttps://www.nxp.com/docs/en/package-information/SOT96-1.pdf\n[16] AN1902 Assembly guidelines for QFN and SON packages\nhttps://www.nxp.com/docs/en/application-note/AN1902.pdf\n[17] Certicom Research SEC 2: Recommended Elliptic Curve Domain Parameters V2.0"
+  },
+  {
+    "faiss_index_id": 303,
+    "text": "https://www.secg.org/sec2-v2.pdf\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n78 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\n18 Revision history\nTable 44. Revision history\nDocument ID Release date Data sheet status Change notice Supersedes"
+  },
+  {
+    "faiss_index_id": 304,
+    "text": "NT3H2111_2211 v. 3.6 20230721 Product data sheet - NT3H2111_2211 v. 3.5\nModifications: • Remove the wafer deliver form\n• Clarifying the condition NFC_PORT bit\n• Add the compatibility related information with a mobile\n• Editorial updates\nNT3H2111_2211 v. 3.5 20190507 Product data sheet - NT3H2111_2211 v. 3.4\nNT3H2111_2211 v. 3.4 20190108 Product data sheet - NT3H2111_2211 v. 3.3\nNT3H2111_2211 v. 3.3 20180808 Product data sheet - NT3H2111_2211 v. 3.2"
+  },
+  {
+    "faiss_index_id": 305,
+    "text": "NT3H2111_2211 v. 3.2 20171130 Product data sheet - NT3H2111_2211 v. 3.1\nNT3H2111_2211 v. 3.1 20171009 Product data sheet - v. 3.0\nNT3H2111_2211 v. 3.0 20160203 Product data sheet - -\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n79 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting"
+  },
+  {
+    "faiss_index_id": 306,
+    "text": "19 Legal information\n19.1 Data sheet status\nDocument status[1][2] Product status[3] Definition\nObjective [short] data sheet Development This document contains data from the objective specification for product\ndevelopment.\nPreliminary [short] data sheet Qualification This document contains data from the preliminary specification.\nProduct [short] data sheet Production This document contains the product specification."
+  },
+  {
+    "faiss_index_id": 307,
+    "text": "[1] Please consult the most recently issued document before initiating or completing a design.\n[2] The term 'short data sheet' is explained in section \"Definitions\".\n[3] The product status of device(s) described in this document may have changed since this document was published and may differ in case of multiple\ndevices. The latest product status information is available on the Internet at URL http://www.nxp.com."
+  },
+  {
+    "faiss_index_id": 308,
+    "text": "19.2 Definitions Suitability for use — NXP Semiconductors products are not designed,\nauthorized or warranted to be suitable for use in life support, life-critical or\nsafety-critical systems or equipment, nor in applications where failure or\nDraft — A draft status on a document indicates that the content is still malfunction of an NXP Semiconductors product can reasonably be expected"
+  },
+  {
+    "faiss_index_id": 309,
+    "text": "under internal review and subject to formal approval, which may result to result in personal injury, death or severe property or environmental\nin modifications or additions. NXP Semiconductors does not give any damage. NXP Semiconductors and its suppliers accept no liability for\nrepresentations or warranties as to the accuracy or completeness of inclusion and/or use of NXP Semiconductors products in such equipment or"
+  },
+  {
+    "faiss_index_id": 310,
+    "text": "information included in a draft version of a document and shall have no applications and therefore such inclusion and/or use is at the customer’s own\nliability for the consequences of use of such information. risk.\nShort data sheet — A short data sheet is an extract from a full data sheet Applications — Applications that are described herein for any of these"
+  },
+  {
+    "faiss_index_id": 311,
+    "text": "with the same product type number(s) and title. A short data sheet is products are for illustrative purposes only. NXP Semiconductors makes no\nintended for quick reference only and should not be relied upon to contain representation or warranty that such applications will be suitable for the\ndetailed and full information. For detailed and full information see the specified use without further testing or modification.\nrelevant full data sheet, which is available on request via the local NXP"
+  },
+  {
+    "faiss_index_id": 312,
+    "text": "Customers are responsible for the design and operation of their\nSemiconductors sales office. In case of any inconsistency or conflict with the\napplications and products using NXP Semiconductors products, and NXP\nshort data sheet, the full data sheet shall prevail.\nSemiconductors accepts no liability for any assistance with applications or\ncustomer product design. It is customer’s sole responsibility to determine"
+  },
+  {
+    "faiss_index_id": 313,
+    "text": "Product specification — The information and data provided in a Product whether the NXP Semiconductors product is suitable and fit for the\ndata sheet shall define the specification of the product as agreed between\ncustomer’s applications and products planned, as well as for the planned\nNXP Semiconductors and its customer, unless NXP Semiconductors and\napplication and use of customer’s third party customer(s). Customers should"
+  },
+  {
+    "faiss_index_id": 314,
+    "text": "customer have explicitly agreed otherwise in writing. In no event however,\nprovide appropriate design and operating safeguards to minimize the risks\nshall an agreement be valid in which the NXP Semiconductors product\nassociated with their applications and products.\nis deemed to offer functions and qualities beyond those described in the\nNXP Semiconductors does not accept any liability related to any default,\nProduct data sheet.\ndamage, costs or problem which is based on any weakness or default"
+  },
+  {
+    "faiss_index_id": 315,
+    "text": "in the customer’s applications or products, or the application or use by\ncustomer’s third party customer(s). Customer is responsible for doing all\n19.3 Disclaimers necessary testing for the customer’s applications and products using NXP\nSemiconductors products in order to avoid a default of the applications\nLimited warranty and liability — Information in this document is believed and the products or of the application or use by customer’s third party"
+  },
+  {
+    "faiss_index_id": 316,
+    "text": "to be accurate and reliable. However, NXP Semiconductors does not give customer(s). NXP does not accept any liability in this respect.\nany representations or warranties, expressed or implied, as to the accuracy\nor completeness of such information and shall have no liability for the Limiting values — Stress above one or more limiting values (as defined in\nconsequences of use of such information. NXP Semiconductors takes no the Absolute Maximum Ratings System of IEC 60134) will cause permanent"
+  },
+  {
+    "faiss_index_id": 317,
+    "text": "responsibility for the content in this document if provided by an information damage to the device. Limiting values are stress ratings only and (proper)\nsource outside of NXP Semiconductors. operation of the device at these or any other conditions above those\nIn no event shall NXP Semiconductors be liable for any indirect, incidental, given in the Recommended operating conditions section (if present) or the"
+  },
+  {
+    "faiss_index_id": 318,
+    "text": "punitive, special or consequential damages (including - without limitation - Characteristics sections of this document is not warranted. Constant or\nlost profits, lost savings, business interruption, costs related to the removal repeated exposure to limiting values will permanently and irreversibly affect\nor replacement of any products or rework charges) whether or not such the quality and reliability of the device.\ndamages are based on tort (including negligence), warranty, breach of"
+  },
+  {
+    "faiss_index_id": 319,
+    "text": "contract or any other legal theory. Terms and conditions of commercial sale — NXP Semiconductors\nproducts are sold subject to the general terms and conditions of commercial\nNotwithstanding any damages that customer might incur for any reason\nsale, as published at http://www.nxp.com/profile/terms, unless otherwise\nwhatsoever, NXP Semiconductors’ aggregate and cumulative liability\nagreed in a valid written individual agreement. In case an individual"
+  },
+  {
+    "faiss_index_id": 320,
+    "text": "towards customer for the products described herein shall be limited in\nagreement is concluded only the terms and conditions of the respective\naccordance with the Terms and conditions of commercial sale of NXP\nagreement shall apply. NXP Semiconductors hereby expressly objects to\nSemiconductors.\napplying the customer’s general terms and conditions with regard to the\npurchase of NXP Semiconductors products by customer.\nRight to make changes — NXP Semiconductors reserves the right to"
+  },
+  {
+    "faiss_index_id": 321,
+    "text": "make changes to information published in this document, including without\nNo offer to sell or license — Nothing in this document may be interpreted\nlimitation specifications and product descriptions, at any time and without\nor construed as an offer to sell products that is open for acceptance or\nnotice. This document supersedes and replaces all information supplied prior\nthe grant, conveyance or implication of any license under any copyrights,\nto the publication hereof."
+  },
+  {
+    "faiss_index_id": 322,
+    "text": "to the publication hereof.\npatents or other industrial or intellectual property rights.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n80 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting"
+  },
+  {
+    "faiss_index_id": 323,
+    "text": "Quick reference data — The Quick reference data is an extract of the Translations — A non-English (translated) version of a document, including\nproduct data given in the Limiting values and Characteristics sections of this the legal information in that document, is for reference only. The English\ndocument, and as such is not complete, exhaustive or legally binding. version shall prevail in case of any discrepancy between the translated and\nEnglish versions."
+  },
+  {
+    "faiss_index_id": 324,
+    "text": "English versions.\nExport control — This document as well as the item(s) described herein\nmay be subject to export control regulations. Export might require a prior NXP B.V. - NXP B.V. is not an operating company and it does not distribute\nauthorization from competent authorities. or sell products.\nSuitability for use in non-automotive qualified products — Unless\nthis document expressly states that this specific NXP Semiconductors 19.4 Licenses"
+  },
+  {
+    "faiss_index_id": 325,
+    "text": "product is automotive qualified, the product is not suitable for automotive\nuse. It is neither qualified nor tested in accordance with automotive testing\nor application requirements. NXP Semiconductors accepts no liability for Purchase of NXP ICs with NFC technology — Purchase of an NXP\ninclusion and/or use of non-automotive qualified products in automotive Semiconductors IC that complies with one of the Near Field Communication"
+  },
+  {
+    "faiss_index_id": 326,
+    "text": "equipment or applications. (NFC) standards ISO/IEC 18092 and ISO/IEC 21481 does not convey an\nimplied license under any patent right infringed by implementation of any of\nIn the event that customer uses the product for design-in and use in\nthose standards. Purchase of NXP Semiconductors IC does not include a\nautomotive applications to automotive specifications and standards,\nlicense to any NXP patent (or other IP right) covering combinations of those"
+  },
+  {
+    "faiss_index_id": 327,
+    "text": "customer (a) shall use the product without NXP Semiconductors’ warranty\nproducts with other products, whether hardware or software.\nof the product for such automotive applications, use and specifications, and\n(b) whenever customer uses the product for automotive applications beyond\nNXP Semiconductors’ specifications such use shall be solely at customer’s\nown risk, and (c) customer fully indemnifies NXP Semiconductors for any 19.5 Trademarks"
+  },
+  {
+    "faiss_index_id": 328,
+    "text": "liability, damages or failed product claims resulting from customer design and\nuse of the product for automotive applications beyond NXP Semiconductors’ Notice: All referenced brands, product names, service names, and\nstandard warranty and NXP Semiconductors’ product specifications. trademarks are the property of their respective owners.\nNXP — wordmark and logo are trademarks of NXP B.V.\nI2C-bus — logo is a trademark of NXP B.V.\nNTAG — is a trademark of NXP B.V."
+  },
+  {
+    "faiss_index_id": 329,
+    "text": "NTAG — is a trademark of NXP B.V.\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n81 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nTables\nTab. 1. Ordering information ..........................................5 Tab. 27. READ command .............................................52"
+  },
+  {
+    "faiss_index_id": 330,
+    "text": "Tab. 2. Marking codes ...................................................6 Tab. 28. READ timing ....................................................53\nTab. 3. Pin description for XQFN8, TSSOP8 and Tab. 29. FAST_READ command ...................................53\nSO8 ...................................................................9 Tab. 30. FAST_READ timing .........................................54"
+  },
+  {
+    "faiss_index_id": 331,
+    "text": "Tab. 4. NTAG I2C plus 1k memory organization Tab. 31. WRITE command ............................................55\nfrom the NFC perspective ...............................14 Tab. 32. WRITE timing ..................................................55\nTab. 5. NTAG I2C plus 2k memory organization Tab. 33. FAST_WRITE command .................................56\nfrom the NFC perspective ...............................16 Tab. 34. FAST_WRITE timing .......................................56"
+  },
+  {
+    "faiss_index_id": 332,
+    "text": "Tab. 6. NTAG I2C plus 1k memory organization Tab. 35. SECTOR_SELECT command .........................57\nfrom the I2C perspective .................................19 Tab. 36. SECTOR_SELECT timing ...............................57\nTab. 7. NTAG I2C plus 2k memory organization Tab. 37. Illustration of the SRAM memory\nfrom the I2C perspective .................................21 addressing via the NFC interface (with\nTab. 8. Minimum memory content to be in SRAM_MIRROR_ON_OFF set to 1b and"
+  },
+  {
+    "faiss_index_id": 333,
+    "text": "initialized state for NTAG I2C plus ..................26 SRAM_MIRROR_BLOCK set to 01h) for\nTab. 9. Password and Access Configuration the NTAG I2C plus 1k .....................................59\nRegister ...........................................................28 Tab. 38. Illustration of the SRAM memory\nTab. 10. Password and Access Configuration bytes .....28 addressing via the NFC interface (with\nTab. 11. Configuration bytes NTAG I2C plus ................29 SRAM_MIRROR_ON_OFF set to 1b and"
+  },
+  {
+    "faiss_index_id": 334,
+    "text": "Tab. 12. Session bytes NTAG I2C plus .........................30 SRAM_MIRROR_BLOCK set to 01h) for\nTab. 13. Configuration bytes .........................................31 the NTAG I2C plus 2k .....................................60\nTab. 14. Session register bytes .....................................33 Tab. 39. Illustration of the SRAM memory\nTab. 15. Default NTAG I2C plus address from I2C ........43 addressing via the NFC interface in pass-"
+  },
+  {
+    "faiss_index_id": 335,
+    "text": "Tab. 16. Command overview .........................................47 through mode (PTHRU_ON_OFF set to 1b)\nTab. 17. ACK and NAK values ......................................48 for the NTAG I2C plus 1k ................................62\nTab. 18. ATQA response of the NTAG I2C plus ............48 Tab. 40. Illustration of the SRAM memory\nTab. 19. SAK response of the NTAG I2C plus ..............49 addressing via the NFC interface in pass-"
+  },
+  {
+    "faiss_index_id": 336,
+    "text": "Tab. 20. GET_VERSION command ..............................49 through mode (PTHRU_ON_OFF set to 1b)\nTab. 21. GET_VERSION timing ....................................49 for the NTAG I2C plus 2k ................................63\nTab. 22. GET_VERSION response ...............................50 Tab. 41. Limiting values ................................................67"
+  },
+  {
+    "faiss_index_id": 337,
+    "text": "Tab. 23. READ_SIG command .....................................51 Tab. 42. Characteristics .................................................68\nTab. 24. READ_SIG timing ............................................51 Tab. 43. Abbreviations ...................................................77\nTab. 25. PWD_AUTH command ...................................52 Tab. 44. Revision history ...............................................79"
+  },
+  {
+    "faiss_index_id": 338,
+    "text": "Tab. 26. PWD_AUTH timing ..........................................52\nNT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n82 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nFigures\nFig. 1. Contactless and contact system .......................1 Fig. 20. Frame Delay Time (from NFC device to"
+  },
+  {
+    "faiss_index_id": 339,
+    "text": "Fig. 2. Block diagram ...................................................7 NFC tag), TACK and TNAK ............................48\nFig. 3. Pin configuration for XQFN8 .............................8 Fig. 21. GET_VERSION command ..............................49\nFig. 4. Pin configuration for TSSOP8 ...........................8 Fig. 22. READ_SIG command .....................................50"
+  },
+  {
+    "faiss_index_id": 340,
+    "text": "Fig. 5. Pin configuration for SO8 ..................................8 Fig. 23. PWD_AUTH command ...................................51\nFig. 6. NFC state machine of NTAG I2C plus .............11 Fig. 24. READ command .............................................52\nFig. 7. Serial number (UID) ........................................23 Fig. 25. FAST_READ command ...................................53"
+  },
+  {
+    "faiss_index_id": 341,
+    "text": "Fig. 8. Static lock bytes 0 and 1 .................................23 Fig. 26. WRITE command ............................................55\nFig. 9. NTAG I2C plus1k Dynamic lock bytes 0, 1 Fig. 27. FAST_WRITE command .................................56\nand 2 ...............................................................24 Fig. 28. SECTOR_SELECT command .........................57\nFig. 10. NTAG I2C plus 2k Dynamic lock bytes 0, 1 Fig. 29. Illustration of the Field detection feature in"
+  },
+  {
+    "faiss_index_id": 342,
+    "text": "and 2 ...............................................................25 combination with the pass-through mode\nFig. 11. Possible configuration of CC bytes of for data transfer from NFC to I2C ...................65\nNTAG I2C plus 1k version ...............................26 Fig. 30. Illustration of the Field detection signal\nFig. 12. FD pin example circuit ....................................35 feature in combination with pass-through"
+  },
+  {
+    "faiss_index_id": 343,
+    "text": "Fig. 13. Illustration of the field detection feature mode for data transfer from I2C to NFC ..........66\nwhen configured for simple field detection ......35 Fig. 31. Package outline SOT902-3 (XQFN8) ..............70\nFig. 14. Illustration of the field detection feature Fig. 32. Footprint information for reflow soldering of\nwhen configured for first valid start of XQFN8 package - SOT902-3 ..........................71"
+  },
+  {
+    "faiss_index_id": 344,
+    "text": "communication detection .................................36 Fig. 33. Package outline SOT505-1 (TSSOP8) ............72\nFig. 15. Illustration of the field detection feature Fig. 34. Footprint information for reflow soldering of\nwhen configured for selection of the tag TSSOP8 package - SOT505-1 ........................73\ndetection ..........................................................37 Fig. 35. Package outline SOT96-1 (SO8) .....................74"
+  },
+  {
+    "faiss_index_id": 345,
+    "text": "Fig. 16. Energy harvesting example circuit ..................38 Fig. 36. Footprint information for reflow soldering of\nFig. 17. I2C bus protocol ..............................................41 SO8 package - SOT96-1 ................................75\nFig. 18. I2C READ and WRITE operation ....................44 Fig. 37. Footprint information for wave soldering of\nFig. 19. WRITE and READ register operation ..............46 SO8 package - SOT96-1 ................................75"
+  },
+  {
+    "faiss_index_id": 346,
+    "text": "NT3H2111/NT3H2211 All information provided in this document is subject to legal disclaimers. © 2023 NXP B.V. All rights reserved.\nProduct data sheet Rev. 3.6 — 21 July 2023\n83 / 84NXP Semiconductors NT3H2111_2211\n2 2\nNTAG I C plus: NFC Forum T2T with I C interface, password protection and energy harvesting\nContents\n1 General description ............................................1 9.2 Stop condition ..................................................41"
+  },
+  {
+    "faiss_index_id": 347,
+    "text": "2 Features and benefits .........................................2 9.3 I2C soft reset and NFC disable feature ...........42\n2.1 Key features ......................................................2 9.4 Acknowledge bit (ACK) ....................................42\n2.2 NFC interface ....................................................2 9.5 Data input ........................................................42"
+  },
+  {
+    "faiss_index_id": 348,
+    "text": "2.3 Memory ..............................................................3 9.6 Addressing .......................................................42\n2.4 I2C interface ......................................................3 9.7 READ and WRITE Operation ..........................43\n2.5 Security ..............................................................3 9.8 WRITE and READ register operation ..............46"
+  },
+  {
+    "faiss_index_id": 349,
+    "text": "2.6 Key benefits .......................................................3 10 NFC Command ..................................................47\n3 Applications .........................................................4 10.1 NTAG I2C plus command overview .................47\n4 Ordering information ..........................................5 10.2 Timing ..............................................................47"
+  },
+  {
+    "faiss_index_id": 350,
+    "text": "5 Marking .................................................................6 10.3 NTAG ACK and NAK .......................................48\n6 Block diagram .....................................................7 10.4 ATQA and SAK responses ..............................48\n7 Pinning information ............................................8 10.5 GET_VERSION ...............................................49"
+  },
+  {
+    "faiss_index_id": 351,
+    "text": "7.1 Pinning ...............................................................8 10.6 READ_SIG .......................................................50\n7.1.1 XQFN8 ...............................................................8 10.7 PWD_AUTH .....................................................51\n7.1.2 TSSOP8 .............................................................8 10.8 READ ...............................................................52"
+  },
+  {
+    "faiss_index_id": 352,
+    "text": "7.1.3 SO8 ....................................................................8 10.9 FAST_READ ....................................................53\n7.2 Pin description ...................................................9 10.10 WRITE .............................................................54\n8 Functional description ......................................10 10.11 FAST_WRITE ..................................................55"
+  },
+  {
+    "faiss_index_id": 353,
+    "text": "8.1 Block description .............................................10 10.12 SECTOR SELECT ...........................................56\n8.2 NFC interface ..................................................10 11 Communication and arbitration between\n8.2.1 Data integrity ...................................................10 NFC and I2C interface ......................................58"
+  },
+  {
+    "faiss_index_id": 354,
+    "text": "8.2.2 NFC state machine ..........................................11 11.1 Pass-through mode not activated ....................58\n8.2.2.1 IDLE state ........................................................11 11.1.1 I2C interface access ........................................58\n8.2.2.2 READY 1 state ................................................11 11.1.2 NFC interface access ......................................58"
+  },
+  {
+    "faiss_index_id": 355,
+    "text": "8.2.2.3 READY 2 state ................................................12 11.2 SRAM buffer mapping with Memory Mirror\n8.2.2.4 ACTIVE state ...................................................12 enabled ............................................................58\n8.2.2.5 AUTHENTICATED state ..................................12 11.3 Pass-through mode .........................................61"
+  },
+  {
+    "faiss_index_id": 356,
+    "text": "8.2.2.6 HALT state .......................................................12 11.3.1 SRAM buffer mapping .....................................62\n8.3 Memory organization .......................................13 11.3.2 NFC to I2C data transfer .................................64\n8.3.1 Memory map from NFC perspective ................13 11.3.3 I2C to NFC data transfer .................................65"
+  },
+  {
+    "faiss_index_id": 357,
+    "text": "8.3.2 Memory map from I2C interface ......................18 12 Limiting values ..................................................67\n8.3.3 EEPROM .........................................................22 13 Characteristics ..................................................68\n8.3.4 SRAM ...............................................................22 13.1 Electrical characteristics ..................................68"
+  },
+  {
+    "faiss_index_id": 358,
+    "text": "8.3.5 Serial number (UID) ........................................22 14 Package outline .................................................70\n8.3.6 Static Lock Bytes .............................................23 15 Handling information ........................................76\n8.3.7 Dynamic Lock Bytes ........................................23 16 Abbreviations ....................................................77"
+  },
+  {
+    "faiss_index_id": 359,
+    "text": "8.3.8 Capability Container (CC) ................................25 17 References .........................................................78\n8.3.9 User Memory pages ........................................26 18 Revision history ................................................79\n8.3.10 Memory content at delivery .............................26 19 Legal information ..............................................80\n8.3.11 Password and Access Configuration ...............26"
+  },
+  {
+    "faiss_index_id": 360,
+    "text": "8.3.12 NTAG I2C plus configuration and session\nregisters ...........................................................29\n8.4 Configurable Field Detection Pin .....................34\n8.5 Watchdog timer ................................................37\n8.6 Energy harvesting ............................................38\n8.7 Password authentication ..................................38\n8.7.1 Programming of PWD and PACK ....................39"
+  },
+  {
+    "faiss_index_id": 361,
+    "text": "8.7.2 Limiting negative verification attempts .............39\n8.7.3 Protection of configuration segments ...............39\n8.8 Originality signature .........................................39\n9 I2C commands ..................................................41\n9.1 Start condition ..................................................41\nPlease be aware that important notices concerning this document and the product(s)\ndescribed herein, have been included in section 'Legal information'."
+  },
+  {
+    "faiss_index_id": 362,
+    "text": "© 2023 NXP B.V. All rights reserved.\nFor more information, please visit: http://www.nxp.com\nDate of release: 21 July 2023\nDocument identifier: NT3H2111/NT3H2211"
+  }
+]

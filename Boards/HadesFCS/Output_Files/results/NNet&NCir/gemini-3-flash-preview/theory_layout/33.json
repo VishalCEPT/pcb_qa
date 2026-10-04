@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component SW2 connected to Net__SW2_C_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The SPICE netlist explicitly defines a connection between Net-_SW2-C_ and BOOT0_FCC via resistor R22, and the netlist shows SW2 pin 3 is connected to Net-_SW2-C_.",
+        "is_final": true
+    }
+}

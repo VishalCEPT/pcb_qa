@@ -1,0 +1,274 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "(cid:2)(cid:3)(cid:4)(cid:5)(cid:4)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)\nHEXFET\n(cid:2)(cid:2)Power\nMOSFET\n(cid:3) Ultra Low On-Resistance\n(cid:3) P-Channel MOSFET\n(cid:3) SOT-23 Footprint\nG 1\n(cid:3) Low Profile (<1.1mm)\nV = -20V\n(cid:3) Available in Tape and Reel DSS\n3 D\n(cid:3) Fast Switching\n(cid:3) Lead-Free R = 0.065Ω\nDS(on)\nS 2\n(cid:3) RoHS Compliant, Halogen-Free\n(cid:2)(cid:3)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:9)(cid:7)(cid:10)(cid:11)"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "These P-Channel MOSFETs from International Rectifier utilize advanced\nprocessing techniques to achieve extremely low on-resistance per silicon\narea. This benefit, combined with the fast switching speed and ruggedized\ndevice design that HEXFET® power MOSFETs are well known for, provides\nthe designer with an extremely efficient and reliable device for use in battery\nand load management.\nA thermally enhanced large pad leadframe has been incorporated into the"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "standard SOT-23 package to produce a HEXFET Power MOSFET with the\nindustry's smallest footprint. This package, dubbed the Micro3™, is ideal\nfor applications where printed circuit board space is at a premium. The low\nMicro3™\nprofile (<1.1mm) of the Micro3 allows it to fit easily into extremely thin\napplication environments such as portable electronics and PCMCIA\ncards. The thermal resistance and power dissipation are the best available.\nStandard Pack"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "Standard Pack\nBase Part Number Package Type Orderable Part Number\nForm Quantity\nIRLML6402TRPbF Micro3™ (SOT-23) Tape and Reel 3000 IRLML6402TRPbF\n(cid:2)(cid:3)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)(cid:13)(cid:14)(cid:15)(cid:7)(cid:15)(cid:10)(cid:16)(cid:12)(cid:8)(cid:14)(cid:17)(cid:18)(cid:4)\nParameter Max. Units\nVDS Drain- Source Voltage -20 V\nI @ T = 25°C Continuous Drain Current, V @ -4.5V -3.7\nD A GS\nI @ T = 70°C Continuous Drain Current, V @ -4.5V -2.2 A"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "D A GS\nI Pulsed Drain Current (cid:4) -22\nDM\nP @T = 25°C Power Dissipation 1.3\nD A (cid:5)\nP @T = 70°C Power Dissipation 0.8\nD A\nLinear Derating Factor 0.01 W/°C\nE Single Pulse Avalanche Energy(cid:5) 11 mJ\nAS\nV Gate-to-Source Voltage ± 12 V\nGS\nTJ, TSTG Junction and Storage Temperature Range -55 to + 150 °C\nThermal Resistance\nParameter Typ. Max. Units\nRθJA Maximum Junction-to-Ambient(cid:2) 75 100 (cid:2)(cid:3)(cid:4)(cid:5)"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "(cid:6)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:8)(cid:8)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)(cid:9)(cid:13)(cid:14)(cid:15)(cid:7)(cid:7)(cid:2)(cid:3)(cid:16)(cid:17)(cid:6)(cid:18)(cid:7)(cid:19)(cid:20)(cid:21)(cid:22)(cid:11)(cid:20)(cid:23)(cid:21)(cid:10)(cid:14)(cid:20)(cid:23)(cid:24)(cid:7)(cid:25)(cid:22)(cid:13)(cid:21)(cid:10)(cid:12)(cid:10)(cid:22)(cid:11)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:2"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:26)(cid:27)(cid:28)(cid:15)(cid:10)(cid:21)(cid:7)(cid:7)(cid:29)(cid:23)(cid:21)(cid:23)(cid:30)(cid:31)(cid:22)(cid:22)(cid:21)(cid:7)"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "(cid:22)(cid:22)!(cid:28)(cid:23)(cid:13)\"(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)#$(cid:11)(cid:10)(cid:24)(cid:7)(cid:16)%&(cid:7)(cid:16)(cid:17)(cid:6)(cid:18)(cid:2)(cid:3)(cid:4)(cid:5)(cid:4)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "Electrical Characteristics @ T = 25°C (unless otherwise specified)\nJ\nParameter Min. Typ. Max. Units Conditions\nV(BR)DSS Drain-to-Source Breakdown Voltage -20 ––– ––– V VGS = 0V, ID = -250μA\nΔV(BR)DSS/ΔTJ Breakdown Voltage Temp. Coefficient ––– -0.009 ––– V/°C Reference to 25°C, ID = -1mA (cid:7)\nR Static Drain-to-Source On-Resistance\n––– 0.0500.065\nΩ\nVGS = -4.5V, ID = -3.7A (cid:7)\nDS(on) ––– 0.0800.135 VGS = -2.5V, ID = -3.1A (cid:7)"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "VGS(th) Gate Threshold Voltage -0.40 -0.55 -1.2 V VDS = VGS, ID = -250μA\ngfs Forward Transconductance 6.0 ––– ––– S VDS = -10V, ID = -3.7A (cid:7)\nI Drain-to-Source Leakage Current\n––– ––– -1.0\n-#\nVDS = -20V, VGS = 0V\nDSS ––– ––– -25 VDS = -20V, VGS = 0V, TJ = 70°C\n(cid:19) (cid:2)(cid:3)(cid:3)\nGate-to-Source Forward Leakage ––– ––– -100\n(cid:20)#\nVGS = -12V\nGate-to-Source Reverse Leakage ––– ––– 100 VGS = 12V\nQg Total Gate Charge ––– 8.0 12 ID = -3.7A"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "Qg Total Gate Charge ––– 8.0 12 ID = -3.7A\nQgs Gate-to-Source Charge ––– 1.2 1.8 nC VDS = -10V\nQgd Gate-to-Drain (\"Miller\") Charge ––– 2.8 4.2 VGS = -5.0V (cid:7)\ntd(on) Turn-On Delay Time ––– 350 ––– VDD = -10V\ntr Rise Time ––– 48 –––\n(cid:20)(cid:30)\nID = -3.7A\ntd(off) Turn-Off Delay Time ––– 588 ––– RG = 89Ω\ntf Fall Time ––– 381 ––– RD = 2.7Ω\nCiss Input Capacitance ––– 633 ––– VGS = 0V\nCoss Output Capacitance ––– 145 ––– pF VDS = -10V\nCrss Reverse Transfer Capacitance ––– 110 ––– ƒ = 1.0MHz"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "Source-Drain Ratings and Characteristics\nParameter Min. Typ. Max. Units Conditions\nIS Continuous Source Current\n––– ––– -1.3\nMOSFET symbol D\n(Body Diode) # showing the\nISM Pulsed Source Current integral reverse G\n––– ––– -22\n(Body Diode) (cid:4) p-n junction diode.\nS\nVSD Diode Forward Voltage ––– ––– -1.2 V TJ = 25°C, IS = -1.0A, VGS = 0V(cid:6)(cid:7)\ntrr Reverse Recovery Time ––– 29 43 ns TJ = 25°C, IF = -1.0A\nQrr Reverse RecoveryCharge ––– 11 17 nC di/dt = -100A/μs(cid:2) (cid:7)"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "(cid:2)(cid:3)(cid:4)(cid:5)(cid:6)(cid:7)"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "(cid:2)(cid:7)Repetitive rating; pulse width limited by (cid:4)(cid:7)(cid:7)(cid:26)(cid:27)(cid:11)(cid:12)(cid:23)(cid:13)(cid:22)(cid:7)(cid:15)(cid:14)(cid:27)(cid:20)(cid:21)(cid:22)!(cid:7)(cid:14)(cid:20)(cid:7)(cid:6)((cid:7)(cid:30))(cid:27)(cid:23)(cid:11)(cid:22)(cid:7)(cid:30)(cid:10)(cid:20)*(cid:24)(cid:22)(cid:7)(cid:24)(cid:23)+(cid:22)(cid:11)(cid:7)(cid:6)(cid:14),(cid:9)(cid:7)(cid:13)(cid:14)$$(cid:22)(cid:11)(cid:7) (cid:25)(cid:18)(cid:7)(cid:28)(cid:14)(cid:23)(cid:11)!&"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "max. junction temperature. (cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:30)(cid:21)(cid:22)(cid:23)!+(cid:7)(cid:30)(cid:21)(cid:23)(cid:21)(cid:22)(cid:9)\n(cid:3)(cid:7)Pulse width ≤ 400μs; duty cycle ≤ 2%. (cid:5)(cid:7)(cid:7)Starting T = 25°C, L = 1.65mH\nJ\nR = 25Ω, I = -3.7A.\nG AS\n’’(cid:7)For recommended footprint and soldering techniques refer to application note #AN-994."
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "(cid:16)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:8)(cid:8)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)(cid:9)(cid:13)(cid:14)(cid:15)(cid:7)(cid:7)(cid:2)(cid:3)(cid:16)(cid:17)(cid:6)(cid:18)(cid:7)(cid:19)(cid:20)(cid:21)(cid:22)(cid:11)(cid:20)(cid:23)(cid:21)(cid:10)(cid:14)(cid:20)(cid:23)(cid:24)(cid:7)(cid:25)(cid:22)(cid:13)(cid:21)(cid:10)(cid:12)(cid:10)(cid:22)(cid:11)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": ":7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:26)(cid:27)(cid:28)(cid:15)(cid:10)(cid:21)(cid:7)(cid:7)(cid:29)(cid:23)(cid:21)(cid:23)(cid:30)(cid:31)(cid:22)(cid:22)(cid:21)(cid:7)"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "(cid:22)(cid:22)!(cid:28)(cid:23)(cid:13)\"(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)#$(cid:11)(cid:10)(cid:24)(cid:7)(cid:16)%&(cid:7)(cid:16)(cid:17)(cid:6)(cid:18)(cid:2)(cid:3)(cid:4)(cid:5)(cid:4)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "100\nVGS\nTOP -7.00V\n-5.00V\n-4.50V\n-3.50V\n-3.00V\n-2.70V\n-2.50V\nBOTTOM-2.25V\n10\n20μs PULSE WIDTH\nTJ = 25°C\n1\n0.1 1 10 100\n-V , Drain-to-Source Voltage (V)\nFig 1. Typical Output Characteristics Fig 2. Typical Output Characteristics\nFig 3. Typical Transfer Characteristics Fig 4. Normalized On-Resistance\nVs. Temperature"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": ".(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:8)(cid:8)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)(cid:9)(cid:13)(cid:14)(cid:15)(cid:7)(cid:7)(cid:2)(cid:3)(cid:16)(cid:17)(cid:6)(cid:18)(cid:7)(cid:19)(cid:20)(cid:21)(cid:22)(cid:11)(cid:20)(cid:23)(cid:21)(cid:10)(cid:14)(cid:20)(cid:23)(cid:24)(cid:7)(cid:25)(cid:22)(cid:13)(cid:21)(cid:10)(cid:12)(cid:10)(cid:22)(cid:11)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:26)(cid"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": ":7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:26)(cid:27)(cid:28)(cid:15)(cid:10)(cid:21)(cid:7)(cid:7)(cid:29)(cid:23)(cid:21)(cid:23)(cid:30)(cid:31)(cid:22)(cid:22)(cid:21)(cid:7)"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "(cid:22)(cid:22)!(cid:28)(cid:23)(cid:13)\"(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)#$(cid:11)(cid:10)(cid:24)(cid:7)(cid:16)%&(cid:7)(cid:16)(cid:17)(cid:6)(cid:18)"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": ")A(\ntnerruC\necruoS-ot-niarD\n,\nI-\nDS\nD\n100\nVGS\nTOP -7.00V\n-5.00V\n-4.50V\n-3.50V\n-3.00V\n-2.70V\n-2.50V\nBOTTOM-2.25V\n10\n-2.25V\n20μs PULSE WIDTH\nTJ = 150°C\n1\n0.1 1 10 100\n-V , Drain-to-Source Voltage (V)\n)A(\ntnerruC\necruoS-ot-niarD\n,\nI-\nDS\nD\n-2.25V\n100\nV D S = -15V\n20μs PULSE WIDTH\n10\n2.0 3.0 4.0 5.0 6.0 7.0 8.0\n-V , Gate-to-Source Voltage (V)\n)A(\ntnerruC\necruoS-ot-niarD\n,\nI-\nGS\nD\n2.0\nTJ = 25 ° C 1.5\nTJ = 150 ° C\n1.0\n0.5\n0.0\n-60 -40 -20 0 20 40 60 80 100 120 140 160\nT , Junction Temperature ( C)"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "T , Junction Temperature ( C)\necnatsiseR\nnO\necruoS-ot-niarD\n,\nR\n)dezilamroN(\nJ\n)no(SD\nID=-3.7A\nVGS=-4.5V\n°(cid:2)(cid:3)(cid:4)(cid:5)(cid:4)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)\nFig 5. Typical Capacitance Vs. Fig 6. Typical Gate Charge Vs.\nDrain-to-Source Voltage Gate-to-Source Voltage\n100\nOPERATION IN THIS AREA LIMITED\nBY R\nDS(on)\n10\n1\nT = 25 ° C C\nT = 150 ° C\nJ\nSingle Pulse 0.1\n0.1 1 10 100\n-V , Drain-to-Source Voltage (V)"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "0.1 1 10 100\n-V , Drain-to-Source Voltage (V)\nFig 7. Typical Source-Drain Diode Fig 8. Maximum Safe Operating Area\nForward Voltage"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "(cid:18)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:8)(cid:8)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)(cid:9)(cid:13)(cid:14)(cid:15)(cid:7)(cid:7)(cid:2)(cid:3)(cid:16)(cid:17)(cid:6)(cid:18)(cid:7)(cid:19)(cid:20)(cid:21)(cid:22)(cid:11)(cid:20)(cid:23)(cid:21)(cid:10)(cid:14)(cid:20)(cid:23)(cid:24)(cid:7)(cid:25)(cid:22)(cid:13)(cid:21)(cid:10)(cid:12)(cid:10)(cid:22)(cid:11)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": ":7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:26)(cid:27)(cid:28)(cid:15)(cid:10)(cid:21)(cid:7)(cid:7)(cid:29)(cid:23)(cid:21)(cid:23)(cid:30)(cid:31)(cid:22)(cid:22)(cid:21)(cid:7)"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "(cid:22)(cid:22)!(cid:28)(cid:23)(cid:13)\"(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)#$(cid:11)(cid:10)(cid:24)(cid:7)(cid:16)%&(cid:7)(cid:16)(cid:17)(cid:6)(cid:18)"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "))AA((\nttnneerrrruuCC\nnniiaarrDD\n,,\nII-\nDS\nD\n1000 10\nVGS = 0V, f = 1 MHZ\nCiss = Cgs + Cgd, Cds SHORTED\nCrss = Cgd\n800 8\nCoss = Cds + Cgd\nF)\nCiss\np\ne( 600 6\nc\nn\na\nc\nti\na\na p 400 4\nC\nC ,\nCoss\n200 2\nCrss\n0 0\n0 3 6 9 12\n1 10 100\nQ , Total Gate Charge (nC)\nVDS, Drain-to-Source Voltage (V)\n10us\n100us\n1ms\n10ms\n)V(\negatloV\necruoS-ot-etaG\n,\nV-\nG\nSG\nID=-3.7A\nV =-10V\nDS\nFOR TEST CIRCUIT\nSEE FIGURE 1 3\n100\n10\n1\n0.1\n0.2 0.4 0.6 0.8 1.0 1.2\n-V ,Source-to-Drain Voltage (V)\n)A(\ntnerruC\nniarD\nesreveR\n,\nI-\nSD\nDS"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": ")A(\ntnerruC\nniarD\nesreveR\n,\nI-\nSD\nDS\nT = 150 ° C\nJ\nTJ = 25 ° C\nV G S = 0 V(cid:2)(cid:3)(cid:4)(cid:5)(cid:4)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)\n4.0\n3.0\n2.0\n1.0\n0.0\n25 50 75 100 125 150\nT , Case Temperature ( C)\nFig 9. Maximum Drain Current Vs. Fig 10. Maximum Avalanche Energy\nCase Temperature Vs. Drain Current\nFig 11. Maximum Effective Transient Thermal Impedance, Junction-to-Ambient"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "/(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:8)(cid:8)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)(cid:9)(cid:13)(cid:14)(cid:15)(cid:7)(cid:7)(cid:2)(cid:3)(cid:16)(cid:17)(cid:6)(cid:18)(cid:7)(cid:19)(cid:20)(cid:21)(cid:22)(cid:11)(cid:20)(cid:23)(cid:21)(cid:10)(cid:14)(cid:20)(cid:23)(cid:24)(cid:7)(cid:25)(cid:22)(cid:13)(cid:21)(cid:10)(cid:12)(cid:10)(cid:22)(cid:11)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:26)(cid"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": ":7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:26)(cid:27)(cid:28)(cid:15)(cid:10)(cid:21)(cid:7)(cid:7)(cid:29)(cid:23)(cid:21)(cid:23)(cid:30)(cid:31)(cid:22)(cid:22)(cid:21)(cid:7)"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "(cid:22)(cid:22)!(cid:28)(cid:23)(cid:13)\"(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)#$(cid:11)(cid:10)(cid:24)(cid:7)(cid:16)%&(cid:7)(cid:16)(cid:17)(cid:6)(cid:18)"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": ")A(\ntnerruC\nniarD\n,\nI-\n° C\nD\n25\n20\n15\n10\n5\n0\n25 50 75 100 125 150\nStarting T , Junction Temperature ( C)\n)Jm(\nygrenE\nehcnalavA\nesluP\nelgniS\n,\nE\nJ\nSA\nID\nTOP -1.7A\n-3.0A\nBOTTOM -3.7A\n°\n1000\n100\n10\nPDM\nt1\n1 t2\nNotes:\n1. Duty factor D = t 1 / t2\n2. Peak TJ=PDMx ZthJA + TA\n0.1\n0.00001 0.0001 0.001 0.01 0.1 1 10\nt , Rectangular Pulse Duration (sec)\n)\nZ(\nesnopseR\nlamrehT\n1\nAJht\nD = 0.50\n0.20\n0.10\n0.05\n0.02\n0.01"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "lamrehT\n1\nAJht\nD = 0.50\n0.20\n0.10\n0.05\n0.02\n0.01\nSINGLE PULSE (THERMAL RESPONSE)(cid:2)(cid:3)(cid:4)(cid:5)(cid:4)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)\n0.14 Ω ) 0.20\nΩ\n)\ne\n(\nVGS = -2.5V\nV e g a o\ne\n( t l 0 0 . . 1 1 0 2 R\nn\ne n a s\nc\ns t i 0.16\nu c r O e 0.12\no c\nD S o n a - r - t\n,\ni\nS\nn\no\n(\n)\n0\n0 0\n.\n. .\n0\n0 0\n4\n6 8 Id = -3.7A\nD\nS a n o u o\nr\n-\n,\n- r t i\nn\n)\n0\n0\n.\n.\n0\n0\n4\n8 VGS = -4.5V\nR\nD\nS\no\n(\n0.02 D 0.00\nR\n2.0 3.0 4.0 5.0 6.0 7.0 0 5 10 15 20 25 30"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "R\n2.0 3.0 4.0 5.0 6.0 7.0 0 5 10 15 20 25 30\n-V GS, Gate -to -Source Voltage ( V ) -I D , Drain Current ( A )\nFig 12. Typical On-Resistance Vs. Fig 13. Typical On-Resistance Vs.\nGate Voltage Drain Current"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "0(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:8)(cid:8)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)(cid:9)(cid:13)(cid:14)(cid:15)(cid:7)(cid:7)(cid:2)(cid:3)(cid:16)(cid:17)(cid:6)(cid:18)(cid:7)(cid:19)(cid:20)(cid:21)(cid:22)(cid:11)(cid:20)(cid:23)(cid:21)(cid:10)(cid:14)(cid:20)(cid:23)(cid:24)(cid:7)(cid:25)(cid:22)(cid:13)(cid:21)(cid:10)(cid:12)(cid:10)(cid:22)(cid:11)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:26)(cid"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": ":7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:26)(cid:27)(cid:28)(cid:15)(cid:10)(cid:21)(cid:7)(cid:7)(cid:29)(cid:23)(cid:21)(cid:23)(cid:30)(cid:31)(cid:22)(cid:22)(cid:21)(cid:7)"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "(cid:22)(cid:22)!(cid:28)(cid:23)(cid:13)\"(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)#$(cid:11)(cid:10)(cid:24)(cid:7)(cid:16)%&(cid:7)(cid:16)(cid:17)(cid:6)(cid:18)(cid:2)(cid:3)(cid:4)(cid:5)(cid:4)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "(cid:3)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:2)(cid:9)(cid:10)(cid:11)(cid:12)(cid:13)(cid:14)(cid:8)(cid:15)(cid:2)(cid:9)(cid:16)(cid:17)(cid:18)(cid:19)(cid:13)(cid:20)(cid:6)(cid:17)(cid:17)(cid:15)(cid:2)(cid:21)(cid:18)(cid:5)(cid:22)(cid:18)(cid:23)(cid:17)(cid:2)(cid:11)(cid:24)(cid:25)(cid:26)(cid:4)(cid:27)(cid:17)"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "(cid:3)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:4)(cid:9)(cid:7)(cid:8)(cid:10)(cid:11)(cid:12)(cid:6)(cid:10)(cid:8)(cid:13)(cid:9)(cid:14)(cid:7)(cid:10)(cid:4)(cid:7)(cid:10)(cid:5)(cid:4)(cid:15)(cid:15)(cid:4)(cid:5)(cid:6)(cid:16)(cid:6)(cid:12)(cid:8)(cid:10)(cid:17)(cid:4)(cid:7)(cid:18)(cid:13)(cid:6)(cid:8)(cid:19)\n6\nD 5\nM OB\nL\nSY\nM\nM\nI\nI\nL\nN\nLIMET\nM\nE\nD\nR\nA\nIM\nS\nX\nENSIO\nM\nN\nI\nS\nN\nINCHES\nMAX\nA 0.89 1.12 .036 .044\nA1 0.01 0.10 .0004 .0039\nA2 0.88 1.02 .035 .040"
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "A1 0.01 0.10 .0004 .0039\nA2 0.88 1.02 .035 .040\n3 E1 6 E c b 0 0 . . 3 0 0 8 0 0 . . 2 5 0 0 . . 0 0 1 0 1 3 9 2 . . 0 0 1 0 9 7 6 8\n1 2 ccc CBA D 2.80 3.04 .111 .119\nE 2.10 2.64 .083 .103\nE1 1.20 1.40 .048 .055\ne 0.95 BSC .0375 BSC\ne B 5 e1 1.90 BSC .075 BSC\nL 0.40 0.60 .0158 .0236\ne1 L1 0.25 BSC .0118 BSC\n0 0° 8° 0° 8°\naaa 0.10 .004\nbbb 0.20 .008\nccc 0.15 .006\n4 H\nAA2\nL1\nA1 3X b aaaC\nbbb CAB 3 SURF\n0\n7 3X L\nRECOMMENDED FOOTPRINT\nNOTES"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "0\n7 3X L\nRECOMMENDED FOOTPRINT\nNOTES\n3X[ 0 . . 0 9 3 7 8 2 ] 1 2. . D D I I M ME E N N S S I I O O N NS IN A G R A E N S D H T O O W L N E R IN A N M C IL IN LI G M E P T E E R R A S S A M N E D Y I 1 N 4 C .5 H M E - S 1 . 994.\n3. CONTROLLING DIMENSION: MILLIMETER.\n[. 2 1 . 0 7 7 4 9 2 ] 4 DATUM PLANE H IS LOCATED AT THE MOLD PARTING LINE.\n5 DATUM A AND B TO BE DETERMINED AT DATUM PLANE H.\n6 DIMENSIONS D AND E1 ARE MEASURED AT DATUM PLANE H."
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "7 DIMENSION L IS THE LEAD LENGTH FOR SOLDERING TO A SUBSTRATE.\n8. OUTLINE CONFORMS TO JEDEC OUTLINE TO-236AB.\n[. 0 0 . 3 9 7 5 5] 3 X 0 [. . 0 8 3 0 1 2 ]\n1.90\n[.075]\nMicro3 (SOT-23 / TO-236AB) Part Marking Information\nNotes: This part marking information applies to devices produced after 02/26/2001\nDATE CODE W = (1-26) IF PRECEDED BY LAST DIGIT OF CALENDAR YEAR\nPART NUMBER LEAD-FREE YEAR Y W W O EE R K K W\n20112001 1 01 A\n20122002 2 02 B\n20132003 3 03 C\n20142004 4 04 D"
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "20122002 2 02 B\n20132003 3 03 C\n20142004 4 04 D\nCu WIRE ASSEMBLY LOT CODE 20152005 5\nHALOGEN FREE 20162006 6\nX = PART NUMBER CODE REFERENCE: 20172007 7\nA = IRLML2402 S = IRLML6244\n20182008 8\n20192009 9\nB = IRLML2803 T = IRLML6246 20202010 0 24 X\nC = IRLML6302 U = IRLML6344 25 Y\nD = IRLML5103 V = IRLML6346 26 Z\nE = IRLML6402 W = IRFML8244\nF = IRLML6401 X = IRLML2244 W = (27-52) IF PRECEDED BY A LETTER\nG = IRLML2502 Y = IRLML2246 WORK\nH = IRLML5203 Z = IRFML9244 YEAR Y WEEK W"
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "H = IRLML5203 Z = IRFML9244 YEAR Y WEEK W\nI = IRLML0030 20112001 A 27 A\nJ = IRLML2030 20122002 B 28 B\nK = IRLML0100 20132003 C 29 C\nL = IRLML0060 20142004 D 30 D\n20152005 E\nM = IRLML0040 20162006 F\nN = IRLML2060 DATE CODE EXAMPLE: 20172007 G\nP = IRLML9301 YWW = 432 = DF 20182008 H\nR = IRLML9303 YWW = 503 = 5C 20192009 J\n20202010 K 50 X\n51 Y\n52 Z"
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "(cid:2)(cid:3)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:3)(cid:9)(cid:7)(cid:4)(cid:10)(cid:5)(cid:7)(cid:11)(cid:3)(cid:12)(cid:4)(cid:7)(cid:13)(cid:14)(cid:9)(cid:9)(cid:5)(cid:15)(cid:4)(cid:7)(cid:16)(cid:9)(cid:17)(cid:18)(cid:19)(cid:15)(cid:20)(cid:7)(cid:21)(cid:22)(cid:5)(cid:17)(cid:12)(cid:5)(cid:7)(cid:9)(cid:5)(cid:23)(cid:5)(cid:9)(cid:7)(cid:4)(cid:3)(cid:7)(cid:24)(cid:25)(cid:7)(cid:18)(cid:5)(cid:26)(cid:12)(cid:19)(cid:4)(cid:5)(cid:7)(cid:17)(cid:4)(cid:7)(cid:10)(cid:4)(cid:"
+  },
+  {
+    "faiss_index_id": 47,
+    "text": ")(cid:7)(cid:17)(cid:4)(cid:7)(cid:10)(cid:4)(cid:4)(cid:21)(cid:6)(cid:27)(cid:27)(cid:18)(cid:18)(cid:18)(cid:28)(cid:19)(cid:9)(cid:23)(cid:28)(cid:13)(cid:3)(cid:11)(cid:27)(cid:21)(cid:17)(cid:13)(cid:29)(cid:17)(cid:20)(cid:5)"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "1(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:8)(cid:8)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)(cid:9)(cid:13)(cid:14)(cid:15)(cid:7)(cid:7)(cid:2)(cid:3)(cid:16)(cid:17)(cid:6)(cid:18)(cid:7)(cid:19)(cid:20)(cid:21)(cid:22)(cid:11)(cid:20)(cid:23)(cid:21)(cid:10)(cid:14)(cid:20)(cid:23)(cid:24)(cid:7)(cid:25)(cid:22)(cid:13)(cid:21)(cid:10)(cid:12)(cid:10)(cid:22)(cid:11)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:26)(cid"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": ":7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:26)(cid:27)(cid:28)(cid:15)(cid:10)(cid:21)(cid:7)(cid:7)(cid:29)(cid:23)(cid:21)(cid:23)(cid:30)(cid:31)(cid:22)(cid:22)(cid:21)(cid:7)"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "(cid:22)(cid:22)!(cid:28)(cid:23)(cid:13)\"(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)#$(cid:11)(cid:10)(cid:24)(cid:7)(cid:16)%&(cid:7)(cid:16)(cid:17)(cid:6)(cid:18)(cid:2)(cid:3)(cid:4)(cid:5)(cid:4)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "(cid:2)(cid:3)(cid:4)(cid:5)(cid:6)(cid:7)™(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)(cid:13)(cid:7)(cid:14)(cid:11)(cid:10)(cid:12)(cid:13)(cid:15)(cid:7)(cid:16)(cid:17)(cid:18) (cid:11)(cid:19)(cid:20)(cid:21)(cid:22)(cid:23)(cid:22)(cid:24)(cid:21)(cid:21)(cid:25)(cid:22)(cid:26)(cid:27)(cid:28)(cid:6)(cid:5)(cid:29)(cid:19)(cid:30)(cid:3)(cid:6)(cid:27)"
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "(cid:3)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:4)(cid:9)(cid:7)(cid:8)(cid:10)(cid:11)(cid:12)(cid:6)(cid:10)(cid:8)(cid:13)(cid:9)(cid:14)(cid:7)(cid:10)(cid:4)(cid:7)(cid:10)(cid:5)(cid:4)(cid:15)(cid:15)(cid:4)(cid:5)(cid:6)(cid:16)(cid:6)(cid:12)(cid:8)(cid:10)(cid:17)(cid:4)(cid:7)(cid:18)(cid:13)(cid:6)(cid:8)(cid:19)\n2.05 ( .080 ) 1.6 ( .062 ) 1.32 ( .051 )\n1.95 ( .077 ) 4.1 ( .161 ) 1.5 ( .060 ) 1.85 ( .072 ) 1.12 ( .045 )\n3.9 ( .154 ) 1.65 ( .065 )\nTR 3.55 ( .139 )\n8.3 ( .326 )"
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "TR 3.55 ( .139 )\n8.3 ( .326 )\n3.45 ( .136 )\n7.9 ( .312 )\nFEED DIRECTION 4.1 ( .161 )\n3.9 ( .154 ) 1.1 ( .043 ) 0.35 ( .013 )\n0.9 ( .036 ) 0.25 ( .010 )\n178.00\n( 7.008 )\nMAX.\n9.90 ( .390 )\n8.40 ( .331 )\nNOTES:\n1. CONTROLLING DIMENSION : MILLIMETER.\n2. OUTLINE CONFORMS TO EIA-481 & EIA-541."
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "(cid:2)(cid:3)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:3)(cid:9)(cid:7)(cid:4)(cid:10)(cid:5)(cid:7)(cid:11)(cid:3)(cid:12)(cid:4)(cid:7)(cid:13)(cid:14)(cid:9)(cid:9)(cid:5)(cid:15)(cid:4)(cid:7)(cid:16)(cid:9)(cid:17)(cid:18)(cid:19)(cid:15)(cid:20)(cid:7)(cid:21)(cid:22)(cid:5)(cid:17)(cid:12)(cid:5)(cid:7)(cid:9)(cid:5)(cid:23)(cid:5)(cid:9)(cid:7)(cid:4)(cid:3)(cid:7)(cid:24)(cid:25)(cid:7)(cid:18)(cid:5)(cid:26)(cid:12)(cid:19)(cid:4)(cid:5)(cid:7)(cid:17)(cid:4)(cid:7)(cid:10)(cid:4)(cid:"
+  },
+  {
+    "faiss_index_id": 55,
+    "text": ")(cid:7)(cid:17)(cid:4)(cid:7)(cid:10)(cid:4)(cid:4)(cid:21)(cid:6)(cid:27)(cid:27)(cid:18)(cid:18)(cid:18)(cid:28)(cid:19)(cid:9)(cid:23)(cid:28)(cid:13)(cid:3)(cid:11)(cid:27)(cid:21)(cid:17)(cid:13)(cid:29)(cid:17)(cid:20)(cid:5)"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "%(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:8)(cid:8)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)(cid:9)(cid:13)(cid:14)(cid:15)(cid:7)(cid:7)(cid:2)(cid:3)(cid:16)(cid:17)(cid:6)(cid:18)(cid:7)(cid:19)(cid:20)(cid:21)(cid:22)(cid:11)(cid:20)(cid:23)(cid:21)(cid:10)(cid:14)(cid:20)(cid:23)(cid:24)(cid:7)(cid:25)(cid:22)(cid:13)(cid:21)(cid:10)(cid:12)(cid:10)(cid:22)(cid:11)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:26)(cid"
+  },
+  {
+    "faiss_index_id": 57,
+    "text": ":7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:26)(cid:27)(cid:28)(cid:15)(cid:10)(cid:21)(cid:7)(cid:7)(cid:29)(cid:23)(cid:21)(cid:23)(cid:30)(cid:31)(cid:22)(cid:22)(cid:21)(cid:7)"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "(cid:22)(cid:22)!(cid:28)(cid:23)(cid:13)\"(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)#$(cid:11)(cid:10)(cid:24)(cid:7)(cid:16)%&(cid:7)(cid:16)(cid:17)(cid:6)(cid:18)(cid:2)(cid:3)(cid:4)(cid:5)(cid:4)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)"
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "Qualification information†\nConsumer\nQualification level (per JEDEC JESD47F†† guidelines)\nMSL1\nMoisture Sensitivity Level Micro3™ (SOT-23)\n(per JEDEC J-STD-020D†† )\nRoHS compliant Yes\n† Qualification standards can be found at International Rectifier’s web site: http://www.irf.com/product-info/reliability\n†† Applicable version of JEDEC standard at the time of product release\nRevision History\nDate Comment\n• Updated data sheet with new IR corporate template."
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "• Updated package outline & part marking on page 7.\n4/28/2014\n• Added Qualification table -Qual level \"Consumer\" on page 9.\n• Added bullet point in the Benefits \"RoHS Compliant, Halogen -Free\" on page 1.\nIR WORLD HEADQUARTERS: 101 N. Sepulveda Blvd., El Segundo, California 90245, USA\nTo contact International Rectifier, please visit http://www.irf.com/whoto-call/"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "2(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:8)(cid:8)(cid:8)(cid:9)(cid:10)(cid:11)(cid:12)(cid:9)(cid:13)(cid:14)(cid:15)(cid:7)(cid:7)(cid:2)(cid:3)(cid:16)(cid:17)(cid:6)(cid:18)(cid:7)(cid:19)(cid:20)(cid:21)(cid:22)(cid:11)(cid:20)(cid:23)(cid:21)(cid:10)(cid:14)(cid:20)(cid:23)(cid:24)(cid:7)(cid:25)(cid:22)(cid:13)(cid:21)(cid:10)(cid:12)(cid:10)(cid:22)(cid:11)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:26)(cid"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": ":7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:26)(cid:27)(cid:28)(cid:15)(cid:10)(cid:21)(cid:7)(cid:7)(cid:29)(cid:23)(cid:21)(cid:23)(cid:30)(cid:31)(cid:22)(cid:22)(cid:21)(cid:7)"
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "(cid:22)(cid:22)!(cid:28)(cid:23)(cid:13)\"(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)(cid:7)#$(cid:11)(cid:10)(cid:24)(cid:7)(cid:16)%&(cid:7)(cid:16)(cid:17)(cid:6)(cid:18)IMPORTANT NOTICE"
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "The information given in this document shall in no For further information on the product, technology,\nevent be regarded as a guarantee of conditions or delivery terms and conditions and prices please\ncharacteristics (“Beschaffenheitsgarantie”) . contact your nearest Infineon Technologies office\n(www.infineon.com).\nWith respect to any examples, hints or any typical\nvalues stated herein and/or any information\nregarding the application of the product, Infineon WARNINGS"
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "Technologies hereby disclaims any and all\nDue to technical requirements products may\nwarranties and liabilities of any kind, including\ncontain dangerous substances. For information on\nwithout limitation warranties of non-infringement\nthe types in question please contact your nearest\nof intellectual property rights of any third party.\nInfineon Technologies office.\nIn addition, any information given in this document\nExcept as otherwise explicitly approved by Infineon"
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "is subject to customer’s compliance with its\nTechnologies in a written document signed by\nobligations stated in this document and any\nauthorized representatives of Infineon\napplicable legal requirements, norms and\nTechnologies, Infineon Technologies’ products may\nstandards concerning customer’s products and any\nnot be used in any applications where a failure of\nuse of the product of Infineon Technologies in\nthe product or any consequences of the use thereof\ncustomer’s applications."
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "customer’s applications.\ncan reasonably be expected to result in personal\ninjury.\nThe data contained in this document is exclusively\nintended for technically trained staff. It is the\nresponsibility of customer’s technical departments\nto evaluate the suitability of the product for the\nintended application and the completeness of the\nproduct information given in this document with\nrespect to such application."
+  }
+]

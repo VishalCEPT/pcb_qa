@@ -1,0 +1,35 @@
+.title KiCad schematic
+
+C9 VCC 0 4.7u
+C1 VCC 0 4.7u
+R10 VCC NRST 10k
+R8 TSC_G2_IO2 Net-_A2-BTN_ 1k
+C14 0 TSC_G2_IO4 22n
+C5 VCC 0 100n
+C4 VCC 0 100n
+C6 VCC 0 100n
+C2 VCC 0 100n
+C3 VCC 0 100n
+C8 VCC 0 100n
+R1 NFC_SDA VCC 10k
+R2 NFC_SCL VCC 10k
+R3 NFC_INT VCC 10k
+R4 DISP_RES VCC 10k
+R6 DISP_SCL VCC 10k
+R7 DISP_SDA VCC 10k
+C13 Net-_U4-C2N_ Net-_U4-C2P_ 1u
+C12 Net-_U4-C1N_ Net-_U4-C1P_ 1u
+C7 Net-_U4-VCC_ 0 2.2u
+C11 Net-_U4-VCOMH_ 0 4.7u
+R5 0 Net-_U4-IREF_ 390k
+C17 VCC 0 1u
+
+V_VCC VCC 0 DC 3.3
+
+.control 
+tran 1m 10m 
+set filetype=ascii 
+write ./outputs/spice_circuits/PortalHardware_raw.raw all 
+.endc 
+
+.end

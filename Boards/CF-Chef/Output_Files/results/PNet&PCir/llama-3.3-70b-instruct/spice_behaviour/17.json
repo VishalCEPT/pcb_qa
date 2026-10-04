@@ -1,0 +1,13 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net net-_u8-bst_ maintain a voltage of 0V for the entire simulation?",
+    "tool_calls": {
+        "arguments": "{\"net_name\":\"net-_u8-bst_\",\"spice_circuit_file\":\"./outputs/CF-Chef/CF-Chef_SPICE_circuit.json\",\"expected_voltage\":\"0V\"}",
+        "name": "calculate_spice_behaviour"
+    },
+    "response": {
+        "answer": "NO",
+        "reasoning": "To determine if the net net-_u8-bst_ maintains a voltage of 0V for the entire simulation, we need to analyze the simulation signals. The 'calculate_spice_behaviour' tool can be used for this purpose, as it simulates the circuit and provides the behavior of the signals over time.",
+        "is_final": true
+    }
+}

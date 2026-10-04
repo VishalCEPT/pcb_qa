@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net-_q2-g_ signal maintain a voltage of ~3.3V during the entire simulation?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The net-_q2-g_ signal is connected to the +3.3V rail via a 10k pull-up resistor (R2) and has no other active driving sources or switching components defined in the SPICE netlist to pull it low.",
+        "is_final": true
+    }
+}

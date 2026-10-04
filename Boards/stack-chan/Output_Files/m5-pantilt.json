@@ -1,0 +1,1934 @@
+{
+    "name": "top",
+    "description": "",
+    "source_file": "m5-pantilt.kicad_sch",
+    "tstamps": "",
+    "components": {
+        "C1": {
+            "symbol": "Device",
+            "ref": "C1",
+            "value": "100u",
+            "footprint": "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "URL": "https://akizukidenshi.com/catalog/g/gP-15633/",
+                "LCSC": "C15008",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "cap capacitor",
+                "ki_fp_filters": "C_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000060cb98bd",
+            "fields": {
+                "URL": "https://akizukidenshi.com/catalog/g/gP-15633/",
+                "LCSC": "C15008",
+                "Footprint": "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "C2": {
+            "symbol": "Device",
+            "ref": "C2",
+            "value": "100u",
+            "footprint": "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "URL": "https://akizukidenshi.com/catalog/g/gP-15633/",
+                "LCSC": "C15008",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "cap capacitor",
+                "ki_fp_filters": "C_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000061ea93dc",
+            "fields": {
+                "URL": "https://akizukidenshi.com/catalog/g/gP-15633/",
+                "LCSC": "C15008",
+                "Footprint": "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "C3": {
+            "symbol": "Device",
+            "ref": "C3",
+            "value": "100u",
+            "footprint": "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "URL": "https://akizukidenshi.com/catalog/g/gP-15633/",
+                "LCSC": "C15008",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "cap capacitor",
+                "ki_fp_filters": "C_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000061eb9195",
+            "fields": {
+                "URL": "https://akizukidenshi.com/catalog/g/gP-15633/",
+                "LCSC": "C15008",
+                "Footprint": "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "C4": {
+            "symbol": "Device",
+            "ref": "C4",
+            "value": "100u",
+            "footprint": "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "URL": "https://akizukidenshi.com/catalog/g/gP-15633/",
+                "LCSC": "C15008",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "cap capacitor",
+                "ki_fp_filters": "C_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000061dd33e8",
+            "fields": {
+                "URL": "https://akizukidenshi.com/catalog/g/gP-15633/",
+                "LCSC": "C15008",
+                "Footprint": "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "C5": {
+            "symbol": "Device",
+            "ref": "C5",
+            "value": "0.1u",
+            "footprint": "Capacitor_SMD:C_0603_1608Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C14663",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "cap capacitor",
+                "ki_fp_filters": "C_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000064ba5a4b",
+            "fields": {
+                "LCSC": "C14663",
+                "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "D1": {
+            "symbol": "Device",
+            "ref": "D1",
+            "value": "SS54",
+            "footprint": "Diode_SMD:D_SMA",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C2931790",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "diode",
+                "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000064cccc79",
+            "fields": {
+                "LCSC": "C2931790",
+                "Footprint": "Diode_SMD:D_SMA",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "D2": {
+            "symbol": "Device",
+            "ref": "D2",
+            "value": "PMEG3030EP",
+            "footprint": "Diode_SMD:D_SOD-128",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C255587",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "diode Schottky",
+                "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+            },
+            "tstamps": "e51f3d8e-8377-45a7-b8a7-e916a9bfd063",
+            "fields": {
+                "LCSC": "C255587",
+                "Footprint": "Diode_SMD:D_SOD-128",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "J1": {
+            "symbol": "Connector_Generic",
+            "ref": "J1",
+            "value": "Conn_02x15_Odd_Even",
+            "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Vertical_SMD",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "URL": "https://www.switch-science.com/catalog/3654/",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "connector",
+                "ki_fp_filters": "Connector*:*_2x??_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000060bc2c3a",
+            "fields": {
+                "URL": "https://www.switch-science.com/catalog/3654/",
+                "Footprint": "Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Vertical_SMD",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "J2": {
+            "symbol": "Connector_Generic",
+            "ref": "J2",
+            "value": "Conn_02x15_Odd_Even",
+            "footprint": "Connector_PinSocket_2.54mm:PinSocket_2x15_P2.54mm_Vertical_SMD",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "connector",
+                "ki_fp_filters": "Connector*:*_2x??_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000064cdf4cd",
+            "fields": {
+                "Footprint": "Connector_PinSocket_2.54mm:PinSocket_2x15_P2.54mm_Vertical_SMD",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "J3": {
+            "symbol": "Connector_Generic",
+            "ref": "J3",
+            "value": "Conn_01x03",
+            "footprint": "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "connector",
+                "ki_fp_filters": "Connector*:*_1x??_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000064d4e0a6",
+            "fields": {
+                "Footprint": "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "J5": {
+            "symbol": "Connector_Generic",
+            "ref": "J5",
+            "value": "BAT",
+            "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "URL": "https://akizukidenshi.com/catalog/g/gC-12802/",
+                "LCSC": "C2319",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "connector",
+                "ki_fp_filters": "Connector*:*_1x??_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000060c74b9f",
+            "fields": {
+                "URL": "https://akizukidenshi.com/catalog/g/gC-12802/",
+                "LCSC": "C2319",
+                "Footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "J6": {
+            "symbol": "Connector_Generic",
+            "ref": "J6",
+            "value": "Conn_01x04",
+            "footprint": "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "URL": "https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-55FC",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "connector",
+                "ki_fp_filters": "Connector*:*_1x??_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000060c9a55e",
+            "fields": {
+                "URL": "https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-55FC",
+                "Footprint": "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "J7": {
+            "symbol": "Connector_Generic",
+            "ref": "J7",
+            "value": "5V_POWER",
+            "footprint": "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "URL": "https://akizukidenshi.com/catalog/g/gC-12802/",
+                "LCSC": "C20079",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "connector",
+                "ki_fp_filters": "Connector*:*_1x??_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-00006112c5c6",
+            "fields": {
+                "URL": "https://akizukidenshi.com/catalog/g/gC-12802/",
+                "LCSC": "C20079",
+                "Footprint": "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "J8": {
+            "symbol": "Connector_Generic",
+            "ref": "J8",
+            "value": "Conn_01x03",
+            "footprint": "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "connector",
+                "ki_fp_filters": "Connector*:*_1x??_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000064d3a231",
+            "fields": {
+                "Footprint": "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "Q1": {
+            "symbol": "Transistor_FET",
+            "ref": "Q1",
+            "value": "IRLML6402",
+            "footprint": "Package_TO_SOT_SMD:SOT-23",
+            "datasheet": "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c",
+            "description": "",
+            "properties": {
+                "URL": "https://akizukidenshi.com/catalog/g/gI-02553/",
+                "LCSC": "C2886430",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "P-Channel HEXFET MOSFET",
+                "ki_fp_filters": "SOT?23*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000061ddc391",
+            "fields": {
+                "URL": "https://akizukidenshi.com/catalog/g/gI-02553/",
+                "LCSC": "C2886430",
+                "Footprint": "Package_TO_SOT_SMD:SOT-23",
+                "Datasheet": "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "Q2": {
+            "symbol": "Transistor_BJT",
+            "ref": "Q2",
+            "value": "BC857",
+            "footprint": "Package_TO_SOT_SMD:SOT-23",
+            "datasheet": "https://www.onsemi.com/pub/Collateral/BC860-D.pdf",
+            "description": "",
+            "properties": {
+                "LCSC": "C2139",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "PNP transistor",
+                "ki_fp_filters": "SOT?23*"
+            },
+            "tstamps": "fd72c6fd-8d01-4c84-aa64-052ccdf03377",
+            "fields": {
+                "LCSC": "C2139",
+                "Footprint": "Package_TO_SOT_SMD:SOT-23",
+                "Datasheet": "https://www.onsemi.com/pub/Collateral/BC860-D.pdf",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R1": {
+            "symbol": "Device",
+            "ref": "R1",
+            "value": "10k",
+            "footprint": "Resistor_SMD:R_0603_1608Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C25804",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "R res resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "202ce841-9799-487b-99b7-75e313de629f",
+            "fields": {
+                "LCSC": "C25804",
+                "Footprint": "Resistor_SMD:R_0603_1608Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R2": {
+            "symbol": "Device",
+            "ref": "R2",
+            "value": "5.1k",
+            "footprint": "Resistor_SMD:R_0603_1608Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C23186",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "R res resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "b82df952-3fb3-4e09-9ff8-6b87cc7e46fc",
+            "fields": {
+                "LCSC": "C23186",
+                "Footprint": "Resistor_SMD:R_0603_1608Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R3": {
+            "symbol": "Device",
+            "ref": "R3",
+            "value": "1k",
+            "footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "URL": "https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-57GK",
+                "LCSC": "C21190",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "R res resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000060c80000",
+            "fields": {
+                "URL": "https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-57GK",
+                "LCSC": "C21190",
+                "Footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R4": {
+            "symbol": "Device",
+            "ref": "R4",
+            "value": "1k",
+            "footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C21190",
+                "URL": "https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-57GK",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "R res resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000060c8863a",
+            "fields": {
+                "LCSC": "C21190",
+                "URL": "https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-57GK",
+                "Footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R5": {
+            "symbol": "Device",
+            "ref": "R5",
+            "value": "47k",
+            "footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C25819",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "R res resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000061dec6ed",
+            "fields": {
+                "LCSC": "C25819",
+                "Footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R6": {
+            "symbol": "Device",
+            "ref": "R6",
+            "value": "2k",
+            "footprint": "Resistor_SMD:R_0603_1608Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C22975",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "R res resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "d5da4752-cd55-4f6d-aea2-a0a9d2d835e7",
+            "fields": {
+                "LCSC": "C22975",
+                "Footprint": "Resistor_SMD:R_0603_1608Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R7": {
+            "symbol": "Device",
+            "ref": "R7",
+            "value": "20k",
+            "footprint": "Resistor_SMD:R_0603_1608Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C4184",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "R res resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000064c2d7a7",
+            "fields": {
+                "LCSC": "C4184",
+                "Footprint": "Resistor_SMD:R_0603_1608Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R8": {
+            "symbol": "Device",
+            "ref": "R8",
+            "value": "2.2k",
+            "footprint": "Resistor_SMD:R_0603_1608Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C4190",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "R res resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000064ba6071",
+            "fields": {
+                "LCSC": "C4190",
+                "Footprint": "Resistor_SMD:R_0603_1608Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R9": {
+            "symbol": "Device",
+            "ref": "R9",
+            "value": "0",
+            "footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C21189",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "R res resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000062f00fd0",
+            "fields": {
+                "LCSC": "C21189",
+                "Footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R10": {
+            "symbol": "Device",
+            "ref": "R10",
+            "value": "0",
+            "footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C21189",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "R res resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000062f2bcba",
+            "fields": {
+                "LCSC": "C21189",
+                "Footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R11": {
+            "symbol": "Device",
+            "ref": "R11",
+            "value": "0",
+            "footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C21189",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "R res resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000062f42c81",
+            "fields": {
+                "LCSC": "C21189",
+                "Footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R12": {
+            "symbol": "Device",
+            "ref": "R12",
+            "value": "0",
+            "footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C21189",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "R res resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000062f4da9d",
+            "fields": {
+                "LCSC": "C21189",
+                "Footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R13": {
+            "symbol": "Device",
+            "ref": "R13",
+            "value": "0",
+            "footprint": "Resistor_SMD:R_0603_1608Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C21189",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "R res resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000062f8bb17",
+            "fields": {
+                "LCSC": "C21189",
+                "Footprint": "Resistor_SMD:R_0603_1608Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R14": {
+            "symbol": "Device",
+            "ref": "R14",
+            "value": "0",
+            "footprint": "Resistor_SMD:R_0603_1608Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C21189",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "R res resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000062f969a1",
+            "fields": {
+                "LCSC": "C21189",
+                "Footprint": "Resistor_SMD:R_0603_1608Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R15": {
+            "symbol": "Device",
+            "ref": "R15",
+            "value": "2.2k",
+            "footprint": "Resistor_SMD:R_0603_1608Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "LCSC": "C4190",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "R res resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000064ba6374",
+            "fields": {
+                "LCSC": "C4190",
+                "Footprint": "Resistor_SMD:R_0603_1608Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "SW1": {
+            "symbol": "Switch",
+            "ref": "SW1",
+            "value": "SW_SPDT",
+            "footprint": "Button_Switch_THT:SW_CuK_OS102011MA1QN1_SPDT_Angled",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "URL": "https://www.digikey.jp/ja/products/detail/c-k/OS102011MA1QN1/1981430",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "switch single-pole double-throw spdt ON-ON"
+            },
+            "tstamps": "00000000-0000-0000-0000-000060cc23e9",
+            "fields": {
+                "URL": "https://www.digikey.jp/ja/products/detail/c-k/OS102011MA1QN1/1981430",
+                "Footprint": "Button_Switch_THT:SW_CuK_OS102011MA1QN1_SPDT_Angled",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "U1": {
+            "symbol": "Interface_UART",
+            "ref": "U1",
+            "value": "MAX3485",
+            "footprint": "Package_SO:SO-8_5.3x6.2mm_P1.27mm",
+            "datasheet": "https://datasheets.maximintegrated.com/en/ds/MAX3483-MAX3491.pdf",
+            "description": "",
+            "properties": {
+                "LCSC": "C668204",
+                "Sheetname": "Root",
+                "Sheetfile": "m5-pantilt.kicad_sch",
+                "ki_keywords": "RS-485 RS-422 UART line-driver transceiver",
+                "ki_fp_filters": "DIP*W7.62mm* SOIC*3.9x4.9mm*P1.27mm*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000064b9adb5",
+            "fields": {
+                "LCSC": "C668204",
+                "Footprint": "Package_SO:SO-8_5.3x6.2mm_P1.27mm",
+                "Datasheet": "https://datasheets.maximintegrated.com/en/ds/MAX3483-MAX3491.pdf",
+                "Description": ""
+            },
+            "pins": []
+        }
+    },
+    "nets": {
+        "_p_3V3": [
+            {
+                "component": "C5",
+                "pin": {
+                    "name": "C5",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "11",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "11",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "Q2",
+                "pin": {
+                    "name": "Q2",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R1",
+                "pin": {
+                    "name": "R1",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R6",
+                "pin": {
+                    "name": "R6",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R8",
+                "pin": {
+                    "name": "R8",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "U1",
+                "pin": {
+                    "name": "U1",
+                    "number": "8",
+                    "type": "power_in"
+                }
+            }
+        ],
+        "_p_5V": [
+            {
+                "component": "D1",
+                "pin": {
+                    "name": "D1",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "D2",
+                "pin": {
+                    "name": "D2",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "27",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "27",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J6",
+                "pin": {
+                    "name": "J6",
+                    "number": "2",
+                    "type": "passive"
+                }
+            }
+        ],
+        "BAT": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "29",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "29",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "Q1",
+                "pin": {
+                    "name": "Q1",
+                    "number": "3",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PIN1": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "1",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PIN5": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "5",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "5",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PIN7": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "7",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "7",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PIN8": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "8",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "8",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PIN10": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "10",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "10",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PIN12": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "12",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "12",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PIN13": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "13",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "13",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PIN14": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "14",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "14",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PIN17": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "17",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "17",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PIN18": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "18",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "18",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PIN23": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "23",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "23",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PIN24": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "24",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "24",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PIN25": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "25",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "25",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PIN26": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "26",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "26",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PIN28": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "28",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "28",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PIN30": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "30",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "30",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PORTB1": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "9",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "9",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J6",
+                "pin": {
+                    "name": "J6",
+                    "number": "3",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PORTB2": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "3",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "3",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J6",
+                "pin": {
+                    "name": "J6",
+                    "number": "4",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PWM1": [
+            {
+                "component": "R10",
+                "pin": {
+                    "name": "R10",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R3",
+                "pin": {
+                    "name": "R3",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R9",
+                "pin": {
+                    "name": "R9",
+                    "number": "1",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PWM1_C1": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "19",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "19",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R9",
+                "pin": {
+                    "name": "R9",
+                    "number": "2",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PWM1_C2": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "21",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "21",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R10",
+                "pin": {
+                    "name": "R10",
+                    "number": "2",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PWM2": [
+            {
+                "component": "R11",
+                "pin": {
+                    "name": "R11",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R12",
+                "pin": {
+                    "name": "R12",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R4",
+                "pin": {
+                    "name": "R4",
+                    "number": "2",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PWM2_C1": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "20",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "20",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R11",
+                "pin": {
+                    "name": "R11",
+                    "number": "2",
+                    "type": "passive"
+                }
+            }
+        ],
+        "PWM2_C2": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "22",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "22",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R12",
+                "pin": {
+                    "name": "R12",
+                    "number": "2",
+                    "type": "passive"
+                }
+            }
+        ],
+        "RXD2": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "16",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "16",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "U1",
+                "pin": {
+                    "name": "U1",
+                    "number": "1",
+                    "type": "output"
+                }
+            }
+        ],
+        "TTL": [
+            {
+                "component": "R14",
+                "pin": {
+                    "name": "R14",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R6",
+                "pin": {
+                    "name": "R6",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "U1",
+                "pin": {
+                    "name": "U1",
+                    "number": "6",
+                    "type": "bidirectional"
+                }
+            }
+        ],
+        "TXD2": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "15",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "15",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R1",
+                "pin": {
+                    "name": "R1",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R2",
+                "pin": {
+                    "name": "R2",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "U1",
+                "pin": {
+                    "name": "U1",
+                    "number": "4",
+                    "type": "input"
+                }
+            }
+        ],
+        "GND": [
+            {
+                "component": "C1",
+                "pin": {
+                    "name": "C1",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "C2",
+                "pin": {
+                    "name": "C2",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "C3",
+                "pin": {
+                    "name": "C3",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "C4",
+                "pin": {
+                    "name": "C4",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "C5",
+                "pin": {
+                    "name": "C5",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "4",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "6",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "4",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "6",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J3",
+                "pin": {
+                    "name": "J3",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J5",
+                "pin": {
+                    "name": "J5",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J6",
+                "pin": {
+                    "name": "J6",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J7",
+                "pin": {
+                    "name": "J7",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J8",
+                "pin": {
+                    "name": "J8",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R15",
+                "pin": {
+                    "name": "R15",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R7",
+                "pin": {
+                    "name": "R7",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "SW1",
+                "pin": {
+                    "name": "SW1",
+                    "number": "3",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "U1",
+                "pin": {
+                    "name": "U1",
+                    "number": "5",
+                    "type": "power_in"
+                }
+            }
+        ],
+        "Net__D1_A_": [
+            {
+                "component": "D1",
+                "pin": {
+                    "name": "D1",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J7",
+                "pin": {
+                    "name": "J7",
+                    "number": "1",
+                    "type": "passive"
+                }
+            }
+        ],
+        "Net__D2_K_": [
+            {
+                "component": "C1",
+                "pin": {
+                    "name": "C1",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "C2",
+                "pin": {
+                    "name": "C2",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "C3",
+                "pin": {
+                    "name": "C3",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "C4",
+                "pin": {
+                    "name": "C4",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "D2",
+                "pin": {
+                    "name": "D2",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J3",
+                "pin": {
+                    "name": "J3",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J8",
+                "pin": {
+                    "name": "J8",
+                    "number": "2",
+                    "type": "passive"
+                }
+            }
+        ],
+        "Net__J3_Pin_3_": [
+            {
+                "component": "J3",
+                "pin": {
+                    "name": "J3",
+                    "number": "3",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R13",
+                "pin": {
+                    "name": "R13",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R3",
+                "pin": {
+                    "name": "R3",
+                    "number": "1",
+                    "type": "passive"
+                }
+            }
+        ],
+        "Net__J5_Pin_1_": [
+            {
+                "component": "J5",
+                "pin": {
+                    "name": "J5",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "Q1",
+                "pin": {
+                    "name": "Q1",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R5",
+                "pin": {
+                    "name": "R5",
+                    "number": "2",
+                    "type": "passive"
+                }
+            }
+        ],
+        "Net__J8_Pin_3_": [
+            {
+                "component": "J8",
+                "pin": {
+                    "name": "J8",
+                    "number": "3",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R13",
+                "pin": {
+                    "name": "R13",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R14",
+                "pin": {
+                    "name": "R14",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R4",
+                "pin": {
+                    "name": "R4",
+                    "number": "1",
+                    "type": "passive"
+                }
+            }
+        ],
+        "Net__Q1_G_": [
+            {
+                "component": "Q1",
+                "pin": {
+                    "name": "Q1",
+                    "number": "1",
+                    "type": "input"
+                }
+            },
+            {
+                "component": "R5",
+                "pin": {
+                    "name": "R5",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "SW1",
+                "pin": {
+                    "name": "SW1",
+                    "number": "2",
+                    "type": "passive"
+                }
+            }
+        ],
+        "Net__Q2_B_": [
+            {
+                "component": "Q2",
+                "pin": {
+                    "name": "Q2",
+                    "number": "1",
+                    "type": "input"
+                }
+            },
+            {
+                "component": "R2",
+                "pin": {
+                    "name": "R2",
+                    "number": "2",
+                    "type": "passive"
+                }
+            }
+        ],
+        "Net__Q2_C_": [
+            {
+                "component": "Q2",
+                "pin": {
+                    "name": "Q2",
+                    "number": "3",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R7",
+                "pin": {
+                    "name": "R7",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "U1",
+                "pin": {
+                    "name": "U1",
+                    "number": "2",
+                    "type": "input"
+                }
+            },
+            {
+                "component": "U1",
+                "pin": {
+                    "name": "U1",
+                    "number": "3",
+                    "type": "input"
+                }
+            }
+        ],
+        "Net__U1_B_": [
+            {
+                "component": "R15",
+                "pin": {
+                    "name": "R15",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R8",
+                "pin": {
+                    "name": "R8",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "U1",
+                "pin": {
+                    "name": "U1",
+                    "number": "7",
+                    "type": "bidirectional"
+                }
+            }
+        ]
+    },
+    "subcircuits": [],
+    "annotations": []
+}

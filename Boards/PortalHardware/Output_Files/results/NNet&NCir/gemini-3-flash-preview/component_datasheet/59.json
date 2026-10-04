@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component STM32L476RGT6 have a 1MB flash memory according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The netlist description for component U2 (STM32L476RGT6) explicitly states it is an ARM Cortex-M4 MCU with 1024KB (1MB) of flash memory.",
+        "is_final": true
+    }
+}

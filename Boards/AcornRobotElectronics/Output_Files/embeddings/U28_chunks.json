@@ -1,0 +1,374 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "PCA9536\n4-bit I2C-bus and SMBus I/O port\nRev. 6 — 7 November 2017 Product data sheet\n1. General description\nThe PCA9536 is an 8-pin CMOS device that provides 4 bits of General Purpose parallel\nInput/Output (GPIO) expansion for I2C-bus/SMBus applications and was developed to\nenhance the NXP Semiconductors family of I2C-bus I/O expanders. I/O expanders\nprovide a simple solution when additional I/O is needed for ACPI power switches,\nsensors, pushbuttons, LEDs, fans, etc."
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "sensors, pushbuttons, LEDs, fans, etc.\nThe PCA9536 consists of a 4-bit Configuration register (input or output selection), 4-bit\nInput Port register, 4-bit Output Port register and a 4-bit Polarity Inversion register\n(activeHIGH or activeLOW operation). The system master can enable the I/Os as either\ninputs or outputs by writing to the I/O configuration bits. The data for each input or output\nis kept in the corresponding Input Port or Output Port register. The polarity of the read"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "register can be inverted with the Polarity Inversion register. All registers can be read by\nthe system master.\nThe power-on reset sets the registers to their default values and initializes the device state\nmachine.\nThe I2C-bus address is fixed and allows only one device on the same I2C-bus/SMBus.\n2. Features and benefits\n 4-bit I2C-bus GPIO\n Operating power supply voltage range of 2.3V to 5.5V\n 5V tolerant I/Os\n Polarity Inversion register\n Low standby current"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": " Low standby current\n Noise filter on SCL/SDA inputs\n No glitch on power-up\n Internal power-on reset\n 4 I/O pins which default to 4 inputs with 100k internal pull-up resistor\n 0Hz to 400kHz clock frequency\n ESD protection exceeds 2000V HBM per JESD22-A114, 200V MM per\nJESD22-A115 and 1000V CDM per JESD22-C101\n Latch-up testing is done to JEDEC Standard JESD78 which exceeds 100mA\n Packages offered: SO8, TSSOP8 (MSOP8), HVSON8PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "4-bit I2C-bus and SMBus I/O port\n3. Ordering information\nTable 1. Ordering info rmation\nT =40C to +85C\namb\nType Topside Package\nnumber mark\nName Description Version\nPCA9536D PCA9536 SO8 plastic small outline package; 8leads; bodywidth 3.9mm SOT96-1\nPCA9536DP 9536 TSSOP8[1] plastic thin shrink small outline package; 8leads; bodywidth 3mm SOT505-1\nPCA9536TK 9536 HVSON8 plastic thermal enhanced very thin small outline package; noleads; SOT908-1\n8terminals; body330.85mm"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "8terminals; body330.85mm\n[1] Also known as MSOP8.\n3.1 Ordering options\nTable 2. Ordering opt ions\nType number Orderable Package Packing method Minimum Temperature\npartnumber orderquantity\nPCA9536D PCA9536D,112 SO8 STANDARD 2000 T =40C to +85C\namb\nMARKING * IC'S\nTUBE - DSC BULK\nPACK\nPCA9536D,118 SO8 REEL 13\" Q1/T1 2500 T =40C to +85C\namb\n*STANDARD MARK\nSMD\nPCA9536DP PCA9536DP,118 TSSOP8[1] REEL 13\" Q1/T1 2500 T =40C to +85C\namb\n*STANDARD MARK\nSMD"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "amb\n*STANDARD MARK\nSMD\nPCA9536TK PCA9536TK,118 HVSON8 REEL 13\" Q1/T1 6000 T =40C to +85C\namb\n*STANDARD MARK\nSMD\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 2 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\n4. Block diagram\nPCA9536\nSCL\nINPUT IO0\nFILTER\nSDA\n4-bit\nIO1\nI2C-BUS/SMBus INPUT/\nOUTPUT\nCONTROL\nwrite pulse PORTS IO2\nread pulse"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "OUTPUT\nCONTROL\nwrite pulse PORTS IO2\nread pulse\nVDD POWER-ON IO3\nRESET\nVSS\n002aab851\nAll I/Os are set to inputs at reset.\nFig 1. Block diagram of PCA9536\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 3 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\n5. Pinning information\n5.1 Pinning\nIO0 1 8 VDD\nIO0 1 8 VDD\nIO1 2 7 SDA\nIO1 2 7 SDA"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "IO0 1 8 VDD\nIO0 1 8 VDD\nIO1 2 7 SDA\nIO1 2 7 SDA\nPCA9536D PCA9536DP\nIO2 3 6 SCL IO2 3 6 SCL\nVSS 4 5 IO3 VSS 4 5 IO3\n002aab849 002aab850\nFig 2. Pin configuration for SO8 Fig 3. Pin configuration for TSSOP8\nterminal 1\nindex area\nIO0 1 8 VDD\nIO1 2 7 SDA\nPCA9536TK\nIO2 3 6 SCL\nVSS 4 5 IO3\n002aac459\nTransparent top view\nFig 4. Pin configuration for HVSON8\n5.2 Pin description\nTable 3. Pin description\nSymbol Pin Description\nIO0 1 input/output 0\nIO1 2 input/output 1\nIO2 3 input/output 2\nV 4 supply ground"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "IO2 3 input/output 2\nV 4 supply ground\nSS\nIO3 5 input/output 3\nSCL 6 serial clock line\nSDA 7 serial data line\nV 8 supply voltage\nDD\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 4 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\n6. Functional description\nRefer to Figure 1 “Block diagram of PCA9536”.\n6.1 Registers\n6.1.1 Command byte"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "6.1 Registers\n6.1.1 Command byte\nTable 4. Command byte\nCommand Protocol Function\n0 read byte Input Port register\n1 read/write byte Output Port register\n2 read/write byte Polarity Inversion register\n3 read/write byte Configuration register\nThe command byte is the first byte to follow the address byte during a write transmission.\nIt is used as a pointer to determine which of the following registers will be written or read.\n6.1.2 Register 0 - Input Port register"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "6.1.2 Register 0 - Input Port register\nThis register is a read-only port. It reflects the incoming logic levels of the pins, regardless\nof whether the pin is defined as an input or an output by Register 3. Writes to this register\nhave no effect.\nThe default ‘X’ is determined by the externally applied logic level, normally logic1 when\nno external signal externally applied because of the internal pull-up resistors.\nTable 5. Register 0 - Input Port register bit description\nLegend: * default value"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "Legend: * default value\nBit Symbol Access Value Description\n7 I7 read only 1* not used\n6 I6 read only 1*\n5 I5 read only 1*\n4 I4 read only 1*\n3 I3 read only X determined by externally applied logic level\n2 I2 read only X\n1 I1 read only X\n0 I0 read only X\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 5 of 24PCA9536\nNXP Semiconductors"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "NXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\n6.1.3 Register 1 - Output Port register\nThis register reflects the outgoing logic levels of the pins defined as outputs by Register 3.\nBit values in this register have no effect on pins defined as inputs. Reads from this register\nreturn the value that is in the flip-flop controlling the output selection, not the actual pin\nvalue.\n‘Not used’ bits can be programmed with either logic0 or logic1."
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "Table 6. Register 1 - Output Port register bit description\nLegend: * default value\nBit Symbol Access Value Description\n7 O7 R 1* not used\n6 O6 R 1*\n5 O5 R 1*\n4 O4 R 1*\n3 O3 R 1* reflects outgoing logic levels of pins defined as\noutputs by Register 3\n2 O2 R 1*\n1 O1 R 1*\n0 O0 R 1*\n6.1.4 Register 2 - Polarity Inversion register\nThis register allows the user to invert the polarity of the Input Port register data. If a bit in"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "this register is set (written with ‘1’), the corresponding Input Port data is inverted. If a bit in\nthis register is cleared (written with a ‘0’), the Input Port data polarity is retained.\n‘Not used’ bits can be programmed with either logic0 or logic1.\nTable 7. Register 2 - Polarity Inversion register bit description\nLegend: * default value\nBit Symbol Access Value Description\n7 N7 R/W 0* not used\n6 N6 R/W 0*\n5 N5 R/W 0*\n4 N4 R/W 0*\n3 N3 R/W 0* inverts polarity of Input Port register data"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "2 N2 R/W 0* 0 = Input Port register data retained (default\nvalue)\n1 N1 R/W 0*\n1 = Input Port register data inverted\n0 N0 R/W 0*\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 6 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\n6.1.5 Register 3 - Configuration register"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "6.1.5 Register 3 - Configuration register\nThis register configures the directions of the I/O pins. If a bit in this register is set, the\ncorresponding port pin is enabled as an input with high-impedance output driver. If a bit in\nthis register is cleared, the corresponding port pin is enabled as an output. At reset, the\nI/Os are configured as inputs with a weak pull-up to V .\nDD\n‘Not used’ bits can be programmed with either logic0 or logic1."
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "Table 8. Register 3 - Configuration register bit description\nLegend: * default value\nBit Symbol Access Value Description\n7 C7 R/W 1* not used\n6 C6 R/W 1*\n5 C5 R/W 1*\n4 C4 R/W 1*\n3 C3 R/W 1* configures the directions of the I/O pins\n2 C2 R/W 1* 0 = corresponding port pin enabled as an output\n1 C1 R/W 1* 1 = corresponding port pin configured as input\n(default value)\n0 C0 R/W 1*\n6.2 Power-on reset\nWhen power is applied to V , an internal Power-On Reset (POR) holds the PCA9536 in\nDD"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "DD\na reset condition until V has reached V . At that point, the reset condition is released\nDD POR\nand the PCA9536 registers and state machine will initialize to their default states.\nThereafter, V must be lowered below 0.2V to reset the device.\nDD\nFor a power reset cycle, V must be lowered below 0.2V and then restored to the\nDD\noperating voltage.\n6.3 I/O port\nWhen an I/O is configured as an input, FETs Q1 and Q2 are off, creating a"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "high-impedance input with a weak pull-up (100k typical) to V . The input voltage may\nDD\nbe raised above V to a maximum of 5.5V.\nDD\nIf the I/O is configured as an output, then either Q1 or Q2 is enabled, depending on the\nstate of the Output Port register. Care should be exercised if an external voltage is applied\nto an I/O configured as an output because of the low-impedance paths that exist between\nthe pin and either V or V .\nDD SS"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "the pin and either V or V .\nDD SS\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 7 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\ndata from\nshift register output port\nregister data\nconfiguration\nregister VDD\ndata from\nD Q Q1\nshift register\n100 kΩ\nFF\nwrite configuration D Q\npulse CK Q\nFF\nIO0 to IO3\nwrite pulse CK\nQ2\noutput port\nregister\nVSS"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "write pulse CK\nQ2\noutput port\nregister\nVSS\ninput port\nregister\nD Q\ninput port\nFF register data\nread pulse CK\npolarity inversion\nregister\ndata from\nD Q polarity inversion\nshift register\nregister data\nFF\nwrite polarity\npulse CK\n002aab852\nRemark: At power-on reset, all registers return to default values.\nFig 5. Simplified schematic of IO0 to IO3\n6.4 Device address\nslave address\n1 0 0 0 0 0 1 R/W\nfixed\n002aab853\nFig 6. PCA9536 device address\n6.5 Bus transactions"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "6.5 Bus transactions\nData is transmitted to the PCA9536 registers using the Write mode as shown in Figure7\nand Figure8. Data is read from the PCA9536 registers using the Read mode as shown in\nFigure9 and Figure10. These devices do not implement an auto-increment function, so\nonce a command byte has been sent, the register which was addressed will continue to\nbe accessed by reads until a new command byte has been sent."
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "PCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 8 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\nSCL 1 2 3 4 5 6 7 8 9\nslave address command byte data to port\nSDA S 1 0 0 0 0 0 1 0 A 0 0 0 0 0 0 0 1 A DATA 1 A P\nSTART condition R/W acknowledge acknowledge STOP\nfrom slave from slave condition\nacknowledge\nfrom slave\nwrite to port\ntv(Q)\ndata out"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "from slave\nwrite to port\ntv(Q)\ndata out\ndata 1 valid\nfrom port\n002aab854\nFig 7. Write to Output Port register\nSCL 1 2 3 4 5 6 7 8 9\nslave address command byte data to register\nSDA S 1 0 0 0 0 0 1 0 A 0 0 0 0 0 0 0 1/0 A DATA A P\nSTART condition R/W acknowledge acknowledge STOP\nfrom slave from slave condition\nacknowledge\nfrom slave\ndata to\nregister\n002aab855\nFig 8. Write to Configuration register or Polarity Inversion register\nslave address\nSDA S 1 0 0 0 0 0 1 0 A command byte A (cont.)"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "SDA S 1 0 0 0 0 0 1 0 A command byte A (cont.)\nSTART condition R/W acknowledge\nfrom slave\nacknowledge\nfrom slave\nslave address data from register data from register\n(cont.) S 1 0 0 0 0 0 1 1 A DATA (first byte) A DATA (last byte) NA P\n(repeated) R/W acknowledge no acknowledge STOP\nSTART condition from master from master condition\nacknowledge\nfrom slave\nat this moment master-transmitter becomes master-receiver\nand slave-receiver becomes slave-transmitter\n002aab856\nFig 9. Read from register"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "002aab856\nFig 9. Read from register\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 9 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\nSCL 1 2 3 4 5 6 7 8 9\nslave address data from port data from port\nSDA S 1 0 0 0 0 0 1 1 A DATA 1 A DATA 4 NA P\nSTART condition R/W acknowledge no acknowledge STOP\nfrom master from master condition\nacknowledge"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "from master from master condition\nacknowledge\nfrom slave\nread from\nport\nth(D) tsu(D)\ndata into\nport DATA 2 DATA 3 DATA 4\n002aab857\nThis figure assumes the command byte has previously been programmed with 00h.\nTransfer of data can be stopped at any moment by a STOP condition.\nFig 10. Read Input Port register\n7. Application design-in information\nVDD\n2 kΩ\nVDD 10 kΩ 10 kΩ\nVDD\nSUBSYSTEM 1\nSDA SDA IO0 (e.g. temp. sensor)\nSCL SCL\nIO1 INT\nPCA9536\nMASTER\nIO2\nCONTROLLER RESET\nIO3\nVSS SUBSYSTEM 2"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "MASTER\nIO2\nCONTROLLER RESET\nIO3\nVSS SUBSYSTEM 2\n(e.g. counter)\nVSS A\nenable controlled switch\n(e.g. CBT device)\nB\n002aab858\nDevice address is 1000001X; IO0, IO2, IO3 configured as outputs; IO1 configured as input.\nFig 11. Typical application\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 10 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "4-bit I2C-bus and SMBus I/O port\n8. Limiting values\nTable 9. Limiting values\nIn accordance with the Absolute Maximum Rating System (IEC 60134).\nSymbol Parameter Conditions Min Max Unit\nV supply voltage 0.5 +6.0 V\nDD\nI input current - 20 mA\nI\nV voltage on an input/output pin V 0.5 5.5 V\nI/O SS\nI output current on pin IOn - 50 mA\nO(IOn)\nI supply current - 85 mA\nDD\nI ground supply current - 100 mA\nSS\nP total power dissipation - 200 mW\ntot\nT storage temperature 65 +150 C\nstg"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "tot\nT storage temperature 65 +150 C\nstg\nT ambient temperature 40 +85 C\namb\nT maximum junction temperature - +125 C\nj(max)\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 11 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\n9. Static characteristics\nTable 10. Static charac teristics"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "Table 10. Static charac teristics\nV =2.3V to 5.5V; V =0V; T =40C to +85C; unless otherwise specified.\nDD SS amb\nSymbol Parameter Conditions Min Typ Max Unit\nSupplies\nV supply voltage 2.3 - 5.5 V\nDD\nI supply current operating mode; V =5.5V; - 290 400 A\nDD DD\nnoload; f =100kHz\nSCL\nI standby current Standby mode; V =5.5V; noload; - 225 350 A\nstb DD\nV =V ; f =0kHz; I/O=inputs\nI SS SCL\nStandby mode; V =5.5V; noload; - 0.25 1 A\nDD\nV =V ; f =0kHz; I/O=inputs\nI DD SCL"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "DD\nV =V ; f =0kHz; I/O=inputs\nI DD SCL\nV power-on reset voltage [1] - 1.7 2.2 V\nPOR\nInput SCL; input/output SDA\nV LOW-level input voltage 0.5 - +0.3V V\nIL DD\nV HIGH-level input voltage 0.7V - 5.5 V\nIH DD\nI LOW-level output current V =0.4V 3 6 - mA\nOL OL\nI leakage current V =V =V 1 - +1 A\nL I DD SS\nC input capacitance V =V - 6 10 pF\ni I SS\nI/Os\nV LOW-level input voltage 0.5 - +0.8 V\nIL\nV HIGH-level input voltage 2.0 - 5.5 V\nIH\nI LOW-level output current V =0.5V; V =2.3V [2] 8 10 - mA"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "OL OL DD\nV =0.7V; V =2.3V [2] 10 13 - mA\nOL DD\nV =0.5V; V =3.0V [2] 8 14 - mA\nOL DD\nV =0.7V; V =3.0V [2] 10 19 - mA\nOL DD\nV =0.5V; V =4.5V [2] 8 17 - mA\nOL DD\nV =0.7V; V =4.5V [2] 10 24 - mA\nOL DD\nV HIGH-level output voltage I =8mA; V =2.3V [3] 1.8 - - V\nOH OH DD\nI =10mA; V =2.3V [3] 1.7 - - V\nOH DD\nI =8mA; V =3.0V [3] 2.6 - - V\nOH DD\nI =10mA; V =3.0V [3] 2.5 - - V\nOH DD\nI =8mA; V =4.75V [3] 4.1 - - V\nOH DD\nI =10mA; V =4.75V [3] 4.0 - - V\nOH DD"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "OH DD\nI =10mA; V =4.75V [3] 4.0 - - V\nOH DD\nI HIGH-level input leakage V =3.6V; V =V - - 1 A\nLIH DD I DD\ncurrent\nI LOW-level input leakage V =5.5V; V =V - - 100 A\nLIL DD I SS\ncurrent\nC input capacitance - 3.7 5 pF\ni\nC output capacitance - 3.7 5 pF\no\n[1] V must be lowered to 0.2V in order to reset part.\nDD\n[2] Each I/O must be externally limited to a maximum of 25mA and the device must be limited to a maximum current of 100mA."
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "[3] The total current sourced by all I/Os must be limited to 85mA.\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 12 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\n10. Dynamic characteristics\nTable 11. Dynamic cha racteristics\nSymbol Parameter Conditions Standard-mode Fast-mode I2C-bus Unit\nI2C-bus\nMin Max Min Max"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "I2C-bus\nMin Max Min Max\nf SCL clock frequency 0 100 0 400 kHz\nSCL\nt bus free time between a STOP and 4.7 - 1.3 - s\nBUF\nSTART condition\nt hold time (repeated) START condition 4.0 - 0.6 - s\nHD;STA\nt set-up time for a repeated START 4.7 - 0.6 - s\nSU;STA\ncondition\nt set-up time for STOP condition 4.0 - 0.6 - s\nSU;STO\nt data hold time 0 - 0 - s\nHD;DAT\nt data valid acknowledge time [1] 0.3 3.45 0.1 0.9 s\nVD;ACK\nt data valid time [2] 300 - 50 - ns\nVD;DAT\nt data set-up time 250 - 100 - ns\nSU;DAT"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "VD;DAT\nt data set-up time 250 - 100 - ns\nSU;DAT\nt LOW period of the SCL clock 4.7 - 1.3 - s\nLOW\nt HIGH period of the SCL clock 4.0 - 0.6 - s\nHIGH\nt rise time of both SDA and SCL signals - 1000 20+0.1C [3] 300 ns\nr b\nt fall time of both SDA and SCL signals - 300 20+0.1C [3] 300 ns\nf b\nt pulse width of spikes that must be - 50 - 50 ns\nSP\nsuppressed by the input filter\nPort timing\nt data output valid time - 200 - 200 ns\nv(Q)\nt data input set-up time 100 - 100 - ns\nsu(D)"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "t data input set-up time 100 - 100 - ns\nsu(D)\nt data input hold time 1 - 1 - s\nh(D)\n[1] t = time for Acknowledgement signal from SCL LOW to SDA (out) LOW.\nVD;ACK\n[2] t = minimum time for SDA data output to be valid following SCL LOW.\nVD;DAT\n[3] C =total capacitance of one bus line in pF.\nb\n0.7 × VDD\nSDA\n0.3 × VDD\ntBUF tr tf tHD;STA tSP\ntLOW\n0.7 × VDD\nSCL\n0.3 × VDD\ntHD;STA tSU;STA tSU;STO\nP S tHD;DAT tHIGH tSU;DAT Sr P\n002aaa986\nFig 12. Definition of timing"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "002aaa986\nFig 12. Definition of timing\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 13 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\nSTART bit 7 STOP\nbit 6 bit 0 acknowledge\nprotocol condition MSB condition\n(A6) (R/W) (A)\n(S) (A7) (P)\ntSU;STA tLOW tHIGH\n1 / fSCL\nSCL\n0.7 × VDD\n0.3 × VDD\ntBUF tf\ntr\nSDA\n0.7 × VDD\n0.3 × VDD"
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "0.3 × VDD\ntBUF tf\ntr\nSDA\n0.7 × VDD\n0.3 × VDD\ntHD;STA tSU;DAT tHD;DAT tVD;DAT tVD;ACK tSU;STO\n002aab175\nRise and fall times refer to V and V\nIL IH\nFig 13. I2C-bus timing diagram\n11. Test information\nVDD\nopen\nVDD RL\nVSS\n500 Ω\nVI VO\nPULSE\nDUT\nGENERATOR\nRT C\n50\nL\npF\n002aab880\nR = load resistor.\nL\nC = load capacitance includes jig and probe capacitance.\nL\nRT = termination resistance should be equal to the output impedance Z o of the pulse generators.\nFig 14. Test circuitry for switching times"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "Fig 14. Test circuitry for switching times\n500 Ω S1 2VDD\nfrom output open\nunder test VSS\nCL 500 Ω\n50 pF\n002aab881\nFig 15. Test circuit\nT able 12. Test data\nTest Load Switch\nC R\nL L\nt 50pF 500 2V\nv(Q) DD\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 14 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\n12. Package outline"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "12. Package outline\nSO8: plastic small outline package; 8 leads; body width 3.9 mm SOT96-1\nD E A\nX\nc\ny\nHE v M A\nZ\n8 5\nQ\nA2\nA1 (A 3 ) A\npin 1 index\nθ\nLp\n1 4 L\ne w M detail X\nbp\n0 2.5 5 mm\nscale\nDIMENSIONS (inch dimensions are derived from the original mm dimensions)\nUNIT\nm\nA\nax.\nA1 A2 A3 bp c D(1) E(2) e HE L Lp Q v w y Z(1) θ\n0.25 1.45 0.49 0.25 5.0 4.0 6.2 1.0 0.7 0.7\nmm 1.75 0.25 1.27 1.05 0.25 0.25 0.1\n0.10 1.25 0.36 0.19 4.8 3.8 5.8 0.4 0.6 0.3 8o"
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "0.10 1.25 0.36 0.19 4.8 3.8 5.8 0.4 0.6 0.3 8o\n0.010 0.057 0.019 0.0100 0.20 0.16 0.244 0.039 0.028 0.028\n0o\ninches 0.069 0.01 0.05 0.041 0.01 0.01 0.004\n0.004 0.049 0.014 0.0075 0.19 0.15 0.228 0.016 0.024 0.012\nNotes\n1. Plastic or metal protrusions of 0.15 mm (0.006 inch) maximum per side are not included.\n2. Plastic or metal protrusions of 0.25 mm (0.01 inch) maximum per side are not included.\nOUTLINE REFERENCES EUROPEAN\nISSUE DATE\nVERSION IEC JEDEC JEITA PROJECTION\n99-12-27"
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "VERSION IEC JEDEC JEITA PROJECTION\n99-12-27\nSOT96-1 076E03 MS-012\n03-02-18\nFig 16. Package outline SOT96-1 (SO8)\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 15 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\nTSSOP8: plastic thin shrink small outline package; 8 leads; body width 3 mm SOT505-1\nD E A\nX\nc\ny HE v M A\nZ\n8 5\nA2\nA1\n(A3) A\npin 1 index\nθ"
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "X\nc\ny HE v M A\nZ\n8 5\nA2\nA1\n(A3) A\npin 1 index\nθ\nLp\nL\n1 4\ndetail X\ne w M\nbp\n0 2.5 5 mm\nscale\nDIMENSIONS (mm are the original dimensions)\nUNIT\nm\nA\nax.\nA1 A2 A3 bp c D(1) E(2) e HE L Lp v w y Z(1) θ\nmm 1.1\n0.15 0.95\n0.25\n0.45 0.28 3.1 3.1\n0.65\n5.1\n0.94\n0.7\n0.1 0.1 0.1\n0.70 6°\n0.05 0.80 0.25 0.15 2.9 2.9 4.7 0.4 0.35 0°\nNotes\n1. Plastic or metal protrusions of 0.15 mm maximum per side are not included.\n2. Plastic or metal protrusions of 0.25 mm maximum per side are not included."
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "OUTLINE REFERENCES EUROPEAN\nISSUE DATE\nVERSION IEC JEDEC JEITA PROJECTION\n99-04-09\nSOT505-1\n03-02-18\nFig 17. Package outline SOT505-1 (TSSOP8)\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 16 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\nHVSON8: plastic thermal enhanced very thin small outline package; no leads;"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "8 terminals; body 3 x 3 x 0.85 mm SOT908-1\n0 1 2 mm\nscale\nX\nD B A\nE A\nA1\nc\ndetail X\nterminal 1\nindex area\nt\nin\ne\nd\nrm\nex\nin\na\na\nr\nl\ne\n1\na e\ne1\nb v M C A B\nC\n1 4\nw M C y1C y\nL\nexposed tie bar (4×)\nEh\nexposed tie bar (4×)\n8 5\nDh\nDIMENSIONS (mm are the original dimensions)\nA(1)\nUNIT\nmax.\nA1 b c D(1) Dh E(1) Eh e e1 L v w y y1\n0.05 0.3 3.1 2.25 3.1 1.65 0.5\nmm 1 0.2 0.5 1.5 0.1 0.05 0.05 0.1\n0.00 0.2 2.9 1.95 2.9 1.35 0.3\nNote"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "0.00 0.2 2.9 1.95 2.9 1.35 0.3\nNote\n1. Plastic or metal protrusions of 0.075 mm maximum per side are not included.\nOUTLINE REFERENCES EUROPEAN\nISSUE DATE\nVERSION IEC JEDEC JEITA PROJECTION\n05-09-26\nSOT908-1 MO-229\n05-10-05\nFig 18. Package outline SOT908-1 (HVSON8)\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 17 of 24PCA9536\nNXP Semiconductors"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "NXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\n13. Handling information\nAll input and output pins are protected against ElectroStatic Discharge (ESD) under\nnormal handling. When handling ensure that the appropriate precautions are taken as\ndescribed in JESD625-A or equivalent standards.\n14. Soldering of SMD packages\nThis text provides a very brief insight into a complex technology. A more in-depth account\nof soldering ICs can be found in Application Note AN10365 “Surface mount reflow"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "soldering description”.\n14.1 Introduction to soldering\nSoldering is one of the most common methods through which packages are attached to\nPrinted Circuit Boards (PCBs), to form electrical circuits. The soldered joint provides both\nthe mechanical and the electrical connection. There is no single soldering method that is\nideal for all IC packages. Wave soldering is often preferred when through-hole and\nSurface Mount Devices (SMDs) are mixed on one printed wiring board; however, it is not"
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "suitable for fine pitch SMDs. Reflow soldering is ideal for the small pitches and high\ndensities that come with increased miniaturization.\n14.2 Wave and reflow soldering\nWave soldering is a joining technology in which the joints are made by solder coming from\na standing wave of liquid solder. The wave soldering process is suitable for the following:\n• Through-hole components\n• Leaded or leadless SMDs, which are glued to the surface of the printed circuit board"
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "Not all SMDs can be wave soldered. Packages with solder balls, and some leadless\npackages which have solder lands underneath the body, cannot be wave soldered. Also,\nleaded SMDs with leads having a pitch smaller than ~0.6mm cannot be wave soldered,\ndue to an increased probability of bridging.\nThe reflow soldering process involves applying solder paste to a board, followed by\ncomponent placement and exposure to a temperature profile. Leaded packages,"
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "packages with solder balls, and leadless packages are all reflow solderable.\nKey characteristics in both wave and reflow soldering are:\n• Board specifications, including the board finish, solder masks and vias\n• Package footprints, including solder thieves and orientation\n• The moisture sensitivity level of the packages\n• Package placement\n• Inspection and repair\n• Lead-free soldering versus SnPb soldering\n14.3 Wave soldering\nKey characteristics in wave soldering are:"
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "Key characteristics in wave soldering are:\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 18 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\n• Process issues, such as application of adhesive and flux, clinching of leads, board\ntransport, the solder wave parameters, and the time during which components are\nexposed to the wave"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "exposed to the wave\n• Solder bath specifications, including temperature and impurities\n14.4 Reflow soldering\nKey characteristics in reflow soldering are:\n• Lead-free versus SnPb soldering; note that a lead-free reflow process usually leads to\nhigher minimum peak temperatures (see Figure19) than a SnPb process, thus\nreducing the process window\n• Solder paste printing issues including smearing, release, and adjusting the process\nwindow for a mix of large and small components on one board"
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "• Reflow temperature profile; this profile includes preheat, reflow (in which the board is\nheated to the peak temperature) and cooling down. It is imperative that the peak\ntemperature is high enough for the solder to make reliable solder joints (a solder paste\ncharacteristic). In addition, the peak temperature must be low enough that the\npackages and/or boards are not damaged. The peak temperature of the package\ndepends on package thickness and volume and is classified in accordance with"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "Table13 and14\nTable 13. SnPb eutectic process (from J-STD-020D)\nPackage thickness (mm) Package reflow temperature (C)\nVolume (mm3)\n< 350  350\n< 2.5 235 220\n 2.5 220 220\nTable 14. Lead-free process (from J-STD-020D)\nPackage thickness (mm) Package reflow temperature (C)\nVolume (mm3)\n< 350 350 to 2000 > 2000\n< 1.6 260 260 260\n1.6 to 2.5 260 250 245\n> 2.5 250 245 245\nMoisture sensitivity precautions, as indicated on the packing, must be respected at all\ntimes."
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "times.\nStudies have shown that small packages reach higher temperatures during reflow\nsoldering, see Figure19.\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 19 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\nmaximum peak temperature\n= MSL limit, damage level\ntemperature\nminimum peak temperature\n= minimum soldering temperature\npeak\ntemperature"
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "= minimum soldering temperature\npeak\ntemperature\ntime\n001aac844\nMSL: Moisture Sensitivity Level\nFig 19. Temperature profiles for large and small components\nFor further information on temperature profiles, refer to Application Note AN10365\n“Surface mount reflow soldering description”.\n15. Abbreviations\nTable 15. Abbreviations\nAcronym Description\nACPI Advanced Configuration and Power Interface\nCDM Charged Device Model\nDUT Device Under Test\nESD ElectroStatic Discharge\nFET Field-Effect Transistor"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "FET Field-Effect Transistor\nGPIO General Purpose Input/Output\nHBM Human Body Model\nI2C-bus Inter-Integrated Circuit bus\nI/O Input/Output\nLED Light-Emitting Diode\nMM Machine Model\nPOR Power-On Reset\nSMBus System Management Bus\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 20 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\n16. Revision history"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "16. Revision history\nTable 16. Revision history\nDocument ID Release date Data sheet status Change notice Supersedes\nPCA9536 v.6 20171107 Product data sheet 201710002I PCA9536_5\nModifications: • Table 10 “Static characteristics”: Corrected V typ and max limit\nPOR\n• Added Section 3.1 “Ordering options”\nPCA9536_5 20100125 Product data sheet - PCA9536_4\nModifications: • Table 10 “Static characteristics”, sub-section “Supplies”:\n– I Typical value changed from “104A” to “290A”\nDD"
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "DD\n– I Maximum value changed from “175A” to “400A”\nDD\n• Table 11 “Dynamic characteristics”: Unit for “t, fall time of both SDA and SCL signals”\nf\nchanged from “s” to “ns”\nRemark: The changes made in this revision are to correct typographical errors only. There is\nnochange in the performance of the device.\nPCA9536_4 20070911 Product data sheet - PCA9536_3\nPCA9536_3 20061009 Product data sheet - PCA9536_2\nPCA9536_2 20040930 Objective data sheet - PCA9536_1\n(939775014124)"
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "(939775014124)\nPCA9536_1 20040820 Objective data sheet - -\n(939775012895)\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 21 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\n17. Legal information\n17.1 Data sheet status\nDocument status[1][2] Product status[3] Definition"
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "Objective [short] data sheet Development This document contains data from the objective specification for product development.\nPreliminary [short] data sheet Qualification This document contains data from the preliminary specification.\nProduct [short] data sheet Production This document contains the product specification.\n[1] Please consult the most recently issued document before initiating or completing a design.\n[2] The term ‘short data sheet’ is explained in section “Definitions”."
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "[3] The product status of device(s) described in this document may have changed since this document was published and may differ in case of multiple devices. The latest product status\ninformation is available on the Internet at URLhttp://www.nxp.com.\n17.2 Definitions Suitability for use — NXP Semiconductors products are not designed,\nauthorized or warranted to be suitable for use in life support, life-critical or\nsafety-critical systems or equipment, nor in applications where failure or"
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "Draft — The document is a draft version only. The content is still under\nmalfunction of an NXP Semiconductors product can reasonably be expected\ninternal review and subject to formal approval, which may result in\nto result in personal injury, death or severe property or environmental\nmodifications or additions. NXP Semiconductors does not give any\ndamage. NXP Semiconductors and its suppliers accept no liability for\nrepresentations or warranties as to the accuracy or completeness of"
+  },
+  {
+    "faiss_index_id": 68,
+    "text": "inclusion and/or use of NXP Semiconductors products in such equipment or\ninformation included herein and shall have no liability for the consequences of\napplications and therefore such inclusion and/or use is at the customer’s own\nuse of such information.\nrisk.\nShort data sheet — A short data sheet is an extract from a full data sheet\nApplications — Applications that are described herein for any of these\nwith the same product type number(s) and title. A short data sheet is intended"
+  },
+  {
+    "faiss_index_id": 69,
+    "text": "products are for illustrative purposes only. NXP Semiconductors makes no\nfor quick reference only and should not be relied upon to contain detailed and\nrepresentation or warranty that such applications will be suitable for the\nfull information. For detailed and full information see the relevant full data\nspecified use without further testing or modification.\nsheet, which is available on request via the local NXP Semiconductors sales"
+  },
+  {
+    "faiss_index_id": 70,
+    "text": "office. In case of any inconsistency or conflict with the short data sheet, the Customers are responsible for the design and operation of their applications\nfull data sheet shall prevail. and products using NXP Semiconductors products, and NXP Semiconductors\naccepts no liability for any assistance with applications or customer product\nProduct specification — The information and data provided in a Product design. It is customer’s sole responsibility to determine whether the NXP"
+  },
+  {
+    "faiss_index_id": 71,
+    "text": "data sheet shall define the specification of the product as agreed between Semiconductors product is suitable and fit for the customer’s applications and\nNXP Semiconductors and its customer, unless NXP Semiconductors and products planned, as well as for the planned application and use of\ncustomer have explicitly agreed otherwise in writing. In no event however, customer’s third party customer(s). Customers should provide appropriate"
+  },
+  {
+    "faiss_index_id": 72,
+    "text": "shall an agreement be valid in which the NXP Semiconductors product is design and operating safeguards to minimize the risks associated with their\ndeemed to offer functions and qualities beyond those described in the applications and products.\nProduct data sheet.\nNXP Semiconductors does not accept any liability related to any default,\ndamage, costs or problem which is based on any weakness or default in the"
+  },
+  {
+    "faiss_index_id": 73,
+    "text": "17.3 Disclaimers customer’s applications or products, or the application or use by customer’s\nthird party customer(s). Customer is responsible for doing all necessary\ntesting for the customer’s applications and products using NXP\nLimited warranty and liability — Information in this document is believed to\nSemiconductors products in order to avoid a default of the applications and\nbe accurate and reliable. However, NXP Semiconductors does not give any"
+  },
+  {
+    "faiss_index_id": 74,
+    "text": "the products or of the application or use by customer’s third party\nrepresentations or warranties, expressed or implied, as to the accuracy or\ncustomer(s). NXP does not accept any liability in this respect.\ncompleteness of such information and shall have no liability for the\nconsequences of use of such information. NXP Semiconductors takes no Limiting values — Stress above one or more limiting values (as defined in"
+  },
+  {
+    "faiss_index_id": 75,
+    "text": "responsibility for the content in this document if provided by an information the Absolute Maximum Ratings System of IEC60134) will cause permanent\nsource outside of NXP Semiconductors. damage to the device. Limiting values are stress ratings only and (proper)\noperation of the device at these or any other conditions above those given in\nIn no event shall NXP Semiconductors be liable for any indirect, incidental,\nthe Recommended operating conditions section (if present) or the"
+  },
+  {
+    "faiss_index_id": 76,
+    "text": "punitive, special or consequential damages (including - without limitation - lost\nCharacteristics sections of this document is not warranted. Constant or\nprofits, lost savings, business interruption, costs related to the removal or\nrepeated exposure to limiting values will permanently and irreversibly affect\nreplacement of any products or rework charges) whether or not such\nthe quality and reliability of the device.\ndamages are based on tort (including negligence), warranty, breach of"
+  },
+  {
+    "faiss_index_id": 77,
+    "text": "contract or any other legal theory. Terms and conditions of commercial sale — NXP Semiconductors\nproducts are sold subject to the general terms and conditions of commercial\nNotwithstanding any damages that customer might incur for any reason\nwhatsoever, NXP Semiconductors’ aggregate and cumulative liability towards sale, as published at http://www.nxp.com/profile/terms, unless otherwise"
+  },
+  {
+    "faiss_index_id": 78,
+    "text": "customer for the products described herein shall be limited in accordance agreed in a valid written individual agreement. In case an individual\nwith the Terms and conditions of commercial sale of NXP Semiconductors. agreement is concluded only the terms and conditions of the respective\nagreement shall apply. NXP Semiconductors hereby expressly objects to\nRight to make changes — NXP Semiconductors reserves the right to make applying the customer’s general terms and conditions with regard to the"
+  },
+  {
+    "faiss_index_id": 79,
+    "text": "changes to information published in this document, including without purchase of NXP Semiconductors products by customer.\nlimitation specifications and product descriptions, at any time and without\nnotice. This document supersedes and replaces all information supplied prior No offer to sell or license — Nothing in this document may be interpreted or\nto the publication hereof. construed as an offer to sell products that is open for acceptance or the grant,"
+  },
+  {
+    "faiss_index_id": 80,
+    "text": "conveyance or implication of any license under any copyrights, patents or\nother industrial or intellectual property rights.\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved.\nProduct data sheet Rev. 6 — 7 November 2017 22 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port"
+  },
+  {
+    "faiss_index_id": 81,
+    "text": "4-bit I2C-bus and SMBus I/O port\nExport control — This document as well as the item(s) described herein whenever customer uses the product for automotive applications beyond\nmay be subject to export control regulations. Export might require a prior NXP Semiconductors’ specifications such use shall be solely at customer’s\nauthorization from competent authorities. own risk, and (c) customer fully indemnifies NXP Semiconductors for any"
+  },
+  {
+    "faiss_index_id": 82,
+    "text": "liability, damages or failed product claims resulting from customer design and\nQuick reference data — The Quick reference data is an extract of the\nuse of the product for automotive applications beyond NXP Semiconductors’\nproduct data given in the Limiting values and Characteristics sections of this\nstandard warranty and NXP Semiconductors’ product specifications.\ndocument, and as such is not complete, exhaustive or legally binding."
+  },
+  {
+    "faiss_index_id": 83,
+    "text": "Translations — A non-English (translated) version of a document is for\nNon-automotive qualified products — Unless this data sheet expressly\nreference only. The English version shall prevail in case of any discrepancy\nstates that this specific NXP Semiconductors product is automotive qualified,\nbetween the translated and English versions.\nthe product is not suitable for automotive use. It is neither qualified nor tested\nin accordance with automotive testing or application requirements. NXP"
+  },
+  {
+    "faiss_index_id": 84,
+    "text": "Semiconductors accepts no liability for inclusion and/or use of 17.4 Trademarks\nnon-automotive qualified products in automotive equipment or applications.\nIn the event that customer uses the product for design-in and use in Notice: All referenced brands, product names, service names and trademarks\nautomotive applications to automotive specifications and standards, customer are the property of their respective owners."
+  },
+  {
+    "faiss_index_id": 85,
+    "text": "(a) shall use the product without NXP Semiconductors’ warranty of the I2C-bus — logo is a trademark of NXP Semiconductors N.V.\nproduct for such automotive applications, use and specifications, and (b)\n18. Contact information\nFor more information, please visit: http://www.nxp.com\nFor sales office addresses, please send an email to: salesaddresses@nxp.com\nPCA9536 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2017. All rights reserved."
+  },
+  {
+    "faiss_index_id": 86,
+    "text": "Product data sheet Rev. 6 — 7 November 2017 23 of 24PCA9536\nNXP Semiconductors\n4-bit I2C-bus and SMBus I/O port\n19. Contents\n1 General description. . . . . . . . . . . . . . . . . . . . . . 1\n2 Features and benefits . . . . . . . . . . . . . . . . . . . . 1\n3 Ordering information. . . . . . . . . . . . . . . . . . . . . 2\n3.1 Ordering options. . . . . . . . . . . . . . . . . . . . . . . . 2\n4 Block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . 3"
+  },
+  {
+    "faiss_index_id": 87,
+    "text": "5 Pinning information. . . . . . . . . . . . . . . . . . . . . . 4\n5.1 Pinning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4\n5.2 Pin description . . . . . . . . . . . . . . . . . . . . . . . . . 4\n6 Functional description . . . . . . . . . . . . . . . . . . . 5\n6.1 Registers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n6.1.1 Command byte. . . . . . . . . . . . . . . . . . . . . . . . . 5\n6.1.2 Register 0 - Input Port register. . . . . . . . . . . . . 5"
+  },
+  {
+    "faiss_index_id": 88,
+    "text": "6.1.3 Register 1 - Output Port register. . . . . . . . . . . . 6\n6.1.4 Register 2 - Polarity Inversion register . . . . . . . 6\n6.1.5 Register 3 - Configuration register . . . . . . . . . . 7\n6.2 Power-on reset. . . . . . . . . . . . . . . . . . . . . . . . . 7\n6.3 I/O port . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7\n6.4 Device address. . . . . . . . . . . . . . . . . . . . . . . . . 8\n6.5 Bus transactions. . . . . . . . . . . . . . . . . . . . . . . . 8"
+  },
+  {
+    "faiss_index_id": 89,
+    "text": "7 Application design-in information . . . . . . . . . 10\n8 Limiting values. . . . . . . . . . . . . . . . . . . . . . . . . 11\n9 Static characteristics. . . . . . . . . . . . . . . . . . . . 12\n10 Dynamic characteristics. . . . . . . . . . . . . . . . . 13\n11 Test information. . . . . . . . . . . . . . . . . . . . . . . . 14\n12 Package outline. . . . . . . . . . . . . . . . . . . . . . . . 15\n13 Handling information. . . . . . . . . . . . . . . . . . . . 18"
+  },
+  {
+    "faiss_index_id": 90,
+    "text": "14 Soldering of SMD packages . . . . . . . . . . . . . . 18\n14.1 Introduction to soldering. . . . . . . . . . . . . . . . . 18\n14.2 Wave and reflow soldering. . . . . . . . . . . . . . . 18\n14.3 Wave soldering. . . . . . . . . . . . . . . . . . . . . . . . 18\n14.4 Reflow soldering. . . . . . . . . . . . . . . . . . . . . . . 19\n15 Abbreviations. . . . . . . . . . . . . . . . . . . . . . . . . . 20\n16 Revision history. . . . . . . . . . . . . . . . . . . . . . . . 21"
+  },
+  {
+    "faiss_index_id": 91,
+    "text": "17 Legal information. . . . . . . . . . . . . . . . . . . . . . . 22\n17.1 Data sheet status . . . . . . . . . . . . . . . . . . . . . . 22\n17.2 Definitions. . . . . . . . . . . . . . . . . . . . . . . . . . . . 22\n17.3 Disclaimers. . . . . . . . . . . . . . . . . . . . . . . . . . . 22\n17.4 Trademarks. . . . . . . . . . . . . . . . . . . . . . . . . . . 23\n18 Contact information. . . . . . . . . . . . . . . . . . . . . 23\n19 Contents. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24"
+  },
+  {
+    "faiss_index_id": 92,
+    "text": "Please be aware that important notices concerning this document and the product(s)\ndescribed herein, have been included in section ‘Legal information’.\n© NXP Semiconductors N.V. 2017. All rights reserved.\nFor more information, please visit: http://www.nxp.com\nFor sales office addresses, please send an email to: salesaddresses@nxp.com\nDate of release: 7 November 2017\nDocument identifier: PCA9536"
+  }
+]

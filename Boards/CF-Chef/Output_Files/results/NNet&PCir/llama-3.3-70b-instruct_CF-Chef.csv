@@ -1,0 +1,18 @@
+Model,Question,Category,Actual_Response,Predicted_Response
+llama-3.3-70b-instruct,Q1,component_datasheet,YES,NO
+llama-3.3-70b-instruct,Q2,spice_behaviour,NO,NO
+llama-3.3-70b-instruct,Q3,theory_layout,YES,NO
+llama-3.3-70b-instruct,Q4,component_datasheet,YES,YES
+llama-3.3-70b-instruct,Q5,component_datasheet,YES,NO
+llama-3.3-70b-instruct,Q6,spice_behaviour,YES,YES
+llama-3.3-70b-instruct,Q7,component_datasheet,NO,NO
+llama-3.3-70b-instruct,Q8,spice_behaviour,YES,YES
+llama-3.3-70b-instruct,Q9,theory_layout,NO,NO
+llama-3.3-70b-instruct,Q10,spice_behaviour,NO,NO
+llama-3.3-70b-instruct,Q11,component_datasheet,YES,NO
+llama-3.3-70b-instruct,Q12,theory_layout,NO,NO
+llama-3.3-70b-instruct,Q13,spice_behaviour,YES,YES
+llama-3.3-70b-instruct,Q14,component_datasheet,YES,YES
+llama-3.3-70b-instruct,Q15,theory_layout,NO,NO
+Accuracy,Precision,Recall,F1 Score
+0.7333333333333333,0.8,0.7777777777777778,0.7321428571428572

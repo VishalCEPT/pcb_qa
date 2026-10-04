@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component R1 connected to Net__Q1_S_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The SPICE netlist explicitly defines a connection between R1 and Net-_Q1-S_ on the first pin of the resistor.",
+        "is_final": true
+    }
+}

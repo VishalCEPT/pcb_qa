@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component IRLML6402 have a minimum junction temperature of -55\u00b0C according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The IRLML6402 datasheet specifies an operating junction and storage temperature range of -55 to +150 \u00b0C.",
+        "is_final": true
+    }
+}

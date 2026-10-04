@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the /pwm1 signal maintain a voltage of 0V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The /PWM1 signal is connected to the /PWM1_C1 and /PWM1_C2 nets through 0-ohm resistors and to connector J3, which are typically driven by active microcontroller outputs in this system architecture.",
+        "is_final": true
+    }
+}

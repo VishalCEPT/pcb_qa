@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component WS2812B have a maximum Vdd of 3.5V according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The WS2812B datasheet specifies a typical supply voltage (VDD) of +3.5V to +5.3V, meaning 3.5V is the minimum operating voltage, not the maximum.",
+        "is_final": true
+    }
+}

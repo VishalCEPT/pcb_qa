@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component BC857 have a collector current of -100mA according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The netlist and component description for Q2 (BC857) explicitly state it is a PNP transistor with a collector current (Ic) of 0.1A, which corresponds to -100mA for a PNP device.",
+        "is_final": true
+    }
+}

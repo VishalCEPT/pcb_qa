@@ -1,0 +1,250 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "3.3V-Powered, 10Mbps and Slew-Rate-Limited MAX3483/MAX3485/\nTrue RS-485/RS-422 Transceivers MAX3486/MAX3488/\nMAX3490/MAX3491\nGeneral Description Features\nThe MAX3483, MAX3485, MAX3486, MAX3488, ● Operate from a Single 3.3V Supply—\nMAX3490, and MAX3491 are 3.3V, low-power transceivers for No Charge Pump!\nRS-485 and RS-422 communication. Each part contains ● Interoperable with +5V Logic\none driver and one receiver. The MAX3483 and MAX3488\n● 8ns Max Skew (MAX3485/MAX3490/MAX3491)"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "● 8ns Max Skew (MAX3485/MAX3490/MAX3491)\nfeature slew-rate-limited drivers that minimize EMI and\n● Slew-Rate Limited for Errorless Data Transmission\nreduce reflections caused by improperly terminated\n(MAX3483/MAX3488)\ncables, allowing error-free data transmission at data rates\n● 2nA Low-Current Shutdown Mode\nup to 250kbps. The partially slew-rate-limited MAX3486\n(MAX3483/MAX3485/MAX3486/MAX3491)\ntransmits up to 2.5Mbps. The MAX3485, MAX3490, and"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "MAX3491 transmit at up to 10Mbps. ● -7V to +12V Common-Mode Input Voltage Range\n● Allows up to 32 Transceivers on the Bus\nDrivers are short-circuit current-limited and are protected\nagainst excessive power dissipation by thermal shutdown ● Full-Duplex and Half-Duplex Versions Available\ncircuitry that places the driver outputs into a high-imped- ● Industry Standard 75176 Pinout\nance state. The receiver input has a fail-safe feature that (MAX3483/MAX3485/MAX3486)"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "guarantees a logic-high output if both inputs are open\n● Current-Limiting and Thermal Shutdown for Driver\ncircuit. Overload Protection\nThe MAX3488, MAX3490, and MAX3491 feature full-\nOrdering Information\nduplex communication, while the MAX3483, MAX3485, and\nMAX3486 are designed for half-duplex communication. PART TEMP. RANGE PIN-PACKAGE\nMAX3483CPA 0°C to +70°C 8 Plastic DIP\nApplications\nMAX3483CSA 0°C to +70°C 8 SO\n● Low-Power RS-485/RS-422 Transceivers MAX3483C/D 0°C to +70°C Dice*"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "● Telecommunications\nMAX3483EPA -40°C to +85°C 8 Plastic DIP\n● Transceivers for EMI-Sensitive Applications\nMAX3483ESA -40°C to +85°C 8 SO\n● Industrial-Control Local Area Networks\nMAX3485CPA 0°C to +70°C 8 Plastic DIP\nMAX3485CSA 0°C to +70°C 8 SO\nMAX3485C/D 0°C to +70°C Dice*\nMAX3485EPA -40°C to +85°C 8 Plastic DIP\nMAX3485ESA -40°C to +85°C 8 SO\nOrdering Information continued at end of data sheet.\n*Contact factory for for dice specifications.\nSelection Table\nGUARANTEED SUPPLY DRIVER/ SHUTDOWN"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "GUARANTEED SUPPLY DRIVER/ SHUTDOWN\nPART HALF/FULL SLEW-RATE PIN\nDATA RATE VOLTAGE RECEIVER CURRENT\nNUMBER DUPLEX LIMITED COUNT\n(Mbps) (V) ENABLE (nA)\nMAX3483 0.25 Half Yes Yes 2 8\nMAX3485 10 Half No Yes 2 8\nMAX3486 2.5 Half Yes Yes 2 8\n3.0 to 3.6\nMAX3488 0.25 Full Yes No — 8\nMAX3490 10 Full No No — 8\nMAX3491 10 Full No Yes 2 14\n19-0333; Rev 2; 5/24\n© 2024 Analog Devices, Inc. All rights reserved. Trademarks and registered trademarks are the property of their respective owners."
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "One Analog Way, Wilmington, MA 01887 U.S.A. | Tel: 781.329.4700 | © 2024 Analog Devices, Inc. All rights reserved.MAX3483/MAX3485/ 3.3V-Powered, 10Mbps and Slew-Rate-Limited\nMAX3486/MAX3488/ True RS-485/RS-422 Transceivers\nMAX3490/MAX3491\nAbsolute Maximum Ratings\nSupply Voltage (VCC) .............................................................7V 14-Pin Plastic DIP (derate 10mW/°C above +70°C) ...800mW"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "Control Input Voltage (RE, DE) .................................-0.3V to 7V 14-Pin SO (derate 8.33mW/°C above +70°C) .............667mW\nDriver Input Voltage (DI) ............................................-0.3V to 7V Operating Temperature Ranges\nDriver Output Voltage (A, B, Y, Z) ........................-7.5V to 12.5V MAX34_ _C_ _ ...................................................0°C to +70°C"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "Receiver Input Voltage (A, B) ...............................-7.5V to 12.5V MAX34_ _E_ _ ...............................................-40°C to +85°C\nReceiver Output Voltage (RO) .................-0.3V to (VCC + 0.3V) Junction Temperature ......................................................+160°C\nContinuous Power Dissipation (TA = +70°C) Storage Temperature Range .............................-65°C to +160°C"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "8-Pin Plastic DIP (derate 9.09mW/°C above +70°C) ..727mW Lead Temperature (soldering, 10sec) .............................+300°C\n8-Pin SO (derate 5.88mW/°C above +70°C) ...............471mW\nPackage Information\n14 SOIC\nPACKAGE CODE S14+1\nOutline Number 21-0041\nLand Pattern Number 90-0112\nThermal Resistance, Single-Layer Board:\nJunction to Ambient (θJA) 120\nJunction to Case (θJA) 37\nThermal Resistance, Four-Layer Board:\nJunction to Ambient (θJA) 84\nJunction to Case (θJA) 34"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "Junction to Case (θJA) 34\nFor the latest package outline information and land patterns (footprints), go to www.maximintegrated.com/packages. Note that a “+”,\n“#”, or “-” in the package code indicates RoHS status only. Package drawings may show a different suffix character, but the drawing\npertains to the package regardless of RoHS status.\nPackage thermal resistances were obtained using the method described in JEDEC specification JESD51-7, using a four-layer board."
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "For detailed information on package thermal considerations, refer to www.maximintegrated.com/thermal-tutorial.\nwww.analog.com Analog Devices │ 2MAX3483/MAX3485/ 3.3V-Powered, 10Mbps and Slew-Rate-Limited\nMAX3486/MAX3488/ True RS-485/RS-422 Transceivers\nMAX3490/MAX3491\nDC Electrical Characteristics\n(VCC = 3.3V ±0.3V, TA = TMIN to TMAX, unless otherwise noted. Typical values are at TA = +25°C)\nPARAMETER SYMBOL CONDITIONS MIN TYP MAX UNITS\nRL = 100Ω (RS-422), Figure 4 2.0"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "RL = 100Ω (RS-422), Figure 4 2.0\nDifferential Driver Output VOD RL = 54Ω (RS-485), Figure 4 1.5 V\nRL = 60Ω (RS-485), VCC = 3.3V, Figure 5 1.5\nChange in Magnitude of Driver\nDifferential Output Voltage for\nComplementary Output States\nΔVOD RL = 54Ω or 100Ω, Figure 4 0.2 V\n(Note 1)\nDriver Common-Mode Output\nVoltage\nVOC RL = 54Ω or 100Ω, Figure 4 3 V\nChange in Magnitude of\nCommon-Mode Output Voltage ΔVOC RL = 54Ω or 100Ω, Figure 4 0.2 V\n(Note 1)\nInput High Voltage VIH DE, DI, RE 2.0 V"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "(Note 1)\nInput High Voltage VIH DE, DI, RE 2.0 V\nInput Low Voltage VIL DE, DI, RE 0.8 V\nLogic Input Current IIN1 DE, DI, RE ±2 μA\nDE = 0V, VIN = 12V 1.0\nInput Current (A, B) IIN2\nVCC = 0V or 3.6V VIN = -7V -0.8\nmA\nDE = 0V, RE = 0V, VOUT = 12V 20\nOutput Leakage (Y, Z) IO\nVCC = 0V or 3.6V, MAX3491 VOUT = -7V -20\nμA\nO\nin\nu\nS\ntp\nh\nu\nu\nt\nt d\nL\no\ne\nw\na\nn\nka\nM\nge\no d\n(\ne\nY, Z) IO D\nVC\nE\nC\n=\n=\n0\n0\nV\nV\n, R\no\nE\nr 3\n=\n. 6\nV\nV\nC\n,\nC\nM\n,\nAX3491\nV\nV\nO\nO\nU\nU\nT\nT\n=\n=\n1\n-7\n2\nV\nV\n-\n1\n1\nμA\nReceiver Differential"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "T\nT\n=\n=\n1\n-7\n2\nV\nV\n-\n1\n1\nμA\nReceiver Differential\nThreshold Voltage\nVTH -7V ≤ VCM ≤ 12V -0.2 0.2 V\nReceiver Input Hysteresis ΔVTH VCM = 0V 50 mV\nReceiver Output High Voltage VOH IOUT = -1.5mA, VID = 200mV, Figure 6 VCC - 0.4 V\nReceiver Output Low Voltage VOL IOUT = 2.5mA, VID = 200mV, Figure 6 0.4 V\nThree-State (High Impedance)\nOutput Current at Receiver\nIOZR VCC = 3.6V, 0V ≤ VOUT ≤ VCC ±1 μA\nReceiver Input Resistance RIN -7V ≤ VCM ≤ 12V 12 kΩ\nDE = VCC,\n1.1 2.2\nNo load, RE = 0V or VCC"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "DE = VCC,\n1.1 2.2\nNo load, RE = 0V or VCC\nSupply Current ICC\nDI = 0V or VCC DE = 0V,\nmA\n0.95 1.9\nRE = 0V\nSupply Current in Shutdown\nMode\nISHDN DE = 0V, RE = VCC, DI = VCC or 0V 0.002 1 µA\nDriver Short-Circuit Output VOUT = -7V -250\nCurrent\nIOSD\nVOUT = 12V 250\nmA\nReceiver Short-Circuit Output\nCurrent\nIOSR 0V ≤ VRO ≤ VCC ±8 ±60 mA\nwww.analog.com Analog Devices │ 3MAX3483/MAX3485/ 3.3V-Powered, 10Mbps and Slew-Rate-Limited\nMAX3486/MAX3488/ True RS-485/RS-422 Transceivers\nMAX3490/MAX3491"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "MAX3490/MAX3491\nDriver Switching Characteristics—MAX3485, MAX3490, and MAX3491\n(VCC = 3.3V, TA = +25°C)\nPARAMETER SYMBOL CONDITIONS MIN TYP MAX UNITS\nDriver Differential Output Delay tDD RL = 60Ω, Figure 7 1 22 35 ns\nDriver Differential Output Transition Time tTD RL = 60Ω, Figure 7 3 8 25 ns\nDriver Propagation Delay, Low-to-High Level tPLH RL = 27Ω, Figure 8 7 22 35 ns\nDriver Propagation Delay, High-to-Low Level tPHL RL = 27Ω, Figure 8 7 22 35 ns"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "|tPLH - tPHL| Driver Propagation Delay Skew (Note 2) tPDS RL = 27Ω, Figure 8 8 ns\nDRIVER OUTPUT ENABLE/DISABLE TIMES (MAX3485/MAX3491 only)\nDriver Output Enable Time to Low Level tPZL RL = 110Ω, Figure 10 45 90 ns\nDriver Output Enable Time to High Level tPZH RL = 110Ω, Figure 9 45 90 ns\nDriver Output Disable Time from High Level tPHZ RL = 110Ω, Figure 9 40 80 ns\nDriver Output Disable Time from Low Level tPLZ RL = 110Ω, Figure 10 40 80 ns"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "Driver Output Enable Time from Shutdown to Low Level tPSL RL = 110Ω, Figure 10 650 900 ns\nDriver Output Enable Time from Shutdown to High Level tPSH RL = 110Ω, Figure 9 650 900 ns\nDriver Switching Characteristics—MAX3486\n(VCC = 3.3V, TA = +25°C)\nPARAMETER SYMBOL CONDITIONS MIN TYP MAX UNITS\nDriver Differential Output Delay tDD RL = 60Ω, Figure 7 24 48 70 ns\nDriver Differential Output Transition Time tTD RL = 60Ω, Figure 7 15 35 60 ns"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "Driver Propagation Delay, Low-to-High Level tPLH RL = 27Ω, Figure 8 20 48 70 ns\nDriver Propagation Delay, High-to-Low Level tPHL RL = 27Ω, Figure 8 20 48 70 ns\n|tPLH - tPHL| Driver Propagation Delay Skew (Note 2) tPDS RL = 27Ω, Figure 8 11 ns\nDriver Output Enable Time to Low Level tPZL RL = 110Ω, Figure 10 55 100 ns\nDriver Output Enable Time to High Level tPZH RL = 110Ω, Figure 9 55 100 ns\nDriver Output Disable Time from High Level tPHZ RL = 110Ω, Figure 9 45 80 ns"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "Driver Output Disable Time from Low Level tPLZ RL = 110Ω, Figure 10 45 80 ns\nDriver Output Enable Time from Shutdown to Low Level tPSL RL = 110Ω, Figure 10 700 1000 ns\nDriver Output Enable Time from Shutdown to High Level tPSH RL = 110Ω, Figure 9 700 1000 ns\nwww.analog.com Analog Devices │ 4MAX3483/MAX3485/ 3.3V-Powered, 10Mbps and Slew-Rate-Limited\nMAX3486/MAX3488/ True RS-485/RS-422 Transceivers\nMAX3490/MAX3491\nDriver Switching Characteristics—MAX3483 and MAX3488\n(VCC = 3.3V, TA = +25°C)"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "(VCC = 3.3V, TA = +25°C)\nPARAMETER SYMBOL CONDITIONS MIN TYP MAX UNITS\nDriver Differential Output Delay tDD RL = 60Ω, Figure 7 600 900 1400 ns\nDriver Differential Output Transition Time tTD RL = 60Ω, Figure 7 400 700 1200 ns\nDriver Propagation Delay, Low-to-High Level tPLH RL = 27Ω, Figure 8 700 1000 1500 ns\nDriver Propagation Delay, High-to-Low Level tPHL RL = 27Ω, Figure 8 700 1000 1500 ns\n|tPLH - tPHL| Driver Propagation Delay Skew (Note 2) tPDS RL = 27Ω, Figure 8 100 ns"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "DRIVER OUTPUT ENABLE/DISABLE TIMES (MAX3485/MAX3491 only)\nDriver Output Enable Time to Low Level tPZL RL = 110Ω, Figure 10 900 1300 ns\nDriver Output Enable Time to High Level tPZH RL = 110Ω, Figure 9 600 800 ns\nDriver Output Disable Time from High Level tPHZ RL = 110Ω, Figure 9 50 80 ns\nDriver Output Disable Time from Low Level tPLZ RL = 110Ω, Figure 10 50 80 ns\nDriver Output Enable Time from Shutdown to Low Level tPSL RL = 110Ω, Figure 10 1.9 2.7 ns"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "Driver Output Enable Time from Shutdown to High Level tPSH RL = 110Ω, Figure 9 2.2 3.0 ns\nReceiver Switching Characteristics\n(VCC = 3.3V, TA = +25°C)\nPARAMETER SYMBOL CONDITIONS MIN TYP MAX UNITS\nMAX3483/MAX3485/MAX3486/MAX3491 only\nTime to Shutdown tSHDN\n(Note 3)\n80 190 300 ns\nReceiver Propagation Delay, VID = 0V to 3.0V, CL = 15pF, Figure 11 25 65 90\nLow-to-High Level\ntRPLH\nMAX3483/MAX3488 25 75 120\nns\nReceiver Propagation Delay, VID = 0V to 3.0V, CL = 15pF, Figure 11 25 65 90"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "High-to-Low Level\ntRPHL\nMAX3483/MAX3488 25 75 120\nns\n|\nP\ntP\nro\nL\np\nH\na\n-\ng\nt\na\nP\nt\nH\nio\nL\nn\n|\nD\nR\ne\ne\nl\nc\na\ne\ny\ni v\nS\ne\nk\nr\new\ntRPDS V\nM\nI\nA\nD\nX\n=\n3\n0\n4\nV\n83\nt\n/\no\nM\n3\nA\n.0\nX\nV\n3\n,\n4\nC\n88\nL = 15pF, Figure 11 1\n2\n0\n0\nns\nR\nto\ne\nL\nc\no\ne\nw\niv e\nL\nr\ne\nO\nve\nu\nl\ntput Enable Time tPRZL C\nM\nL\nA\n=\nX 3\n1\n4\n5\n8\np\n3\nF\n/\n,\nM\nF\nA\nig\nX\nu\n3\nre\n4 8\n1\n5\n2\n/\n,\nMAX3486/MAX3491 only\n25 50 ns\nR\nto\ne\nH\nce\nig\niv\nh\ne\nL\nr\ne\nO\nv\nu\ne\nt\nl\nput Enable Time tPRZH C\nM\nL\nA\n=\nX 3\n1\n4\n5\n8\np\n3\nF\n/\n,\nM\nF\nA\nig\nX\nu\n3\nre\n4 8\n1\n5\n2\n/\n,"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "1\n4\n5\n8\np\n3\nF\n/\n,\nM\nF\nA\nig\nX\nu\n3\nre\n4 8\n1\n5\n2\n/\n,\nMAX3486/MAX3491 only\n25 50 ns\nR\nTi\ne\nm\nc\ne\ne i\nf\nv\nr\ne\no\nr\nm\nO\nH\nu\ni\nt\ng\np\nh\nu t\nL\nD\nev\nis\ne\na\nl\nble tPRHZ C\nM\nL\nA\n=\nX 3\n1\n4\n5\n8\np\n3\nF\n/\n,\nM\nF\nA\nig\nX\nu\n3\nre\n4 8\n1\n5\n2\n/\n,\nMAX3486/MAX3491 only\n25 45 ns\nR\nTi\ne\nm\nc\ne\ne i\nf\nv\nr\ne\no\nr\nm\nO\nL\nu\no\ntp\nw\nu\nL\nt\ne\nD\nv\nis\ne\na\nl\nble tPRLZ C\nM\nL\nA\n=\nX 3\n1\n4\n5\n8\np\n3\nF\n/\n,\nM\nF\nA\nig\nX\nu\n3\nre\n4 8\n1\n5\n2\n/\n,\nMAX3486/MAX3491 only\n25 45 ns\nR\nfro\ne\nm\nce\nS\niv\nh\ne\nu\nr\nt\nO\ndo\nu\nw\ntp\nn\nu t\nt o\nE\nL\nn\no\na\nw\nbl e\nL e\nT\nv\nim"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "O\ndo\nu\nw\ntp\nn\nu t\nt o\nE\nL\nn\no\na\nw\nbl e\nL e\nT\nv\nim\nel\ne tPRSL C\nM\nL\nA\n=\nX 3\n1\n4\n5\n8\np\n3\nF\n/\n,\nM\nF\nA\nig\nX\nu\n3\nre\n4 8\n1\n5\n2\n/\n,\nMAX3486/MAX3491 only\n720 1400 ns\nR\nfro\ne\nm\nce\nS\niv\nh\ne\nu\nr\nt\nO\ndo\nu\nw\ntp\nn\nu t\nt o\nE\nH\nna\nig\nb\nh\nle\nL\nT\ne\ni\nv\nm\ne\ne\nl\ntPRSH C\nM\nL\nA\n=\nX 3\n1\n4\n5\n8\np\n3\nF\n/\n,\nM\nF\nA\nig\nX\nu\n3\nre\n4 8\n1\n5\n2\n/\n,\nMAX3486/MAX3491 only\n720 1400 ns\nNote 1: ΔVOD and ΔVOC are the changes in VOD and VOC, respectively, when the DI input changes state."
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "Note 2: Measured on |tPLH (Y) - tPHL (Y)| and |tPLH (Z) - tPHL (Z)|.\nNote 3: The transceivers are put into shutdown by bringing RE high and DE low. If the inputs are in this state for less than 80ns,\nthe parts are guaranteed not to enter shutdown. If the inputs are in this state for at least 300ns, the parts are guaranteed to\nhave entered shutdown. See Low-Power Shutdown Mode section.\nwww.analog.com Analog Devices │ 5(VCC = 3.3V, TA = +25°C, unless otherwise noted.)\nOUTPUT CURRENT vs."
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "OUTPUT CURRENT vs.\nRECEIVER OUTPUT HIGH VOLTAGE\n-20\n-18\n-16\n-14\n-12\n-10\n-8\n-6\n-4\n-2\n0\n0 0.5 1.0 1.5 2.0 2.5 3.0 3.5\n20-3843XAM\nOUTPUT HIGH VOLTAGE (V)\n)Am(\nTNERRUC\nTUPTUO\nRECEIVER OUTPUT HIGH VOLTAGE\nvs. TEMPERATURE\n3.30\n3.25\n3.20\n3.15\n3.10\n3.05\n3.00\n-40 -20 0 20 40 60 80 100\n30-3843XAM\nTEMPERATURE (°C)\n)V(\nEGATLOV\nHGIH\nTUPTUO\nIRO = 1.5mA\nRECEIVER OUTPUT LOW VOLTAGE\nvs. TEMPERATURE\n0.8\n0.7\n0.6\n0.5\n0.4\n0.3\n0.2\n0.1\n0\n-40 -20 0 20 40 60 80 100\n40-3843XAM\nTEMPERATURE (°C)\n)V(\nEGATLOV\nWOL\nTUPTUO"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "TEMPERATURE (°C)\n)V(\nEGATLOV\nWOL\nTUPTUO\nDRIVER OUTPUT CURRENT vs.\nDIFFERENTIAL OUTPUT VOLTAGE\n100\nIRO = 2.5mA\n90\n80\n70\n60\n50\n40\n30\n20\n10\n0\n0 0.5 1.0 1.5 2.0 2.5 3.0 3.5\n50-3843XAM\nDIFFERENTIAL OUTPUT VOLTAGE (V)\n)Am(\nTNERRUC\nTUPTUO\nDRIVER DIFFERENTIAL OUTPUT\nVOLTAGE vs.TEMPERATURE\n2.6\n2.5\n2.4\n2.3\n2.2\n2.1\n2.0\n1.9\n1.8\n1.7\n1.6\n-40 -20 0 20 40 60 80 100\n60-3843XAM\nTEMPERATURE (°C)\n)V(\nEGATLOV\nTUPTUO\nLAITNEREFFID\nR = 54Ω\nOUTPUT CURRENT vs.\nDRIVER OUTPUT LOW VOLTAGE\n175\n150\n125\n100\n75\n50\n25\n0"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "175\n150\n125\n100\n75\n50\n25\n0\n0 2 4 6 8 10 12\n70-3843XAM\nOUTPUT LOW VOLTAGE (V)\n)Am(\nTNERRUC\nTUPTUO\nOUTPUT CURRENT vs.\nRECEIVER OUTPUT LOW VOLTAGE\n25\n20\n15\n10\n5\n0\n0 0.5 1.0 1.5 2.0 2.5 3.0 3.5\n10-3843XAM\nOUTPUT LOW VOLTAGE (V)\n)Am(\nTNERRUC\nTUPTUO\nOUTPUT CURRENT vs.\nDRIVER OUTPUT HIGH VOLTAGE\n-100\n-80\n-60\n-40\n-20\n0\n-7 -6 -5 -4 -3 -2 -1 0 1 2 3 4 5\n80-3843XAM\nOUTPUT HIGH VOLTAGE (V)\n)Am(\nTNERRUC\nTUPTUO\nMAX3483/MAX3485/ 3.3V-Powered, 10Mbps and Slew-Rate-Limited"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "MAX3486/MAX3488/ True RS-485/RS-422 Transceivers\nMAX3490/MAX3491\nTypical Operating Characteristics\nwww.analog.com Analog Devices │ 6(VCC = 3.3V, TA = +25°C, unless otherwise noted.)\nSUPPLY CURRENT\nvs. TEMPERATURE\n1.2\n1.1\n1.0\n0.9\n0.8\n0.7\n-40 -20 0 20 40 60 80 100\nPIN\nMAX3483/\nMAX3488/ NAME FUNCTION\nMAX3485/ MAX3491\nMAX3490\nMAX3486\nReceiver Output. If A > B by 200mV, RO will be high; if A < B by\n1 2 2 RO\n200mV, RO will be low.\nReceiver Output Enable. RO is enabled when RE is low; RO is high"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "2 — 3 RE impedance when RE is high. If RE is high and DE is low, the device\nwill enter a low-power shutdown mode.\nDriver Output Enable. The driver outputs are enabled by bringing DE\nhigh. They are high impedance when DE is low. If RE is high and DE\n3 — 4 DE is low, the device will enter a low-power shutdown mode. If the driver\noutputs are enabled, the parts function as line drivers. While they are\nhigh impedance, they function as line receivers if RE is low."
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "Driver Input. A low on DI forces output Y low and output Z high.\n4 3 5 DI\nSimilarly, a high on DI forces output Y high and output Z low.\n5 4 6, 7 GND Ground\n— 5 9 Y Noninverting Driver Output\n— 6 10 Z Inverting Driver Output\n6 — — A Noninverting Receiver Input and Noninverting Driver Output\n— 8 12 A Noninverting Receiver Input\n7 — — B Inverting Receiver Input and Inverting Driver Output\n— 7 11 B Inverting Receiver Input\n8 1 13, 14 VCC Positive Supply: 3.0V ≤ VCC ≤ 3.6V"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "8 1 13, 14 VCC Positive Supply: 3.0V ≤ VCC ≤ 3.6V\n— — 1, 8 N.C. No Connect—not internally connected\n90-3843XAM\nTEMPERATURE (°C)\n)Am(\nTNERRUC\nYLPPUS\nSHUTDOWN CURRENT\nvs. TEMPERATURE\n100\nX = DON’T CARE\n90\n80\n70\nDE = VCC, RE = X 60\n50\nDE = 0, RE = 0\n40\n30\n20\n10\n0\n-40 -20 0 20 40 60 80 100\n01-3843XAM\nTEMPERATURE (°C)\n)An(\nTNERRUC\nNWODTUHS\nMAX3483/MAX3485/ 3.3V-Powered, 10Mbps and Slew-Rate-Limited\nMAX3486/MAX3488/ True RS-485/RS-422 Transceivers\nMAX3490/MAX3491"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "MAX3490/MAX3491\nTypical Operating Characteristics (continued)\nPin Description\nwww.analog.com Analog Devices │ 7MAX3483/MAX3485/ 3.3V-Powered, 10Mbps and Slew-Rate-Limited\nMAX3486/MAX3488/ True RS-485/RS-422 Transceivers\nMAX3490/MAX3491\nTOP VIEW\nMAX3483\nDE\nMAX3485\nMAX3486\nRO 1 R 8 VCC RO 1 R 8 VCC D DI\n7 B B\nRE 2 7 B RE 2 Rt Rt\nDE 3 6 A DE 3 6\nA A\nDI 4 D 5 GND DI 4 D 5 GND R RO\nDIP/SO RE\nNOTE: PIN LABELS Y AND Z ON TIMING, TEST, AND WAVEFORM DIAGRAMS REFER TO PINS A AND B WHEN DE IS HIGH."
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "Figure 1. MAX3483/MAX3485/MAX3486 Pin Configuration and Typical Operating Circuit\nTOP VIEW VCC VCC\nMAX3488\n1\nMAX3490\n5 Y\n3 Rt\nVCC 1 R 8 A DI D 6 Z R RO\nRO 2 7 B\nDI 3 6 Z 8 A\n2 Rt\nGND 4 D 5 Y RO R 7 D DI\nB\nDIP/SO\n4\nGND GND\nFigure 2. MAX3488/MAX3490 Pin Configuration and Typical Operating Circuit\nTOP VIEW DE VCC\nMAX3491\nVCC RE\n4 13, 14\nN.C. 1 14 VCC\n9 Y\nRO 2 R 13 VCC\nDI\n5\nD 10\nRt\nR RO\nRE 3 12 A Z\nDE 4 11 B\n12 A\nDI 5 10 Z 2 Rt\nD RO R 11 D DI\nGND 6 9 Y\nB\nGND 7 8 N.C. 1, 8\nN.C.\n3 6, 7\nDIP/SO"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "GND 6 9 Y\nB\nGND 7 8 N.C. 1, 8\nN.C.\n3 6, 7\nDIP/SO\nRE GND GND DE\nFigure 3. MAX3491 Pin Configuration and Typical Operating Circuit\nwww.analog.com Analog Devices │ 8MAX3483/MAX3485/ 3.3V-Powered, 10Mbps and Slew-Rate-Limited\nMAX3486/MAX3488/ True RS-485/RS-422 Transceivers\nMAX3490/MAX3491\n375Ω\nRL\n2\nD\nVOD\nD\nVOD RL\nV\n-7\nC\nV\nM\nt o\n=\n+12V\nRL\nVCC 2 VOC\nVCC 375Ω\nFigure 4. Driver VOD and VOC Figure 5. Driver VOD with Varying Common-Mode Voltage\nVID R\n0V\nVOL IOL VOH IOH\n(+) (-)"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "VID R\n0V\nVOL IOL VOH IOH\n(+) (-)\nFigure 6. Receiver VOH and VOL\n3V\nIN 1.5V 1.5V\nCL 0V\nD RL = OUT tDO tDO\nGENERATOR 60Ω\n(NOTE 4) 50Ω ≈ 2.0V\n90% 90%\nVCC OUT 50% 50%\nCL 10% 10%\n≈ -2.0V\nCL = 15pF (NOTE 5)\ntTD tTD\nFigure 7. Driver Differential Output Delay and Transition Times\nwww.analog.com Analog Devices │ 9MAX3483/MAX3485/ 3.3V-Powered, 10Mbps and Slew-Rate-Limited\nMAX3486/MAX3488/ True RS-485/RS-422 Transceivers\nMAX3490/MAX3491\n3V\nVOM\nIN 1.5V 1.5V\nRL = 27Ω 0V\nS1\ntPLH tPHL\nD OUT\nGENERATOR\nVOH"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "RL = 27Ω 0V\nS1\ntPLH tPHL\nD OUT\nGENERATOR\nVOH\n(NOTE 4) 50Ω CL = 15pF Y VOM VOM\n(NOTE 5) OUT\nVCC VOL\nVOM =\nVOH\n2\n+ VOL≈\n1.5V\ntPHL tPLH\nVOH\nZ\nVOM VOM\nOUT\nVOL\nFigure 8. Driver Propagation Times\n3V\nS1\n0V OR 3V D OUT IN 1.5V 1.5V\n0V\nCL = 50pF RL = 110Ω\n(NOTE 5) tPZH tPHZ\nGENERATOR\n(NOTE 4) 50Ω VOH\n0.25V\nOUT VOM\nVOM =\nVOH\n2\n+ VOL≈\n1.5V 0V\nFigure 9. Driver Enable and Disable Times (tPZH, tPSH, tPHZ)\nVCC\n3V\nRL = 110Ω IN 1.5V 1.5V\nS1\n0V OR 3V D OUT 0V\ntPSL tPLZ\nCL = 50pF VCC\n(NOTE 5)\nGE\n(N\nN\nO\nER\nTE\nA T"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "CL = 50pF VCC\n(NOTE 5)\nGE\n(N\nN\nO\nER\nTE\nA T\n4\nO\n)\nR\n50Ω\nOUT VOM\n0.25V\nVOL\nFigure 10. Driver Enable and Disable Times (tPZL, tPSL, tPLZ)\nwww.analog.com Analog Devices │ 10MAX3483/MAX3485/ 3.3V-Powered, 10Mbps and Slew-Rate-Limited\nMAX3486/MAX3488/ True RS-485/RS-422 Transceivers\nMAX3490/MAX3491\n3.0V\nOUT\nGENERATOR VID R IN 1.5V 1.5V\n(NOTE 4) 50Ω CL = 15pF 0V\n(NOTE 5)\ntRPLH tRPHL\nVCC\n1.5V OUT VOM VOM\n0V\nVOM = VC\n2\nC\n0V\nFigure 11. Receiver Propagation Delay\n1.5V S3 S1\n1k VCC\n-1.5V VID R S2\nCL"
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "1.5V S3 S1\n1k VCC\n-1.5V VID R S2\nCL\n(NOTE 5)\nGENERATOR\n(NOTE 4) 50Ω\n3V 3V\nS1 OPEN S1 CLOSED\nIN 1.5V S2 CLOSED IN 1.5V S2 OPEN\nS3 = 1.5V S3 = -1.5V\n0V 0V\ntPRZH tPRZL\ntPRSH tPRSL\nVOH VCC\nOUT OUT\n1.5V 1.5V\n0V VOL\n3V 3V\nS1 OPEN S1 CLOSED\nIN 1.5V S2 CLOSED IN 1.5V S2 OPEN\nS3 = 1.5V S3 = -1.5V\n0V 0V\ntPRHZ\nOUT 0.25V\nVOH\ntPRLZ\nVCC\nOUT 0.25V\n0V VOL\nFigure 12. Receiver Enable and Disable Times"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "Figure 12. Receiver Enable and Disable Times\nNote 4: The input pulse is supplied by a generator with the following characteristics: PRR = 250kHz, 50% duty cycle, tr ≤ 6.0ns, ZO = 50Ω.\nNote 5: CL includes probe and stray capacitance.\nwww.analog.com Analog Devices │ 11MAX3483/MAX3485/ 3.3V-Powered, 10Mbps and Slew-Rate-Limited\nMAX3486/MAX3488/ True RS-485/RS-422 Transceivers\nMAX3490/MAX3491\nFunction Tables Applications Information\nThe MAX3483/MAX3485/MAX3486/MAX3488/MAX3490/"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "The MAX3483/MAX3485/MAX3486/MAX3488/MAX3490/\nDevices with Receiver/Driver Enable\n(MAX3483/MAX3485/MAX3486/MAX3491) MAX3491 are low-power transceivers for RS-485 and\nRS-422 communications. The MAX3483 and MAX3488\nTable 1. Transmitting\ncan transmit and receive at data rates up to 250kbps, the\nMAX3486 at up to 2.5Mbps, and the MAX3485/MAX3490/\nINPUTS OUTPUTS\nMODE MAX3491 at up to 10Mbps. The MAX3488/MAX3490/\nRE DE DI B* A*\nMAX3491 are full-duplex transceivers, while the MAX3483/"
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "X 1 1 0 1 Normal MAX3485/MAX3486 are half-duplex. Driver Enable (DE)\nX 1 0 1 0 Normal and Receiver Enable (RE) pins are included on the\nMAX3483/MAX3485/MAX3486/MAX3491. When disabled,\n0 0 X High-Z High-Z Normal\nthe driver and receiver outputs are high impedance.\n1 0 X High-Z High-Z Shutdown\nReduced EMI and Reflections\n* B and A outputs are Z and Y, respectively, for full-duplex part\n(MAX3491). (MAX3483/MAX3486/MAX3488)"
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "(MAX3491). (MAX3483/MAX3486/MAX3488)\nX = Don’t care; High-Z = High impedance The MAX3483/MAX3488 are slew-rate limited, minimizing\nEMI and reducing reflections caused by improperly\nTable 2. Receiving\nterminated cables. Figure 13 shows both the driver output\nwaveform of a MAX3485/MAX3490/MAX3491 transmitting\nINPUTS OUTPUTS\nMODE a 125kHz signal and the Fourier analysis of that wave-\nRE DE A, B RO*\nform. High-frequency harmonics with large amplitudes are"
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "0 0* ≥ +0.2V 1 Normal evident. Figure 14 shows the same information, but for\n0 0* ≤ -0.2V 0 Normal the slew-rate-limited MAX3483/MAX3488 transmitting the\nsame signal. The high-frequency harmonics have much\n0 0* Inputs Open 1 Normal\nlower amplitudes, and the potential for EMI is significantly\n1 0 X High-Z Shutdown\nreduced.\n* DE is a “don’t care” (x) for the full-duplex part (MAX3491).\nX = Don’t care; High-Z = High impedance Low-Power Shutdown Mode\n(MAX3483/MAX3485/MAX3486/MAX3491)"
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "(MAX3483/MAX3485/MAX3486/MAX3491)\nDevices without Receiver/Driver Enable A low-power shutdown mode is initiated by bringing both\n(MAX3488/MAX3490) RE high and DE low. The devices will not shut down\nunless both the driver and receiver are disabled (high\nTable 3. Transmitting Table 4. Receiving\nimpedance). In shutdown, the devices typically draw only\nINPUT OUTPUTS INPUTS OUTPUT 2nA of supply current.\nDI Z Y A, B RO For these devices, the tPSH and tPSL enable times"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "1 0 1 ≥ +0.2V 1 assume the part was in the low-power shutdown mode;\nthe tPZH and tPZL enable times assume the receiver or\n0 1 0 ≤ -0.2V 0\ndriver was disabled, but the part was not shut down.\nInputs Open 1\n10dB/div 10dB/div\n0Hz 500kHz/div 5MHz 0Hz 500kHz/div 5MHz\nFigure 13. Driver Output Waveform and FFT Plot of MAX3485/ Figure 14. Driver Output Waveform and FFT Plot of MAX3483/\nMAX3490/MAX3491 Transmitting a 125kHz Signal MAX3488 Transmitting a 125kHz Signal"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "www.analog.com Analog Devices │ 12MAX3483/MAX3485/ 3.3V-Powered, 10Mbps and Slew-Rate-Limited\nMAX3486/MAX3488/ True RS-485/RS-422 Transceivers\nMAX3490/MAX3491\nB\n1V/div\nDI\n2V/div\nA\n1V/div\nZ\n1V/div\nY RO\n1V/div 2V/div\n20ns/div 20ns/div\nFigure 15. MAX3485/MAX3490/MAX3491 Driver Propagation Figure 16. MAX3485/MAX3490/MAX3491 Receiver\nDelay Propagation Delay Driven by External RS-485 Device\nB\n1V/div\nDI\n2V/div\nA\n1V/div\nZ\n1V/div\nY\n1V/div RO\n2V/div\n1ms/div 1ms/div"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "Z\n1V/div\nY\n1V/div RO\n2V/div\n1ms/div 1ms/div\nFigure 17. MAX3483/MAX3488 Driver Propagation Delay Figure 18. MAX3483/MAX3488 Receiver Propagation Delay\nDI DI\n5V/div 5V/div\nVY - VZ VY - VZ\n2V/div 2V/div\nRO RO\n5V/div 5V/div\n2µs/div 2ms/div\nFigure 19. MAX3483/MAX3488 System Differential Voltage at Figure 20. MAX3485/MAX3490/MAX3491 System Differential\n125kHz Driving 4000 ft of Cable Voltage at 125kHz Driving 4000 ft of Cable"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "www.analog.com Analog Devices │ 13MAX3483/MAX3485/ 3.3V-Powered, 10Mbps and Slew-Rate-Limited\nMAX3486/MAX3488/ True RS-485/RS-422 Transceivers\nMAX3490/MAX3491\n120Ω 120Ω\nDE\nB B\nDI\nD D\nDI\nDE A B A B A A\nRO R R RO\nRE RE\nR R\nMAX3483 D D\nMAX3485\nMAX3486\nDI DE RORE DI DE RORE\nFigure 21. MAX3483/MAX3485/MAX3486 Typical RS-485 Network\nDriver Output Protection Line Length vs. Data Rate\nExcessive output current and power dissipation caused The RS-485/RS-422 standard covers line lengths up to"
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "by faults or by bus contention are prevented by two 4000 feet. For line lengths greater than 4000 feet, see\nmechanisms. A foldback current limit on the output stage Figure 23.\nprovides immediate protection against short circuits over\nFigures 19 and 20 show the system differential voltage\nthe whole common-mode voltage range (see Typical\nfor parts driving 4000 feet of 26AWG twisted-pair wire at\nOperating Characteristics). In addition, a thermal shut-\n125kHz into 120Ω loads."
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "125kHz into 120Ω loads.\ndown circuit forces the driver outputs into a high-impedance\nstate if the die temperature rises excessively. Typical Applications\nThe MAX3483, MAX3485, MAX3486, MAX3488,\nPropagation Delay\nMAX3490, and MAX3491 transceivers are designed\nFigures 15–18 show the typical propagation delays. Skew\nfor bidirectional data communications on multipoint bus\ntime is simply the difference between the low-to-high and\ntransmission lines. Figures 21 and 22 show typical net-"
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "high-to-low propagation delay. Small driver/receiver skew\nwork applications circuits. These parts can also be used\ntimes help maintain a symmetrical mark-space ratio (50%\nas line repeaters, with cable lengths longer than 4000\nduty cycle).\nfeet, as shown in Figure 23.\nThe receiver skew time, |tPRLH - tPRHL|, is under 10ns\nTo minimize reflections, the line should be terminated\n(20ns for the MAX3483/MAX3488). The driver skew\nat both ends in its characteristic impedance, and stub"
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "times are 8ns for the MAX3485/MAX3490/MAX3491,\nlengths off the main line should be kept as short as pos-\n11ns for the MAX3486, and typically under 100ns for the\nsible. The slew-rate-limited MAX3483/MAX3488 and the\nMAX3483/MAX3488.\npartially slew-rate-limited MAX3486 are more tolerant of\nimperfect termination.\nwww.analog.com Analog Devices │ 14MAX3483/MAX3485/ 3.3V-Powered, 10Mbps and Slew-Rate-Limited\nMAX3486/MAX3488/ True RS-485/RS-422 Transceivers\nMAX3490/MAX3491\nA Y\n120Ω 120Ω\nRO R D DI\nRE"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "MAX3490/MAX3491\nA Y\n120Ω 120Ω\nRO R D DI\nRE\nB Z\nDE\nDE\nZ B\nRE\nDI D 120Ω 120Ω R RO\nY A\nY Z B A Y Z B A\nR R\nD D MAX3488\nMAX3490\nMAX3491\nDI DE RERO DI DERERO\nNOTE: RE AND DE ON MAX3491 ONLY.\nFigure 22. MAX3488/MAX3490/MAX3491 Full-Duplex RS-485 Network\nMAX3488\nMAX3490\nMAX3491\nA\nRO R 120Ω DATA IN\nRE B\nDE\nZ\nDI D 120Ω DATA OUT\nY\nNOTE: RE AND DE ON MAX3491 ONLY.\nFigure 23. Line Repeater for MAX3488/MAX3490/MAX3491"
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "www.analog.com Analog Devices │ 15MAX3483/MAX3485/ 3.3V-Powered, 10Mbps and Slew-Rate-Limited\nMAX3486/MAX3488/ True RS-485/RS-422 Transceivers\nMAX3490/MAX3491\nOrdering Information (continued) Chip Topography\nPART TEMP. RANGE PIN-PACKAGE VCC\nMAX3486CPA 0°C to +70°C 8 Plastic DIP\nMAX3486CSA 0°C to +70°C 8 SO\nMAX3486C/D 0°C to +70°C Dice*\nMAX3486EPA -40°C to +85°C 8 Plastic DIP\nRO\nMAX3486ESA -40°C to +85°C 8 SO\nA\nMAX3488CPA 0°C to +70°C 8 Plastic DIP\nRE\nMAX3488CSA 0°C to +70°C 8 SO\nB"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "RE\nMAX3488CSA 0°C to +70°C 8 SO\nB\nMAX3488C/D 0°C to +70°C Dice*\nMAX3488EPA -40°C to +85°C 8 Plastic DIP Z/B\nMAX3488ESA -40°C to +85°C 8 SO\nMAX3490CPA 0°C to +70°C 8 Plastic DIP 0.146\"\nMAX3490CSA 0°C to +70°C 8 SO (3.71mm)\nMAX3490C/D 0°C to +70°C Dice*\nMAX3490EPA -40°C to +85°C 8 Plastic DIP\nMAX3490ESA -40°C to +85°C 8 SO DE\nMAX3491CPD 0°C to +70°C 14 Plastic DIP\nDI\nMAX3491CSD 0°C to +70°C 14 SO\nY/A\nMAX3491C/D 0°C to +70°C Dice*\nMAX3491EPD -40°C to +85°C 14 Plastic DIP GND"
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "MAX3491EPD -40°C to +85°C 14 Plastic DIP GND\nMAX3491ESD -40°C to +85°C 14 SO\nGND\n0.086\"\n* Contact factory for for dice specifications.\n(2.18mm)\nTRANSISTOR COUNT: 810\nSUBSTRATE CONNECTED TO GROUND\nwww.analog.com Analog Devices │ 16MAX3483/MAX3485/ 3.3V-Powered, 10Mbps and Slew-Rate-Limited\nMAX3486/MAX3488/ True RS-485/RS-422 Transceivers\nMAX3490/MAX3491\nRevision History\nREVISION REVISION PAGES\nDESCRIPTION\nNUMBER DATE CHANGED\n0 12/94 Initial release —"
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "NUMBER DATE CHANGED\n0 12/94 Initial release —\nUpdated Absolute Maximum Ratings and Selection table, added Package\n1 5/19 1, 2\nInformation section\n2 5/24 Updated Table 2 in Function Tables section. 12\nInformation furnished by Analog Devices is believed to be accurate and reliable. However, no responsibility is\nassumed by Analog Devices for its use, nor for any infringements of patents or other rights of third parties that"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "may result from its use.Specifications subject to change without notice. No license is granted by implication or\notherwise under any patent or patent rights of Analog Devices. Trademarks and registered trademarks are the\nproperty of their respective owners.\nw w w . a n a l o g . c o m Analog Devices │ 17"
+  }
+]

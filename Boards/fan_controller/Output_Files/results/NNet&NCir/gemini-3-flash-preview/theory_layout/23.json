@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to RST?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, pin 1 of U2 (labeled ~{RESET}/PB5) is connected to the net named 'RST'.",
+        "is_final": true
+    }
+}

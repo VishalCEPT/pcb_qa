@@ -1,0 +1,1098 @@
+{
+    "name": "top",
+    "description": "",
+    "source_file": "fan_controller.kicad_sch",
+    "tstamps": "",
+    "components": {
+        "C1": {
+            "symbol": "Device",
+            "ref": "C1",
+            "value": "100nF",
+            "footprint": "Capacitor_SMD:C_0805_2012Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "capacitor cap",
+                "ki_fp_filters": "C_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615a4cd5",
+            "fields": {
+                "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "C2": {
+            "symbol": "Device",
+            "ref": "C2",
+            "value": "100nF",
+            "footprint": "Capacitor_SMD:C_0805_2012Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "capacitor cap",
+                "ki_fp_filters": "C_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000061593f2c",
+            "fields": {
+                "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "D1": {
+            "symbol": "Device",
+            "ref": "D1",
+            "value": "5V1",
+            "footprint": "Diode_SMD:D_SOD-123",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "diode",
+                "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615abaa1",
+            "fields": {
+                "Footprint": "Diode_SMD:D_SOD-123",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "H1": {
+            "symbol": "Mechanical",
+            "ref": "H1",
+            "value": "MountingHole",
+            "footprint": "MountingHole:MountingHole_2.1mm",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "mounting hole",
+                "ki_fp_filters": "MountingHole*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615c773f",
+            "fields": {
+                "Footprint": "MountingHole:MountingHole_2.1mm",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "H2": {
+            "symbol": "Mechanical",
+            "ref": "H2",
+            "value": "MountingHole",
+            "footprint": "MountingHole:MountingHole_2.1mm",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "mounting hole",
+                "ki_fp_filters": "MountingHole*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615c788a",
+            "fields": {
+                "Footprint": "MountingHole:MountingHole_2.1mm",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "H3": {
+            "symbol": "Mechanical",
+            "ref": "H3",
+            "value": "MountingHole",
+            "footprint": "MountingHole:MountingHole_2.1mm",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "mounting hole",
+                "ki_fp_filters": "MountingHole*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615c7a86",
+            "fields": {
+                "Footprint": "MountingHole:MountingHole_2.1mm",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "H4": {
+            "symbol": "Mechanical",
+            "ref": "H4",
+            "value": "MountingHole",
+            "footprint": "MountingHole:MountingHole_2.1mm",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "mounting hole",
+                "ki_fp_filters": "MountingHole*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615c7bdf",
+            "fields": {
+                "Footprint": "MountingHole:MountingHole_2.1mm",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "J1": {
+            "symbol": "Connector_Generic",
+            "ref": "J1",
+            "value": "I2C",
+            "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "connector",
+                "ki_fp_filters": "Connector*:*_1x??_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615fdd9b",
+            "fields": {
+                "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "J2": {
+            "symbol": "Connector_Generic",
+            "ref": "J2",
+            "value": "FAN",
+            "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "connector",
+                "ki_fp_filters": "Connector*:*_1x??_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615921ae",
+            "fields": {
+                "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "J3": {
+            "symbol": "Connector_Generic",
+            "ref": "J3",
+            "value": "POT",
+            "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "connector",
+                "ki_fp_filters": "Connector*:*_1x??_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000061592b5d",
+            "fields": {
+                "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "J4": {
+            "symbol": "Connector",
+            "ref": "J4",
+            "value": "AVR-ISP-6",
+            "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "AVR ISP Connector",
+                "ki_fp_filters": "IDC?Header*2x03* Pin?Header*2x03*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615e619d",
+            "fields": {
+                "Footprint": "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "J5": {
+            "symbol": "Connector_Generic",
+            "ref": "J5",
+            "value": "PWR",
+            "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "connector",
+                "ki_fp_filters": "Connector*:*_1x??_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-000061629a09",
+            "fields": {
+                "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "J6": {
+            "symbol": "Connector_Generic",
+            "ref": "J6",
+            "value": "I2C_PWR",
+            "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "connector",
+                "ki_fp_filters": "Connector*:*_1x??_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-00006158eb66",
+            "fields": {
+                "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "JP1": {
+            "symbol": "Jumper",
+            "ref": "JP1",
+            "value": "VCC_STABLE",
+            "footprint": "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "Jumper SPST",
+                "ki_fp_filters": "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615c7c74",
+            "fields": {
+                "Footprint": "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "Q1": {
+            "symbol": "Device",
+            "ref": "Q1",
+            "value": "Q_PMOS_GSD",
+            "footprint": "Package_TO_SOT_SMD:SOT-23",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "transistor PMOS P-MOS P-MOSFET"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615c8358",
+            "fields": {
+                "Footprint": "Package_TO_SOT_SMD:SOT-23",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "Q2": {
+            "symbol": "Device",
+            "ref": "Q2",
+            "value": "BC817",
+            "footprint": "Package_TO_SOT_SMD:SOT-23",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "transistor NPN"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000616f7fa8",
+            "fields": {
+                "Footprint": "Package_TO_SOT_SMD:SOT-23",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R1": {
+            "symbol": "Device",
+            "ref": "R1",
+            "value": "10K",
+            "footprint": "Resistor_SMD:R_0805_2012Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "R resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615df3db",
+            "fields": {
+                "Footprint": "Resistor_SMD:R_0805_2012Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R2": {
+            "symbol": "Device",
+            "ref": "R2",
+            "value": "1K",
+            "footprint": "Resistor_SMD:R_0805_2012Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "R resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615e0afc",
+            "fields": {
+                "Footprint": "Resistor_SMD:R_0805_2012Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R3": {
+            "symbol": "Device",
+            "ref": "R3",
+            "value": "10K",
+            "footprint": "Resistor_SMD:R_0805_2012Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "R resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-00006159399c",
+            "fields": {
+                "Footprint": "Resistor_SMD:R_0805_2012Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R4": {
+            "symbol": "Device",
+            "ref": "R4",
+            "value": "1K",
+            "footprint": "Resistor_SMD:R_0805_2012Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "R resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615a8701",
+            "fields": {
+                "Footprint": "Resistor_SMD:R_0805_2012Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R5": {
+            "symbol": "Device",
+            "ref": "R5",
+            "value": "1K",
+            "footprint": "Resistor_SMD:R_0805_2012Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "R resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615af729",
+            "fields": {
+                "Footprint": "Resistor_SMD:R_0805_2012Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "R6": {
+            "symbol": "Device",
+            "ref": "R6",
+            "value": "10K",
+            "footprint": "Resistor_SMD:R_0805_2012Metric",
+            "datasheet": "~",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_keywords": "R resistor",
+                "ki_fp_filters": "R_*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000616e6e98",
+            "fields": {
+                "Footprint": "Resistor_SMD:R_0805_2012Metric",
+                "Datasheet": "~",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "U1": {
+            "symbol": "fan_controller-rescue",
+            "ref": "U1",
+            "value": "LM1117-5.0",
+            "footprint": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+            "datasheet": "http://www.ti.com/lit/ds/symlink/lm1117.pdf",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_fp_filters": "SOT?223* TO?263* TO?252* TO?220*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615afe6e",
+            "fields": {
+                "Footprint": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+                "Datasheet": "http://www.ti.com/lit/ds/symlink/lm1117.pdf",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "U2": {
+            "symbol": "fan_controller-rescue",
+            "ref": "U2",
+            "value": "ATtiny45-20P",
+            "footprint": "Package_DIP:DIP-8_W7.62mm",
+            "datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_fp_filters": "DIP*W7.62mm*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615963d2",
+            "fields": {
+                "Footprint": "Package_DIP:DIP-8_W7.62mm",
+                "Datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf",
+                "Description": ""
+            },
+            "pins": []
+        },
+        "U3": {
+            "symbol": "fan_controller-rescue",
+            "ref": "U3",
+            "value": "ATtiny13V-10S",
+            "footprint": "Package_SO:SOIC-8W_5.3x5.3mm_P1.27mm",
+            "datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/doc2535.pdf",
+            "description": "",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "fan_controller.kicad_sch",
+                "ki_fp_filters": "SOIC*5.3x5.3mm*P1.27mm*"
+            },
+            "tstamps": "00000000-0000-0000-0000-0000615959af",
+            "fields": {
+                "Footprint": "Package_SO:SOIC-8W_5.3x5.3mm_P1.27mm",
+                "Datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/doc2535.pdf",
+                "Description": ""
+            },
+            "pins": []
+        }
+    },
+    "nets": {
+        "_p_5V": [
+            {
+                "component": "C2",
+                "pin": {
+                    "name": "C2",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J3",
+                "pin": {
+                    "name": "J3",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J4",
+                "pin": {
+                    "name": "J4",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J6",
+                "pin": {
+                    "name": "J6",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R3",
+                "pin": {
+                    "name": "R3",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "U1",
+                "pin": {
+                    "name": "U1",
+                    "number": "2",
+                    "type": "power_out"
+                }
+            },
+            {
+                "component": "U2",
+                "pin": {
+                    "name": "U2",
+                    "number": "8",
+                    "type": "power_in"
+                }
+            },
+            {
+                "component": "U3",
+                "pin": {
+                    "name": "U3",
+                    "number": "8",
+                    "type": "power_in"
+                }
+            }
+        ],
+        "PWM_OUT": [
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "4",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R5",
+                "pin": {
+                    "name": "R5",
+                    "number": "1",
+                    "type": "passive"
+                }
+            }
+        ],
+        "TACH_IN": [
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "3",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R4",
+                "pin": {
+                    "name": "R4",
+                    "number": "2",
+                    "type": "passive"
+                }
+            }
+        ],
+        "VCC_OUT": [
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "JP1",
+                "pin": {
+                    "name": "JP1",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "Q1",
+                "pin": {
+                    "name": "Q1",
+                    "number": "3",
+                    "type": "passive"
+                }
+            }
+        ],
+        "GND": [
+            {
+                "component": "C1",
+                "pin": {
+                    "name": "C1",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "C2",
+                "pin": {
+                    "name": "C2",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "D1",
+                "pin": {
+                    "name": "D1",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "5",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J2",
+                "pin": {
+                    "name": "J2",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J3",
+                "pin": {
+                    "name": "J3",
+                    "number": "3",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J4",
+                "pin": {
+                    "name": "J4",
+                    "number": "6",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J5",
+                "pin": {
+                    "name": "J5",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "Q2",
+                "pin": {
+                    "name": "Q2",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "U1",
+                "pin": {
+                    "name": "U1",
+                    "number": "1",
+                    "type": "power_in"
+                }
+            },
+            {
+                "component": "U2",
+                "pin": {
+                    "name": "U2",
+                    "number": "4",
+                    "type": "power_in"
+                }
+            },
+            {
+                "component": "U3",
+                "pin": {
+                    "name": "U3",
+                    "number": "4",
+                    "type": "power_in"
+                }
+            }
+        ],
+        "Net__J1_Pin_1_": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J6",
+                "pin": {
+                    "name": "J6",
+                    "number": "1",
+                    "type": "passive"
+                }
+            }
+        ],
+        "Net__Q1_G_": [
+            {
+                "component": "Q1",
+                "pin": {
+                    "name": "Q1",
+                    "number": "1",
+                    "type": "input"
+                }
+            },
+            {
+                "component": "Q2",
+                "pin": {
+                    "name": "Q2",
+                    "number": "3",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R1",
+                "pin": {
+                    "name": "R1",
+                    "number": "2",
+                    "type": "passive"
+                }
+            }
+        ],
+        "Net__Q2_B_": [
+            {
+                "component": "Q2",
+                "pin": {
+                    "name": "Q2",
+                    "number": "1",
+                    "type": "input"
+                }
+            },
+            {
+                "component": "R2",
+                "pin": {
+                    "name": "R2",
+                    "number": "2",
+                    "type": "passive"
+                }
+            }
+        ],
+        "POT": [
+            {
+                "component": "J3",
+                "pin": {
+                    "name": "J3",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "U2",
+                "pin": {
+                    "name": "U2",
+                    "number": "2",
+                    "type": "bidirectional"
+                }
+            },
+            {
+                "component": "U3",
+                "pin": {
+                    "name": "U3",
+                    "number": "2",
+                    "type": "bidirectional"
+                }
+            }
+        ],
+        "PWM": [
+            {
+                "component": "J4",
+                "pin": {
+                    "name": "J4",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R2",
+                "pin": {
+                    "name": "R2",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R5",
+                "pin": {
+                    "name": "R5",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "U2",
+                "pin": {
+                    "name": "U2",
+                    "number": "6",
+                    "type": "bidirectional"
+                }
+            },
+            {
+                "component": "U3",
+                "pin": {
+                    "name": "U3",
+                    "number": "6",
+                    "type": "bidirectional"
+                }
+            }
+        ],
+        "RST": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "4",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J4",
+                "pin": {
+                    "name": "J4",
+                    "number": "5",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R3",
+                "pin": {
+                    "name": "R3",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "U2",
+                "pin": {
+                    "name": "U2",
+                    "number": "1",
+                    "type": "bidirectional"
+                }
+            },
+            {
+                "component": "U3",
+                "pin": {
+                    "name": "U3",
+                    "number": "1",
+                    "type": "bidirectional"
+                }
+            }
+        ],
+        "SCK": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "3",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J4",
+                "pin": {
+                    "name": "J4",
+                    "number": "3",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "U2",
+                "pin": {
+                    "name": "U2",
+                    "number": "7",
+                    "type": "bidirectional"
+                }
+            },
+            {
+                "component": "U3",
+                "pin": {
+                    "name": "U3",
+                    "number": "7",
+                    "type": "bidirectional"
+                }
+            }
+        ],
+        "SDA": [
+            {
+                "component": "J1",
+                "pin": {
+                    "name": "J1",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J4",
+                "pin": {
+                    "name": "J4",
+                    "number": "4",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "U2",
+                "pin": {
+                    "name": "U2",
+                    "number": "5",
+                    "type": "bidirectional"
+                }
+            },
+            {
+                "component": "U3",
+                "pin": {
+                    "name": "U3",
+                    "number": "5",
+                    "type": "bidirectional"
+                }
+            }
+        ],
+        "TACH": [
+            {
+                "component": "D1",
+                "pin": {
+                    "name": "D1",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R4",
+                "pin": {
+                    "name": "R4",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R6",
+                "pin": {
+                    "name": "R6",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "U2",
+                "pin": {
+                    "name": "U2",
+                    "number": "3",
+                    "type": "bidirectional"
+                }
+            },
+            {
+                "component": "U3",
+                "pin": {
+                    "name": "U3",
+                    "number": "3",
+                    "type": "bidirectional"
+                }
+            }
+        ],
+        "VCC": [
+            {
+                "component": "C1",
+                "pin": {
+                    "name": "C1",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "J5",
+                "pin": {
+                    "name": "J5",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "JP1",
+                "pin": {
+                    "name": "JP1",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "Q1",
+                "pin": {
+                    "name": "Q1",
+                    "number": "2",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R1",
+                "pin": {
+                    "name": "R1",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "R6",
+                "pin": {
+                    "name": "R6",
+                    "number": "1",
+                    "type": "passive"
+                }
+            },
+            {
+                "component": "U1",
+                "pin": {
+                    "name": "U1",
+                    "number": "3",
+                    "type": "power_in"
+                }
+            }
+        ]
+    },
+    "subcircuits": [],
+    "annotations": []
+}

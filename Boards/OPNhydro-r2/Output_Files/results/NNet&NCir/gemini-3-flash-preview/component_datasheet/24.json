@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ATLAS_EZO_EC have UART capabilities according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The ATLAS_EZO_EC component (EZO-EC) is described in the netlist as having TX/SCL and RX/SDA pins, which are standard for EZO platform devices that support both UART and I2C communication modes.",
+        "is_final": true
+    }
+}

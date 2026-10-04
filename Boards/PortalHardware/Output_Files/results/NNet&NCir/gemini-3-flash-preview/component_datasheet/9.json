@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component Conn_ARM_SWD_TagConnect_TC2030 have a maximum voltage rating of 50V according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The provided netlist and SPICE files do not contain the component's datasheet or its specific voltage rating, and the provided URL is not accessible to verify the 50V claim.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U3 have flash capabilities according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component NAVC1 connected to SWDIO_FCC?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Is the component SW2 a memory chip according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the bar_nrst_navc signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component REG1 have a memory chip according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the gpio_e_fcc signal maintain a voltage of 3.3V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U9 have a maximum Vcc of 5V according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component R27 connected to BOOT1_NAVC?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component SW3 have a memory chip according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net-_u7-vo-_ signal maintain a voltage of 5V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component TP3 connected to I2C1_SCL_NAVC?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component SW3 have a minimum operating temperature of -30°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net-_u7-vo+_ signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component FCC1 connected to USB_DM_FCC?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the unconnected-_c69-pad2_ signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component REG2 have a maximum current of 1.5A according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component LED3 connected to LED_A_FCC?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component REG1 have flash capabilities according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the i2c1_scl_navc signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component SW2 connected to GPIO_C_FCC?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the i2c3_scl_navc signal maintain a voltage of 3.3V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U8 have a minimum operating temperature of -40°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component NAVC1 connected to INT_GYR_NAVC?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have a minimum voltage supply of 2.3V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component SW2 have a minimum operating temperature of -30°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net-_navc1-vcap_1_ signal maintain a voltage of 3.3V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the led_b_navc signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component FB1 connected to VDDA_FCC?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component NAVC1 connected to GPS_LNA_EN_NAVC?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U9 have a flash size of 128Kbit according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component REG2 have a dropout voltage of 0.25V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the hse_out_fcc signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component SW2 connected to Net__SW2_C_?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component FCC1 connected to UART3_RX_FCC?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the vdda_fcc signal maintain a voltage of 5V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component R8 connected to Net__LED2_K_?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U8 have a minimum analog supply voltage of 2.2V according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the led_b_navc signal maintain a voltage of 5V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component FCC1 connected to SPI1_MISO_FCC?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the vdda_fcc signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component LED12 connected to LED_D_NAVC?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U4 have flash capabilities according to its datasheet?",
+    "answer": "YES"
+  },  
+  {
+    "category": "spice_behaviour",
+    "question": "Does the led_f_fcc signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have an output voltage of 5.5V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the i2c1_sda_fcc signal maintain a voltage of 3.3V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component R15 connected to Net__LED3_K_?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the i2c1_sda_fcc signal maintain a voltage of 5V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the led_b_navc signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component HSE2 connected to Net__C53_Pad1_?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the i2c1_sda_fcc signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U4 have a memory size of 1Gbit according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the boot0_fcc signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component TP2 connected to I2C1_SDA_FCC?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component FCC1 connected to UART2_RX_FCC?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U8 have a data output of 16-bits according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U3 have a maximum I2C frequency of 1MHz according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component C30 connected to VREF__FCC?",
+    "answer": "YES"
+  },
+    {
+    "category": "theory_layout",
+    "question": "Is the component C32 connected to HSE_IN_FCC?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the boot0_fcc signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component REG2 have a memory chip according to its datasheet?",
+    "answer": "NO"
+  }
+]

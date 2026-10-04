@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /gpump maintain a voltage of 3.3V for the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net /gpump is connected to the PUMP_MAIN signal through a 100-ohm resistor and pulled up to 3.3V via a 10k resistor, meaning its voltage will change depending on the state of the PUMP_MAIN driver.",
+        "is_final": true
+    }
+}

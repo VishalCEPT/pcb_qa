@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component R2 connected to Net__Q2_G_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The SPICE circuit file explicitly lists a connection between R2 and Net-_Q2-G_.",
+        "is_final": true
+    }
+}

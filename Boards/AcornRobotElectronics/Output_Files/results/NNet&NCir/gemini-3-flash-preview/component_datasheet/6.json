@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component TPS61040DBVR have a maximum ambient temperature of 85\u00b0C according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The TPS61040DBVR datasheet specifies an operating free-air temperature range of -40\u00b0C to 85\u00b0C.",
+        "is_final": true
+    }
+}

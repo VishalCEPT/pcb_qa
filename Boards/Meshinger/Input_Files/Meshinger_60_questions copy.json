@@ -1,0 +1,302 @@
+{
+   "1": {
+      "category": "component_datasheet",
+      "question": "Does the component U5 have WiFi capabilities according to its datasheet?",
+      "answer": "YES"
+   },
+   "2": {
+      "category": "theory_layout",
+      "question": "Is the component J2 connected to GND?",
+      "answer": "YES"
+   },
+   "3": {
+      "category": "spice_behaviour",
+      "question": "Does the net-q2-g signal maintain a voltage of ~3.3V during the entire simulation?",
+      "answer": "YES"
+   },
+   "4": {
+      "category": "theory_layout",
+      "question": "Is the component U4 connected to GPIO?",
+      "answer": "YES"
+   },
+   "5": {
+      "category": "component_datasheet",
+      "question": "Does the component U5 have I2C capabilities according to its datasheet?",
+      "answer": "YES"
+   },
+   "6": {
+      "category": "spice_behaviour",
+      "question": "Is the +3.3V power rail stable at approximately 3.3V throughout the simulation?",
+      "answer": "YES"
+   },
+   "7": {
+      "category": "spice_behaviour",
+      "question": "Does the bat+ signal maintain a voltage of ~25V during the entire simulation?",
+      "answer": "YES"
+   },
+   "8": {
+      "category": "theory_layout",
+      "question": "Is the component C8 connected to Net__C7_Pad1_?",
+      "answer": "NO"
+   },
+   "9": {
+      "category": "theory_layout",
+      "question": "Is the component U5 connected to p_3V3?",
+      "answer": "YES"
+   },
+   "10": {
+      "category": "component_datasheet",
+      "question": "Does the component U5 have a PWM module according to its datasheet?",
+      "answer": "YES"
+   },
+   "11": {
+      "category": "spice_behaviour",
+      "question": "Does the bat+ signal maintain a voltage of ~5V during the entire simulation?",
+      "answer": "YES"
+   },
+   "12": {
+      "category": "theory_layout",
+      "question": "Is the component Q2 connected to Display_Power_Switch?",
+      "answer": "YES"
+   },
+   "13": {
+      "category": "component_datasheet",
+      "question": "Does the component U5 have a maximum operating temperature of 55\u00b0C according to its datasheet?",
+      "answer": "YES"
+   },
+   "14": {
+      "category": "component_datasheet",
+      "question": "Does the component U4 have Ethernet capabilities according to its datasheet?",
+      "answer": "NO"
+   },
+   "15": {
+      "category": "spice_behaviour",
+      "question": "Is the display_power_switch signal at 0V for the entire simulation?",
+      "answer": "YES"
+   },
+   "16": {
+      "category": "component_datasheet",
+      "question": "Does the component S1 have a minimum operating temperature of -20\u00b0C according to its datasheet?",
+      "answer": "YES"
+   },
+   "17": {
+      "category": "theory_layout",
+      "question": "Is the component U5 connected to HW_RESET?",
+      "answer": "YES"
+   },
+   "18": {
+      "category": "spice_behaviour",
+      "question": "Is the net net-_u3-a_ at 0V for the entire simulation?",
+      "answer": "YES"
+   },
+   "19": {
+      "category": "theory_layout",
+      "question": "Is the component U4 connected to GND?",
+      "answer": "YES"
+   },
+   "20": {
+      "category": "spice_behaviour",
+      "question": "Is the display_power_switch signal at 5V for the entire simulation?",
+      "answer": "NO"
+   },
+   "21": {
+      "category": "theory_layout",
+      "question": "Is the component J1 connected to SPI_CLK?",
+      "answer": "YES"
+   },
+   "22": {
+      "category": "spice_behaviour",
+      "question": "Is the net net-_c10-pad1_ at 0V for the entire simulation?",
+      "answer": "YES"
+   },
+   "23": {
+      "category": "component_datasheet",
+      "question": "Does the component S1 have a maximum operating temperature of 70\u00b0C according to its datasheet?",
+      "answer": "YES"
+   },
+   "24": {
+      "category": "component_datasheet",
+      "question": "Does the component U6 have a minimum operating temperature of -55\u00b0C according to its datasheet?",
+      "answer": "YES"
+   },
+   "25": {
+      "category": "spice_behaviour",
+      "question": "Is the net net-_u2-k_ at 0V for the entire simulation?",
+      "answer": "YES"
+   },
+   "26": {
+      "category": "theory_layout",
+      "question": "Is the component Q1 connected to Net__Q1_G_?",
+      "answer": "YES"
+   },
+   "27": {
+      "category": "component_datasheet",
+      "question": "Does the component U5 have UART capabilities according to its datasheet?",
+      "answer": "YES"
+   },
+   "28": {
+      "category": "theory_layout",
+      "question": "Is the component C6 connected to Net__U3_A_?",
+      "answer": "YES"
+   },
+   "29": {
+      "category": "spice_behaviour",
+      "question": "Is the net net-_u2-k_ at 3.3V for the entire simulation?",
+      "answer": "NO"
+   },
+   "30": {
+      "category": "component_datasheet",
+      "question": "Does the component S1 have dielectric strength of 120V AC according to its datasheet?",
+      "answer": "NO"
+   },
+   "31": {
+      "category": "spice_behaviour",
+      "question": "Does the unconnected-_c11-pad1_ signal maintain a voltage of 0V during the entire simulation?",
+      "answer": "YES"
+   },
+   "32": {
+      "category": "theory_layout",
+      "question": "Is the component IC1 connected to BAT_p?",
+      "answer": "YES"
+   },
+   "33": {
+      "category": "spice_behaviour",
+      "question": "Is the net net-_c10-pad1_ at 5V for the entire simulation?",
+      "answer": "NO"
+   },
+   "34": {
+      "category": "component_datasheet",
+      "question": "Does the component U6 have a maximum operating temperature of 150\u00b0C according to its datasheet?",
+      "answer": "YES"
+   },
+   "35": {
+      "category": "component_datasheet",
+      "question": "Does the component S1 have a maximum operating current of 2A according to its datasheet?",
+      "answer": "YES"
+   },
+   "36": {
+      "category": "component_datasheet",
+      "question": "Does the component U4 have Wifi capabilities according to its datasheet?",
+      "answer": "NO"
+   },
+   "37": {
+      "category": "theory_layout",
+      "question": "Is the component R1 connected to Net__Q1_S_?",
+      "answer": "YES"
+   },
+   "38": {
+      "category": "component_datasheet",
+      "question": "Does the component U5 have Ethernet capabilities according to its datasheet?",
+      "answer": "YES"
+   },
+   "39": {
+      "category": "spice_behaviour",
+      "question": "Does the net-q2-g signal maintain a voltage of ~5V during the entire simulation?",
+      "answer": "NO"
+   },
+   "40": {
+      "category": "component_datasheet",
+      "question": "Does the component U4 have UART capabilities according to its datasheet?",
+      "answer": "NO"
+   },
+   "41": {
+      "category": "component_datasheet",
+      "question": "Does the component U6 have a maximum current of 2A according to its datasheet?",
+      "answer": "YES"
+   },
+   "42": {
+      "category": "theory_layout",
+      "question": "Is the component J5 connected to UART_TX?",
+      "answer": "NO"
+   },
+   "43": {
+      "category": "spice_behaviour",
+      "question": "Is the net net-_c5-pad1_ at 5V for the entire simulation?",
+      "answer": "NO"
+   },
+   "44": {
+      "category": "theory_layout",
+      "question": "Is the component U5 connected to LAN1_RX_p?",
+      "answer": "YES"
+   },
+   "45": {
+      "category": "component_datasheet",
+      "question": "Does the component U5 have USB capabilities according to its datasheet?",
+      "answer": "YES"
+   },
+   "46": {
+      "category": "theory_layout",
+      "question": "Is the component U4 connected to LED1?",
+      "answer": "YES"
+   },
+   "47": {
+      "category": "spice_behaviour",
+      "question": "Is the net net-_c5-pad1_ at 0V for the entire simulation?",
+      "answer": "YES"
+   },
+   "48": {
+      "category": "component_datasheet",
+      "question": "Does the component S1 have a maximum voltage of 30V according to its datasheet?",
+      "answer": "YES"
+   },
+   "49": {
+      "category": "spice_behaviour",
+      "question": "Does the unconnected-_c11-pad1_ signal maintain a voltage of 5V during the entire simulation?",
+      "answer": "NO"
+   },
+   "50": {
+      "category": "theory_layout",
+      "question": "Is the component C1 connected to p_3V3?",
+      "answer": "YES"
+   },
+   "51": {
+      "category": "spice_behaviour",
+      "question": "Does the net-_c7-pad1_ signal maintain a voltage of 0V during the entire simulation?",
+      "answer": "YES"
+   },
+   "52": {
+      "category": "theory_layout",
+      "question": "Is the component U4 connected to PWM?",
+      "answer": "YES"
+   },
+   "53": {
+      "category": "component_datasheet",
+      "question": "Does the component U6 have a maximum reverse voltage of 40V according to its datasheet?",
+      "answer": "YES"
+   },
+   "54": {
+      "category": "spice_behaviour",
+      "question": "Does the net-_q1-s_ signal maintain a voltage of 0V during the entire simulation?",
+      "answer": "YES"
+   },
+   "55": {
+      "category": "theory_layout",
+      "question": "Is the component U7 connected to Net__U6_A_?",
+      "answer": "YES"
+   },
+   "56": {
+      "category": "theory_layout",
+      "question": "Is the component R2 connected to Net__Q2_G_?",
+      "answer": "YES"
+   },
+   "57": {
+      "category": "spice_behaviour",
+      "question": "Does the net-_q1-s_ signal maintain a voltage of 5V during the entire simulation?",
+      "answer": "NO"
+   },
+   "58": {
+      "category": "theory_layout",
+      "question": "Is the component U4 connected to ROW6?",
+      "answer": "YES"
+   },
+   "59": {
+      "category": "component_datasheet",
+      "question": "Does the component S1 have dielectric strength of 500V AC according to its datasheet?",
+      "answer": "YES"
+   },
+   "60": {
+      "category": "spice_behaviour",
+      "question": "Does the net-_c7-pad1_ signal maintain a voltage of 5V during the entire simulation?",
+      "answer": "NO"
+   }
+}

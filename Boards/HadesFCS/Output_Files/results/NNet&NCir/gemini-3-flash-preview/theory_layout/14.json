@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component FCC1 connected to USB_DM_FCC?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, the net 'USB_DM_FCC' is connected to pin 70 (PA11) of component FCC1.",
+        "is_final": true
+    }
+}

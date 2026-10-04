@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ADS1115IDGS have flash capabilities according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The ADS1115IDGS is a 16-bit precision analog-to-digital converter (ADC) and its datasheet describes it as a data acquisition system without internal flash memory or programmable storage capabilities.",
+        "is_final": true
+    }
+}

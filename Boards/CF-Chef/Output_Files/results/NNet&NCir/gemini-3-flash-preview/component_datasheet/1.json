@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component MAX31855KASA have a maximum operating temperature of -40\u00b0C according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The MAX31855KASA datasheet specifies an operating temperature range of -40\u00b0C to +125\u00b0C, meaning -40\u00b0C is the minimum, not the maximum, operating temperature.",
+        "is_final": true
+    }
+}

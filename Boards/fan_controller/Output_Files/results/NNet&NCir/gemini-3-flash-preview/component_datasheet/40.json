@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component 100nF have a maximum operating temperature of 125\u00b0C according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The provided netlist and SPICE files do not contain a specific datasheet or manufacturer part number for the 100nF capacitors (C1, C2) to verify their temperature ratings.",
+        "is_final": true
+    }
+}

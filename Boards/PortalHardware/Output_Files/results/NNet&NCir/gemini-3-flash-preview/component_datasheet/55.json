@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component NT3H2111W0FT1X have flash capabilities according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The NT3H2111W0FT1X is an NTAG I2C plus device which uses EEPROM for non-volatile storage rather than flash memory.",
+        "is_final": true
+    }
+}

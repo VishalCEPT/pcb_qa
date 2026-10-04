@@ -1,0 +1,778 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "LM2576, LM2576HV\nSNVS107G – JUNE 1999 – REVISED MARCH 2023\nLM2576xx Series SIMPLE SWITCHER® Power Converter 3-A Step-Down Voltage\nRegulator\nRequiring a minimum number of external\n1 Features\ncomponents, these regulators are simple to use\n• Newer products available: and include fault protection and a fixed-frequency\n– LMR51430 4.5 to 36-V, 3-A, 500-kHz and 1.1- oscillator.\nMHz synchronous converter\nThe LM2576 series offers a high-efficiency\n– LM76003 3.5 to 60-V, 3.5-A, 300-kHz to 2.2-"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "– LM76003 3.5 to 60-V, 3.5-A, 300-kHz to 2.2-\nreplacement for popular three-terminal linear\nMHz synchronous converter\nregulators. It substantially reduces the size of the heat\n• For faster time to market:\nsink, and in some cases no heat sink is required.\n– TLVM13630 3 to 36-V, 3-A, 200-kHz to 2.2-MHz\npower module A standard series of inductors optimized for use\n• 3.3-V, 5-V, 12-V, 15-V, and adjustable output with the LM2576 are available from several different"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "versions manufacturers. This feature greatly simplifies the\n• Adjustable version output voltage range,1.23 V to design of switch-mode power supplies.\n37 V (57 V for HV version) ±4% maximum over line Other features include a ±4% tolerance on output\nand load conditions voltage within specified input voltages and output\n• Specified 3-A output current load conditions, and ±10% on the oscillator frequency."
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "• Wide input voltage range: 40 V Up to 60 V for HV External shutdown is included, featuring 50-μA\nversion (typical) standby current. The output switch includes\n• Requires only four external components cycle-by-cycle current limiting, as well as thermal\n• 52-kHz fixed-frequency internal oscillator shutdown for full protection under fault conditions.\n• TTL-shutdown capability, low-power standby mode\n• High efficiency The LM76003 requires very few external components"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "• Uses readily available standard inductors and has a pinout designed for simple, optimum PCB\n• Create a custom design using the LMR33630 or layout for EMI and thermal performance. See the\nLM76003 with the WEBENCH® Power Designer device comparison table to compare specs.\n2 Applications Package Information\nPART NUMBER PACKAGE(1) BODY SIZE (NOM)\n• Motor drives\nKC (TO-220, 5) 10.16 mm × 8.51 mm\n• Merchant network and server PSU LM2576\n• Appliances LM2576HV KTT (DDPAK/TO-263, 10.16 mm × 8.42 mm\n5)"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "5)\n• Test and measurement equipment\n(1) For all available packages, see the orderable addendum at\n3 Description\nthe end of the data sheet.\nThe LM2576 series of regulators are monolithic\nDevice Information\nintegrated circuits that provide all the active functions\nPART NUMBER Max Supply Voltage(1)\nfor a step-down (buck) switching regulator, capable\nLM2576 40 V\nof driving 3-A load with excellent line and load\nregulation. These devices are available in fixed output LM2576HV 60 V"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "voltages of 3.3 V, 5 V, 12 V, 15 V, and an adjustable\n(1) See the Device Comparison Table..\noutput version.\nFixed Output Voltage Version Typical Application Diagram\nAn IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,\nintellectual property matters and other important disclaimers. PRODUCTION DATA.LM2576, LM2576HV\nSNVS107G – JUNE 1999 – REVISED MARCH 2023 www.ti.com\nTable of Contents"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "Table of Contents\n1 Features............................................................................1 7.1 Overview...................................................................12\n2 Applications.....................................................................1 7.2 Functional Block Diagram.........................................12"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "3 Description.......................................................................1 7.3 Feature Description...................................................12\n4 Revision History..............................................................2 7.4 Device Functional Modes..........................................14\n5 Pin Configuration and Functions...................................3 8 Application and Implementation..................................15"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "6 Specifications..................................................................4 8.1 Application Information.............................................15\n6.1 Absolute Maximum Ratings........................................4 8.2 Typical Applications..................................................19\n6.2 ESD Ratings...............................................................4 8.3 Power Supply Recommendations.............................25"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "6.3 Recommended Operating Conditions.........................4 8.4 Layout.......................................................................25\n6.4 Thermal Information....................................................4 9 Device and Documentation Support............................28\n6.5 Electrical Characteristics: 3.3 V..................................5 9.1 Device Support.........................................................28"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "6.6 Electrical Characteristics: 5 V.....................................5 9.2 Documentation Support............................................29\n6.7 Electrical Characteristics: 12 V...................................5 9.3 Support Resources...................................................29\n6.8 Electrical Characteristics: 15 V...................................6 9.4 Receiving Notification of Documentation Updates....29"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "6.9 Electrical Characteristics: Adjustable Output 9.5 Trademarks...............................................................29\nVoltage..........................................................................6 9.6 Electrostatic Discharge Caution................................30\n6.10 Electrical Characteristics: All Output Voltage 9.7 Glossary....................................................................30"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "Versions.........................................................................6 10 Mechanical, Packaging, and Orderable\n6.11 Typical Characteristics..............................................8 Information....................................................................30\n7 Detailed Description......................................................12\n4 Revision History\nNOTE: Page numbers for previous revisions may differ from page numbers in the current version."
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "Changes from Revision F (May 2021) to Revision G (March 2023) Page\n• Added information for LMR51430 and TLVM13630 product folders...................................................................1\n• Updated trademark information..........................................................................................................................1"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "• Update to device information table formatting....................................................................................................1\n• Updated trademark information........................................................................................................................15\nChanges from Revision E (June 2020) to Revision F (May 2021) Page"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "• Added information for the LM76003 promotion..................................................................................................1\n• Updated the numbering format for tables, figures, and cross-references throughout the document. ................1\nChanges from Revision D (January 2016) to Revision E (June 2020) Page\n• Added information about the LMR33630............................................................................................................1"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "Changes from Revision C (April 2013) to Revision D (January 2016) Page\n• Added ESD Ratings table, Feature Description section, Device Functional Modes, Application and\nImplementation section, Power Supply Recommendations section, Layout section, Device and\nDocumentation Support section, and Mechanical, Packaging, and Orderable Information section...................1\n• Moved the thermal resistance data from the Electrical Characteristics: All Output Voltage Versions table to"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "the Thermal Information table.............................................................................................................................4\nChanges from Revision B (April 2013) to Revision C (April 2013) Page\n• Changed layout of National Data Sheet to TI format..........................................................................................3\n2 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "www.ti.com SNVS107G – JUNE 1999 – REVISED MARCH 2023\n5 Pin Configuration and Functions\nFigure 5-1. KC Package 5-Pin TO-220 Top View\nFigure 5-2. KTT Package 5-PIN DDPAK/TO-263 Top Figure 5-3. DDPAK/TO-263 (S) Package 5-Lead\nView Surface-Mount Package Top View\nTable 5-1. Pin Functions\nPIN\nI/O(1) DESCRIPTION\nNO. NAME\nSupply input pin to collector pin of high-side transistor. Connect to power supply and input\n1 V I bypass capacitors CIN. Path from V pin to high frequency bypass C and GND must be as"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "IN IN IN\nshort as possible.\nEmitter pin of the power transistor. This is a switching node. Attached this pin to an inductor\n2 OUTPUT O\nand the cathode of the external diode.\n3 GROUND — Ground pin. Path to C must be as short as possible.\nIN\nFeedback sense input pin. Connect to the midpoint of feedback divider to set VOUT for ADJ\n4 FEEDBACK I\nversion or connect this pin directly to the output capacitor for a fixed output version."
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "Enable input to the voltage regulator. High = OFF and low = ON. Connect to GND to enable\n5 ON/OFF I\nthe voltage regulator. Do not leave this pin float.\nConnected to GND. Attached to heatsink for thermal relief for TO-220 package or put a\n— TAB —\ncopper plane connected to this pin as a thermal relief for DDPAK package.\n(1) I = INPUT, O = OUTPUT\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 3\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "SNVS107G – JUNE 1999 – REVISED MARCH 2023 www.ti.com\n6 Specifications\n6.1 Absolute Maximum Ratings\nover the recommended operating junction temperature range of -40°C to 125°C (unless otherwise noted)(1) (2)\nMIN MAX UNIT\nLM2576 45\nMaximum supply voltage V\nLM2576HV 63\nON /OFF pin input voltage −0.3V ≤ V ≤ +V V\nIN\nOutput voltage to ground (Steady-state) −1 V\nPower dissipation Internally Limited\nMaximum junction temperature, T 150 °C\nJ\nStorage temperature, T −65 150 °C\nstg"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "J\nStorage temperature, T −65 150 °C\nstg\n(1) Stresses beyond those listed under Absolute Maximum Ratings may cause permanent damage to the device. These are stress\nratings only, which do not imply functional operation of the device at these or any other conditions beyond those indicated under\nRecommended Operating Conditions. Exposure to absolute-maximum-rated conditions for extended periods may affect device\nreliability."
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "reliability.\n(2) If Military/Aerospace specified devices are required, please contact the TI Sales Office/ Distributors for availability and specifications.\n6.2 ESD Ratings\nVALUE UNIT\nV Electrostatic discharge Human-body model (HBM), per ANSI/ESDA/JEDEC JS-001(1) ±2000 V\n(ESD)\n(1) JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process.\n6.3 Recommended Operating Conditions"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "6.3 Recommended Operating Conditions\nover the recommended operating junction temperature range of -40°C to 125°C (unless otherwise noted)\nMIN MAX UNIT\nTemperature LM2576, LM2576HV −40 125 °C\nLM2576 40\nSupply voltage V\nLM2576HV 60\n6.4 Thermal Information\nLM2576, LM2576HV\nTHERMAL METRIC(1) (2) (3) KTT (TO-263) KC (TO-220) UNIT\n5 PINS 5 PINS\nR Junction-to-ambient thermal resistance 42.6 32.4 °C/W\nθJA\nR Junction-to-case (top) thermal resistance 43.3 41.2 °C/W\nθJC(top)"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "θJC(top)\nR Junction-to-board thermal resistance 22.4 17.6 °C/W\nθJB\nψ Junction-to-top characterization parameter 10.7 7.8 °C/W\nJT\nψ Junction-to-board characterization parameter 21.3 17 °C/W\nJB\nR Junction-to-case (bottom) thermal resistance 0.4 0.4 °C/W\nθJC(bot)\n(1) For more information about traditional and new thermal metrics, see the Semiconductor and IC Package Thermal Metrics application\nreport, SPRA953 and the Using New Thermal Metrics applications report, SBVA025."
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "(2) The package thermal impedance is calculated in accordance with JESD 51-7\n(3) Thermal Resistances were simulated on a 4-layer, JEDEC board.\n4 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nwww.ti.com SNVS107G – JUNE 1999 – REVISED MARCH 2023\n6.5 Electrical Characteristics: 3.3 V\nSpecifications are for T = 25°C (unless otherwise noted).\nJ\nPARAMETER TEST CONDITIONS MIN TYP MAX UNIT"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "J\nPARAMETER TEST CONDITIONS MIN TYP MAX UNIT\nSYSTEM PARAMETERS TEST CIRCUIT Figure 8-3 and Figure 8-9(1)\nV = 12 V, I = 0.5 A\nOutput Voltage IN LOAD 3.234 3.3 3.366 V\nCircuit of Figure 8-3 and Figure 8-9\n6 V ≤ V IN ≤ 40 V, 0.5 A ≤ I LOAD T J = 25°C 3.168 3.3 3.432\nOutput Voltage: LM2576 ≤ 3 A Applies over full V\nCircuit of Figure 8-3 and operating temperature 3.135 3.465\nV OUT Figure 8-9 range\n6 V ≤ V IN ≤ 60 V, 0.5 A ≤ I LOAD T J = 25°C 3.168 3.3 3.45"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "Output Voltage: LM2576HV ≤ 3 A Applies over full V\nCircuit of Figure 8-3 and operating temperature 3.135 3.482\nFigure 8-9 range\nη Efficiency V = 12 V, I = 3 A 75%\nIN LOAD\n(1) External components such as the catch diode, inductor, input and output capacitors can affect switching regulator system performance.\nWhen the LM2576/LM2576HV is used as shown in Figure 8-3 and Figure 8-9, system performance is as shown in Section 6.10.\n6.6 Electrical Characteristics: 5 V"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "6.6 Electrical Characteristics: 5 V\nSpecifications are for T = 25°C for the Figure 8-3 and Figure 8-9 (unless otherwise noted).\nJ\nPARAMETER TEST CONDITIONS MIN TYP MAX UNIT\nSYSTEM PARAMETERS TEST CIRCUIT Figure 8-3 and Figure 8-9(1)\nV = 12 V, I = 0.5 A\nV Output Voltage IN LOAD 4.9 5 5.1 V\nOUT Circuit of Figure 8-3 and Figure 8-9\n0.5 A ≤ I LOAD ≤ 3 A, T J = 25°C 4.8 5 5.2\nV Output Voltage 8 V ≤ V IN ≤ 40 V Applies over full V\nOUT LM2576 Circuit of Figure 8-3 and operating temperature 4.75 5.25"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "Figure 8-9 range\n0.5 A ≤ I LOAD ≤ 3 A, T J = 25°C 4.8 5 4.75\nV Output Voltage 8 V ≤ V IN ≤ 60 V Applies over full V\nOUT LM2576HV Circuit of Figure 8-3 and operating temperature 5.225 5.275\nFigure 8-9 range\nη Efficiency V = 12 V, I = 3 A 77%\nIN LOAD\n(1) External components such as the catch diode, inductor, input and output capacitors can affect switching regulator system performance."
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "When the LM2576/LM2576HV is used as shown in Figure 8-3 and Figure 8-9, system performance is as shown in Section 6.10.\n6.7 Electrical Characteristics: 12 V\nSpecifications are for T = 25°C (unless otherwise noted).\nJ\nPARAMETER TEST CONDITIONS MIN TYP MAX UNIT\nSYSTEM PARAMETERS TEST CIRCUIT Figure 8-3 and Figure 8-9(1)\nV = 25 V, I = 0.5 A\nV Output Voltage IN LOAD 11.76 12 12.24 V\nOUT Circuit of Figure 8-3 and Figure 8-9\n0.5 A ≤ I LOAD ≤ 3 A, T J = 25°C 11.52 12 12.48"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "0.5 A ≤ I LOAD ≤ 3 A, T J = 25°C 11.52 12 12.48\nV Output Voltage 15 V ≤ V IN ≤ 40 V Applies over full V\nOUT LM2576 Circuit of Figure 8-3 and operating temperature 11.4 12.6\nFigure 8-9 and range\n0.5 A ≤ I LOAD ≤ 3 A, T J = 25°C 11.52 12 12.54\nV Output Voltage 15 V ≤ V IN ≤ 60 V Applies over full V\nOUT LM2576HV Circuit of Figure 8-3 and operating temperature 11.4 12.66\nFigure 8-9 range\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 5"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "Product Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nSNVS107G – JUNE 1999 – REVISED MARCH 2023 www.ti.com\nSpecifications are for T = 25°C (unless otherwise noted).\nJ\nPARAMETER TEST CONDITIONS MIN TYP MAX UNIT\nη Efficiency V = 15 V, I = 3 A 88%\nIN LOAD\n(1) External components such as the catch diode, inductor, input and output capacitors can affect switching regulator system performance."
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "When the LM2576/LM2576HV is used as shown in Figure 8-3 and Figure 8-9, system performance is as shown in Section 6.10.\n6.8 Electrical Characteristics: 15 V\nover operating free-air temperature range (unless otherwise noted).\nPARAMETER TEST CONDITIONS MIN TYP MAX UNIT\nSYSTEM PARAMETERS TEST CIRCUIT Figure 8-3 and Figure 8-9(1)\nV = 25 V, I = 0.5 A\nV Output Voltage IN LOAD 14.7 15 15.3 V\nOUT Circuit of Figure 8-3 and Figure 8-9\n0.5 A ≤ I LOAD ≤ 3 A, T J = 25°C 14.4 15 15.6"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "0.5 A ≤ I LOAD ≤ 3 A, T J = 25°C 14.4 15 15.6\nV Output Voltage 18 V ≤ V IN ≤ 40 V Applies over full V\nOUT LM2576 Circuit of Figure 8-3 and operating temperature 14.25 15.75\nFigure 8-9 range\n0.5 A ≤ I LOAD ≤ 3 A, T J = 25°C 14.4 15 14.25\nV Output Voltage 18 V ≤ V IN ≤ 60 V Applies over full V\nOUT LM2576HV Circuit of Figure 8-3 and operating temperature 15.68 15.83\nFigure 8-9 range\nη Efficiency V = 18 V, I = 3 A 88%\nIN LOAD"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "η Efficiency V = 18 V, I = 3 A 88%\nIN LOAD\n(1) External components such as the catch diode, inductor, input and output capacitors can affect switching regulator system performance.\nWhen the LM2576/LM2576HV is used as shown in Figure 8-3 and Figure 8-9, system performance is as shown in Section 6.10.\n6.9 Electrical Characteristics: Adjustable Output Voltage\nover operating free-air temperature range (unless otherwise noted).\nPARAMETER TEST CONDITIONS MIN TYP MAX UNIT"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "PARAMETER TEST CONDITIONS MIN TYP MAX UNIT\nSYSTEM PARAMETERS TEST CIRCUIT Figure 8-3 and Figure 8-9(1)\nV = 12 V, I = 0.5 A\nIN LOAD\nV Feedback voltage V = 5 V, 1.217 1.23 1.243 V\nOUT OUT\nCircuit of Figure 8-3 and Figure 8-9\n0.5 A ≤ I LOAD ≤ 3 A, T J = 25°C 1.193 1.23 1.267\nV Feedback Voltage 8 V ≤ V IN ≤ 40 V Applies over full V\nOUT LM2576 V OUT = 5 V, Circuit of Figure operating temperature 1.18 1.28\n8-3 and Figure 8-9 range\n0.5 A ≤ I LOAD ≤ 3 A, T J = 25°C 1.193 1.23 1.273"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "0.5 A ≤ I LOAD ≤ 3 A, T J = 25°C 1.193 1.23 1.273\nV Feedback Voltage 8 V ≤ V IN ≤ 60 V Applies over full V\nOUT LM2576HV V OUT = 5 V, Circuit of Figure operating temperature 1.18 1.286\n8-3 and Figure 8-9 range\nη Efficiency V = 12 V, I = 3 A, V = 5 V 77%\nIN LOAD OUT\n(1) External components such as the catch diode, inductor, input and output capacitors can affect switching regulator system performance."
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "When the LM2576/LM2576HV is used as shown in Figure 8-3 and Figure 8-9, system performance is as shown in Section 6.10.\n6.10 Electrical Characteristics: All Output Voltage Versions\nover operating free-air temperature range (unless otherwise noted)\nPARAMETER TEST CONDITIONS MIN TYP(1) MAX UNIT\nSYSTEM PARAMETERS TEST CIRCUIT Figure 8-3 and Figure 8-9(2)\nT = 25°C 100 50\nJ\nI Feedback Bias Current V OUT = 5 V (Adjustable Applies over nA\nb Version Only) full operating 500\ntemperature range"
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "temperature range\nT = 25°C 47 52 58\nf Oscillator Frequency(7) J kHz\nO\nApplies over full operating temperature range 42 63\n6 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nwww.ti.com SNVS107G – JUNE 1999 – REVISED MARCH 2023\nover operating free-air temperature range (unless otherwise noted)\nPARAMETER TEST CONDITIONS MIN TYP(1) MAX UNIT\nT = 25°C 1.4 1.8\nJ\nV Saturation Voltage I = 3 A (3) Applies over V\nSAT OUT"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "SAT OUT\nfull operating 2\ntemperature range\nDC Max Duty Cycle (ON)(4) 93% 98%\nT = 25°C 4.2 5.8 6.9\nI Current Limit(3) (7) J A\nCL\nApplies over full operating temperature range 3.5 7.5\nOutput = 0 V\nI Output Leakage Current Output = −1 V 2 7.5 30 mA\nL\nOutput = −1 V (5) (6)\nI Quiescent Current(5) 5 10 mA\nQ\nStandby Quiescent\nI ON /OFF Pin = 5 V (OFF) 50 200 μA\nSTBY Current\nON /OFF CONTROL TEST CIRCUIT Figure 8-3 and Figure 8-9\nV = 0 V T = 25°C 2.2 1.4\nOUT J\nV Applies over V\nIH\nfull operating 2.4"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "OUT J\nV Applies over V\nIH\nfull operating 2.4\nON /OFF Pin temperature range\nLogic Input Level V = Nominal Output T = 25°C 1.2 1\nOUT J\nVoltage\nV Applies over V\nIL\nfull operating 0.8\ntemperature range\nI IH ON /OFF Pin Input ON /OFF Pin = 5 V (OFF) 12 30 μA\nI Current ON /OFF Pin = 0 V (ON) 0 10 μA\nIL\n(1) All limits specified at room temperature (25°C) unless otherwise noted. All room temperature limits are 100% production tested. All"
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "limits at temperature extremes are specified through correlation using standard Statistical Quality Control (SQC) methods.\n(2) External components such as the catch diode, inductor, input and output capacitors can affect switching regulator system performance.\nWhen the LM2576/LM2576HV is used as shown in Figure 8-3 and Figure 8-9, system performance is as shown in Section 6.10.\n(3) Output pin sourcing current. No diode, inductor or capacitor connected to output."
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "(4) Feedback pin removed from output and connected to 0V.\n(5) Feedback pin removed from output and connected to +12 V for the Adjustable, 3.3-V, and 5-V versions, and +25 V for the 12-V and\n15-V versions, to force the output transistor OFF.\n(6) V = 40 V (60 V for high voltage version).\nIN\n(7) The oscillator frequency reduces to approximately 11 kHz in the event of an output short or an overload which causes the regulated"
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "output voltage to drop approximately 40% from the nominal output voltage. This self protection feature lowers the average power\ndissipation of the IC by lowering the minimum duty cycle from 5% down to approximately 2%.\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 7\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nSNVS107G – JUNE 1999 – REVISED MARCH 2023 www.ti.com\n6.11 Typical Characteristics\n(Circuit of Figure 8-3 and Figure 8-9)"
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "(Circuit of Figure 8-3 and Figure 8-9)\nFigure 6-1. Normalized Output Voltage Figure 6-2. Line Regulation\nFigure 6-3. Dropout Voltage Figure 6-4. Current Limit\nFigure 6-5. Quiescent Current Figure 6-6. Standby Quiescent Current\n8 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nwww.ti.com SNVS107G – JUNE 1999 – REVISED MARCH 2023\nFigure 6-7. Oscillator Frequency Figure 6-8. Switch Saturation Voltage"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "Figure 6-10. Minimum Operating Voltage\nFigure 6-9. Efficiency\nFigure 6-11. Quiescent Current vs Duty Cycle Figure 6-12. Feedback Voltage vs Duty Cycle\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 9\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nSNVS107G – JUNE 1999 – REVISED MARCH 2023 www.ti.com\nFigure 6-13. Minimum Operating Voltage Figure 6-14. Quiescent Current vs Duty Cycle\nFigure 6-15. Feedback Voltage vs Duty Cycle\nFigure 6-16. Feedback Pin Current"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "Figure 6-16. Feedback Pin Current\nV = 15 V A: Output Pin Voltage, 50 V/div B: Output\nOUT\nPin Current, 2 A/div C: Inductor Current, 2 A/div D: Output\nIf the DDPAK/TO-263 package is used, the thermal resistance Ripple Voltage, 50 mV/div, AC-CoupledHorizontal Time Base:\ncan be reduced by increasing the PCB copper area thermally 5 μs/div\nconnected to the package. Using 0.5 square inches of copper Figure 6-18. Switching Waveforms\narea, θ is 50°C/W, with 1 square inch of copper area, θ is\nJA JA"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "JA JA\n37°C/W, and with 1.6 or more square inches of copper area,\nθ is 32°C/W.\nJA\nFigure 6-17. Maximum Power Dissipation (DDPAK/\nTO-263)\n10 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nwww.ti.com SNVS107G – JUNE 1999 – REVISED MARCH 2023\nFigure 6-19. Load Transient Response\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 11\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "SNVS107G – JUNE 1999 – REVISED MARCH 2023 www.ti.com\n7 Detailed Description\n7.1 Overview\nThe LM2576 SIMPLE SWITCHER® power converter regulator is an easy-to-use, non-synchronous step-down\nDC-DC converter with a wide input voltage range from 40 V to up to 60 V for a HV version. It is capable of\ndelivering up to 3-A DC load current with excellent line and load regulation. These devices are available in fixed"
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "output voltages of 3.3 V, 5 V, 12 V, 15 V, and an adjustable output version. The family requires few external\ncomponents, and the pin arrangement was designed for simple, optimum PCB layout.\n7.2 Functional Block Diagram\nVIN ON/OFF\nUnregulated Internal\nDC Input 1 Rgulator ON/OFF 5\n+\nCIN 4\nFeedback\nR2\nFixed Gain\nError Amp 3 Amp\n+ Comparator Switch\n+\nR1 ±\n1 k ± Driver OUTPUT L1 VOUT\n2\n+\nL\nD1 COUT O\n1.23 V 52 kHZ THERMAL CURRENT 3 A\nBAND-GAP RESET D\nOSCILLATOR SHUTDOWN LIMIT\nREFERENCE\nGND"
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "OSCILLATOR SHUTDOWN LIMIT\nREFERENCE\nGND\n3.3 V R2 = 1.7 k 5 V, R2 = 3.1 k 12 V, R2 = 8.84 k 15 V, R2 = 11.3 k For ADJ. Version R1 = Open, R2 = 0 Ω Patent Pending\n7.3 Feature Description\n7.3.1 Undervoltage Lockout\nIn some applications it is desirable to keep the regulator off until the input voltage reaches a certain threshold.\nFigure 7-1 shows an undervoltage lockout circuit that accomplishes this task, while Figure 7-2 shows the same"
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "circuit applied to a buck-boost configuration. These circuits keep the regulator off until the input voltage reaches\na predetermined level.\nV ≈ V + 2V (Q1) (1)\nTH Z1 BE\n12 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nwww.ti.com SNVS107G – JUNE 1999 – REVISED MARCH 2023\n+V +V\nIN IN\nLM2576-XX\n+ 1\nR1\nC\n20 k IN\n20 k 5 ON/OFF 3 GND\nZ1\nQ1\nR2\n10 k\nComplete circuit not shown."
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "Z1\nQ1\nR2\n10 k\nComplete circuit not shown.\nFigure 7-1. Undervoltage Lockout for Buck Circuit\n+V +V\nIN IN\nLM2576-XX\n+ 1\nR1\n20 k C IN\n20 k 5 ON/OFF 3 GND\nZ1\nQ1\nR2\n10 k\n-V\nOUT\nComplete circuit not shown (see Figure 8-1).\nFigure 7-2. Undervoltage Lockout for Buck-Boost Circuit\n7.3.2 Delayed Start-Up\nThe ON /OFF pin can be used to provide a delayed start-up feature as shown in Figure 7-3. With an input"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "voltage of 20 V and for the part values shown, the circuit provides approximately 10 ms of delay time before the\ncircuit begins switching. Increasing the RC time constant can provide longer delay times. But excessively large\nRC time constants can cause problems with input voltages that are high in 60-Hz or 120-Hz ripple, by coupling\nthe ripple into the ON /OFF pin.\n7.3.3 Adjustable Output, Low-Ripple Power Supply"
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "7.3.3 Adjustable Output, Low-Ripple Power Supply\nFigure 7-4 shows a 3-A power supply that features an adjustable output voltage. An additional LC filter that\nreduces the output ripple by a factor of 10 or more is included in this circuit.\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 13\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nSNVS107G – JUNE 1999 – REVISED MARCH 2023 www.ti.com\n+V +V\nIN IN\nLM2576-XX\n1\n+\nC\nD 0.1 …F\n+ 5 ON/OFF 3 GND\nC\nIN\n100 …F\nR 47 K\nD"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "C\nD 0.1 …F\n+ 5 ON/OFF 3 GND\nC\nIN\n100 …F\nR 47 K\nD\nComplete circuit not shown.\nFigure 7-3. Delayed Start-Up\nFeedback\n55 V +V 4\nIN Output\nUnregulated LM2576HV-ADJ\nDC Input 1 Output L1 Voltage\n2 150 µH R2 20 µH +1.2 to 50 V\n@3A\n+ 3 GND 5 ON/OFF 50 k\n+ C + C1\nC IN 100 …F OUT\nD1\n1N5822 2000 …F 100 …F\nR1\n1.21 k\noptional output ripple filter\nFigure 7-4. 1.2-V to 55-V Adjustable 3-A Power Supply With Low Output Ripple\n7.4 Device Functional Modes\n7.4.1 Shutdown Mode"
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "7.4 Device Functional Modes\n7.4.1 Shutdown Mode\nThe ON/OFF pin provides electrical ON and OFF control for the LM2576. When the voltage of this pin is higher\nthan 1.4 V, the device is in shutdown mode. The typical standby current in this mode is 50 μA.\n7.4.2 Active Mode\nWhen the voltage of the ON/OFF pin is below 1.2 V, the device starts switching, and the output voltage rises until\nit reaches the normal regulation voltage.\n7.4.3 Current Limit"
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "7.4.3 Current Limit\nThe LM2576 device has current limiting to prevent the switch current from exceeding safe values during an\naccidental overload on the output. This current limit value can be found in Section 6.10 under the heading of I .\nCL\nThe LM2576 uses cycle-by-cycle peak current limit for overload protection. This helps to prevent damage to the\ndevice and external components. The regulator operates in current limit mode whenever the inductor current"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "exceeds the value of I given in Section 6.10. This occurs if the load current is greater than 3 A, or the\nCL\nconverter is starting up. Keep in mind that the maximum available load current depends on the input voltage,\noutput voltage, and inductor value. The regulator also incorporates short-circuit protection to prevent inductor\ncurrent run-away. When the voltage on the FB pin (ADJ) falls below about 0.58 V the switching frequency is"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "dropped to about 11 kHz. This allows the inductor current to ramp down sufficiently during the switch OFF-time\nto prevent saturation.\n14 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nwww.ti.com SNVS107G – JUNE 1999 – REVISED MARCH 2023\n8 Application and Implementation\nNote\nInformation in the following applications sections is not part of the TI component specification,"
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "and TI does not warrant its accuracy or completeness. TI’s customers are responsible for\ndetermining suitability of components for their purposes, as well as validating and testing their design\nimplementation to confirm system functionality.\n8.1 Application Information\n8.1.1 Input Capacitor (C )\nIN\nTo maintain stability, the regulator input pin must be bypassed with at least a 100-μF electrolytic capacitor. The\ncapacitor leads must be kept short, and placed near the regulator."
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "If the operating temperature range includes temperatures below −25°C, the input capacitor value can need to\nbe larger. With most electrolytic capacitors, the capacitance value decreases and the ESR increases with lower\ntemperatures and age. Paralleling a ceramic or solid tantalum capacitor increases the regulator stability at cold\ntemperatures. For maximum capacitor operating lifetime, the RMS ripple current rating of the capacitor must be\ngreater than:\n(2)\ntON\n1.2 T ILOAD"
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "greater than:\n(2)\ntON\n1.2 T ILOAD\nWhere for a buck regulator:\n(3)\ntON VOUT\nWhere for T a = buc V kIN-bo ost regulator:\n(4)\ntON VOUT\n8.1.2 Indu T ct = or VSOeUlTec+tiVoInN\nAll switching regulators have two basic modes of operation: continuous and discontinuous. The difference\nbetween the two types relates to the inductor current, whether it is flowing continuously, or if it drops to zero for"
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "a period of time in the normal switching cycle. Each mode has distinctively different operating characteristics,\nwhich can affect the regulator performance and requirements.\nThe LM2576 (or any of the SIMPLE SWITCHER power converter family can be used for both continuous and\ndiscontinuous modes of operation.\nThe inductor value selection guides in Figure 8-4 through Figure 8-8 are designed for buck regulator designs"
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "of the continuous inductor current type. When using inductor values shown in the inductor selection guide, the\npeak-to-peak inductor ripple current is approximately 20% to 30% of the maximum DC current. With relatively\nheavy load currents, the circuit operates in the continuous mode (inductor current always flowing), but under light\nload conditions, the circuit is forced to the discontinuous mode (inductor current falls to zero for a period of time)."
+  },
+  {
+    "faiss_index_id": 68,
+    "text": "This discontinuous mode of operation is perfectly acceptable. For light loads (less than approximately 300 mA),\nit can be desirable to operate the regulator in the discontinuous mode, primarily because of the lower inductor\nvalues required for the discontinuous mode.\nThe selection guide chooses inductor values suitable for continuous mode operation, but if the inductor value\nchosen is prohibitively high, the designer must investigate the possibility of discontinuous operation."
+  },
+  {
+    "faiss_index_id": 69,
+    "text": "Inductors are available in different styles such as pot core, toriod, E-frame, bobbin core, and so on, as well as\ndifferent core materials, such as ferrites and powdered iron. The bobbin core is the least expensive type, and\nconsists of wire wrapped on a ferrite rod core. This type of construction makes for an inexpensive inductor;\nhowever, because the magnetic flux is not completely contained within the core, the bobbin core generates"
+  },
+  {
+    "faiss_index_id": 70,
+    "text": "Copyright © 2023 Texas Instruments Incorporated Submit Document Feedback 15\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nSNVS107G – JUNE 1999 – REVISED MARCH 2023 www.ti.com\nmore electromagnetic interference (EMI). This EMI can cause problems in sensitive circuits, or can give incorrect\nscope readings because of induced voltages in the scope probe.\nThe inductors listed in the selection chart include ferrite pot core construction for AIE, powdered iron toroid for"
+  },
+  {
+    "faiss_index_id": 71,
+    "text": "Pulse Engineering, and ferrite bobbin core for Renco.\nAn inductor must not operate beyond its maximum-rated current because it can saturate. When an inductor\nbegins to saturate, the inductance decreases rapidly, and the inductor begins to look mainly resistive (the DC\nresistance of the winding), causing the switch current to rise very rapidly. Different inductor types have different\nsaturation characteristics, and this must be considered when selecting an inductor."
+  },
+  {
+    "faiss_index_id": 72,
+    "text": "The inductor manufacturer's data sheets include current and energy limits to avoid inductor saturation.\n8.1.3 Inductor Ripple Current\nWhen the switcher is operating in the continuous mode, the inductor current waveform ranges from a triangular\nto a sawtooth type of waveform (depending on the input voltage). For a given input voltage and output voltage,\nthe peak-to-peak amplitude of this inductor current waveform remains constant. As the load current rises or falls,"
+  },
+  {
+    "faiss_index_id": 73,
+    "text": "the entire sawtooth current waveform also rises or falls. The average DC value of this waveform is equal to the\nDC load current (in the buck regulator configuration).\nIf the load current drops to a low enough level, the bottom of the sawtooth current waveform reaches zero, and\nthe switcher changes to a discontinuous mode of operation. This is a perfectly acceptable mode of operation."
+  },
+  {
+    "faiss_index_id": 74,
+    "text": "Any buck switching regulator (no matter how large the inductor value is) is forced to run discontinuous if the load\ncurrent is light enough.\n8.1.4 Output Capacitor\nAn output capacitor is required to filter the output voltage and is needed for loop stability. The capacitor must be\nplaced near the LM2576 using short PCB traces. Standard aluminum electrolytics are usually adequate, but TI\nrecommends low ESR types for low output ripple voltage and good stability. The ESR of a capacitor depends on"
+  },
+  {
+    "faiss_index_id": 75,
+    "text": "many factors, including: the value, the voltage rating, physical size, and the type of construction. In general, low\nvalue or low voltage (less than 12 V) electrolytic capacitors usually have higher ESR numbers.\nThe amount of output ripple voltage is primarily a function of the ESR (Equivalent Series Resistance) of the\noutput capacitor and the amplitude of the inductor ripple current (ΔI ). See Section 8.1.3.\nIND"
+  },
+  {
+    "faiss_index_id": 76,
+    "text": "IND\nThe lower capacitor values (220 μF to 1000 μF) allows typically 50 mV to 150 mV of output ripple voltage, while\nlarger-value capacitors reduces the ripple to approximately 20 mV to 50 mV.\nOutput Ripple Voltage = (ΔI ) (ESR of C ) (5)\nIND OUT\nTo further reduce the output ripple voltage, several standard electrolytic capacitors can be paralleled, or a higher-\ngrade capacitor can be used. Such capacitors are often called high-frequency, low-inductance, or low-ESR."
+  },
+  {
+    "faiss_index_id": 77,
+    "text": "These reduces the output ripple to 10 mV or 20 mV. However, when operating in the continuous mode, reducing\nthe ESR below 0.03 Ω can cause instability in the regulator.\nTantalum capacitors can have a very low ESR, and must be carefully evaluated if it is the only output capacitor.\nBecause of their good low temperature characteristics, a tantalum can be used in parallel with aluminum\nelectrolytics, with the tantalum making up 10% or 20% of the total capacitance."
+  },
+  {
+    "faiss_index_id": 78,
+    "text": "The ripple current rating of the capacitor at 52 kHz must be at least 50% higher than the peak-to-peak inductor\nripple current.\n8.1.5 Catch Diode\nBuck regulators require a diode to provide a return path for the inductor current when the switch is off. This diode\nmust be placed close to the LM2576 using short leads and short printed-circuit traces.\nBecause of their fast switching speed and low forward voltage drop, Schottky diodes provide the best efficiency,"
+  },
+  {
+    "faiss_index_id": 79,
+    "text": "especially in low output voltage switching regulators (less than 5 V). Fast-recovery, high-efficiency, or ultra-fast\nrecovery diodes are also suitable, but some types with an abrupt turnoff characteristic can cause instability\nand EMI problems. A fast-recovery diode with soft recovery characteristics is a better choice. Standard 60-Hz\n16 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV"
+  },
+  {
+    "faiss_index_id": 80,
+    "text": "www.ti.com SNVS107G – JUNE 1999 – REVISED MARCH 2023\ndiodes (for example, 1N4001 or 1N5400, and so on) are also not suitable. See Table 8-3 for Schottky and soft\nfast-recovery diode selection guide.\n8.1.6 Output Voltage Ripple and Transients\nThe output voltage of a switching power supply contains a sawtooth ripple voltage at the switcher frequency,\ntypically about 1% of the output voltage, and can also contain short voltage spikes at the peaks of the sawtooth\nwaveform."
+  },
+  {
+    "faiss_index_id": 81,
+    "text": "waveform.\nThe output ripple voltage is due mainly to the inductor sawtooth ripple current multiplied by the ESR of the output\ncapacitor (see Section 8.1.2).\nThe voltage spikes are present because of the fast switching action of the output switch, and the parasitic\ninductance of the output filter capacitor. To minimize these voltage spikes, special low inductance capacitors can\nbe used, and their lead lengths must be kept short. Wiring inductance, stray capacitance, as well as the scope"
+  },
+  {
+    "faiss_index_id": 82,
+    "text": "probe used to evaluate these transients, all contribute to the amplitude of these spikes.\nAn additional small LC filter (20 μH and 100 μF) can be added to the output (as shown in Figure 7-4) to further\nreduce the amount of output ripple and transients. A 10 × reduction in output ripple voltage and transients is\npossible with this filter.\n8.1.7 Feedback Connection\nThe LM2576 (fixed voltage versions) feedback pin must be wired to the output voltage point of the switching"
+  },
+  {
+    "faiss_index_id": 83,
+    "text": "power supply. When using the adjustable version, physically locate both output voltage programming resistors\nnear the LM2576 to avoid picking up unwanted noise. Avoid using resistors greater than 100 kΩ because of the\nincreased chance of noise pickup.\n8.1.8 ON /OFF INPUT\nFor normal operation, the ON /OFF pin must be grounded or driven with a low-level TTL voltage (typically\nbelow 1.6 V). To put the regulator into standby mode, drive this pin with a high-level TTL or CMOS signal. The"
+  },
+  {
+    "faiss_index_id": 84,
+    "text": "ON /OFF pin can be safely pulled up to +V without a resistor in series with it. The ON /OFF pin must not be left\nIN\nopen.\n8.1.9 Inverting Regulator\nFigure 8-1 shows a LM2576-12 in a buck-boost configuration to generate a negative 12-V output from a positive\ninput voltage. This circuit bootstraps the ground pin of the regulator to the negative output voltage, then by\ngrounding the feedback pin, the regulator senses the inverted output voltage and regulates it to −12 V."
+  },
+  {
+    "faiss_index_id": 85,
+    "text": "For an input voltage of 12 V or more, the maximum available output current in this configuration is approximately\n700 mA. At lighter loads, the minimum input voltage required drops to approximately 4.7 V.\nThe switch currents in this buck-boost configuration are higher than in the standard buck-mode design, thus\nlowering the available output current. Also, the start-up input current of the buck-boost converter is higher than"
+  },
+  {
+    "faiss_index_id": 86,
+    "text": "the standard buck-mode regulator, and this can overload an input power source with a current limit less than\n5 A. Using a delayed turn-on or an undervoltage lockout circuit (described in Section 8.1.10) can allow the input\nvoltage to rise to a high enough level before the switcher can be allowed to turn on.\nBecause of the structural differences between the buck and the buck-boost regulator topologies, the buck"
+  },
+  {
+    "faiss_index_id": 87,
+    "text": "regulator design procedure section can not be used to select the inductor or the output capacitor. The\nrecommended range of inductor values for the buck-boost design is between 68 μH and 220 μH, and the\noutput capacitor values must be larger than what is normally required for buck designs. Low input voltages or\nhigh output currents require a large value output capacitor (in the thousands of micro Farads)."
+  },
+  {
+    "faiss_index_id": 88,
+    "text": "The peak inductor current, which is the same as the peak switch current, can be calculated in Equation 6:\n(6)\nILOAD VIN+ VOUT VINVOUT 1\nwhere f\nIp ≈\n= 52 kHz\nVIN + VIN+ VOUT 2L1fOSC\nosc\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 17\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nSNVS107G – JUNE 1999 – REVISED MARCH 2023 www.ti.com\nUnder normal continuous inductor current operating conditions, the minimum V represents the worst case.\nIN"
+  },
+  {
+    "faiss_index_id": 89,
+    "text": "IN\nSelect an inductor that is rated for the peak current anticipated.\n+12 To +45 V\nUnregulated Feedback\nDC Input +V 4\nIN\nLM2576HV-ADJ\n1 Output L1\n+ C\nIN 2 68 µH\n100 …F 3 GND 5 ON/OFF\n+ C\nOUT\nD1\n1N5822 2200 …F\n-12 @ 0.7 A\nREGULATED\nDC INPUT\nFigure 8-1. Inverting Buck-Boost Develops −12 V\nAlso, the maximum voltage appearing across the regulator is the absolute sum of the input and output voltage.\nFor a −12-V output, the maximum input voltage for the LM2576 is +28 V, or +48 V for the LM2576HV."
+  },
+  {
+    "faiss_index_id": 90,
+    "text": "8.1.10 Negative Boost Regulator\nAnother variation on the buck-boost topology is the negative boost configuration. The circuit in Figure 8-2\naccepts an input voltage ranging from −5 V to −12 V and provides a regulated −12-V output. Input voltages\ngreater than −12 V causes the output to rise above −12 V, but does not damage the regulator.\nFeedback + COUT\nVIN 4 2200 PF\nLM2576-12 Output\n1 LOW ESR\n2\n3 5 1N5820\n+ CIN\nGND ON/OFF\n100 PF VOUT = -12 V\n-VIN 100 PH\n-5 V to -12 V"
+  },
+  {
+    "faiss_index_id": 91,
+    "text": "100 PF VOUT = -12 V\n-VIN 100 PH\n-5 V to -12 V\nTypical Load Current 400 mA for V = −5.2 V 750 mA for V = −7 V Heat sink can be required.\nIN IN\nFigure 8-2. Negative Boost\nBecause of the boosting function of this type of regulator, the switch current is relatively high, especially at low\ninput voltages. Output load current limitations are a result of the maximum current rating of the switch. Also,"
+  },
+  {
+    "faiss_index_id": 92,
+    "text": "boost regulators can not provide current-limiting load protection in the event of a shorted load, so some other\nmeans (such as a fuse) can be necessary.\n18 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nwww.ti.com SNVS107G – JUNE 1999 – REVISED MARCH 2023\n8.2 Typical Applications\n8.2.1 Fixed Output Voltage Version\nFeedback\n+V\nIN LM2576HV- 4 V\nOUT\nFixed Output L1\nOutput\n1\nV IN + 100 …F 2 100 µH + L\nUNREGULATED"
+  },
+  {
+    "faiss_index_id": 93,
+    "text": "Output\n1\nV IN + 100 …F 2 100 µH + L\nUNREGULATED\nDC INPUT GND 3 ON/OFF 5 C OUT O\nC IN D1 1000 µF A\nMBR360\nD\nC — 100-μF, 75-V, Aluminum Electrolytic C — 1000-μF, 25-V, Aluminum Electrolytic D — Schottky, MBR360 L — 100 μH, Pulse\nIN OUT 1 1\nEng. PE-92108 R — 2 k, 0.1% R — 6.12 k, 0.1%\n1 2\nFigure 8-3. Fixed Output Voltage Versions\n8.2.1.1 Design Requirements\nTable 8-1 lists the design parameters of this example.\nTable 8-1. Design Parameters\nDESIGN PARAMETER EXAMPLE VALUE\nRegulated Output Voltage"
+  },
+  {
+    "faiss_index_id": 94,
+    "text": "Regulated Output Voltage\n5 V\n(3.3 V, 5 V, 12 V, or 15 V), V\nOUT\nMaximum Input Voltage, V (Max) 15 V\nIN\nMaximum Load Current,\n3 A\nI (Max)\nLOAD\n8.2.1.2 Detailed Design Procedure\n8.2.1.2.1 Custom Design with WEBENCH® Tools\nClick here to create a custom design using the WEBENCH Power Designer.\n1. Start by entering your V , V and I requirements.\nIN OUT OUT\n2. Optimize your design for key parameters like efficiency, footprint and cost using the optimizer dial and"
+  },
+  {
+    "faiss_index_id": 95,
+    "text": "compare this design with other possible solutions from Texas Instruments.\n3. WEBENCH Power Designer provides you with a customized schematic along with a list of materials with real\ntime pricing and component availability.\n4. In most cases, you will also be able to:\n• Run electrical simulations to see important waveforms and circuit performance,\n• Run thermal simulations to understand the thermal performance of your board,\n• Export your customized schematic and layout into popular CAD formats,"
+  },
+  {
+    "faiss_index_id": 96,
+    "text": "• Print PDF reports for the design, and share your design with colleagues.\n8.2.1.2.2 Inductor Selection (L1)\n1. Select the correct Inductor value selection guide from Figure 8-4, Figure 8-5, Figure 8-6, or Figure 8-7.\n(Output voltages of 3.3 V, 5 V, 12 V or 15 V respectively). For other output voltages, see the design\nprocedure for the adjustable version. Use the selection guide shown in Figure 8-5.\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 19"
+  },
+  {
+    "faiss_index_id": 97,
+    "text": "Product Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nSNVS107G – JUNE 1999 – REVISED MARCH 2023 www.ti.com\n2. From the inductor value selection guide, identify the inductance region intersected by V (Max) and\nIN\nI (Max), and note the inductor code for that region. From the selection guide, the inductance area\nLOAD\nintersected by the 15-V line and 3-A line is L100.\n3. Identify the inductor value from the inductor code, and select an appropriate inductor from the table shown"
+  },
+  {
+    "faiss_index_id": 98,
+    "text": "in Figure 8-4. Part numbers are listed for three inductor manufacturers. The inductor chosen must be rated\nfor operation at the LM2576 switching frequency (52 kHz) and for a current rating of 1.15 × I . For\nLOAD\nadditional inductor information, see Section 8.1.2. Inductor value required is 100 μH from the table in Figure\n8-4. Choose AIE 415-0930, Pulse Engineering PE92108, or Renco RL2444.\n8.2.1.2.3 Output Capacitor Selection (C )\nOUT"
+  },
+  {
+    "faiss_index_id": 99,
+    "text": "8.2.1.2.3 Output Capacitor Selection (C )\nOUT\n1. The value of the output capacitor together with the inductor defines the dominate pole-pair of the switching\nregulator loop. For stable operation and an acceptable output ripple voltage, (approximately 1% of the output\nvoltage) TI recommends a value between 100 μF and 470 μF. We choose C = 680-μF to 2000-μF\nOUT\nstandard aluminum electrolytic."
+  },
+  {
+    "faiss_index_id": 100,
+    "text": "OUT\nstandard aluminum electrolytic.\n2. The voltage rating of the capacitor must be at least 1.5 times greater than the output voltage. For a 5-V\nregulator, a rating of at least 8 V is appropriate, and TI recommends a 10-V or 15-V rating. Capacitor voltage\nrating = 20 V. Higher voltage electrolytic capacitors generally have lower ESR numbers, and for this reason it\ncan be necessary to select a capacitor rated for a higher voltage than can normally be needed.\n8.2.1.2.4 Catch Diode Selection (D1)"
+  },
+  {
+    "faiss_index_id": 101,
+    "text": "8.2.1.2.4 Catch Diode Selection (D1)\n1. The catch-diode current rating must be at least 1.2 times greater than the maximum load current. Also, if the\npower supply design must withstand a continuous output short, the diode must have a current rating equal\nto the maximum current limit of the LM2576. The most stressful condition for this diode is an overload or\nshorted output condition. For this example, a 3-A current rating is adequate."
+  },
+  {
+    "faiss_index_id": 102,
+    "text": "2. The reverse voltage rating of the diode must be at least 1.25 times the maximum input voltage. Use a 20-V\n1N5823 or SR302 Schottky diode, or any of the suggested fast-recovery diodes shown in Table 8-3.\n8.2.1.2.5 Input Capacitor (C )\nIN\nAn aluminum or tantalum electrolytic bypass capacitor located close to the regulator is needed for stable\noperation. A 100-μF, 25-V aluminum electrolytic capacitor located near the input and ground pins provides\nsufficient bypassing."
+  },
+  {
+    "faiss_index_id": 103,
+    "text": "sufficient bypassing.\n20 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nwww.ti.com SNVS107G – JUNE 1999 – REVISED MARCH 2023\n8.2.1.3 Application Curves\nFigure 8-4. LM2576(HV)-3.3 Figure 8-5. LM2576(HV)-5.0\nFigure 8-6. LM2576(HV)-12 Figure 8-7. LM2576(HV)-15\nFigure 8-8. LM2576(HV)-ADJ\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 21\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV"
+  },
+  {
+    "faiss_index_id": 104,
+    "text": "SNVS107G – JUNE 1999 – REVISED MARCH 2023 www.ti.com\n8.2.2 Adjusted Output Voltage Version\nFeedback\n+VIN\nLM2 A 5 D 76 J HV- O 4 utput L1 V 5 O V UT\n1\nUN D R 7 C E V G I ± N U 6 P L 0 U A V T TED + 1 C 00 IN …F GND 3 ON/OFF 5 2 D M 1 1 B 00 R 3 µ 6 H 0 + 10 C 0 O 0 U T µF R2 O A L\nR1 D\nwhere V = 1.23 V, R1 between 1 k and 5 k\nREF\nFigure 8-9. Adjustable Output Voltage Version\n8.2.2.1 Design Requirements\nTable 8-2 lists the design parameters of this example.\nTable 8-2. Design Parameters"
+  },
+  {
+    "faiss_index_id": 105,
+    "text": "Table 8-2. Design Parameters\nDESIGN PARAMETER EXAMPLE VALUE\nRegulated Output Voltage, V 10 V\nOUT\nMaximum Input Voltage, V (Max) 25 V\nIN\nMaximum Load Current,\n3 A\nI (Max)\nLOAD\nSwitching Frequency, F Fixed at 52 kHz\n8.2.2.2 Detailed Design Procedure\n8.2.2.2.1 Programming Output Voltage\nSelect R1 and R2, as shown in Figure 8-9.\nUse Equation 7 to select the appropriate resistor values.\n(7)\nR2"
+  },
+  {
+    "faiss_index_id": 106,
+    "text": "(7)\nR2\nR can V b O e U T be = tw VR e E e F n 1 1 + k R a1nd w 5 he k r . e ( V F R o E r F b = es 1 t .2 3 te V mperature coefficient and stability with time, use 1% metal film\n1\nresistors)\n(8)\nVOUT 10 V\nR = 1 k R ( 2 8. = 13 R 1 − 1 V )R E=F 7 − .1 1 3 k = , c 1 l o k s Ω es 1 t .2 1 3 % V − va 1 lu e S e is l e 7 c . t 1 R 5 1 k = 1KΩ\n2\n8.2.2.2.2 Inductor Selection (L1)\n1. Calculate the inductor Volt • microsecond constant, E • T (V • μs), from Equation 9:\nV 1000"
+  },
+  {
+    "faiss_index_id": 107,
+    "text": "V 1000\nEuT (cid:11)V (cid:16)V (cid:12) OUT u (cid:11)Vu(cid:29)V(cid:12)\nIN OUT V F(cid:11)inkHz(cid:12)\nIN (9)\nCalculate E • T (V • μs)\n22 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nwww.ti.com SNVS107G – JUNE 1999 – REVISED MARCH 2023\n10 1000\nEuT (cid:11)25(cid:16)10(cid:12)u u 115 Vu(cid:29)V\n25 52\n(10)"
+  },
+  {
+    "faiss_index_id": 108,
+    "text": "25 52\n(10)\n2. Use the E • T value from the previous formula and match it with the E • T number on the vertical axis of the\nInductor value selection guide shown in Figure 8-8.\nE • T = 115 V • μs\n3. On the horizontal axis, select the maximum load current.\nI (Max) = 3 A\nLOAD\n4. Identify the inductance region intersected by the E • T value and the maximum load current value, and note\nthe inductor code for that region.\nInductance Region = H150"
+  },
+  {
+    "faiss_index_id": 109,
+    "text": "Inductance Region = H150\n5. Identify the inductor value from the inductor code, and select an appropriate inductor from the table shown in\nTable 8-4. Part numbers are listed for three inductor manufacturers. The inductor chosen must be rated for\noperation at the LM2576 switching frequency (52 kHz) and for a current rating of 1.15 × I . For additional\nLOAD\ninductor information, see Section 8.1.2.\nInductor Value = 150 μH"
+  },
+  {
+    "faiss_index_id": 110,
+    "text": "Inductor Value = 150 μH\nChoose from AIE part #415-0936, Pulse Engineering part #PE-531115, or Renco part #RL2445.\n8.2.2.2.3 Output Capacitor Selection (C )\nOUT\n1. The value of the output capacitor together with the inductor defines the dominate pole-pair of the switching\nregulator loop. For stable operation, the capacitor must satisfy Equation 11:\nV\nC t13,300 IN(cid:11)Max(cid:12) (cid:11)(cid:29))(cid:12)\nOUT V uL(cid:11)(cid:29)+(cid:12)\nOUT"
+  },
+  {
+    "faiss_index_id": 111,
+    "text": "OUT V uL(cid:11)(cid:29)+(cid:12)\nOUT\nEquation 11 yields capacitor values between 10 μF and 2200 μF that satisfies the loop requirements for\nstable operation. But to achieve an acceptable output ripple voltage, (approximately 1% of the output\nvoltage) and transient response, the output capacitor can need to be several times larger than Equation 11\nyields.\n25\nCOUTt13,300 22.2(cid:29))\n10u150\nHowever, for acceptable output ripple voltage select\nC ≥ 680 μF\nOUT\nC = 680-μF electrolytic capacitor\nOUT"
+  },
+  {
+    "faiss_index_id": 112,
+    "text": "OUT\nC = 680-μF electrolytic capacitor\nOUT\n2. The capacitor voltage rating must be at last 1.5 times greater than the output voltage. For a 10-V regulator,\nTI recommends a rating of at least 15 V or more. Higher voltage electrolytic capacitors generally have lower\nESR numbers, and for this reason it can be necessary to select a capacitor rate for a higher voltage than can\nnormally be needed.\n8.2.2.2.4 Catch Diode Selection (D1)"
+  },
+  {
+    "faiss_index_id": 113,
+    "text": "8.2.2.2.4 Catch Diode Selection (D1)\n1. The catch-diode current rating must be at least 1.2 times greater than the maximum load current. Also, if the\npower supply design must withstand a continuous output short, the diode must have a current rating equal\nto the maximum current limit of the LM2576. The most stressful condition for this diode is an overload or\nshorted output. See Table 8-3. For this example, a 3.3-A current rating is adequate."
+  },
+  {
+    "faiss_index_id": 114,
+    "text": "2. The reverse voltage rating of the diode must be at least 1.25 times the maximum input voltage. Use a 30-V\n31DQ03 Schottky diode, or any of the suggested fast-recovery diodes in Table 8-3.\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 23\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nSNVS107G – JUNE 1999 – REVISED MARCH 2023 www.ti.com\n8.2.2.2.5 Input Capacitor (C )\nIN"
+  },
+  {
+    "faiss_index_id": 115,
+    "text": "8.2.2.2.5 Input Capacitor (C )\nIN\nAn aluminum or tantalum electrolytic bypass capacitor located close to the regulator is needed for stable\noperation. A 100-μF aluminum electrolytic capacitor located near the input and ground pins provides sufficient\nbypassing.\nTable 8-3. Diode Selection Guide\nSCHOTTKY FAST RECOVERY\nV\nR\n3 A 4 A to 6 A 3 A 4 A to 6 A\n1N5820\n20 V MBR320P 1N5823\nSR302\n1N5821\nMBR330 50WQ03\n30 V\n31DQ03 1N5824\nSR303\nThe following\nThe following\n1N5822 diodes are all\ndiodes are all"
+  },
+  {
+    "faiss_index_id": 116,
+    "text": "1N5822 diodes are all\ndiodes are all\nMBR340 MBR340 rated to 100-V rated to 100-V\n40 V 50WQ04 31DF1 50WF10\n31DQ04 1N5825 HER302 MUR410\nHER602\nSR304\nMBR350\n50 V 31DQ05 50WQ05\nSR305\nMBR360\n50WR06\n60 V DQ06\n50SQ060\nSR306\nTable 8-4. Inductor Selection by Manufacturer's Part Number\nINDUCTOR CODE INDUCTOR VALUE SCHOTT(1) PULSE ENG.(2) RENCO(3)\nL47 47 μH 671 26980 PE-53112 RL2442\nL68 68 μH 671 26990 PE-92114 RL2443\nL100 100 μH 671 27000 PE-92108 RL2444\nL150 150 μH 671 27010 PE-53113 RL1954"
+  },
+  {
+    "faiss_index_id": 117,
+    "text": "L150 150 μH 671 27010 PE-53113 RL1954\nL220 220 μH 671 27020 PE-52626 RL1953\nL330 330 μH 671 27030 PE-52627 RL1952\nL470 470 μH 671 27040 PE-53114 RL1951\nL680 680 μH 671 27050 PE-52629 RL1950\nH150 150 μH 671 27060 PE-53115 RL2445\nH220 220 μH 671 27070 PE-53116 RL2446\nH330 330 μH 671 27080 PE-53117 RL2447\nH470 470 μH 671 27090 PE-53118 RL1961\nH680 680 μH 671 27100 PE-53119 RL1960\nH1000 1000 μH 671 27110 PE-53120 RL1959\nH1500 1500 μH 671 27120 PE-53121 RL1958\nH2200 2200 μH 671 27130 PE-53122 RL2448"
+  },
+  {
+    "faiss_index_id": 118,
+    "text": "H2200 2200 μH 671 27130 PE-53122 RL2448\n(1) Schott Corporation, (612) 475-1173, 1000 Parkers Lake Road, Wayzata, MN 55391.\n(2) Pulse Engineering, (619) 674-8100, P.O. Box 12235, San Diego, CA 92112.\n(3) Renco Electronics Incorporated, (516) 586-5566, 60 Jeffryn Blvd. East, Deer Park, NY 11729.\n24 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nwww.ti.com SNVS107G – JUNE 1999 – REVISED MARCH 2023"
+  },
+  {
+    "faiss_index_id": 119,
+    "text": "8.3 Power Supply Recommendations\nAs in any switching regulator, layout is very important. Rapidly switching currents associated with wiring\ninductance generate voltage transients which can cause problems. For minimal inductance and ground loops,\nthe length of the leads indicated by heavy lines must be kept as short as possible. Single-point grounding\n(as indicated) or ground plane construction must be used for best results. When using the adjustable version,"
+  },
+  {
+    "faiss_index_id": 120,
+    "text": "physically locate the programming resistors near the regulator, to keep the sensitive feedback wiring short.\n8.4 Layout\n8.4.1 Layout Guidelines\nBoard layout is critical for the proper operation of switching power supplies. First, the ground plane area\nmust be sufficient for thermal dissipation purposes. Second, appropriate guidelines must be followed to reduce\nthe effects of switching noise. Switch mode converters are very fast switching devices. In such cases, the"
+  },
+  {
+    "faiss_index_id": 121,
+    "text": "rapid increase of input current combined with the parasitic trace inductance generates unwanted L di/dt noise\nspikes. The magnitude of this noise tends to increase as the output current increases. This noise can turn into\nelectromagnetic interference (EMI) and can also cause problems in device performance. Therefore, take care in\nlayout to minimize the effect of this switching noise. The most important layout rule is to keep the AC current"
+  },
+  {
+    "faiss_index_id": 122,
+    "text": "loops as small as possible. Figure 8-10 shows the current flow in a buck converter. The top schematic shows\na dotted line which represents the current flow during the top-switch ON-state. The middle schematic shows\nthe current flow during the top-switch OFF-state. The bottom schematic shows the currents referred to as AC\ncurrents. These AC currents are the most critical because they are changing in a very short time period. The"
+  },
+  {
+    "faiss_index_id": 123,
+    "text": "dotted lines of the bottom schematic are the traces to keep as short and wide as possible. This also yields a\nsmall loop area reducing the loop inductance. To avoid functional problems due to layout, review the PCB layout\nexample. Best results are achieved if the placement of the LM2576 device, the bypass capacitor, the Schottky\ndiode, RFBB, RFBT, and the inductor are placed as shown in Figure 8-11.TI also recommends using 2-oz copper"
+  },
+  {
+    "faiss_index_id": 124,
+    "text": "boards or heavier to help thermal dissipation and to reduce the parasitic inductances of board traces. See\nAN-1229 SIMPLE SWITCHER® PCB Layout Guidelines application report for more information.\nFigure 8-10. Current Flow in Buck Application\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 25\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nSNVS107G – JUNE 1999 – REVISED MARCH 2023 www.ti.com\n8.4.2 Layout Example\nFigure 8-11. LM2576xx Layout Example\n8.4.3 Grounding"
+  },
+  {
+    "faiss_index_id": 125,
+    "text": "8.4.3 Grounding\nTo maintain output voltage stability, the power ground connections must be low-impedance (see Figure 8-3 and\nFigure 8-9). For the 5-lead TO-220 and DDPAK/TO-263 style package, both the tab and pin 3 are ground and\neither connection can be used, as they are both part of the same copper lead frame.\n8.4.4 Heat Sink and Thermal Considerations\nIn many cases, only a small heat sink is required to keep the LM2576 junction temperature within the allowed"
+  },
+  {
+    "faiss_index_id": 126,
+    "text": "operating range. For each application, to determine whether or not a heat sink is required, the following must be\nidentified:\n1. Maximum ambient temperature (in the application).\n2. Maximum regulator power dissipation (in application).\n3. Maximum allowed junction temperature (125°C for the LM2576). For a safe, conservative design, a\ntemperature approximately 15°C cooler than the maximum temperatures must be selected.\n4. LM2576 package thermal resistances θ and θ .\nJA JC"
+  },
+  {
+    "faiss_index_id": 127,
+    "text": "JA JC\nTotal power dissipated by the LM2576 can be estimated in Equation 11:\nP = (V )(I ) + (V /V )(I )(V ) (11)\nD IN Q O IN LOAD SAT\nwhere\n• I (quiescent current) and V can be found in Section 6.11 shown previously,\nQ SAT\n• V is the applied minimum input voltage, V is the regulated output voltage,\nIN O\n26 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nwww.ti.com SNVS107G – JUNE 1999 – REVISED MARCH 2023"
+  },
+  {
+    "faiss_index_id": 128,
+    "text": "• and I is the load current.\nLOAD\nThe dynamic losses during turnon and turnoff are negligible if a Schottky type catch diode is used.\nWhen no heat sink is used, the junction temperature rise can be determined by Equation 12:\nΔT = (P ) (θ ) (12)\nJ D JA\nTo arrive at the actual operating junction temperature, add the junction temperature rise to the maximum ambient\ntemperature.\nT = ΔT + T (13)\nJ J A"
+  },
+  {
+    "faiss_index_id": 129,
+    "text": "temperature.\nT = ΔT + T (13)\nJ J A\nIf the actual operating junction temperature is greater than the selected safe operating junction temperature\ndetermined in step 3, then a heat sink is required.\nWhen using a heat sink, the junction temperature rise can be determined by Equation 13:\nΔT = (P ) (θ + θ + θ ) (14)\nJ D JC interface Heat sink\nThe operating junction temperature is:\nT = T + ΔT (15)\nJ A J"
+  },
+  {
+    "faiss_index_id": 130,
+    "text": "T = T + ΔT (15)\nJ A J\nAs in Equation 15, if the actual operating junction temperature is greater than the selected safe operating\njunction temperature, then a larger heat sink is required (one that has a lower thermal resistance).\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 27\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nSNVS107G – JUNE 1999 – REVISED MARCH 2023 www.ti.com\n9 Device and Documentation Support\n9.1 Device Support\n9.1.1 Device Nomenclature"
+  },
+  {
+    "faiss_index_id": 131,
+    "text": "9.1 Device Support\n9.1.1 Device Nomenclature\n9.1.1.1 Definition of Terms\nBUCK REGULATOR A switching regulator topology in which a higher voltage is converted to a lower\nvoltage. Also known as a step-down switching regulator.\nBUCK-BOOST A switching regulator topology in which a positive voltage is converted to a negative\nREGULATOR voltage without a transformer.\nDUTY CYCLE (D) Ratio of the output switch on-time to the oscillator period. For buck regulator:\n(16)\ntON VOUT"
+  },
+  {
+    "faiss_index_id": 132,
+    "text": "(16)\ntON VOUT\nFor buck D -b = o osTt r = eguVlIaNtor:\n(17)\ntON VOUT\nCATCH DIODE OR The diod D e = w h T ich = pr V oOvUidTes + a VI Nreturn path for the load current when the LM2576 switch is\nCURRENT STEERING OFF.\nDIODE\nEFFICIENCY (η) The proportion of input power actually delivered to the load.\n(18)\nPOUT POUT\nCAPACITOR The pur η el = y r e P sIiNstiv = e P cOoUmTp + o P nLeOSnSt of a real capacitor impedance (see Figure 9-1). It"
+  },
+  {
+    "faiss_index_id": 133,
+    "text": "EQUIVALENT SERIES causes power loss resulting in capacitor heating, which directly affects the capacitor\nRESISTANCE (ESR) operating lifetime. When used as a switching regulator output filter, higher ESR values\nresult in higher output ripple voltages.\nFigure 9-1. Simple Model of a Real Capacitor\nMost standard aluminum electrolytic capacitors in the 100 μF–1000 μF range\nhave 0.5Ω to 0.1Ω ESR. Higher-grade capacitors (low-ESR, high-frequency, or low-"
+  },
+  {
+    "faiss_index_id": 134,
+    "text": "inductance) in the 100 μF to 1000 μF range generally have ESR of less than 0.15Ω.\nEQUIVALENT SERIES The pure inductance component of a capacitor (see Figure 9-1). The amount of\nINDUCTANCE (ESL) inductance is determined to a large extent on the capacitor construction. In a buck\nregulator, this unwanted inductance causes voltage spikes to appear on the output.\nOUTPUT RIPPLE The AC component of the switching regulator output voltage. It is usually dominated by"
+  },
+  {
+    "faiss_index_id": 135,
+    "text": "VOLTAGE the output capacitor ESR multiplied by the inductor ripple current (ΔI ). The peak-to-\nIND\npeak value of this sawtooth ripple current can be determined by reading Section 8.1.3.\nCAPACITOR RIPPLE RMS value of the maximum allowable alternating current at which a capacitor can be\nCURRENT operated continuously at a specified temperature.\nSTANDBY Supply current required by the LM2576 when in the standby mode ( ON /OFF pin is"
+  },
+  {
+    "faiss_index_id": 136,
+    "text": "QUIESCENT driven to TTL-high voltage, thus turning the output switch OFF).\nCURRENT (I )\nSTBY\nINDUCTOR RIPPLE The peak-to-peak value of the inductor current waveform, typically a sawtooth\nCURRENT (ΔI ) waveform when the regulator is operating in the continuous mode (vs. discontinuous\nIND\nmode).\n28 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nwww.ti.com SNVS107G – JUNE 1999 – REVISED MARCH 2023"
+  },
+  {
+    "faiss_index_id": 137,
+    "text": "CONTINUOUS/ Relates to the inductor current. In the continuous mode, the inductor current is always\nDISCONTINUOUS flowing and never drops to zero, vs. the discontinuous mode, where the inductor\nMODE OPERATION current drops to zero for a period of time in the normal switching cycle.\nINDUCTOR The condition which exists when an inductor cannot hold any more magnetic flux.\nSATURATION When an inductor saturates, the inductor appears less inductive and the resistive"
+  },
+  {
+    "faiss_index_id": 138,
+    "text": "component dominates. Inductor current is then limited only by the DC resistance of the\nwire and the available source current.\nOPERATING VOLT The product (in VoIt•μs) of the voltage applied to the inductor and the time the voltage\nMICROSECOND is applied. This E•T constant is a measure of the energy handling capability of an\nop\nCONSTANT (E•T ) inductor and is dependent upon the type of core, the core area, the number of turns,\nop\nand the duty cycle.\n9.1.2 Development Support"
+  },
+  {
+    "faiss_index_id": 139,
+    "text": "op\nand the duty cycle.\n9.1.2 Development Support\n9.1.2.1 Custom Design with WEBENCH® Tools\nClick here to create a custom design using the WEBENCH Power Designer.\n1. Start by entering your V , V and I requirements.\nIN OUT OUT\n2. Optimize your design for key parameters like efficiency, footprint and cost using the optimizer dial and\ncompare this design with other possible solutions from Texas Instruments."
+  },
+  {
+    "faiss_index_id": 140,
+    "text": "3. WEBENCH Power Designer provides you with a customized schematic along with a list of materials with real\ntime pricing and component availability.\n4. In most cases, you will also be able to:\n• Run electrical simulations to see important waveforms and circuit performance,\n• Run thermal simulations to understand the thermal performance of your board,\n• Export your customized schematic and layout into popular CAD formats,\n• Print PDF reports for the design, and share your design with colleagues."
+  },
+  {
+    "faiss_index_id": 141,
+    "text": "9.2 Documentation Support\n9.2.1 Related Documentation\nFor related documentation, see the following:\nAN-1229 SIMPLE SWITCHER® PCB Layout Guidelines application report\n9.3 Support Resources\nTI E2E™ support forums are an engineer's go-to source for fast, verified answers and design help — straight\nfrom the experts. Search existing answers or ask your own question to get the quick design help you need."
+  },
+  {
+    "faiss_index_id": 142,
+    "text": "Linked content is provided \"AS IS\" by the respective contributors. They do not constitute TI specifications and do\nnot necessarily reflect TI's views; see TI's Terms of Use.\n9.4 Receiving Notification of Documentation Updates\nTo receive notification of documentation updates, navigate to the device product folder on ti.com. Click on\nSubscribe to updates to register and receive a weekly digest of any product information that has changed. For"
+  },
+  {
+    "faiss_index_id": 143,
+    "text": "change details, review the revision history included in any revised document.\n9.5 Trademarks\nTI E2E™ is a trademark of Texas Instruments.\nSIMPLE SWITCHER® and WEBENCH® are registered trademarks of Texas Instruments.\nAll trademarks are the property of their respective owners.\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 29\nProduct Folder Links: LM2576 LM2576HVLM2576, LM2576HV\nSNVS107G – JUNE 1999 – REVISED MARCH 2023 www.ti.com\n9.6 Electrostatic Discharge Caution"
+  },
+  {
+    "faiss_index_id": 144,
+    "text": "9.6 Electrostatic Discharge Caution\nThis integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled\nwith appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.\nESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may\nbe more susceptible to damage because very small parametric changes could cause the device not to meet its published"
+  },
+  {
+    "faiss_index_id": 145,
+    "text": "specifications.\n9.7 Glossary\nTI Glossary This glossary lists and explains terms, acronyms, and definitions.\n10 Mechanical, Packaging, and Orderable Information\nThe following pages include mechanical, packaging, and orderable information. This information is the most\ncurrent data available for the designated devices. This data is subject to change without notice and revision of\nthis document. For browser-based versions of this data sheet, refer to the left-hand navigation."
+  },
+  {
+    "faiss_index_id": 146,
+    "text": "30 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM2576 LM2576HVPACKAGE OPTION ADDENDUM\nwww.ti.com 9-Nov-2025\nPACKAGING INFORMATION\nOrderable part number Status Material type Package | Pins Package qty | Carrier RoHS Lead finish/ MSL rating/ Op temp (°C) Part marking\n(1) (2) (3) Ball material Peak reflow (6)\n(4) (5)\nLM2576HVS-12/NOPB Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576\nTO-263 (KTT) | 5 HVS-12 P+"
+  },
+  {
+    "faiss_index_id": 147,
+    "text": "TO-263 (KTT) | 5 HVS-12 P+\nLM2576HVS-12/NOPB.B Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576\nTO-263 (KTT) | 5 HVS-12 P+\nLM2576HVS-3.3/NOPB Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576\nTO-263 (KTT) | 5 HVS-3.3 P+\nLM2576HVS-3.3/NOPB.B Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576\nTO-263 (KTT) | 5 HVS-3.3 P+"
+  },
+  {
+    "faiss_index_id": 148,
+    "text": "TO-263 (KTT) | 5 HVS-3.3 P+\nLM2576HVS-5.0/NOPB Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576\nTO-263 (KTT) | 5 HVS-5.0 P+\nLM2576HVS-5.0/NOPB.B Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576\nTO-263 (KTT) | 5 HVS-5.0 P+\nLM2576HVS-ADJ/NOPB Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576\nTO-263 (KTT) | 5 HVS-ADJ P+"
+  },
+  {
+    "faiss_index_id": 149,
+    "text": "TO-263 (KTT) | 5 HVS-ADJ P+\nLM2576HVS-ADJ/NOPB.B Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576\nTO-263 (KTT) | 5 HVS-ADJ P+\nLM2576HVSX-12/NOPB Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576\nTO-263 (KTT) | 5 HVS-12 P+\nLM2576HVSX-12/NOPB.B Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576\nTO-263 (KTT) | 5 HVS-12 P+"
+  },
+  {
+    "faiss_index_id": 150,
+    "text": "TO-263 (KTT) | 5 HVS-12 P+\nLM2576HVSX-3.3/NOPB Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576\nTO-263 (KTT) | 5 HVS-3.3 P+\nLM2576HVSX-5.0/NOPB Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576\nTO-263 (KTT) | 5 HVS-5.0 P+\nLM2576HVSX-ADJ/NOPB Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576\nTO-263 (KTT) | 5 HVS-ADJ P+"
+  },
+  {
+    "faiss_index_id": 151,
+    "text": "TO-263 (KTT) | 5 HVS-ADJ P+\nLM2576HVT-12/LF03 Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM - LM2576HVT\n-12 P+\nLM2576HVT-12/LF03.B Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576HVT\n-12 P+\nLM2576HVT-12/NOPB Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576HVT\n-12 P+\nAddendum-Page 1PACKAGE OPTION ADDENDUM\nwww.ti.com 9-Nov-2025"
+  },
+  {
+    "faiss_index_id": 152,
+    "text": "www.ti.com 9-Nov-2025\nOrderable part number Status Material type Package | Pins Package qty | Carrier RoHS Lead finish/ MSL rating/ Op temp (°C) Part marking\n(1) (2) (3) Ball material Peak reflow (6)\n(4) (5)\nLM2576HVT-12/NOPB.B Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576HVT\n-12 P+\nLM2576HVT-15/LF03 Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM - LM2576HVT\n-15 P+"
+  },
+  {
+    "faiss_index_id": 153,
+    "text": "-15 P+\nLM2576HVT-15/LF03.B Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576HVT\n-15 P+\nLM2576HVT-15/NOPB Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576HVT\n-15 P+\nLM2576HVT-15/NOPB.B Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576HVT\n-15 P+\nLM2576HVT-5.0/LF02 Active Production TO-220 (NEB) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM - LM2576HVT\n-5.0 P+"
+  },
+  {
+    "faiss_index_id": 154,
+    "text": "-5.0 P+\nLM2576HVT-5.0/LF02.B Active Production TO-220 (NEB) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576HVT\n-5.0 P+\nLM2576HVT-5.0/LF03 Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM - LM2576HVT\n-5.0 P+\nLM2576HVT-5.0/LF03.B Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576HVT\n-5.0 P+\nLM2576HVT-5.0/NOPB Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576HVT\n-5.0 P+"
+  },
+  {
+    "faiss_index_id": 155,
+    "text": "-5.0 P+\nLM2576HVT-5.0/NOPB.B Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576HVT\n-5.0 P+\nLM2576HVT-ADJ/LF03 Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM - LM2576HVT\n-ADJ P+\nLM2576HVT-ADJ/LF03.B Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576HVT\n-ADJ P+\nLM2576HVT-ADJ/NOPB Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576HVT\n-ADJ P+"
+  },
+  {
+    "faiss_index_id": 156,
+    "text": "-ADJ P+\nLM2576HVT-ADJ/NOPB.B Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576HVT\n-ADJ P+\nLM2576S-12/NOPB Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576S\nTO-263 (KTT) | 5 -12 P+\nLM2576S-12/NOPB.B Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576S\nTO-263 (KTT) | 5 -12 P+\nAddendum-Page 2PACKAGE OPTION ADDENDUM\nwww.ti.com 9-Nov-2025"
+  },
+  {
+    "faiss_index_id": 157,
+    "text": "www.ti.com 9-Nov-2025\nOrderable part number Status Material type Package | Pins Package qty | Carrier RoHS Lead finish/ MSL rating/ Op temp (°C) Part marking\n(1) (2) (3) Ball material Peak reflow (6)\n(4) (5)\nLM2576S-3.3/NOPB Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576S\nTO-263 (KTT) | 5 -3.3 P+\nLM2576S-3.3/NOPB.B Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576S\nTO-263 (KTT) | 5 -3.3 P+"
+  },
+  {
+    "faiss_index_id": 158,
+    "text": "TO-263 (KTT) | 5 -3.3 P+\nLM2576S-5.0/NOPB Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576S\nTO-263 (KTT) | 5 -5.0 P+\nLM2576S-5.0/NOPB.B Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576S\nTO-263 (KTT) | 5 -5.0 P+\nLM2576S-ADJ/NOPB Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576S\nTO-263 (KTT) | 5 -ADJ P+"
+  },
+  {
+    "faiss_index_id": 159,
+    "text": "TO-263 (KTT) | 5 -ADJ P+\nLM2576S-ADJ/NOPB.B Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576S\nTO-263 (KTT) | 5 -ADJ P+\nLM2576SX-3.3/NOPB Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576S\nTO-263 (KTT) | 5 -3.3 P+\nLM2576SX-3.3/NOPB.B Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576S\nTO-263 (KTT) | 5 -3.3 P+"
+  },
+  {
+    "faiss_index_id": 160,
+    "text": "TO-263 (KTT) | 5 -3.3 P+\nLM2576SX-5.0/NOPB Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576S\nTO-263 (KTT) | 5 -5.0 P+\nLM2576SX-5.0/NOPB.B Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576S\nTO-263 (KTT) | 5 -5.0 P+\nLM2576SX-ADJ/NOPB Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576S\nTO-263 (KTT) | 5 -ADJ P+"
+  },
+  {
+    "faiss_index_id": 161,
+    "text": "TO-263 (KTT) | 5 -ADJ P+\nLM2576SX-ADJ/NOPB.B Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR -40 to 125 LM2576S\nTO-263 (KTT) | 5 -ADJ P+\nLM2576T-12/LF03 Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM - LM2576T\n-12 P+\nLM2576T-12/LF03.B Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-12 P+\nLM2576T-12/NOPB Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-12 P+"
+  },
+  {
+    "faiss_index_id": 162,
+    "text": "-12 P+\nLM2576T-12/NOPB.B Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-12 P+\nLM2576T-15/LF03 Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM - LM2576T\n-15 P+\nAddendum-Page 3PACKAGE OPTION ADDENDUM\nwww.ti.com 9-Nov-2025\nOrderable part number Status Material type Package | Pins Package qty | Carrier RoHS Lead finish/ MSL rating/ Op temp (°C) Part marking\n(1) (2) (3) Ball material Peak reflow (6)\n(4) (5)"
+  },
+  {
+    "faiss_index_id": 163,
+    "text": "(1) (2) (3) Ball material Peak reflow (6)\n(4) (5)\nLM2576T-15/LF03.B Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-15 P+\nLM2576T-15/NOPB Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-15 P+\nLM2576T-15/NOPB.B Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-15 P+\nLM2576T-3.3/LF03 Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM - LM2576T\n-3.3 P+"
+  },
+  {
+    "faiss_index_id": 164,
+    "text": "-3.3 P+\nLM2576T-3.3/LF03.B Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-3.3 P+\nLM2576T-3.3/NOPB Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-3.3 P+\nLM2576T-3.3/NOPB.B Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-3.3 P+\nLM2576T-5.0/LF02 Active Production TO-220 (NEB) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM - LM2576T\n-5.0 P+"
+  },
+  {
+    "faiss_index_id": 165,
+    "text": "-5.0 P+\nLM2576T-5.0/LF02.B Active Production TO-220 (NEB) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-5.0 P+\nLM2576T-5.0/LF03 Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM - LM2576T\n-5.0 P+\nLM2576T-5.0/LF03.B Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-5.0 P+\nLM2576T-5.0/NOPB Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-5.0 P+"
+  },
+  {
+    "faiss_index_id": 166,
+    "text": "-5.0 P+\nLM2576T-5.0/NOPB.B Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-5.0 P+\nLM2576T-ADJ/LF02 Active Production TO-220 (NEB) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM - LM2576T\n-ADJ P+\nLM2576T-ADJ/LF02.B Active Production TO-220 (NEB) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-ADJ P+\nLM2576T-ADJ/LF03 Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM - LM2576T\n-ADJ P+"
+  },
+  {
+    "faiss_index_id": 167,
+    "text": "-ADJ P+\nLM2576T-ADJ/LF03.B Active Production TO-220 (NDH) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-ADJ P+\nAddendum-Page 4PACKAGE OPTION ADDENDUM\nwww.ti.com 9-Nov-2025\nOrderable part number Status Material type Package | Pins Package qty | Carrier RoHS Lead finish/ MSL rating/ Op temp (°C) Part marking\n(1) (2) (3) Ball material Peak reflow (6)\n(4) (5)\nLM2576T-ADJ/NOPB Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-ADJ P+"
+  },
+  {
+    "faiss_index_id": 168,
+    "text": "-ADJ P+\nLM2576T-ADJ/NOPB.B Active Production TO-220 (KC) | 5 45 | TUBE Yes SN Level-1-NA-UNLIM -40 to 125 LM2576T\n-ADJ P+\n(1) Status: For more details on status, see our product life cycle.\n(2) Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,"
+  },
+  {
+    "faiss_index_id": 169,
+    "text": "reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional\nwaiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.\n(3) RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition."
+  },
+  {
+    "faiss_index_id": 170,
+    "text": "(4) Lead finish/Ball material: Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum\ncolumn width.\n(5) MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown."
+  },
+  {
+    "faiss_index_id": 171,
+    "text": "Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.\n(6) Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part."
+  },
+  {
+    "faiss_index_id": 172,
+    "text": "Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a \"~\" will appear on a part. If a line is indented then it is a continuation of the previous line and the two\ncombined represent the entire part marking for that device."
+  },
+  {
+    "faiss_index_id": 173,
+    "text": "Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and\nmakes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative"
+  },
+  {
+    "faiss_index_id": 174,
+    "text": "and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers\nand other limited information may not be available for release.\nIn no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis."
+  },
+  {
+    "faiss_index_id": 175,
+    "text": "Addendum-Page 5PACKAGE MATERIALS INFORMATION\nwww.ti.com 4-Sep-2025\nTAPE AND REEL INFORMATION\nREEL DIMENSIONS TAPE DIMENSIONS\nK0 P1\nW\nB0\nReel\nDiameter\nCavity A0\nA0 Dimension designed to accommodate the component width\nB0 Dimension designed to accommodate the component length\nK0 Dimension designed to accommodate the component thickness\nW Overall width of the carrier tape\nP1 Pitch between successive cavity centers\nReel Width (W1)\nQUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE\nSprocket Holes"
+  },
+  {
+    "faiss_index_id": 176,
+    "text": "Sprocket Holes\nQ1 Q2 Q1 Q2\nQ3 Q4 Q3 Q4 User Direction of Feed\nPocket Quadrants\n*All dimensions are nominal\nDevice Package Package Pins SPQ Reel Reel A0 B0 K0 P1 W Pin1\nType Drawing Diameter Width (mm) (mm) (mm) (mm) (mm) Quadrant\n(mm) W1 (mm)\nLM2576HVSX-12/NOPB DDPAK/ KTT 5 500 330.0 24.4 10.75 14.85 5.0 16.0 24.0 Q2\nTO-263\nLM2576HVSX-3.3/NOPB DDPAK/ KTT 5 500 330.0 24.4 10.75 14.85 5.0 16.0 24.0 Q2\nTO-263\nLM2576HVSX-5.0/NOPB DDPAK/ KTT 5 500 330.0 24.4 10.75 14.85 5.0 16.0 24.0 Q2\nTO-263"
+  },
+  {
+    "faiss_index_id": 177,
+    "text": "TO-263\nLM2576HVSX-ADJ/NOPB DDPAK/ KTT 5 500 330.0 24.4 10.75 14.85 5.0 16.0 24.0 Q2\nTO-263\nLM2576SX-3.3/NOPB DDPAK/ KTT 5 500 330.0 24.4 10.75 14.85 5.0 16.0 24.0 Q2\nTO-263\nLM2576SX-5.0/NOPB DDPAK/ KTT 5 500 330.0 24.4 10.75 14.85 5.0 16.0 24.0 Q2\nTO-263\nLM2576SX-ADJ/NOPB DDPAK/ KTT 5 500 330.0 24.4 10.75 14.85 5.0 16.0 24.0 Q2\nTO-263\nPack Materials-Page 1PACKAGE MATERIALS INFORMATION\nwww.ti.com 4-Sep-2025\nTAPE AND REEL BOX DIMENSIONS\nWidth (mm) H\nW L\n*All dimensions are nominal"
+  },
+  {
+    "faiss_index_id": 178,
+    "text": "Width (mm) H\nW L\n*All dimensions are nominal\nDevice Package Type Package Drawing Pins SPQ Length (mm) Width (mm) Height (mm)\nLM2576HVSX-12/NOPB DDPAK/TO-263 KTT 5 500 356.0 356.0 45.0\nLM2576HVSX-3.3/NOPB DDPAK/TO-263 KTT 5 500 356.0 356.0 45.0\nLM2576HVSX-5.0/NOPB DDPAK/TO-263 KTT 5 500 356.0 356.0 45.0\nLM2576HVSX-ADJ/NOPB DDPAK/TO-263 KTT 5 500 356.0 356.0 45.0\nLM2576SX-3.3/NOPB DDPAK/TO-263 KTT 5 500 356.0 356.0 45.0\nLM2576SX-5.0/NOPB DDPAK/TO-263 KTT 5 500 356.0 356.0 45.0"
+  },
+  {
+    "faiss_index_id": 179,
+    "text": "LM2576SX-ADJ/NOPB DDPAK/TO-263 KTT 5 500 356.0 356.0 45.0\nPack Materials-Page 2PACKAGE MATERIALS INFORMATION\nwww.ti.com 4-Sep-2025\nTUBE\nT - Tube\nheight L - Tube length\nW - Tube\nwidth\nB - Alignment groove width\n*All dimensions are nominal\nDevice Package Name Package Type Pins SPQ L (mm) W (mm) T (µm) B (mm)\nLM2576HVS-12/NOPB KTT TO-263 5 45 502 25 8204.2 9.19\nLM2576HVS-12/NOPB.B KTT TO-263 5 45 502 25 8204.2 9.19\nLM2576HVS-3.3/NOPB KTT TO-263 5 45 502 25 8204.2 9.19"
+  },
+  {
+    "faiss_index_id": 180,
+    "text": "LM2576HVS-3.3/NOPB.B KTT TO-263 5 45 502 25 8204.2 9.19\nLM2576HVS-5.0/NOPB KTT TO-263 5 45 502 25 8204.2 9.19\nLM2576HVS-5.0/NOPB.B KTT TO-263 5 45 502 25 8204.2 9.19\nLM2576HVS-ADJ/NOPB KTT TO-263 5 45 502 25 8204.2 9.19\nLM2576HVS-ADJ/NOPB.B KTT TO-263 5 45 502 25 8204.2 9.19\nLM2576HVT-12/LF03 NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576HVT-12/LF03.B NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576HVT-12/NOPB KC TO-220 5 45 502 33 6985 4.06\nLM2576HVT-12/NOPB.B KC TO-220 5 45 502 33 6985 4.06"
+  },
+  {
+    "faiss_index_id": 181,
+    "text": "LM2576HVT-15/LF03 NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576HVT-15/LF03.B NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576HVT-15/NOPB KC TO-220 5 45 502 33 6985 4.06\nLM2576HVT-15/NOPB.B KC TO-220 5 45 502 33 6985 4.06\nLM2576HVT-5.0/LF02 NEB TO-220 5 45 502 30 30048.2 10.74\nLM2576HVT-5.0/LF02.B NEB TO-220 5 45 502 30 30048.2 10.74\nLM2576HVT-5.0/LF03 NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576HVT-5.0/LF03.B NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576HVT-5.0/NOPB KC TO-220 5 45 502 33 6985 4.06"
+  },
+  {
+    "faiss_index_id": 182,
+    "text": "LM2576HVT-5.0/NOPB.B KC TO-220 5 45 502 33 6985 4.06\nLM2576HVT-ADJ/LF03 NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576HVT-ADJ/LF03.B NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576HVT-ADJ/NOPB KC TO-220 5 45 502 33 6985 4.06\nLM2576HVT-ADJ/NOPB.B KC TO-220 5 45 502 33 6985 4.06\nLM2576S-12/NOPB KTT TO-263 5 45 502 25 8204.2 9.19\nLM2576S-12/NOPB.B KTT TO-263 5 45 502 25 8204.2 9.19\nLM2576S-3.3/NOPB KTT TO-263 5 45 502 25 8204.2 9.19\nPack Materials-Page 3PACKAGE MATERIALS INFORMATION\nwww.ti.com 4-Sep-2025"
+  },
+  {
+    "faiss_index_id": 183,
+    "text": "www.ti.com 4-Sep-2025\nDevice Package Name Package Type Pins SPQ L (mm) W (mm) T (µm) B (mm)\nLM2576S-3.3/NOPB.B KTT TO-263 5 45 502 25 8204.2 9.19\nLM2576S-5.0/NOPB KTT TO-263 5 45 502 25 8204.2 9.19\nLM2576S-5.0/NOPB.B KTT TO-263 5 45 502 25 8204.2 9.19\nLM2576S-ADJ/NOPB KTT TO-263 5 45 502 25 8204.2 9.19\nLM2576S-ADJ/NOPB.B KTT TO-263 5 45 502 25 8204.2 9.19\nLM2576T-12/LF03 NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576T-12/LF03.B NDH TO-220 5 45 502 30 30048.2 10.74"
+  },
+  {
+    "faiss_index_id": 184,
+    "text": "LM2576T-12/NOPB KC TO-220 5 45 502 33 6985 4.06\nLM2576T-12/NOPB.B KC TO-220 5 45 502 33 6985 4.06\nLM2576T-15/LF03 NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576T-15/LF03.B NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576T-15/NOPB KC TO-220 5 45 502 33 6985 4.06\nLM2576T-15/NOPB.B KC TO-220 5 45 502 33 6985 4.06\nLM2576T-3.3/LF03 NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576T-3.3/LF03.B NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576T-3.3/NOPB KC TO-220 5 45 502 33 6985 4.06"
+  },
+  {
+    "faiss_index_id": 185,
+    "text": "LM2576T-3.3/NOPB KC TO-220 5 45 502 33 6985 4.06\nLM2576T-3.3/NOPB.B KC TO-220 5 45 502 33 6985 4.06\nLM2576T-5.0/LF02 NEB TO-220 5 45 502 30 30048.2 10.74\nLM2576T-5.0/LF02.B NEB TO-220 5 45 502 30 30048.2 10.74\nLM2576T-5.0/LF03 NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576T-5.0/LF03.B NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576T-5.0/NOPB KC TO-220 5 45 502 33 6985 4.06\nLM2576T-5.0/NOPB.B KC TO-220 5 45 502 33 6985 4.06\nLM2576T-ADJ/LF02 NEB TO-220 5 45 502 30 30048.2 10.74"
+  },
+  {
+    "faiss_index_id": 186,
+    "text": "LM2576T-ADJ/LF02.B NEB TO-220 5 45 502 30 30048.2 10.74\nLM2576T-ADJ/LF03 NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576T-ADJ/LF03.B NDH TO-220 5 45 502 30 30048.2 10.74\nLM2576T-ADJ/NOPB KC TO-220 5 45 502 33 6985 4.06\nLM2576T-ADJ/NOPB.B KC TO-220 5 45 502 33 6985 4.06\nPack Materials-Page 4PACKAGE OUTLINE\nKC0005A TO-220 - 16.51 mm max height\nSCALE 0.850\nTO-220\n4.83\nB\n4.06\n10.67 1.40\nAAAAA 8.89\n3.05 9.65 1.14\n6.86\n2.54\n6.86\n(6.275)\n5.69\n3.71-3.96 OPTIONAL 12.88\nCHAMFER 10.08\n16.51\n2X (R1) MAX"
+  },
+  {
+    "faiss_index_id": 187,
+    "text": "CHAMFER 10.08\n16.51\n2X (R1) MAX\nOPTIONAL 9.25\n7.67\n(4.25) C\nPIN 1 ID\n(OPTIONAL)\nNOTE 3\n14.73\n12.29\n1 5\n0.61\n1.02\n5X 0.30\n0.64 3.05\n0.25 C A B 2.03\n4X 1.7\n6.8\n1 5\n4215009/A 01/2017\nNOTES:\n1. All controlling linear dimensions are in inches. Dimensions in brackets are in millimeters. Any dimension in brackets or parenthesis are for\nreference only. Dimensioning and tolerancing per ASME Y14.5M.\n2. This drawing is subject to change without notice.\n3. Shape may vary per different assembly sites."
+  },
+  {
+    "faiss_index_id": 188,
+    "text": "3. Shape may vary per different assembly sites.\nwww.ti.comEXAMPLE BOARD LAYOUT\nKC0005A TO-220 - 16.51 mm max height\nTO-220\n4X (1.45)\nPKG\n0.07 MAX METAL 0.07 MAX\nALL AROUND (1.45) TYP ALL AROUND\nPKG\n(2)\n4X (2)\n1 5\n(R0.05) TYP SOLDER MASK FULL R\n(1.7) TYP OPENING, TYP TYP\n5X ( 1.2) (6.8)\nLAND PATTERN\nNON-SOLDER MASK DEFINED\nSCALE:12X\n4215009/A 01/2017\nwww.ti.comMECHANICAL DATA\nNDH0005D\nwww.ti.comMECHANICAL DATA\nKTT0005B\nTS5B (Rev D)\nBOTTOM SIDE OF PACKAGE\nwww.ti.comMECHANICAL DATA\nNEB0005B"
+  },
+  {
+    "faiss_index_id": 189,
+    "text": "www.ti.comMECHANICAL DATA\nNEB0005B\nwww.ti.comIMPORTANT NOTICE AND DISCLAIMER\nTI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE\nDESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”\nAND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY\nIMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD"
+  },
+  {
+    "faiss_index_id": 190,
+    "text": "PARTY INTELLECTUAL PROPERTY RIGHTS.\nThese resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate\nTI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable\nstandards, and any other safety, security, regulatory or other requirements."
+  },
+  {
+    "faiss_index_id": 191,
+    "text": "These resources are subject to change without notice. TI grants you permission to use these resources only for development of an\napplication that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license\nis granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully"
+  },
+  {
+    "faiss_index_id": 192,
+    "text": "indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.\nTI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on\nti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable"
+  },
+  {
+    "faiss_index_id": 193,
+    "text": "warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products\nare standard, catalog, general purpose devices.\nTI objects to and rejects any additional or different terms you may propose.\nIMPORTANT NOTICE\nCopyright © 2025, Texas Instruments Incorporated\nLast updated 10/2025"
+  }
+]

@@ -1,0 +1,1 @@
+Got the source files from: https://github.com/CRImier/MyKiCad/tree/master/Atmel/fan_controller

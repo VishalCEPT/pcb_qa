@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the /txd2 signal maintain a voltage of 0V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The /TXD2 signal is connected to the +3V3 rail through a 10k ohm pull-up resistor (R1), which prevents it from staying at 0V by default.",
+        "is_final": true
+    }
+}

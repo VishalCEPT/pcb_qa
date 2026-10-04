@@ -1,0 +1,13 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ESP32-C6-DEVKIT have a USB connection according to its datasheet?",
+    "tool_calls": {
+        "arguments": "{\"project_context\":{\"circuit_json_file\":\"./outputs/OPNhydro-r2/OPNhydro_r2.json\",\"datasheet_files\":[\"./outputs/OPNhydro-r2/datasheets/M1.pdf\"],\"spice_json_file\":\"./outputs/spice_circuits/OPNhydro_r2.json\"},\"component_ref\":\"M1\",\"question\":\"Does the component ESP32-C6-DEVKIT have a USB connection according to its datasheet?\"}",
+        "name": "get_relevant_context_from_question"
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "The datasheet context explicitly mentions that the ESP32-C6-DevKitC-1 features a USB Type-C to UART port for power and communication, as well as a USB-to-UART bridge.",
+        "is_final": true
+    }
+}

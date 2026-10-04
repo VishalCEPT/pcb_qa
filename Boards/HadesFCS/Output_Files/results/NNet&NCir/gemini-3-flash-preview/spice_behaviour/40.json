@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the vdda_fcc signal maintain a voltage of 0V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The netlist and SPICE file show VDDA_FCC is connected to the +3.3V rail via a ferrite bead (FB1) and a resistor (R21), and the SPICE simulation includes a 3.3V DC source for that rail.",
+        "is_final": true
+    }
+}

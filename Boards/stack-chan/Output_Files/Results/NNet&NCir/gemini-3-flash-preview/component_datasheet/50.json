@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component MAX3485 have a shutdown current of 2nA according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "According to the MAX3483-MAX3491 datasheet, the MAX3485 has a typical shutdown current of 2nA, but the maximum specified shutdown current is 1\u0001\u0005A.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component WS2812B have a maximum Vdd of 5.3V according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The WS2812B datasheet specifies a power supply voltage (VDD) range of +3.5V to +5.3V under its absolute maximum ratings and recommended operating conditions.",
+        "is_final": true
+    }
+}

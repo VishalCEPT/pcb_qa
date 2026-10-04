@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component U3 connected to SDA?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, pin 5 (PB0) of component U3 is connected to the 'SDA' net.",
+        "is_final": true
+    }
+}

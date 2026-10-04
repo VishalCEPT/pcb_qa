@@ -1,0 +1,14 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "Espressif Systems ESP32-C6-DevKitC-1 Development Board\nEspressif Systems ESP32-C6-DevKitC-1 Development Board is based on the ESP32-C6-WROOM-1\nmodule offering 8MB SPI flash. This development board integrates complete Wi-Fi®, BLUETOOTH® LE,\nZigbee®, and thread functions. The USB Type-C™ to UART Port is used for supplying power to the board,\nas well as for communication with the ESP32-C6 chip. This ESP32-C6-DevKitC-1 development board"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "features a USB-to-UART bridge, pin header, boot, and reset button. The development board operates at\n3.3V power on LED, and the power regulator converts the 5V supply to 3.3V output.\nFEATURES\n• Based on ESP32-C6-WROOM-1(U)\n• Integrates complete Wi-Fi, BLUETOOTH LE, Zigbee, and Thread functions\n• Pin header\n• Boot button\n• Reset button\n• 3.3V power on LED\n• 5V to 3.3V LDO\n• USB-to-UART bridge provides transfer rates up to 3Mbps\nAPPLICATIONS\n• Industrial automation\n• Health care"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "• Industrial automation\n• Health care\n• Consumer electronics\n• Smart home\n• Smart agriculture\n• POS machines\n• Service robot\n• Audio devices\n• Generic low-power IoT\no Sensor hubs\no Data loggers\nREQUIRED EQUIPMENT\n• USB-A to USB-C cable\n• Computer running Windows, Linux, or macOSBLOCK DIAGRAM\nDIMENSIONS (MM)"
+  }
+]

@@ -1,0 +1,1142 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "24CW16X/24CW32X/24CW64X/24CW128X\n2\n16K-128K I C Serial EEPROM with Software Write\nProtection Family Data Sheet\nDevice Selection Table\nPart Number Density Page Size VCC Range Package Temp. Ranges\n24CW16X 16-Kbit 32-byte 1.6-5.5 SN, OT, ST, MUY I\n24CW32X 32-Kbit 32-byte 1.6-5.5 SN, OT, ST, MUY I\n24CW64X 64-Kbit 32-byte 1.6-5.5 SN, OT, ST, MUY, CS0, CS1 I\n24CW128X 128-Kbit 32-byte 1.6-5.5 SN, OT, ST, MUY, CS0, CS1 I"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "Note: ‘X’ in the part number refers to the preset hardware slave address. Refer to Table3-2 for additional information.\nFeatures Package Types (not to scale)\n• 16/32/64/128-Kbit EEPROM: 8-Lead SOIC/TSSOP\n- Internally organized as one (Top View) 5-Lead SOT23\n2048/4096/8192/16384x8bit block (Top View)\nNC 1 8 VCC\n- Byte or page writes up to 32 bytes\nNC 2 7 NC SCL 1 5 NC\n- Byte or sequential reads within a block\nNC 3 6 SCL VSS 2\n- Self-timed write cycle (5ms maximum)"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "- Self-timed write cycle (5ms maximum)\n• High-Speed I2C Interface: Vss 4 5 SDA SDA 3 4 VCC\n- Industry standard: 1MHz, 400kHz and\n8-Pad UDFN\n100kHz\n(Top View)\n- Output slope control to eliminate ground\nbounce NC 1 8 VCC\n- Schmitt trigger inputs for noise suppression NC 2 7 NC\n• Programmable Hardware Slave Address Bits: NC 3 6 SCL\n- Configurable via the Hardware Address VSS 4 5 SDA\nRegister (HAR)\n• Versatile Data Protection Options: 4-Ball CSP (CS0)(1) 4-Ball CSP (CS1)(2)"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "- Software write protection via the Write (Top View) (Top View)\nProtection Register (WPR)\n• Operating Voltage Range of 1.6V to 5.5V\nVVCCCC VSS VVCCCC SCL\n• Low-Power CMOS Technology:\n- Write current: 1.0mA maximum at 5.5V\nSSCCLL SDA SSDDAA VSS\n- Read current: 1.0mA maximum at 5.5V,\n1MHz\nNote1: CS0 CSP ball pitch is 0.4x0.4mm.\n- Standby Current: 1µA at 5.5V\n2: CS1 CSP ball pitch is 0.5x0.4mm.\n• High Reliability:\n- More than one million erase/write cycles\nPin Function Table"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "Pin Function Table\n- Data retention: >200 years\n- ESD protection: >4000V\nName Function\n• RoHS Compliant\nVSS Ground\nPackages SDA Serial Data Pin\nSCL Serial Clock Input\n• 8-Lead SOIC, 8-Lead TSSOP, 8-Pad UDFN,\n5-Lead SOT-23 and Two 4-Ball CSP options VCC Supply Voltage\n 2018 Microchip Technology Inc. DS20005772B-page 124CW16X/24CW32X/24CW64X/24CW128X\nDescription The Write Protection Register (WPR) controls the valid\naddress ranges of the EEPROM array that can be writ-"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "The 24CW16X/24CW32X/24CW64X/24CW128X\nten. This allows the user to select the write protection\n(24CW Series) devices provide 16-128 Kbits of Serial\nbehavior to be configured for software write protection.\nEEPROM utilizing an I2C (2-wire) serial interface. The\nThe Hardware Address Register (HAR) controls the\n24CW Series is organized as 2048/4096/8192/16384\nthree hardware slave address bits. These bits deter-\nbytes of 8 bits each (2-16Kbytes). The 24CW Series is"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "mine which device addresses the 24CW Series will\noptimized for use in consumer and industrial applica-\nAcknowledge. Because the 24CW Series is a 4-pin\ntions, where reliable and dependable nonvolatile mem-\ndevice, the cascadable feature is controlled by the\nory storage is essential. The 24CW Series allows up to\neight devices to share a common I2C (2-wire) bus and is HAR.\ncapable of operation across a broad voltage range (1.6V Once the desired software write protection and hardware"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "to 5.5V). slave address bits are set, these Configuration registers\ncan be permanently locked, thereby preventing any\nThe 24CW Series contains a pair of programmable\nfurther changes to the device operation.\nConfiguration registers which allow certain device\nbehaviors to be modified. These registers are the Write\nProtection Register and the Hardware Address\nRegister.\nSystem Configuration Using Serial EEPROMs\nVCC\nt\nR(max)\nR =\nPUP(max) 0.8473  CL\nVCC – VOL(max)\nVCC R PUP(min) = IOL\nSCL\nSDA"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "VCC – VOL(max)\nVCC R PUP(min) = IOL\nSCL\nSDA\nI2C MCU\nVCC VCC VCC\nProgrammed Programmed Programmed\nas Slave 0 as Slave 1 as Slave 7\nSDA SDA SDA\n24CWXXXX 24CWXXXX 24CWXXXX\nVSS SCL VSS SCL VSS SCL\nVSS\n 2018 Microchip Technology Inc. DS20005772B-page 224CW16X/24CW32X/24CW64X/24CW128X\nBlock Diagram\nPower-on\nMemory Reset V\nSystem Control Generator CC\nModule\nHigh-Voltage\nGeneration Circuit\nWrite Protection\nRegister\nEEPROM Array\n1 page Address Register\nand Counter\nColumn Decoder\nSCL\nStart\nStop"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "and Counter\nColumn Decoder\nSCL\nStart\nStop\nData & ACK Detector\nD Input/Output Control\nOUT\nD\nV IN SDA\nSS\n 2018 Microchip Technology Inc. DS20005772B-page 3\nredoceD\nwoR\nHardware Address\nRegister\nData Register24CW16X/24CW32X/24CW64X/24CW128X\n1.0 ELECTRICAL CHARACTERISTICS\nAbsolute Maximum Ratings(†)\nVCC.............................................................................................................................................................................6.5V"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "All inputs and outputs w.r.t. VSS...................................................................................................................-0.6V to 6.5V\nStorage temperature...............................................................................................................................-65°C to +150°C\nAmbient temperature under bias...............................................................................................................-40°C to +85°C"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "ESD protection on all pins........................................................................................................................................>4kV\n† NOTICE: Stresses above those listed under ‘Maximum ratings’ may cause permanent damage to the device. This\nis a stress rating only and functional operation of the device at those or any other conditions above those indicated in"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "the operational listings of this specification is not implied. Exposure to maximum rating conditions for an extended\nperiod of time may affect device reliability.\nTABLE 1-1: DC CHARACTERISTICS\nElectrical Characteristics:\nDC CHARACTERISTICS\nIndustrial (I): VCC=1.6V to 5.5V TA=-40°C to +85°C\nParam.\nSymbol Characteristic Min. Max. Units Test Conditions\nNo.\nD1 VIH High-Level Input Voltage VCCX0.7 VCC + 0.5 V\nD2 VIL Low-Level Input Voltage -0.6 VCC X 0.3 V"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "D2 VIL Low-Level Input Voltage -0.6 VCC X 0.3 V\nD3 VOL Low-Level Output Voltage — 0.4 V IOL=2.1mA, VCC=3.0V\n— 0.2 V IOL=0.15mA, VCC=1.8V\nD4 ILI Input Leakage Current — ±1 µA VIN = VSS or VCC\nD5 ILO Output Leakage Current — ±1 µA VOUT=VSS or VCC\nD6 CINT Internal Capacitance — 7 pF TAMB=+25°C, FCLK=1MHz,\n(all inputs and outputs) VCC=5.5V (Note1)\nD7 ICCREAD Operating Current — 0.3 mA VCC=1.8V, FCLK=400 kHz\n— 1 mA VCC=5.5V, FCLK=1MHz\nD8 ICCWRITE Operating Current — 1 mA VCC=5.5V, FCLK=1MHz"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "D9 ICCS Standby Current — 0.5 µA SCL = SDA = VCC=1.8V\n— 1.0 µA SCL = SDA = VCC=5.5V\nNote 1: This parameter is not tested, but is ensured by characterization.\n 2018 Microchip Technology Inc. DS20005772B-page 424CW16X/24CW32X/24CW64X/24CW128X\nTABLE 1-2: AC CHARACTERISTICS\nElectrical Characteristics:\nAC CHARACTERISTICS\nIndustrial (I): VCC = 1.6V to 5.5V TA = -40°C to +85°C:\nParam.\nSymbol Characteristic Min. Max. Units Conditions\nNo.\n1 FCLK Clock Frequency — 1000 kHz 1.6V≤VCC≤5.5V"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "1 FCLK Clock Frequency — 1000 kHz 1.6V≤VCC≤5.5V\n2 THIGH Clock High Time 260 — ns 1.6V≤VCC≤5.5V\n3 TLOW Clock Low Time 500 — ns 1.6V≤VCC≤5.5V\n4 TR SDA and SCL Rise Time — 1000 ns 1.6V≤VCC≤5.5V (Note1)\n5 TF SDA and SCL Fall Time — 300 ns 1.6V≤VCC≤5.5V (Note1)\n6 THD:STA Start Condition Hold Time 260 — ns 1.6V≤VCC≤5.5V\n7 TSU:STA Start Condition Setup Time 260 — ns 1.6V≤VCC≤5.5V\n8 THD:DAT Data Input Hold Time 0 — ns (Note2)\n9 TSU:DAT Data Input Setup Time 50 — ns 1.6V≤VCC≤5.5V"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "10 TSU:STO Stop Condition Setup Time 260 — ns 1.6V≤VCC≤5.5V\n11 TAA Output Valid from Clock — 450 ns 1.6V≤VCC≤5.5V\n12 TBUF Bus Free Time: Bus Time 500 — ns 1.6V≤VCC≤5.5V\nmust be Free before a New\nTransmission can Start\n13 TSP Input Filter Spike Suppression — 50 ns (Note3)\n(SDA and SCL pins)\n14 TWC Write Cycle Time — 5 ms\n(byte or page)\nNote 1: The rise/fall times must be less than the specified maximums in order to achieve the maximum clock"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "frequencies specified for FCLK. Please refer to the I2C specification for applicable timings.\n2: As a transmitter, the device must provide an internal minimum delay time to bridge the undefined region of\nthe falling edge of SCL to avoid unintended generation of Start or Stop conditions.\n3: Not 100% tested. CB = total capacitance of one bus line in pF.\nFIGURE 1-1: BUS TIMING DATA\n5 4\n2 D4\nSCL\n7\n3\n8 9 10\n6\nSDA 13\nIn\n11 12\nSDA\nOut\nTABLE 1-3: EEPROM CELL PERFORMANCE CHARACTERISTICS"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "Operation Test Condition Min. Max. Units\nWrite Endurance(1) TA = 25°C, 1.6V VCC 5.5V 1,000,000 — Write Cycles\nData Retention(1) TA = 55°C 200 — Years\nNote1: Performance is determined through characterization and the qualification process.\n 2018 Microchip Technology Inc. DS20005772B-page 524CW16X/24CW32X/24CW64X/24CW128X\n1.1 Power-up Requirements and The system designer must ensure that instructions are\nReset Behavior not sent to the device until the VCC supply has reached"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "a stable value greater than, or equal to, the minimum\nDuring a power-up sequence, the VCC supplied to the VCC level. Additionally, once the VCC is greater than, or\n24CW Series should monotonically rise from VSS to the equal to, the minimum VCC level, the master must wait\nminimum VCC level, as specified in Table1-1, with a at least TPUP before sending the first command to the\nslew rate no faster than 0.1V/µs. device. See Table1-4 for the values associated with\nthese power-up parameters."
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "these power-up parameters.\n1.1.1 DEVICE RESET\nIf an event occurs in the system where the VCC level\nTo prevent write operations or other spurious events supplied to the 24CW Series drops below the maxi-\nfrom happening during a power-up sequence, the mum VPOR level specified, it is recommended that a\n24CW Series includes a Power-on Reset (POR) circuit. full-power cycle sequence be performed by first driving"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "Upon power-up, the device will not respond to any the VCC pin to VSS, waiting at least the minimum TPOFF\ncommands until the VCC level crosses the internal volt- time and then perform a new power-up sequence\nage threshold (VPOR) that brings the device out of in compliance with the requirements defined in\nReset and into Standby mode. Section1.1 “Power-up Requirements and Reset\nBehavior”.\nTABLE 1-4: POWER-UP CONDITIONS\nSymbol Parameter Min. Max. Units"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "Symbol Parameter Min. Max. Units\nTPUP Time Required after VCC is Stable before the Device can Accept Commands 100 — µs\nVPOR Power-on Reset Threshold Voltage — 1.5 V\nTPOFF Minimum Time at VCC=0V between Power Cycles 1 — ms\n 2018 Microchip Technology Inc. DS20005772B-page 624CW16X/24CW32X/24CW64X/24CW128X\n2.0 PIN DESCRIPTIONS\nThe descriptions of the pins are listed in Table2-1.\nTABLE 2-1: PIN FUNCTION TABLE\n8-Lead 8-Lead 5-Lead 8-Lead 4-Ball CSP 4-Ball CSP\nName Function"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "Name Function\nSOIC TSSOP SOT23 UDFN(1) (CS0)(2) (CS1)(3)\nNC 1 1 — 1 — — No Connect\nNC 2 2 — 2 — — No Connect\nNC 3 3 — 3 — — No Connect\nVSS 4 4 2 4 A2 B2 Ground\nSDA 5 5 3 5 B2 B1 Serial Data\nSCL 6 6 1 6 B1 A2 Serial Clock\nNC 7 7 5 7 — — No Connect\nVCC 8 8 4 8 A1 A1 Device Power Supply\nNote 1: The exposed pad on this package can be connected to VSS or left floating.\n2: CS0 CSP ball pitch is 0.4x0.4mm.\n3: CS1 CSP ball pitch is 0.5x0.4mm.\n2.1 Serial Data (SDA) 2.2 Serial Clock (SCL)"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "2.1 Serial Data (SDA) 2.2 Serial Clock (SCL)\nThis is a bidirectional pin used to transfer addresses This input is used to synchronize the data transfer from\nand data into and out of the device. It is an open-drain and to the device.\nterminal, therefore, the SDA bus requires a pull-up\nresistor to VCC (typical 10 kΩ for 100 kHz and 2 kΩ for\n400kHz and 1 MHz).\nFor normal data transfer, SDA is allowed to change\nonly during SCL low. Changes during SCL high are"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "only during SCL low. Changes during SCL high are\nreserved for indicating the Start and Stop conditions.\n 2018 Microchip Technology Inc. DS20005772B-page 724CW16X/24CW32X/24CW64X/24CW128X\n3.0 MEMORY ORGANIZATION 3.3 Device Addressing\nCommunication with the 24CW Series begins with an\n3.1 EEPROM Organization\n8-bit device address byte, comprised of a 7-bit slave\naddress and a Read/Write Select (R/W) bit. Since\nThe 24CW Series is internally organized as"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "The 24CW Series is internally organized as\nmultiple slave devices can reside on the serial bus,\n64/128/256/512pages of 32 bytes each, depending on\neach slave device must have its own unique device\nthe density.\naddress, programmed in the HAR, so that the master\ncan access each device independently.\n3.2 Device Configuration Registers\nThe 7-bit slave address is constructed using two\nThe 24CW Series contains two Configuration registers groups of bits. The first four bits contain the Device"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "that modulate device operation and/or report on the Type Identifier, followed by three bits containing the\ncurrent status of the device. These registers are: hardware slave address bits.\n• Write Protection Register (WPR) The 24CW Series will respond to only specific Device\n• Hardware Address Register (HAR) Type Identifiers, as shown in Section3.3.1 “Valid\nDevice Address Byte Inputs”.\nOnce the device behavior is set as desired, the Config-"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "uration registers can be permanently locked (or set to The 3-bit hardware slave address is comprised of\nread-only), thereby preventing any subsequent bitsA2, A1 and A0. These bits can be used to expand\nchanges. the address space by allowing up to eight devices with\nthe same Device Type Identifiers on the bus. These\n3.2.1 WRITE PROTECTION REGISTER hardware slave address bits must correlate with the\nThe Write Protection Register (WPR) allows for modifi- values programmed in the HAR."
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "cation of the device write protection behavior. Refer to The device will respond to all valid device address byte\nSection8.2 “Write Protection Register” for additional combinations that it receives.\ninformation of the WPR.\n3.3.1 VALID DEVICE ADDRESS BYTE\n3.2.2 HARDWARE ADDRESS REGISTER INPUTS\nThe Hardware Address Register (HAR) allows for The 24CW Series will respond to the Device Type\nmodification of the hardware slave address bits in the Identifiers, as shown in Table3-1."
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "device address byte that the device will Acknowledge.\nRefer to Section8.3 “Hardware Address Register” 3.3.1.1 Preset Slave Addresses\nfor additional information on the HAR.\nThe 24CW Series is preset with a specific slave\naddress. The preset slave address bits are embedded\nin the base part number, as shown in Table3-2.\nTABLE 3-1: TABLE OF VALID DEVICE ADDRESS BYTES\nRead/Write\nDevice Type Identifier Hardware Slave Address\nSelect\nAccess Region\nBit 7 Bit 6 Bit 5 Bit 4 Bit 3 Bit 2 Bit 1 Bit 0"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "Bit 7 Bit 6 Bit 5 Bit 4 Bit 3 Bit 2 Bit 1 Bit 0\nEEPROM 1 0 1 0 A2 A1 A0 R/W\nConfiguration Registers 1 0 1 0 A2 A1 A0 R/W\nNote: The access region is selected according to bit 7 of the first word address byte. Refer to Section3.3.2\n“Word Address Bytes” for additional information.\n 2018 Microchip Technology Inc. DS20005772B-page 824CW16X/24CW32X/24CW64X/24CW128X\nTABLE 3-2: DEVICE PRESET SLAVE 3.3.1.2 Read/Write Select Bit\nADDRESS\nThe eighth bit (bit 0) of the device address byte is the"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "Hardware Slave Read/Write Select (R/W) bit. A read operation is\nPart Number Series Address Bits initiated if this bit is a logic ‘1’ and a write operation is\n24CWXXXX initiated if this bit is a logic ‘0’.\nA2 A1 A0\nUpon the successful comparison of the device address\n24CWXXX0(1) 0 0 0 byte, the 24CW Series will respond. If a valid compari-\n24CWXXX1(1,2) 0 0 1 son is not made, the device will not respond and return\n24CWXXX2(1,2) 0 1 0 to a standby state."
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "24CWXXX2(1,2) 0 1 0 to a standby state.\n24CWXXX3(1,2) 0 1 1 3.3.2 WORD ADDRESS BYTES\n24CWXXX4(1,2) 1 0 0\nTwo 8-bit word address bytes are transmitted to the\n24CWXXX5(1,2) 1 0 1 device immediately following the device address byte.\n24CWXXX6(1,2) 1 1 0 The first word address byte contains the Most Signifi-\n24CWXXX7(1,2) 1 1 1 cant bits (MSbs) of the memory array word address to\nspecify which location in the EEPROM to start reading\nNote 1: ‘XXX’ in the part number varies depending"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "Note 1: ‘XXX’ in the part number varies depending\nor writing. Note that the number of word address bits\non the density.\ndepends on the density. Refer to Table3-3 for details.\n2: Contact your local sales representative for\nhardware slave address availability. When accessing the memory array, it is required that\nbit7 of the word address byte be set to a logic ‘0’.\nWhen accessing the Configuration registers, it is\nrequired that bit 7 of the first word address byte be set"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "to a logic ‘1’. Refer to Table3-3 for details.\nNext, the second word address byte is sent to the device\nwhich provides the remaining eight bits of the word\naddress (A7 through A0). Refer to Table3-4 for details.\nTABLE 3-3: FIRST WORD ADDRESS BYTE\nMemory Region Bit 7 Bit 6 Bit 5 Bit 4 Bit 3 Bit 2 Bit 1 Bit 0\n16-Kbit EEPROM 0 x x x x A10 A9 A8\n32-Kbit EEPROM 0 x x x A11 A10 A9 A8\n64-Kbit EEPROM 0 x x A12 A11 A10 A9 A8\n128-Kbit EEPROM 0 x A13 A12 A11 A10 A9 A8"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "128-Kbit EEPROM 0 x A13 A12 A11 A10 A9 A8\nConfiguration Registers 1 x x x x x x x\nTABLE 3-4: SECOND WORD ADDRESS BYTE\nMemory Region Bit 7 Bit 6 Bit 5 Bit 4 Bit 3 Bit 2 Bit 1 Bit 0\n16-Kbit EEPROM A7 A6 A5 A4 A3 A2 A1 A0\n32-Kbit EEPROM A7 A6 A5 A4 A3 A2 A1 A0\n64-Kbit EEPROM A7 A6 A5 A4 A3 A2 A1 A0\n128-Kbit EEPROM A7 A6 A5 A4 A3 A2 A1 A0\nConfiguration Registers(1) x x x x x x x x\nNote 1: When accessing the Configuration registers, the second word address byte must be transmitted to the"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "device despite containing only don’t care values.\n 2018 Microchip Technology Inc. DS20005772B-page 924CW16X/24CW32X/24CW64X/24CW128X\n4.0 FUNCTIONAL DESCRIPTION 5.4 Data Valid (D)\nThe 24CW Series supports a bidirectional 2-wire bus The state of the data line represents valid data when,\nand data transmission protocol. A device that sends after a Start condition, the data line is stable for the\ndata onto the bus is defined as a transmitter and a duration of the high period of the clock signal."
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "device receiving data as a receiver. The bus must be\nThe data on the line must be changed during the low\ncontrolled by a master which generates the Serial\nperiod of the clock signal. There is one bit of data per\nClock (SCL), controls the bus access and generates\nclock pulse.\nthe Start and Stop conditions, while the 24CW Series\nEach data transfer is initiated with a Start condition and\nworks as a slave. Both master and slave can operate\nterminated with a Stop condition. The number of the"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "as a transmitter or receiver, but the master determines\ndata bytes transferred between the Start and Stop\nwhich mode is activated.\nconditions is determined by the master.\n5.0 BUS CHARACTERISTICS\n5.5 Acknowledge\nThe following bus protocol has been defined:\nEach receiving device, when addressed, is obliged to\n• Data transfer may be initiated only when the bus generate an Acknowledge signal after the reception of\nis not busy. each byte. The master must generate an extra clock"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "• During data transfer, the data line must remain pulse, which is associated with this Acknowledge bit.\nstable whenever the clock line is high. Changes in See Figure5-2 for Acknowledge timing.\nthe data line, while the clock line is high, will be\nNote: The 24CW Series does not generate\ninterpreted as a Start or Stop condition.\nany Acknowledge bits if an internal\nAccordingly, the following bus conditions have been programming cycle is in progress.\ndefined (Figure5-1)."
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "defined (Figure5-1).\nA device that Acknowledges must pull down the SDA\nline during the Acknowledge clock pulse, in such a way,\n5.1 Bus Not Busy (A)\nthat the SDA line is stable low during the high period of\nBoth data and clock lines remain high. the Acknowledge related clock pulse. Of course, setup\nand hold times must be taken into account. During read\n5.2 Start Data Transfer (B) operations, the master must signal an end of data to the\nslave by NOT generating an Acknowledge (NACK) bit"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "slave by NOT generating an Acknowledge (NACK) bit\nA high-to-low transition of the SDA line while the clock on the last byte that has been clocked out of the slave.\n(SCL) is high determines a Start condition. All In this case, the slave (24CW Series) will leave the data\ncommands must be preceded by a Start condition. line high to enable the master to generate the Stop\ncondition.\n5.3 Stop Data Transfer (C)\nA low-to-high transition of the SDA line while the clock"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "(SCL) is high determines a Stop condition. All\noperations must end with a Stop condition.\nFIGURE 5-1: DATA TRANSFER SEQUENCE ON THE SERIAL BUS\n(A) (B) (D) (D) (C) (A)\nSCL\nSDA\nStart Address or Data Stop\nCondition Acknowledge Allowed Condition\nValid to Change\n 2018 Microchip Technology Inc. DS20005772B-page 1024CW16X/24CW32X/24CW64X/24CW128X\nFIGURE 5-2: ACKNOWLEDGE TIMING\nAcknowledge\nBit\nSCL\n1 2 3 4 5 6 7 8 9 1 2 3\nSDA Data from Transmitter Data from Transmitter"
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "SDA Data from Transmitter Data from Transmitter\nTransmitter must release the SDA line at this point, Receiver must release the SDA line\nallowing the receiver to pull the SDA line low, to at this point so the transmitter can\nAcknowledge the previous eight bits of data. continue sending data.\n5.6 Standby Mode 5.7 Software Reset\nThe 24CW Series features a low-power Standby mode After an interruption in protocol, power loss or system"
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "which is enabled when any one of the following occurs: Reset, any 2-wire device can be protocol reset by\nclocking SCL until SDA is released by the EEPROM\n• A valid power-up sequence is performed (see\nand goes high. The number of clock cycles until SDA is\nSection1.1 “Power-up Requirements and\nreleased by the EEPROM will vary. The Software Reset\nReset Behavior”).\nsequence should not take more than nine dummy clock\n• A Stop condition is received by the device unless"
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "cycles. Note that the Software Reset sequence will not\nit initiates an internal write cycle (see Section6.0 interrupt the internal write cycle and only resets the I2C\n“Write Operations”).\ninterface.\n• At the completion of an internal write cycle (see\nOnce the Software Reset sequence is complete, new\nSection6.0 “Write Operations”).\nprotocol can be sent to the device by sending a Start\n• An unsuccessful match of the Device Type Identi-\ncondition, followed by the protocol. Figure5-3"
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "condition, followed by the protocol. Figure5-3\nfier or hardware slave address in the device\nillustrates the Software Reset sequence.\naddress byte occurs (see Section3.3 “Device\nAddressing”). In the event that the device is still non-responsive, or\nremains active on the SDA bus, a power cycle must be\n• The master does not Acknowledge the receipt of\nused to reset the device (see Section1.1.1 “Device\ndata read out from the device; instead, it sends a\nReset”).\nNACK response.(see Section7.0 “Read"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "Reset”).\nNACK response.(see Section7.0 “Read\nOperations”).\nFIGURE 5-3: SOFTWARE RESET\nDummy Clock Cycles\n1 2 3 8 9\nSCL\nSDA Released Device is\nby EEPROM Software Reset\nSDA\n 2018 Microchip Technology Inc. DS20005772B-page 1124CW16X/24CW32X/24CW64X/24CW128X\n6.0 WRITE OPERATIONS Upon receipt of the proper device address and word\naddress bytes, the EEPROM will send an Acknowl-\nAll write operations for the 24CW Series begin with the edge. The device will then be ready to receive the first"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "master sending a Start condition, followed by a device 8-bit data byte. Following the receipt of the data byte,\naddress byte with the R/W bit set to a logic ‘0’, and then the EEPROM will respond with an Acknowledge. The\nby the word address bytes. The data value(s) to be addressing device, such as a master, must then termi-\nwritten to the device immediately follows the word nate the write operation with a Stop condition. At that\naddress bytes. time, the EEPROM will enter an internally self-timed"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "write cycle, which will be completed within TWC, while\n6.1 Byte Write the data byte is being programmed into the nonvolatile\nEEPROM. All inputs are disabled during this write cycle\nThe 24CW Series supports the writing of a single 8-bit\nand the EEPROM will not respond until the write\nbyte. Selecting a data byte in the 24CW Series requires\noperation is complete.\na two-byte word address with the MSb set to a logic ‘0’."
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "Note that some word address bits are ignored and the If an attempt is made to write to a write-protected\nnumber of ignored bits depends on the device density. portion of the array, no data will be written and the\ndevice will immediately accept a new command.\nFIGURE 6-1: BYTE WRITE\n1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9\nSCL\nDevice Address Byte Word Address – Byte 0\nSDA 1 0 1 0 A2 A1 A0 0 0 0 x A13 A12 A11 A10 A9 A8 0\nMSB MSB\nStart\nACK ACK\nby\nfrom from\nMaster\nSlave Slave"
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "Start\nACK ACK\nby\nfrom from\nMaster\nSlave Slave\n1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9\nWord Address – Byte 1 Data Byte\nA7 A6 A5 A4 A3 A2 A1 A0 0 D7 D6 D5 D4 D3 D2 D1 D0 0\nMSB MSB\nACK ACK Stop\nfrom from by\nSlave Slave Master\nNote 1: The A13, A12 and A11 word address bits are don’t care bits on the 24CW16X.\n2: The A13 and A12 word address bits are don’t care bits on the 24CW32X.\n3: The A13 word address bit is a don’t care bit on the 24CW64X."
+  },
+  {
+    "faiss_index_id": 53,
+    "text": " 2018 Microchip Technology Inc. DS20005772B-page 1224CW16X/24CW32X/24CW64X/24CW128X\n6.2 Page Write When the incremented word address reaches the page\nboundary, the address counter will roll over to the\nA page write operation allows up to 32 bytes to be\nbeginning of the same page.\nwritten in the same write cycle, provided all bytes are in\nthe same page of the memory array. Partial page writes\nNote: Page write operations are limited to writing\nof less than 32 bytes are also allowed."
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "of less than 32 bytes are also allowed.\nbytes within a single physical page,\nA page write is initiated the same way as a byte write, regardless of the number of bytes actually\nbut the master does not send a Stop condition after the being written. Physical page boundaries\nfirst data byte is clocked in. Instead, after the EEPROM start at addresses that are integer multiples\nAcknowledges receipt of the first data byte, the master of the page buffer size (or ‘page size’) and"
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "can transmit up to 31 additional data bytes. The end at the addresses that are integer\nEEPROM will respond with an ACK after each data multiples of [page size – 1]. If a page write\nbyte is received. operation attempts to write across a physi-\ncal page boundary, the result is that the\nOnce all data to be written has been sent to the device,\ndata wraps around to the beginning of the\nthe master must issue a Stop condition (see\ncurrent page (overwriting data previously"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "current page (overwriting data previously\nFigure6-2). Once the Stop condition is received, an\nstored there), instead of being written to the\ninternal write cycle will begin.\nnext page as might be expected. It is there-\nIf an attempt is made to write to a write-protected fore necessary for the application software\nportion of the array, no data will be written and the to prevent page write operations that would\ndevice will immediately accept a new command. attempt to cross a page boundary."
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "The lower five bits of the word address are internally\nincremented following the receipt of each data byte.\nThe higher order address bits are not incremented and\nretain the memory page location.\nFIGURE 6-2: PAGE WRITE\n1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9\nSCL\nDevice Address Byte Word Address – Byte 0\nSDA 1 0 1 0 A2 A1 A0 0 0 0 x A13A12A11A10 A9 A8 0\nMSB MSB MSB\nStart by\nMaster ACK ACK\nfrom from\nSlave Slave\n1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9\nData Byte (n+x), Max."
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "Data Byte (n+x), Max.\nWord Address – Byte 1 Data Byte (n)\nof 32 without Roll Over\nA7 A6 A5 A4 A3 A2 A1 A0 0 D7 D6 D5 D4 D3 D2 D1 D0 0 D7 D6 D5 D4 D3 D2 D1 D0 0\nMSB MSB MSB\nStop by\nACK ACK ACK Master\nfrom from from\nSlave Slave Slave\nNote1: The A13, A12 and A11 word address bits are don’t care bits on the 24CW16X.\n2: The A13 and A12 word address bits are don’t care bits on the 24CW32X.\n3: The A13 word address bit is a don’t care bit on the 24CW64X."
+  },
+  {
+    "faiss_index_id": 59,
+    "text": " 2018 Microchip Technology Inc. DS20005772B-page 1324CW16X/24CW32X/24CW64X/24CW128X\n6.3 Write Cycle Timing\nThe length of the self-timed write cycle, or TWC, is\ndefined as the amount of time from the Stop condition\nthat begins the internal write operation, to the Start con-\ndition of the first device address byte sent to the 24CW\nSeries that it subsequently responds to with an ACK\n(see Figure6-3).\nDuring the internally self-timed write cycle, any"
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "During the internally self-timed write cycle, any\nattempts to read from, or write to, the memory array will\nnot be processed.\nFIGURE 6-3: WRITE CYCLE TIMING\n8 9 9\nSCL\nData Word n\nSDA D0 ACK ACK\nFirst Acknowledge from the device to\na valid device address sequence after\nwrite cycle is initiated. The minimum\nTWC can only be determined through\nTWC the use of an ACK polling routine.\nStop Start Stop\nCondition Condition Condition"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "Stop Start Stop\nCondition Condition Condition\n 2018 Microchip Technology Inc. DS20005772B-page 1424CW16X/24CW32X/24CW64X/24CW128X\n6.4 Acknowledge Polling FIGURE 6-4: ACKNOWLEDGE\nPOLLING FLOW\nSince the device will not Acknowledge during a write\ncycle, this can be used to determine when the cycle is\ncomplete (this feature can be used to maximize bus Send\nthroughput). Once the Stop condition for a write opera- Write Operation\ntion has been issued from the master, the device initiates"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "the internally timed write cycle. ACK polling can be\ninitiated immediately. This involves the master sending a\nSend Stop\nStart condition, followed by the device address byte for a\nCondition to\nwrite operation (R/W = 0). If the device is still busy with Initiate Write Cycle\nthe write cycle, then a NACK will be returned. If a NACK\nis returned, then the Start bit and device address byte\nmust be resent. If the cycle is complete, then the device"
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "will return the ACK and the master can then proceed Send Start\nwith the next read or write operation. See Figure6-4 for\nthe flow diagram.\nNote: If the user is polling after writing to the Send Device Address\nHardware Address Register (HAR), the byte with R/W = 0\nuser must send the new hardware slave\naddress to determine whether the write\ncycle is complete. If the 24CW Series\nDid Device\nNo\ndoesn’t ACK the new hardware slave Acknowledge\naddress after the maximum write cycle (ACK = 0)?"
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "address after the maximum write cycle (ACK = 0)?\ntime (TWC), the write to the HAR was not\nsuccessful. Yes\nNext\nOperation\n 2018 Microchip Technology Inc. DS20005772B-page 1524CW16X/24CW32X/24CW64X/24CW128X\n6.5 Write Protection\nThe 24CW Series write protection is controlled via the\nWrite Protection Register (WPR). The 24CW Series is\nsegmented into four different memory zones, which\nallows the user to select which of the zones will be soft-\nware write-protected. The protection behavior can be"
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "made permanent by locking the Configuration registers.\nFor additional information on the Write Protection\nRegister, see Section8.2 “Write Protection Register”.\nTABLE 6-1: 24CW SERIES SOFTWARE WRITE PROTECTION\nProtected Address Range\nProtection Level\n24CW16X 24CW32X 24CW64X 24CW128X\nUpper 1/4 0600h-07FFh 0C00h-0FFFh 1800h-1FFFh 3000h-3FFFh\nUpper 1/2 0400h-07FFh 0800h-0FFFh 1000h-1FFFh 2000h-3FFFh\nUpper 3/4 0200h-07FFh 0400h-0FFFh 0800h-1FFFh 1000h-3FFFh"
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "Entire Array 0000h-07FFh 0000h-0FFFh 0000h-1FFFh 0000h-3FFFh\n 2018 Microchip Technology Inc. DS20005772B-page 1624CW16X/24CW32X/24CW64X/24CW128X\n7.0 READ OPERATIONS A current address read operation will output data\naccording to the location of the internal Address\nRead operations are initiated the same way as write Pointer. This is initiated with a Start condition, followed\noperations, with the exception that the Read/Write by a valid device address byte with the R/W bit set to"
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "Select (R/W) bit in the device address byte must be a logic ‘1’. The device will ACK this sequence and the\nlogic‘1’. There are three read operations: current address data byte is serially clocked out on the\n• Current Address Read SDA line. All types of read operations will be terminated\nif the master does not respond with an ACK (it NACKs)\n• Random Address Read\nduring the ninth clock cycle, which will force the device\n• Sequential Read\ninto Standby mode. After the NACK response, the"
+  },
+  {
+    "faiss_index_id": 68,
+    "text": "into Standby mode. After the NACK response, the\nmaster may send a Stop condition to complete the\n7.1 Current Address Read\nprotocol or it can send a Start condition to begin the\nnext sequence.\nThe 24CW Series contains an internal Address Pointer\nthat maintains the word address of the last byte\naccessed, internally incremented by one. Therefore, if\nthe previous read access was to address ‘n’ (n is any\nlegal address), the next current address read operation\nwould access data from address n+1."
+  },
+  {
+    "faiss_index_id": 69,
+    "text": "would access data from address n+1.\nFIGURE 7-1: CURRENT ADDRESS READ\n1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9\nSCL\nDevice Address Byte Data Byte (n)\nSDA 1 0 1 0 A2 A1 A0 1 0 D7 D6 D5 D4 D3 D2 D1 D0 1\nMSB MSB\nStart ACK NACK\nStop\nby from from\nby\nMaster Slave Master\nMaster\n 2018 Microchip Technology Inc. DS20005772B-page 1724CW16X/24CW32X/24CW64X/24CW128X\n7.2 Random Read\nRandom read operations allow the master to access\nany memory location in a random manner. To perform"
+  },
+  {
+    "faiss_index_id": 70,
+    "text": "this type of read operation, first the word address must\nbe set. This is done by sending the word address, with\nthe MSb set to logic ‘0’, to the 24CW Series as part of\na write operation (R/W bit set to ‘0’). After the word\naddress is sent, the master generates a Start condition\nfollowing the Acknowledge. This terminates the write\noperation, but not before the internal Address Pointer is\nset. Then, the master issues the device address byte\nagain, but with the R/W bit set to a ‘1’. The 24CW"
+  },
+  {
+    "faiss_index_id": 71,
+    "text": "Series will then issue an Acknowledge and transmit the\n8-bit data byte. The master will not Acknowledge the\ntransfer, but does generate a Stop condition which\ncauses the 24CW Series to discontinue transmission\n(Figure7-2). After a random read operation, the\ninternal Address Pointer will point to the last word\naddress location, incremented by one.\nFIGURE 7-2: RANDOM READ\n1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9\nSCL\nDevice Address Byte Word Address – Byte 0 Word Address – Byte 1"
+  },
+  {
+    "faiss_index_id": 72,
+    "text": "SDA 1 0 1 0 A2 A1 A0 0 0 0 x A13A12A11A10A9 A8 0 A7 A6 A5 A4 A3 A2 A1 A0 0\nMSB MSB MSB\nStart by\nMaster ACK ACK ACK\nfrom from from\nSlave Slave Slave\n1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9\nDevice Address Byte Data Byte n\n1 0 1 0 A2 A1 A0 1 0 D7 D6 D5 D4 D3 D2 D1 D0 1\nMSB MSB\nStart by Stop by\nMaster ACK NACK Master\nfrom from\nSlave Slave\nNote1: The A13, A12 and A11 word address bits are don’t care bits on the 24CW16X.\n2: The A13, A12 word address bits are don’t care bits on the 24CW32X."
+  },
+  {
+    "faiss_index_id": 73,
+    "text": "3: The A13 word address bit is a don’t care bit on the 24CW64X.\n 2018 Microchip Technology Inc. DS20005772B-page 1824CW16X/24CW32X/24CW64X/24CW128X\n7.3 Sequential Read All types of read operations will be terminated if the\nmaster does not respond with an ACK (it NACKs)\nA sequential read is initiated by either a current\nduring the ninth clock cycle, which will force the device\naddress read or a random read. After the master\ninto Standby mode. After the NACK response, the"
+  },
+  {
+    "faiss_index_id": 74,
+    "text": "into Standby mode. After the NACK response, the\nreceives a data byte, the master responds with an\nmaster may send a Stop condition to complete the\nAcknowledge. As long as the EEPROM receives an\nprotocol or it can send a Start condition to begin the\nACK, it will continue to increment the word address and\nnext sequence.\nserially clock out the sequential data byte. When the\nmaximum memory address is reached, the internal\nAddress Pointer will automatically roll over from the"
+  },
+  {
+    "faiss_index_id": 75,
+    "text": "end of the array to word address, 0000h, if the master\nAcknowledges the byte received from the end of the\narray.\nFIGURE 7-3: SEQUENTIAL READ\n1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9\nSCL\nDevice Address Byte Word Address – Byte 0 Word Address – Byte 1\nSDA 1 0 1 0 A2 A1 A0 0 0 0 x A13A12A11A10 A9 A8 0 A7 A6 A5 A4 A3 A2 A1 A0 0\nMSB MSB MSB\nStart by\nMaster ACK ACK ACK\nfrom from from\nSlave Slave Slave\n1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9"
+  },
+  {
+    "faiss_index_id": 76,
+    "text": "Device Address Byte Data Byte (n) Data Byte (n+1)\n1 0 1 0 A2 A1 A0 1 0 D7 D6 D5 D4 D3 D2 D1 D0 0 D7 D6 D5 D4 D3 D2 D1 D0 0\nMSB MSB MSB\nStart by\nMaster ACK ACK ACK\nfrom from from\nSlave Master Master\n1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9\nDevice Byte (n+2) Data Byte (n+3) Data Byte (n+x)\nD7 D6 D5 D4 D3 D2 D1 D0 0 D7 D6 D5 D4 D3 D2 D1 D0 0 D7 D6 D5 D4 D3 D2 D1 D0 1\nMSB MSB MSB\nStop by\nACK ACK NACK Master\nfrom from from\nMaster Master Master"
+  },
+  {
+    "faiss_index_id": 77,
+    "text": "from from from\nMaster Master Master\nNote1: The A13, A12 and A11 word address bits are don’t care bits on the 24CW16X.\n2: The A13 and A12 word address bit are don’t care bits on the 24CW32X.\n3: The A13 word address bit is a don’t care bit on the 24CW64X.\n 2018 Microchip Technology Inc. DS20005772B-page 1924CW16X/24CW32X/24CW64X/24CW128X\n8.0 CONFIGURATION REGISTERS If desired, the Configuration registers can be locked so\nthat the registers are set to read-only and can no longer"
+  },
+  {
+    "faiss_index_id": 78,
+    "text": "The 24CW Series device contains a pair of 8-bit be modified. This makes the current software write\nConfiguration registers which control software write protection and hardware slave address scheme\nprotection and the hardware slave address. permanent.\nThe Configuration registers are accessed sequentially\nas Byte 0 and Byte 1, as shown in Table8-1.\nTABLE 8-1: CONFIGURATION REGISTERS\nMemory Region Byte Bit 7 Bit 6 Bit 5 Bit 4 Bit 3 Bit 2 Bit 1 Bit 0"
+  },
+  {
+    "faiss_index_id": 79,
+    "text": "Write Protection Register 0 — WRTE CCLK — WPRE WPB1 WPB0 CRLB\nHardware Address Register 1 — HWRE A0CK — — A2 A1 A0\n8.1 Accessing the Configuration\nNote: The hardware slave address bit values are\nRegisters initially factory preset but can be changed\nby the user. These bit values must match\nThe value of the Configuration registers can be deter-\nthe current device configuration to receive\nmined by executing a random read sequence, as\nan Acknowledge.\nshown in Section8.5 “Reading the Configuration"
+  },
+  {
+    "faiss_index_id": 80,
+    "text": "shown in Section8.5 “Reading the Configuration\nRegisters”. Changing the value of the Configuration When accessing the Configuration registers, the word\nregisters is accomplished with a byte write sequence address must be sent to the device. All bits in the word\nwith the requirements outlined in Section8.4 “Writing address are ignored, except for the MSb which must be\nto the Configuration Registers”. set to logic ‘1’. Refer to Table3-3 and Table3-4 for"
+  },
+  {
+    "faiss_index_id": 81,
+    "text": "Accessing these registers requires the use of ‘1010b’ additional information.\n(Ah) as the Device Type Identifier in the device address\nbyte. Following the Device Type Identifier is the hard-\nware slave address bits for which the values are deter-\nmined by what is currently programmed in the HAR\n(see Section8.3 “Hardware Address Register”).\nFinally, bit 0 is the Read/Write Select (R/W) bit, where\na logic‘1’ is used for reading and logic ‘0’ is used for"
+  },
+  {
+    "faiss_index_id": 82,
+    "text": "writing. See Table3-1 for additional information.\n 2018 Microchip Technology Inc. DS20005772B-page 2024CW16X/24CW32X/24CW64X/24CW128X\n8.2 Write Protection Register\nThe Write Protection Register (WPR) is Byte 0 of the\nsequential Configuration registers. The Write Protection\nRegister format can be seen in Register8-1.\nREGISTER 8-1: WRITE PROTECTION REGISTER – BYTE 0\nU-0 W-0 W-0 U-0 R/W R/W R/W R/W\n— WRTE CCLK — WPRE WPB1 WPB0 CRLB\nbit 7 bit 0\nLegend:"
+  },
+  {
+    "faiss_index_id": 83,
+    "text": "bit 7 bit 0\nLegend:\nR = Readable bit W = Writable bit U = Unimplemented bit, read as ‘0’\n-n = Value at POR ‘1’ = Bit is set ‘0’ = Bit is cleared x = Bit is unknown\nbit 7 Unimplemented: Read as ‘0’\nbit 6 WRTE: Configuration Registers Write bit\n1 = Configuration registers are writable\n0 = Configuration register writes are ignored\nbit 5 CCLK: Configuration Registers Check Lock bit\nMust match the CRLB bit when writing to the Configuration registers.\nbit 4 Unimplemented: Read as ‘0’"
+  },
+  {
+    "faiss_index_id": 84,
+    "text": "bit 4 Unimplemented: Read as ‘0’\nbit 3 WPRE: Write Protection Register Enable bit\n1 = Write protection is set by the WPB<1:0> bits\n0 = No software write protection is enabled (Default)\nbit 2-1 WPB<1:0>: Write-Protect Block bits\nIf WPRE = 1:\n11 = Entire EEPROM is write-protected\n10 = Upper 3/4 of EEPROM is write-protected\n01 = Upper 1/2 of EEPROM is write-protected\n00 = Upper 1/4 of EEPROM is write-protected\nIf WPRE = 0:\nUnused (Default).\nbit 0 CRLB: Configuration Registers Lock bit"
+  },
+  {
+    "faiss_index_id": 85,
+    "text": "bit 0 CRLB: Configuration Registers Lock bit\n1 = Configuration registers will become permanently locked\n0 = Configuration registers can be written to (Default)\nConfiguration Registers Write bit (WRTE): This bit Write-Protect Block bits (WPB<1:0>): These bits\nmust be set to a logic ‘1’ in order to write to the Config- allow four levels of protection for the memory array,\nuration registers. Failure to set the WRTE bit to a logic provided that the WPRE bit is set to a logic ‘1’. If the"
+  },
+  {
+    "faiss_index_id": 86,
+    "text": "‘1’ will cause the device to ignore the write operation. WPRE bit is a logic ‘0’, the state of the WPB<1:0> bits\nWhen reading the WPR, the WRTE bit will always read has no impact on device protection. The protected\nas logic ‘0’. address ranges can be found in Table8-2.\nConfiguration Registers Check Lock bit (CCLK): This Configuration Registers Lock bit (CRLB): This bit is\nbit must match the CRLB bit when writing the Configura- used to permanently lock the current state of the WPR"
+  },
+  {
+    "faiss_index_id": 87,
+    "text": "tion registers. If the CCLK bit does not match the CRLB, and HAR. A logic ‘0’ indicates that these registers can\nthe device will ignore the write operation. When reading be modified, whereas a logic ‘1’ indicates that the WPR\nthe WPR, the CCLK bit will always read as logic ‘0’. and HAR have been locked and can no longer be mod-\nified. To safeguard against accidental locking of these\nWrite Protection Register Enable bit (WPRE): This\nregisters, the CCLK bit must match the CRLB bit sent"
+  },
+  {
+    "faiss_index_id": 88,
+    "text": "bit is used to enable or disable the device software\nto the device. If these bits do not match, the device will\nwrite protection feature. A logic ‘0’ will disable the soft-\nignore the write operation.\nware write protection feature and a logic ‘1’ will enable\nsoftware write protection. Note: The Configuration registers cannot be\nunlocked once they are locked.\n 2018 Microchip Technology Inc. DS20005772B-page 2124CW16X/24CW32X/24CW64X/24CW128X\n8.2.1 SOFTWARE WRITE PROTECTION"
+  },
+  {
+    "faiss_index_id": 89,
+    "text": "8.2.1 SOFTWARE WRITE PROTECTION\nThe EEPROM array in the 24CW Series will be pro-\ntected from writing in accordance with the WPB<1:0>\nbits value as long as the WPRE bit is set to logic ‘1’. If\nthe WPRE bit is set to logic ‘0’, the WPB<1:0> bits are\nignored and no portion of the EEPROM array will be\nprotected. The combination of these three bits creates\nfive possible levels of protection for the device, as seen\nin Table8-2.\nTABLE 8-2: PROTECTED ADDRESS RANGE\nProtected Address Range"
+  },
+  {
+    "faiss_index_id": 90,
+    "text": "Protected Address Range\nProtection Level WPRE WPB1 WPB0\n24CW16X 24CW32X 24CW64X 24CW128X\nNone 0 x x None None None None\nUpper 1/4 1 0 0 0600h-07FFh 0C00h-0FFFh 1800h-1FFFh 3000h-3FFFh\nUpper 1/2 1 0 1 0400h-07FFh 0800h-0FFFh 1000h-1FFFh 2000h-3FFFh\nUpper 3/4 1 1 0 0200h-07FFh 0400h-0FFFh 0800h-1FFFh 1000h-3FFFh\nEntire Array 1 1 1 0000h-07FFh 0000h-0FFFh 0000h-1FFFh 0000h-3FFFh\n 2018 Microchip Technology Inc. DS20005772B-page 2224CW16X/24CW32X/24CW64X/24CW128X\n8.3 Hardware Address Register"
+  },
+  {
+    "faiss_index_id": 91,
+    "text": "8.3 Hardware Address Register\nThe Hardware Address Register (HAR) is Byte 1 of the\nsequential Configuration registers. The Hardware\nAddress Register format can be seen in Register8-2.\nREGISTER 8-2: HARDWARE ADDRESS REGISTER – BYTE 1\nU-0 W-0 W-0 U-0 U-0 R/W R/W R/W\n— HWRE A0CK — — A2 A1 A0\nbit 7 bit 0\nLegend:\nR = Readable bit W = Writable bit U = Unimplemented bit, read as ‘0’\n-n = Value at POR ‘1’ = Bit is set ‘0’ = Bit is cleared x = Bit is unknown\nbit 7 Unimplemented: Read as ‘0’"
+  },
+  {
+    "faiss_index_id": 92,
+    "text": "bit 7 Unimplemented: Read as ‘0’\nbit 6 HWRE: HAR Write Enable bit\n1 = Configuration registers are writable\n0 = Configuration register writes are ignored\nbit 5 A0CK: Hardware Slave Address Check A0 bit\nMust match A0 bit when writing the Configuration registers.\nbit 4-3 Unimplemented: Read as ‘0’\nbit 2 A2: Hardware Slave Address A2 bit\n1 = Hardware slave address bit A2 is set to a logic ‘1’\n0 = Hardware slave address bit A2 is set to a logic ‘0’\nbit 1 A1: Hardware Slave Address A1 bit"
+  },
+  {
+    "faiss_index_id": 93,
+    "text": "bit 1 A1: Hardware Slave Address A1 bit\n1 = Hardware slave address bit A1 is set to a logic ‘1’\n0 = Hardware slave address bit A1 is set to a logic ‘0’\nbit 0 A0: Hardware Slave Address A0 bit\n1 = Hardware slave address bit A0 is set to a logic ‘1’\n0 = Hardware slave address bit A0 is set to a logic ‘0’\nHAR Write Enable bit (HWRE): When writing to the Hardware Slave Address bits (A2, A1, A0): The 3-bit"
+  },
+  {
+    "faiss_index_id": 94,
+    "text": "HAR, this bit must be set to a logic ‘1’. Failure to set the hardware slave address is contained in bits A2, A1 and\nHWRE bit to a logic ‘1’ will cause the device to ignore A0 of the HAR. These bits control the valid values in\nthe write operation. When reading the HAR, the HWRE bit3 through bit 1 (A2, A1, A0) of the device address\nbit will always read as logic ‘0’. byte. Details of the device address byte are found in\nSection3.3 “Device Addressing”."
+  },
+  {
+    "faiss_index_id": 95,
+    "text": "Section3.3 “Device Addressing”.\nHardware Slave Address Check A0 bit (A0CK): This\nbit must match the A0 bit when writing to the Configura-\nNote: If multiple 24CW Series devices are on\ntion registers. If the A0CK bit does not match the A0 bit,\nthe same bus, each device must have\nthe device will ignore the write operation. When reading\nunique hardware slave addresses to be\nthe HAR, the A0CK bit will always read as logic ‘0’.\naccessed individually, including program-"
+  },
+  {
+    "faiss_index_id": 96,
+    "text": "accessed individually, including program-\nming the HAR. Different preset hardware\nslave addresses are available. Contact\nyour local sales representative for details.\n 2018 Microchip Technology Inc. DS20005772B-page 2324CW16X/24CW32X/24CW64X/24CW128X\n8.4 Writing to the Configuration After sending a valid WPR byte, the HAR byte can\nRegisters optionally be sent. If the HAR byte is invalid, the oper-\nation will abort, the EEPROM will not Acknowledge any"
+  },
+  {
+    "faiss_index_id": 97,
+    "text": "When writing to the Configuration registers, a byte write data bytes and the device will not execute the internal\nsequence must be sent to the device (see Section6.1 write cycle. Refer to Section8.3 “Hardware Address\n“Byte Write” for additional information). The MSb of Register” for valid HAR byte values.\nthe word address must be set to logic ‘1’ in order to\nSending more than the WPR and HAR bytes to the\nwrite to the Configuration registers."
+  },
+  {
+    "faiss_index_id": 98,
+    "text": "write to the Configuration registers.\n24CW Series will cause the write cycle to abort and the\nA valid WPR byte must be provided when writing to the contents of the WPR and HAR will not be changed.\nConfiguration registers. If the WPR byte is invalid, the\nNote: If a polling routine has been implemented\noperation will abort, the EEPROM will not Acknowledge\nand the user writes new data values to the\nany data bytes and the device will not execute the inter-\nHAR, the user must send the new hard-"
+  },
+  {
+    "faiss_index_id": 99,
+    "text": "HAR, the user must send the new hard-\nnal write cycle. Refer to Section8.2 “Write Protection\nware slave address for the device to\nRegister” for valid WPR byte values.\nAcknowledge.\nFIGURE 8-1: CONFIGURATION REGISTERS WRITE SEQUENCE\n1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9\nSCL\nDevice Address Byte Word Address – Byte 0 Word Address – Byte 1\nSDA 1 0 1 0 A2 A1 A0 0 0 1 x x x x x x x 0 x x x x x x x x 0\nMSB MSB MSB\nStart by\nMaster ACK ACK ACK\nfrom from from\nSlave Slave Slave"
+  },
+  {
+    "faiss_index_id": 100,
+    "text": "from from from\nSlave Slave Slave\n1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9\nWPR Byte HAR Byte\nx 1 D5 x D3 D2 D1 D0 0 x 1 D5 x x D2 D1 D0 0\nMSB MSB\nStop by\nACK Optional ACK Master\nfrom from\nSlave Slave\n 2018 Microchip Technology Inc. DS20005772B-page 2424CW16X/24CW32X/24CW64X/24CW128X\n8.5 Reading the Configuration It is not possible to read the contents of the Configuration\nRegisters registers with a current address read sequence. Due to\nthe sequential nature of the Configuration registers, it is"
+  },
+  {
+    "faiss_index_id": 101,
+    "text": "When reading the Configuration registers, a random not possible to read only the HAR contents.\nread sequence must be sent to the device (see\nNote: The 24CW Series will automatically roll\nSection7.2 “Random Read” for additional informa-\nover from the HAR (Byte 1) back to the\ntion). The MSb of the word address must be set to\nWPR (Byte 0) if the master continues to\nlogic‘1’ in order to read the Configuration registers.\nAcknowledge the data bytes during the\nread operation."
+  },
+  {
+    "faiss_index_id": 102,
+    "text": "read operation.\nFIGURE 8-2: CONFIGURATION REGISTERS READ SEQUENCE\n1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9\nSCL\nDevice Address Byte Word Address – Byte 0 Word Address – Byte 1\nSDA 1 0 1 0 A2 A1 A0 0 0 1 x x x x x x x 0 x x x x x x x x 0\nMSB MSB MSB\nStart by\nMaster ACK ACK ACK\nfrom from from\nSlave Slave Slave\n1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9\nDevice Address Byte WPR Contents HAR Contents\n1 0 1 0 A2 A1 A0 1 0 0 0 0 0 D3 D2 D1 D0 0 0 0 0 0 0 D2 D1 D0 1\nMSB MSB MSB"
+  },
+  {
+    "faiss_index_id": 103,
+    "text": "MSB MSB MSB\nStop by\nS M ta a r s t te b r y A fro C m K A fro C m K Optional N fr A o C m K Master\nSlave Master Master\n 2018 Microchip Technology Inc. DS20005772B-page 2524CW16X/24CW32X/24CW64X/24CW128X\n8.6 Locking the Configuration After sending a valid WPR byte, the HAR byte can\nRegisters optionally be sent. If the HAR byte is invalid, the oper-\nation will abort, the EEPROM will not Acknowledge any"
+  },
+  {
+    "faiss_index_id": 104,
+    "text": "The locking mechanism of the Configuration registers data bytes and the device will not execute the internal\nis controlled through the CLRB bit found in the WPR write cycle. Refer to Section8.3 “Hardware Address\nbyte. Register” for valid HAR byte values.\nWhen locking the Configuration registers, a byte write It is possible to send only the WPR byte and lock the\nsequence must be sent to the device (see Section6.1 Configuration registers by omitting the HAR byte and"
+  },
+  {
+    "faiss_index_id": 105,
+    "text": "“Byte Write” for additional information). The MSb of sending a Stop condition after the WPR byte.\nthe word address must be set to logic ‘1’ in order to\nNote: If the HAR byte is omitted, the hardware\nwrite to the Configuration registers.\nslave address will be locked with its\nNote: The Configuration registers cannot be current values.\nunlocked once they are locked.\nSending more than the WPR and HAR bytes to the"
+  },
+  {
+    "faiss_index_id": 106,
+    "text": "Sending more than the WPR and HAR bytes to the\nA valid WPR byte with the CCLK and CRLB bits set to a 24CW Series will cause the write cycle to abort and the\nlogic ‘1’ must be provided when locking the Configura- contents of the WPR and HAR will not be changed.\ntion registers. If the WPR byte is invalid, the operation\nwill abort, the EEPROM will not Acknowledge any\ndata bytes and the device will not execute the internal\nwrite cycle. Refer to Section8.2 “Write Protection"
+  },
+  {
+    "faiss_index_id": 107,
+    "text": "Register” for valid WPR byte values.\nFIGURE 8-3: CONFIGURATION REGISTER LOCK SEQUENCE\n1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9\nSCL\nDevice Address Byte Word Address – Byte 0 Word Address – Byte 1\nSDA 1 0 1 0 A2 A1 A0 0 0 1 x x x x x x x 0 x x x x x x x x 0\nMSB MSB MSB\nStart by\nMaster ACK ACK ACK\nfrom from from\nSlave Slave Slave\n1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9\nWPR Byte HAR Byte\nx 1 1 x D3 D2 D1 1 0 x 1 D5 x x D2 D1 D0 0\nMSB MSB\nStop by\nACK Optional ACK Master\nfrom from"
+  },
+  {
+    "faiss_index_id": 108,
+    "text": "MSB MSB\nStop by\nACK Optional ACK Master\nfrom from\nSlave Slave\n 2018 Microchip Technology Inc. DS20005772B-page 2624CW16X/24CW32X/24CW64X/24CW128X\n9.0 DEVICE DEFAULT CONDITION\nThe 24CW Series is delivered with the EEPROM array\nset to logic ‘1’, resulting in FFh data in all locations of\nthe EEPROM memory array.\nThe Write Protection Register (WPR) is set to 00h and\nthe Hardware Address Register (HAR) is preset in\naccordance with the ordering code selected. For fac-"
+  },
+  {
+    "faiss_index_id": 109,
+    "text": "tory preset hardware slave address bits, other than\n‘000b’, contact your local sales representative.\n 2018 Microchip Technology Inc. DS20005772B-page 2724CW16X/24CW32X/24CW64X/24CW128X\n10.0 PACKAGING INFORMATION\n10.1 Package Marking Information\n8-Lead 3.9 mm SOIC Example\n24CW160\nSN1751\nNNN 017\n5-Lead SOT-23 Example\nAAER18\n301A8\n8-Lead 4.4 mm TSSOP Example\nXXXX AADJ\nYYWW 1751\nNNN 017\nLegend: XX...X Customer-specific information\nY Year code (last digit of calendar year)"
+  },
+  {
+    "faiss_index_id": 110,
+    "text": "Y Year code (last digit of calendar year)\nYY Year code (last 2 digits of calendar year)\nWW Week code (week of January 1 is week ‘01’)\nNNN Alphanumeric traceability code\n* These packages are RoHs compliant. The JEDEC designator\ncan be found on the outer packaging for this package.\nNote: In the event the full Microchip part number cannot be marked on one line, it will\nbe carried over to the next line, thus limiting the number of available\ncharacters for customer-specific information."
+  },
+  {
+    "faiss_index_id": 111,
+    "text": "characters for customer-specific information.\n 2018 Microchip Technology Inc. DS20005772B-page 2824CW16X/24CW32X/24CW64X/24CW128X\nPackage Marking Information (Continued)\n8-Lead 2x3 mm UDFN Example\nADH\n808\n17\n4-Ball 0.4x0.4 mm CSP (CS0) Example\nX 6\nNN 17\n4-Ball 0.5x0.4 mm CSP (CS1) Example\nX 7\nNN 1A\n1st Line Marking Codes\nPart Number\nSOIC SOT-23 TSSOP UDFN CSP (CS0)(1) CSP (CS1)(2)\n24CW16 Series 24CW160 AAEN AADJ ADG — —\n24CW32 Series 24CW320 AAEP AADK ADH — —"
+  },
+  {
+    "faiss_index_id": 112,
+    "text": "24CW32 Series 24CW320 AAEP AADK ADH — —\n24CW64 Series 24CW640 AAEQ AADL ADJ 6 6\n24CW128 Series 24CW1280 AAER AADM ADK 7 7\nNote 1: CS0 CSP ball pitch is 0.4x0.4mm.\n2: CS1 CSP ball pitch is 0.5x0.4mm.\n 2018 Microchip Technology Inc. DS20005772B-page 2924CW16X/24CW32X/24CW64X/24CW128X\nNote: For the most current package drawings, please see the Microchip Packaging Specification located at\nhttp://www.microchip.com/packaging"
+  },
+  {
+    "faiss_index_id": 113,
+    "text": "http://www.microchip.com/packaging\n 2018 Microchip Technology Inc. DS20005772B-page 3024CW16X/24CW32X/24CW64X/24CW128X\nNote: For the most current package drawings, please see the Microchip Packaging Specification located at\nhttp://www.microchip.com/packaging\n 2018 Microchip Technology Inc. DS20005772B-page 3124CW16X/24CW32X/24CW64X/24CW128X"
+  },
+  {
+    "faiss_index_id": 114,
+    "text": "(cid:2)(cid:3)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:6)(cid:11)(cid:12)(cid:13)(cid:14)(cid:8)(cid:15)(cid:16)(cid:6)(cid:10)(cid:10)(cid:8)(cid:17)(cid:18)(cid:12)(cid:10)(cid:13)(cid:19)(cid:5)(cid:8)(cid:20)(cid:15)(cid:21)(cid:22)(cid:8)(cid:23)(cid:8)(cid:21)(cid:6)(cid:24)(cid:24)(cid:25)(cid:26)(cid:27)(cid:8)(cid:28)(cid:29)(cid:30)(cid:31)(cid:8)(cid:16)(cid:16)(cid:8) (cid:25)(cid:7)!(cid:8)\"(cid:15)(cid:17)#$%"
+  },
+  {
+    "faiss_index_id": 115,
+    "text": "(cid:21)(cid:25)(cid:12)(cid:5)&"
+  },
+  {
+    "faiss_index_id": 116,
+    "text": "(cid:30)(cid:10)(cid:9)(cid:2)(cid:31)(cid:11)(cid:14)(cid:2)!(cid:10)\"(cid:31)(cid:2)(cid:8)#(cid:9)(cid:9)(cid:14)(cid:15)(cid:31)(cid:2)(cid:12)(cid:28)(cid:8)$(cid:28)(cid:17)(cid:14)(cid:2)%(cid:9)(cid:28)&(cid:7)(cid:15)(cid:17)\"’(cid:2)(cid:12)(cid:16)(cid:14)(cid:28)\"(cid:14)(cid:2)\"(cid:14)(cid:14)(cid:2)(cid:31)(cid:11)(cid:14)(cid:2)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:8)(cid:11)(cid:7)(cid:12)(cid:2)((cid:28)(cid:8)$(cid:28)(cid:17)(cid:7)(cid:15)(cid:17)(cid:2)(cid:22)(cid:12)("
+  },
+  {
+    "faiss_index_id": 117,
+    "text": "17)(cid:7)(cid:15)(cid:17)(cid:2)(cid:22)(cid:12)(cid:14)(cid:8)(cid:7))(cid:7)(cid:8)(cid:28)(cid:31)(cid:7)(cid:10)(cid:15)(cid:2)(cid:16)(cid:10)(cid:8)(cid:28)(cid:31)(cid:14)%(cid:2)(cid:28)(cid:31)(cid:2)"
+  },
+  {
+    "faiss_index_id": 118,
+    "text": "(cid:11)(cid:31)(cid:31)(cid:12)*++&&&(cid:20)!(cid:7)(cid:8)(cid:9)(cid:10)(cid:8)(cid:11)(cid:7)(cid:12)(cid:20)(cid:8)(cid:10)!+(cid:12)(cid:28)(cid:8)$(cid:28)(cid:17)(cid:7)(cid:15)(cid:17)\n 2018 Microchip Technology Inc. DS20005772B-page 3224CW16X/24CW32X/24CW64X/24CW128X\n5-Lead Plastic Small Outline Transistor (OT) [SOT23]\nNote: For the most current package drawings, please see the Microchip Packaging Specification located at\nhttp://www.microchip.com/packaging\n0.20 C 2X\nD\ne1\nA\nD\nN\nE/2"
+  },
+  {
+    "faiss_index_id": 119,
+    "text": "0.20 C 2X\nD\ne1\nA\nD\nN\nE/2\nE1/2\nE1 E\n(DATUM D)\n(DATUM A-B)\n0.15 C D\n2X\nNOTE 1 1 2\ne\nB NX b\n0.20 C A-B D\nTOP VIEW\nA\nA2\nA\n0.20 C\nSEATING PLANE\nA\nSEE SHEET 2 C\nA1\nSIDE VIEW\nMicrochip Technology Drawing C04-028D [OT] Sheet 1 of(cid:3)(cid:21)\n 2018 Microchip Technology Inc. DS20005772B-page 3324CW16X/24CW32X/24CW64X/24CW128X\n5-Lead Plastic Small Outline Transistor (OT) [SOT23]\nNote: For the most current package drawings, please see the Microchip Packaging Specification located at"
+  },
+  {
+    "faiss_index_id": 120,
+    "text": "http://www.microchip.com/packaging\nc\n(cid:84)\nL\nL1\nVIEW A-A\nSHEET 1\nUnits MILLIMETERS\nDimension Limits MIN NOM MAX\nNumber of Pins N 6\nPitch e 0.95 BSC\nOutside lead pitch e1 1.90 BSC\nOverall Height A 0.90 - 1.45\nMolded Package Thickness A2 0.89 - 1.30\nStandoff A1 - - 0.15\nOverall Width E 2.80 BSC\nMolded Package Width E1 1.60 BSC\nOverall Length D 2.90 BSC\nFoot Length L 0.30 - 0.60\nFootprint L1 0.60 REF\nFoot Angle (cid:73) 0° - 10°\nLead Thickness c 0.08 - 0.26\nLead Width b 0.20 - 0.51\nNotes:"
+  },
+  {
+    "faiss_index_id": 121,
+    "text": "Lead Width b 0.20 - 0.51\nNotes:\n1. Dimensions D and E1 do not include mold flash or protrusions. Mold flash or\nprotrusions shall not exceed 0.25mm per side.\n2. Dimensioning and tolerancing per ASME Y14.5M\nBSC: Basic Dimension. Theoretically exact value shown without tolerances.\nREF: Reference Dimension, usually without tolerance, for information purposes only.\nMicrochip Technology Drawing C04-091D [OT] Sheet 2 of(cid:3)(cid:21)"
+  },
+  {
+    "faiss_index_id": 122,
+    "text": " 2018 Microchip Technology Inc. DS20005772B-page 3424CW16X/24CW32X/24CW64X/24CW128X\n5-Lead Plastic Small Outline Transistor (OT) [SOT23]\nNote: For the most current package drawings, please see the Microchip Packaging Specification located at\nhttp://www.microchip.com/packaging\nX\nSILK SCREEN\n5\nY\nZ C G\n1 2\nE\nGX\nRECOMMENDED LAND PATTERN\nUnits MILLIMETERS\nDimension Limits MIN NOM MAX\nContact Pitch E 0.95 BSC\nContact Pad Spacing C 2.80\nContact Pad Width (X5) X 0.60\nContact Pad Length (X5) Y 1.10"
+  },
+  {
+    "faiss_index_id": 123,
+    "text": "Contact Pad Length (X5) Y 1.10\nDistance Between Pads G 1.70\nDistance Between Pads GX 0.35\nOverall Width Z 3.90\nNotes:\n1. Dimensioning and tolerancing per ASME Y14.5M\nBSC: Basic Dimension. Theoretically exact value shown without tolerances.\nMicrochip Technology Drawing No. C04-2091A [OT]\n 2018 Microchip Technology Inc. DS20005772B-page 3524CW16X/24CW32X/24CW64X/24CW128X"
+  },
+  {
+    "faiss_index_id": 124,
+    "text": "(cid:2)(cid:3)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:6)(cid:11)(cid:12)(cid:13)(cid:14)(cid:8)’((cid:13)(cid:19)(cid:8)(cid:15)((cid:24)(cid:13)(cid:19))(cid:8)(cid:15)(cid:16)(cid:6)(cid:10)(cid:10)(cid:8)(cid:17)(cid:18)(cid:12)(cid:10)(cid:13)(cid:19)(cid:5)(cid:8)(cid:20)(cid:15)’(cid:22)(cid:8)(cid:23)(cid:8)*(cid:29)*(cid:8)(cid:16)(cid:16)(cid:8) (cid:25)(cid:7)!(cid:8)\"’(cid:15)(cid:15)(cid:17)(cid:9)%"
+  },
+  {
+    "faiss_index_id": 125,
+    "text": "(cid:21)(cid:25)(cid:12)(cid:5)&"
+  },
+  {
+    "faiss_index_id": 126,
+    "text": "(cid:30)(cid:10)(cid:9)(cid:2)(cid:31)(cid:11)(cid:14)(cid:2)!(cid:10)\"(cid:31)(cid:2)(cid:8)#(cid:9)(cid:9)(cid:14)(cid:15)(cid:31)(cid:2)(cid:12)(cid:28)(cid:8)$(cid:28)(cid:17)(cid:14)(cid:2)%(cid:9)(cid:28)&(cid:7)(cid:15)(cid:17)\"’(cid:2)(cid:12)(cid:16)(cid:14)(cid:28)\"(cid:14)(cid:2)\"(cid:14)(cid:14)(cid:2)(cid:31)(cid:11)(cid:14)(cid:2)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:8)(cid:11)(cid:7)(cid:12)(cid:2)((cid:28)(cid:8)$(cid:28)(cid:17)(cid:7)(cid:15)(cid:17)(cid:2)(cid:22)(cid:12)("
+  },
+  {
+    "faiss_index_id": 127,
+    "text": "17)(cid:7)(cid:15)(cid:17)(cid:2)(cid:22)(cid:12)(cid:14)(cid:8)(cid:7))(cid:7)(cid:8)(cid:28)(cid:31)(cid:7)(cid:10)(cid:15)(cid:2)(cid:16)(cid:10)(cid:8)(cid:28)(cid:31)(cid:14)%(cid:2)(cid:28)(cid:31)(cid:2)"
+  },
+  {
+    "faiss_index_id": 128,
+    "text": "(cid:11)(cid:31)(cid:31)(cid:12)*++&&&(cid:20)!(cid:7)(cid:8)(cid:9)(cid:10)(cid:8)(cid:11)(cid:7)(cid:12)(cid:20)(cid:8)(cid:10)!+(cid:12)(cid:28)(cid:8)$(cid:28)(cid:17)(cid:7)(cid:15)(cid:17)\nD\nN\nE\nE1\nNOTE1\n1 2\nb\ne\nc\nφ\nA A2\nA1 L1 L\n@(cid:15)(cid:7)(cid:31)\" (cid:6)(cid:19)AA(cid:19)(cid:6)8(cid:13)8(cid:26)(cid:22)\n(cid:21)(cid:7)!(cid:14)(cid:15)\"(cid:7)(cid:10)(cid:15)(cid:2)A(cid:7)!(cid:7)(cid:31)\" (cid:6)(cid:19)E EG(cid:6) (cid:6)(cid:25)H"
+  },
+  {
+    "faiss_index_id": 129,
+    "text": "E#!7(cid:14)(cid:9)(cid:2)(cid:10))(cid:2)((cid:7)(cid:15)\" E (cid:29)\n((cid:7)(cid:31)(cid:8)(cid:11) (cid:14) (cid:4)(cid:20)J;(cid:2)>(cid:22)?\nG3(cid:14)(cid:9)(cid:28)(cid:16)(cid:16)(cid:2)K(cid:14)(cid:7)(cid:17)(cid:11)(cid:31) (cid:25) L L 1(cid:20)(cid:3)(cid:4)\n(cid:6)(cid:10)(cid:16)%(cid:14)%(cid:2)((cid:28)(cid:8)$(cid:28)(cid:17)(cid:14)(cid:2)(cid:13)(cid:11)(cid:7)(cid:8)$(cid:15)(cid:14)\"\" (cid:25)(cid:3) (cid:4)(cid:20)(cid:29)(cid:4) 1(cid:20)(cid:4)(cid:4) 1(cid:20)(cid:4);"
+  },
+  {
+    "faiss_index_id": 130,
+    "text": "(cid:22)(cid:31)(cid:28)(cid:15)%(cid:10)))(cid:2) (cid:25)1 (cid:4)(cid:20)(cid:4); L (cid:4)(cid:20)1;\nG3(cid:14)(cid:9)(cid:28)(cid:16)(cid:16)(cid:2)N(cid:7)%(cid:31)(cid:11) 8 J(cid:20)(cid:23)(cid:4)(cid:2)>(cid:22)?\n(cid:6)(cid:10)(cid:16)%(cid:14)%(cid:2)((cid:28)(cid:8)$(cid:28)(cid:17)(cid:14)(cid:2)N(cid:7)%(cid:31)(cid:11) 81 (cid:23)(cid:20)<(cid:4) (cid:23)(cid:20)(cid:23)(cid:4) (cid:23)(cid:20);(cid:4)"
+  },
+  {
+    "faiss_index_id": 131,
+    "text": "(cid:6)(cid:10)(cid:16)%(cid:14)%(cid:2)((cid:28)(cid:8)$(cid:28)(cid:17)(cid:14)(cid:2)A(cid:14)(cid:15)(cid:17)(cid:31)(cid:11) (cid:21) (cid:3)(cid:20)(cid:24)(cid:4) <(cid:20)(cid:4)(cid:4) <(cid:20)1(cid:4)\n(cid:30)(cid:10)(cid:10)(cid:31)(cid:2)A(cid:14)(cid:15)(cid:17)(cid:31)(cid:11) A (cid:4)(cid:20)(cid:23); (cid:4)(cid:20)J(cid:4) (cid:4)(cid:20)(cid:5);\n(cid:30)(cid:10)(cid:10)(cid:31)(cid:12)(cid:9)(cid:7)(cid:15)(cid:31) A1 1(cid:20)(cid:4)(cid:4)(cid:2)(cid:26)8(cid:30)"
+  },
+  {
+    "faiss_index_id": 132,
+    "text": "(cid:30)(cid:10)(cid:10)(cid:31)(cid:2)(cid:25)(cid:15)(cid:17)(cid:16)(cid:14) (cid:3) (cid:4)O L (cid:29)O\nA(cid:14)(cid:28)%(cid:2)(cid:13)(cid:11)(cid:7)(cid:8)$(cid:15)(cid:14)\"\" (cid:8) (cid:4)(cid:20)(cid:4)(cid:24) L (cid:4)(cid:20)(cid:3)(cid:4)\nA(cid:14)(cid:28)%(cid:2)N(cid:7)%(cid:31)(cid:11) 7 (cid:4)(cid:20)1(cid:24) L (cid:4)(cid:20)<(cid:4)\n(cid:21)(cid:25)(cid:12)(cid:5)(cid:11)&"
+  },
+  {
+    "faiss_index_id": 133,
+    "text": "1(cid:20) ((cid:7)(cid:15)(cid:2)1(cid:2)3(cid:7)\"#(cid:28)(cid:16)(cid:2)(cid:7)(cid:15)%(cid:14)6(cid:2))(cid:14)(cid:28)(cid:31)#(cid:9)(cid:14)(cid:2)!(cid:28)(cid:18)(cid:2)3(cid:28)(cid:9)(cid:18)’(cid:2)7#(cid:31)(cid:2)!#\"(cid:31)(cid:2)7(cid:14)(cid:2)(cid:16)(cid:10)(cid:8)(cid:28)(cid:31)(cid:14)%(cid:2)&(cid:7)(cid:31)(cid:11)(cid:7)(cid:15)(cid:2)(cid:31)(cid:11)(cid:14)(cid:2)(cid:11)(cid:28)(cid:31)(cid:8)(cid:11)(cid:14)%(cid:2)(cid:28)(cid:9)(cid:14)(cid:28)(cid:20)"
+  },
+  {
+    "faiss_index_id": 134,
+    "text": "(cid:3)(cid:20)"
+  },
+  {
+    "faiss_index_id": 135,
+    "text": "(cid:21)(cid:7)!(cid:14)(cid:15)\"(cid:7)(cid:10)(cid:15)\"(cid:2)(cid:21)(cid:2)(cid:28)(cid:15)%(cid:2)81(cid:2)%(cid:10)(cid:2)(cid:15)(cid:10)(cid:31)(cid:2)(cid:7)(cid:15)(cid:8)(cid:16)#%(cid:14)(cid:2)!(cid:10)(cid:16)%(cid:2))(cid:16)(cid:28)\"(cid:11)(cid:2)(cid:10)(cid:9)(cid:2)(cid:12)(cid:9)(cid:10)(cid:31)(cid:9)#\"(cid:7)(cid:10)(cid:15)\"(cid:20)(cid:2)(cid:6)(cid:10)(cid:16)%(cid:2))(cid:16)(cid:28)\"(cid:11)(cid:2)(cid:10)(cid:9)(cid:2)(cid:12)(cid:9)(cid:10)(cid:31)(cid:9)#\"(cid:7)("
+  },
+  {
+    "faiss_index_id": 136,
+    "text": "2)(cid:12)(cid:9)(cid:10)(cid:31)(cid:9)#\"(cid:7)(cid:10)(cid:15)\"(cid:2)\"(cid:11)(cid:28)(cid:16)(cid:16)(cid:2)(cid:15)(cid:10)(cid:31)(cid:2)(cid:14)6(cid:8)(cid:14)(cid:14)%(cid:2)(cid:4)(cid:20)1;(cid:2)!!(cid:2)(cid:12)(cid:14)(cid:9)(cid:2)\"(cid:7)%(cid:14)(cid:20)"
+  },
+  {
+    "faiss_index_id": 137,
+    "text": "<(cid:20) (cid:21)(cid:7)!(cid:14)(cid:15)\"(cid:7)(cid:10)(cid:15)(cid:7)(cid:15)(cid:17)(cid:2)(cid:28)(cid:15)%(cid:2)(cid:31)(cid:10)(cid:16)(cid:14)(cid:9)(cid:28)(cid:15)(cid:8)(cid:7)(cid:15)(cid:17)(cid:2)(cid:12)(cid:14)(cid:9)(cid:2)(cid:25)(cid:22)(cid:6)8(cid:2)=1(cid:23)(cid:20);(cid:6)(cid:20)"
+  },
+  {
+    "faiss_index_id": 138,
+    "text": ">(cid:22)?* >(cid:28)\"(cid:7)(cid:8)(cid:2)(cid:21)(cid:7)!(cid:14)(cid:15)\"(cid:7)(cid:10)(cid:15)(cid:20)(cid:2)(cid:13)(cid:11)(cid:14)(cid:10)(cid:9)(cid:14)(cid:31)(cid:7)(cid:8)(cid:28)(cid:16)(cid:16)(cid:18)(cid:2)(cid:14)6(cid:28)(cid:8)(cid:31)(cid:2)3(cid:28)(cid:16)#(cid:14)(cid:2)\"(cid:11)(cid:10)&(cid:15)(cid:2)&(cid:7)(cid:31)(cid:11)(cid:10)#(cid:31)(cid:2)(cid:31)(cid:10)(cid:16)(cid:14)(cid:9)(cid:28)(cid:15)(cid:8)(cid:14)\"(cid:20)"
+  },
+  {
+    "faiss_index_id": 139,
+    "text": "(cid:26)8(cid:30)*"
+  },
+  {
+    "faiss_index_id": 140,
+    "text": "(cid:26)(cid:14))(cid:14)(cid:9)(cid:14)(cid:15)(cid:8)(cid:14)(cid:2)(cid:21)(cid:7)!(cid:14)(cid:15)\"(cid:7)(cid:10)(cid:15)’(cid:2)#\"#(cid:28)(cid:16)(cid:16)(cid:18)(cid:2)&(cid:7)(cid:31)(cid:11)(cid:10)#(cid:31)(cid:2)(cid:31)(cid:10)(cid:16)(cid:14)(cid:9)(cid:28)(cid:15)(cid:8)(cid:14)’(cid:2))(cid:10)(cid:9)(cid:2)(cid:7)(cid:15))(cid:10)(cid:9)!(cid:28)(cid:31)(cid:7)(cid:10)(cid:15)(cid:2)(cid:12)#(cid:9)(cid:12)(cid:10)\"(cid:14)\"(cid:2)(cid:10)(cid:15)(cid:16)(cid:18)(cid:20)"
+  },
+  {
+    "faiss_index_id": 141,
+    "text": "(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:8)(cid:11)(cid:7)(cid:12)(cid:13)(cid:14)(cid:8)(cid:11)(cid:15)(cid:10)(cid:16)(cid:10)(cid:17)(cid:18)(cid:21)(cid:9)(cid:28)&(cid:7)(cid:15)(cid:17)?(cid:4)(cid:23)(cid:27)(cid:4)(cid:29)J>\n 2018 Microchip Technology Inc. DS20005772B-page 3624CW16X/24CW32X/24CW64X/24CW128X\nNote: For the most current package drawings, please see the Microchip Packaging Specification located at\nhttp://www.microchip.com/packaging"
+  },
+  {
+    "faiss_index_id": 142,
+    "text": "http://www.microchip.com/packaging\n 2018 Microchip Technology Inc. DS20005772B-page 3724CW16X/24CW32X/24CW64X/24CW128X"
+  },
+  {
+    "faiss_index_id": 143,
+    "text": "(cid:2)(cid:3)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:6)(cid:11)(cid:12)(cid:13)(cid:14)(cid:8)+(cid:18)(cid:6)(cid:10)(cid:8),(cid:10)(cid:6)(cid:12)(cid:27)(cid:8)(cid:21)(cid:25)(cid:8)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:9)(cid:6)(cid:14))(cid:6)-(cid:5)(cid:8)(cid:20)./(cid:22)(cid:8)(cid:23)(cid:8)01(cid:28)1(cid:31)(cid:29)2(cid:8)(cid:16)(cid:16)(cid:8) (cid:25)(cid:7)!(cid:8)\"/+,(cid:21)%"
+  },
+  {
+    "faiss_index_id": 144,
+    "text": "(cid:21)(cid:25)(cid:12)(cid:5)&"
+  },
+  {
+    "faiss_index_id": 145,
+    "text": "(cid:30)(cid:10)(cid:9)(cid:2)(cid:31)(cid:11)(cid:14)(cid:2)!(cid:10)\"(cid:31)(cid:2)(cid:8)#(cid:9)(cid:9)(cid:14)(cid:15)(cid:31)(cid:2)(cid:12)(cid:28)(cid:8)$(cid:28)(cid:17)(cid:14)(cid:2)%(cid:9)(cid:28)&(cid:7)(cid:15)(cid:17)\"’(cid:2)(cid:12)(cid:16)(cid:14)(cid:28)\"(cid:14)(cid:2)\"(cid:14)(cid:14)(cid:2)(cid:31)(cid:11)(cid:14)(cid:2)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:8)(cid:11)(cid:7)(cid:12)(cid:2)((cid:28)(cid:8)$(cid:28)(cid:17)(cid:7)(cid:15)(cid:17)(cid:2)(cid:22)(cid:12)("
+  },
+  {
+    "faiss_index_id": 146,
+    "text": "17)(cid:7)(cid:15)(cid:17)(cid:2)(cid:22)(cid:12)(cid:14)(cid:8)(cid:7))(cid:7)(cid:8)(cid:28)(cid:31)(cid:7)(cid:10)(cid:15)(cid:2)(cid:16)(cid:10)(cid:8)(cid:28)(cid:31)(cid:14)%(cid:2)(cid:28)(cid:31)(cid:2)"
+  },
+  {
+    "faiss_index_id": 147,
+    "text": "(cid:11)(cid:31)(cid:31)(cid:12)*++&&&(cid:20)!(cid:7)(cid:8)(cid:9)(cid:10)(cid:8)(cid:11)(cid:7)(cid:12)(cid:20)(cid:8)(cid:10)!+(cid:12)(cid:28)(cid:8)$(cid:28)(cid:17)(cid:7)(cid:15)(cid:17)\n 2018 Microchip Technology Inc. DS20005772B-page 3824CW16X/24CW32X/24CW64X/24CW128X"
+  },
+  {
+    "faiss_index_id": 148,
+    "text": "(cid:2)(cid:3)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:6)(cid:11)(cid:12)(cid:13)(cid:14)(cid:8)+(cid:18)(cid:6)(cid:10)(cid:8),(cid:10)(cid:6)(cid:12)(cid:27)(cid:8)(cid:21)(cid:25)(cid:8)(cid:4)(cid:5)(cid:6)(cid:7)(cid:8)(cid:9)(cid:6)(cid:14))(cid:6)-(cid:5)(cid:8)(cid:20)./(cid:22)(cid:8)(cid:23)(cid:8)01(cid:28)1(cid:31)(cid:29)2(cid:8)(cid:16)(cid:16)(cid:8) (cid:25)(cid:7)!(cid:8)\"/+,(cid:21)%"
+  },
+  {
+    "faiss_index_id": 149,
+    "text": "(cid:21)(cid:25)(cid:12)(cid:5)&"
+  },
+  {
+    "faiss_index_id": 150,
+    "text": "(cid:30)(cid:10)(cid:9)(cid:2)(cid:31)(cid:11)(cid:14)(cid:2)!(cid:10)\"(cid:31)(cid:2)(cid:8)#(cid:9)(cid:9)(cid:14)(cid:15)(cid:31)(cid:2)(cid:12)(cid:28)(cid:8)$(cid:28)(cid:17)(cid:14)(cid:2)%(cid:9)(cid:28)&(cid:7)(cid:15)(cid:17)\"’(cid:2)(cid:12)(cid:16)(cid:14)(cid:28)\"(cid:14)(cid:2)\"(cid:14)(cid:14)(cid:2)(cid:31)(cid:11)(cid:14)(cid:2)(cid:6)(cid:7)(cid:8)(cid:9)(cid:10)(cid:8)(cid:11)(cid:7)(cid:12)(cid:2)((cid:28)(cid:8)$(cid:28)(cid:17)(cid:7)(cid:15)(cid:17)(cid:2)(cid:22)(cid:12)("
+  },
+  {
+    "faiss_index_id": 151,
+    "text": "17)(cid:7)(cid:15)(cid:17)(cid:2)(cid:22)(cid:12)(cid:14)(cid:8)(cid:7))(cid:7)(cid:8)(cid:28)(cid:31)(cid:7)(cid:10)(cid:15)(cid:2)(cid:16)(cid:10)(cid:8)(cid:28)(cid:31)(cid:14)%(cid:2)(cid:28)(cid:31)(cid:2)"
+  },
+  {
+    "faiss_index_id": 152,
+    "text": "(cid:11)(cid:31)(cid:31)(cid:12)*++&&&(cid:20)!(cid:7)(cid:8)(cid:9)(cid:10)(cid:8)(cid:11)(cid:7)(cid:12)(cid:20)(cid:8)(cid:10)!+(cid:12)(cid:28)(cid:8)$(cid:28)(cid:17)(cid:7)(cid:15)(cid:17)\n 2018 Microchip Technology Inc. DS20005772B-page 3924CW16X/24CW32X/24CW64X/24CW128X"
+  },
+  {
+    "faiss_index_id": 153,
+    "text": "(cid:23)(cid:16)(cid:37)(cid:68)(cid:79)(cid:79)(cid:3)(cid:58)(cid:68)(cid:73)(cid:72)(cid:85)(cid:3)(cid:47)(cid:72)(cid:89)(cid:72)(cid:79)(cid:3)(cid:38)(cid:75)(cid:76)(cid:83)(cid:3)(cid:54)(cid:70)(cid:68)(cid:79)(cid:72)(cid:3)(cid:51)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:72)(cid:3)(cid:11)(cid:38)(cid:54)(cid:12)(cid:3)(cid:16)(cid:3)(cid:19)(cid:17)(cid:23)(cid:91)(cid:19)(cid:17)(cid:23)(cid:3)(cid:80)(cid:80)(cid:3)(cid:37)(cid:68)(cid:79)(cid:79)(cid:3)(cid:51)(cid:76)(cid:8"
+  },
+  {
+    "faiss_index_id": 154,
+    "text": "d:68)(cid:79)(cid:79)(cid:3)(cid:51)(cid:76)(cid:87)(cid:70)(cid:75)(cid:3)(cid:62)(cid:38)(cid:54)(cid:51)(cid:64)"
+  },
+  {
+    "faiss_index_id": 155,
+    "text": "(cid:49)(cid:82)(cid:87)(cid:72)(cid:29)"
+  },
+  {
+    "faiss_index_id": 156,
+    "text": "(cid:41)(cid:82)(cid:85)(cid:3)(cid:87)(cid:75)(cid:72)(cid:3)(cid:80)(cid:82)(cid:86)(cid:87)(cid:3)(cid:70)(cid:88)(cid:85)(cid:85)(cid:72)(cid:81)(cid:87)(cid:3)(cid:83)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:72)(cid:3)(cid:71)(cid:85)(cid:68)(cid:90)(cid:76)(cid:81)(cid:74)(cid:86)(cid:15)(cid:3)(cid:83)(cid:79)(cid:72)(cid:68)(cid:86)(cid:72)(cid:3)(cid:86)(cid:72)(cid:72)(cid:3)(cid:87)(cid:75)(cid:72)(cid:3)(cid:48)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid"
+  },
+  {
+    "faiss_index_id": 157,
+    "text": "id:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:3)(cid:51)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:76)(cid:81)(cid:74)(cid:3)(cid:54)(cid:83)(cid:72)(cid:70)(cid:76)(cid:73)(cid:76)(cid:70)(cid:68)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:79)(cid:82)(cid:70)(cid:68)(cid:87)(cid:72)(cid:71)(cid:3)(cid:68)(cid:87)"
+  },
+  {
+    "faiss_index_id": 158,
+    "text": "(cid:75)(cid:87)(cid:87)(cid:83)(cid:29)(cid:18)(cid:18)(cid:90)(cid:90)(cid:90)(cid:17)(cid:80)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:17)(cid:70)(cid:82)(cid:80)(cid:18)(cid:83)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:76)(cid:81)(cid:74)\n(cid:49)(cid:50)(cid:55)(cid:40)(cid:3)(cid:20) (cid:39) (cid:36) (cid:37)\n(cid:20) (cid:21)\n(cid:36)\n(cid:11)(cid:39)(cid:36)(cid:55)(cid:56)(cid:48)(cid:3)(cid:37)(cid:12)"
+  },
+  {
+    "faiss_index_id": 159,
+    "text": "(cid:11)(cid:39)(cid:36)(cid:55)(cid:56)(cid:48)(cid:3)(cid:36)(cid:12) (cid:40)\n(cid:37)\n(cid:21)(cid:59)\n(cid:19)(cid:17)(cid:19)(cid:20)(cid:24) (cid:38)\n(cid:21)(cid:59)\n(cid:19)(cid:17)(cid:19)(cid:20)(cid:24) (cid:38)\n(cid:55)(cid:50)(cid:51)(cid:3)(cid:57)(cid:44)(cid:40)(cid:58)\n(cid:23)(cid:59)\n(cid:19)(cid:17)(cid:19)(cid:26)(cid:24) (cid:38)\n(cid:36)(cid:21)\n(cid:36)\n(cid:38)\n(cid:54)(cid:40)(cid:36)(cid:55)(cid:44)(cid:49)(cid:42) (cid:36)(cid:20)"
+  },
+  {
+    "faiss_index_id": 160,
+    "text": "(cid:51)(cid:47)(cid:36)(cid:49)(cid:40)\n(cid:54)(cid:44)(cid:39)(cid:40)(cid:3)(cid:57)(cid:44)(cid:40)(cid:58)\n(cid:20) (cid:21)\n(cid:37)\n(cid:72)(cid:40)\n(cid:21)\n(cid:72)(cid:40)\n(cid:36)\n(cid:49)(cid:50)(cid:55)(cid:40)(cid:3)(cid:20)\n(cid:72)(cid:39) (cid:23)(cid:59)(cid:3)(cid:145)(cid:69)\n(cid:21)\n(cid:19)(cid:17)(cid:19)(cid:20)(cid:24) (cid:38) (cid:36) (cid:37)\n(cid:19)(cid:17)(cid:19)(cid:24) (cid:38)\n(cid:72)(cid:39)"
+  },
+  {
+    "faiss_index_id": 161,
+    "text": "(cid:72)(cid:39)\n(cid:37)(cid:50)(cid:55)(cid:55)(cid:50)(cid:48)(cid:3)(cid:57)(cid:44)(cid:40)(cid:58)"
+  },
+  {
+    "faiss_index_id": 162,
+    "text": "(cid:48)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:3)(cid:55)(cid:72)(cid:70)(cid:75)(cid:81)(cid:82)(cid:79)(cid:82)(cid:74)(cid:92)(cid:3)(cid:39)(cid:85)(cid:68)(cid:90)(cid:76)(cid:81)(cid:74)(cid:3)(cid:3)(cid:38)(cid:19)(cid:23)(cid:16)(cid:25)(cid:19)(cid:23)(cid:26)(cid:3)(cid:53)(cid:72)(cid:89)(cid:17)(cid:3)(cid:37)(cid:3)(cid:54)(cid:75)(cid:72)(cid:72)(cid:87)(cid:3)(cid:20)(cid:3)(cid:82)(cid:73)(cid:3)(cid:21)"
+  },
+  {
+    "faiss_index_id": 163,
+    "text": " 2018 Microchip Technology Inc. DS20005772B-page 4024CW16X/24CW32X/24CW64X/24CW128X"
+  },
+  {
+    "faiss_index_id": 164,
+    "text": "(cid:23)(cid:16)(cid:37)(cid:68)(cid:79)(cid:79)(cid:3)(cid:58)(cid:68)(cid:73)(cid:72)(cid:85)(cid:3)(cid:47)(cid:72)(cid:89)(cid:72)(cid:79)(cid:3)(cid:38)(cid:75)(cid:76)(cid:83)(cid:3)(cid:54)(cid:70)(cid:68)(cid:79)(cid:72)(cid:3)(cid:51)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:72)(cid:3)(cid:11)(cid:38)(cid:54)(cid:12)(cid:3)(cid:16)(cid:3)(cid:19)(cid:17)(cid:23)(cid:91)(cid:19)(cid:17)(cid:23)(cid:3)(cid:80)(cid:80)(cid:3)(cid:37)(cid:68)(cid:79)(cid:79)(cid:3)(cid:51)(cid:76)(cid:8"
+  },
+  {
+    "faiss_index_id": 165,
+    "text": "d:68)(cid:79)(cid:79)(cid:3)(cid:51)(cid:76)(cid:87)(cid:70)(cid:75)(cid:3)(cid:62)(cid:38)(cid:54)(cid:51)(cid:64)"
+  },
+  {
+    "faiss_index_id": 166,
+    "text": "(cid:49)(cid:82)(cid:87)(cid:72)(cid:29)"
+  },
+  {
+    "faiss_index_id": 167,
+    "text": "(cid:41)(cid:82)(cid:85)(cid:3)(cid:87)(cid:75)(cid:72)(cid:3)(cid:80)(cid:82)(cid:86)(cid:87)(cid:3)(cid:70)(cid:88)(cid:85)(cid:85)(cid:72)(cid:81)(cid:87)(cid:3)(cid:83)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:72)(cid:3)(cid:71)(cid:85)(cid:68)(cid:90)(cid:76)(cid:81)(cid:74)(cid:86)(cid:15)(cid:3)(cid:83)(cid:79)(cid:72)(cid:68)(cid:86)(cid:72)(cid:3)(cid:86)(cid:72)(cid:72)(cid:3)(cid:87)(cid:75)(cid:72)(cid:3)(cid:48)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid"
+  },
+  {
+    "faiss_index_id": 168,
+    "text": "id:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:3)(cid:51)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:76)(cid:81)(cid:74)(cid:3)(cid:54)(cid:83)(cid:72)(cid:70)(cid:76)(cid:73)(cid:76)(cid:70)(cid:68)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:79)(cid:82)(cid:70)(cid:68)(cid:87)(cid:72)(cid:71)(cid:3)(cid:68)(cid:87)"
+  },
+  {
+    "faiss_index_id": 169,
+    "text": "(cid:75)(cid:87)(cid:87)(cid:83)(cid:29)(cid:18)(cid:18)(cid:90)(cid:90)(cid:90)(cid:17)(cid:80)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:17)(cid:70)(cid:82)(cid:80)(cid:18)(cid:83)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:76)(cid:81)(cid:74)\n(cid:56)(cid:81)(cid:76)(cid:87)(cid:86) (cid:48)(cid:44)(cid:47)(cid:47)(cid:44)(cid:48)(cid:40)(cid:55)(cid:40)(cid:53)(cid:54)"
+  },
+  {
+    "faiss_index_id": 170,
+    "text": "(cid:39)(cid:76)(cid:80)(cid:72)(cid:81)(cid:86)(cid:76)(cid:82)(cid:81)(cid:3)(cid:47)(cid:76)(cid:80)(cid:76)(cid:87)(cid:86) (cid:48)(cid:44)(cid:49) (cid:49)(cid:50)(cid:48) (cid:48)(cid:36)(cid:59)\n(cid:49)(cid:88)(cid:80)(cid:69)(cid:72)(cid:85)(cid:3)(cid:82)(cid:73)(cid:3)(cid:55)(cid:72)(cid:85)(cid:80)(cid:76)(cid:81)(cid:68)(cid:79)(cid:86) (cid:49) (cid:23)"
+  },
+  {
+    "faiss_index_id": 171,
+    "text": "(cid:37)(cid:88)(cid:80)(cid:83)(cid:3)(cid:51)(cid:76)(cid:87)(cid:70)(cid:75) (cid:72)(cid:39) (cid:19)(cid:17)(cid:23)(cid:19)(cid:3)(cid:37)(cid:54)(cid:38)\n(cid:37)(cid:88)(cid:80)(cid:83)(cid:3)(cid:51)(cid:76)(cid:87)(cid:70)(cid:75) (cid:72)(cid:40) (cid:19)(cid:17)(cid:23)(cid:19)(cid:3)(cid:37)(cid:54)(cid:38)"
+  },
+  {
+    "faiss_index_id": 172,
+    "text": "(cid:50)(cid:89)(cid:72)(cid:85)(cid:68)(cid:79)(cid:79)(cid:3)(cid:43)(cid:72)(cid:76)(cid:74)(cid:75)(cid:87) (cid:36) (cid:19)(cid:17)(cid:21)(cid:25)(cid:19) (cid:19)(cid:17)(cid:21)(cid:28)(cid:24) (cid:19)(cid:17)(cid:22)(cid:22)(cid:19)\n(cid:54)(cid:87)(cid:68)(cid:81)(cid:71)(cid:82)(cid:73)(cid:73) (cid:36)(cid:20) (cid:16) (cid:19)(cid:17)(cid:19)(cid:26)(cid:19) (cid:16)"
+  },
+  {
+    "faiss_index_id": 173,
+    "text": "(cid:39)(cid:76)(cid:72)(cid:3)(cid:43)(cid:72)(cid:76)(cid:74)(cid:75)(cid:87) (cid:36)(cid:21) (cid:16) (cid:19)(cid:17)(cid:21)(cid:21)(cid:24) (cid:16)"
+  },
+  {
+    "faiss_index_id": 174,
+    "text": "(cid:50)(cid:89)(cid:72)(cid:85)(cid:68)(cid:79)(cid:79)(cid:3)(cid:47)(cid:72)(cid:81)(cid:74)(cid:87)(cid:75) (cid:39) (cid:38)(cid:82)(cid:81)(cid:87)(cid:68)(cid:70)(cid:87)(cid:3)(cid:48)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:3)(cid:73)(cid:82)(cid:85)(cid:3)(cid:71)(cid:72)(cid:87)(cid:68)(cid:76)(cid:79)(cid:86)"
+  },
+  {
+    "faiss_index_id": 175,
+    "text": "(cid:50)(cid:89)(cid:72)(cid:85)(cid:68)(cid:79)(cid:79)(cid:3)(cid:58)(cid:76)(cid:71)(cid:87)(cid:75) (cid:40) (cid:38)(cid:82)(cid:81)(cid:87)(cid:68)(cid:70)(cid:87)(cid:3)(cid:48)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:3)(cid:73)(cid:82)(cid:85)(cid:3)(cid:71)(cid:72)(cid:87)(cid:68)(cid:76)(cid:79)(cid:86)"
+  },
+  {
+    "faiss_index_id": 176,
+    "text": "(cid:55)(cid:72)(cid:85)(cid:80)(cid:76)(cid:81)(cid:68)(cid:79)(cid:3)(cid:58)(cid:76)(cid:71)(cid:87)(cid:75) (cid:69) (cid:19)(cid:17)(cid:20)(cid:25)(cid:22)(cid:3)(cid:55)(cid:60)(cid:51)\nNotes:"
+  },
+  {
+    "faiss_index_id": 177,
+    "text": "(cid:20)(cid:17)"
+  },
+  {
+    "faiss_index_id": 178,
+    "text": "(cid:51)(cid:76)(cid:81)(cid:3)(cid:20)(cid:3)(cid:89)(cid:76)(cid:86)(cid:88)(cid:68)(cid:79)(cid:3)(cid:76)(cid:81)(cid:71)(cid:72)(cid:91)(cid:3)(cid:73)(cid:72)(cid:68)(cid:87)(cid:88)(cid:85)(cid:72)(cid:3)(cid:80)(cid:68)(cid:92)(cid:3)(cid:89)(cid:68)(cid:85)(cid:92)(cid:15)(cid:3)(cid:69)(cid:88)(cid:87)(cid:3)(cid:80)(cid:88)(cid:86)(cid:87)(cid:3)(cid:69)(cid:72)(cid:3)(cid:79)(cid:82)(cid:70)(cid:68)(cid:87)(cid:72)(cid:71)(cid:3)(cid:90)(cid:76)(cid:87)(cid:75)(cid:76)(cid:81)(cid:3"
+  },
+  {
+    "faiss_index_id": 179,
+    "text": ":90)(cid:76)(cid:87)(cid:75)(cid:76)(cid:81)(cid:3)(cid:87)(cid:75)(cid:72)(cid:3)(cid:75)(cid:68)(cid:87)(cid:70)(cid:75)(cid:72)(cid:71)(cid:3)(cid:68)(cid:85)(cid:72)(cid:68)(cid:17)"
+  },
+  {
+    "faiss_index_id": 180,
+    "text": "(cid:21)(cid:17) (cid:39)(cid:76)(cid:80)(cid:72)(cid:81)(cid:86)(cid:76)(cid:82)(cid:81)(cid:76)(cid:81)(cid:74)(cid:3)(cid:68)(cid:81)(cid:71)(cid:3)(cid:87)(cid:82)(cid:79)(cid:72)(cid:85)(cid:68)(cid:81)(cid:70)(cid:76)(cid:81)(cid:74)(cid:3)(cid:83)(cid:72)(cid:85)(cid:3)(cid:36)(cid:54)(cid:48)(cid:40)(cid:3)(cid:60)(cid:20)(cid:23)(cid:17)(cid:24)(cid:48)"
+  },
+  {
+    "faiss_index_id": 181,
+    "text": "(cid:37)(cid:54)(cid:38)(cid:29)(cid:3)(cid:37)(cid:68)(cid:86)(cid:76)(cid:70)(cid:3)(cid:39)(cid:76)(cid:80)(cid:72)(cid:81)(cid:86)(cid:76)(cid:82)(cid:81)(cid:17)(cid:3)(cid:55)(cid:75)(cid:72)(cid:82)(cid:85)(cid:72)(cid:87)(cid:76)(cid:70)(cid:68)(cid:79)(cid:79)(cid:92)(cid:3)(cid:72)(cid:91)(cid:68)(cid:70)(cid:87)(cid:3)(cid:89)(cid:68)(cid:79)(cid:88)(cid:72)(cid:3)(cid:86)(cid:75)(cid:82)(cid:90)(cid:81)(cid:3)(cid:90)(cid:76)(cid:87)(cid:75)(cid:82)(cid:88)(cid:87)(cid:3)(cid:87)(ci"
+  },
+  {
+    "faiss_index_id": 182,
+    "text": "(cid:75)(cid:82)(cid:88)(cid:87)(cid:3)(cid:87)(cid:82)(cid:79)(cid:72)(cid:85)(cid:68)(cid:81)(cid:70)(cid:72)(cid:86)(cid:17)"
+  },
+  {
+    "faiss_index_id": 183,
+    "text": "(cid:53)(cid:40)(cid:41)(cid:29)(cid:3)(cid:53)(cid:72)(cid:73)(cid:72)(cid:85)(cid:72)(cid:81)(cid:70)(cid:72)(cid:3)(cid:39)(cid:76)(cid:80)(cid:72)(cid:81)(cid:86)(cid:76)(cid:82)(cid:81)(cid:15)(cid:3)(cid:88)(cid:86)(cid:88)(cid:68)(cid:79)(cid:79)(cid:92)(cid:3)(cid:90)(cid:76)(cid:87)(cid:75)(cid:82)(cid:88)(cid:87)(cid:3)(cid:87)(cid:82)(cid:79)(cid:72)(cid:85)(cid:68)(cid:81)(cid:70)(cid:72)(cid:15)(cid:3)(cid:73)(cid:82)(cid:85)(cid:3)(cid:76)(cid:81)(cid:73)(cid:82)(cid:85)(cid:80)(c"
+  },
+  {
+    "faiss_index_id": 184,
+    "text": "(cid:76)(cid:81)(cid:73)(cid:82)(cid:85)(cid:80)(cid:68)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:83)(cid:88)(cid:85)(cid:83)(cid:82)(cid:86)(cid:72)(cid:86)(cid:3)(cid:82)(cid:81)(cid:79)(cid:92)(cid:17)"
+  },
+  {
+    "faiss_index_id": 185,
+    "text": "(cid:48)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:3)(cid:55)(cid:72)(cid:70)(cid:75)(cid:81)(cid:82)(cid:79)(cid:82)(cid:74)(cid:92)(cid:3)(cid:39)(cid:85)(cid:68)(cid:90)(cid:76)(cid:81)(cid:74)(cid:3)(cid:3)(cid:38)(cid:19)(cid:23)(cid:16)(cid:25)(cid:19)(cid:23)(cid:26)(cid:3)(cid:53)(cid:72)(cid:89)(cid:17)(cid:3)(cid:37)(cid:3)(cid:54)(cid:75)(cid:72)(cid:72)(cid:87)(cid:3)(cid:21)(cid:3)(cid:82)(cid:73)(cid:3)(cid:21)"
+  },
+  {
+    "faiss_index_id": 186,
+    "text": " 2018 Microchip Technology Inc. DS20005772B-page 4124CW16X/24CW32X/24CW64X/24CW128X"
+  },
+  {
+    "faiss_index_id": 187,
+    "text": "(cid:23)(cid:16)(cid:37)(cid:68)(cid:79)(cid:79)(cid:3)(cid:58)(cid:68)(cid:73)(cid:72)(cid:85)(cid:3)(cid:47)(cid:72)(cid:89)(cid:72)(cid:79)(cid:3)(cid:38)(cid:75)(cid:76)(cid:83)(cid:3)(cid:54)(cid:70)(cid:68)(cid:79)(cid:72)(cid:3)(cid:51)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:72)(cid:3)(cid:11)(cid:38)(cid:54)(cid:12)(cid:3)(cid:16)(cid:3)(cid:19)(cid:17)(cid:23)(cid:91)(cid:19)(cid:17)(cid:23)(cid:3)(cid:80)(cid:80)(cid:3)(cid:37)(cid:68)(cid:79)(cid:79)(cid:3)(cid:51)(cid:76)(cid:8"
+  },
+  {
+    "faiss_index_id": 188,
+    "text": "d:68)(cid:79)(cid:79)(cid:3)(cid:51)(cid:76)(cid:87)(cid:70)(cid:75)(cid:3)(cid:62)(cid:38)(cid:54)(cid:51)(cid:64)"
+  },
+  {
+    "faiss_index_id": 189,
+    "text": "(cid:49)(cid:82)(cid:87)(cid:72)(cid:29)"
+  },
+  {
+    "faiss_index_id": 190,
+    "text": "(cid:41)(cid:82)(cid:85)(cid:3)(cid:87)(cid:75)(cid:72)(cid:3)(cid:80)(cid:82)(cid:86)(cid:87)(cid:3)(cid:70)(cid:88)(cid:85)(cid:85)(cid:72)(cid:81)(cid:87)(cid:3)(cid:83)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:72)(cid:3)(cid:71)(cid:85)(cid:68)(cid:90)(cid:76)(cid:81)(cid:74)(cid:86)(cid:15)(cid:3)(cid:83)(cid:79)(cid:72)(cid:68)(cid:86)(cid:72)(cid:3)(cid:86)(cid:72)(cid:72)(cid:3)(cid:87)(cid:75)(cid:72)(cid:3)(cid:48)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid"
+  },
+  {
+    "faiss_index_id": 191,
+    "text": "id:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:3)(cid:51)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:76)(cid:81)(cid:74)(cid:3)(cid:54)(cid:83)(cid:72)(cid:70)(cid:76)(cid:73)(cid:76)(cid:70)(cid:68)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:79)(cid:82)(cid:70)(cid:68)(cid:87)(cid:72)(cid:71)(cid:3)(cid:68)(cid:87)"
+  },
+  {
+    "faiss_index_id": 192,
+    "text": "(cid:75)(cid:87)(cid:87)(cid:83)(cid:29)(cid:18)(cid:18)(cid:90)(cid:90)(cid:90)(cid:17)(cid:80)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:17)(cid:70)(cid:82)(cid:80)(cid:18)(cid:83)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:76)(cid:81)(cid:74)\n(cid:145)(cid:59)(cid:20)\n(cid:20) (cid:21)\n(cid:36)\n(cid:72)(cid:40)\n(cid:37)\n(cid:54)(cid:44)(cid:47)(cid:46)(cid:3)(cid:54)(cid:38)(cid:53)(cid:40)(cid:40)(cid:49) (cid:72)(cid:39)"
+  },
+  {
+    "faiss_index_id": 193,
+    "text": "(cid:53)(cid:40)(cid:38)(cid:50)(cid:48)(cid:48)(cid:40)(cid:49)(cid:39)(cid:40)(cid:39)(cid:3)(cid:47)(cid:36)(cid:49)(cid:39)(cid:3)(cid:51)(cid:36)(cid:55)(cid:55)(cid:40)(cid:53)(cid:49)\n(cid:56)(cid:81)(cid:76)(cid:87)(cid:86) (cid:48)(cid:44)(cid:47)(cid:47)(cid:44)(cid:48)(cid:40)(cid:55)(cid:40)(cid:53)(cid:54)"
+  },
+  {
+    "faiss_index_id": 194,
+    "text": "(cid:39)(cid:76)(cid:80)(cid:72)(cid:81)(cid:86)(cid:76)(cid:82)(cid:81)(cid:3)(cid:47)(cid:76)(cid:80)(cid:76)(cid:87)(cid:86) (cid:48)(cid:44)(cid:49) (cid:49)(cid:50)(cid:48) (cid:48)(cid:36)(cid:59)\n(cid:38)(cid:82)(cid:81)(cid:87)(cid:68)(cid:70)(cid:87)(cid:3)(cid:51)(cid:76)(cid:87)(cid:70)(cid:75) (cid:72)(cid:39) (cid:19)(cid:17)(cid:23)(cid:19)(cid:3)(cid:37)(cid:54)(cid:38)"
+  },
+  {
+    "faiss_index_id": 195,
+    "text": "(cid:38)(cid:82)(cid:81)(cid:87)(cid:68)(cid:70)(cid:87)(cid:3)(cid:51)(cid:76)(cid:87)(cid:70)(cid:75) (cid:72)(cid:40) (cid:19)(cid:17)(cid:23)(cid:19)(cid:3)(cid:37)(cid:54)(cid:38)\n(cid:38)(cid:82)(cid:81)(cid:87)(cid:68)(cid:70)(cid:87)(cid:3)(cid:39)(cid:76)(cid:68)(cid:80)(cid:72)(cid:87)(cid:72)(cid:85) (cid:145)(cid:59)(cid:20) (cid:19)(cid:17)(cid:20)(cid:25)(cid:22)\n(cid:49)(cid:82)(cid:87)(cid:72)(cid:86)(cid:29)"
+  },
+  {
+    "faiss_index_id": 196,
+    "text": "(cid:49)(cid:82)(cid:87)(cid:72)(cid:86)(cid:29)\n(cid:20)(cid:17) (cid:39)(cid:76)(cid:80)(cid:72)(cid:81)(cid:86)(cid:76)(cid:82)(cid:81)(cid:76)(cid:81)(cid:74)(cid:3)(cid:68)(cid:81)(cid:71)(cid:3)(cid:87)(cid:82)(cid:79)(cid:72)(cid:85)(cid:68)(cid:81)(cid:70)(cid:76)(cid:81)(cid:74)(cid:3)(cid:83)(cid:72)(cid:85)(cid:3)(cid:36)(cid:54)(cid:48)(cid:40)(cid:3)(cid:60)(cid:20)(cid:23)(cid:17)(cid:24)(cid:48)"
+  },
+  {
+    "faiss_index_id": 197,
+    "text": "(cid:37)(cid:54)(cid:38)(cid:29)(cid:3)(cid:37)(cid:68)(cid:86)(cid:76)(cid:70)(cid:3)(cid:39)(cid:76)(cid:80)(cid:72)(cid:81)(cid:86)(cid:76)(cid:82)(cid:81)(cid:17)(cid:3)(cid:55)(cid:75)(cid:72)(cid:82)(cid:85)(cid:72)(cid:87)(cid:76)(cid:70)(cid:68)(cid:79)(cid:79)(cid:92)(cid:3)(cid:72)(cid:91)(cid:68)(cid:70)(cid:87)(cid:3)(cid:89)(cid:68)(cid:79)(cid:88)(cid:72)(cid:3)(cid:86)(cid:75)(cid:82)(cid:90)(cid:81)(cid:3)(cid:90)(cid:76)(cid:87)(cid:75)(cid:82)(cid:88)(cid:87)(cid:3)(cid:87)(ci"
+  },
+  {
+    "faiss_index_id": 198,
+    "text": "(cid:75)(cid:82)(cid:88)(cid:87)(cid:3)(cid:87)(cid:82)(cid:79)(cid:72)(cid:85)(cid:68)(cid:81)(cid:70)(cid:72)(cid:86)(cid:17)"
+  },
+  {
+    "faiss_index_id": 199,
+    "text": "(cid:21)(cid:17)"
+  },
+  {
+    "faiss_index_id": 200,
+    "text": "(cid:41)(cid:82)(cid:85)(cid:3)(cid:69)(cid:72)(cid:86)(cid:87)(cid:3)(cid:86)(cid:82)(cid:79)(cid:71)(cid:72)(cid:85)(cid:76)(cid:81)(cid:74)(cid:3)(cid:85)(cid:72)(cid:86)(cid:88)(cid:79)(cid:87)(cid:86)(cid:15)(cid:3)(cid:87)(cid:75)(cid:72)(cid:85)(cid:80)(cid:68)(cid:79)(cid:3)(cid:89)(cid:76)(cid:68)(cid:86)(cid:15)(cid:3)(cid:76)(cid:73)(cid:3)(cid:88)(cid:86)(cid:72)(cid:71)(cid:15)(cid:3)(cid:86)(cid:75)(cid:82)(cid:88)(cid:79)(cid:71)(cid:3)(cid:69)(cid:72)(cid:3)(cid:73)(cid:76)(cid:"
+  },
+  {
+    "faiss_index_id": 201,
+    "text": "cid:3)(cid:69)(cid:72)(cid:3)(cid:73)(cid:76)(cid:79)(cid:79)(cid:72)(cid:71)(cid:3)(cid:82)(cid:85)(cid:3)(cid:87)(cid:72)(cid:81)(cid:87)(cid:72)(cid:71)(cid:3)(cid:87)(cid:82)(cid:3)(cid:68)(cid:89)(cid:82)(cid:76)(cid:71)(cid:3)(cid:86)(cid:82)(cid:79)(cid:71)(cid:72)(cid:85)(cid:3)(cid:79)(cid:82)(cid:86)(cid:86)(cid:3)(cid:71)(cid:88)(cid:85)(cid:76)(cid:81)(cid:74)"
+  },
+  {
+    "faiss_index_id": 202,
+    "text": "(cid:85)(cid:72)(cid:73)(cid:79)(cid:82)(cid:90)(cid:3)(cid:83)(cid:85)(cid:82)(cid:70)(cid:72)(cid:86)(cid:86)\n(cid:48)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:3)(cid:55)(cid:72)(cid:70)(cid:75)(cid:81)(cid:82)(cid:79)(cid:82)(cid:74)(cid:92)(cid:3)(cid:39)(cid:85)(cid:68)(cid:90)(cid:76)(cid:81)(cid:74)(cid:3)(cid:38)(cid:19)(cid:23)(cid:16)(cid:27)(cid:19)(cid:23)(cid:26)(cid:3)(cid:53)(cid:72)(cid:89)(cid:17)(cid:3)(cid:37)"
+  },
+  {
+    "faiss_index_id": 203,
+    "text": " 2018 Microchip Technology Inc. DS20005772B-page 4224CW16X/24CW32X/24CW64X/24CW128X"
+  },
+  {
+    "faiss_index_id": 204,
+    "text": "(cid:23)(cid:16)(cid:37)(cid:68)(cid:79)(cid:79)(cid:3)(cid:58)(cid:68)(cid:73)(cid:72)(cid:85)(cid:3)(cid:47)(cid:72)(cid:89)(cid:72)(cid:79)(cid:3)(cid:38)(cid:75)(cid:76)(cid:83)(cid:3)(cid:54)(cid:70)(cid:68)(cid:79)(cid:72)(cid:3)(cid:51)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:72)(cid:3)(cid:11)(cid:38)(cid:54)(cid:12)(cid:3)(cid:16)(cid:3)(cid:19)(cid:17)(cid:23)(cid:91)(cid:19)(cid:17)(cid:24)(cid:3)(cid:80)(cid:80)(cid:3)(cid:3)(cid:37)(cid:68)(cid:79)(cid:79)(cid:3)(cid:51)(cid:76"
+  },
+  {
+    "faiss_index_id": 205,
+    "text": ":37)(cid:68)(cid:79)(cid:79)(cid:3)(cid:51)(cid:76)(cid:87)(cid:70)(cid:75)(cid:3)(cid:62)(cid:38)(cid:54)(cid:51)(cid:64)"
+  },
+  {
+    "faiss_index_id": 206,
+    "text": "(cid:49)(cid:82)(cid:87)(cid:72)(cid:29)"
+  },
+  {
+    "faiss_index_id": 207,
+    "text": "(cid:41)(cid:82)(cid:85)(cid:3)(cid:87)(cid:75)(cid:72)(cid:3)(cid:80)(cid:82)(cid:86)(cid:87)(cid:3)(cid:70)(cid:88)(cid:85)(cid:85)(cid:72)(cid:81)(cid:87)(cid:3)(cid:83)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:72)(cid:3)(cid:71)(cid:85)(cid:68)(cid:90)(cid:76)(cid:81)(cid:74)(cid:86)(cid:15)(cid:3)(cid:83)(cid:79)(cid:72)(cid:68)(cid:86)(cid:72)(cid:3)(cid:86)(cid:72)(cid:72)(cid:3)(cid:87)(cid:75)(cid:72)(cid:3)(cid:48)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid"
+  },
+  {
+    "faiss_index_id": 208,
+    "text": "id:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:3)(cid:51)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:76)(cid:81)(cid:74)(cid:3)(cid:54)(cid:83)(cid:72)(cid:70)(cid:76)(cid:73)(cid:76)(cid:70)(cid:68)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:79)(cid:82)(cid:70)(cid:68)(cid:87)(cid:72)(cid:71)(cid:3)(cid:68)(cid:87)"
+  },
+  {
+    "faiss_index_id": 209,
+    "text": "(cid:75)(cid:87)(cid:87)(cid:83)(cid:29)(cid:18)(cid:18)(cid:90)(cid:90)(cid:90)(cid:17)(cid:80)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:17)(cid:70)(cid:82)(cid:80)(cid:18)(cid:83)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:76)(cid:81)(cid:74)\n(cid:39) (cid:36)\n(cid:37)\n(cid:49)(cid:50)(cid:55)(cid:40)(cid:3)(cid:20)\n(cid:20) (cid:21)\n(cid:36)\n(cid:11)(cid:39)(cid:36)(cid:55)(cid:56)(cid:48)(cid:3)(cid:37)(cid:12)"
+  },
+  {
+    "faiss_index_id": 210,
+    "text": "(cid:11)(cid:39)(cid:36)(cid:55)(cid:56)(cid:48)(cid:3)(cid:36)(cid:12) (cid:40)\n(cid:37)\n(cid:21)(cid:59)\n(cid:19)(cid:17)(cid:19)(cid:20)(cid:24) (cid:38)\n(cid:21)(cid:59)\n(cid:19)(cid:17)(cid:19)(cid:20)(cid:24) (cid:38)\n(cid:55)(cid:50)(cid:51)(cid:3)(cid:57)(cid:44)(cid:40)(cid:58)\n(cid:23)(cid:59)\n(cid:19)(cid:17)(cid:19)(cid:26)(cid:24) (cid:38)\n(cid:36)(cid:21)\n(cid:36)\n(cid:38)\n(cid:54)(cid:40)(cid:36)(cid:55)(cid:44)(cid:49)(cid:42)\n(cid:51)(cid:47)(cid:36)(cid:49)(cid:40)"
+  },
+  {
+    "faiss_index_id": 211,
+    "text": "(cid:51)(cid:47)(cid:36)(cid:49)(cid:40)\n(cid:36)(cid:20)\n(cid:54)(cid:44)(cid:39)(cid:40)(cid:3)(cid:57)(cid:44)(cid:40)(cid:58)\n(cid:20) (cid:21)\n(cid:37)\n(cid:72)(cid:40)\n(cid:21)\n(cid:72)(cid:40)\n(cid:36)\n(cid:49)(cid:50)(cid:55)(cid:40)(cid:3)(cid:20)\n(cid:72)(cid:39)\n(cid:21) (cid:23)(cid:59)(cid:3)(cid:145)(cid:69)\n(cid:19)(cid:17)(cid:19)(cid:20)(cid:24) (cid:38) (cid:36) (cid:37)\n(cid:19)(cid:17)(cid:19)(cid:24) (cid:38)\n(cid:72)(cid:39)"
+  },
+  {
+    "faiss_index_id": 212,
+    "text": "(cid:72)(cid:39)\n(cid:37)(cid:50)(cid:55)(cid:55)(cid:50)(cid:48)(cid:3)(cid:57)(cid:44)(cid:40)(cid:58)"
+  },
+  {
+    "faiss_index_id": 213,
+    "text": "(cid:48)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:3)(cid:55)(cid:72)(cid:70)(cid:75)(cid:81)(cid:82)(cid:79)(cid:82)(cid:74)(cid:92)(cid:3)(cid:39)(cid:85)(cid:68)(cid:90)(cid:76)(cid:81)(cid:74)(cid:3)(cid:3)(cid:38)(cid:19)(cid:23)(cid:16)(cid:25)(cid:19)(cid:23)(cid:27)(cid:3)(cid:53)(cid:72)(cid:89)(cid:17)(cid:3)(cid:37)(cid:3)(cid:54)(cid:75)(cid:72)(cid:72)(cid:87)(cid:3)(cid:20)(cid:3)(cid:82)(cid:73)(cid:3)(cid:21)"
+  },
+  {
+    "faiss_index_id": 214,
+    "text": " 2018 Microchip Technology Inc. DS20005772B-page 4324CW16X/24CW32X/24CW64X/24CW128X"
+  },
+  {
+    "faiss_index_id": 215,
+    "text": "(cid:23)(cid:16)(cid:37)(cid:68)(cid:79)(cid:79)(cid:3)(cid:58)(cid:68)(cid:73)(cid:72)(cid:85)(cid:3)(cid:47)(cid:72)(cid:89)(cid:72)(cid:79)(cid:3)(cid:38)(cid:75)(cid:76)(cid:83)(cid:3)(cid:54)(cid:70)(cid:68)(cid:79)(cid:72)(cid:3)(cid:51)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:72)(cid:3)(cid:11)(cid:38)(cid:54)(cid:12)(cid:3)(cid:16)(cid:3)(cid:19)(cid:17)(cid:23)(cid:91)(cid:19)(cid:17)(cid:24)(cid:3)(cid:80)(cid:80)(cid:3)(cid:3)(cid:37)(cid:68)(cid:79)(cid:79)(cid:3)(cid:51)(cid:76"
+  },
+  {
+    "faiss_index_id": 216,
+    "text": ":37)(cid:68)(cid:79)(cid:79)(cid:3)(cid:51)(cid:76)(cid:87)(cid:70)(cid:75)(cid:3)(cid:62)(cid:38)(cid:54)(cid:51)(cid:64)"
+  },
+  {
+    "faiss_index_id": 217,
+    "text": "(cid:49)(cid:82)(cid:87)(cid:72)(cid:29)"
+  },
+  {
+    "faiss_index_id": 218,
+    "text": "(cid:41)(cid:82)(cid:85)(cid:3)(cid:87)(cid:75)(cid:72)(cid:3)(cid:80)(cid:82)(cid:86)(cid:87)(cid:3)(cid:70)(cid:88)(cid:85)(cid:85)(cid:72)(cid:81)(cid:87)(cid:3)(cid:83)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:72)(cid:3)(cid:71)(cid:85)(cid:68)(cid:90)(cid:76)(cid:81)(cid:74)(cid:86)(cid:15)(cid:3)(cid:83)(cid:79)(cid:72)(cid:68)(cid:86)(cid:72)(cid:3)(cid:86)(cid:72)(cid:72)(cid:3)(cid:87)(cid:75)(cid:72)(cid:3)(cid:48)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid"
+  },
+  {
+    "faiss_index_id": 219,
+    "text": "id:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:3)(cid:51)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:76)(cid:81)(cid:74)(cid:3)(cid:54)(cid:83)(cid:72)(cid:70)(cid:76)(cid:73)(cid:76)(cid:70)(cid:68)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:79)(cid:82)(cid:70)(cid:68)(cid:87)(cid:72)(cid:71)(cid:3)(cid:68)(cid:87)"
+  },
+  {
+    "faiss_index_id": 220,
+    "text": "(cid:75)(cid:87)(cid:87)(cid:83)(cid:29)(cid:18)(cid:18)(cid:90)(cid:90)(cid:90)(cid:17)(cid:80)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:17)(cid:70)(cid:82)(cid:80)(cid:18)(cid:83)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:76)(cid:81)(cid:74)\n(cid:56)(cid:81)(cid:76)(cid:87)(cid:86) (cid:48)(cid:44)(cid:47)(cid:47)(cid:44)(cid:48)(cid:40)(cid:55)(cid:40)(cid:53)(cid:54)"
+  },
+  {
+    "faiss_index_id": 221,
+    "text": "(cid:39)(cid:76)(cid:80)(cid:72)(cid:81)(cid:86)(cid:76)(cid:82)(cid:81)(cid:3)(cid:47)(cid:76)(cid:80)(cid:76)(cid:87)(cid:86) (cid:48)(cid:44)(cid:49) (cid:49)(cid:50)(cid:48) (cid:48)(cid:36)(cid:59)\n(cid:49)(cid:88)(cid:80)(cid:69)(cid:72)(cid:85)(cid:3)(cid:82)(cid:73)(cid:3)(cid:55)(cid:72)(cid:85)(cid:80)(cid:76)(cid:81)(cid:68)(cid:79)(cid:86) (cid:49) (cid:23)"
+  },
+  {
+    "faiss_index_id": 222,
+    "text": "(cid:37)(cid:88)(cid:80)(cid:83)(cid:3)(cid:51)(cid:76)(cid:87)(cid:70)(cid:75) (cid:72)(cid:39) (cid:19)(cid:17)(cid:23)(cid:19)(cid:3)(cid:37)(cid:54)(cid:38)\n(cid:37)(cid:88)(cid:80)(cid:83)(cid:3)(cid:51)(cid:76)(cid:87)(cid:70)(cid:75) (cid:72)(cid:40) (cid:19)(cid:17)(cid:24)(cid:19)(cid:3)(cid:37)(cid:54)(cid:38)"
+  },
+  {
+    "faiss_index_id": 223,
+    "text": "(cid:50)(cid:89)(cid:72)(cid:85)(cid:68)(cid:79)(cid:79)(cid:3)(cid:43)(cid:72)(cid:76)(cid:74)(cid:75)(cid:87) (cid:36) (cid:19)(cid:17)(cid:21)(cid:25)(cid:19) (cid:19)(cid:17)(cid:21)(cid:28)(cid:24) (cid:19)(cid:17)(cid:22)(cid:22)(cid:19)\n(cid:54)(cid:87)(cid:68)(cid:81)(cid:71)(cid:82)(cid:73)(cid:73) (cid:36)(cid:20) (cid:16) (cid:19)(cid:17)(cid:19)(cid:26)(cid:19) (cid:16)"
+  },
+  {
+    "faiss_index_id": 224,
+    "text": "(cid:39)(cid:76)(cid:72)(cid:3)(cid:43)(cid:72)(cid:76)(cid:74)(cid:75)(cid:87) (cid:36)(cid:21) (cid:16) (cid:19)(cid:17)(cid:21)(cid:21)(cid:24) (cid:16)"
+  },
+  {
+    "faiss_index_id": 225,
+    "text": "(cid:50)(cid:89)(cid:72)(cid:85)(cid:68)(cid:79)(cid:79)(cid:3)(cid:47)(cid:72)(cid:81)(cid:74)(cid:87)(cid:75) (cid:39) (cid:38)(cid:82)(cid:81)(cid:87)(cid:68)(cid:70)(cid:87)(cid:3)(cid:48)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:3)(cid:73)(cid:82)(cid:85)(cid:3)(cid:71)(cid:72)(cid:87)(cid:68)(cid:76)(cid:79)(cid:86)"
+  },
+  {
+    "faiss_index_id": 226,
+    "text": "(cid:50)(cid:89)(cid:72)(cid:85)(cid:68)(cid:79)(cid:79)(cid:3)(cid:58)(cid:76)(cid:71)(cid:87)(cid:75) (cid:40) (cid:38)(cid:82)(cid:81)(cid:87)(cid:68)(cid:70)(cid:87)(cid:3)(cid:48)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:3)(cid:73)(cid:82)(cid:85)(cid:3)(cid:71)(cid:72)(cid:87)(cid:68)(cid:76)(cid:79)(cid:86)"
+  },
+  {
+    "faiss_index_id": 227,
+    "text": "(cid:55)(cid:72)(cid:85)(cid:80)(cid:76)(cid:81)(cid:68)(cid:79)(cid:3)(cid:58)(cid:76)(cid:71)(cid:87)(cid:75) (cid:69) (cid:19)(cid:17)(cid:20)(cid:25)(cid:22)(cid:3)(cid:55)(cid:60)(cid:51)\nNotes:"
+  },
+  {
+    "faiss_index_id": 228,
+    "text": "(cid:20)(cid:17)"
+  },
+  {
+    "faiss_index_id": 229,
+    "text": "(cid:51)(cid:76)(cid:81)(cid:3)(cid:20)(cid:3)(cid:89)(cid:76)(cid:86)(cid:88)(cid:68)(cid:79)(cid:3)(cid:76)(cid:81)(cid:71)(cid:72)(cid:91)(cid:3)(cid:73)(cid:72)(cid:68)(cid:87)(cid:88)(cid:85)(cid:72)(cid:3)(cid:80)(cid:68)(cid:92)(cid:3)(cid:89)(cid:68)(cid:85)(cid:92)(cid:15)(cid:3)(cid:69)(cid:88)(cid:87)(cid:3)(cid:80)(cid:88)(cid:86)(cid:87)(cid:3)(cid:69)(cid:72)(cid:3)(cid:79)(cid:82)(cid:70)(cid:68)(cid:87)(cid:72)(cid:71)(cid:3)(cid:90)(cid:76)(cid:87)(cid:75)(cid:76)(cid:81)(cid:3"
+  },
+  {
+    "faiss_index_id": 230,
+    "text": ":90)(cid:76)(cid:87)(cid:75)(cid:76)(cid:81)(cid:3)(cid:87)(cid:75)(cid:72)(cid:3)(cid:75)(cid:68)(cid:87)(cid:70)(cid:75)(cid:72)(cid:71)(cid:3)(cid:68)(cid:85)(cid:72)(cid:68)(cid:17)"
+  },
+  {
+    "faiss_index_id": 231,
+    "text": "(cid:21)(cid:17) (cid:39)(cid:76)(cid:80)(cid:72)(cid:81)(cid:86)(cid:76)(cid:82)(cid:81)(cid:76)(cid:81)(cid:74)(cid:3)(cid:68)(cid:81)(cid:71)(cid:3)(cid:87)(cid:82)(cid:79)(cid:72)(cid:85)(cid:68)(cid:81)(cid:70)(cid:76)(cid:81)(cid:74)(cid:3)(cid:83)(cid:72)(cid:85)(cid:3)(cid:36)(cid:54)(cid:48)(cid:40)(cid:3)(cid:60)(cid:20)(cid:23)(cid:17)(cid:24)(cid:48)"
+  },
+  {
+    "faiss_index_id": 232,
+    "text": "(cid:37)(cid:54)(cid:38)(cid:29)(cid:3)(cid:37)(cid:68)(cid:86)(cid:76)(cid:70)(cid:3)(cid:39)(cid:76)(cid:80)(cid:72)(cid:81)(cid:86)(cid:76)(cid:82)(cid:81)(cid:17)(cid:3)(cid:55)(cid:75)(cid:72)(cid:82)(cid:85)(cid:72)(cid:87)(cid:76)(cid:70)(cid:68)(cid:79)(cid:79)(cid:92)(cid:3)(cid:72)(cid:91)(cid:68)(cid:70)(cid:87)(cid:3)(cid:89)(cid:68)(cid:79)(cid:88)(cid:72)(cid:3)(cid:86)(cid:75)(cid:82)(cid:90)(cid:81)(cid:3)(cid:90)(cid:76)(cid:87)(cid:75)(cid:82)(cid:88)(cid:87)(cid:3)(cid:87)(ci"
+  },
+  {
+    "faiss_index_id": 233,
+    "text": "(cid:75)(cid:82)(cid:88)(cid:87)(cid:3)(cid:87)(cid:82)(cid:79)(cid:72)(cid:85)(cid:68)(cid:81)(cid:70)(cid:72)(cid:86)(cid:17)"
+  },
+  {
+    "faiss_index_id": 234,
+    "text": "(cid:53)(cid:40)(cid:41)(cid:29)(cid:3)(cid:53)(cid:72)(cid:73)(cid:72)(cid:85)(cid:72)(cid:81)(cid:70)(cid:72)(cid:3)(cid:39)(cid:76)(cid:80)(cid:72)(cid:81)(cid:86)(cid:76)(cid:82)(cid:81)(cid:15)(cid:3)(cid:88)(cid:86)(cid:88)(cid:68)(cid:79)(cid:79)(cid:92)(cid:3)(cid:90)(cid:76)(cid:87)(cid:75)(cid:82)(cid:88)(cid:87)(cid:3)(cid:87)(cid:82)(cid:79)(cid:72)(cid:85)(cid:68)(cid:81)(cid:70)(cid:72)(cid:15)(cid:3)(cid:73)(cid:82)(cid:85)(cid:3)(cid:76)(cid:81)(cid:73)(cid:82)(cid:85)(cid:80)(c"
+  },
+  {
+    "faiss_index_id": 235,
+    "text": "(cid:76)(cid:81)(cid:73)(cid:82)(cid:85)(cid:80)(cid:68)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:83)(cid:88)(cid:85)(cid:83)(cid:82)(cid:86)(cid:72)(cid:86)(cid:3)(cid:82)(cid:81)(cid:79)(cid:92)(cid:17)"
+  },
+  {
+    "faiss_index_id": 236,
+    "text": "(cid:48)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:3)(cid:55)(cid:72)(cid:70)(cid:75)(cid:81)(cid:82)(cid:79)(cid:82)(cid:74)(cid:92)(cid:3)(cid:39)(cid:85)(cid:68)(cid:90)(cid:76)(cid:81)(cid:74)(cid:3)(cid:3)(cid:38)(cid:19)(cid:23)(cid:16)(cid:25)(cid:19)(cid:23)(cid:27)(cid:3)(cid:53)(cid:72)(cid:89)(cid:17)(cid:3)(cid:37)(cid:3)(cid:54)(cid:75)(cid:72)(cid:72)(cid:87)(cid:3)(cid:21)(cid:3)(cid:82)(cid:73)(cid:3)(cid:21)"
+  },
+  {
+    "faiss_index_id": 237,
+    "text": " 2018 Microchip Technology Inc. DS20005772B-page 4424CW16X/24CW32X/24CW64X/24CW128X"
+  },
+  {
+    "faiss_index_id": 238,
+    "text": "(cid:23)(cid:16)(cid:37)(cid:68)(cid:79)(cid:79)(cid:3)(cid:58)(cid:68)(cid:73)(cid:72)(cid:85)(cid:3)(cid:47)(cid:72)(cid:89)(cid:72)(cid:79)(cid:3)(cid:38)(cid:75)(cid:76)(cid:83)(cid:3)(cid:54)(cid:70)(cid:68)(cid:79)(cid:72)(cid:3)(cid:51)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:72)(cid:3)(cid:11)(cid:38)(cid:54)(cid:12)(cid:3)(cid:16)(cid:3)(cid:19)(cid:17)(cid:23)(cid:91)(cid:19)(cid:17)(cid:24)(cid:3)(cid:80)(cid:80)(cid:3)(cid:3)(cid:37)(cid:68)(cid:79)(cid:79)(cid:3)(cid:51)(cid:76"
+  },
+  {
+    "faiss_index_id": 239,
+    "text": ":37)(cid:68)(cid:79)(cid:79)(cid:3)(cid:51)(cid:76)(cid:87)(cid:70)(cid:75)(cid:3)(cid:62)(cid:38)(cid:54)(cid:51)(cid:64)"
+  },
+  {
+    "faiss_index_id": 240,
+    "text": "(cid:49)(cid:82)(cid:87)(cid:72)(cid:29)"
+  },
+  {
+    "faiss_index_id": 241,
+    "text": "(cid:41)(cid:82)(cid:85)(cid:3)(cid:87)(cid:75)(cid:72)(cid:3)(cid:80)(cid:82)(cid:86)(cid:87)(cid:3)(cid:70)(cid:88)(cid:85)(cid:85)(cid:72)(cid:81)(cid:87)(cid:3)(cid:83)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:72)(cid:3)(cid:71)(cid:85)(cid:68)(cid:90)(cid:76)(cid:81)(cid:74)(cid:86)(cid:15)(cid:3)(cid:83)(cid:79)(cid:72)(cid:68)(cid:86)(cid:72)(cid:3)(cid:86)(cid:72)(cid:72)(cid:3)(cid:87)(cid:75)(cid:72)(cid:3)(cid:48)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid"
+  },
+  {
+    "faiss_index_id": 242,
+    "text": "id:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:3)(cid:51)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:76)(cid:81)(cid:74)(cid:3)(cid:54)(cid:83)(cid:72)(cid:70)(cid:76)(cid:73)(cid:76)(cid:70)(cid:68)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:79)(cid:82)(cid:70)(cid:68)(cid:87)(cid:72)(cid:71)(cid:3)(cid:68)(cid:87)"
+  },
+  {
+    "faiss_index_id": 243,
+    "text": "(cid:75)(cid:87)(cid:87)(cid:83)(cid:29)(cid:18)(cid:18)(cid:90)(cid:90)(cid:90)(cid:17)(cid:80)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:17)(cid:70)(cid:82)(cid:80)(cid:18)(cid:83)(cid:68)(cid:70)(cid:78)(cid:68)(cid:74)(cid:76)(cid:81)(cid:74)\n(cid:145)(cid:59)(cid:20)\n(cid:20) (cid:21)\n(cid:36)\n(cid:72)(cid:40)\n(cid:37)\n(cid:54)(cid:44)(cid:47)(cid:46)(cid:3)(cid:54)(cid:38)(cid:53)(cid:40)(cid:40)(cid:49) (cid:72)(cid:39)"
+  },
+  {
+    "faiss_index_id": 244,
+    "text": "(cid:53)(cid:40)(cid:38)(cid:50)(cid:48)(cid:48)(cid:40)(cid:49)(cid:39)(cid:40)(cid:39)(cid:3)(cid:47)(cid:36)(cid:49)(cid:39)(cid:3)(cid:51)(cid:36)(cid:55)(cid:55)(cid:40)(cid:53)(cid:49)\n(cid:56)(cid:81)(cid:76)(cid:87)(cid:86) (cid:48)(cid:44)(cid:47)(cid:47)(cid:44)(cid:48)(cid:40)(cid:55)(cid:40)(cid:53)(cid:54)"
+  },
+  {
+    "faiss_index_id": 245,
+    "text": "(cid:39)(cid:76)(cid:80)(cid:72)(cid:81)(cid:86)(cid:76)(cid:82)(cid:81)(cid:3)(cid:47)(cid:76)(cid:80)(cid:76)(cid:87)(cid:86) (cid:48)(cid:44)(cid:49) (cid:49)(cid:50)(cid:48) (cid:48)(cid:36)(cid:59)\n(cid:38)(cid:82)(cid:81)(cid:87)(cid:68)(cid:70)(cid:87)(cid:3)(cid:51)(cid:76)(cid:87)(cid:70)(cid:75) (cid:72)(cid:39) (cid:19)(cid:17)(cid:23)(cid:19)(cid:3)(cid:37)(cid:54)(cid:38)"
+  },
+  {
+    "faiss_index_id": 246,
+    "text": "(cid:38)(cid:82)(cid:81)(cid:87)(cid:68)(cid:70)(cid:87)(cid:3)(cid:51)(cid:76)(cid:87)(cid:70)(cid:75) (cid:72)(cid:40) (cid:19)(cid:17)(cid:24)(cid:19)(cid:3)(cid:37)(cid:54)(cid:38)\n(cid:38)(cid:82)(cid:81)(cid:87)(cid:68)(cid:70)(cid:87)(cid:3)(cid:39)(cid:76)(cid:68)(cid:80)(cid:72)(cid:87)(cid:72)(cid:85) (cid:145)(cid:59)(cid:20) (cid:19)(cid:17)(cid:20)(cid:25)(cid:22)\n(cid:49)(cid:82)(cid:87)(cid:72)(cid:86)(cid:29)"
+  },
+  {
+    "faiss_index_id": 247,
+    "text": "(cid:49)(cid:82)(cid:87)(cid:72)(cid:86)(cid:29)\n(cid:20)(cid:17) (cid:39)(cid:76)(cid:80)(cid:72)(cid:81)(cid:86)(cid:76)(cid:82)(cid:81)(cid:76)(cid:81)(cid:74)(cid:3)(cid:68)(cid:81)(cid:71)(cid:3)(cid:87)(cid:82)(cid:79)(cid:72)(cid:85)(cid:68)(cid:81)(cid:70)(cid:76)(cid:81)(cid:74)(cid:3)(cid:83)(cid:72)(cid:85)(cid:3)(cid:36)(cid:54)(cid:48)(cid:40)(cid:3)(cid:60)(cid:20)(cid:23)(cid:17)(cid:24)(cid:48)"
+  },
+  {
+    "faiss_index_id": 248,
+    "text": "(cid:37)(cid:54)(cid:38)(cid:29)(cid:3)(cid:37)(cid:68)(cid:86)(cid:76)(cid:70)(cid:3)(cid:39)(cid:76)(cid:80)(cid:72)(cid:81)(cid:86)(cid:76)(cid:82)(cid:81)(cid:17)(cid:3)(cid:55)(cid:75)(cid:72)(cid:82)(cid:85)(cid:72)(cid:87)(cid:76)(cid:70)(cid:68)(cid:79)(cid:79)(cid:92)(cid:3)(cid:72)(cid:91)(cid:68)(cid:70)(cid:87)(cid:3)(cid:89)(cid:68)(cid:79)(cid:88)(cid:72)(cid:3)(cid:86)(cid:75)(cid:82)(cid:90)(cid:81)(cid:3)(cid:90)(cid:76)(cid:87)(cid:75)(cid:82)(cid:88)(cid:87)(cid:3)(cid:87)(ci"
+  },
+  {
+    "faiss_index_id": 249,
+    "text": "(cid:75)(cid:82)(cid:88)(cid:87)(cid:3)(cid:87)(cid:82)(cid:79)(cid:72)(cid:85)(cid:68)(cid:81)(cid:70)(cid:72)(cid:86)(cid:17)"
+  },
+  {
+    "faiss_index_id": 250,
+    "text": "(cid:21)(cid:17)"
+  },
+  {
+    "faiss_index_id": 251,
+    "text": "(cid:41)(cid:82)(cid:85)(cid:3)(cid:69)(cid:72)(cid:86)(cid:87)(cid:3)(cid:86)(cid:82)(cid:79)(cid:71)(cid:72)(cid:85)(cid:76)(cid:81)(cid:74)(cid:3)(cid:85)(cid:72)(cid:86)(cid:88)(cid:79)(cid:87)(cid:86)(cid:15)(cid:3)(cid:87)(cid:75)(cid:72)(cid:85)(cid:80)(cid:68)(cid:79)(cid:3)(cid:89)(cid:76)(cid:68)(cid:86)(cid:15)(cid:3)(cid:76)(cid:73)(cid:3)(cid:88)(cid:86)(cid:72)(cid:71)(cid:15)(cid:3)(cid:86)(cid:75)(cid:82)(cid:88)(cid:79)(cid:71)(cid:3)(cid:69)(cid:72)(cid:3)(cid:73)(cid:76)(cid:"
+  },
+  {
+    "faiss_index_id": 252,
+    "text": "cid:3)(cid:69)(cid:72)(cid:3)(cid:73)(cid:76)(cid:79)(cid:79)(cid:72)(cid:71)(cid:3)(cid:82)(cid:85)(cid:3)(cid:87)(cid:72)(cid:81)(cid:87)(cid:72)(cid:71)(cid:3)(cid:87)(cid:82)(cid:3)(cid:68)(cid:89)(cid:82)(cid:76)(cid:71)(cid:3)(cid:86)(cid:82)(cid:79)(cid:71)(cid:72)(cid:85)(cid:3)(cid:79)(cid:82)(cid:86)(cid:86)(cid:3)(cid:71)(cid:88)(cid:85)(cid:76)(cid:81)(cid:74)"
+  },
+  {
+    "faiss_index_id": 253,
+    "text": "(cid:85)(cid:72)(cid:73)(cid:79)(cid:82)(cid:90)(cid:3)(cid:83)(cid:85)(cid:82)(cid:70)(cid:72)(cid:86)(cid:86)\n(cid:48)(cid:76)(cid:70)(cid:85)(cid:82)(cid:70)(cid:75)(cid:76)(cid:83)(cid:3)(cid:55)(cid:72)(cid:70)(cid:75)(cid:81)(cid:82)(cid:79)(cid:82)(cid:74)(cid:92)(cid:3)(cid:39)(cid:85)(cid:68)(cid:90)(cid:76)(cid:81)(cid:74)(cid:3)(cid:38)(cid:19)(cid:23)(cid:16)(cid:27)(cid:19)(cid:23)(cid:27)(cid:3)(cid:53)(cid:72)(cid:89)(cid:17)(cid:3)(cid:37)"
+  },
+  {
+    "faiss_index_id": 254,
+    "text": " 2018 Microchip Technology Inc. DS20005772B-page 4524CW16X/24CW32X/24CW64X/24CW128X\nAPPENDIX A: REVISION HISTORY\nRevision A (10/2017)\nInitial release of this document.\nRevision B (07/2018)\nAdded the 24CW128X device; Updated the CSP\npackage drawings; Changed the 8-pad UDFN package\ncode from MU to MUY; Added Data Retention test\nconditions; Removed Preliminary status.\n 2018 Microchip Technology Inc. DS20005772B-page 4624CW16X/24CW32X/24CW64X/24CW128X\nTHE MICROCHIP WEBSITE CUSTOMER SUPPORT"
+  },
+  {
+    "faiss_index_id": 255,
+    "text": "THE MICROCHIP WEBSITE CUSTOMER SUPPORT\nMicrochip provides online support via our website at Users of Microchip products can receive assistance\nwww.microchip.com. This website is used as a means through several channels:\nto make files and information easily available to\n• Distributor or Representative\ncustomers. Accessible by using your favorite Internet\n• Local Sales Office\nbrowser, the website contains the following information:\n• Field Application Engineer (FAE)"
+  },
+  {
+    "faiss_index_id": 256,
+    "text": "• Field Application Engineer (FAE)\n• Product Support – Data sheets and errata, appli-\n• Technical Support\ncation notes and sample programs, design\nresources, user’s guides and hardware support Customers should contact their distributor, representa-\ndocuments, latest software releases and archived tive or Field Application Engineer (FAE) for support.\nsoftware Local sales offices are also available to help custom-"
+  },
+  {
+    "faiss_index_id": 257,
+    "text": "• General Technical Support – Frequently Asked ers. A listing of sales offices and locations is included in\nQuestions (FAQ), technical support requests, the back of this document.\nonline discussion groups, Microchip consultant Technical support is available through the website\nprogram member listing at: http://microchip.com/support\n• Business of Microchip – Product selector and\nordering guides, latest Microchip press releases,\nlisting of seminars and events, listings of Micro-"
+  },
+  {
+    "faiss_index_id": 258,
+    "text": "chip sales offices, distributors and factory repre-\nsentatives\nCUSTOMER CHANGE NOTIFICATION\nSERVICE\nMicrochip’s customer notification service helps keep\ncustomers current on Microchip products. Subscribers\nwill receive e-mail notification whenever there are\nchanges, updates, revisions or errata related to a spec-\nified product family or development tool of interest.\nTo register, access the Microchip website at\nwww.microchip.com. Under “Support”, click on “Cus-"
+  },
+  {
+    "faiss_index_id": 259,
+    "text": "tomer Change Notification” and follow the registration\ninstructions.\n 2018 Microchip Technology Inc. DS20005772B-page 4724CW16X/24CW32X/24CW64X/24CW128X\nPRODUCT IDENTIFICATION SYSTEM\nTo order or obtain information, e.g., on pricing or delivery, refer to the factory or the listed sales office.\nPART NO. X (1) [X] (1) X /XX Examples:\na) 24CW160-I/SN = 16-Kbit, Slave Address0,\nDevice Slave Tape and Reel Temperature Package Industrial Temp., SOIC Package."
+  },
+  {
+    "faiss_index_id": 260,
+    "text": "Address Option Range b) 24CW320T-I/SN = 32-Kbit, Slave Address0, Tape\nand Reel, Industrial Temp., SOIC\nPackage.\nDevice: 24CW16 = 16-Kbit I2C Compatible Serial EEPROM with c) 24CW640-I/SN = 64-Kbit, Slave Address0,\nSoftware Write Protection Industrial Temp., SOIC Package.\n24CW32 = 32-Kbit I2C Compatible Serial EEPROM with d) 24CW1280T-I/SN = 128-Kbit, Slave Address0, Tape\nSoftware Write Protection and Reel, Industrial Temp., SOIC\n24CW64 = 64-Kbit I2C Compatible Serial EEPROM with Package."
+  },
+  {
+    "faiss_index_id": 261,
+    "text": "Software Write Protection e) 24CW320-I/ST = 32-Kbit, Slave Address0,\n24CW128 = 128-Kbit I2C Compatible Serial EEPROM with Industrial Temp., TSSOP\nSoftware Write Protection Package.\nf) 24CW640T-I/ST = 64-Kbit, Slave Address0, Tape\nand Reel, Industrial Temp.,\nSlave Address:(1) 0 = Hardware Slave Address ‘000b’ TSSOP Package.\n1 = Hardware Slave Address ‘001b’\ng) 24CW160T-I/OT = 16-Kbit, Slave Address0, Tape\n2 = Hardware Slave Address ‘010b’\nand Reel, Industrial Temp.,"
+  },
+  {
+    "faiss_index_id": 262,
+    "text": "and Reel, Industrial Temp.,\n3 = Hardware Slave Address ‘011b’\nSOT-23 Package.\n4 = Hardware Slave Address ‘100b’\n5 = Hardware Slave Address ‘101b’ h) 24CW320T-I/OT = 32-Kbit, Slave Address0, Tape\n6 = Hardware Slave Address ‘110b’ and Reel, Industrial Temp.,\n7 = Hardware Slave Address ‘111b’ SOT-23 Package.\ni) 24CW1280T-I/OT = 128-Kbit, Slave Address0, Tape\nand Reel, Industrial Temp.,\nTape and Reel Blank = Standard Packaging (tube or tray) SOT-23 Package."
+  },
+  {
+    "faiss_index_id": 263,
+    "text": "Option: T = Tape and Reel(1) j) 24CW320T-I/MUY = 32-Kbit, Slave Address0, Tape\nand Reel, Industrial Temp., UDFN\nPackage.\nTemperature I = -40C to +85C (Industrial)\nk) 24CW640T-I/MUY = 64-Kbit, Slave Address0, Tape\nRange:\nand Reel, Industrial Temp., UDFN\nPackage.\nPackage: SN = 8-Lead Plastic Small Outline – Narrow, l) 24CW640T-I/CS0668 = 64-Kbit, Slave Address0, Tape\n3.90 mm Body and Reel, Industrial Temp., CS0\nOT = 5-Lead Plastic Small Outline Transistor Package."
+  },
+  {
+    "faiss_index_id": 264,
+    "text": "ST = 8-Lead Plastic Thin Shrink Small Outline – m)24CW640T-I/CS1668 = 64-Kbit, Slave Address0, Tape\n4.4mm Body and Reel, Industrial Temp., CS1\nMUY = 8-Lead Plastic Dual Flat, No Lead Package – Package.\n2x3x0.5mm n) 24CW1280T-I/CS0668= 128-Kbit, Slave Address0, Tape\nCS0668 = 4-Ball Extremely Thin Fine Pitch Wafer Level and Reel, Industrial Temp., CS0\nChip Scale Package – 0.4x0.4 mm Pitch Package.\nCS1668 = 4-Ball Extremely Thin Fine Pitch Wafer Level"
+  },
+  {
+    "faiss_index_id": 265,
+    "text": "o) 24CW1280T-I/CS1668= 128-Kbit, Slave Address0, Tape\nChip Scale Package – 0.5x0.4 mm Pitch\nand Reel, Industrial Temp., CS1\nPackage.\nNote1: Slave Address and Tape and Reel identifiers\nonly appear in the catalog part number\ndescription. These identifiers are used for\nordering purposes and are not printed on the\ndevice package. Check with your Microchip\nSales Office for availability."
+  },
+  {
+    "faiss_index_id": 266,
+    "text": "Sales Office for availability.\n 2018 Microchip Technology Inc. DS20005772B-page 48Note the following details of the code protection feature on Microchip devices:\n• Microchip products meet the specification contained in their particular Microchip Data Sheet.\n• Microchip believes that its family of products is one of the most secure families of its kind on the market today, when used in the\nintended manner and under normal conditions."
+  },
+  {
+    "faiss_index_id": 267,
+    "text": "intended manner and under normal conditions.\n• There are dishonest and possibly illegal methods used to breach the code protection feature. All of these methods, to our\nknowledge, require using the Microchip products in a manner outside the operating specifications contained in Microchip’s Data\nSheets. Most likely, the person doing so is engaged in theft of intellectual property.\n• Microchip is willing to work with the customer who is concerned about the integrity of their code."
+  },
+  {
+    "faiss_index_id": 268,
+    "text": "• Neither Microchip nor any other semiconductor manufacturer can guarantee the security of their code. Code protection does not\nmean that we are guaranteeing the product as “unbreakable.”\nCode protection is constantly evolving. We at Microchip are committed to continuously improving the code protection features of our\nproducts. Attempts to break Microchip’s code protection feature may be a violation of the Digital Millennium Copyright Act. If such acts"
+  },
+  {
+    "faiss_index_id": 269,
+    "text": "allow unauthorized access to your software or other copyrighted work, you may have a right to sue for relief under that Act.\nInformation contained in this publication regarding device Trademarks\napplications and the like is provided only for your convenience\nThe Microchip name and logo, the Microchip logo, AnyRate, AVR,\nand may be superseded by updates. It is your responsibility to AVR logo, AVR Freaks, BeaconThings, BitCloud, chipKIT, chipKIT"
+  },
+  {
+    "faiss_index_id": 270,
+    "text": "ensure that your application meets with your specifications. logo, CryptoMemory, CryptoRF, dsPIC, FlashFlex, flexPWR,\nMICROCHIP MAKES NO REPRESENTATIONS OR Heldo, JukeBlox, KEELOQ, KEELOQ logo, Kleer, LANCheck, LINK\nWARRANTIES OF ANY KIND WHETHER EXPRESS OR MD, maXStylus, maXTouch, MediaLB, megaAVR, MOST, MOST\nIMPLIED, WRITTEN OR ORAL, STATUTORY OR logo, MPLAB, OptoLyzer, PIC, picoPower, PICSTART, PIC32"
+  },
+  {
+    "faiss_index_id": 271,
+    "text": "OTHERWISE, RELATED TO THE INFORMATION, logo, Prochip Designer, QTouch, RightTouch, SAM-BA, SpyNIC,\nINCLUDING BUT NOT LIMITED TO ITS CONDITION, SST, SST Logo, SuperFlash, tinyAVR, UNI/O, and XMEGA are\nQUALITY, PERFORMANCE, MERCHANTABILITY OR registered trademarks of Microchip Technology Incorporated in\nFITNESS FOR PURPOSE. Microchip disclaims all liability the U.S.A. and other countries."
+  },
+  {
+    "faiss_index_id": 272,
+    "text": "arising from this information and its use. Use of Microchip ClockWorks, The Embedded Control Solutions Company,\ndevices in life support and/or safety applications is entirely at EtherSynch, Hyper Speed Control, HyperLight Load, IntelliMOS,\nthe buyer’s risk, and the buyer agrees to defend, indemnify and mTouch, Precision Edge, and Quiet-Wire are registered\nhold harmless Microchip from any and all damages, claims, trademarks of Microchip Technology Incorporated in the U.S.A."
+  },
+  {
+    "faiss_index_id": 273,
+    "text": "suits, or expenses resulting from such use. No licenses are Adjacent Key Suppression, AKS, Analog-for-the-Digital Age, Any\nconveyed, implicitly or otherwise, under any Microchip Capacitor, AnyIn, AnyOut, BodyCom, CodeGuard,\nintellectual property rights unless otherwise stated. CryptoAuthentication, CryptoCompanion, CryptoController,\ndsPICDEM, dsPICDEM.net, Dynamic Average Matching, DAM,\nECAN, EtherGREEN, In-Circuit Serial Programming, ICSP, Inter-"
+  },
+  {
+    "faiss_index_id": 274,
+    "text": "Chip Connectivity, JitterBlocker, KleerNet, KleerNet logo, Mindi,\nMiWi, motorBench, MPASM, MPF, MPLAB Certified logo, MPLIB,\nMPLINK, MultiTRAK, NetDetach, Omniscient Code Generation,\nPICDEM, PICDEM.net, PICkit, PICtail, PureSilicon, QMatrix,\nRightTouch logo, REAL ICE, Ripple Blocker, SAM-ICE, Serial\nQuad I/O, SMART-I.S., SQI, SuperSwitcher, SuperSwitcher II,\nTotal Endurance, TSHARC, USBCheck, VariSense, ViewSpan,\nWiperLock, Wireless DNA, and ZENA are trademarks of Microchip"
+  },
+  {
+    "faiss_index_id": 275,
+    "text": "Technology Incorporated in the U.S.A. and other countries.\nSQTP is a service mark of Microchip Technology Incorporated in\nthe U.S.A.\nMicrochip received ISO/TS-16949:2009 certification for its worldwide\nheadquarters, design and wafer fabrication facilities in Chandler and Silicon Storage Technology is a registered trademark of Microchip\nTempe, Arizona; Gresham, Oregon and design centers in California Technology Inc. in other countries."
+  },
+  {
+    "faiss_index_id": 276,
+    "text": "and India. The Company’s quality system processes and procedures\nare for its PIC® MCUs and dsPIC® DSCs, KEELOQ® code hopping GestIC is a registered trademark of Microchip Technology\ndevices, Serial EEPROMs, microperipherals, nonvolatile memory and Germany II GmbH & Co. KG, a subsidiary of Microchip Technology\nanalog products. In addition, Microchip’s quality system for the design Inc., in other countries.\nand manufacture of development systems is ISO 9001:2000 certified."
+  },
+  {
+    "faiss_index_id": 277,
+    "text": "All other trademarks mentioned herein are property of their\nrespective companies.\nQUALITY MANAGEMENT SYSTEM © 2018, Microchip Technology Incorporated, All Rights Reserved.\nISBN: 978-1-5224-3332-3\nCERTIFIED BY DNV\n== ISO/TS 16949 ==\n 2018 Microchip Technology Inc. DS20005772B-page 49Worldwide Sales and Service\nAMERICAS ASIA/PACIFIC ASIA/PACIFIC EUROPE\nCorporate Office Australia - Sydney India - Bangalore Austria - Wels"
+  },
+  {
+    "faiss_index_id": 278,
+    "text": "2355 West Chandler Blvd. Tel: 61-2-9868-6733 Tel: 91-80-3090-4444 Tel: 43-7242-2244-39\nChandler, AZ 85224-6199 Fax: 43-7242-2244-393\nChina - Beijing India - New Delhi\nTel: 480-792-7200 Tel: 86-10-8569-7000 Tel: 91-11-4160-8631 Denmark - Copenhagen\nFax: 480-792-7277 Tel: 45-4450-2828\nChina - Chengdu India - Pune\nTechnical Support: Tel: 86-28-8665-5511 Tel: 91-20-4121-0141 Fax: 45-4485-2829\nhttp://www.microchip.com/\nsupport China - Chongqing Japan - Osaka Finland - Espoo"
+  },
+  {
+    "faiss_index_id": 279,
+    "text": "Tel: 86-23-8980-9588 Tel: 81-6-6152-7160 Tel: 358-9-4520-820\nWeb Address:\nwww.microchip.com China - Dongguan Japan - Tokyo France - Paris\nTel: 86-769-8702-9880 Tel: 81-3-6880- 3770 Tel: 33-1-69-53-63-20\nAtlanta\nFax: 33-1-69-30-90-79\nDuluth, GA China - Guangzhou Korea - Daegu\nTel: 678-957-9614 Tel: 86-20-8755-8029 Tel: 82-53-744-4301 Germany - Garching\nTel: 49-8931-9700\nFax: 678-957-1455 China - Hangzhou Korea - Seoul\nAustin, TX Tel: 86-571-8792-8115 Tel: 82-2-554-7200 Germany - Haan"
+  },
+  {
+    "faiss_index_id": 280,
+    "text": "Tel: 49-2129-3766400\nTel: 512-257-3370 China - Hong Kong SAR Malaysia - Kuala Lumpur\nBoston Tel: 852-2943-5100 Tel: 60-3-7651-7906 Germany - Heilbronn\nTel: 49-7131-67-3636\nWestborough, MA China - Nanjing Malaysia - Penang\nTel: 774-760-0087 Tel: 86-25-8473-2460 Tel: 60-4-227-8870 Germany - Karlsruhe\nFax: 774-760-0088 Tel: 49-721-625370\nChina - Qingdao Philippines - Manila\nChicago Tel: 86-532-8502-7355 Tel: 63-2-634-9065 Germany - Munich\nItasca, IL Tel: 49-89-627-144-0\nChina - Shanghai Singapore"
+  },
+  {
+    "faiss_index_id": 281,
+    "text": "China - Shanghai Singapore\nTel: 630-285-0071 Tel: 86-21-3326-8000 Tel: 65-6334-8870 Fax: 49-89-627-144-44\nFax: 630-285-0075 Germany - Rosenheim\nChina - Shenyang Taiwan - Hsin Chu\nDallas Tel: 86-24-2334-2829 Tel: 886-3-577-8366 Tel: 49-8031-354-560\nAddison, TX Israel - Ra’anana\nChina - Shenzhen Taiwan - Kaohsiung\nTel: 972-818-7423 Tel: 972-9-744-7705\nTel: 86-755-8864-2200 Tel: 886-7-213-7830\nFax: 972-818-2924\nItaly - Milan\nChina - Suzhou Taiwan - Taipei\nDetroit Tel: 39-0331-742611"
+  },
+  {
+    "faiss_index_id": 282,
+    "text": "Detroit Tel: 39-0331-742611\nTel: 86-186-6233-1526 Tel: 886-2-2508-8600\nNovi, MI Fax: 39-0331-466781\nTel: 248-848-4000 China - Wuhan Thailand - Bangkok\nItaly - Padova\nTel: 86-27-5980-5300 Tel: 66-2-694-1351\nHouston, TX Tel: 39-049-7625286\nTel: 281-894-5983 China - Xian Vietnam - Ho Chi Minh\nNetherlands - Drunen\nTel: 86-29-8833-7252 Tel: 84-28-5448-2100\nIndianapolis Tel: 31-416-690399\nNoblesville, IN China - Xiamen Fax: 31-416-690340\nTel: 86-592-2388138\nTel: 317-773-8323\nNorway - Trondheim"
+  },
+  {
+    "faiss_index_id": 283,
+    "text": "Tel: 317-773-8323\nNorway - Trondheim\nFax: 317-773-5453 China - Zhuhai Tel: 47-7289-7561\nTel: 317-536-2380 Tel: 86-756-3210040\nPoland - Warsaw\nLos Angeles Tel: 48-22-3325737\nMission Viejo, CA\nRomania - Bucharest\nTel: 949-462-9523\nTel: 40-21-407-87-50\nFax: 949-462-9608\nTel: 951-273-7800 Spain - Madrid\nTel: 34-91-708-08-90\nRaleigh, NC\nFax: 34-91-708-08-91\nTel: 919-844-7510\nSweden - Gothenberg\nNew York, NY\nTel: 46-31-704-60-40\nTel: 631-435-6000\nSweden - Stockholm\nSan Jose, CA\nTel: 46-8-5090-4654"
+  },
+  {
+    "faiss_index_id": 284,
+    "text": "San Jose, CA\nTel: 46-8-5090-4654\nTel: 408-735-9110\nTel: 408-436-4270 UK - Wokingham\nTel: 44-118-921-5800\nCanada - Toronto\nFax: 44-118-921-5820\nTel: 905-695-1980\nFax: 905-695-2078\n 2018 Microchip Technology Inc. DS20005772B-page 50\n10/25/17"
+  }
+]

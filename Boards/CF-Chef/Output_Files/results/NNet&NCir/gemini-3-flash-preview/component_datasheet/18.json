@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component AP63203WU have SPI capabilities according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The AP63203WU is a 2A Buck DC/DC converter with a fixed 3.3V output and does not feature any SPI communication interface according to its description and pinout.",
+        "is_final": true
+    }
+}

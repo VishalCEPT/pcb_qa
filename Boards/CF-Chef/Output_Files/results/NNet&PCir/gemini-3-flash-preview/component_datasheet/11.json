@@ -1,0 +1,13 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component MAX31855KASA have a maximum Icc supply current of 1500\u00b5A according to its datasheet?",
+    "tool_calls": {
+        "arguments": "{\"project_context\":{\"spice_json_file\":\"./outputs/CF-Chef/CF-Chef_SPICE_circuit.json\",\"datasheet_files\":[\"./outputs/CF-Chef/datasheets/U2.pdf\"],\"circuit_json_file\":\"circuit.json\"},\"component_ref\":\"U2\",\"question\":\"Does the component MAX31855KASA have a maximum Icc supply current of 1500\u00b5A?\"}",
+        "name": "get_relevant_context_from_question"
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the MAX31855 datasheet, the maximum supply current (Icc) is specified as 1500\u00b5A (1.5mA) under normal operating conditions.",
+        "is_final": true
+    }
+}

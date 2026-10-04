@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component Q1 connected to Net__Q2_B_?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "According to the netlist and SPICE file, Q1's gate is connected to Net-(Q1-G) and R1, while Net-(Q2-B) is connected to Q2's base and R2.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component R15 connected to Net__U1_B_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The SPICE netlist explicitly lists R15 as being connected to Net-_U1-B_ and GND, and the KiCad netlist confirms R15 pin 1 is connected to net 40 (Net-(U1-B)).",
+        "is_final": true
+    }
+}

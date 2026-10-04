@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component R10 connected to NRST?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist and SPICE file, R10 is connected between the VCC and NRST nets.",
+        "is_final": true
+    }
+}

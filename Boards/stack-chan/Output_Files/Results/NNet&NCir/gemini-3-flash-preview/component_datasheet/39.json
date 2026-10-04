@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component MAX3485 have SPI capabilities according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The MAX3485 is a transceiver designed for RS-485 and RS-422 serial communication, which uses a UART interface rather than SPI.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component SS2040FL have a maximum current of 2A according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The part number SS2040FL typically refers to a 2A, 40V Surface Mount Schottky Barrier Rectifier, where the '20' in the prefix denotes its 2.0 Ampere current rating.",
+        "is_final": true
+    }
+}

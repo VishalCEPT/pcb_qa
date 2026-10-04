@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /0isoec maintain a voltage of 0V for the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net /0isoec is an isolated ground connected to the secondary side of the ADM3260 isolator and is not tied to the global simulation ground (node 0) in the SPICE netlist.",
+        "is_final": true
+    }
+}

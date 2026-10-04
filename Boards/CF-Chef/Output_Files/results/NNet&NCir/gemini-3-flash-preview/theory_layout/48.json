@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component R11 connected to Net__D4_A_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The SPICE netlist explicitly defines a connection between resistor R11 and the node Net-_D4-A_.",
+        "is_final": true
+    }
+}

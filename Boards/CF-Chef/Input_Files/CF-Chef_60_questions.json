@@ -1,0 +1,302 @@
+[
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U3 have a maximum operating temperature of -40°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net net-_u1-gpio2/adc1_ch2_ maintain a voltage of 0V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component TP5 connected to Net__D4_A_?",
+    "answer": "YES"
+  },   
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U1 have flash capabilities according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have a minimum supply voltage of -0.3V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net net-_d4-a_ maintain a voltage of 3.3V for the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component D1 have a maximum Vdd of 3.5V according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net net-_u1-gpio2/adc1_ch2_ maintain a voltage of 3.3V for the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component D4 connected to CS0?",
+    "answer": "NO"
+  },  
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net nc-d3-0 maintain a voltage of 3.3V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have a maximum Icc supply current of 1500µA according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component D4 connected to CS0?",
+    "answer": "NO"
+  }, 
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net net-_u8-sw_ maintain a voltage of 3.3V for the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U1 have Wifi capabilities according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to Microcontroller_LED?",
+    "answer": "NO"
+  }, 
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U3 have a maximum supply voltage of 0V according to its datasheet?",
+    "answer": "NO"
+  },  
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net net-_u8-bst_ maintain a voltage of 0V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U8 have SPI capabilities according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component J12 connected to _p_5V?",
+    "answer": "YES"
+  }, 
+  {
+    "category": "theory_layout",
+    "question": "Is the component L1 connected to _p_3V3?",
+    "answer": "YES"
+  },   
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net net-_u8-bst_ maintain a voltage of 3.3V for the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U1 have a Bluetooth module according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U3 have I2C capabilities according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net net-_u5-ilim_ maintain a voltage of 0V for the entire simulation?",
+    "answer": "YES"
+  }, 
+  {
+    "category": "theory_layout",
+    "question": "Is the component D5 connected to FAN_0_TACH?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net net-_u5-ilim_ maintain a voltage of 3.3V for the entire simulation?",
+    "answer": "NO"
+  }, 
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U8 have a quiescent Current of 22µA according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component L1 connected to Net__U5_SS_?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net net-_u1-en/chip_pu_ maintain a voltage of 5V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component D5 connected to GND?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U1 have a maximum supply voltage of 3V according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net +12v maintain a voltage of 12V for the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component C13 connected to Net__U8_BST_?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U4 connected to Net__J3_Pin_1_?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net net-_d2-k_ maintain a voltage of 5V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component D1 have a maximum Vdd of 5.3V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component C7 connected to GND?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net +3v3 maintain a voltage of 5V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U3 have a maximum operating temperature of 150°C according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net +3v3 maintain a voltage of 3.3V for the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component J3 connected to Net__J3_Pin_1_?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U8 have a quiescent Current of 22µA according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /microcontroller/heater maintain a voltage of 3.3V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component R3 connected to GND?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component D1 have a minimum operating temperature of -25°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /microcontroller/heater maintain a voltage of 12V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component R5 connected to Net__U1_EN_slash_CHIP_PU_?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component R11 connected to Net__D4_A_?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have a maximum supply voltage of 4V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net vbus maintain a voltage of 12V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component R3 connected to Net__D4_A_?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component D1 have a maximum operating temperature of 80°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net vbus maintain a voltage of 0V for the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U6 connected to Net__J6_Pin_2_?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U8 have a minimum input voltage of 4V according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net vbus maintain a voltage of 12V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U6 connected to Net__U1_GPIO2_slash_ADC1_CH2_?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U8 have a maximum input voltage of 32V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net net-_u5-ss_ maintain a voltage of 12V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to SCK?",
+    "answer": "NO"
+  }
+]

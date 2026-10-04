@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component TR1 connected to Net__C47_Pad2_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The netlist and SPICE file both show that TR1 pins 1, 4, 7, and 10 are connected to the net named Net-(C47-Pad2).",
+        "is_final": true
+    }
+}

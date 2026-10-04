@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component STM32L476RGT6 have an output current of 20mA for any I/O pin according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the STM32L476xx datasheet, the I/O output current (I_IO) is specified with a maximum of 20mA for individual pins.",
+        "is_final": true
+    }
+}

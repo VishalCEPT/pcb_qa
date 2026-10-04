@@ -1,0 +1,13 @@
+{
+    "category": "component_datasheet",
+    "question": "Is the component SW2 a memory chip according to its datasheet?",
+    "tool_calls": {
+        "arguments": "{\"component_ref\":\"SW2\",\"project_context\":{\"spice_json_file\":\"./outputs/HadesFCS/Hades.json\",\"circuit_json_file\":\"./outputs/HadesFCS/Hades.json\",\"datasheet_files\":[]},\"question\":\"Is the component SW2 a memory chip according to its datasheet?\"}",
+        "name": "get_relevant_context_from_question"
+    },
+    "response": {
+        "answer": "NO",
+        "reasoning": "The datasheet context identifies the TDD series component as a Jumper Switch (SPDT), not a memory chip.",
+        "is_final": true
+    }
+}

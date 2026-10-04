@@ -1,0 +1,22 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component Conn_ARM_SWD_TagConnect_TC2030 have a current rating of 1A per pin according to its datasheet?",
+    "tool_calls": {
+        "function_name": "get_relevant_context_from_question",
+        "function_args": {
+            "question": "Does the component Conn_ARM_SWD_TagConnect_TC2030 have a current rating of 1A per pin?",
+            "project_context": {
+                "circuit_json_file": "./outputs/PortalHardware/PCB.json",
+                "spice_json_file": "./outputs/PortalHardware/PortalHardware_SPICE_circuit.json",
+                "datasheet_files": [
+                    "./outputs/PortalHardware/datasheets/J1.pdf"
+                ]
+            }
+        }
+    },
+    "response": {
+        "answer": "NO",
+        "reasoning": "The provided context from the datasheet for the TC2030-CTX / TC2030-CTL-NL series (Tag-Connect) describes the pinout, physical space savings, and compatibility with ARM Cortex debuggers, but it does not mention a current rating of 1A per pin. Typically, these spring-pin connectors have much lower current ratings (often around 100mA to 500mA) suitable for signal debugging rather than power delivery. Since the specific value of 1A is not supported by the datasheet text provided, the answer is false.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component U4 connected to PWM?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "Component U4 pin 3 (MIC) is connected to the net named 'PWM', which in turn connects to component U5 pin 10.",
+        "is_final": true
+    }
+}

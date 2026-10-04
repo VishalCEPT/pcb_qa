@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net eth_ledg maintain a voltage of 3.3V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net eth_ledg is connected to the output of the Compute Module 4 (Module1 pin 17), which is an active-low LED driver signal that pulls to ground to illuminate the LED, meaning it will not maintain a constant 3.3V.",
+        "is_final": true
+    }
+}

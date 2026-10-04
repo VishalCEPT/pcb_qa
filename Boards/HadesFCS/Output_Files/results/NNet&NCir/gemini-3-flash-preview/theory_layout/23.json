@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component NAVC1 connected to INT_GYR_NAVC?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The netlist shows that net 'INT_GYR_NAVC' is connected to pin 21 of NAVC1 (PA5) and pin 12 of U5 (INT3).",
+        "is_final": true
+    }
+}

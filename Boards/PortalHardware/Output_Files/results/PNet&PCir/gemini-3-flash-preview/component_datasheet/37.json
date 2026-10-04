@@ -1,0 +1,22 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component 100n have a maximum operating temperature of 125\u00b0C according to its datasheet?",
+    "tool_calls": {
+        "function_name": "get_relevant_context_from_question",
+        "function_args": {
+            "question": "Does the component 100n have a maximum operating temperature of 125\u00b0C according to its datasheet?",
+            "project_context": {
+                "circuit_json_file": "./outputs/PortalHardware/PCB.json",
+                "spice_json_file": "./outputs/PortalHardware/PortalHardware_SPICE_circuit.json",
+                "datasheet_files": [
+                    "./outputs/PortalHardware/datasheets/C2.pdf"
+                ]
+            }
+        }
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "The component 100n (C2) is a KEMET X7R dielectric capacitor. According to standard KEMET X7R specifications and the provided datasheet context which references J-STD-020 reflow profiles and insulation resistance testing, X7R capacitors have a standard operating temperature range of -55\u00b0C to +125\u00b0C. While the provided snippets focus on reflow temperatures (up to 260\u00b0C) and insulation resistance, the X7R classification inherently defines the 125\u00b0C maximum operating limit.",
+        "is_final": true
+    }
+}

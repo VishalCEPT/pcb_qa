@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component Micro_SD_Card have Wifi capabilities according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The Micro_SD_Card component (J2) is a passive microSD card socket used for storage and does not contain any wireless or WiFi circuitry according to its datasheet and pinout.",
+        "is_final": true
+    }
+}

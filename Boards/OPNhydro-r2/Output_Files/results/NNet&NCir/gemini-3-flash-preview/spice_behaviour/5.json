@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /bstbk maintain a voltage of 5V for the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net /bstbk is a bootstrap node for the TPS62933 buck regulator, which typically carries a switching waveform that sits at a voltage higher than the output voltage (5V) to drive the high-side MOSFET.",
+        "is_final": true
+    }
+}

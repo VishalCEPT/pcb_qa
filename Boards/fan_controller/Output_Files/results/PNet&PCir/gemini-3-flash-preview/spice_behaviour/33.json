@@ -1,0 +1,17 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net tach maintain a voltage of 0V during the entire simulation?",
+    "tool_calls": {
+        "function_name": "calculate_spice_behaviour",
+        "function_args": {
+            "net_name": "tach",
+            "spice_circuit_file": "./outputs/fan_controller/fan_controller_SPICE_circuit.json",
+            "expected_voltage": "0V"
+        }
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "The SPICE simulation results for the net 'tach' were evaluated against the expected voltage of 0V. The simulation confirmed that the voltage on this net remains at 0V throughout the entire duration of the simulation.",
+        "is_final": true
+    }
+}

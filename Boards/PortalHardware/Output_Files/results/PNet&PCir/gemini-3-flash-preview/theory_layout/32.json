@@ -1,0 +1,17 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to NFC_SCL?",
+    "tool_calls": {
+        "function_name": "find_connections_for_component",
+        "function_args": {
+            "circuit_json_file": "./outputs/PortalHardware/PCB.json",
+            "component_ref": "U2",
+            "net_name": "NFC_SCL"
+        }
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "The tool 'find_connections_for_component' was executed for component U2 and net NFC_SCL on the provided PCB layout file, and it confirmed that a connection exists between them.",
+        "is_final": true
+    }
+}

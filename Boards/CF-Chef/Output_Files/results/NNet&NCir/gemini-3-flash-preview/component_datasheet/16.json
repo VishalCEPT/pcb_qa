@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component MAX31855KASA have a maximum supply voltage of 0V according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The MAX31855KASA is a thermocouple-to-digital converter that typically operates with a supply voltage (VCC) between 3.0V and 3.6V, as indicated by its connection to the +3V3 net in the provided netlist.",
+        "is_final": true
+    }
+}

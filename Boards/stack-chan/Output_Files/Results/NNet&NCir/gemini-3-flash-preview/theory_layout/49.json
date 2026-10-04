@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component Q1 connected to Net__J5_Pin_1_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The SPICE netlist shows R5 is connected between Net-_Q1-G_ and Net-_J5-Pin_1_, and the KiCad netlist confirms Q1 pin 2 (Source) is directly connected to Net-(J5-Pin_1).",
+        "is_final": true
+    }
+}

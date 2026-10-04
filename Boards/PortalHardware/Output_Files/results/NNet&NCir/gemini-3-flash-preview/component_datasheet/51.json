@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component NT3H2111W0FT1X have a maximum input voltage of 4.6V according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The NT3H2111W0FT1X datasheet specifies an absolute maximum rating for the input voltage on its pins (such as VCC and I2C pins) as 4.6V.",
+        "is_final": true
+    }
+}

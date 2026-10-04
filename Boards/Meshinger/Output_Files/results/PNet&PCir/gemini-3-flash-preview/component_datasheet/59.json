@@ -1,0 +1,22 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component 1825232-1 have dielectric strength of 500V AC according to its datasheet?",
+    "tool_calls": {
+        "function_name": "get_relevant_context_from_question",
+        "function_args": {
+            "project_context": {
+                "circuit_json_file": "./outputs/Meshinger/Meshinger.json",
+                "datasheet_files": [
+                    "./outputs/Meshinger/datasheets/S1.pdf"
+                ],
+                "spice_json_file": "./outputs/Meshinger/Meshinger_SPICE_circuit.json"
+            },
+            "question": "Does the component 1825232-1 have dielectric strength of 500V AC according to its datasheet?"
+        }
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "The datasheet for the 1825232-1 (part of the MSS series slide switches) specifies a dielectric strength of 500V AC at sea level.",
+        "is_final": true
+    }
+}

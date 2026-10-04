@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the /ttl signal maintain a voltage of 0V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The /TTL signal is connected to the +3V3 rail through a 2k ohm pull-up resistor (R6), which prevents it from maintaining a constant 0V level.",
+        "is_final": true
+    }
+}

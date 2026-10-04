@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component Y2 connected to Net__U8___RESET__?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "Component Y2 is connected to the OSC1 and OSC2 pins of U8, while Net-_U8-_RESET_ is connected to resistor R6 and pin 17 of U8.",
+        "is_final": true
+    }
+}

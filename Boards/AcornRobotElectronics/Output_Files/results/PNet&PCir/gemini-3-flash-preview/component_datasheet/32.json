@@ -1,0 +1,23 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component LTC4412xS6 have a maximum operating junction temperature of 150\u00b0 according to its datasheet?",
+    "tool_calls": {
+        "function_name": "get_relevant_context_from_question",
+        "function_args": {
+            "component_ref": "U6",
+            "project_context": {
+                "circuit_json_file": "./outputs/AcornRobotElectronics/cm4-robot.json",
+                "datasheet_files": [
+                    "./outputs/AcornRobotElectronics/datasheets/U6.pdf"
+                ],
+                "spice_json_file": "./outputs/AcornRobotElectronics/cm4-robot_SPICE_circuit.json"
+            },
+            "question": "Does the component LTC4412xS6 have a maximum operating junction temperature of 150\u00b0 according to its datasheet?"
+        }
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the datasheet context provided, the LTC4412MP version is specifically tested and guaranteed over the \u201355\u00b0C to 150\u00b0C operating junction temperature range. While other variants like the LTC4412E and LTC4412I are rated for 85\u00b0C, the LTC4412 series (which includes the xS6 package variants) does have a specific model (MP-grade) that reaches a maximum operating junction temperature of 150\u00b0C.",
+        "is_final": true
+    }
+}

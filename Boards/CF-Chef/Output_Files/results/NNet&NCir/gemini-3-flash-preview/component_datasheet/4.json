@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ESP32-C3-MINI-1 have flash capabilities according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The ESP32-C3-MINI-1 is a system-on-chip (SoC) module that integrates an ESP32-C3 series chip, which includes embedded flash memory for program and data storage.",
+        "is_final": true
+    }
+}

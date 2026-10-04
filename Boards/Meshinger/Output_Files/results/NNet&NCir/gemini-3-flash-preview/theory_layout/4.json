@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component U4 connected to GPIO?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "Component U4 is connected to GPIO via net 'ROW1', which links pin 6 of U4 to pin 48 (GPIO0) of the SKW92A module (U5).",
+        "is_final": true
+    }
+}

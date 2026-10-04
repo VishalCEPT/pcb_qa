@@ -1,0 +1,154 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "802.11b/g/n 2x2 MIMO WiFi AP/Router Module Datasheet\nSkylab M&C Technology Co., Ltd\nModel SKW92A\nSKW92A 2x2 MIMO WLAN\nModule Datasheet\nName: 802.11b/g/n 2x2 MIMO WiFi AP/Router Module\nModel No.: SKW92A\nRevision: V1.04\nRevision History\nRevision Description Approved Date\nV1.01 Initial Release Sunny Pan 20151228\nV1.02 Update Pin Description George He 20160315\nV1.03 Update Power Consumption George He 20170413\nV1.04 Update Ordering Information George He 20171016"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "1 / 16 SKW92A-DA-001,A/1802.11b/g/n 2x2 MIMO WiFi AP/Router Module Datasheet\nSkylab M&C Technology Co., Ltd\nModel SKW92A\nContents\n1. General Description ...............................................................................................................................................3\n2. Applications ...........................................................................................................................................................3"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "3. Features .................................................................................................................................................................3\n4. Application Block Diagram ....................................................................................................................................4"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "5. Interfaces ...............................................................................................................................................................4\nUSB ....................................................................................................................................................................4"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "I2C ......................................................................................................................................................................5\nSD .......................................................................................................................................................................5"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "I2S(192K/24bits) .................................................................................................................................................5\nPCM ....................................................................................................................................................................7"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "PWM ...................................................................................................................................................................7\nSPI slave ............................................................................................................................................................8"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "UARTS lite ..........................................................................................................................................................8\nGPIO ...................................................................................................................................................................8"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "WAN/LAN .........................................................................................................................................................10\n6. Module Specifications .........................................................................................................................................10\n7. Module Pinout and Pin Description .....................................................................................................................11"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "Module Pinout ..................................................................................................................................................11\nPin Description .................................................................................................................................................12\n8. PCB Footprint and Dimensions ...........................................................................................................................14"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "9. Electrical Characteristics .....................................................................................................................................14\n10. Manufacturing Process Recommendations ......................................................................................................15\n11. Ordering Information..........................................................................................................................................16"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "12. Contact Information ...........................................................................................................................................16\n2 / 16 SKW92A-DA-001,A/1802.11b/g/n 2x2 MIMO WiFi AP/Router Module Datasheet\nSkylab M&C Technology Co., Ltd\nModel SKW92A\n1. General Description\nThe SKW92A module includes an 802.11n\nMAC and baseband, a 2.4GHz radio and FEM,\na 580MHz MIPS CPU, a 5-port 10/100 fast\nEthernet switch. Solution for low power,"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "Ethernet switch. Solution for low power,\nlow-cost, and highly integrated AP router and\nconsumer electronic devices, the module\nrequires only an external 3.3V power supply. It\nsupports 802.11n operating up to 144 Mbps for\n20 MHz and 300 Mbps for 40 MHz channel Figure 1: SKW92A Top View\nrespectively, and IEEE 802.11b/g data rates.\nThe module supports bridge mode and AP 3. Features\nClient mode and Gateway mode. The high\n◆ Compliant to IEEE 802.11b/g/n.\nperformance Module can process advanced"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "performance Module can process advanced\n◆ 2T2R mode with support for a 300Mbps PHY\napplications effortlessly, such as routing,\ndata rate.\nsecurity and VoIP. It also includes a selection\n◆ DDR2 memory up to 1024Mb.\nof interface to support a variety of applications,\n◆ Flash memory up to 256Mb.\nsuch as a USB port for accessing external\n◆ 4 LAN ports and 1 WAN port.\nstorage and 3G/TLE modem. Especially in the\n◆ Support USB 2.0 slave device for USB disk\nIOT, a wide range of applications."
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "IOT, a wide range of applications.\nand USB 3G/4G dongle and USB camera.\n◆ Support SD card.\n2. Applications\n◆ Support interface: I2C, PCM,\n◆ USB WiFi Camera I2S(192K/24bits), PWM, SPI slave, UART lite,\n◆ IOT (internet of things) GPIO.\n◆ WiFi AP ◆ Security: WEP64/128, TKIP, AES, WPA,\n◆ 3G/4G Wi-Fi Router WPA2, WAPI.\n◆ WiFi Repeater ◆ Support AP/Client/Router mode.\n◆ Building Automation ◆ RoHS compliance meets\n◆ Home Automation environment-friendly requirement."
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "◆ Smart Home Gateway ◆Conform to FCC/CE/IC/RoHS certification\n◆ Industry Control standards.\n◆ 40.5mm(L) x 25mm(W) x 3.0mm(H)\ndimension.\n3 / 16 SKW92A-DA-001,A/1802.11b/g/n 2x2 MIMO WiFi AP/Router Module Datasheet\nSkylab M&C Technology Co., Ltd\nModel SKW92A\n4. Application Block Diagram\nFigure 2: SKW92A Block Diagram\n5. Interfaces\nUSB\nThe USB interface support USB slave devices for USB disk and USB 3G/4G dongle and USB camera."
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "4 / 16 SKW92A-DA-001,A/1802.11b/g/n 2x2 MIMO WiFi AP/Router Module Datasheet\nSkylab M&C Technology Co., Ltd\nModel SKW92A\nI2C\nSKW92A Pin Number Pin Name GPIO(2'b01) I2C(2'b00)\n46 I2C_SD GPIO#05 I2C_SD\n47 I2C_CLK GPIO#04 I2C_CLK\nTable5-1: I2C pin share scheme\nNote: Controlled by I2C_MODE register\nSD\nSKW92A Pin Number Pin Name(4'b0000) GPIO(2'b01) SD(2'b00)\n24 LAN_PORT4_TX- GPIO#29 SD_D2\n23 LAN_PORT4_TX+ GPIO#28 SD_D3\n22 LAN_PORT4_RX- GPIO#27 SD_CMD\n21 LAN_PORT4_RX+ GPIO#26 SD_CLK"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "21 LAN_PORT4_RX+ GPIO#26 SD_CLK\n16 LAN_PORT3_RX- GPIO#25 SD_D0\n15 LAN_PORT3_RX+ GPIO#24 SD_D1\n14 LAN_PORT3_TX- GPIO#23 SD_CD\n13 LAN_PORT3_TX+ GPIO#22 SD_WP\nTable5-2: SD pin share scheme\nNote: Controlled by the EPHY_APGIO_AIO_EN[4:1] and SD_MODE register\nI2S(192K/24bits)\nSKW92A Pin Number Pin Name GPIO(2'b01) I2S(2'b00) PCM(2'b10)\n44 I2S_CLK GPIO#03 I2S_CLK PCMFS\n42 I2S_WS GPIO#02 I2S_WS PCMCLK\n43 I2S_SDO GPIO#01 I2S_SDO PCMDTX\n41 I2S_SDI GPIO#0 I2S_SDI PCMDRX\nTable5-3: I2S/PCM pin share scheme"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "Table5-3: I2S/PCM pin share scheme\nNote: Controlled by I2S_MODE register\n5 / 16 SKW92A-DA-001,A/1802.11b/g/n 2x2 MIMO WiFi AP/Router Module Datasheet\nSkylab M&C Technology Co., Ltd\nModel SKW92A\nFigure 3: I2S Timing\nSymbol Description Min Max Unit\nt_I2S_IS Setup Time for I2S input(data & WS) 3.5 ns\nt_I2S_IH Hold Time for I2S input(data & WS) 0.5 ns\nt_I2S_OVLD I2S_CLK to I2S output(data & WS) valid 2.5 10 ns\nTable5-4: I2S Interface Diagram Key"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "Table5-4: I2S Interface Diagram Key\n6 / 16 SKW92A-DA-001,A/1802.11b/g/n 2x2 MIMO WiFi AP/Router Module Datasheet\nSkylab M&C Technology Co., Ltd\nModel SKW92A\nPCM\nFigure 4: PCM Timing\nSymbol Description Min Max Unit\nt_PCM_IS Setup Time for PCM input to PCM_CLK fall 3.5 ns\nt_PCM_IH Hold Time for PCM input to PCM_CLK fall 1.0 ns\nt_PCM_OVLD PCM_CLK to PCM output valid 10.0 35.0 ns\nTable5-5: PCM Interface Diagram Key\nPWM\nSKW92A Pin Number Pin Name GPIO PWM Pin Share"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "PWM\nSKW92A Pin Number Pin Name GPIO PWM Pin Share\n10 LAN_PORT2_RX- GPIO#19 PWM1 SD_D6\n9 LAN_PORT2_RX+ GPIO#18 PWM0 SD_D7\nTable5-6: PWM pin share scheme\n7 / 16 SKW92A-DA-001,A/1802.11b/g/n 2x2 MIMO WiFi AP/Router Module Datasheet\nSkylab M&C Technology Co., Ltd\nModel SKW92A\nSPI slave\nSKW92A Pin Number Pin Name(4'b0000) GPIO(2'b01) SPIS(2'b00) 2'b11\n8 LAN_PORT1_RX- GPIO#17 SPIS_MOSI UART_RXD2\n7 LAN_PORT1_RX+ GPIO#16 SPIS_MISO UART_TXD2\n6 LAN_PORT1_TX- GPIO#15 SPIS_CLK PWM_CH1"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "6 LAN_PORT1_TX- GPIO#15 SPIS_CLK PWM_CH1\n5 LAN_PORT1_TX+ GPIO#14 SPIS_CS PWM_CH0\nTable5-7: SPIS pin share scheme\nNote: Controlled by the EPHY_APGIO_AIO_EN[4:1] and SPIS_MODE register\nUARTS lite\nThe module support 3UART:\nSKW92A Pin Number Pin Name GPIO UART Pin Share\n25 UART_RXD0 GPIO#13 UART0_RXD\nUART0(For\nDebug)\n26 UART_TXD0 GPIO#12 UART0_TXD\n38 UART_RXD1 GPIO#46 UART1_RXD PWM_CH1\n37 UART_TXD1 GPIO#45 UART1_TXD PWM_CH0\n12 LAN_PORT2_TX- GPIO#21 UART2_RXD PWM_CH3/SD_D4"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "12 LAN_PORT2_TX- GPIO#21 UART2_RXD PWM_CH3/SD_D4\n11 LAN_PORT2_TX+ GPIO#20 UART2_TXD PWM_CH2/SD_D5\nTable5-8: UART pin share scheme\nGPIO\nSKW92A Pin Number GPIO Description Share function\n38 GPIO#46 Uart1_RXD\nUART1\n37 GPIO#45 Uart1_TXD\n36 GPIO#44 WLED_N Wireless LED\n35 GPIO#43 P0_LED Port LED\n8 / 16 SKW92A-DA-001,A/1802.11b/g/n 2x2 MIMO WiFi AP/Router Module Datasheet\nSkylab M&C Technology Co., Ltd\nModel SKW92A\n34 GPIO#42 P1_LED\n33 GPIO#41 P2_LED\n32 GPIO#40 P3_LED\n31 GPIO#39 P4_LED"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "32 GPIO#40 P3_LED\n31 GPIO#39 P4_LED\n39 GPIO#38 WDT_RST_N WPS/Factory Setting\n40 GPIO#37 WPS_LED WPS LED\n24 GPIO#29 MDI_TN_P4\n23 GPIO#28 MDI_TP_P4\n22 GPIO#27 MDI_RN_P4\n21 GPIO#26 MDI_RP_P4\nSD-XC\n16 GPIO#25 MDI_RN_P3\n15 GPIO#24 MDI_RP_P3\n14 GPIO#23 MDI_TN_P3\n13 GPIO#22 MDI_TP_P3\n12 GPIO#21 MDI_TN_P2\nUART2\n11 GPIO#20 MDI_TP_P2\n10 GPIO#19 MDI_RN_P2 PWM1\n9 GPIO#18 MDI_RP_P2 PWM0\n8 GPIO#17 MDI_RN_P1\n7 GPIO#16 MDI_RP_P1\nSPIS\n6 GPIO#15 MDI_TN_P1\n5 GPIO#14 MDI_TP_P1\n25 GPIO#13 UART0_RXD\nUart0(For Debug)"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "25 GPIO#13 UART0_RXD\nUart0(For Debug)\n26 GPIO#12 UART0_TXD\n48 GPIO#11 GPIO0 GPIO0\n46 GPIO#05 I2C_SD\nI2C\n47 GPIO#04 I2C_CLK\n44 GPIO#03 I2S_CLK/PCMFS\nI2S/PCM\n42 GPIO#02 I2S_WS/PCMCLK\n9 / 16 SKW92A-DA-001,A/1802.11b/g/n 2x2 MIMO WiFi AP/Router Module Datasheet\nSkylab M&C Technology Co., Ltd\nModel SKW92A\n43 GPIO#01 I2S_SDO/PCMDTX\n41 GPIO#0 I2S_SDI/PCMDRX\nTable5-9: GPIO pin share scheme\nWAN/LAN\nThe SKW92A module integrates 5-port 10/100Mbps fast Ethernet switch.\n6. Module Specifications"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "6. Module Specifications\nHardware Features\nModel SKW92A\nAntenna Type IPEX\nChipset solution\nVoltage 3.3V±5%\nDimension(L×W×H) 40.5mm*25.0mm*3.0mm\nWireless Features\nWireless Standards IEEE 802.11b/g/n\nFrequency Range 2412GHz---2484MHz\nIEEE 802.11b : 1,2,5.5,11Mbps\nIEEE 802.11g : 6,9,12,18,24,36,48,54Mbps\nData Rates\nIEEE 802.11n : MCS0--MCS7 @ HT20\nMCS0--MCS7 @ HT40\nHT40 MCS7 : -70dBm@10% PER(MCS7)\nHT20 MCS7 : -73dBm@10% PER(MCS7)\nReceiver Sensitivity\n54M: -77dBm@10% PER\n11M: -89dBm@ 8% PER"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "54M: -77dBm@10% PER\n11M: -89dBm@ 8% PER\nModulation DSSS (DBPSK, DQPSK, CCK)\nTechnique\nOFDM (BPSK, QPSK, 16-QAM, 64-QAM)\nWireless Security WPA/WPA2, WEP, TKIP and AES, WPS2.0, WAPI\nIEEE 802.11n: 16dBm @HT20/40 MCS7\nTransmit Power\nIEEE 802.11g: 16dBm @54MHz\n10 / 16 SKW92A-DA-001,A/1802.11b/g/n 2x2 MIMO WiFi AP/Router Module Datasheet\nSkylab M&C Technology Co., Ltd\nModel SKW92A\nIEEE 802.11b: 18dBm @11MHz\nWork Mode Bridge/Gateway/AP Client\nOthers\nCertification RoHS\nOperating Temperature: -20℃~55℃"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "Operating Temperature: -20℃~55℃\nStorage Temperature: -40℃~125℃\nEnvironment\nOperating Humidity: 10%~90% non-condensing\nStorage Humidity: 5%~90% non-condensing\n7. Module Pinout and Pin Description\nModule Pinout:\nFigure 5: SKW92A Pin Package\n11 / 16 SKW92A-DA-001,A/1802.11b/g/n 2x2 MIMO WiFi AP/Router Module Datasheet\nSkylab M&C Technology Co., Ltd\nModel SKW92A\nPin Description:\nPin No. Pin name Description Remark\n1 WAN_PORT_RX+ WAN port WAN_RX+\n2 WAN_PORT_RX- WAN port WAN_RX-"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "2 WAN_PORT_RX- WAN port WAN_RX-\n3 WAN_PORT_TX+ WAN port WAN_TX+\n4 WAN_PORT_TX- WAN port WAN_TX-\n5 LAN_PORT1_TX+ Ethernet port1 SPIS_CS / GPIO#14 / PWM0\n6 LAN_PORT1_TX- Ethernet port1 SPIS_CLK / GPIO#15 / PWM1\n7 LAN_PORT1_RX+ Ethernet port1 SPIS_MISO / GPIO#16 /\n8 LAN_PORT1_RX- Ethernet port1 SPIS_MOSI / GPIO#17 /\n9 LAN_PORT2_RX+ Ethernet port2 GPIO#18 / PWM0 / SD_D7\n10 LAN_PORT2_RX- Ethernet port2 GPIO#19 / PWM1 / SD_D6\n11 LAN_PORT2_TX+ Ethernet port2 GPIO#20 / PWM2 /"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "11 LAN_PORT2_TX+ Ethernet port2 GPIO#20 / PWM2 /\n12 LAN_PORT2_TX- Ethernet port2 GPIO#21 / PWM3 /\n13 LAN_PORT3_TX+ Ethernet port3 SD_WP / GPIO#22\n14 LAN_PORT3_TX- Ethernet port3 SD_CD / GPIO#23\n15 LAN_PORT3_RX+ Ethernet port3 SD_D1 / GPIO#24\n16 LAN_PORT3_RX- Ethernet port3 SD_D0 / GPIO#25\n17 GND Ground GND\n18 USB+ USB data pin Data+ USB_D+\n19 USB- USB data pin Data- USB_D-\n20 GND Ground GND\n21 LAN_PORT4_RX+ Ethernet port4 SD_CLK / GPIO#26\n22 LAN_PORT4_RX- Ethernet port4 SD_CMD/ GPIO#27"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "22 LAN_PORT4_RX- Ethernet port4 SD_CMD/ GPIO#27\n23 LAN_PORT4_TX+ Ethernet port4 SD_D3 / GPIO#28\n24 LAN_PORT4_TX- Ethernet port4 SD_D2 / GPIO#29\n25 UART_RXD0 UART0 only for debug UART0_RX / GPIO#13\n26 UART_TXD0 UART0 only for debug UART0_TX / GPIO#12 / O,\n27 GND Ground GND\n12 / 16 SKW92A-DA-001,A/1802.11b/g/n 2x2 MIMO WiFi AP/Router Module Datasheet\nSkylab M&C Technology Co., Ltd\nModel SKW92A\n28 3.3VD 3.3V input 1000mA +3.3V\n29 3.3VD 3.3V input 1000mA +3.3V\n30 GND Ground GND"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "30 GND Ground GND\n31 P4_LED LAN_PORT4_LED P4_LED_N / GPIO#39\n32 P3_LED LAN_PORT3_LED P3_LED_N / GPIO#40\n33 P2_LED LAN_PORT2_LED P2_LED_N /GPIO#41\n34 P1_LED LAN_PORT1_LED P1_LED_N/ GPIO#42\n35 P0_LED WAN_PORT_LED P0_LED_N / GPIO#43\n36 WLED_N Wireless LED WLED_N / GPIO#44\n37 UART_TXD1 UART1 Serial Data UART1_TXD / GPIO#45 / O,\n38 UART_RXD1 UART 1 Serial Data UART1_RXD / GPIO#46\n39 WDT_RST_N WPS/Factory WDT_RST_N /I2S_MCLK /\n40 WPS_LED WPS_LED WPS_LED_N / GPIO#37"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "40 WPS_LED WPS_LED WPS_LED_N / GPIO#37\n41 I2S_DI I2S data input I2S_SDI/GPIO#0/PCMDRX\n42 I2S_WS I2S word select I2S_WS/GPIO#2/PCMCLK\n43 I2S_DO I2S data output I2S_SDO\n44 I2S_CLK I2S clock I2S_CLK/GPIO#3/PCMFS\n45 HW_RESET Power on reset HW_RESET_N#\n46 I2C_SD I2C Data I2C_SDA(PU 2K2) / GPIO#5\n47 I2C_SCLK I2C clock I2C_SCL(PU 2K2) / GPIO#4\n48 GPIO0 General Purpose I/O POWER_ON# / GPIO#11/IPD\n13 / 16 SKW92A-DA-001,A/1802.11b/g/n 2x2 MIMO WiFi AP/Router Module Datasheet"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "Skylab M&C Technology Co., Ltd\nModel SKW92A\n8. PCB Footprint and Dimensions\nFigure 6: SKW92A Recommend PCB Footprint\n9. Electrical Characteristics\na) Absolute Maximum Ratings\nParameter Condition Min Typ. Max. Unit\nStorage temperature range -40 125 °C\nESD Protection VESD / 2000 V\nSupply voltage VDD_3.3V 0 3.6 V\nVoltage on any I/O pin -0.3 3.63 V\nTable9-1: Absolute Maximum Ratings\nb) Recommended Operation Ratings\nParameter Symbol Minimum Typical Maximum Unit\nExtended temp. TA -20 55 ºC"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "Extended temp. TA -20 55 ºC\nPower Supply VDD_3.3V 3.14 3.3 3.46 V\nInput Low Voltage VIL -0.3 0.8 V\nInput High Voltage VIH 2 3.63 V\nTable9-2: Operating Conditions\n14 / 16 SKW92A-DA-001,A/1802.11b/g/n 2x2 MIMO WiFi AP/Router Module Datasheet\nSkylab M&C Technology Co., Ltd\nModel SKW92A\nc) Measurement Conditions\nSystem state Current (Typ.)@3.3V Current (Max.)@3.3V\nStandby 180 mA 210 mA\nTransmit (2.4g; +15 dBm @ TX HT20 400 mA\nTransmit (2.4g; +18 dBm @ 11b 11Mbps.) 650 mA 850 mA"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "Table9-3: Power Consumption in Different States\n10. Manufacturing Process Recommendations\nFigure 7: SKW92ATypical Lead-free Soldering Profile\nNote：The final soldering temperature chosen at the factory depends on additional external factors like choice of\nsoldering paste，size，thickness and properties of the baseboard，etc. Exceeding the maximum soldering\ntemperature in the recommended soldering profile may permanently damage the module."
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "15 / 16 SKW92A-DA-001,A/1802.11b/g/n 2x2 MIMO WiFi AP/Router Module Datasheet\nSkylab M&C Technology Co., Ltd\nModel SKW92A\n11. Ordering Information\nModule No. SPI Flash Size DDR2 Size\nSKW92A_E8 8M Bytes 512M bits\nSKW92A_E16 16M Bytes 512M bits\nSKW92A_E325 32M Bytes 512M bits\nSKW92A_E321 32M Bytes 1024M bits\n12. Contact Information\nSkylab M&C Technology Co., Ltd.\n深圳市天工测控技术有限公司\nAddress: 6 Floor, No.9 Building, Lijincheng Scientific & Technical park, Gongye East Road,"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "Longhua District, Shenzhen, Guangdong, China\nPhone: 86-755 8340 8210（Sales Support）\nPhone: 86-755 8340 8510（Technical Support）\nFax: 86-755-8340 8560\nE-Mail: sales1@skylab.com.cn\nWebsite: www.skylab.com.cn www.skylabmodule.com\n16 / 16 SKW92A-DA-001,A/1"
+  }
+]

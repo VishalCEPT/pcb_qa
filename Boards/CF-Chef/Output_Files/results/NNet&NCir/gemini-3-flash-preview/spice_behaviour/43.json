@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /microcontroller/heater maintain a voltage of 3.3V for the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net /Microcontroller/HEATER is connected to GPIO1 of the ESP32-C3 and the input of a high-side switch, which are active signals that change state during operation rather than remaining at a constant 3.3V DC supply level.",
+        "is_final": true
+    }
+}

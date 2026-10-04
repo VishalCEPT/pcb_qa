@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to GND?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The netlist shows that component U2 (STM32L476RGT6) has multiple pins, including pins 12, 18, 31, 47, and 63, connected to the GND net.",
+        "is_final": true
+    }
+}

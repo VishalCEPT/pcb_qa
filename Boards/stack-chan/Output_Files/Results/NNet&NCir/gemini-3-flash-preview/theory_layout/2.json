@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component D2 connected to Net__D2_K_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The SPICE netlist explicitly shows component D2 connected to the node Net-_D2-K_ at its cathode (pin 1).",
+        "is_final": true
+    }
+}

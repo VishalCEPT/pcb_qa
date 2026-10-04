@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component U1 connected to GND?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, pin 1 of component U1 (LM1117-5.0) is connected to the GND net (node 5).",
+        "is_final": true
+    }
+}

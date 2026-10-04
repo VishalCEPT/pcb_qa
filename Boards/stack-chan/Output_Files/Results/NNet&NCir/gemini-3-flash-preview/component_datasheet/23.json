@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component IRLML6402 have a maximum drain voltage of -20V according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The component description in the netlist for IRLML6402 explicitly states it is a -20V Vds (drain-source voltage) P-Channel HEXFET Power MOSFET.",
+        "is_final": true
+    }
+}

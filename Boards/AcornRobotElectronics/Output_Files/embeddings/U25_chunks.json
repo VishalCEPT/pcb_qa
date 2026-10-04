@@ -1,0 +1,142 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "USBLC6-2\nDatasheet\nVery low capacitance ESD protection\nFeatures\n• 2 data-line protection\n• Protects VBUS\n• Very low capacitance: 3.5 pF max.\n• Very low leakage current: 150 nA max.\n• SOT-666 and SOT23-6L packages\n• RoHS compliant\nBenefits\n• Very low capacitance between lines to GND for optimized data integrity and\nspeed\n• Low PCB space consumption: 2.9 mm² max for SOT-666 and 9 mm² max for\nSOT23-6L\n• Enhanced ESD protection: IEC 61000-4-2 level 4 compliance guaranteed at\nI/O1 11 6 I/O1"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "I/O1 11 6 I/O1\ndevice level, hence greater immunity at system level\n• ESD protection of VBUS\nGND 2 5 VBUS\n• High reliability offered by monolithic integration\nI/O2 3 4 I/O2 • Low leakage current for longer operation of battery powered devices\n• Fast response time\n• Consistent D+ / D- signal balance:\nFunctional diagram (top view)\n– Very low capacitance matching tolerance I/O to GND = 0.015 pF\n– Compliant with USB 2.0 requirements\nComplies with the following standards:\n• IEC 61000-4-2 level 4:"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "• IEC 61000-4-2 level 4:\n– 15 kV (air discharge)\n– 8 kV (contact discharge)\nProduct status link\nApplications\nUSBLC6-2\n• USB 2.0 ports up to 480 Mb/s (high speed)\n• Compatible with USB 1.1 low and full speed\n• Ethernet port: 10/100 Mb/s\n• SIM card protection\n• Video line protection\n• Portable electronics\nDescription\nThe USBLC6-2SC6 and USBLC6-2P6 are monolithic application specific devices\ndedicated to ESD protection of high speed interfaces, such as USB 2.0, Ethernet\nlinks and video lines."
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "links and video lines.\nThe very low line capacitance secures a high level of signal integrity without\ncompromising in protecting sensitive chips against the most stringently characterized\nESD strikes.\nDS4260 - Rev 7 - December 2021 www.st.com\nFor further information contact your local STMicroelectronics sales office.USBLC6-2\nCharacteristics\n1 Characteristics\nTable 1. Absolute ratings (T = 25 °C)\namb\nSymbol Parameter Value Unit\nIEC 61000-4-2 level 4 standard:\nAir discharge 15"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "IEC 61000-4-2 level 4 standard:\nAir discharge 15\nVPP Peak pulse voltage kV\nContact discharge 15\nMIL STD883G-Method 3015-7 25\nTstg Storage temperature range -55 to +150 °C\nTj Operating junction temperature range -40 to +150 °C\nTL Maximum lead temperature for soldering during 10 s at 5 mm 260 °C\nTable 2. Electrical characteristics (T = 25 °C)\namb\nValue\nSymbol Parameter Test conditions Unit\nMin. Typ. Max.\nIRM Leakage current VRM = 5.25 V 10 150 nA\nBreakdown voltage\nVBR between IR = 1 mA 6 V"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "Breakdown voltage\nVBR between IR = 1 mA 6 V\nVBUS and GND\nVF Forward voltage IF = 10 mA 1.1 V\nIPP = 1 A, 8/20 μs\n12\nAny I/O pin to GND\nVCL Clamping voltage V\nIPP = 5 A, 8/20 μs\n17\nAny I/O pin to GND\nCapacitance\nCi/o-GND between I/O and VR = 1.65 V 2.5 3.5\nGND pF\nΔCi/o-GND 0.015\nCapacitance\nCi/o-i/o\nbetween I/O\nVR = 1.65 V 1.2 1.7\npF\nΔCi/o-i/o 0.04\nDS4260 - Rev 7 page 2/20USBLC6-2\nCharacteristics (curves)\n1.1 Characteristics (curves)\nFigure 2. Line capacitance versus frequency (typical"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "Figure 1. Capacitance versus voltage (typical values)\nvalues)\nC(pF)\n3.0 C(pF)\n2.8\n2.6\nCO=I/O-GND\n2.5 2.4\n2.2 VOSC=30mVRMS\n2.0 VOS F C = = 1 3 M 0m H V z RMS 2.0 VLINE\nT\n=\nj=\n0\n2\nV\n5\nt\n°\no\nC\n3.3V\nTj=25°C 1.8\n1.6\n1.5\n1.4\nCj=I/O-I/O\n1.2\n1.0 1.0\n0.8\n0.5 0.6\n0.4\nData line voltage (V)\n0.2 F(MHz)\n0.0\n0.0\n0.0 0.5 1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0\n1 10 100 1000\nFigure 3. Relative variation of leakage current versus\nFigure 4. Frequency response\njunction temperature (typical values)\nS21(dB)"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "junction temperature (typical values)\nS21(dB)\nIRM [Tj] /IRM[Tj = 25 °C] 0.00\n100\nVBUS = 5 V\n-5.00\n-10.00\n10\n-15.00\nF(Hz)\nTj(°C) -20.00\n1 100.0k 1.0M 10.0M 100.0M 1.0G\n25 50 75 100 125 150\nDS4260 - Rev 7 page 3/20USBLC6-2\nTechnical information\n2 Technical information\n2.1 Surge protection\nThe USBLC6-2 is particularly optimized to perform surge protection based on the rail to rail topology.\nThe clamping voltage V can be calculated as follow:\nCL\nV + = V + V for positive surges\nCL TRANSIL F"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "CL\nV + = V + V for positive surges\nCL TRANSIL F\nV - = - V for negative surges\nCL F\nwith: V = V + R .Ip\nF T d\n(V forward drop voltage) / (V forward drop threshold voltage)\nF T\nand V = V + R .I\nTRANSIL BR d_TRANSIL P\nCalculation example\nWe assume that the value of the dynamic resistance of the clamping diode is typically:\nR = 0.5 Ω and V = 1.1 V\nd T\nWe assume that the value of the dynamic resistance of the transil diode is typically:"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "R = 0.5 Ω and V = 6.1 V For an IEC 61000-4-2 surge level 4 (Contact Discharge: V = 8 kV, R = 330\nd_TRANSIL BR g g\nΩ), V = +5 V, and if in first approximation, we assume that:\nBUS\nI = V / R = 24 A.\np g g\nSo, we find:\nV + = +31.2 V\nCL\nV - = -13 V\nCL\nNote: The calculations do not take into account phenomena due to parasitic inductances.\n2.2 Surge protection application example\nIf we consider that the connections from the pin V to V , from I/O to data line and from GND to PCB GND\nBUS CC"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "BUS CC\nplane are done by tracks of 10 mm long and 0.5 mm large, we assume that the parasitic inductances L , L\nVBUS I/O\nand L of these tracks are about 6 nH. So when an IEC 61000-4-2 surge occurs on data line, due to the rise\nGND\ntime of this spike (t = 1 ns), the voltage V has an extra value equal to L .dl/dt + L .dI/dt.\nr CL I/O GND\nThe dI/dt is calculated as:\ndI/dt = I /t = 24 A/ns\np r\nThe overvoltage due to the parasitic inductances is:\nL .dl/dt = L .dI/dt = 6 nH x 24 A/ns = 144 V\nI/O GND"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "I/O GND\nBy taking into account the effect of these parasitic inductances due to unsuitable layout, the clamping voltage will\nbe:\nV + = +31.2 + 144 + 144 = 319.2 V\nCL\nV - = -13.1 - 144 - 144 = -301.1 V\nCL\nWe can significantly reduce this phenomena with simple layout optimization. It is for this reason that some\nrecommendations have to be followed (see ).\nDS4260 - Rev 7 page 4/20USBLC6-2\nSurge protection application example\nFigure 5. ESD behavior: parasitic phenomena due to unsuitable layout"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "ESD surgeon data line VCL+\nVBUS\nData line\nLI/O LI/Od d t i LVBUS LI/Od d t i + LGNDd d t i Positive\nSurge\nVCCpin\nVF\nI/Opin\nVTRANSIL\nVCL\nVTRANSIL+VF\nt\ntr= 1 ns\nGND pin\ntr= 1 ns\nLGND LGNDd d\nt\ni t\n-VF\ndi di\nVCL+=VTRANSIL +VF + LI/O + LGND surge > 0\ndt dt\nNegative\nVCL-= -VF- LI/O di - LGND di surge > 0 -LI/Od d t i - LGND d d t i Surge\ndt dt\nV\nTRANSIL\nVBR+Rd.Ip =\nVCL-\nDS4260 - Rev 7 page 5/202.3 How to ensure good ESD protection"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "While the USBLC6-2 provides high immunity to ESD surge, efficient protection depends on the layout of the\nboard. In the same way, with the rail to rail topology, the track from data lines to I/O pins, from VCC to VBUS pin\nand from GND plane to GND pin must be as short as possible to avoid overvoltages due to parasitic phenomena\n(see Figure 6. ESD behavior: layout optimization and Figure 5. ESD behavior: parasitic phenomena due to\nunsuitable layout for layout consideration)."
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "unsuitable layout for layout consideration).\nFigure 6. ESD behavior: layout optimization Figure 7. ESD behavior: measurement conditions\nESDSURGE\n11 6\nTEST BOARD\n2 5\nIN OUT\n3 4\nUnsuitable layout\n+5V\n11 6\n2 5\n3 4\nOptimized layout\nUSBLC6-2SC6\nUSBLC6-2\nHow to ensure good ESD protection\nFigure 8. ESD response to IEC 61000-4-2 (+15 kV air Figure 9. ESD response to IEC 61000-4-2 (-15 kV air\ndischarge) discharge)"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "discharge) discharge)\nNote: Important: A good precaution to take is to put the protection device as close as possible to the disturbance\nsource (generally the connector).\nDS4260 - Rev 7 page 6/202.4 Crosstalk behavior\n2.4.1 Crosstalk phenomenon\nFigure 10. Crosstalk phenomenon\nR\nG1\nLine 1\nV G1 RL1 α 1 V G1+β 12 VG2\nR\nG2 Line 2\nVG2 RL2 α 2 VG2+β 21 V G1\nDRIVERS RECEIVERS\nThe crosstalk phenomenon is due to the coupling between 2 lines. The coupling factor (β12 or β21) increases"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "when the gap across lines decreases, particularly in silicon dice. In the above example the expected signal on\nload R is α V , in fact the real voltage at this point has got an extra value β V . This part of the V signal\nL2 2 G2 21 G1 G1\nrepresents the effect of the crosstalk phenomenon of the line 1 on the line 2. This phenomenon has to be taken\ninto account when the drivers impose fast digital data or high frequency analog signals in the disturbing line. The"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "perturbed line will be more affected if it works with low voltage signal or high load impedance (few kΩ).\nFigure 11. Analog crosstalk measurements\nTEST BOARD\nNETWORKANALYSER\nNETWORKANALYSER PORT 2\nPORT 1\nVbus\n6CS2-6CLBSU\nUSBLC6-2\nCrosstalk behavior\nFigure 11. Analog crosstalk measurements shows the measurement circuit for the analog application. In usual\nfrequency range of analog signals (up to 240 MHz) the effect on disturbed line is less than -55 dB (see\nFigure 12. Analog crosstalk results)."
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "Figure 12. Analog crosstalk results).\nDS4260 - Rev 7 page 7/20USBLC6-2\nCrosstalk behavior\nFigure 12. Analog crosstalk results\ndB\n0.00\n-30.00\n-60.00\n-90.00\nF (Hz)\n-120.00\n100.0k 1.0M 10.0M 100.0M 1.0G\nAs the USBLC6-2 is designed to protect high speed data lines, it must ensure a good transmission of operating\nsignals. The frequency response (Figure 4. Frequency response) gives attenuation information and shows that"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "the USBLC6-2 is well suitable for data line transmission up to 480 Mbit/s while it works as a filter for undesirable\nsignals like GSM (900 MHz) frequencies, for instance.\nDS4260 - Rev 7 page 8/20USBLC6-2\nApplication examples\n2.5 Application examples\nFigure 13. USB 2.0 port application diagram using USBLC6-2\nDEVICE- + 3.3V + 5V HUB-\nUPSTREAM RPU Protecting DOWNSTREAM\nTRANSCEIVER USB Bus Switch TRANSCEIVER\nSW2 SW1 connector\nVBUS VBUS\nRX LS/FS+ VBUS RX LS/FS+\nRX HS+ RX HS+\nTX HS+ D+ TX HS+"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "RX HS+ RX HS+\nTX HS+ D+ TX HS+\nRX LS/FS - RX LS/FS -\nR T X X H H S S - - D- R TX X H H S S - -\nGND GND\nRS GND RS\nTX LS/FS+ TX LS/FS+\nRS USBLC6-2SC6 RS\nTX LS/FS - TX LS/FS -\nRPD RPD\nDEVICE- + 3.3V\nUPSTREAM RPU\nTRANSCEIVER USB\nSW2 SW1 connector\nVBUS\nRX LS/FS+ VBUS RX LS/FS+\nRX HS+ RX HS+\nTX HS+ D+ TX HS+\nRX LS/FS - RX LS/FS -\nR T X X H H S S - - D- R TX X H H S S - -\nGND RS GND RS GND\nTX LS/FS+ USBLC6-4SC6 TX LS/FS+\nRS USBLC6-2P6 RS\nTX LS/FS - TX LS/FS -\nRPD RPD\nMode SW1 SW2"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "TX LS/FS - TX LS/FS -\nRPD RPD\nMode SW1 SW2\nLow Speed LS Open Closed\nFull Speed FS Closed Open\nHigh Speed HS Closed then open Open\nDS4260 - Rev 7 page 9/20Figure 14. T1/E1/Ethernet protection\n+VCC\nTx\n100nF\nSMP75-8\nDATA\nTRANSCEIVER\n+VCC\nRx\n100nF\nSMP75-8\n6CS2-6CLBSU\n6CS2-6CLBSU\nUSBLC6-2\nPSpice model\n2.6 PSpice model\nFigure 15. PSpice model shows the PSpice model of one USBLC6-2 cell. In this model, the diodes are defined by\nthe PSpice parameters given in Figure 16. PSpice parameters."
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "Figure 15. PSpice model\nLI/O RI/O RI/O LI/O\nD+in D+out\nMODEL =Dlow MODEL =Dhigh\nLGND RGND RI/O LI/O\nMODEL =Dzener\nGND VBUS\nMODEL =Dlow MODEL =Dhigh\nLI/O RI/O RI/O LI/O\nD-in D-out\nNote: This simulation model is available only for an ambient temperature of 27 °C.\nDS4260 - Rev 7 page 10/20USBLC6-2\nPSpice model\nFigure 16. PSpice parameters Figure 17. USBLC6-2 PCB layout considerations\nDlow Dhigh Dzener LI/O 750p\nBV 50 50 7.3 RI/O 110m D+out\nD+in 1\nCJ0 0.9p 2.0p 40p LGND 550p"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "D+in 1\nCJ0 0.9p 2.0p 40p LGND 550p\nIBV 1m 1m 1m RGND 60m GND\nVBUS\nM 0.3333 0.3333 0.3333 CBUS= 100nF\nD-in\nRS 0.2 0.52 0.84\nVJ 0.6 0.6 0.6 D-out\nUSBLC6-2\nTT 0.1u 0.1u 0.1u\nDS4260 - Rev 7 page 11/20USBLC6-2\nPackage information\n3 Package information\nIn order to meet environmental requirements, ST offers these devices in different grades of ECOPACK packages,\ndepending on their level of environmental compliance. ECOPACK specifications, grade definitions and product"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "status are available at: www.st.com. ECOPACK is an ST trademark.\n3.1 SOT23-6L package information\nFigure 18. SOT23-6L package outline\nA1\nc\nθ L\nA H\nE\ne\nD b\ne\nA2\nTable 3. SOT23-6L package mechanical data\nDimensions\nRef. Millimeters Inches(1)\nMin. Typ. Max. Min. Typ. Max.\nA 0.9 1.45 0.0354 0.0571\nA1 0 0.15 0 0.0059\nA2 0.9 1.3 0.0354 0.0512\nb 0.30 0.5 0.0118 0.0197\nc 0.09 0.2 0.0035 0.0079\nD 2.8 3.05 0.1102 0.1201\nE 1.5 1.75 0.0591 0.0689\ne 0.95 0.0374\nH 2.6 3 0.1024 0.1181\nL 0.3 0.6 0.0118 0.0236"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "H 2.6 3 0.1024 0.1181\nL 0.3 0.6 0.0118 0.0236\nθ 0 10 0 0.3937\n1. Value in inches are converted from mm and rounded to 4 decimal digits\nDS4260 - Rev 7 page 12/20USBLC6-2\nSOT23-6L package information\nFigure 19. Footprint recommendations, dimensions in mm (inches)\n0.60\n(0.024)\n1.20\n(0.047)\n3.50 2.30\n1.10\n(0.138) (0.091)\n0.95 (0.043)\n(0.037)\nDS4260 - Rev 7 page 13/20USBLC6-2\nSOT-666 package information\n3.2 SOT-666 package information\nFigure 20. SOT-666 package outline\nb\nL1\nD E1\nA\nA3\nL2\nE\ne"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "b\nL1\nD E1\nA\nA3\nL2\nE\ne\nTable 4. SOT-666 package mechanical data\nDimensions\nRef. Millimeters Inches(1)\nMin. Typ. Max. Min. Typ. Max.\nA 0.45 0.62 0.018 0.025\nA3 0.08 0.18 0.003 0.007\nb 0.17 0.34 0.007 0.013\nD 1.50 1.70 0.059 0.067\nE 1.50 1.70 0.059 0.067\nE1 1.10 1.30 0.043 0.051\ne 0.50 0.020\nL1 0.19 0.007\nL2 0.10 0.30 0.004 0.012\n1. Value in inches are converted from mm and rounded to 4 decimal digits\nDS4260 - Rev 7 page 14/20USBLC6-2\nSOT-666 package information"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "SOT-666 package information\nFigure 21. Footprint recommendations, dimensions in mm\n0.50\n0.62 2.60\n0.99\n0.30\nDS4260 - Rev 7 page 15/20USBLC6-2\nPacking information\n3.3 Packing information\nFigure 22. Marking layout (refer to ordering information\nFigure 23. Package orientation in reel\ntable for marking)\nX X X X\nFigure 25. Reel dimensions (mm)\nFigure 24. Tape and reel orientation\nFigure 26. Inner box dimensions (mm)\nDS4260 - Rev 7 page 16/20USBLC6-2\nPacking information"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "Packing information\nFigure 27. Tape and reel outline\nTable 5. Tape and reel mechanical data\nDimensions\nRef. Millimeters\nMin. Typ. Max.\nP1 3.9 4 4.1\nP0 3.9 4 4.1\nD0 1.45 1.5 1.6\nD1 1\nF 3.45 3.5 3.55\nK0 1.3 1.4 1.6\nP2 1.95 2 2.05\nW 7.9 8 8.3\nDS4260 - Rev 7 page 17/20USBLC6-2\nOrdering information\n4 Ordering information\nFigure 28. Ordering information scheme\nUSB LC 6 - 2 xxx\nProduct Designation\nLow capacitance\nBreakdownVoltage\n6 = 6Volts\nNumber of lines protected\n2 = 2 lines\nPackages\nSC6 = SOT23-6L"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "2 = 2 lines\nPackages\nSC6 = SOT23-6L\nP6 = SOT-666\nTable 6. Ordering information\nOrder code Marking Package Weight Base qty. Delivery mode\nUSBLC6-2SC6 (1) UL26 SOT23-6L 16.7 mg 3000 Tape and reel\nUSBLC6-2P6(1) F SOT-666 2.9 mg 3000 Tape and reel\n1. The marking code can be rotated by 90° to differentiate assembly location.\nDS4260 - Rev 7 page 18/20USBLC6-2\nRevision history\nTable 7. Document revision history\nDate Version Changes\n14-Mar-2005 1 Initial release."
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "14-Mar-2005 1 Initial release.\n07-Jun-2005 2 Format change to figure 3; no content changed.\nAdded marking illustrations - Figures 21 and 23. Added ECOPACK statement.\n20-Mar-2008 3 Updated operating junction temperature range in absolute ratings, page 2.\nTechnical information section updated. Reformatted to current standards.\nUpdated leakage current for VRM = 5.25 V as specified in USB standard.\n27-Jun-2011 4\nUpdated marking illustrations Figure 21 and Figure 23."
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "24-Oct-2011 5 Updated legal statement.\n16-Oct-2020 6 Minor text changes.\nUpdated Section ■ Disclaimer\n24-Dec-2021 7\nUpdated Section 1 Characteristics\nDS4260 - Rev 7 page 19/20USBLC6-2\nIMPORTANT NOTICE – PLEASE READ CAREFULLY\nSTMicroelectronics NV and its subsidiaries (“ST”) reserve the right to make changes, corrections, enhancements, modifications, and improvements to ST"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "products and/or to this document at any time without notice. Purchasers should obtain the latest relevant information on ST products before placing orders. ST\nproducts are sold pursuant to ST’s terms and conditions of sale in place at the time of order acknowledgement.\nPurchasers are solely responsible for the choice, selection, and use of ST products and ST assumes no liability for application assistance or the design of\nPurchasers’ products."
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "Purchasers’ products.\nNo license, express or implied, to any intellectual property right is granted by ST herein.\nResale of ST products with provisions different from the information set forth herein shall void any warranty granted by ST for such product.\nST and the ST logo are trademarks of ST. For additional information about ST trademarks, please refer to www.st.com/trademarks. All other product or service\nnames are the property of their respective owners."
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "Information in this document supersedes and replaces information previously supplied in any prior versions of this document.\n© 2021 STMicroelectronics – All rights reserved\nDS4260 - Rev 7 page 20/20"
+  }
+]

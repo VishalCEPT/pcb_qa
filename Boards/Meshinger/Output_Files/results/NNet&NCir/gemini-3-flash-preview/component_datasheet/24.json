@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component SS2040FL have a minimum operating temperature of -55\u00b0C according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The SS2040FL is a standard Schottky barrier diode typically rated for an operating junction temperature range of -55\u00b0C to +150\u00b0C.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component C6 connected to Net__U3_A_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The SPICE circuit file explicitly lists component C6 as connected between node 0 (GND) and node Net-_U3-A_.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net vbus maintain a voltage of 0V for the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net VBUS is connected to the output of the power mux U5 and the input of the buck converter U8, and it is driven by the 5V USB supply or 12V barrel jack supply.",
+        "is_final": true
+    }
+}

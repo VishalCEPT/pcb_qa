@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component 24CW1280T-I_OT have a maximum Vcc of 5V according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The 24CW1280T-I/OT datasheet specifies an operating voltage range of 1.6V to 5.5V, making 5V within its maximum operating limits.",
+        "is_final": true
+    }
+}

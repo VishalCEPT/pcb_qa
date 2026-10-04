@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component Q2 connected to Net__Q1_G_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, Net-(Q1-G) connects pin 1 (Gate) of Q1, pin 3 (Collector) of Q2, and pin 2 of R1.",
+        "is_final": true
+    }
+}

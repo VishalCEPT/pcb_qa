@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ESP32-C6-DEVKIT have a USB connection according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The component description for M1 (ESP32-C6-DEVKIT) explicitly mentions a USB Type-C\u2122 to UART port for power and communication.",
+        "is_final": true
+    }
+}

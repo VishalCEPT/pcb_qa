@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component R10 connected to VCC?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The netlist and SPICE file both show that pin 1 of resistor R10 is connected to the VCC net.",
+        "is_final": true
+    }
+}

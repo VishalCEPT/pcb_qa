@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component M4 connected to PRB__T_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, pin 5 (PRB) of component M4 is connected to the net named /PRB_T.",
+        "is_final": true
+    }
+}

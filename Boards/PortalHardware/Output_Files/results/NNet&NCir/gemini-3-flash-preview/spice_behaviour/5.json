@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net-_u4-c2p_ signal maintain a voltage of 0V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The signal Net-_U4-C2P_ is connected to capacitor C13 and the charge pump pins of the SSD1306 OLED controller, which actively switch voltages to generate the display's driving levels.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component USBLC6-2P6 have a minimum operating junction temperature of -40\u00b0 according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The USBLC6-2P6 datasheet specifies an operating junction temperature range of -40\u00b0C to +150\u00b0C.",
+        "is_final": true
+    }
+}

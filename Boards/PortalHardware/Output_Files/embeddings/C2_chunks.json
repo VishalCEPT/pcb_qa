@@ -1,0 +1,530 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "Surface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nOverview\nKEMET’s X7R dielectric features a 125°C maximum circuits where Q and stability of capacitance characteristics\noperating temperature and is considered temperature are not critical. X7R exhibits a predictable change in\nstable. The Electronics Components, Assemblies and capacitance with respect to time and voltage, boasting a"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "Materials Association (EIA) characterizes X7R dielectric as minimal change in capacitance with reference to ambient\na Class II material. Components of this classification are temperature. Capacitance change is limited to ±15% from\nfixed, ceramic dielectric capacitors suited for bypass and −55°C to +125°C.\ndecoupling applications or for frequency discriminating\nBenefits\n• −55°C to +125°C operating temperature range\n• Lead (Pb)-free, RoHS, and REACH Compliant\n• Temperature stable dielectric"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "• Temperature stable dielectric\n• EIA 0402, 0603, 0805, 1206, 1210, 1808, 1812, 1825, 2220,\nand 2225 case sizes\n• DC voltage ratings of 6.3 V, 10 V, 16 V, 25 V, 35 V, 50 V,\n100 V, 200 V, and 250 V\n• Capacitance offerings ranging from 10 pF to 47 μF\n• Available capacitance tolerances of ±5%, ±10%, and ±20%\n• Non-polar device, minimizing installation concerns\n• 100% pure matte tin-plated termination finish allowing for\nexcellent solderability"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "excellent solderability\n• SnPb termination finish option available upon request\n(5% Pb minimum)\nApplications\nTypical applications include decoupling, bypass, filtering and transient voltage suppression.\nBuilt Into Tomorrow\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 1\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "X7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nOrdering Information\nC 1206 C 106 M 4 R A C TU\nCase Size Specification/ Capacitance Capacitance Rated Voltage Failure Rate/ Termination Packaging/\nCeramic Dielectric\n(L\" x W\") Series1 Code (pF) Tolerance (VDC) Design Finish2 Grade (C-Spec)\n0402 C = Standard Two J = ±5% 9 = 6.3 R = X7R A = N/A C = 100% See\n0603 significant K = ±10% 8 = 10 Matte Sn “Packaging\n0805 digits and M = ±20% 4 = 16 C-Spec\n1206 number of 3 = 25 Ordering"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "1206 number of 3 = 25 Ordering\n1210 zeros. 6 = 35 Options\n1805 5 = 50 Table”\n1808 1 = 100\n1812 2 = 200\n1825 A = 250\n2220\n2225\n1 Flexible termination option is available. Please see FT-CAP product bulletin C1013_X7R_FT-CAP_SMD.\n2 Additional termination finish options may be available. Contact KEMET for details.\nPackaging C-Spec Ordering Options Table\nPackaging/Grade\nPackaging Type1\nOrdering Code (C-Spec)\nBulk Bag/Unmarked Not required (Blank)\n7\" Reel/Unmarked TU"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "7\" Reel/Unmarked TU\n7411 (EIA 0603 and smaller case sizes)\n13\" Reel/Unmarked\n7210 (EIA 0805 and larger case sizes)\n7\" Reel/Marked TM\n7040 (EIA 0603)\n13\" Reel/Marked\n7215 (EIA 0805 and larger case sizes)\n1 Default packaging is \"Bulk Bag.\" An ordering code C-Spec is not required for \"Bulk Bag\" packaging.\n1 The terms \"Marked\" and \"Unmarked\" pertain to laser marking option of capacitors. All packaging options labeled as \"Unmarked\" will contain capacitors"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "that have not been laser marked. Please contact KEMET if you require a laser marked option. For more information see \"Capacitor Marking.\"\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 2\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nDimensions – Millimeters (Inches)\nW L\nT B\nS\nEIA Metric S\nL W T B Mounting\nSize Size Separation"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "L W T B Mounting\nSize Size Separation\nLength Width Thickness Bandwidth Technique\nCode Code Minimum\n1.00 (0.040) 0.50 (0.020) 0.30 (0.012) Solder reflow\n10402 1005 0.30 (0.012)\n±0.05 (0.002) ±0.05 (0.002) ±0.10 (0.004) only\n1.60 (0.063) 0.80 (0.032) 0.35 (0.014)\n20603 1608 0.50 (0.020)\n±0.15 (0.006) ±0.15 (0.006) ±0.15 (0.006)\n2.00 (0.079) 1.25 (0.049) 0.50 (0.02) Solder wave or\n30805 2012 0.70 (0.028)\n±0.20 (0.008) ±0.20 (0.008) ±0.25 (0.010) Solder reflow\n3.20 (0.126) 1.60 (0.063) 0.50 (0.02)"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "3.20 (0.126) 1.60 (0.063) 0.50 (0.02)\n41206 3216 1.50 (0.060)\n±0.20 (0.008) ±0.20 (0.008) ±0.25 (0.010)\n3.20 (0.126) 2.50 (0.098) 0.50 (0.02)\n51210 3225 1.50 (0.060)\n±0.20 (0.008) ±0.20 (0.008) ±0.25 (0.010)\nSee Table 2\n4.50 (0.177) 1.27 (0.050) 0.60 (0.024)\n1805 4513 ±0.50 (0.020) ±0.38 (0.015) for Thickness ±0.35 (0.014) 2.90 (0.114)\n4.70 (0.185) 2.00 (0.079) 0.60 (0.024)\n1808 4520 2.90 (0.114)\n±0.50 (0.020) ±0.20 (0.008) ±0.35 (0.014)\n4.50 (0.177) 3.20 (0.126) 0.60 (0.024) Solder reflow"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "1812 4532 2.30 (0.091)\n±0.30 (0.012) ±0.30 (0.012) ±0.35 (0.014) only\n4.50 (0.177) 6.40 (0.252) 0.60 (0.024)\n1825 4564 2.30 (0.091)\n±0.30 (0.012) ±0.40 (0.016) ±0.35 (0.014)\n5.70 (0.224) 5.00 (0.197) 0.60 (0.024)\n2220 5650 3.50 (0.138)\n±0.40 (0.016) ±0.40 (0.016) ±0.35 (0.014)\n5.60 (0.220) 6.40 (0.248) 0.60 (0.024)\n2225 5664 3.20 (0.126)\n±0.40 (0.016) ±0.40 (0.016) ±0.35 (0.014)\n1 For capacitance values ≥ 5.6 nF 100V add 0.05 (0.002) to the length and width tolerance dimension"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "2 For capacitance capacitance value 0.22 µF 50V add 0.10 (0.004) to length\n3 For capacitance values ≥ 2.2 µF add 0.10 (0.004) to the length tolerance dimension.\n4 For capacitance value 10 uF 16V add 0.10 (0.004) to the length tolerance dimension. For capacitance value 10 nF <=250V add 0.10 (0.004) to the length\ntolerance dimension. For capacitance value 100 nF 250V & 200V add 0.10 (0.004) to the length tolerance dimension."
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "5 For Capacitance value 1.0uF ≤ 50V add 0.20 (0.008) to Length tolerance dimension and to Width tolerance dimension add 0.10 (0.004), For Capacitance\nvalue 1.0uF 100V add 0.10 (0.004) to Length tolerance dimension. For capacitance value 2.2uF 100V add 0.10 to the Length tolerance dimension,\nfor capacitance values ≥ 4.7 µF add 0.02 (0.001) to the width tolerance dimension and 0.10 (0.004) to the length tolerance dimension, except for"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "capacitance value 10uF 25V and 50V add 0.10 (0.004) to the width tolerance dimension and 0.20 (0.008) to the length tolerance dimension. For\ncapacitance value 220 nF ≤ 50V add 0.10 (0.004) to the width tolerance dimension.\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 3\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "X7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nQualification/Certification\nCommercial Grade products are subject to internal qualification. Details regarding test methods and conditions are\nreferenced in Table 4, Performance & Reliability.\nEnvironmental Compliance\nLead (Pb)-free, RoHS, and REACH compliant without exemptions.\nLead-free\nTable 1A – Capacitance Range/Selection Waterfall (0402 – 1206 Case Sizes)\nCase Size/\nC0402C C0603C C0805C C1206C\nSeries\nCap"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "Case Size/\nC0402C C0603C C0805C C1206C\nSeries\nCap\nCap Voltage Code 9 8 4 3 5 1 9 8 4 3 5 1 2 A 9 8 4 3 6 5 1 2 A 9 8 4 3 6 5 1 2 A\nCode\nRated Voltage\n(VDC)\n*Capacitance range Includes E24 decade values only. (i.e., 10, 11, 12, 13, 15, 16, 18, 20, 22, 24, 27, 30, 33, 36, 39, 43, 47, 51, 56, 62, 68, 75, 82, and 91).\n**Capacitance range Includes E12 decade values only. (i.e., 10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, and 82).\nxx1 Available only in K and M tolerance."
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "xx1 Available only in K and M tolerance.\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 4\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.com\n3.6 01 61 52 05 001 3.6 01 61 52 05 001 002 052 3.6 01 61 52 53 05 001 002 052 3.6 01 61 52 53 05 001 002 052\nCap Tolerance Product Availability and Chip Thickness Codes – See Table 2 for Chip Thickness Dimensions"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "10 - 20 pF* 100 - 200* J K M BB BB BB BB BB CF CF CF CF CF CF CF DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB\n22 pF 220 J K M BB BB BB BB BB CF CF CF CF CF CF CF DM DM DM DM DM DM DN DN EB EB EB EB EB EB EB EB\n24 - 91pF 240 - 910* J K M BB BB BB BB BB CF CF CF CF CF CF CF DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB\n100 - 150 pF** 101 - 151** J K M BB BB BB BB BB CF CF CF CF CF CF CF DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "180 - 820 pF** 181 - 821** J K M BB BB BB BB BB CF CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB\n1000pF 102 J K M BB BB BB BB BB CF CF CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB EB\n1200 pF 122 J K M BB BB BB BB BB CF CF CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB EB\n1500 pF 152 J K M BB BB BB BB BB CF CF CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB EB"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "1800 pF 182 J K M BB BB BB BB BB CF CF CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB EB\n2200 pF 222 J K M BB BB BB BB BB CF CF CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB EB\n2700 pF 272 J K M BB BB BB BB BB CF CF CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB EB\n3300 pF 332 J K M BB BB BB BB BB BB CF CF CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB EB"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "3900 pF 392 J K M BB BB BB BB BB BB CF CF CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB EB\n4700 pF 472 J K M BB BB BB BB BB BB CF CF CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB EB\n5600 pF 562 J K M BB BB BB BB BB BB CF CF CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB EB\n6800 pF 682 J K M BB BB BB BB BB BB CF CF CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB EB"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "8200 pF 822 J K M BB BB BB BB BB BB CF CF CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB EB\n10000 pF 103 J K M BB BB BB BB BB BB CG CG CG CG CG CG CF CF DN DN DN DN DN DN DN DN DN EL EL EL EL EL EL EL EL EL\n12000 pF 123 J K M BB BB BB BB BB CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB EB\n15000 pF 153 J K M BB BB BB BB BB CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EQ EQ EQ EQ EQ EQ EQ EQ EQ"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "18000 pF 183 J K M BB BB BB BB BB CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB EB\n22000 pF 223 J K M BB BB BB BB BB CF CF CF CF CF CF DN DN DN DN DN DN DN DN DN EB EB EB EB EB EB EB EB EB\n27000 pF 273 J K M BB BB BB BB CF CF CF CF CF CF DN DN DN DN DN DN DP DE DG EB EB EB EB EB EB EB EB EB\nRated Voltage\n(VDC)\nCap\nCap\nCode\n3.6 01 61 52 05 001 3.6 01 61 52 05 001 002 052 3.6 01 61 52 53 05 001 002 052 3.6 01 61 52 53 05 001 002 052"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "Voltage Code 9 8 4 3 5 1 9 8 4 3 5 1 2 A 9 8 4 3 6 5 1 2 A 9 8 4 3 6 5 1 2 A\nCase Size/\nC0402C C0603C C0805C C1206C\nSeriesSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nTable 1A – Capacitance Range/Selection Waterfall (0402 – 1206 Case Sizes) cont.\nCase Size/\nC0402C C0603C C0805C C1206C\nSeries\nCap\nCap Voltage Code 9 8 4 3 5 1 9 8 4 3 5 1 2 A 9 8 4 3 6 5 1 2 A 9 8 4 3 6 5 1 2 A\nCode\nRated Voltage\n(VDC)"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "Code\nRated Voltage\n(VDC)\n*Capacitance range Includes E24 decade values only. (i.e., 10, 11, 12, 13, 15, 16, 18, 20, 22, 24, 27, 30, 33, 36, 39, 43, 47, 51, 56, 62, 68, 75, 82, and 91).\n**Capacitance range Includes E12 decade values only. (i.e., 10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, and 82).\nxx1 Available only in K and M tolerance.\nxx2 Available only in M tolerance.\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 5"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "Fort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.com\n3.6 01 61 52 05 001 3.6 01 61 52 05 001 002 052 3.6 01 61 52 53 05 001 002 052 3.6 01 61 52 53 05 001 002 052\nCap Tolerance Product Availability and Chip Thickness Codes – See Table 2 for Chip Thickness Dimensions\n33000 pF 333 J K M BB BB BB BB CF CF CF CF CF CF DN DN DN DN DN DN DP DE DG EB EB EB EB EB EB EB EB EB\n39000 pF 393 J K M BB BB BB BB CF CF CF CF CF CF DN DN DN DN DN DN DP DE DG EB EB EB EB EB EB EC EB EB"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "47000 pF 473 J K M BB BB BB BB CG CG CG CG CJ CF DO DO DO DO DO DO DE DG DG EB EB EB EB EB EB EC ED ED\n56000 pF 563 J K M BB BB BB CF CF CF CF CF CJ DP DP DP DP DP DP DE DG DG EB EB EB EB EB EB EB ED ED\n68000 pF 683 J K M BB BB BB CF CF CF CF CF CJ DP DP DP DP DP DP DE DG DG EB EB EB EB EB EB EB ED ED\n82000 pF 823 J K M BB BB BB CF CF CF CF CF CJ DP DP DP DP DP DP DE EB EB EB EB EB EB EB ED ED\n0.1 µF 104 J K M BB BB BB BB¹ CJ CJ CJ CJ CJ CJ DN DN DN DN DN DN DH EB EB EB EB EB EB EB EH EH"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "0.12 µF 124 J K M CF CF CF CF CF DN DN DN DN DP DP DG EC EC EC EC EC EC EC EG EM\n0.15 µF 154 J K M CF CF CF CF CF DN DN DN DN DP DP DG EC EC EC EC EC EC EC EG EG\n0.18 µF 184 J K M CF CF CF CF DN DN DN DN DG DG DG EC EC EC EC EC EC EC EM EM\n0.22 µF 224 J K M BB1 BB1 BB1 BB1 CF CF CF CF CJ DN DN DN DN DG DG DG EC EC EC EC EC EC EC EG EG\n0.27 µF 274 J K M CF CF CF DP DP DP DP DP DP DG EB EB EB EB EC EC EM\n0.33 µF 334 J K M CF CF CF DG DG DG DG DG DG EB EB EB EB EC EC EG"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "0.39 µF 394 J K M CF CF CF DG DG DG DG DE DE EB EB EB EB EC EC EG\n0.47 µF 474 J K M BB¹BB¹ CF CF CF CG DG DG DG DG DG DG EC EC EC EC EC EC EG\n0.56 µF 564 J K M DP DP DP DG DH DH ED ED ED ED EC EC EM\n0.68 µF 684 J K M DP DP DP DG DH DH EF EF EF EF ED ED EM\n0.82 µF 824 J K M DP DP DP DG EF EF EF EF ED ED EH\n1 µF 105 J K M CG CG CG CJ¹ DH DH DH DH DH¹DH¹ EP EP EP EP EH EH EH\n1.2 µF 125 J K M DE DE DE ED ED ED EG EH EH\n1.5 µF 155 J K M DG DG DG ED ED ED EG EH EH"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "1.5 µF 155 J K M DG DG DG ED ED ED EG EH EH\n1.8 µF 185 J K M DG DG DG ED ED ED EF EH EH\n2.2 µF 225 J K M CG¹CG¹ DH DH DH DH¹DH¹DH¹ EH EH EH¹EH¹ EH EH\n2.7 µF 275 J K M EN EN EN EH\n3.3 µF 335 J K M ED ED ED EH\n3.9 µF 395 J K M EF EF EF EH\n4.7 µF 475 J K M DH DH DH DH EH EH EH EH EH¹EH¹\n5.6 µF 565 J K M EH EH EH\n6.8 µF 685 J K M EH EH EH\n8.2 µF 825 J K M EH EH EH\n10 µF 106 J K M DH¹DH¹ EH EH EH EH\n22 µF 226 J K M EH¹EH¹\nRated Voltage\n(VDC)\nCap\nCap\nCode"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "Rated Voltage\n(VDC)\nCap\nCap\nCode\n3.6 01 61 52 05 001 3.6 01 61 52 05 001 002 052 3.6 01 61 52 53 05 001 002 052 3.6 01 61 52 53 05 001 002 052\nVoltage Code 9 8 4 3 5 1 9 8 4 3 5 1 2 A 9 8 4 3 6 5 1 2 A 9 8 4 3 6 5 1 2 A\nCase Size/\nC0402C C0603C C0805C C1206C\nSeriesSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nTable 1B – Capacitance Range/Selection Waterfall (1210 – 1812 Case Sizes)\nCase Size/\nC1210C C1805C C1808C C1812C2\nSeries"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "Case Size/\nC1210C C1805C C1808C C1812C2\nSeries\nCap Cap Code Voltage Code 9 8 4 3 5 1 2 A 5 1 2 5 1 2 3 5 1 2 A\nRated Voltage (VDC)\n*Capacitance range Includes E24 decade values only. (i.e., 10, 11, 12, 13, 15, 16, 18, 20, 22, 24, 27, 30, 33, 36, 39, 43, 47, 51, 56, 62, 68, 75, 82, and 91).\n**Capacitance range Includes E12 decade values only. (i.e., 10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, and 82).\nxx1 Available only in K and M tolerance."
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "xx1 Available only in K and M tolerance.\n2 Available capacitance values available in X7R with KONNEKT Technology.\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 6\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.com\n3.6 01 61 52 05 001 002 052 05 001 002 05 001 002 52 05 001 002 052\nCap Tolerance Product Availability and Chip Thickness Codes – See Table 2 for Chip Thickness Dimensions\n10 - 20 pF* 100 - 200* J K M FB FB FB FB FB FB FB"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "10 - 20 pF* 100 - 200* J K M FB FB FB FB FB FB FB\n22 pF 220 J K M FB FB FB FB FB FB FB\n24 - 91pF 240 - 910* J K M FB FB FB FB FB FB FB\n100 - 150 pF** 101 - 151** J K M FB FB FB FB FB FB FB\n220 pF 221 J K M FB FB FB FB FB FB FB NC NC NC\n270 pF 271 J K M FB FB FB FB FB FB FB NC NC NC\n330 pF 331 J K M FB FB FB FB FB FB FB NC NC NC LF LF LF\n390 pF 391 J K M FB FB FB FB FB FB FB NC NC NC LF LF LF\n470 pF 471 J K M FB FB FB FB FB FB FB NC NC NC LF LF LF GB GB GB GB"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "560 pF 561 J K M FB FB FB FB FB FB FB NC NC NC LF LF LF GB GB GB GB\n680 pF 681 J K M FB FB FB FB FB FB FB NC NC NC LF LF LF GB GB GB GB\n820 pF 821 J K M FB FB FB FB FB FB FB NC NC NC LF LF LF GB GB GB GB\n1000pF 102 J K M FB FB FB FB FB FB FB NC NC NC LF LF LF GB GB GB GB\n1200 pF 122 J K M FB FB FB FB FB FB FB NC NC LF LF LF GB GB GB GB\n1500 pF 152 J K M FB FB FB FB FB FB FE NC NC LF LF LF GB GB GB GB\n1800 pF 182 J K M FB FB FB FB FB FB FE NC NC LF LF LF GB GB GB GB"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "2200 pF 222 J K M FB FB FB FB FB FB FB FB NC NC LF LF LF GB GB GB GB\n2700 pF 272 J K M FB FB FB FB FB FB FB FB NA NA NA LF LF LF GB GB GB GB\n3300 pF 332 J K M FB FB FB FB FB FB FB FB NA NA NA LF LF GB GB GB GB\n3900 pF 392 J K M FB FB FB FB FB FB FB FB NA NA NA LF LF GB GB GB GB\n4700 pF 472 J K M FB FB FB FB FB FB FB FB NA NA NA LD LD LD GB GB GB GD\n5600 pF 562 J K M FB FB FB FB FB FB FB FB NA NA NA LD LD LD GB GB GB GH\n6800 pF 682 J K M FB FB FB FB FB FB FB FB NA NA LD LD LD GB GB GB GB GB"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "8200 pF 822 J K M FB FB FB FB FB FB FB FB NA NA LD LD LD GB GB GB GB GB\n10000 pF 103 J K M FB FB FB FB FB FB FB FB NA NA LD LD LD GB GB GB GB GB\n12000 pF 123 J K M FB FB FB FB FB FB FB FB NA NA LD LD LD GB GB GB GB GB\n15000 pF 153 J K M FB FB FB FB FB FB FB FB NA NA LD LD LD GB GB GB GB GB\n18000 pF 183 J K M FB FB FB FB FB FB FB FB NA NA LD LD LD GB GB GB GB GB\n22000 pF 223 J K M FB FB FB FB FB FB FB FB NA NA LD LD GB GB GB GB GB"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "27000 pF 273 J K M FB FB FB FB FB FB FB FB NA NA LD LD GB GB GB GB GB\n33000 pF 333 J K M FB FB FB FB FB FB FB FB NA LD LD GB GB GB GB GB\n39000 pF 393 J K M FB FB FB FB FB FB FB FB NA LD LD GB GB GB GB GB\n47000 pF 473 J K M FB FB FB FB FB FB FC FC NA LD LD GB GB GB GB GB\n56000 pF 563 J K M FB FB FB FB FB FB FC FC NA LD LD GB GB GB GB GB\n68000 pF 683 J K M FB FB FB FB FB FB FC FC NA LD GB GB GB GB GB\nRated Voltage (VDC)\nCap\nCap\nCode"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "Rated Voltage (VDC)\nCap\nCap\nCode\n3.6 01 61 52 05 001 002 052 05 001 002 05 001 002 52 05 001 002 052\nVoltage Code 9 8 4 3 5 1 2 A 5 1 2 5 1 2 3 5 1 2 A\nCase Size/Series C1210C C1805C C1808C C1812C2Surface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nTable 1B – Capacitance Range/Selection Waterfall (1210 – 1812 Case Sizes) cont.\nCase Size/\nC1210C C1805C C1808C C1812C2\nSeries\nCap Cap Code Voltage Code 9 8 4 3 5 1 2 A 5 1 2 5 1 2 3 5 1 2 A"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "Rated Voltage (VDC)\n*Capacitance range Includes E24 decade values only. (i.e., 10, 11, 12, 13, 15, 16, 18, 20, 22, 24, 27, 30, 33, 36, 39, 43, 47, 51, 56, 62, 68, 75, 82, and 91).\n**Capacitance range Includes E12 decade values only. (i.e., 10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, and 82).\nxx1 Available only in K and M tolerance.\n2 Available capacitance values available in X7R with KONNEKT Technology.\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 7"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "Fort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.com\n3.6 01 61 52 05 001 002 052 05 001 002 05 001 002 52 05 001 002 052\nCap Tolerance Product Availability and Chip Thickness Codes – See Table 2 for Chip Thickness Dimensions\n82000 pF 823 J K M FB FB FB FB FB FC FF FF NA LD GB GB GB GB GB\n0.1 µF 104 J K M FB FB FB FB FB FD FG FG NA LD GB GB GB GB GB\n0.12 µF 124 J K M FB FB FB FB FB FD FH FH LD GB GB GB GB GB\n0.15 µF 154 J K M FC FC FC FC FC FD FM FM LD GB GB GB GE GE"
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "0.18 µF 184 J K M FC FC FC FC FC FD FK FK LD GB GB GB GG GG\n0.22 µF 224 J K M FF FF FF FF FF FD FK FK GB GB GB GG GG\n0.27 µF 274 J K M FC FC FC FC FC FD FP FP GB GB GG GG GG\n0.33 µF 334 J K M FD FD FD FD FD FD FM FM GB GB GG GG GG\n0.39 µF 394 J K M FD FD FD FD FD FD FK FK GB GB GG GG GG\n0.47 µF 474 J K M FD FD FD FD FD FD FS FS GB GB GG GJ GJ\n0.56 µF 564 J K M FD FD FD FD FD FF GC GC GG\n0.68 µF 684 J K M FD FD FD FD FD FG GC GC GG\n0.82 µF 824 J K M FF FF FF FF FF FL GE GE GG"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "0.82 µF 824 J K M FF FF FF FF FF FL GE GE GG\n1 µF 105 J K M FZ FZ FZ FZ FZ FT GE GE GG\n1.2 µF 125 J K M FH FH FH FH FG FH GB GB GB\n1.5 µF 155 J K M FH FH FH FH FG FM GC GC GC\n1.8 µF 185 J K M FH FH FH FH FG FJ GE GE GE\n2.2 µF 225 J K M FJ FJ FJ FJ FY FY¹ GO GO GO¹\n2.7 µF 275 J K M FE FE FE FG FH GJ GJ GJ\n3.3 µF 335 J K M FF FF FF FM FM GL GL GL\n3.9 µF 395 J K M FG FG FG FG FK GK GK\n4.7 µF 475 J K M FC FC FC FG FS GK GK\n5.6 µF 565 J K M FF FF FF FH\n6.8 µF 685 J K M FG FG FG FM"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "6.8 µF 685 J K M FG FG FG FM\n8.2 µF 825 J K M FH FH FH FK\n10 µF 106 J K M FT¹ FT¹ FT¹ GA¹ FS¹ GK\n15 µF 156 J K M FM FM\n22 µF 226 FS FS FS¹ FS¹\n47 µF 476 FS¹ FS¹\nRated Voltage (VDC)\nCap\nCap\nCode\n3.6 01 61 52 05 001 002 052 05 001 002 05 001 002 52 05 001 002 052\nVoltage Code 9 8 4 3 5 1 2 A 5 1 2 5 1 2 3 5 1 2 A\nCase Size/Series C1210C C1805C C1808C C1812C2Surface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)"
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "X7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nTable 1C – Capacitance Range/Selection Waterfall (1825 – 2225 Case Sizes)\nCase Size/Series C1825C C2220C C2225C\nCap Cap Code Voltage Code 5 1 2 A 3 5 1 2 A 5 1 2 A\nRated Voltage (VDC)\n*Capacitance range Includes E24 decade values only. (i.e., 10, 11, 12, 13, 15, 16, 18, 20, 22, 24, 27, 30, 33, 36, 39, 43, 47, 51, 56, 62, 68, 75, 82, and 91)."
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "**Capacitance range Includes E12 decade values only. (i.e., 10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, and 82).\nxx1 Available only in K and M tolerance.\n2 Available capacitance values available in X7R with KONNEKT Technology.\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 8\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.com\n05 001 002 052 52 05 001 002 052 05 001 002 052"
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "05 001 002 052 52 05 001 002 052 05 001 002 052\nCap Tolerance Product Availability and Chip Thickness Codes – See Table 2 for Chip Thickness Dimensions\n3900 pF 392 J K M HB HB HB\n4700 pF 472 J K M HB HB HB KE KE KE\n5600 pF 562 J K M HB HB HB KE KE KE\n6800 pF 682 J K M HB HB HB JE JE JE KE KE KE\n8200 pF 822 J K M HB HB HB JE JE JE KE KE KE\n10000 pF 103 J K M HB HB HE JE JE JE KE KE KE\n12000 pF 123 J K M HB HB HE JE JE JE KE KE KE\n15000 pF 153 J K M HB HB JE JE JE KE KE KE"
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "15000 pF 153 J K M HB HB JE JE JE KE KE KE\n18000 pF 183 J K M HB HE JE JE JE KE KE\n22000 pF 223 J K M HB HB HB HB JE JE JE KE KE\n27000 pF 273 J K M HB HB HB HB JE JE JE KE KE\n33000 pF 333 J K M HB HB HB HB JB JB JB KE\n39000 pF 393 J K M HB HB HB HB JB JB JB\n47000 pF 473 J K M HB HB HB HB JB JB JB\n56000 pF 563 J K M HB HB HB HB JB JB JB\n68000 pF 683 J K M HB HB HB HB JB JB JB\n82000 pF 823 J K M HB HB HB HB JC JC JC JC JC\n0.1 µF 104 J K M HB HB HB HB JC JC JC JC JC KC KC KC KC"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "0.12 µF 124 J K M HB HB HB HB JC JC JC JC JC KC KC KC KC\n0.15 µF 154 J K M HB HB HB HB JC JC JC JC JC KC KC KC KC\n0.18 µF 184 J K M HB HB HB HB JC JC JC JC JC KC KC KC KC\n0.22 µF 224 J K M HB HB HB HB JC JC JC JC JC KC KC KC KC\n0.27 µF 274 J K M HB HB HB HB JC JC JC JC JC KB KC KC KC\n0.33 µF 334 J K M HB HB HB HB JC JC JC JC JC KB KC KC KC\n0.39 µF 394 J K M HB HB HD HD JC JC JC JC JC KB KC KC KC\n0.47 µF 474 J K M HB HB HD HD JC JC JC JC JC KB KC KD KD"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "0.56 µF 564 J K M HB HD HD HD JC JC JC JD JD KB KC KD KD\n0.68 µF 684 J K M HB HD HD HD JC JC JD JD JD KB KC KD KD\n0.82 µF 824 J K M HB HF HF HF JC JC JF JF JF KB KC KE KE\n1.0 µF 105 J K M HB HF HF HF JC JC JF JF JF KB KD KE KE\n1.2 µF 125 J K M HB JC JC KB KE KE KE\n1.5 µF 155 J K M HC JC JC KC\n1.8 µF 185 J K M HD JD JD KD\n2.2 µF 225 J K M HF JF JF KD\n4.7 µF 475 J K M JF JF\n10 µF 106 J K M JF JO\n15 µF 156 J K M JO JO\n22 µF 226 J K M JO\nRated Voltage (VDC)\nCap\nCap\nCode"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "Rated Voltage (VDC)\nCap\nCap\nCode\n05 001 002 052 52 05 001 002 052 05 001 002 052\nVoltage Code 5 1 2 A 3 5 1 2 A 5 1 2 A\nCase Size/Series C1825C C2220C C2225CSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nTable 2A – Chip Thickness/Tape & Reel Packaging Quantities\nThickness Case Thickness ± Paper Quantity Plastic Quantity\nCode Size Range (mm) 7\" Reel 13\" Reel 7\" Reel 13\" Reel\nBB 0402 0.50 ± 0.05 10,000 50,000 0 0"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "BB 0402 0.50 ± 0.05 10,000 50,000 0 0\nCF 0603 0.80 ± 0.07 4,000 15,000 0 0\nCG 0603 0.80 ± 0.10 4,000 15,000 0 0\nCJ 0603 0.80 ± 0.15 4,000 15,000 0 0\nDM 0805 0.70 ± 0.20 4,000 15,000 0 0\nDN 0805 0.78 ± 0.10 4,000 15,000 0 0\nDO 0805 0.80 ± 0.10 4,000 15,000 0 0\nDP 0805 0.90 ± 0.10 4,000 15,000 0 0\nDE 0805 1.00 ± 0.10 0 0 2,500 10,000\nDG 0805 1.25 ± 0.15 0 0 2,500 10,000\nDH 0805 1.25 ± 0.20 0 0 2,500 10,000\nEB 1206 0.78 ± 0.10 0 0 4,000 10,000\nEQ 1206 0.78 ±0.20 0 0 4,000 10,000"
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "EQ 1206 0.78 ±0.20 0 0 4,000 10,000\nEC 1206 0.90 ± 0.10 0 0 4,000 10,000\nEN 1206 0.95 ± 0.10 0 0 4,000 10,000\nED 1206 1.00 ± 0.10 0 0 2,500 10,000\nEE 1206 1.10 ± 0.10 0 0 2,500 10,000\nEF 1206 1.20 ± 0.15 0 0 2,500 10,000\nEP 1206 1.20 ± 0.20 0 0 2,500 10,000\nEM 1206 1.25 ± 0.15 0 0 2,500 10,000\nEL 1206 1.25 ± 0.20 0 0 2,500 10,000\nEG 1206 1.60 ± 0.15 0 0 2,000 8,000\nEH 1206 1.60 ± 0.20 0 0 2,000 8,000\nFB 1210 0.78 ± 0.10 0 0 4,000 10,000\nFC 1210 0.90 ± 0.10 0 0 4,000 10,000"
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "FC 1210 0.90 ± 0.10 0 0 4,000 10,000\nFD 1210 0.95 ± 0.10 0 0 4,000 10,000\nFE 1210 1.00 ± 0.10 0 0 2,500 10,000\nFF 1210 1.10 ± 0.10 0 0 2,500 10,000\nFG 1210 1.25 ± 0.15 0 0 2,500 10,000\nFZ 1210 1.25 ± 0.20 0 0 2,500 10,000\nFL 1210 1.40 ± 0.15 0 0 2,000 8,000\nFH 1210 1.55 ± 0.15 0 0 2,000 8,000\nFP 1210 1.60 ± 0.20 0 0 2,000 8,000\nFM 1210 1.70 ± 0.20 0 0 2,000 8,000\nFJ 1210 1.85 ± 0.20 0 0 2,000 8,000\nFT 1210 1.90 ± 0.20 0 0 2,000 8,000\nGA 1210 1.90 ± 0.20* 0 0 1,000 4,000"
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "GA 1210 1.90 ± 0.20* 0 0 1,000 4,000\nFY 1210 2.00 ± 0.20 0 0 2,000 8,000\nFK 1210 2.10 ± 0.20 0 0 2,000 8,000\nFS 1210 2.50 ± 0.30 0 0 1,000 4,000\nNA 1805 0.90 ± 0.10 0 0 4,000 10,000\nNC 1805 1.00 ± 0.15 0 0 4,000 10,000\nLD 1808 0.90 ± 0.10 0 0 2,500 10,000\nLF 1808 1.00 ± 0.15 0 0 2,500 10,000\n7\" Reel 13\" Reel 7\" Reel 13\" Reel\nThickness Case Thickness ±\nCode Size1 Range (mm)\nPaper Quantity¹ Plastic Quantity\nPackage quantity based on finished chip thickness specifications."
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 9\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nTable 2A – Chip Thickness/Tape & Reel Packaging Quantities cont.\nThickness Case Thickness ± Paper Quantity Plastic Quantity\nCode Size Range (mm) 7\" Reel 13\" Reel 7\" Reel 13\" Reel\nGB 1812 1.00 ± 0.10 0 0 1,000 4,000"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "GB 1812 1.00 ± 0.10 0 0 1,000 4,000\nGC 1812 1.10 ± 0.10 0 0 1,000 4,000\nGD 1812 1.25 ± 0.15 0 0 1,000 4,000\nGE 1812 1.30 ± 0.10 0 0 1,000 4,000\nGH 1812 1.40 ± 0.15 0 0 1,000 4,000\nGG 1812 1.55 ± 0.10 0 0 1,000 4,000\nGK 1812 1.60 ± 0.20 0 0 1,000 4,000\nGJ 1812 1.70 ± 0.15 0 0 1,000 4,000\nGL 1812 1.90 ± 0.20 0 0 500 2,000\nGO 1812 2.50 ± 0.20 0 0 500 2,000\nHB 1825 1.10 ± 0.15 0 0 1,000 4,000\nHC 1825 1.15 ± 0.15 0 0 1,000 4,000\nHD 1825 1.30 ± 0.15 0 0 1,000 4,000\nHE 1825 1.40 ± 0.15 0 0 1,000 4,000"
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "HE 1825 1.40 ± 0.15 0 0 1,000 4,000\nHF 1825 1.50 ± 0.15 0 0 1,000 4,000\nJB 2220 1.00 ± 0.15 0 0 1,000 4,000\nJC 2220 1.10 ± 0.15 0 0 1,000 4,000\nJD 2220 1.30 ± 0.15 0 0 1,000 4,000\nJE 2220 1.40 ± 0.15 0 0 1,000 4,000\nJF 2220 1.50 ± 0.15 0 0 1,000 4,000\nJO 2220 2.40 ± 0.15 0 0 500 2,000\nKB 2225 1.00 ± 0.15 0 0 1,000 4,000\nKC 2225 1.10 ± 0.15 0 0 1,000 4,000\nKD 2225 1.30 ± 0.15 0 0 1,000 4,000\nKE 2225 1.40 ± 0.15 0 0 1,000 4,000\n7\" Reel 13\" Reel 7\" Reel 13\" Reel\nThickness Case Thickness ±"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "Thickness Case Thickness ±\nCode Size1 Range (mm)\nPaper Quantity¹ Plastic Quantity\nPackage quantity based on finished chip thickness specifications.\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 10\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nTable 2B – Bulk Packaging Quantities\nLoose Packaging\nPackaging Type\nBulk Bag (default)"
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "Loose Packaging\nPackaging Type\nBulk Bag (default)\nPackaging C-Spec1 N/A2\nCase Size Packaging Quantities (pieces/unit packaging)\nEIA (in) Metric (mm) Minimum Maximum\n0402 1005\n0603 1608\n0805 2012 50,000\n1206 3216\n1210 3225\n1\n1808 4520\n1812 4532\n1825 4564 20,000\n2220 5650\n2225 5664\n1 The \"Packaging C-Spec\" is a 4 to 8 digit code which identifies the packaging type and/or product grade. When ordering, the proper code must be included in the 15th"
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "through 22nd character positions of the ordering code. See \"Ordering Information\" section of this document for further details. Commercial grade product ordered\nwithout a packaging C-Spec will default to our standard \"Bulk Bag\" packaging. Contact KEMET if you require a bulk bag packaging option for automotive grade products.\n2 A packaging C-Spec (see note 1 above) is not required for \"Bulk Bag\" packaging (excluding anti-static Bulk Bag and automotive grade products). The 15th through 22nd"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "character positions of the ordering code should be left blank. All product ordered without a packaging C-Spec will default to our standard \"Bulk Bag\" packaging.\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 11\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nTable 3 – Chip Capacitor Land Pattern Design Recommendations per IPC–7351"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "EIA Metric Density Level A: Density Level B: Density Level C:\nSize Size Maximum (Most) Median (Nominal) Minimum (Least)\nCode Code Land Protrusion (mm) Land Protrusion (mm) Land Protrusion (mm)\nC Y X V1 V2 C Y X V1 V2 C Y X V1 V2\n0402 1005 0.50 0.72 0.72 2.20 1.20 0.45 0.62 0.62 1.90 1.00 0.40 0.52 0.52 1.60 0.80\n0603 1608 0.90 1.15 1.10 4.00 2.10 0.80 0.95 1.00 3.10 1.50 0.60 0.75 0.90 2.40 1.20\n0805 2012 1.00 1.35 1.55 4.40 2.60 0.90 1.15 1.45 3.50 2.00 0.75 0.95 1.35 2.80 1.70"
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "1206 3216 1.60 1.35 1.90 5.60 2.90 1.50 1.15 1.80 4.70 2.30 1.40 0.95 1.70 4.00 2.00\n1210 3225 1.60 1.35 2.80 5.65 3.80 1.50 1.15 2.70 4.70 3.20 1.40 0.95 2.60 4.00 2.90\n12101 3225 1.50 1.60 2.90 5.60 3.90 1.40 1.40 2.80 4.70 3.30 1.30 1.20 2.70 4.00 3.00\n1808 4520 2.30 1.75 2.30 7.40 3.30 2.20 1.55 2.20 6.50 2.70 2.10 1.35 2.10 5.80 2.40\n1812 4532 2.15 1.60 3.60 6.90 4.60 2.05 1.40 3.50 6.00 4.00 1.95 1.20 3.40 5.30 3.70"
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "1825 4564 2.15 1.60 6.90 6.90 7.90 2.05 1.40 6.80 6.00 7.30 1.95 1.20 6.70 5.30 7.00\n2220 5650 2.75 1.70 5.50 8.20 6.50 2.65 1.50 5.40 7.30 5.90 2.55 1.30 5.30 6.60 5.60\n2225 5664 2.70 1.70 6.90 8.10 7.90 2.60 1.50 6.80 7.20 7.30 2.50 1.30 6.70 6.50 7.00\n1 Only for capacitance values ≥ 22 µF\nDensity Level A: For low-density product applications. Recommended for wave solder applications and provides a wider process window for reflow"
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "solder processes. KEMET only recommends wave soldering of EIA 0603, 0805, and 1206 case sizes.\nDensity Level B: For products with a moderate level of component density. Provides a robust solder attachment condition for reflow solder processes.\nDensity Level C: For high component density product applications. Before adapting the minimum land pattern variations the user should perform\nqualification testing based on the conditions outlined in IPC Standard 7351 (IPC–7351)."
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "Image below based on Density Level B for an EIA 1210 case size.\nV1\nY Y\nX X V2\nC C\nGrid Placement Courtyard\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 12\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nSoldering Process\nRecommended Soldering Technique:\n• Solder wave or solder reflow for EIA case sizes 0603, 0805 and 1206"
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "• All other EIA case sizes are limited to solder reflow only\nRecommended Reflow Soldering Profile:\nKEMET’s families of surface mount multilayer ceramic capacitors (SMD MLCCs) are compatible with wave (single or dual),\nconvection, IR or vapor phase reflow techniques. Preheating of these components is recommended to avoid extreme thermal\nstress. KEMET’s recommended profile conditions for convection and IR reflow reflect the profile conditions of the IPC/"
+  },
+  {
+    "faiss_index_id": 68,
+    "text": "J-STD-020 standard for moisture sensitivity testing. These devices can safely withstand a maximum of three reflow passes\nat these conditions.\nTermination Finish\nProfile Feature\nSnPb 100% Matte Sn\nPreheat/Soak\nTemperature Minimum (T ) 100°C 150°C\nSmin\nTemperature Maximum (T ) 150°C 200°C\nSmax\nTime (t) from T to T 60 – 120 seconds 60 – 120 seconds\nS Smin Smax\n3°C/second 3°C/second\nRamp-Up Rate (T to T )\nL P maximum maximum\nLiquidous Temperature (T) 183°C 217°C\nL\nTime"
+  },
+  {
+    "faiss_index_id": 69,
+    "text": "Liquidous Temperature (T) 183°C 217°C\nL\nTime\nTime Above Liquidous (t) 60 – 150 seconds 60 – 150 seconds\nL\nPeak Temperature (T ) 235°C 260°C\nP\nTime Within 5°C of Maximum 20 seconds 30 seconds\nPeak Temperature (t ) maximum maximum\nP\n6°C/second 6°C/second\nRamp-Down Rate (T to T)\nP L maximum maximum\nTime 25°C to Peak 6 minutes 8 minutes\nTemperature maximum maximum\nNote 1: All temperatures refer to the center of the package, measured on the"
+  },
+  {
+    "faiss_index_id": 70,
+    "text": "capacitor body surface that is facing up during assembly reflow.\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 13\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.com\nerutarepmeT\nT\nP Maximum Ramp-up Rate = 3°C/second t P\nMaximum Ramp-down Rate = 6°C/second\nT\nL t\nL\nT\nsmax\nT\nsmin t\ns\n25\n25°C to PeakSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)"
+  },
+  {
+    "faiss_index_id": 71,
+    "text": "X7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nX7R Performance and Reliability: SMD Test Methods and Conditions\nTest Reference Test Condition Limits\nVisual and KEMET\nNo defects that may affect performance (10X) Dimensions according KEMET Spec Sheet\nMechanical Internal\nC ≤ 10 µF 1 kHz ±50 Hz and 1.0 ±0.2 V\nrms\nor 0.5 ±0.2 V *\nrms\nC > 10 µF 120 Hz ±10 Hz and 0.5 ±0.1 V\nrms\nCapacitance KEMET * See part number specifi cation sheet for voltage\nWithin Tolerance"
+  },
+  {
+    "faiss_index_id": 72,
+    "text": "Within Tolerance\n(Cap) Internal Capacitance measurements (including tolerance)\nare indexed to a referee time of 48 or 1,000 hours\nPlease refer to a part number specifi cation sheet\nfor referee time details\nWithin Specifi cation\nEIA Case Rated DC Dissipation Factor\nCapacitance\nSize Voltage (Maximum %)\n< 0.1 µF 5.0\n< 16\n≥ 0.1 µF 10.0\n< 0.1 µF 3.5\n16\n0402 ≥ 0.1 µF 10.0\n< 0.1 µF 3.5\n25\n≥ 0.1 µF 10.0\n> 25 All 2.5\n< 16 5.0\n16 / 25 < 1.0 µF 3.5\n06031 > 25 2.5\n< 16\n≥ 1.0 µF 10.0\n16 / 25"
+  },
+  {
+    "faiss_index_id": 73,
+    "text": "06031 > 25 2.5\n< 16\n≥ 1.0 µF 10.0\n16 / 25\nC ≤ 10 µF < 16 5.0\n< 2.2 µF\nFrequency: 1 kHz ±50 Hz 16 / 25 3.5\nVoltage*: 1.0 ±0.2 V ,0.5 ±0.2 V\nrms rms > 25 < 1.0 µF 2.5\n08052\nDissipation KEMET C > 10 µF < 16\nFactor (DF) Internal ≥ 2.2 µF\nFrequency: 120 Hz ±10 Hz 16 / 25 10.0\nVoltage: 0.5 ±0.1 V rms > 25 ≥ 1.0 µF\n< 16 5.0\n* See part number specifi cation sheet for voltage < 10 µF\n16 / 25 3.5\n12063 > 25 All 2.5\n< 16\n≥ 10 µF 10.0\n16 / 25\n< 16 5.0\n16 / 25 < 22 µF 3.5\n12104 > 25 2.5\n< 16\n≥ 22 µF 10.0"
+  },
+  {
+    "faiss_index_id": 74,
+    "text": "12104 > 25 2.5\n< 16\n≥ 22 µF 10.0\n16 / 25\n< 16 5.0\n1805 – 2225 16 / 25 All 3.5\n> 25 2.5\n1 For Cap value 0.22 µF (16 V and 25 V) DF is 5% and for Cap value 4.7 µF (25 V) DF is 3.5%.\n2 For Cap value 1.0 µF (16 V and 25 V) DF is 5%.\n3 For Cap value 2.2 µF (25 V) and ≥ 2.2 µF (35 and 50 V) DF is 10%. For Cap Value 1.0uF\n(100V) DF is 5.0%. For Cap value 1.0 µF (50V & 35V) DF is 3.5%.\n4 For Cap value 10uF (16V, 25V and 50V ) DF is 5%. For Cap value 4.7µF (50 V) DF is 5%. For"
+  },
+  {
+    "faiss_index_id": 75,
+    "text": "Cap value 2.2uF (100V) DF is 10%. For Cap value 1.0 µF (≤50V) DF is 5.0%.\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 14\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nX7R Performance and Reliability: SMD Test Methods and Conditions cont.\nTest\nTest Reference Limits\nCondition\nWithin Specifi cation"
+  },
+  {
+    "faiss_index_id": 76,
+    "text": "Condition\nWithin Specifi cation\nTo obtain IR limit, divide MΩ - µF value by the capacitance and compare to GΩ limit.\nSelect the lower of the two limits.\nInsulation Resistance (IR) Limits Table\nEIA Rated DC 1,000 megohm 500 megohm 100 megohm\nCase Size Voltage microfarads or 100 GΩ microfarads or 10 GΩ microfarads or 10 GΩ\n0402 ALL < 0.012 µF ≥ 0.012 µF < 0.47 µf ≥ 0.47 µf\n≤ 200 V < 0.047 µF ≥ 0.047 µf < 0.47 µf ≥ 0.47 µf\n06031\n250 V N/A N/A ALL\n≤ 200 V < 0.15 µF ≥ 0.15 µF < 2.2 µf ≥ 2.2 µf\n08052"
+  },
+  {
+    "faiss_index_id": 77,
+    "text": "08052\n250 V < .027 µF N/A ≥ .027 µF\n≤ 200 V < 0.47 µF ≥ 0.47 µF < 2.2 µf ≥ 2.2 µf\n12063\nApply rated 250 V < 0.12 µF N/A ≥ 0.12 µF\nInsulation\nKEMET voltage for\nResistance ≤ 200 V < 0.39 µF ≥ 0.39 µF < 10 µf ≥ 10 µf\nInternal 120 seconds 12104\n(IR)\nat 25°C 250 V < 0.27 µF N/A ≥ 0.27 µF\n1805 ALL ALL N/A N/A\n1808 ALL ALL N/A N/A\n1812 ALL < 2.2 µF ≥ 2.2 µF N/A\n1825 ALL ALL N/A N/A\n2220 ALL < 10 µF ≥ 10 µF N/A\n2225 ALL ALL N/A N/A"
+  },
+  {
+    "faiss_index_id": 78,
+    "text": "2220 ALL < 10 µF ≥ 10 µF N/A\n2225 ALL ALL N/A N/A\n1 For Cap value 10 nF (≤ 100 V) IR should be calculated under 500 megohm microfarads or 10 GΩ.\nFor Cap values 5.6nF, 6.8nF, 8.2nF & 10nF (100V) IR should be calculated under 500 megohm microfarads or 10 GΩ.\n2 For Cap value 1.0µF (50 V) IR should be calculated under 100 megohm microfarads or 10 GΩ.\nFor Cap value 0.1uF (≤ 50V ) IR should be calculated under 500 mohms or 10GOhms"
+  },
+  {
+    "faiss_index_id": 79,
+    "text": "3 For Cap value 4.7µF (50 V) IR should be calculated under 100 megohm microfarads or 10 GΩ.\nFor Capacitance value 10nF (≤ 250V) IR should be calculated under 500 megohm microfarads or 10 GΩ.\nFor Capacitance value 100nF (250V & 200V) IR should be calculated under 500 megohm microfarads or 10 GΩ.\n4 For Capa value 4.7µF (50 V) IR should be calculated under 100 megohm microfarads or 10 GΩ.\nFor Capacitance value 220nF (≤50V) IR should be calculated under 500 megohm microfarads or 10 GΩ."
+  },
+  {
+    "faiss_index_id": 80,
+    "text": "© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 15\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nX7R Performance and Reliability: SMD Test Methods and Conditions cont.\nTest Reference Test Condition Limits\nC ≤ 10µF\nFrequency: 1 kHz ±50 Hz\nVoltage*: 1.0 ±0.2 V , 0.5 ±0.2 V , 0.2 ±0.1 V\nrms rms rms\nC > 10µF\nFrequency: 120 Hz ±10 Hz"
+  },
+  {
+    "faiss_index_id": 81,
+    "text": "rms rms rms\nC > 10µF\nFrequency: 120 Hz ±10 Hz\nVoltage: 0.5 ±0.1 V\nrms\nTemperature\nCoeffi cient of KEMET * See part number specifi cation sheet for voltage Capacitance ±15% over\nCapacitance Internal −55°C to +125°C\nStep Temperature (°C)\n(TCC)\n1 +25°C\n2 −55°C\n3 +25°C (Reference)\n4 +125°C\nCap: Initial Limit\nDielectric DF: Initial Limit\nWithstanding KEMET 250% of rated voltage IR: Initial Limit\nVoltage Internal (5 ±1 seconds and charge/discharge not exceeding 50 mA)"
+  },
+  {
+    "faiss_index_id": 82,
+    "text": "(DWV) Withstand test voltage without\ninsulation breakdown or damage.\nAging Rate Capacitance measurements (including tolerance) are indexed to a\nPlease refer to a part number\n(Maximum % KEMET referee time of 48 or 1,000 hours.\nspecifi cation sheet for specifi c\nCapacitance Internal Please refer to a part number specifi c datasheet for referee time\nAging rate\nLoss/Decade Hour) details.\nShear stress test per specifi c case size, Time: 60±1 seconds\nCase\nForce\nSize\n0201 2N"
+  },
+  {
+    "faiss_index_id": 83,
+    "text": "Case\nForce\nSize\n0201 2N\nTerminal KEMET No evidence of mechanical\nStrength Internal 0402 3N damage\n0603 5N\n0805 9N\n≥1206 18N\nStandard Termination system 2.0 mm\nFlexible Termination System 3.0 mm\nTest time: 60± 5 seconds\nRamp time: 1 mm/second\n20\nBoard No evidence of mechanical\nAEC-Q200-005\nFlex damage\n1.6\nR 340\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 16"
+  },
+  {
+    "faiss_index_id": 84,
+    "text": "Fort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nX7R Performance and Reliability: SMD Test Methods and Conditions cont.\nTest Reference Test Condition Limits\nCondition: 4 hours ± 15 minutes at 155°C dry bake apply Visual Inspection.\nSolderability J-STD-002 all methods 95% coverage on termination.\nTest 245 ±5°C (SnPb and Pb-Free) No leaching"
+  },
+  {
+    "faiss_index_id": 85,
+    "text": "Test 245 ±5°C (SnPb and Pb-Free) No leaching\nMeasurement at 24 hours ±4 hours after\n1,000 cycles (−55°C to +125°C) test conclusion.\nTemperature JESD22\n2 – 3 cycles per hour Cap: Initial Limit\nCycling Method JA-104\nSoak Time 1 or 5 minutes DF: Initial Limit\nIR: Initial Limit\nMeasurement at 24 hours ±4 hours after\ntest conclusion.\nWithin Post Environmental Limits\nCap: ±20% shift\nIR: 10% of Initial Limit\nLoad Humidity:\nDF Limits\n1,000 hours 85°C/85% RH and rated voltage."
+  },
+  {
+    "faiss_index_id": 86,
+    "text": "1,000 hours 85°C/85% RH and rated voltage.\nBiased MIL-STD-202 Maximum (%)\nHumidity Method 103\nLow Volt Humidity: Initial Post\n1,000 hours 85C°/85% RH and 1.5 V.\n2.5 3.0\n3.5 5.0\n5.0 7.5\n10.0 20.0\nMeasurement at 24 hours ±4 hours after\ntest conclusion.\nWithin Post Environmental Limits\nCap: ±20% shift\nIR: 10% of Initial Limit\nDF Limits\nMoisture MIL-STD-202 Number of cycles required 10, 24 hours per cycle. Maximum (%)\nResistance Method 106 Steps 7a and 7b not required.\nInitial Post\n2.5 3.0\n3.5 5.0"
+  },
+  {
+    "faiss_index_id": 87,
+    "text": "Initial Post\n2.5 3.0\n3.5 5.0\n5.0 7.5\n10.0 20.0\nCap: Initial Limit\nMIL-STD-202 Number of cycles required 5, (−55°C to 125°C)\nThermal Shock DF: Initial Limit\nMethod 107 Dwell time 15 minutes.\nIR: Initial Limit\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 17\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)"
+  },
+  {
+    "faiss_index_id": 88,
+    "text": "X7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nX7R Performance and Reliability: SMD Test Methods and Conditions cont.\nTest Reference Test Condition Limits\nWithin Post Environmental Limits\nCap: ±20% shift\n1,000 hours at 125°C with 2 X rated voltage applied\nIR: 10% of Initial Limit\nexcluding the following:\nHigh Applied DF Limits\nTemperature Case Size Capacitance Maximum (%)\nVoltage\nLife MIL-STD-202\nMethod 108 Initial Post\n0603 & 0805 ≥ 1.0 µF\n1.5 X 2.5 3.0\n1206 & 1210 ≥ 10 µF\n3.5 5.0\n5.0 7.5"
+  },
+  {
+    "faiss_index_id": 89,
+    "text": "1.5 X 2.5 3.0\n1206 & 1210 ≥ 10 µF\n3.5 5.0\n5.0 7.5\n10.0 20.0\nStorage Life 1,000 hours at 125°C, Unpowered\nCap: Initial Limit\nMIL-STD-202 5 g's for 20 minutes, 12 cycles each of 3 orientations.\nVibration DF: Initial Limit\nMethod 204 Test from 10 – 2,000 Hz\nIR: Initial Limit\n1,500 g’s 0.5 ms Half-sine, Cap: Initial Limit\nMechanical MIL-STD-202\nVelocity Change 15.4 feet/second DF: Initial Limit\nShock Method 213\n(Condition F) IR: Initial Limit\nVisual Inspection 10X"
+  },
+  {
+    "faiss_index_id": 90,
+    "text": "Visual Inspection 10X\nAdd Aqueous wash chemical OKEMCLEAN\nResistance to MIL-STD-202 Readable marking,\n(A 6% concentrated Oakite cleaner) or equivalent.\nSolvents Method 215 no decoloration or stains.\nDo not use banned solvents.\nNo physical damage.\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 18\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)"
+  },
+  {
+    "faiss_index_id": 91,
+    "text": "X7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nStorage & Handling\nCeramic chip capacitors should be stored in normal working environments. While the chips themselves are quite robust in\nother environments, solderability will be degraded by exposure to high temperatures, high humidity, corrosive atmospheres,\nand long term storage. In addition, packaging materials will be degraded by high temperature – reels may soften or warp"
+  },
+  {
+    "faiss_index_id": 92,
+    "text": "and tape peel force may increase. KEMET recommends that maximum storage temperature not exceed 40°C and maximum\nstorage humidity not exceed 70% relative humidity. Temperature fluctuations should be minimized to avoid condensation on\nthe parts and atmospheres should be free of chlorine and sulfur bearing compounds. For optimized solderability chip stock\nshould be used promptly, preferably within 1.5 years of receipt.\nConstruction (Typical)\nDetailed Cross Section\nDielectric Material\n(BaTiO)\n3"
+  },
+  {
+    "faiss_index_id": 93,
+    "text": "Dielectric Material\n(BaTiO)\n3\nBarrier Layer Dielectric\n(Ni) Material (BaTiO 3 )\nTermination\nFinish End Termination/\n(100% Matte Sn) External Electrode\n(Cu)\nInner Electrodes\n(Ni)\nEnd Termination/\nExternal Electrode\n(Cu)\nBarrier Layer\n(Ni)\nTermination\nFinish\n(100% Matte Sn)\nInner Electrodes\n(Ni)\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 19"
+  },
+  {
+    "faiss_index_id": 94,
+    "text": "Fort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nCapacitor Marking (Optional)\nThese surface mount multilayer ceramic capacitors are Marking appears in legible contrast. Illustrated below\nnormally supplied unmarked. If required, they can be is an example of an MLCC with laser marking of “KA8”,"
+  },
+  {
+    "faiss_index_id": 95,
+    "text": "marked as an extra cost option. Marking is available which designates a KEMET device with rated capacitance\non most KEMET devices, but must be requested using of 100 µF. Orientation of marking is vendor optional.\nthe correct ordering code identifi er(s). If this option is\nrequested, two sides of the ceramic body will be laser\nmarked with a “K” to identify KEMET, followed by two\ncharacters (per EIA–198 - see table below) to identify the"
+  },
+  {
+    "faiss_index_id": 96,
+    "text": "capacitance value. EIA 0603 case size devices are limited 2-Digit\nKEMET\nto the “K” character only. Capacitance\nID\nCode\nLaser marking option is not available on:\n• C0G, ultra stable X8R and Y5V dielectric devices.\n• EIA 0402 case size devices.\n• EIA 0603 case size devices with fl exible termination\noption.\n• KPS commercial and automotive grade stacked\ndevices.\n• X7R dielectric products in capacitance values outlined\nbelow.\nEIA Case Size Metric Size Code Capacitance\n0603 1608 ≤ 170 pF"
+  },
+  {
+    "faiss_index_id": 97,
+    "text": "0603 1608 ≤ 170 pF\n0805 2012 ≤ 150 pF\n1206 3216 ≤ 910 pF\n1210 3225 ≤ 2,000 pF\n1808 4520 ≤ 3,900 pF\n1812 4532 ≤ 6,700 pF\n1825 4564 ≤ 0.018 µF\n2220 5650 ≤ 0.027 µF\n2225 5664 ≤ 0.033 µF\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 20\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nCapacitor Marking (Optional) cont."
+  },
+  {
+    "faiss_index_id": 98,
+    "text": "Capacitor Marking (Optional) cont.\nCapacitance (pF) For Various Alpha/Numeral Identifi ers\nNumeral\nAlpha\n9 0 1 2 3 4 5 6 7 8\nCharacter\nCapacitance (pF)\nA 0.10 1.0 10 100 1,000 10,000 100,000 1,000,000 10,000,000 100,000,000\nB 0.11 1.1 11 110 1,100 11,000 110,000 1,100,000 11,000,000 110,000,000\nC 0.12 1.2 12 120 1,200 12,000 120,000 1,200,000 12,000,000 120,000,000\nD 0.13 1.3 13 130 1,300 13,000 130,000 1,300,000 13,000,000 130,000,000"
+  },
+  {
+    "faiss_index_id": 99,
+    "text": "E 0.15 1.5 15 150 1,500 15,000 150,000 1,500,000 15,000,000 150,000,000\nF 0.16 1.6 16 160 1,600 16,000 160,000 1,600,000 16,000,000 160,000,000\nG 0.18 1.8 18 180 1,800 18,000 180,000 1,800,000 18,000,000 180,000,000\nH 0.20 2.0 20 200 2,000 20,000 200,000 2,000,000 20,000,000 200,000,000\nJ 0.22 2.2 22 220 2,200 22,000 220,000 2,200,000 22,000,000 220,000,000\nK 0.24 2.4 24 240 2,400 24,000 240,000 2,400,000 24,000,000 240,000,000"
+  },
+  {
+    "faiss_index_id": 100,
+    "text": "L 0.27 2.7 27 270 2,700 27,000 270,000 2,700,000 27,000,000 270,000,000\nM 0.30 3.0 30 300 3,000 30,000 300,000 3,000,000 30,000,000 300,000,000\nN 0.33 3.3 33 330 3,300 33,000 330,000 3,300,000 33,000,000 330,000,000\nP 0.36 3.6 36 360 3,600 36,000 360,000 3,600,000 36,000,000 360,000,000\nQ 0.39 3.9 39 390 3,900 39,000 390,000 3,900,000 39,000,000 390,000,000\nR 0.43 4.3 43 430 4,300 43,000 430,000 4,300,000 43,000,000 430,000,000"
+  },
+  {
+    "faiss_index_id": 101,
+    "text": "S 0.47 4.7 47 470 4,700 47,000 470,000 4,700,000 47,000,000 470,000,000\nT 0.51 5.1 51 510 5,100 51,000 510,000 5,100,000 51,000,000 510,000,000\nU 0.56 5.6 56 560 5,600 56,000 560,000 5,600,000 56,000,000 560,000,000\nV 0.62 6.2 62 620 6,200 62,000 620,000 6,200,000 62,000,000 620,000,000\nW 0.68 6.8 68 680 6,800 68,000 680,000 6,800,000 68,000,000 680,000,000\nX 0.75 7.5 75 750 7,500 75,000 750,000 7,500,000 75,000,000 750,000,000"
+  },
+  {
+    "faiss_index_id": 102,
+    "text": "Y 0.82 8.2 82 820 8,200 82,000 820,000 8,200,000 82,000,000 820,000,000\nZ 0.91 9.1 91 910 9,100 91,000 910,000 9,100,000 91,000,000 910,000,000\na 0.25 2.5 25 250 2,500 25,000 250,000 2,500,000 25,000,000 250,000,000\nb 0.35 3.5 35 350 3,500 35,000 350,000 3,500,000 35,000,000 350,000,000\nd 0.40 4.0 40 400 4,000 40,000 400,000 4,000,000 40,000,000 400,000,000\ne 0.45 4.5 45 450 4,500 45,000 450,000 4,500,000 45,000,000 450,000,000"
+  },
+  {
+    "faiss_index_id": 103,
+    "text": "f 0.50 5.0 50 500 5,000 50,000 500,000 5,000,000 50,000,000 500,000,000\nm 0.60 6.0 60 600 6,000 60,000 600,000 6,000,000 60,000,000 600,000,000\nn 0.70 7.0 70 700 7,000 70,000 700,000 7,000,000 70,000,000 700,000,000\nt 0.80 8.0 80 800 8,000 80,000 800,000 8,000,000 80,000,000 800,000,000\ny 0.90 9.0 90 900 9,000 90,000 900,000 9,000,000 90,000,000 900,000,000\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 21"
+  },
+  {
+    "faiss_index_id": 104,
+    "text": "Fort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nTape & Reel Packaging Information\nKEMET offers multilayer ceramic chip capacitors packaged in 8, 12 and 16 mm tape on 7\" and 13\" reels in accordance with\nEIA Standard 481. This packaging system is compatible with all tape-fed automatic pick and place systems. See Table 2 for\ndetails on reeling quantities for commercial chips."
+  },
+  {
+    "faiss_index_id": 105,
+    "text": "Bar code label\nAnti-static reel\nKEMET ® E\npu\nm\nn\nb\nc\no\nh\ns\ne\ns\nd\ne\np\nd\na\np\np\nl\ne\na\nr\ns t\nc\ni\na\nc*\nrr i\no\ne\nr\nr .\nChip and KPS orientation in pocket\n(except 1825 commercial, and 1825 and 2225 Military)\nSprocket holes\nEmbossment or punched cavity\n8 mm, 12 mm\nAnti-static cover tape\nor 16 mm carrier tape\n180 mm (7.00\") (0.10 mm (0.004\") maximum thickness)\nor\n330 mm (13.00\") *EIA 01005, 0201, 0402 and 0603 case sizes available on punched paper carrier only."
+  },
+  {
+    "faiss_index_id": 106,
+    "text": "Table 5 – Carrier Tape Confi guration, Embossed Plastic & Punched Paper (mm)\nEmbossed Plastic Punched Paper\nTape Size\nEIA Case Size 7\" Reel 13\" Reel 7\" Reel 13\" Reel\n(W)*\nPitch (P)* Pitch (P)*\n1 1\n01005 – 0402 8 2 2\n0603 8 4 4\n0805 8 4 4 4 4\n1206 – 1210 8 4 4 4 4\n1805 – 1808 12 4 4\n≥ 1812 12 8 8\nKPS 1210 12 8 8\nKPS 1812\n16 12 12\nand 2220\nArray 0612 8 4 4\n*Refer to Figures 1 and 2 for W and P carrier tape reference locations.\n1\n*Refer to Tables 6 and 7 for tolerance specifi cations."
+  },
+  {
+    "faiss_index_id": 107,
+    "text": "© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 22\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nFigure 1 – Embossed (Plastic) Carrier Tape Dimensions\nT P\n2\nT 2 ØD 0 P 0 t ( o 1 l 0 e r p a i n tc c h e e o s n c t u a m p u e l a ±0 ti . v 2 e mm) E 1\nA\n0\nF\nK\n0 W\nB 1 B 0 E 2\nS P\n1 1\nT 1 Center Lines of Cavity ØD Embossment"
+  },
+  {
+    "faiss_index_id": 108,
+    "text": "S P\n1 1\nT 1 Center Lines of Cavity ØD Embossment\n1 For cavity size,\nCover Tape see Note 1 Table 4\nB is for tape feeder reference only,\n1\nincluding draft concentric about B 0 . User Direction of Unreeling\nTable 6 – Embossed (Plastic) Carrier Tape Dimensions\nMetric will govern\nConstant Dimensions — Millimeters (Inches)\nD Minimum R Reference S Minimum T T\nTape Size D 1 E P P 1 1\n0 Note 1 1 0 2 Note 2 Note 3 Maximum Maximum\n1.0 25.0\n8 mm\n(0.039) (0.984)"
+  },
+  {
+    "faiss_index_id": 109,
+    "text": "1.0 25.0\n8 mm\n(0.039) (0.984)\n1.5 +0.10/−0.0 1.75 ±0.10 4.0 ±0.10 2.0 ±0.05 0.600 0.600 0.100\n12 mm\n(0.059 +0.004/−0.0) 1.5 (0.069 ±0.004) (0.157 ±0.004) (0.079 ±0.002) 30 (0.024) (0.024) (0.004)\n(0.059) (1.181)\n16 mm\nVariable Dimensions — Millimeters (Inches)\nB Maximum E T W\nTape Size Pitch 1 2 F P 2 A,B & K\nNote 4 Minimum 1 Maximum Maximum 0 0 0\n4.35 6.25 3.5 ±0.05 4.0 ±0.10 2.5 8.3\n8 mm Single (4 mm)\n(0.171) (0.246) (0.138 ±0.002) (0.157 ±0.004) (0.098) (0.327)"
+  },
+  {
+    "faiss_index_id": 110,
+    "text": "Single (4 mm) 8.2 10.25 5.5 ±0.05 8.0 ±0.10 4.6 12.3\n12 mm Note 5\nand double (8 mm) (0.323) (0.404) (0.217 ±0.002) (0.315 ±0.004) (0.181) (0.484)\n12.1 14.25 7.5 ±0.05 12.0 ±0.10 4.6 16.3\n16 mm Triple (12 mm)\n(0.476) (0.561) (0.138 ±0.002) (0.157 ±0.004) (0.181) (0.642)\n1. The embossment hole location shall be measured from the sprocket hole controlling the location of the embossment. Dimensions of the embossment\nlocation and the hole location shall be applied independently of each other."
+  },
+  {
+    "faiss_index_id": 111,
+    "text": "2. The tape with or without components shall pass around R without damage (see Figure 6.)\n3. If S < 1.0 mm, there may not be enough area for a cover tape to be properly applied (see EIA Standard 481, paragraph 4.3, section b.)\n1\n4. B dimension is a reference dimension for tape feeder clearance only.\n1\n5. The cavity defi ned by A, B and K shall surround the component with suffi cient clearance that:\n0 0 0\n(a) the component does not protrude above the top surface of the carrier tape."
+  },
+  {
+    "faiss_index_id": 112,
+    "text": "(b) the component can be removed from the cavity in a vertical direction without mechanical restriction, after the top cover tape has been\nremoved.\n(c) rotation of the component is limited to 20° maximum for 8 and 12 mm tapes and 10° maximum for 16 mm tapes (see Figure 3.)\n(d) lateral movement of the component is restricted to 0.5 mm maximum for 8 and 12 mm wide tape and to 1.0 mm maximum for 16 mm tape\n(see Figure 4.)"
+  },
+  {
+    "faiss_index_id": 113,
+    "text": "(see Figure 4.)\n(e) for KPS product, A and B are measured on a plane 0.3 mm above the bottom of the pocket.\n0 0\n(f) see addendum in EIA Standard 481 for standards relating to more precise taping requirements.\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 23\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)"
+  },
+  {
+    "faiss_index_id": 114,
+    "text": "X7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nFigure 2 – Punched (Paper) Carrier Tape Dimensions\nT\nØDo Po t ( o 1 l 0 e r p a i n tc c h e e o s n c t u a m pe u l ± a 0 ti . v 2 e mm) E 1\nA\n0\nF\nW\nBottom Cover Tape B 0 E 2\nP1 G\nT1\nCavity Size,\nT1\nTop Cover Tape Center Lines of Cavity S N e o e te 1, Table 7\nBottom Cover Tape\nUser Direction of Unreeling\nTable 7 – Punched (Paper) Carrier Tape Dimensions\nMetric will govern\nConstant Dimensions — Millimeters (Inches)\nR Reference"
+  },
+  {
+    "faiss_index_id": 115,
+    "text": "R Reference\nTape Size D E P P T Maximum G Minimum\n0 1 0 2 1 Note 2\n0.10\n1.5 +0.10 -0.0 1.75 ±0.10 4.0 ±0.10 2.0 ±0.05 0.75 25\n8 mm (0.004)\n(0.059 +0.004 -0.0) (0.069 ±0.004) (0.157 ±0.004) (0.079 ±0.002) (0.030) (0.984)\nmaximum\nVariable Dimensions — Millimeters (Inches)\nTape Size Pitch E2 Minimum F P T Maximum W Maximum A B\n1 0 0\n6.25 3.5 ±0.05 4.0 ±0.10 1.1 8.3\n8 mm Single (4 mm) Note 1\n(0.246) (0.138 ±0.002) (0.157 ±0.004) (0.043) (0.327)"
+  },
+  {
+    "faiss_index_id": 116,
+    "text": "1. The cavity defi ned by A, B and T shall surround the component with suffi cient clearance that:\n0 0\na) the component does not protrude beyond either surface of the carrier tape.\nb) the component can be removed from the cavity in a vertical direction without mechanical restriction, after the top cover tape has been\nremoved.\nc) rotation of the component is limited to 20° maximum (see Figure 3.)\nd) lateral movement of the component is restricted to 0.5 mm maximum (see Figure 4.)"
+  },
+  {
+    "faiss_index_id": 117,
+    "text": "e) see addendum in EIA Standard 481 for standards relating to more precise taping requirements.\n2. The tape with or without components shall pass around R without damage (see Figure 6.)\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 24\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nPackaging Information Performance Notes"
+  },
+  {
+    "faiss_index_id": 118,
+    "text": "Packaging Information Performance Notes\n1. Cover Tape Break Force: 1.0 kg minimum.\n2. Cover Tape Peel Strength: The total peel strength of the cover tape from the carrier tape shall be:\nTape Width Peel Strength\n8 mm 0.1 to 1.0 newton (10 to 100 gf)\n12 and 16 mm 0.1 to 1.3 newton (10 to 130 gf)\nThe direction of the pull shall be opposite the direction of the carrier tape travel. The pull angle of the carrier tape shall be"
+  },
+  {
+    "faiss_index_id": 119,
+    "text": "165° to 180° from the plane of the carrier tape. During peeling, the carrier and/or cover tape shall be pulled at a velocity of\n300 ±10 mm/minute.\n3. Labeling: Bar code labeling (standard or custom) shall be on the side of the reel opposite the sprocket holes. Refer to EIA\nStandards 556 and 624.\nFigure 3 – Maximum Component Rotation\n°\nT\nMaximum Component Rotation Maximum Component Rotation\nTop View Side View\nTypical Pocket Centerline\nTape Maximum\n°\nWidth (mm) Rotation ( °) s\nT\n8,12 20\nBo"
+  },
+  {
+    "faiss_index_id": 120,
+    "text": "°\nWidth (mm) Rotation ( °) s\nT\n8,12 20\nBo\nTape Maximum\n16 – 200 10\nWidth (mm) Rotation ( °)\nS\n8,12 20\nTypical Component Centerline 16 – 56 10\n72 – 200 5\nAo\nFigure 4 – Maximum Lateral Movement Figure 5 – Bending Radius\n8 mm & 12 mm Tape 16 mm Tape Embossed Punched\nCarrier Carrier\n0.5 mm maximum 1.0 mm maximum\n0.5 mm maximum 1.0 mm maximum\nBending R\nR\nRadius\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 25"
+  },
+  {
+    "faiss_index_id": 121,
+    "text": "Fort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nFigure 6 – Reel Dimensions\nW\nFull Radius, (Includes\nAccess Hole at 3\nSee Note Slot Location flange distortion\n(Ø 40 mm minimum) at outer edge)\nW\n(Measured at hub)\n2\nA D (See Note) N\nC\n(Arbor hole W\n(Measured at hub)\ndiameter) 1\nIf present,\ntape slot in core\nfor tape start:\n2.5 mm minimum width x\n10.0 mm minimum depth\nB"
+  },
+  {
+    "faiss_index_id": 122,
+    "text": "2.5 mm minimum width x\n10.0 mm minimum depth\nB\n(see Note)\nNote: Drive spokes optional; if used, dimensions B and D shall apply.\nTable 8 – Reel Dimensions\nMetric will govern\nConstant Dimensions — Millimeters (Inches)\nTape Size A B Minimum C D Minimum\n8 mm 178 ±0.20\n(7.008 ±0.008)\n1.5 13.0 +0.5/−0.2 20.2\n12 mm or\n(0.059) (0.521 +0.02/−0.008) (0.795)\n330 ±0.20\n16 mm (13.000 ±0.008)\nVariable Dimensions — Millimeters (Inches)\nTape Size N Minimum W W Maximum W\n1 2 3\n8.4 +1.5/−0.0 14.4\n8 mm"
+  },
+  {
+    "faiss_index_id": 123,
+    "text": "1 2 3\n8.4 +1.5/−0.0 14.4\n8 mm\n(0.331 +0.059/−0.0) (0.567)\n50 12.4 +2.0/−0.0 18.4 Shall accommodate tape\n12 mm\n(1.969) (0.488 +0.078/−0.0) (0.724) width without interference\n16.4 +2.0/−0.0 22.4\n16 mm\n(0.646 +0.078/−0.0) (0.882)\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 26\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)"
+  },
+  {
+    "faiss_index_id": 124,
+    "text": "X7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nFigure 7 – Tape Leader & Trailer Dimensions\nEmbossed Carrier\nPunched Carrier Carrier Tape\n8 mm & 12 mm only\nRound Sprocket Holes\nEND START\nTop Cover Tape\nElongated Sprocket Holes\n(32 mm tape and wider)\n100 mm\nminimum leader\nTrailer\nComponents 400 mm minimum\n160 mm minimum\nTop Cover Tape\nFigure 8 – Maximum Camber\nElongated Sprocket Holes Carrier Tape\n(32 mm & wider tapes)\nRound Sprocket Holes\n1 mm maximum, either direction\nStraight Edge\n250 mm"
+  },
+  {
+    "faiss_index_id": 125,
+    "text": "Straight Edge\n250 mm\n© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 27\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.comSurface Mount Multilayer Ceramic Chip Capacitors (SMD MLCCs)\nX7R Dielectric, 6.3 – 250 VDC (Commercial Grade)\nKEMET Electronics Corporation Sales Offi ces\nFor a complete list of our global sales offi ces, please visit www.kemet.com/sales.\nDisclaimer"
+  },
+  {
+    "faiss_index_id": 126,
+    "text": "Disclaimer\nYAGEO Corporation and its affi liates do not recommend the use of commercial or automotive grade products for high reliability applications or manned space fl ight.\nAll product specifi cations, statements, information and data (collectively, the “Information”) in this datasheet are subject to change. The customer is responsible for"
+  },
+  {
+    "faiss_index_id": 127,
+    "text": "checking and verifying the extent to which the Information contained in this publication is applicable to an order at the time the order is placed. All Information given\nherein is believed to be accurate and reliable, but it is presented without guarantee, warranty, or responsibility of any kind, expressed or implied.\nStatements of suitability for certain applications are based on KEMET Electronics Corporation’s (“KEMET”) knowledge of typical operating conditions for such"
+  },
+  {
+    "faiss_index_id": 128,
+    "text": "applications, but are not intended to constitute – and KEMET specifi cally disclaims – any warranty concerning suitability for a specifi c customer application or use.\nThe Information is intended for use only by customers who have the requisite experience and capability to determine the correct products for their application. Any\ntechnical advice inferred from this Information or otherwise provided by KEMET with reference to the use of KEMET’s products is given gratis, and KEMET assumes"
+  },
+  {
+    "faiss_index_id": 129,
+    "text": "no obligation or liability for the advice given or results obtained.\nAlthough KEMET designs and manufactures its products to the most stringent quality and safety standards, given the current state of the art, isolated component\nfailures may still occur. Accordingly, customer applications which require a high degree of reliability or safety should employ suitable designs or other safeguards"
+  },
+  {
+    "faiss_index_id": 130,
+    "text": "(such as installation of protective circuitry or redundancies) in order to ensure that the failure of an electrical component does not result in a risk of personal injury\nor property damage.\nAlthough all product–related warnings, cautions and notes must be observed, the customer should not assume that all safety measures are indicated or that other\nmeasures may not be required.\nKEMET is a registered trademark of KEMET Electronics Corporation."
+  },
+  {
+    "faiss_index_id": 131,
+    "text": "© KEMET Electronics Corporation • One East Broward Boulevard C1002_X7R_SMD • 2/20/2025 28\nFort Lauderdale, FL 33301 USA • 954-766-2800 • www.kemet.com"
+  }
+]

@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net-_u4-iref_ signal maintain a voltage of 0V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net-_u4-iref_ signal is connected to ground through resistor R5 and to the IREF pin of the SSD1306 (U4), which typically sources current to set the display's reference, resulting in a non-zero voltage across R5.",
+        "is_final": true
+    }
+}

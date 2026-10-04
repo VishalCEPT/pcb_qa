@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net rst maintain a voltage of 10V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net RST is connected to the +5V rail through a 10k pull-up resistor (R3) and the SPICE simulation defines V_5V as 5.0V, meaning the voltage will be 5V rather than 10V.",
+        "is_final": true
+    }
+}

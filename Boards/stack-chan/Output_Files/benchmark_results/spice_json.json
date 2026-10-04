@@ -1,0 +1,55 @@
+{
+    "board_name": "stack-chan",
+    "strategy": "spice_json",
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "confusion_matrix": [
+        [
+            2,
+            0
+        ],
+        [
+            0,
+            3
+        ]
+    ],
+    "results": [
+        {
+            "question_number": 1,
+            "question": "Does the /txd2 signal maintain a voltage of 0V during the entire simulation?",
+            "expected": "NO",
+            "predicted": "NO",
+            "correct": true
+        },
+        {
+            "question_number": 2,
+            "question": "Does the /txd2 signal maintain a voltage of 3.3V during the entire simulation?",
+            "expected": "YES",
+            "predicted": "YES",
+            "correct": true
+        },
+        {
+            "question_number": 3,
+            "question": "Does the net-_q2-b_ signal maintain a voltage of 3.3V during the entire simulation?",
+            "expected": "YES",
+            "predicted": "YES",
+            "correct": true
+        },
+        {
+            "question_number": 4,
+            "question": "Does the net-_q2-b_ signal maintain a voltage of 5V during the entire simulation?",
+            "expected": "NO",
+            "predicted": "NO",
+            "correct": true
+        },
+        {
+            "question_number": 5,
+            "question": "Does the net-_j5-pin_1_ signal maintain a voltage of 5V during the entire simulation?",
+            "expected": "NO",
+            "predicted": "NO",
+            "correct": true
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component MAX3485 have a transmit rate of 10Mbps according to its datasheet?",
+    "tool_calls": {
+        "arguments": "{\"project_context\":{\"spice_json_file\":\"./outputs/stack-chan/m5-pantilt_SPICE_circuit.json\",\"circuit_json_file\":\"./outputs/stack-chan/m5-pantilt.json\",\"datasheet_files\":[\"./outputs/stack-chan/datasheets/U1.pdf\"]},\"component_ref\":\"U1\",\"question\":\"Does the component MAX3485 have a transmit rate of 10Mbps according to its datasheet?\"}",
+        "name": "get_relevant_context_from_question"
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "The datasheet explicitly states that the MAX3485, MAX3490, and MAX3491 can transmit and receive at data rates up to 10Mbps.",
+        "is_final": true
+    }
+}

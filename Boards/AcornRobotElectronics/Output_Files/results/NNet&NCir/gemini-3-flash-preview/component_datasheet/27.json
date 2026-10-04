@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component TPS61040DBVR have a minimum operating ambient temperature of -30\u00b0 according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "According to the provided netlist and component description, the TPS61040DBVR is a standard industrial PMIC with a typical operating temperature range of -40\u00b0C to 85\u00b0C, not a minimum of -30\u00b0C.",
+        "is_final": true
+    }
+}

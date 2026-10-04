@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component 1825232-1 have a maximum voltage of 30V according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The component description for S1 (1825232-1) in the netlist explicitly states it is a slide switch rated for 0.2A and 30VDC.",
+        "is_final": true
+    }
+}

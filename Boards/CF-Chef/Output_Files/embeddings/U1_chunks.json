@@ -1,0 +1,542 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "ESP32-C3-MINI-1\nESP32-C3-MINI-1U\nDatasheet\nVersion 2.1\nSmall-sized 2.4 GHz Wi-Fi (802.11b/g/n) and Bluetooth® 5 module\nBuilt around ESP32-C3 series of SoCs, RISC-V single-core microprocessor\n4 MB flash in chip package\n15 GPIOs\nOn-board PCB antenna or external antenna connector\nESP32-C3-MINI-1 ESP32-C3-MINI-1U\nwww.espressif.com1 ModuleOverview\n1 Module Overview\nNote:\nCheckthelinkortheQRcodetomakesurethatyouusethelatestversionofthisdocument:"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "https://www.espressif.com/documentation/esp32-c3-mini-1_datasheet_en.pdf\n1.1 Features\nCPU and On-Chip Memory • 802.11mcFTM\n• ESP32-C3FH4embedded,32-bitRISC-V Bluetooth®\nsingle-coreprocessor,upto160MHz\n• BluetoothLE:Bluetooth5,Bluetoothmesh\n• 384KBROM\n• Speed: 125Kbps,500Kbps,1Mbps,2Mbps\n• 400KBSRAM(16KBforcache)\n• Advertisingextensions\n• 8KBSRAMinRTC\n• Multipleadvertisementsets\n• 4MBflashinchippackage\n• Channelselectionalgorithm#2\nWi-Fi • Internalco-existencemechanismbetweenWi-Fi"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "Wi-Fi • Internalco-existencemechanismbetweenWi-Fi\nandBluetoothtosharethesameantenna\n• IEEE802.11b/g/n-compliant\n• Centerfrequencyrangeofoperatingchannel: Peripherals\n2412~2484MHz\n• Upto15GPIOs\n• Supports20MHz,40MHzbandwidthin2.4\nGHzband – 3strappingGPIOs\n• 1T1Rmodewithdatarateupto150Mbps • SPI,UART,I2C,I2S,remotecontrolperipheral,\nLEDPWMcontroller,generalDMAcontroller,\n• Wi-FiMultimedia(WMM) TWAI® controller(compatiblewithISO11898-1,"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "• TX/RXA-MPDU,TX/RXA-MSDU i.e. CANSpecification2.0),USBSerial/JTAG\ncontroller,temperaturesensor,SARADC,\n• ImmediateBlockACK general-purposetimers,watchdogtimers\n• Fragmentationanddefragmentation Note:\n*PleaserefertoESP32-C3SeriesDatasheetfor\n• Transmitopportunity(TXOP)\ndetailedinformationaboutthemoduleperipher-\n• AutomaticBeaconmonitoring(hardwareTSF) als.\n• 4×virtualWi-Fiinterfaces\nIntegrated Components on Module\n• SimultaneoussupportforInfrastructureBSSin"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "• SimultaneoussupportforInfrastructureBSSin\nStationmode,SoftAPmode,Station+SoftAP • 40MHzcrystaloscillator\nmode,andpromiscuousmode\nNotethatwhenthechipscansinStationmode,\nAntenna Options\ntheSoftAPchannelwillchangealongwiththe\nStationchannel • ESP32-C3-MINI-1: On-boardPCBantenna\nEspressifSystems 2 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback1 ModuleOverview\n• ESP32-C3-MINI-1U:Externalantennaviaa Certification\nconnector\n• RFcertification: Seecertificates\nOperating Conditions"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "Operating Conditions\n• Greencertification: RoHS/REACH\n• Operatingvoltage/Powersupply: 3.0~3.6V\n• Operatingambienttemperature:\nTest\n– 85°Cversionmodule: –40~85°C\n– 105°Cversionmodule: –40~105°C • HTOL/HTSL/uHAST/TCT/ESD/Latch-up\n1.2 Series Comparison\nESP32-C3-MINI-1andESP32-C3-MINI-1Uaretwogeneral-purposeWi-FiandBluetoothLEmodules. Therich\nsetofperipheralsandasmallsizemakethetwomodulesanidealchoiceforsmarthomes,industrial\nautomation,healthcare,consumerelectronics,etc."
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "automation,healthcare,consumerelectronics,etc.\nESP32-C3-MINI-1comeswithaPCBantenna. ESP32-C3-MINI-1Ucomeswithanexternalantennaconnector.\nAwideselectionofmodulevariantsareavailableasshowninTable1-1and1-2.\nTheseriescomparisonforthetwomodulesisasfollows:\n1\nTable1-1. ESP32-C3-MINI-1(ANT)SeriesComparison\n2 3\nAmbientTemp. Embedded Size\n5 4\nOrderingCode Flash\n6\n(°C) ChipRevision (mm)\nESP32-C3-MINI-1-N4X\n–40∼85 v1.1\n(Recommended)\nESP32-C3-MINI-1-H4X\n4MB(QuadSPI) –40∼105 v1.1 13.2×16.6×2.4\n(Recommended)"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "(Recommended)\nESP32-C3-MINI-1-N4(NRND) –40∼85 v0.4\nESP32-C3-MINI-1-H4(NRND) –40∼105 v0.4\nESP32-C3-MINI-1-H4-AZ(NRND) –40∼105 v0.4\n1\nThistablesharesthesamenotespresentedinTable1-2below.\nEspressifSystems 3 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback1 ModuleOverview\nTable1-2. ESP32-C3-MINI-1U(CONN)SeriesComparison\n2 3\nAmbientTemp. Embedded Size\n5 4,7\nOrderingCode Flash\n6\n(°C) ChipRevision (mm)\nESP32-C3-MINI-1U-N4X\n–40∼85 v1.1\n(Recommended)"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "ESP32-C3-MINI-1U-N4X\n–40∼85 v1.1\n(Recommended)\nESP32-C3-MINI-1U-H4X 4MB(QuadSPI) 13.2×12.5×2.4\n–40∼105 v1.1\n(Recommended)\nESP32-C3-MINI-1U-N4(NRND) –40∼85 v0.4\nESP32-C3-MINI-1U-H4(NRND) –40∼105 v0.4\n2\nAmbienttemperaturespecifiestherecommendedtemperaturerangeoftheenvironmentimmediatelyoutsidethe\nEspressifmodule.\n3\nFordetails,refertoSection10.1ModuleDimensions.\n4\nTheflashisintegratedinthechip’spackage. Forspecifications,refertoSection6.5MemorySpecifications.\n5"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "5\nAllmodulescanbepre-programmedwithAWSIoTExpressLinkfirmware. Moduleswithsuchfirmwarehavesuffix”-A”\nintheirorderingcodes,e.g. ESP32-C3-MINI-1-N4-A.SinceAWSIoTExpressLinkfirmwareenablesflashencryption\nandsecureboot,jointdownloadbootmodewillbedisabled,anditwillnolongerbepossibletoprogramfirmware\nthroughtheUARTorUSBportintothemodules.\n6\nAllchiprevisionshavethesameSRAMsize,butchiprevisionv1.1hasaround10KBmoreavailablespaceforusers"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "thanchiprevisionv0.4. Chiprevisionv1.1dependsonspecificESP-IDFversions,asdetailedinCompatibilityAdvisory\nforESP32-C3ChipRevisionv1.1. Forhowtoidentifychiprevisions,pleaserefertoESP32-C3SeriesSoCErrata.\n7\nBydefault,theSPIflashonthemoduleoperatesatamaximumclockfrequencyof80MHzanddoesnotsupport\ntheautosuspendfeature. Ifyouhavearequirementforahigherflashclockfrequencyof120MHzorifyouneed\ntheflashautosuspendfeature,pleasecontactus."
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "theflashautosuspendfeature,pleasecontactus.\nBothESP32-C3-MINI-1andESP32-C3-MINI-1Uhastwooperatingambienttemperatureoptions: –40∼85°C\nvariantsand–40∼105°Cvariants,allembeddedwiththeESP32-C3FH4chip. ESP32-C3-MINI-1hasone\nmorevariant: ESP32-C3-MINI-1-H4-AZembeddedwiththeESP32-C3FH4AZchip. Forthischip,SPI0/SPI1\npinsforflashconnectionarenotbonded. Formoreinformationaboutthedifferencesbetweenchips\nembedded,pleaserefertoSectionChipSeriesComparisoninESP32-C3SeriesDatasheet.\n1.3 Applications"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "1.3 Applications\n• SmartHome • POSMachines\n• IndustrialAutomation • ServiceRobot\n• HealthCare • AudioDevices\n• ConsumerElectronics • GenericLow-powerIoTSensorHubs\n• SmartAgriculture • GenericLow-powerIoTDataLoggers\nEspressifSystems 4 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedbackContents\nContents\n1 Module Overview\n2\n1.1 Features 2\n1.2 SeriesComparison 3\n1.3 Applications 4\n2 Block Diagram\n9\n3 Pin Definitions\n10\n3.1 PinLayout 10\n3.2 PinDescription 10\n4 Boot Configurations\n12"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "3.2 PinDescription 10\n4 Boot Configurations\n12\n4.1 ChipBootModeControl 13\n4.2 ROMMessagesPrintingControl 14\n4.3 ChipPower-upandReset 14\n5 Peripherals\n16\n5.1 PeripheralOverview 16\n5.2 PeripheralDescription 16\n5.2.1 ConnectivityInterface 16\n5.2.1.1 UARTController 16\n5.2.1.2 SPIController 16\n5.2.1.3 I2CController 17\n5.2.1.4 I2SController 18\n5.2.1.5 USBSerial/JTAGController 18\n5.2.1.6 Two-wireAutomotiveInterface 19\n5.2.1.7 LEDPWMController 19\n5.2.1.8 RemoteControlPeripheral 20"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "5.2.1.8 RemoteControlPeripheral 20\n5.2.2 AnalogSignalProcessing 20\n5.2.2.1 SARADC 20\n5.2.2.2 TemperatureSensor 20\n6 Electrical Characteristics\n22\n6.1 AbsoluteMaximumRatings 22\n6.2 RecommendedOperatingConditions 22\n6.3 DCCharacteristics(3.3V,25°C) 22\n6.4 CurrentConsumptionCharacteristics 23\n6.4.1 CurrentConsumptioninActiveMode 23\n6.4.2 CurrentConsumptioninOtherModes 24\n6.5 MemorySpecifications 24\n7 RF Characteristics\n26\n7.1 Wi-FiRadio 26\nEspressifSystems 5 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "SubmitDocumentationFeedbackContents\n7.1.1 Wi-FiRFTransmitter(TX)Characteristics 26\n7.1.2 Wi-FiRFReceiver(RX)Characteristics 27\n7.2 Bluetooth5(LE)Radio 28\n7.2.1 BluetoothLERFTransmitter(TX)Characteristics 28\n7.2.2 BluetoothLERFReceiver(RX)Characteristics 30\n8 Module Schematics\n33\n9 Peripheral Schematics\n35\n10 Physical Dimensions\n36\n10.1 ModuleDimensions 36\n10.2 DimensionsofExternalAntennaConnector 37\n11 PCB Layout Recommendations\n39\n11.1 PCBLandPattern 39\n11.2 ModulePlacementforPCBDesign 40"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "11.2 ModulePlacementforPCBDesign 40\n12 Product Handling\n41\n12.1 StorageConditions 41\n12.2 ElectrostaticDischarge(ESD) 41\n12.3 ReflowProfile 41\n12.4 UltrasonicVibration 42\nDatasheet Versioning\n43\nRelated Documentation and Resources\n44\nRevision History\n46\nEspressifSystems 6 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedbackListofTables\nList of Tables\n1\n1-1 ESP32-C3-MINI-1(ANT)SeriesComparison 3\n1-2 ESP32-C3-MINI-1U(CONN)SeriesComparison 4\n3-1 PinDefinitions 11"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "3-1 PinDefinitions 11\n4-1 DefaultConfigurationofStrappingPins 12\n4-2 DescriptionofTimingParametersfortheStrappingPins 13\n4-3 ChipBootModeControl 13\n4-4 UART0ROMMessagePrintingControl 14\n4-5 USBSerial/JTAGROMMessagePrintingControl 14\n4-6 DescriptionofTimingParametersforPower-upandReset 15\n6-1 AbsoluteMaximumRatings 22\n6-2 RecommendedOperatingConditions 22\n6-3 DCCharacteristics(3.3V,25°C) 22\n6-4 CurrentConsumptionforWi-Fi(2.4GHz)inActiveMode 23\n6-5 CurrentConsumptionforBluetoothLEinActiveMode 23"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "6-6 CurrentConsumptioninModem-sleepMode 24\n6-7 CurrentConsumptioninLow-PowerModes 24\n6-8 FlashSpecifications 24\n7-1 Wi-FiRFCharacteristics 26\n7-2 TXPowerwithSpectralMaskandEVMMeeting802.11Standards 26\n1\n7-3 TXEVMTest 26\n7-4 RXSensitivity 27\n7-5 MaximumRXLevel 28\n7-6 RXAdjacentChannelRejection 28\n7-7 BluetoothLERFCharacteristics 28\n7-8 BluetoothLE-TransmitterCharacteristics-1Mbps 29\n7-9 BluetoothLE-TransmitterCharacteristics-2Mbps 29\n7-10 BluetoothLE-TransmitterCharacteristics-125Kbps 29"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "7-11 BluetoothLE-TransmitterCharacteristics-500Kbps 30\n7-12 BluetoothLE-ReceiverCharacteristics-1Mbps 30\n7-13 BluetoothLE-ReceiverCharacteristics-2Mbps 31\n7-14 BluetoothLE-ReceiverCharacteristics-125Kbps 31\n7-15 BluetoothLE-ReceiverCharacteristics-500Kbps 32\nEspressifSystems 7 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedbackListofFigures\nList of Figures\n2-1 ESP32-C3-MINI-1BlockDiagram 9\n2-2 ESP32-C3-MINI-1UBlockDiagram 9\n3-1 PinLayout(TopView) 10"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "3-1 PinLayout(TopView) 10\n4-1 VisualizationofTimingParametersfortheStrappingPins 13\n4-2 VisualizationofTimingParametersforPower-upandReset 15\n8-1 ESP32-C3-MINI-1Schematics 33\n8-2 ESP32-C3-MINI-1USchematics 34\n9-1 PeripheralSchematics 35\n10-1 ESP32-C3-MINI-1PhysicalDimensions 36\n10-2 ESP32-C3-MINI-1UPhysicalDimensions 36\n10-3 DimensionsofExternalAntennaConnector 37\n11-1 ESP32-C3-MINI-1RecommendedPCBLandPattern 39\n11-2 ESP32-C3-MINI-1URecommendedPCBLandPattern 40\n12-1 ReflowProfile 41"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "12-1 ReflowProfile 41\nEspressifSystems 8 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback2 BlockDiagram\n2 Block Diagram\nESP32-C3-MINI-1\n40 MHz\nESP32-C3-MINI-1\n40 MHz\n3V3 Crystal Antenna\n3V3 Crystal Antenna\nRF Matching\nRF Matching\nESP32-C3FH4\nEN ESP32-C3FH4 GPIOs\nEN GPIOs\nSPI Flash\nSPI Flash\nFigure2-1. ESP32-C3-MINI-1BlockDiagram\nEESSPP3322-C-C3-3M-MININI-1I-U1U\n4400 MMHHzz\n33VV33 CCrryyssttaall AnAtenntennana\nRRFF M Maatcthcihnigng\nEESSPP3322--CC33FFHH44\nEENN GGPPIOIOss"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "EESSPP3322--CC33FFHH44\nEENN GGPPIOIOss\nSSPPII FFllaasshh\nFigure2-2. ESP32-C3-MINI-1UBlockDiagram\nNote:\nForthepinmappingbetweenthechipandthein-packageflash,pleaserefertoESP32-C3SeriesDatasheet>Table\nPinMappingBetweenChipandIn-packageFlash.\nEspressifSystems 9 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback3 PinDefinitions\n3 Pin Definitions\n3.1 Pin Layout\nThepindiagrambelowshowstheapproximatelocationofpinsonthemodule. Fortheactualdiagramdrawnto"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "scale,pleaserefertoFigure10.1ModuleDimensions.\nPin 53\nGND\nPin 1\nPin 2\nPin 3\nGND GND GND\nPin 4\nPin 5\nPin 6 GND P G in N 4 D 9 GND\nPin 7\nPin 8\nGND GND GND\nPin 9\nPin 10\nPin 11\nPin 52\nGND\n21\nniP\n31\nniP\n41\nniP\n51\nniP\n61\nniP\n71\nniP\n81\nniP\n91\nniP\n02\nniP\n12\nniP\n22\nniP\n32\nniP\n42\nniP\nPin 50\nGND\nPin 35\nPin 34\nPin 33\nPin 32\nPin 31\nPin 30\nPin 29\nPin 28\nPin 27\nPin 26\nPin 25\nPin 51\nGND\n84\nniP\n74\nniP\n64\nniP\n54\nniP\n44\nniP\n34\nniP\n24\nniP\n14\nniP\n04\nniP\n93\nniP\n83\nniP\n73\nniP\n63\nniP\nGND\nGND\n3V3\nNC\nIO2\nIO3\nNC\nEN\nNC\nNC"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "73\nniP\n63\nniP\nGND\nGND\n3V3\nNC\nIO2\nIO3\nNC\nEN\nNC\nNC\nGND\n0OI 1OI DNG CN 01OI CN 4OI 5OI 6OI 7OI 8OI 9OI CN\nNC\nNC\nNC\nNC\nTXD0\nRXD0\nNC\nNC\nIO19\nIO18\nNC\nDNG DNG DNG DNG DNG DNG DNG DNG DNG DNG DNG DNG DNG\nA\nKeepout Zone\nFigure3-1. PinLayout(TopView)\nNoteA:\nThezonemarkedwithdottedlinesistheantennakeepoutzone. ThepindiagramisapplicabletoESP32-C3-MINI-1\nandESP32-C3-MINI-1U,butthelatterhasnoantennakeepoutzone.\nTolearnmoreaboutthekeepoutzoneformodule’santennaonthebaseboard,pleasereferto"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "ESP32-C3HardwareDesignGuidelines>SectionGeneralPrinciplesofPCBLayoutforModules.\n3.2 Pin Description\nThemodulehas53pins. SeepindefinitionsinTable3-1PinDefinitions.\nForperipheralpinconfigurations,pleaserefertoSection5.2PeripheralDescription.\nEspressifSystems 10 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback3 PinDefinitions\nTable3-1. PinDefinitions\n1\nName No. Type Function\n1,2,11,14,\nGND P Ground\n36-53\n3V3 3 P Powersupply\n4,7,9,10,\n15,17,24,\nNC — NC\n25,28,29,\n32-35"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "4,7,9,10,\n15,17,24,\nNC — NC\n25,28,29,\n32-35\nIO2 5 I/O/T GPIO2,ADC1_CH2,FSPIQ\nIO3 6 I/O/T GPIO3,ADC1_CH3\nHigh: on,enablesthechip.\nEN 8 I\nLow: off,thechippowersoff.\nNote: DonotleavetheENpinfloating.\nIO0 12 I/O/T GPIO0,ADC1_CH0,XTAL_32K_P\nIO1 13 I/O/T GPIO1,ADC1_CH1,XTAL_32K_N\nIO10 16 I/O/T GPIO10,FSPICS0\nIO4 18 I/O/T GPIO4,ADC1_CH4,FSPIHD,MTMS\nIO5 19 I/O/T GPIO5,ADC2_CH0,FSPIWP,MTDI\nIO6 20 I/O/T GPIO6,FSPICLK,MTCK\nIO7 21 I/O/T GPIO7,FSPID,MTDO\nIO8 22 I/O/T GPIO8\nIO9 23 I/O/T GPIO9"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "IO8 22 I/O/T GPIO8\nIO9 23 I/O/T GPIO9\nIO18 26 I/O/T GPIO18,USB_D-\nIO19 27 I/O/T GPIO19,USB_D+\nRXD0 30 I/O/T GPIO20,U0RXD\nTXD0 31 I/O/T GPIO21,U0TXD\n1\nP:powersupply;I:input;O:output;T:highimpedance.\nEspressifSystems 11 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback4 BootConfigurations\n4 Boot Configurations\nNote:\nThe contentbelowis excerptedfromESP32-C3SeriesDatasheet> SectionBoot Configurations. Forthe strapping"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "pinmappingbetweenthechipandmodules,pleaserefertoChapter8ModuleSchematics.\nThechipallowsforconfiguringthefollowingbootparametersthroughstrappingpinsandeFuseparametersat\npower-uporahardwarereset,withoutmicrocontrollerinteraction.\n• Chipbootmode\n– Strappingpins: GPIO2,GPIO8,andGPIO9\n• ROMmessageprinting\n– Strappingpin: GPIO8\n– eFuseparameters: EFUSE_UART_PRINT_CONTROLandEFUSE_USB_PRINT_CHANNEL\nThedefaultvaluesofalltheaboveeFusebitsare0,whichmeansthattheyarenotburnt. GiventhateFuseis"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "one-timeprogrammable,onceaneFusebitisprogrammedto1,itcanneverberevertedto0. Forhowto\nprogrameFusebits,pleaserefertoESP32-C3TechnicalReferenceManual>ChaptereFuseController.\nThedefaultvaluesofthestrappingpins,namelythelogiclevels,aredeterminedbypins’internalweak\npull-up/pull-downresistorsatresetifthepinsarenotconnectedtoanycircuit,orconnectedtoanexternal\nhigh-impedancecircuit.\nTable4-1. DefaultConfigurationofStrappingPins\nStrappingPin DefaultConfiguration BitValue\nGPIO2 Floating –"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "GPIO2 Floating –\nGPIO8 Floating –\nGPIO9 Weakpull-up 1\nTochangethebitvalues,thestrappingpinsshouldbeconnectedtoexternalpull-down/pull-upresistances. If\ntheESP32-C3isusedasadevicebyahostMCU,thestrappingpinvoltagelevelscanalsobecontrolledby\nthehostMCU.\nAllstrappingpinshavelatches. AtChipReset,thelatchessamplethebitvaluesoftheirrespectivestrapping\npinsandstorethemuntilthechipispowereddownorshutdown. Thestatesoflatchescannotbechangedin"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "anyotherway. Itmakesthestrappingpinvaluesavailableduringtheentirechipoperation,andthepinsare\nfreeduptobeusedasregularIOpinsafterreset. FordetailsonChipReset,see\nESP32-C3TechnicalReferenceManual>ChapterResetandClock.\nThetimingofsignalsconnectedtothestrappingpinsshouldadheretothesetuptimeandholdtime\nspecificationsinTable4-2andFigure4-1.\nEspressifSystems 12 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback4 BootConfigurations"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "SubmitDocumentationFeedback4 BootConfigurations\nTable4-2. DescriptionofTimingParametersfortheStrappingPins\nParameter Description Min(ms)\nSetuptimeisthetimereservedforthepowerrailstostabilizebe-\nt 0\nSU\nforetheCHIP_ENpinispulledhightoactivatethechip.\nHold time is the time reserved for the chip to read the strapping\nt pin values after CHIP_EN is already high and before these pins 3\nH\nstartoperatingasregularIOpins.\ntSU tH\nVIL_nRST\nCHIP_EN\nVIH\nStrapping pin"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "tSU tH\nVIL_nRST\nCHIP_EN\nVIH\nStrapping pin\nFigure4-1. VisualizationofTimingParametersfortheStrappingPins\n4.1 Chip Boot Mode Control\nGPIO2,GPIO8,andGPIO9controlthebootmodeaftertheresetisreleased. SeeTable4-3ChipBootMode\nControl.\nTable4-3. ChipBootModeControl\n2\nBootMode GPIO2 GPIO8 GPIO9\nSPIbootmode 1 Anyvalue 1\n3\nJointdownloadbootmode 1 1 0\n1\nBoldmarksthedefaultvalueandconfiguration.\n2\nGPIO2actuallydoesnotdetermineSPIBootandJointDown-\nloadBootmode,butitisrecommendedtopullthispinupdue\ntoglitches."
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "toglitches.\n3\nJoint Download Boot mode supports the following download\nmethods:\n•USB-Serial-JTAGDownloadBoot\n•UARTDownloadBoot\nInSPIBootmode,theROMbootloaderloadsandexecutestheprogramfromSPIflashtobootthe\nsystem.\nEspressifSystems 13 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback4 BootConfigurations\nInJointDownloadBootmode,userscandownloadbinaryfilesintoflashusingUART0orUSBinterface. Itis\nalsopossibletodownloadbinaryfilesintoSRAMandexecuteitfromSRAM."
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "InadditiontoSPIBootandJointDownloadBootmodes,ESP32-C3alsosupportsSPIDownloadBootmode.\nFordetails,pleaseseeESP32-C3TechnicalReferenceManual>ChapterChipBootControl.\n4.2 ROM Messages Printing Control\nDuringthebootprocess,themessagesbytheROMcodecanbeprintedto:\n• (Default)UART0andUSBSerial/JTAGcontroller\n• UART0\n• USBSerial/JTAGcontroller\nEFUSE_UART_PRINT_CONTROLandGPIO8controlROMmessagesprintingtoUART0asshowninTable4-4\nUART0ROMMessagePrintingControl.\nTable4-4. UART0ROMMessagePrintingControl"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "Table4-4. UART0ROMMessagePrintingControl\nUART0ROMCodePrinting EFUSE_UART_PRINT_CONTROL GPIO8\n0 Ignored\nEnabled 1 0\n2 1\n1 1\nDisabled 2 0\n3 Ignored\n1\nBoldmarksthedefaultvalueandconfiguration.\nEFUSE_USB_PRINT_CHANNELcontrolstheprintingtoUSBSerial/JTAGcontrollerasshowninTable4-5USB\nSerial/JTAGROMMessagePrintingControl.\nTable4-5. USBSerial/JTAGROMMessagePrintingControl\nUSBSerial/JTAG\n2\nEFUSE_DIS_USB_SERIAL_JTAG EFUSE_USB_PRINT_CHANNEL\nROMCodePrinting\nEnabled 0 0\n0 1\nDisabled\n1 Ignored\n1"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "Enabled 0 0\n0 1\nDisabled\n1 Ignored\n1\nBoldmarksthedefaultvalueandconfiguration.\n2\nEFUSE_DIS_USB_SERIAL_JTAGcontrolswhethertodisableUSBSerial/JTAG.\n4.3 Chip Power-up and Reset\nOncethepowerissuppliedtothechip,itspowerrailsneedashorttimetostabilize. Afterthat,CHIP_EN–the\npinusedforpower-upandreset–ispulledhightoactivatethechip. ForinformationonCHIP_ENaswellas\npower-upandresettiming,seeFigure4-2andTable4-6.\nEspressifSystems 14 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "SubmitDocumentationFeedback4 BootConfigurations\ntSTBL tRST\n2.8V\nVDDA,\nVDD3P3,\nVDD3P3_RTC,\nVDD3P3_CPU\nV\nIL_nRST\nCHIP_EN\nFigure4-2. VisualizationofTimingParametersforPower-upandReset\nTable4-6. DescriptionofTimingParametersforPower-upandReset\nParameter Description Min(µs)\nTime reserved for the power rails of VDDA, VDD3P3,\nt VDD3P3_RTC,andVDD3P3_CPUtostabilizebeforetheCHIP_EN 50\nSTBL\npinispulledhightoactivatethechip\nTime reserved for CHIP_EN to stay below V to reset the\nIL_nRST\nt 50\nRST"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "IL_nRST\nt 50\nRST\nchip(seeTable6-3)\nEspressifSystems 15 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback5 Peripherals\n5 Peripherals\n5.1 Peripheral Overview\nESP32-C3FH4integratesarichsetofperipheralsincludingSPI,UART,I2C,I2S,remotecontrolperipheral,LED\nPWMcontroller,TWAI® controller,USBSerial/JTAGcontroller,temperaturesensor,SARADC\nTolearnmoreabouton-chipcomponents,pleaserefertoESP32-C3SeriesDatasheet>SectionFunctional\nDescription.\nNote:"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "Description.\nNote:\nThecontentbelowissourcedfromESP32-C3SeriesDatasheet>SectionPeripherals. Someinformationmaynotbe\napplicabletoESP32-C3-MINI-1andESP32-C3-MINI-1UasnotalltheIOsignalsareexposedonthemodule.\nTo learn more about peripheral signals, please refer to ESP32-C3TechnicalReferenceManual > Section Peripheral\nSignalList.\n5.2 Peripheral Description\nThissectiondescribesthechip’speripheralcapabilities,coveringconnectivityinterfacesandon-chipsensors\nthatextenditsfunctionality."
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "thatextenditsfunctionality.\n5.2.1 Connectivity Interface\nThissubsectiondescribestheconnectivityinterfacesonthechipthatenablecommunicationandinteraction\nwithexternaldevicesandnetworks.\n5.2.1.1 UART Controller\nESP32-C3hastwoUARTinterfaces,i.e. UART0andUART1,whichsupportIrDAandasynchronous\ncommunication(RS232andRS485)ataspeedofupto5Mbps. TheUARTcontrollerprovideshardwareflow\ncontrol(CTSandRTSsignals)andsoftwareflowcontrol(XONandXOFF).BothUARTinterfacesconnectto"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "GDMAviaUHCI0,andcanbeaccessedbytheGDMAcontrollerordirectlybytheCPU.\nFordetails,seeESP32-C3TechnicalReferenceManual>ChapterUARTController(UART,LP_UART).\nPinAssignment\nThepinsconnectedtotransmitandreceivesignals(U0TXDandU0RXD)forUART0aremultiplexedwith\nGPIO21~GPIO20viaIOMUX.OthersignalscanberoutedtoanyGPIOsviatheGPIOmatrix.\nFormoreinformationaboutthepinassignment,seeESP32-C3SeriesDatasheet>SectionIOPinsand\nESP32-C3TechnicalReferenceManual>ChapterIOMUXandGPIOMatrix.\n5.2.1.2 SPI Controller"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "5.2.1.2 SPI Controller\nESP32-C3hasthefollowingSPIinterfaces:\n• SPI0usedbyESP32-C3’sGDMAcontrollerandcachetoaccessin-packageoroff-packageflash\n• SPI1usedbytheCPUtoaccessin-packageoroff-packageflash\nEspressifSystems 16 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback5 Peripherals\n• SPI2isageneralpurposeSPIcontrollerwithaccesstoaDMAchannelallocatedbytheGDMAcontroller\nFeatures of SPI0 and SPI1\n• SupportsSingleSPI,DualSPI,andQuadSPI,QPImodes"
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "• SupportsSingleSPI,DualSPI,andQuadSPI,QPImodes\n• Configurableclockfrequencywithamaximumof120MHzinSingleTransferRate(STR)mode\n• Datatransmissionisinbytes\nFeatures of SPI2\n• Supportsoperationasamasterorslave\n• ConnectstoaDMAchannelallocatedbytheGDMAcontroller\n• SupportsSingleSPI,DualSPI,andQuadSPI,QPI\n• Configurableclockpolarity(CPOL)andphase(CPHA)\n• Configurableclockfrequency\n• Datatransmissionisinbytes"
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "• Datatransmissionisinbytes\n• Configurablereadandwritedatabitorder: most-significantbit(MSB)first,orleast-significantbit(LSB)\nfirst\n• Asamaster\n– Supports2-linefull-duplexcommunicationwithclockfrequencyupto80MHz\n– Supports1-,2-,4-linehalf-duplexcommunicationwithclockfrequencyupto80MHz\n– ProvidessixSPI_CSpinsforconnectionwithsixindependentSPIslaves\n– ConfigurableCSsetuptimeandholdtime\n• Asaslave\n– Supports2-linefull-duplexcommunicationwithclockfrequencyupto60MHz"
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "– Supports1-,2-,4-linehalf-duplexcommunicationwithclockfrequencyupto60MHz\nFordetails,seeESP32-C3TechnicalReferenceManual>ChapterSPIController(SPI).\nPinAssignment\nForSPI0/1,thepinsaremultiplexedwithGPIO12~GPIO17viatheIOMUX.\nForSPI2,thepinsaremultiplexedwithGPIO2,GPIO4~GPIO7,GPIO10,andJTAGinterfaceviatheIO\nMUX.\nFormoreinformationaboutthepinassignment,seeESP32-C3SeriesDatasheet>SectionIOPinsand\nESP32-C3TechnicalReferenceManual>ChapterIOMUXandGPIOMatrix.\n5.2.1.3 I2C Controller"
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "5.2.1.3 I2C Controller\nESP32-C3hasanI2CbusinterfacewhichisusedforI2Cmastermodeorslavemode,dependingonyour\nconfiguration. TheI2Cinterfacesupports:\nEspressifSystems 17 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback5 Peripherals\n• standardmode(100Kbit/s)\n• fastmode(400Kbit/s)\n• upto800Kbit/s(constrainedbySCLandSDApull-upstrength)\n• 7-bitand10-bitaddressingmode\n• doubleaddressingmode\n• 7-bitbroadcastaddress\nFordetails,seeESP32-C3TechnicalReferenceManual>ChapterI2CController(I2C)."
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "PinAssignment\nThepinsforI2CcanbechosenfromanyGPIOsviatheGPIOMatrix.\nFormoreinformationaboutthepinassignment,seeESP32-C3SeriesDatasheet>SectionIOPinsand\nESP32-C3TechnicalReferenceManual>ChapterIOMUXandGPIOMatrix.\n5.2.1.4 I2S Controller\nESP32-C3includesastandardI2Sinterface. Thisinterfacecanoperateasamasteroraslaveinfull-duplex\nmodeorhalf-duplexmode,andcanbeconfiguredfor8-bit,16-bit,24-bit,or32-bitserialcommunication. BCK\nclockfrequency,from10kHzupto40MHz,issupported."
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "clockfrequency,from10kHzupto40MHz,issupported.\nTheI2SinterfaceconnectstotheGDMAcontroller. TheinterfacesupportsTDMPCM,TDMMSBalignment,\nTDMstandard,andPDMstandard.\nFordetails,seeESP32-C3TechnicalReferenceManual>ChapterI2SController(I2S).\nPinAssignment\nThepinsfortheI2SControllercanbechosenfromanyGPIOsviatheGPIOMatrix.\nFormoreinformationaboutthepinassignment,seeESP32-C3SeriesDatasheet>SectionIOPinsand\nESP32-C3TechnicalReferenceManual>ChapterIOMUXandGPIOMatrix.\n5.2.1.5 USB Serial/JTAG Controller"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "5.2.1.5 USB Serial/JTAG Controller\nESP32-C3integratesaUSBSerial/JTAGcontroller. Thiscontrollerhasthefollowingfeatures:\n• CDC-ACMvirtualserialportandJTAGadapterfunctionality\n• USB2.0fullspeedcompliant,capableofupto12Mbit/stransferspeed(Notethatthiscontrollerdoes\nnotsupportthefaster480Mbit/shigh-speedtransfermode)\n• programmingin-package/off-packageflash\n• CPUdebuggingwithcompactJTAGinstructions\n• afull-speedUSBPHYintegratedinthechip"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "• afull-speedUSBPHYintegratedinthechip\nFordetails,seeESP32-C3TechnicalReferenceManual>ChapterUSBSerial/JTAGController\n(USB_SERIAL_JTAG).\nEspressifSystems 18 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback5 Peripherals\nPinAssignment\nThepinsfortheUSBSerial/JTAGControlleraremultiplexedwithGPIO18~GPIO19.\nFormoreinformationaboutthepinassignment,seeESP32-C3SeriesDatasheet>SectionIOPinsand\nESP32-C3TechnicalReferenceManual>ChapterIOMUXandGPIOMatrix."
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "5.2.1.6 Two-wire Automotive Interface\nESP32-C3hasaTWAI® controllerwiththefollowingfeatures:\n• compatiblewithISO11898-1protocol(CANSpecification2.0)\n• standardframeformat(11-bitID)andextendedframeformat(29-bitID)\n• bitratesfrom1Kbit/sto1Mbit/s\n• multiplemodesofoperation: Normal,ListenOnly,andSelf-Test(noacknowledgmentrequired)\n• 64-bytereceiveFIFO\n• acceptancefilter(singleanddualfiltermodes)\n• errordetectionandhandling: errorcounters,configurableerrorinterruptthreshold,errorcodecapture,"
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "arbitrationlostcapture\nFordetails,seeESP32-C3TechnicalReferenceManual>ChapterTwo-wireAutomotiveInterface.\nPinAssignment\nThepinsfortheTwo-wireAutomotiveInterfacecanbechosenfromanyGPIOsviatheGPIOMatrix.\nFormoreinformationaboutthepinassignment,seeESP32-C3SeriesDatasheet>SectionIOPinsand\nESP32-C3TechnicalReferenceManual>ChapterIOMUXandGPIOMatrix.\n5.2.1.7 LED PWM Controller\nTheLEDPWMcontrollercangenerateindependentdigitalwaveformonsixchannels. TheLEDPWM\ncontroller:"
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "controller:\n• Cangeneratedigitalwaveformwithconfigurableperiodsanddutycycle. Theresolutionofdutycycle\ncanbeupto14bits.\n• Hasmultipleclocksources,includingAPBclockandexternalmaincrystalclock.\n• CanoperatewhentheCPUisinLight-sleepmode.\n• Supportsgradualincreaseordecreaseofdutycycle,whichisusefulfortheLEDRGBcolor-gradient\ngenerator.\nFordetails,seeESP32-C3TechnicalReferenceManual>ChapterLEDPWMController.\nPinAssignment\nThepinsfortheLEDPWMControllercanbechosenfromanyGPIOsviatheGPIOMatrix."
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "Formoreinformationaboutthepinassignment,seeESP32-C3SeriesDatasheet>SectionIOPinsand\nESP32-C3TechnicalReferenceManual>ChapterIOMUXandGPIOMatrix.\nEspressifSystems 19 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback5 Peripherals\n5.2.1.8 Remote Control Peripheral\nTheRemoteControlPeripheral(RMT)supportstwochannelsofinfraredremotetransmissionandtwo\nchannelsofinfraredremotereception. Bycontrollingpulsewaveformthroughsoftware,itsupportsvarious"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "infraredandothersinglewireprotocols. Allfourchannelssharea192×32-bitmemoryblocktostoretransmit\norreceivewaveform.\nFormoredetails,seeESP32-C3TechnicalReferenceManual>ChapterRemoteControlPeripheral(RMT).\nPinAssignment\nThepinsfortheRemoteControlPeripheralcanbechosenfromanyGPIOsviatheGPIOMatrix.\nFormoreinformationaboutthepinassignment,seeESP32-C3SeriesDatasheet>SectionIOPinsand\nESP32-C3TechnicalReferenceManual>ChapterIOMUXandGPIOMatrix.\n5.2.2 Analog Signal Processing"
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "5.2.2 Analog Signal Processing\nThissubsectiondescribescomponentsonthechipthatsenseandprocessreal-worlddata.\n5.2.2.1 SAR ADC\nESP32-C3integratestwo12-bitSARADCs.\n• ADC1supportsmeasurementson5channels,andisfactory-calibrated.\n• ADC2supportsmeasurementson1channel,andisnotfactory-calibrated.\nNote:\nADC2ofsomechiprevisionsisnotoperable. Fordetails,pleaserefertoESP32-C3SeriesSoCErrata.\nFormoredetails,seeESP32-C3TechnicalReferenceManual>ChapterOn-ChipSensorsandAnalogSignal\nProcessing.\nPinAssignment"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "Processing.\nPinAssignment\nThepinsfortheSARADCaremultiplexedwithGPIO0~GPIO5,JTAGinterface,SPI2interface,andpinsfor\nexternalcrystaloroscillator.\nFormoreinformationaboutthepinassignment,seeESP32-C3SeriesDatasheet>SectionIOPinsand\nESP32-C3TechnicalReferenceManual>ChapterIOMUXandGPIOMatrix.\n5.2.2.2 Temperature Sensor\nThetemperaturesensorgeneratesavoltagethatvarieswithtemperature. Thevoltageisinternallyconverted\nviaanADCintoadigitalvalue."
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "viaanADCintoadigitalvalue.\nThetemperaturesensorhasarangeof–40°Cto125°C.Itisdesignedprimarilytosensethetemperature\nchangesinsidethechip. Thetemperaturevaluedependsonfactorslikemicrocontrollerclockfrequencyor\nI/Oload. Generally,thechip’sinternaltemperatureishigherthantheoperatingambienttemperature.\nEspressifSystems 20 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback5 Peripherals\nFormoredetails,seeESP32-C3TechnicalReferenceManual>ChapterOn-ChipSensorsandAnalogSignal\nProcessing."
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "Processing.\nEspressifSystems 21 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback6 ElectricalCharacteristics\n6 Electrical Characteristics\n6.1 Absolute Maximum Ratings\nStressesabovethoselistedinTable6-1AbsoluteMaximumRatingsmaycausepermanentdamagetothe\ndevice. Thesearestressratingsonlyandfunctionaloperationofthedeviceattheseoranyotherconditions\nbeyondthoseindicatedunderTable6-2RecommendedOperatingConditionsisnotimplied. Exposureto"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "absolute-maximum-ratedconditionsforextendedperiodsmayaffectdevicereliability.\nTable6-1. AbsoluteMaximumRatings\nSymbol Parameter Min Max Unit\nVDD33 Powersupplyvoltage –0.3 3.6 V\nT Storagetemperature –40 105 °C\nSTORE\n6.2 Recommended Operating Conditions\nTable6-2. RecommendedOperatingConditions\nSymbol Parameter Min Typ Max Unit\nVDD33 Powersupplyvoltage 3.0 3.3 3.6 V\nI Currentdeliveredbyexternalpowersupply 0.5 — — A\nVDD\n85°Cversion 85\nT Operatingambienttemperature –40 — °C\nA\n105°Cversion 105"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "A\n105°Cversion 105\n6.3 DC Characteristics (3.3 V, 25 °C)\nTable6-3. DCCharacteristics(3.3V,25°C)\nParameter Description Min Typ Max Unit\nC Pincapacitance — 2 — pF\nIN\n1 1\nV High-levelinputvoltage 0.75×VDD — VDD +0.3 V\nIH\n1\nV Low-levelinputvoltage –0.3 — 0.25×VDD V\nIL\nI High-levelinputcurrent — — 50 nA\nIH\nI Low-levelinputcurrent — — 50 nA\nIL\n2 1\nV High-leveloutputvoltage 0.8×VDD — — V\nOH\n2 1\nV Low-leveloutputvoltage — — 0.1×VDD V\nOL\n1\nHigh-levelsourcecurrent(VDD =3.3V,\nI — 40 — mA\nOH"
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "High-levelsourcecurrent(VDD =3.3V,\nI — 40 — mA\nOH\nV >=2.64V,PAD_DRIVER=3)\nOH\n1\nLow-levelsinkcurrent(VDD =3.3V,V =\nOL\nI — 28 — mA\nOL\n0.495V,PAD_DRIVER=3)\nR Internalweakpull-upresistor — 45 — kΩ\nPU\nR Internalweakpull-downresistor — 45 — kΩ\nPD\nChipresetreleasevoltageCHIP_ENvoltage\n1 1\nV 0.75×VDD — VDD +0.3 V\nIH_nRST\niswithinthespecifiedrange)\nEspressifSystems 22 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback6 ElectricalCharacteristics\nChipresetvoltage(CHIP_ENvoltageiswithin\n1"
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "Chipresetvoltage(CHIP_ENvoltageiswithin\n1\nV –0.3 — 0.25×VDD V\nIL_nRST\nthespecifiedrange)\n1\nVDD–voltagefromapowerpinofarespectivepowerdomain.\n2\nV andV aremeasuredusinghigh-impedanceload.\nOH OL\n6.4 Current Consumption Characteristics\n6.4.1 Current Consumption in Active Mode\nThecurrentconsumptionmeasurementsaretakenwitha3.3Vsupplyat25°Cambienttemperature.\nTXcurrentconsumptionisratedata100%dutycycle.\nRXcurrentconsumptionisratedwhentheperipheralsaredisabledandtheCPUidle."
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "Table6-4. CurrentConsumptionforWi-Fi(2.4GHz)inActiveMode\nWorkmode Description Peak(mA)\n802.11b,1Mbps,@20.5dBm 350\n802.11g,54Mbps,@18dBm 295\nTX\n802.11n,HT20,MCS7,@17.5dBm 290\nActive(RFworking)\n802.11n,HT40,MCS7,@17dBm 290\n802.11b/g/n,HT20 82\nRX\n802.11n,HT40 84\nTable6-5. CurrentConsumptionforBluetoothLEinActiveMode\nWorkMode RFCondition Description Peak(mA)\nBluetoothLE@20.0dBm 340\nTX BluetoothLE@9.0dBm 190\nActive(RFworking) BluetoothLE@0dBm 170\nBluetoothLE@–15.0dBm 100\nRX BluetoothLE 86"
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "BluetoothLE@–15.0dBm 100\nRX BluetoothLE 86\nEspressifSystems 23 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback6 ElectricalCharacteristics\nNote:\nThecontentbelowisexcerptedfromSectionPowerConsumptioninOtherModesinESP32-C3SeriesDatasheet.\n6.4.2 Current Consumption in Other Modes\nTable6-6. CurrentConsumptioninModem-sleepMode\nTyp\nCPUFrequency\nMode Description AllPeripheralsClocks AllPeripheralsClocks\n(MHz)\n1\nDisabled(mA) Enabled(mA)\nCPUisrunning 23 28\n160\nCPUisidle 16 21\n2,3"
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "CPUisrunning 23 28\n160\nCPUisidle 16 21\n2,3\nModem-sleep\nCPUisrunning 17 22\n80\nCPUisidle 13 18\n1\nInpractice,thecurrentconsumptionmightbedifferentdependingonwhichperipheralsareenabled.\n2\nInModem-sleepmode,Wi-Fiisclockgated.\n3\nInModem-sleepmode,theconsumptionmightbehigherwhenaccessingflash. Foraflashratedat\n80Mbit/s,inSPI2-linemodetheconsumptionis10mA.\nTable6-7. CurrentConsumptioninLow-PowerModes\nMode Description Typ(µA)\nLight-sleep VDD_SPIandWi-Fiarepowereddown,andallGPIOsarehigh-impedance 130"
+  },
+  {
+    "faiss_index_id": 68,
+    "text": "Deep-sleep RTCtimer+RTCmemory 5\nPoweroff CHIP_ENissettolowlevel,thechipispoweredoff 1\n6.5 Memory Specifications\nThedatabelowissourcedfromthememoryvendordatasheet. Thesevaluesareguaranteedthroughdesign\nand/orcharacterizationbutarenotfullytestedinproduction. Devicesareshippedwiththememory\nerased.\nTable6-8. FlashSpecifications\nParameter Description Min Typ Max Unit\nPowersupplyvoltage(1.8V) 1.65 1.80 2.00 V\nVCC\nPowersupplyvoltage(3.3V) 2.7 3.3 3.6 V\nF Maximumclockfrequency 80 — — MHz\nC"
+  },
+  {
+    "faiss_index_id": 69,
+    "text": "F Maximumclockfrequency 80 — — MHz\nC\n— Program/erasecycles 100,000 — — cycles\nT Dataretentiontime 20 — — years\nRET\nT Pageprogramtime — 0.8 5 ms\nPP\nT Sectorerasetime(4KB) — 70 500 ms\nSE\nT Blockerasetime(32KB) — 0.2 2 s\nBE1\nT Blockerasetime(64KB) — 0.3 3 s\nBE2\nCont’donnextpage\nEspressifSystems 24 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback6 ElectricalCharacteristics\nTable6-8–cont’dfrompreviouspage\nParameter Description Min Typ Max Unit\nChiperasetime(16Mb) — 7 20 s"
+  },
+  {
+    "faiss_index_id": 70,
+    "text": "Chiperasetime(16Mb) — 7 20 s\nChiperasetime(32Mb) — 20 60 s\nT Chiperasetime(64Mb) — 25 100 s\nCE\nChiperasetime(128Mb) — 60 200 s\nChiperasetime(256Mb) — 70 300 s\nEspressifSystems 25 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback7 RFCharacteristics\n7 RF Characteristics\nThissectioncontainstableswithRFcharacteristicsoftheEspressifproduct.\nTheRFdataismeasuredattheantennaport,whereRFcableisconnected,includingthefront-endloss. The"
+  },
+  {
+    "faiss_index_id": 71,
+    "text": "externalantennasusedforthetestsonthemoduleswithexternalantennaconnectorshaveanimpedanceof\n50Ω.\nDevicesshouldoperateinthecenterfrequencyrangeallocatedbyregionalregulatoryauthorities. Thetarget\ncenterfrequencyrangeandthetargettransmitpowerareconfigurablebysoftware. SeeESPRFTestTooland\nTestGuideforinstructions.\nUnlessotherwisestated,theRFtestsareconductedwitha3.3V(±5%)supplyat25ºCambienttemperature.\n7.1 Wi-Fi Radio\nTable7-1. Wi-FiRFCharacteristics\nName Description"
+  },
+  {
+    "faiss_index_id": 72,
+    "text": "Table7-1. Wi-FiRFCharacteristics\nName Description\nCenterfrequencyrangeofoperatingchannel 2412~2484MHz\nWi-Fiwirelessstandard IEEE802.11b/g/n\n7.1.1 Wi-Fi RF Transmitter (TX) Characteristics\nTable7-2. TXPowerwithSpectralMaskandEVMMeeting802.11Standards\nMin Typ Max\nRate\n(dBm) (dBm) (dBm)\n802.11b,1Mbps — 20.5 —\n802.11b,11Mbps — 20.5 —\n802.11g,6Mbps — 20.0 —\n802.11g,54Mbps — 18.0 —\n802.11n,HT20,MCS0 — 19.0 —\n802.11n,HT20,MCS7 — 17.5 —\n802.11n,HT40,MCS0 — 18.5 —\n802.11n,HT40,MCS7 — 17.0 —\n1"
+  },
+  {
+    "faiss_index_id": 73,
+    "text": "802.11n,HT40,MCS7 — 17.0 —\n1\nTable7-3. TXEVMTest\nMin Typ Limit\nRate\n(dB) (dB) (dB)\n802.11b,1Mbps,@20.5dBm — –24.5 –10\n802.11b,11Mbps,@20.5dBm — –25.0 –10\n802.11g,6Mbps,@20dBm — –23.0 –5\n802.11g,54Mbps,@18dBm — –28.0 –25\nCont’donnextpage\nEspressifSystems 26 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback7 RFCharacteristics\nTable7-3–cont’dfrompreviouspage\nMin Typ Limit\nRate\n(dB) (dB) (dB)\n802.11n,HT20,MCS0,@19dBm — –23.5 –5\n802.11n,HT20,MCS7,@17.5dBm — –30.5 –27"
+  },
+  {
+    "faiss_index_id": 74,
+    "text": "802.11n,HT20,MCS7,@17.5dBm — –30.5 –27\n802.11n,HT40,MCS0,@18.5dBm — –26.5 –5\n802.11n,HT40,MCS7,@17dBm — –30.5 –27\n1\nEVM is measured at the corresponding typical TX power provided\ninTable7-2TXPowerwithSpectralMaskandEVMMeeting802.11\nStandardsabove.\n7.1.2 Wi-Fi RF Receiver (RX) Characteristics\nForRXtests,thePER(packeterrorrate)limitis8%for802.11b,and10%for802.11g/n.\nTable7-4. RXSensitivity\nMin Typ Max\nRate\n(dBm) (dBm) (dBm)\n802.11b,1Mbps — –98.0 —\n802.11b,2Mbps — –96.0 —\n802.11b,5.5Mbps — –93.0 —"
+  },
+  {
+    "faiss_index_id": 75,
+    "text": "802.11b,2Mbps — –96.0 —\n802.11b,5.5Mbps — –93.0 —\n802.11b,11Mbps — –88.6 —\n802.11g,6Mbps — –92.8 —\n802.11g,9Mbps — –91.8 —\n802.11g,12Mbps — –90.8 —\n802.11g,18Mbps — –88.4 —\n802.11g,24Mbps — –85.4 —\n802.11g,36Mbps — –82.0 —\n802.11g,48Mbps — –77.8 —\n802.11g,54Mbps — –76.2 —\n802.11n,HT20,MCS0 — –92.6 —\n802.11n,HT20,MCS1 — –90.6 —\n802.11n,HT20,MCS2 — –88.0 —\n802.11n,HT20,MCS3 — –84.8 —\n802.11n,HT20,MCS4 — –81.6 —\n802.11n,HT20,MCS5 — –77.4 —\n802.11n,HT20,MCS6 — –75.6 —\n802.11n,HT20,MCS7 — –74.4 —"
+  },
+  {
+    "faiss_index_id": 76,
+    "text": "802.11n,HT20,MCS7 — –74.4 —\n802.11n,HT40,MCS0 — –90.0 —\n802.11n,HT40,MCS1 — –87.6 —\n802.11n,HT40,MCS2 — –84.8 —\n802.11n,HT40,MCS3 — –81.8 —\n802.11n,HT40,MCS4 — –78.4 —\n802.11n,HT40,MCS5 — –74.2 —\nCont’donnextpage\nEspressifSystems 27 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback7 RFCharacteristics\nTable7-4–cont’dfrompreviouspage\nMin Typ Max\nRate\n(dBm) (dBm) (dBm)\n802.11n,HT40,MCS6 — –72.6 —\n802.11n,HT40,MCS7 — –71.2 —\nTable7-5. MaximumRXLevel\nMin Typ Max\nRate\n(dBm) (dBm) (dBm)"
+  },
+  {
+    "faiss_index_id": 77,
+    "text": "Min Typ Max\nRate\n(dBm) (dBm) (dBm)\n802.11b,1Mbps — 5 —\n802.11b,11Mbps — 5 —\n802.11g,6Mbps — 5 —\n802.11g,54Mbps — 0 —\n802.11n,HT20,MCS0 — 5 —\n802.11n,HT20,MCS7 — 0 —\n802.11n,HT40,MCS0 — 5 —\n802.11n,HT40,MCS7 — 0 —\nTable7-6. RXAdjacentChannelRejection\nMin Typ Max\nRate\n(dB) (dB) (dB)\n802.11b,1Mbps — 35 —\n802.11b,11Mbps — 35 —\n802.11g,6Mbps — 31 —\n802.11g,54Mbps — 14 —\n802.11n,HT20,MCS0 — 31 —\n802.11n,HT20,MCS7 — 13 —\n802.11n,HT40,MCS0 — 19 —\n802.11n,HT40,MCS7 — 8 —\n7.2 Bluetooth 5 (LE) Radio"
+  },
+  {
+    "faiss_index_id": 78,
+    "text": "7.2 Bluetooth 5 (LE) Radio\n7.2.1 Bluetooth LE RF Transmitter (TX) Characteristics\nTable7-7. BluetoothLERFCharacteristics\nName Description\nCenterfrequencyrangeofoperatingchannel 2402~2480MHz\nRFtransmitpowerrange –24.0~20.0dBm\nEspressifSystems 28 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback7 RFCharacteristics\nTable7-8. BluetoothLE-TransmitterCharacteristics-1Mbps\nParameter Description Min Typ Max Unit\nF=F0±2MHz — –37.62 — dBm\nIn-bandemissions F=F0±3MHz — –41.95 — dBm"
+  },
+  {
+    "faiss_index_id": 79,
+    "text": "In-bandemissions F=F0±3MHz — –41.95 — dBm\nF=F0±>3MHz — –44.48 — dBm\n∆f1 — 245.00 — kHz\navg\nModulationcharacteristics ∆f2 — 208.00 — kHz\nmax\n∆f2 /∆f1 — 0.93 — —\navg avg\nCarrierfrequencyoffset — — –9.00 — kHz\n|f 0−f\nn\n|\nn=2,3,4,..k\n— 1.17 — kHz\nCarrierfrequencydrift |f 1−f\n0\n| — 0.30 — kHz\n|f n−f n−5 | n=6,7,8,..k — 4.90 — kHz\nTable7-9. BluetoothLE-TransmitterCharacteristics-2Mbps\nParameter Description Min Typ Max Unit\nF=F0±4MHz — –43.55 — dBm\nIn-bandemissions F=F0±5MHz — –45.26 — dBm"
+  },
+  {
+    "faiss_index_id": 80,
+    "text": "In-bandemissions F=F0±5MHz — –45.26 — dBm\nF=F0±>5MHz — –47.00 — dBm\n∆f1 — 497.00 — kHz\navg\nModulationcharacteristics ∆f2 — 398.00 — kHz\nmax\n∆f2 /∆f1 — 0.95 — —\navg avg\nCarrierfrequencyoffset — — –9.00 — kHz\n|f 0−f\nn\n|\nn=2,3,4,..k\n— 0.46 — kHz\nCarrierfrequencydrift |f 1−f\n0\n| — 0.70 — kHz\n|f n−f n−5 | n=6,7,8,..k — 6.80 — kHz\nTable7-10. BluetoothLE-TransmitterCharacteristics-125Kbps\nParameter Description Min Typ Max Unit\nF=F0±2MHz — –37.90 — dBm\nIn-bandemissions F=F0±3MHz — –41.00 — dBm"
+  },
+  {
+    "faiss_index_id": 81,
+    "text": "In-bandemissions F=F0±3MHz — –41.00 — dBm\nF=F0±>3MHz — –42.50 — dBm\n∆f1 — 252.00 — kHz\navg\nModulationcharacteristics\n∆f1 — 200.00 — kHz\nmax\nCarrierfrequencyoffset — — –13.70 — kHz\n|f 0−f\nn\n|\nn=1,2,3,..k\n— 1.52 — kHz\nCarrierfrequencydrift |f 0−f\n3\n| — 0.65 — kHz\n|f n−f n−3 | n=7,8,9,..k — 0.70 — kHz\nEspressifSystems 29 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback7 RFCharacteristics\nTable7-11. BluetoothLE-TransmitterCharacteristics-500Kbps"
+  },
+  {
+    "faiss_index_id": 82,
+    "text": "Parameter Description Min Typ Max Unit\nF=F0±2MHz — –37.90 — dBm\nIn-bandemissions F=F0±3MHz — –41.30 — dBm\nF=F0±>3MHz — –42.80 — dBm\n∆f2 — 220.00 — kHz\navg\nModulationcharacteristics\n∆f2 — 205.00 — kHz\nmax\nCarrierfrequencyoffset — — –11.90 — kHz\n|f 0−f\nn\n|\nn=1,2,3,..k\n— 1.37 — kHz\nCarrierfrequencydrift |f 0−f\n3\n| — 1.09 — kHz\n|f n−f n−3 | n=7,8,9,..k — 0.51 — kHz\n7.2.2 Bluetooth LE RF Receiver (RX) Characteristics\nTable7-12. BluetoothLE-ReceiverCharacteristics-1Mbps"
+  },
+  {
+    "faiss_index_id": 83,
+    "text": "Parameter Description Min Typ Max Unit\nSensitivity@30.8%PER — — –96 — dBm\nMaximumreceivedsignal@30.8%PER — — 10 — dBm\nCo-channelC/I — — 8 — dB\nF=F0+1MHz — –4 — dB\nF=F0–1MHz — –3 — dB\nF=F0+2MHz — –32 — dB\nAdjacentchannelselectivityC/I\nF=F0–2MHz — –36 — dB\nF≥F0+3MHz (1) — — — dB\nF≤F0–3MHz — –39 — dB\nImagefrequency — — –29 — dB\nF=F +1MHz — –38 — dB\nimage\nAdjacentchanneltoimagefrequency\nF=F –1MHz — –34 — dB\nimage\n30MHz~2000MHz — –9 — dBm\n2003MHz~2399MHz — –18 — dBm\nOut-of-bandblockingperformance"
+  },
+  {
+    "faiss_index_id": 84,
+    "text": "Out-of-bandblockingperformance\n2484MHz~2997MHz — –16 — dBm\n3000MHz~12.75GHz — –6 — dBm\nIntermodulation — — –44 — dBm\n1\nRefertothevalueofAdjacentchanneltoimagefrequencywhenF=F –1MHz.\nimage\nEspressifSystems 30 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback7 RFCharacteristics\nTable7-13. BluetoothLE-ReceiverCharacteristics-2Mbps\nParameter Description Min Typ Max Unit\nSensitivity@30.8%PER — — –93 — dBm\nMaximumreceivedsignal@30.8%PER — — 0 — dBm\nCo-channelC/I — — 10 — dB"
+  },
+  {
+    "faiss_index_id": 85,
+    "text": "Co-channelC/I — — 10 — dB\nF=F0+2MHz — –7 — dB\nF=F0–2MHz — –7 — dB\n(1)\nF=F0+4MHz — — — dB\nAdjacentchannelselectivityC/I\nF=F0–4MHz — –34 — dB\nF≥F0+6MHz — –39 — dB\nF≤F0–6MHz — –39 — dB\nImagefrequency — — –27 — dB\nF=F +2MHz — –39 — dB\nimage\nAdjacentchanneltoimagefrequency\n(2)\nF=F –2MHz — — — dB\nimage\n30MHz~2000MHz — –17 — dBm\n2003MHz~2399MHz — –19 — dBm\nOut-of-bandblockingperformance\n2484MHz~2997MHz — –16 — dBm\n3000MHz~12.75GHz — –22 — dBm\nIntermodulation — — –40 — dBm\n1"
+  },
+  {
+    "faiss_index_id": 86,
+    "text": "Intermodulation — — –40 — dBm\n1\nRefertothevalueofImagefrequency.\n2\nRefertothevalueofAdjacentchannelselectivityC/IwhenF=F0+2MHz.\nTable7-14. BluetoothLE-ReceiverCharacteristics-125Kbps\nParameter Description Min Typ Max Unit\nSensitivity@30.8%PER — — –104 — dBm\nMaximumreceivedsignal@30.8%PER — — 10 — dBm\nCo-channelC/I — — 2 — dB\nF=F0+1MHz — –6 — dB\nF=F0–1MHz — –5 — dB\nF=F0+2MHz — –40 — dB\nAdjacentchannelselectivityC/I\nF=F0–2MHz — –42 — dB\nF≥F0+3MHz (1) — — — dB\nF≤F0–3MHz — –46 — dB"
+  },
+  {
+    "faiss_index_id": 87,
+    "text": "F≥F0+3MHz (1) — — — dB\nF≤F0–3MHz — –46 — dB\nImagefrequency — — –34 — dB\nF=F +1MHz — –44 — dB\nimage\nAdjacentchanneltoimagefrequency\nF=F –1MHz — –37 — dB\nimage\n1\nRefertothevalueofAdjacentchanneltoimagefrequencywhenF=F –1MHz.\nimage\nEspressifSystems 31 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback7 RFCharacteristics\nTable7-15. BluetoothLE-ReceiverCharacteristics-500Kbps\nParameter Description Min Typ Max Unit\nSensitivity@30.8%PER — — –99 — dBm"
+  },
+  {
+    "faiss_index_id": 88,
+    "text": "Sensitivity@30.8%PER — — –99 — dBm\nMaximumreceivedsignal@30.8%PER — — 10 — dBm\nCo-channelC/I — — 3 — dB\nF=F0+1MHz — –5 — dB\nF=F0–1MHz — –7 — dB\nF=F0+2MHz — –39 — dB\nAdjacentchannelselectivityC/I\nF=F0–2MHz — –40 — dB\nF≥F0+3MHz (1) — — — dB\nF≤F0–3MHz — –40 — dB\nImagefrequency — — –34 — dB\nF=F +1MHz — –43 — dB\nimage\nAdjacentchanneltoimagefrequency\nF=F –1MHz — –38 — dB\nimage\n1\nRefertothevalueofAdjacentchanneltoimagefrequencywhenF=F –1MHz.\nimage"
+  },
+  {
+    "faiss_index_id": 89,
+    "text": "image\nEspressifSystems 32 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback8\nModuleSchematics\n8 Module Schematics\nThisisthereferencedesignofthemodule.\n5 4 3 2 1\nGND\nGND GND\nD The values of C1 and C2 vary with D\nthe selection of the crystal.\nThe value of R1 varies with the\nactual PCB board. R1 could be a\nresistor or inductor, the initial\nVDD33 value is suggested to be 24 nH.\nGND\nGND\nVDD33 GND GND GND\nC C\nGND GND GND VDD33\n50 ohm Impedance Control\n1\n2 LNA_IN VDD_SPI VDD33"
+  },
+  {
+    "faiss_index_id": 90,
+    "text": "50 ohm Impedance Control\n1\n2 LNA_IN VDD_SPI VDD33\n3 VDD3P3 4 VDD3P3\n5 XTAL_32K_P\n6 XTAL_32K_N\n7 GPIO2 GND GND GND CHIP_EN\nThe values of C8, L2 and C9 vary with the actual PCB board. VDD33 GND\nNC: No component.\nGND GND\nU2 ESP32-C3FH4\nB VDD33 B\nGND\nESP32-C3-MINI-1(pin-out)\nGND\nA A\nTTTiiitttllleee\nEEESSSPPP333222---CCC333---MMMIIINNNIII---111\nSSSiiizzzeee PPPaaagggeee NNNaaammmeee RRReeevvv"
+  },
+  {
+    "faiss_index_id": 91,
+    "text": "SSSiiizzzeee PPPaaagggeee NNNaaammmeee RRReeevvv\nAAA444 <<<000222___EEESSSPPP333222---CCC333---MMMIIINNNIII---111>>> VVV111...111 CCCooonnnfffiiidddeeennntttiiiaaalll aaannnddd PPPrrroooppprrriiieeetttaaarrryyy\nDDDaaattteee::: TTThhhuuurrrsssdddaaayyy,,, JJJaaannnuuuaaarrryyy 222333,,, 222000222555 SSShhheeeeeettt 222 ooofff 222\n5 4 3 2 1\n9\nSMTM\n01\nIDTM\n11\nCTR_3P3DDV\n21\nKCTM\n31\nODTM\n41\n8OIPG\n51\n9OIPG\n61\n01OIPG\n24\nSPIQ 23\nSPID 22 SPICLK 21\nSPICS0 20\nSPIWP 19\nSPIHD 18 VDD_SPI 17\nVDD3P3_CPU\n33\nDNG"
+  },
+  {
+    "faiss_index_id": 92,
+    "text": "SPIWP 19\nSPIHD 18 VDD_SPI 17\nVDD3P3_CPU\n33\nDNG\n03 92\nP_LATX\n82\nN_LATX\n72\nDXT0U DXR0U\n8\nGPIO3\n23 13\nADDV ADDV\n62 52\n91OIPG 81OIPG\n1\nGND 3\n3V3\nESP32-C3-MINI-1\n32\n9OI\n4\n5 NC\n6 IO2 7 IO3\nNC\n9\n10 NC NC\n51\nCN\n61\n01OI\n71\nCN\n81\n4OI\n91\n5OI\n34 NC 33\nNC 32\nNC 31\nTXD0 30 RXD0 29\nNC 28\nNC 27\nIO19 26 IO18\n21\n0OI\n31\n1OI\n12\n7OI\n22\n8OI 52 GND\n02\n6OI\n35\nNC\n94\nDAPE\n42\nCN\n53 50\nGND GND\n2 GND\n8\nEN\n51 GND\n84 74\nDNG\n64\nDNG\n41\n54\nDNG\nDNG\n44\nDNG\n34\nDNG\n24\nDNG\n14\nDNG\n04\nDNG\n93\nDNG\n83\nDNG\n73\nDNG\n63\nDNG DNG\nU1"
+  },
+  {
+    "faiss_index_id": 93,
+    "text": "14\nDNG\n04\nDNG\n93\nDNG\n83\nDNG\n73\nDNG\n63\nDNG DNG\nU1\n40MHz(±10ppm)\nC6\n0.1uF\nANT1\n1\n2\nC8 PCB_ANT\nTBD\n11 25\nGND NC\n4\n1\nDNG\nNIX\n3\n2\nTUOXDNG\nC5\n10uF\nD1\nESD\nC11\n1uF\n0\n1R\nC1 C2\nTBD TBD\nC3 C4 R2 499 U0TXD\nU0RXD\n1uF 10nF GPIO19\nGPIO18\nL1 2.0nH\nC7\n0.1uF\nRF_ANT L2 TBD LNA_IN\nGPIO2\nC9 GPIO3 GPIO0 SPICS0R8 10K(NC)\nTBD GPIO1 CHIP_EN\nGPIO2\nCHIP_EN GPIO3\nC10\n0.1uF\nGPIO4\nGPIO5\nGPIO6 C12\nGPIO7\nGPIO8 0.1uF\nGPIO9\nGPIO10\n0OIPG 1OIPG 01OIPG 6OIPG 7OIPG 8OIPG 9OIPG\nU0TXD\nU0RXD\nGPIO19\nGPIO18\n4OIPG 5OIPG"
+  },
+  {
+    "faiss_index_id": 94,
+    "text": "U0TXD\nU0RXD\nGPIO19\nGPIO18\n4OIPG 5OIPG\nFigure8-1. ESP32-C3-MINI-1Schematics\nSubmitDocumentationFeedback\nEspressifSystems\n33\nESP32-C3-MINI-1&MINI-1UDatasheetv2.18\nModuleSchematics\n5 4 3 2 1\nGND\nGND GND\nD The values of C1 and C2 vary with C1 D\nthe selection of the crystal.\nTBD\nThe value of R1 varies with the\nactual PCB board. R1 could be a\nresistor or inductor, the initial\nVDD33 value is suggested to be 24 nH.\nGND\nGND\nVDD33 GND GND GND\nC C\nGND GND GND VDD33 50 ohm Impedance Control\n1\nVDD_SPI VDD33"
+  },
+  {
+    "faiss_index_id": 95,
+    "text": "1\nVDD_SPI VDD33\nANT1 C9 R8 10K(NC)\nCONN TBD\nD1\nESD GND GND GND\nThe values of C8, L2 and C9 vary with the actual PCB board. VDD33 GND\nNC: No component.\nGND GND\nB VDD33 B\nGND\nESP32-C3-MINI-1U(pin-out)\nGND\nA A\nTTTiiitttllleee\nEEESSSPPP333222---CCC333---MMMIIINNNIII---111UUU\nSSSiiizzzeee PPPaaagggeee NNNaaammmeee RRReeevvv\nAAA444 <<<000222___EEESSSPPP333222---CCC333---MMMIIINNNIII---111UUU>>> VVV111...222 CCCooonnnfffiiidddeeennntttiiiaaalll aaannnddd PPPrrroooppprrriiieeetttaaarrryyy"
+  },
+  {
+    "faiss_index_id": 96,
+    "text": "DDDaaattteee::: TTThhhuuurrrsssdddaaayyy,,, JJJaaannnuuuaaarrryyy 222333,,, 222000222555 SSShhheeeeeettt 222 ooofff 222\n5 4 3 2 1\n4 3 2\n1 GND 3\n3V3\nESP32-C3-MINI-1U\n32\n9OI\n4\n5 NC\n6 IO2 7 IO3\nNC\n9\n10 NC NC\n51\nCN\n61\n01OI\n71\nCN\n81\n4OI\n91\n5OI\n34 NC 33\nNC 32\nNC 31\nTXD0 30 RXD0 29\nNC 28\nNC 27\nIO19 26 IO18\n21\n0OI\n31\n1OI\n12\n7OI\n22\n8OI 52 GND\n02\n6OI\n35 NC\n94\nDAPE\n42\nCN\n53 50\nGND GND\n2 GND\n8\nEN\n51 GND\n84 74\nDNG\n64\nDNG\n41\n54\nDNG\nDNG\n44\nDNG\n34\nDNG\n24\nDNG\n14\nDNG\n04\nDNG\n93\nDNG\n83\nDNG\n73\nDNG\n63\nDNG DNG\n11 25"
+  },
+  {
+    "faiss_index_id": 97,
+    "text": "DNG\n04\nDNG\n93\nDNG\n83\nDNG\n73\nDNG\n63\nDNG DNG\n11 25\nGND NC\n0\n1R\nC2\nTBD\nC3 C4 R2 499\n1uF 10nF\nL1 2.0nH\nC5 C6 C7\n10uF 0.1uF 0.1uF\nL2 TBD 1\n2 LNA_IN\nC8 3 4 V V D D D D 3 3 P P 3 3\nTBD 5 XTAL_32K_P\n6 XTAL_32K_N\n7 GPIO2 CHIP_EN\nC10\n0.1uF\nU2 ESP32-C3FH4\nC12\n0.1uF\n9\nSMTM\n01\nIDTM\n11\nCTR_3P3DDV\n21\nKCTM\n31\nODTM\n41\n8OIPG\n51\n9OIPG\n61\n01OIPG\n24\nSPIQ 23\nSPID 22 SPICLK 21\nSPICS0 20\nSPIWP 19\nSPIHD 18 VDD_SPI 17\nVDD3P3_CPU\n33\nDNG\n03 92\nP_LATX\n82\nN_LATX\n72\nDXT0U DXR0U\n8\nGPIO3\n23 13\nADDV ADDV\n62 52\n91OIPG 81OIPG\nU1"
+  },
+  {
+    "faiss_index_id": 98,
+    "text": "8\nGPIO3\n23 13\nADDV ADDV\n62 52\n91OIPG 81OIPG\nU1\n40MHz(±10ppm)\nC11\n1uF\n4\n1\nDNG\nNIX\n3\n2\nTUOXDNG\nU0TXD\nU0RXD\nGPIO19\nGPIO18\nRF_ANT LNA_IN\nGPIO2\nGPIO3 GPIO0 SPICS0\nGPIO1 CHIP_EN\nGPIO2\nCHIP_EN GPIO3\nGPIO4\nGPIO5\nGPIO6\nGPIO7\nGPIO8\nGPIO9\nGPIO10\n0OIPG 1OIPG 01OIPG 6OIPG 7OIPG 8OIPG 9OIPG\nU0TXD\nU0RXD\nGPIO19\nGPIO18\n4OIPG 5OIPG\nFigure8-2. ESP32-C3-MINI-1USchematics\nSubmitDocumentationFeedback\nEspressifSystems\n34\nESP32-C3-MINI-1&MINI-1UDatasheetv2.15 9 PeripheralSchematics4 3 2 1\n9 Peripheral Schematics"
+  },
+  {
+    "faiss_index_id": 99,
+    "text": "9 Peripheral Schematics\nThisisthetypicalapplicationcircuitofthemoduleconnectedwithperipheralcomponents(forexample,\nD D\npowersupply,antenna,resetbutton,JTAGinterface,andUARTinterface).\nESP32-C3-MINI-1\nESP32-C3-MINI-1U\nC C\nNC: No component.\nB B\nA A\n5 4 3 2 1\n4OI 5OI 6OI 7OI 8OI\nIO2\nIO3\nEN\n0OI 1OI 01OI 9OI\nGND\nVDD33\nVDD33\nTXD0\nRXD0\nGND\nIO19 USB_D+\nIO18 USB_D-\nC3\nTBD\nGND GND\nGND GND GND\nVDD33 GND\nEN\nTMS\nGND TDI\nTCK\nTDO\nGND GND\nR7\nNC\n1\nGND R9 10K\n3\n3V3\nC6\nTBD\nU1\nJP2 R2 0\n1\n2 1 C4 0.1uF\n2\nBoot Option"
+  },
+  {
+    "faiss_index_id": 100,
+    "text": "C6\nTBD\nU1\nJP2 R2 0\n1\n2 1 C4 0.1uF\n2\nBoot Option\n32\n9OI\n4\n5 NC\n6 IO2\n7 IO3\nNC\n9\n10 NC\nNC\n51\nCN\n61\n01OI\n71\nCN\n81\n4OI\n91\n5OI\n34\nNC 33\nNC 32\nNC 31\nTXD0 30\nRXD0 29\nNC 28\nNC 27\nIO19 26\nIO18\n21\n0OI\n31\n1OI\n12\n7OI\n22\n8OI\n52\nGND\n02\n6OI\n35\nNC\n94\nDAPE\n42\nCN\n53 50\nGND GND\n2\nGND\n8\nEN\n51\nGND\n84 74\nDNG\n64\nDNG\n41\n54\nDNG\nDNG\n44\nDNG\n34\nDNG\n24\nDNG\n14\nDNG\n04\nDNG\n93\nDNG\n83\nDNG\n73\nDNG\n63\nDNG DNG\nJP4\n1\n2 1\n3 2\n4 3\n4 C1 C2\nUART\n10uF 0.1uF\nJP3\n1\nR6 0 2 1\n11 25 2\nGND NC\nUSB\nC7 12pF(NC)\nX1\n32.768kHz(NC) SW1\nC8 12pF(NC)\n1"
+  },
+  {
+    "faiss_index_id": 101,
+    "text": "C7 12pF(NC)\nX1\n32.768kHz(NC) SW1\nC8 12pF(NC)\n1\n2\nR1\nTBD\nR4 0\nC5\nTBD\nR5 0(NC) R8 10K\nR6 0(NC)\n1\nJP1 1 2\nJTAG 2 3\n3 4\n4\nFigure9-1. PeripheralSchematics\n• SolderingtheEPADtothegroundofthebaseboardisnotamust,however,itcanoptimizethermal\nperformance. Ifyouchoosetosolderit,pleaseapplythecorrectamountofsolderingpaste. Toomuch\nsolderingpastemayincreasethegapbetweenthemoduleandthebaseboard. Asaresult,theadhesion\nbetweenotherpinsandthebaseboardmaybepoor."
+  },
+  {
+    "faiss_index_id": 102,
+    "text": "betweenotherpinsandthebaseboardmaybepoor.\n• ToensurethatthepowersupplytotheESP32-C3chipisstableduringpower-up,itisadvisedtoaddan\nRCdelaycircuitattheENpin. TherecommendedsettingfortheRCdelaycircuitisusuallyR=10kΩand\nC=1µF.However,specificparametersshouldbeadjustedbasedonthepower-uptimingofthemodule\nandthepower-upandresetsequencetimingofthechip. ForESP32-C3’spower-upandresetsequence\ntimingdiagram,pleasereferSection4.3ChipPower-upandReset."
+  },
+  {
+    "faiss_index_id": 103,
+    "text": "• UART0isusedtodownloadfirmwareandlogoutput. WhenusingtheATfirmware,notethattheUART\nGPIOisalreadyconfigured. Itisrecommendedtousethedefaultconfiguration. Pleasereferto\nESP-ATUserGuideforESP32-C3>SectionHardwareConnection.\nEspressifSystems 35 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback10 PhysicalDimensions\n10 Physical Dimensions\n10.1 Module Dimensions\n5.4\n51.0±6.61\n13.2±0.15 0.8\n2.4±0.15\nTop view Side view Bottom view\n6.0 2.11\n1.45\n54.1\n8.4\n9.2\n10\n11.2\n12.6\n26.0"
+  },
+  {
+    "faiss_index_id": 104,
+    "text": "6.0 2.11\n1.45\n54.1\n8.4\n9.2\n10\n11.2\n12.6\n26.0\n6.01 9 4.8 6.7 8.6\n11.95\n0.62\n59.9\n0.6\n2.9 4.5\nUnit: mm\nØ0.5\n11\nFigure10-1. ESP32-C3-MINI-1PhysicalDimensions\n5.4\n51.0±5.21\n13.2±0.15 0.8\nTop view Side view Bottom view\n6.0\n1.45\n54.1\n8.4\n9.2\n10\n11.2\n12.6\n6.01 9 4.8 6.7 8.6\n0.6\n12.25\n2.9 4.5\nUnit: mm\n11\n55.1\n1.7\n7.8\n0.47\n84.0\n9.18\n55.11\n0.85\n2.4±0.15\n6.5\nFigure10-2. ESP32-C3-MINI-1UPhysicalDimensions\nNote:\nForinformationabouttape,reel,andproductmarking,pleaserefertoESP32-C3ModulePackagingInformation."
+  },
+  {
+    "faiss_index_id": 105,
+    "text": "EspressifSystems 36 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback10 PhysicalDimensions\n10.2 Dimensions of External Antenna Connector\nESP32-C3-MINI-1UusesthethirdgenerationexternalantennaconnectorasshowninFigure10-3Dimensions\nofExternalAntennaConnector. Thisconnectoriscompatiblewiththefollowingconnectors:\n• W.FLSeriesconnectorfromHirose\n• MHFIIIconnectorfromI-PEX\n• AMCconnectorfromAmphenol\nA\nSECTION: A-A\nSCALE: 1:1\n7.1\n1.7\n58.0\n2.05±0.10\n04.1\nA\n0.10\n75.0\nCONTACT\nGROUND CONTACT"
+  },
+  {
+    "faiss_index_id": 106,
+    "text": "2.05±0.10\n04.1\nA\n0.10\n75.0\nCONTACT\nGROUND CONTACT\nHOUSING MATERIAL: THERMOPLASTIC, WHITE, UL 94V-0;\nCONTACT MATERIAL: COPPER ALLOY, GOLD PLATED ALL OVER;\nSHELL MATERIAL: COPPER ALLOY, GOLD PLATED ALL OVER;\nPERFORMANCE:\nCONTACT RESISTANCE: 20mOHM Max.\nDIELECTRIC WITHSTANDING VOLTAGE: 200V AC FOR 1MINUTE;\nINSULATION RESISTANCE: 500MOHM Min.\n01.0±00.2\nUnit: mm\nTolerance: +-0.1 mm\nCONTACT\nHOUSING\nSHELL\nFigure10-3. DimensionsofExternalAntennaConnector"
+  },
+  {
+    "faiss_index_id": 107,
+    "text": "Figure10-3. DimensionsofExternalAntennaConnector\nTheexternalantennausedforESP32-C3-MINI-1Uduringcertificationtestingisthethirdgenerationmonopole\nantenna,withmaterialcodeTFPD08H10060011.\nThemoduledoesnotincludeanexternalantennauponshipment. Ifneeded,selectasuitableexternal\nEspressifSystems 37 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback10 PhysicalDimensions\nantennabasedontheproduct’susageenvironmentandperformancerequirements."
+  },
+  {
+    "faiss_index_id": 108,
+    "text": "Itisrecommendedtoselectanantennathatmeetsthefollowingrequirements:\n• 2.4GHzband\n• 50Ωimpedance\n• Themaximumgaindoesnotexceed2.33dBi,thegainoftheantennausedforcertification\n• TheconnectormatchesthespecificationsshowninFigure10-3DimensionsofExternalAntenna\nConnector\nNote:\nIfyouuseanexternalantennaofadifferenttypeorgain,additionaltesting,suchasEMC,mayberequiredbeyondthe\nexistingantennatestreportsforEspressifmodules. Specificrequirementsdependonthecertificationtype."
+  },
+  {
+    "faiss_index_id": 109,
+    "text": "EspressifSystems 38 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback11 PCBLayoutRecommendations\n11 PCB Layout Recommendations\n11.1 PCB Land Pattern\nThissectionprovidesthefollowingresourcesforyourreference:\n• FiguresforrecommendedPCBlandpatternswithallthedimensionsneededforPCBdesign. SeeFigure\n11-1ESP32-C3-MINI-1RecommendedPCBLandPatternandFigure11-2ESP32-C3-MINI-1U\nRecommendedPCBLandPattern.\n• SourcefilesofrecommendedPCBlandpatternstomeasuredimensionsnotcoveredinFigure11-1and"
+  },
+  {
+    "faiss_index_id": 110,
+    "text": "Figure11-2. YoucanviewthesourcefilesforESP32-C3-MINI-1andESP32-C3-MINI-1UwithAutodesk\nViewer.\n• 3DmodelsofESP32-C3-MINI-1andESP32-C3-MINI-1U.Pleasemakesurethatyoudownloadthe3D\nmodelfilein.STEPformat. Bewarethatsomebrowsersmightadd.txt.\n6.1\nPin 1\nAntenna Area\n9.9 6.0\n2.11\n13.2\n5.4\n1.6\n11.9\n4.5 54.1\n6.61\n0.6 1.45\n11.8\n8.9\nUnit: mm\nPad\n48 x 0.4\n8.0\nx\n84\n4 x 0.7\n7.0\nx\n4\n8.0\nVia for thermal pad\nFigure11-1. ESP32-C3-MINI-1RecommendedPCBLandPattern"
+  },
+  {
+    "faiss_index_id": 111,
+    "text": "EspressifSystems 39 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback11 PCBLayoutRecommendations\n6.1\nPin 1\n9.9 6.0\n5.21\n13.2\n5.4\n1.6\n11.9\n4.5 54.1\n0.6 1.45\n11.8\n8.9\n48 x 0.4\n8.0\nx\n84\n4 x 0.7\n7.0\nx\n4\n8.0 6.5\nUnit: mm\nVia for thermal pad\nPad\nFigure11-2. ESP32-C3-MINI-1URecommendedPCBLandPattern\n11.2 Module Placement for PCB Design\nIfmodule-on-boarddesignisadopted,attentionshouldbepaidwhilepositioningthemoduleonthebase"
+  },
+  {
+    "faiss_index_id": 112,
+    "text": "board. Theinterferenceofthebaseboardonthemodule’santennaperformanceshouldbeminimized.\nFordetailsaboutmoduleplacementforPCBdesign,pleaserefertoESP32-C3HardwareDesignGuidelines>\nSectionGeneralPrinciplesofPCBLayoutforModules.\nEspressifSystems 40 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback12 ProductHandling\n12 Product Handling\n12.1 Storage Conditions\nTheproductssealedinmoisturebarrierbags(MBB)shouldbestoredinanon-condensingatmospheric"
+  },
+  {
+    "faiss_index_id": 113,
+    "text": "environmentof<40°Cand90%RH.Themoduleisratedatthemoisturesensitivitylevel(MSL)of3.\nAfterunpacking,themodulemustbesolderedwithin168hourswiththefactoryconditions25±5°Cand\n60%RH.Iftheaboveconditionsarenotmet,themoduleneedstobebaked.\n12.2 Electrostatic Discharge (ESD)\n• Humanbodymodel(HBM):±2000V\n• Charged-devicemodel(CDM):±500V\n12.3 Reflow Profile\nSolderthemoduleinasinglereflow.\nPeak temperature: 235 – 250 °C\nPeak time: 30 – 70 s\nTempera ture (°C)\nSoldering time: ＞ 30 s"
+  },
+  {
+    "faiss_index_id": 114,
+    "text": "Tempera ture (°C)\nSoldering time: ＞ 30 s\nSolder: Sn-Ag-Cu (SAC305) lead-free solder\n250\n230\n217\n200\n180\n150\n100\n50\nRamp-up Preheating Soldering Cooling\n25 – 150 °C 150 – 200 °C ＞ 217 °C ＜ 180 °C\n25 60 – 90 s 60 – 120 s 60 – 90 s –5 ~ –1 °C/s\n1 – 3 °C/s\nTime (s)\n0\n50 100 150 200 250\nFigure12-1. ReflowProfile\nEspressifSystems 41 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedback12 ProductHandling\n12.4 Ultrasonic Vibration"
+  },
+  {
+    "faiss_index_id": 115,
+    "text": "12.4 Ultrasonic Vibration\nAvoidexposingEspressifmodulestovibrationfromultrasonicequipment,suchasultrasonicweldersor\nultrasoniccleaners. Thisvibrationmayinduceresonanceinthein-modulecrystalandleadtoitsmalfunctionor\nevenfailure. Asaconsequence,themodulemaystopworkingoritsperformancemaydeteriorate.\nEspressifSystems 42 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedbackDatasheetVersioning\nDatasheet Versioning\nDatasheet\nStatus Watermark Definition\nVersion"
+  },
+  {
+    "faiss_index_id": 116,
+    "text": "Datasheet\nStatus Watermark Definition\nVersion\nThisdatasheetisunderdevelopmentforproducts\nv0.1~v0.5\nDraft Confidential inthedesignstage. Specificationsmaychange\n(excludingv0.5)\nwithoutpriornotice.\nThisdatasheetisactivelyupdatedforproductsin\nv0.5~v1.0 Preliminary theverificationstage. Specificationsmaychange\nPreliminary\n(excludingv1.0) release beforemassproduction,andthechangeswillbe\ndocumentationinthedatasheet’sRevisionHistory.\nThisdatasheetispubliclyreleasedforproductsin"
+  },
+  {
+    "faiss_index_id": 117,
+    "text": "Thisdatasheetispubliclyreleasedforproductsin\nmassproduction. Specificationsarefinalized,and\nv1.0andhigher Officialrelease —\nmajorchangeswillbecommunicatedviaProduct\nChangeNotifications(PCN).\nNot\nRecommended Thisdatasheetisupdatedlessfrequentlyfor\nAnyversion —\nforNewDesign productsnotrecommendedfornewdesigns.\n1\n(NRND)\nEndofLife Thisdatasheetisnolongermtainedforproducts\nAnyversion —\n2\n(EOL) thathavereachedendoflife.\n1"
+  },
+  {
+    "faiss_index_id": 118,
+    "text": "Anyversion —\n2\n(EOL) thathavereachedendoflife.\n1\nWatermark will be added to the datasheet title page only when all the product variants covered by this\ndatasheetarenotrecommendedfornewdesigns.\n2\nWatermark will be added to the datasheet title page only when all the product variants covered by this\ndatasheethavereachedendoflife.\nEspressifSystems 43 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedbackRelatedDocumentationandResources\nRelated Documentation and Resources"
+  },
+  {
+    "faiss_index_id": 119,
+    "text": "Related Documentation and Resources\nRelated Documentation\n• ESP32-C3SeriesDatasheet–SpecificationsoftheESP32-C3hardware.\n• ESP32-C3TechnicalReferenceManual–DetailedinformationonhowtousetheESP32-C3memoryandperiph-\nerals.\n• ESP32-C3HardwareDesignGuidelines–GuidelinesonhowtointegratetheESP32-C3intoyourhardwareprod-\nuct.\n• ESP32-C3SeriesSoCErrata–DescriptionsofknownerrorsinESP32-C3seriesofSoCs.\n• Certificates\nhttps://espressif.com/en/support/documents/certificates"
+  },
+  {
+    "faiss_index_id": 120,
+    "text": "• ESP32-C3Product/ProcessChangeNotifications(PCN)\nhttps://espressif.com/en/support/documents/pcns?keys=ESP32-C3\n• ESP32-C3Advisories–Informationonsecurity,bugs,compatibility,componentreliability.\nhttps://espressif.com/en/support/documents/advisories?keys=ESP32-C3\n• DocumentationUpdatesandUpdateNotificationSubscription\nhttps://espressif.com/en/support/download/documents\nDeveloper Zone\n• ESP-IDFProgrammingGuideforESP32-C3–ExtensivedocumentationfortheESP-IDFdevelopmentframework."
+  },
+  {
+    "faiss_index_id": 121,
+    "text": "• ESP-IDF andotherdevelopmentframeworksonGitHub.\nhttps://github.com/espressif\n• ESP32BBSForum–Engineer-to-Engineer(E2E)CommunityforEspressifproductswhereyoucanpostquestions,\nshareknowledge,exploreideas,andhelpsolveproblemswithfellowengineers.\nhttps://esp32.com/\n• ESP-FAQ–AsummarydocumentoffrequentlyaskedquestionsreleasedbyEspressif.\nhttps://espressif.com/projects/esp-faq/en/latest/index.html\n• TheESPJournal–BestPractices,Articles,andNotesfromEspressiffolks.\nhttps://blog.espressif.com/"
+  },
+  {
+    "faiss_index_id": 122,
+    "text": "https://blog.espressif.com/\n• SeethetabsSDKsandDemos,Apps,Tools,ATFirmware.\nhttps://espressif.com/en/support/download/sdks-demos\nProducts\n• ESP32-C3SeriesSoCs–BrowsethroughallESP32-C3SoCs.\nhttps://espressif.com/en/products/socs?id=ESP32-C3\n• ESP32-C3SeriesModules–BrowsethroughallESP32-C3-basedmodules.\nhttps://espressif.com/en/products/modules?id=ESP32-C3\n• ESP32-C3SeriesDevKits–BrowsethroughallESP32-C3-baseddevkits.\nhttps://espressif.com/en/products/devkits?id=ESP32-C3"
+  },
+  {
+    "faiss_index_id": 123,
+    "text": "• ESPProductSelector–FindanEspressifhardwareproductsuitableforyourneedsbycomparingorapplyingfilters.\nhttps://products.espressif.com/#/product-selector?language=en\nEspressifSystems 44 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedbackRelatedDocumentationandResources\nContact Us\n• SeethetabsSalesQuestions,TechnicalEnquiries,CircuitSchematic&PCBDesignReview,GetSamples\n(Onlinestores),BecomeOurSupplier,Comments&Suggestions.\nhttps://espressif.com/en/contact-us/sales-questions"
+  },
+  {
+    "faiss_index_id": 124,
+    "text": "EspressifSystems 45 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedbackRevisionHistory\nRevision History\nDate Version Releasenotes\n• AddedSection4.3ChipPower-upandReset\n• AddedSection6.5MemorySpecifications\n• Section9PeripheralSchematics: AddedanoteaboutATcommunication\nusingUART0\n2025-07-14 v2.1\n• Section10.2DimensionsofExternalAntennaConnector: Addedtheex-\nternalantennainformationforcertification\n• AddedDatasheetVersioning"
+  },
+  {
+    "faiss_index_id": 125,
+    "text": "• AddedDatasheetVersioning\nAccordingtoupdatesinCompatibilityAdvisoryforESP32-C3ChipRevisionv1.1,\n2025-04-14 v2.0 updated SRAM space in note 6 for Table ESP32-C3-MINI-1U (CONN) Series\nComparison\nUpdatedchipinESP32-C3-MINI-1-N4andESP32-C3-MINI-1U-N4fromESP32-\n2025-01-24 v1.9\nC3FN4toESP32-C3FH4\n• Table1-1ESP32-C3-MINI-1(ANT)SeriesComparison 1 and1-2ESP32-C3-\nMINI-1U(CONN)SeriesComparison:\n– Added the ESP32-C3-MINI-1-N4X, ESP32-C3-MINI-1U-N4X, and\nESP32-C3-MINI-1U-H4Xvariants\n2024-11-20 v1.8"
+  },
+  {
+    "faiss_index_id": 126,
+    "text": "ESP32-C3-MINI-1U-H4Xvariants\n2024-11-20 v1.8\n– MarkedtheESP32-C3-MINI-1U-N4andESP32-C3-MINI-1U-H4vari-\nantsasNotRecommendedforNewDesigns(NRND)\n• AddedTable6-5CurrentConsumptionforBluetoothLEinActiveMode\n• Table 1-2 ESP32-C3-MINI-1U (CONN) Series Comparison: Updated flash\nprogram/erase cycles, data retention time (note 4) and maximum clock\nfrequency(note7)\n• Improvedthewordingandstructureoffollowingsections:\n– UpdatedSection”StrappingPins”andrenamedto4BootConfigu-\nrations\n2024-09-19 v1.7"
+  },
+  {
+    "faiss_index_id": 127,
+    "text": "rations\n2024-09-19 v1.7\n– AddedChapter5Peripherals\n– UpdatedTable”Wi-FiRFStandards”andrenamedto”Wi-FiRFChar-\nacteristics”\n– AddedSection11.2ModulePlacementforPCBDesign\n– OptimizedFigure12-1ReflowProfile\nAdded Compatibility Advisory for ESP32-C3 Chip Revision v1.1 to the notes of\n2024-07-29 v1.6\nTableESP32-C3-MINI-1U(CONN)SeriesComparison\n• AddednewvariantESP32-C3-MINI-1-H4X\n• MarkedtheESP32-C3-MINI-1-N4,ESP32-C3-MINI-1-H4,andESP32-C3-\n2024-06-05 v1.5"
+  },
+  {
+    "faiss_index_id": 128,
+    "text": "2024-06-05 v1.5\nMINI-1-H4-AZvariantsasNotRecommendedforNewDesigns(NRND)\nCont’donnextpage\nEspressifSystems 46 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedbackRevisionHistory\nCont’dfrompreviouspage\nDate Version Releasenotes\n• Updatednote5ofTableESP32-C3-MINI-1(ANT)SeriesComparison 1 and\nTableESP32-C3-MINI-1U(CONN)SeriesComparison\n• UpdatedtheformattingofSection4BootConfigurations\n• Updated the maximum value of ”RF power control range” to 20 dBm in\n2024-05-15 v1.4"
+  },
+  {
+    "faiss_index_id": 129,
+    "text": "2024-05-15 v1.4\nTableBluetoothLERFCharacteristics\n• UpdatedthenoteaboutsolderpasteinSection9PeripheralSchematics\n• UpdatedthemarkingsofdimensionsandthermalpadviasinSection11.1\nPCBLandPattern\n• AddedanewvariantESP32-C3-MINI-1-H4-AZ\n• ChangedTableOrderingInformationtoTableESP32-C3-MINI-1(ANT)Se-\n1\nriesComparison andTableESP32-C3-MINI-1U(CONN)SeriesCompari-\nson\n• UpdatedtestconditiondescriptionsanddatainSection6.4CurrentCon-\n2022-11-08 v1.3\nsumptionCharacteristics"
+  },
+  {
+    "faiss_index_id": 130,
+    "text": "2022-11-08 v1.3\nsumptionCharacteristics\n• Updated”RFpowercontrolrange”inTableBluetoothLERFCharacteris-\ntics\n• AddeddescriptionsinSection11.1PCBLandPattern\n2022-06-30 v1.2 AddedSection12.4UltrasonicVibration\n• AddedanoteunderTableOrderingInformation\n2022-05-16 v1.1 • UpdatedChapter8ModuleSchematics\n• Updatedmoduledescriptiononthetitlepage\n• DeletedSection”AboutThisDocument”\n• RestructuredSection1.1Features\n• AddedorderingcodeinTableOrderingInformation"
+  },
+  {
+    "faiss_index_id": 131,
+    "text": "• AddedorderingcodeinTableOrderingInformation\n• AddeddescriptionsinSection10.2DimensionsofExternalAntennaCon-\n2021-06-21 v1.0\nnector\n• Updated Section ”Learning Resources” and renamed to Related Docu-\nmentationandResources\n• Replaced”chipfamily”with”chipseries”followingEspressif’staxonomy\n2021-04-16 v0.7 AddedinformationaboutESP32-C3-MINI-1Umodule\n2021-02-22 v0.6 UpdatedthevalueofC7to0.1µFinChapter8ModuleSchematics\n2021-02-05 v0.5 Preliminaryrelease"
+  },
+  {
+    "faiss_index_id": 132,
+    "text": "2021-02-05 v0.5 Preliminaryrelease\nEspressifSystems 47 ESP32-C3-MINI-1&MINI-1UDatasheetv2.1\nSubmitDocumentationFeedbackDisclaimer and Copyright Notice\nInformationinthisdocument,includingURLreferences,issubjecttochangewithoutnotice.\nALLTHIRDPARTY’SINFORMATIONINTHISDOCUMENTISPROVIDEDASISWITHNOWARRANTIESTOITSAUTHENTICITYAND\nACCURACY.\nNOWARRANTYISPROVIDEDTOTHISDOCUMENTFORITSMERCHANTABILITY,NON-INFRINGEMENT,FITNESSFORANYPARTICULAR"
+  },
+  {
+    "faiss_index_id": 133,
+    "text": "PURPOSE,NORDOESANYWARRANTYOTHERWISEARISINGOUTOFANYPROPOSAL,SPECIFICATIONORSAMPLE.\nAllliability,includingliabilityforinfringementofanyproprietaryrights,relatingtouseofinformationinthisdocumentisdisclaimed. No\nlicensesexpressorimplied,byestoppelorotherwise,toanyintellectualpropertyrightsaregrantedherein.\nTheWi-FiAllianceMemberlogoisatrademarkoftheWi-FiAlliance.TheBluetoothlogoisaregisteredtrademarkofBluetoothSIG."
+  },
+  {
+    "faiss_index_id": 134,
+    "text": "Alltradenames, trademarksandregisteredtrademarksmentionedinthisdocumentarepropertyoftheirrespectiveowners, andare\nherebyacknowledged.\nCopyright©2025EspressifSystems(Shanghai)Co.,Ltd.Allrightsreserved.\nwww.espressif.com"
+  }
+]

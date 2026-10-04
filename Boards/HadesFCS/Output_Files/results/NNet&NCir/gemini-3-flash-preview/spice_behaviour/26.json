@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net-_navc1-vcap_1_ signal maintain a voltage of 3.3V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net-_navc1-vcap_1_ signal is connected to the VCAP_1 pin of the STM32F405RGTx, which is an internal regulator bypass pin typically maintaining a voltage around 1.25V, not 3.3V.",
+        "is_final": true
+    }
+}

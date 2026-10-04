@@ -1,0 +1,918 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "PCA9685\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nRev. 4 — 16 April 2015 Product data sheet\n1. General description\nThe PCA9685 is an I2C-bus controlled 16-channel LED controller optimized for\nRed/Green/Blue/Amber (RGBA) color backlighting applications. Each LED output has its\nown 12-bit resolution (4096steps) fixed frequency individual PWM controller that operates\nat a programmable frequency from a typical of 24 Hz to 1526Hz with a duty cycle that is"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "adjustable from 0% to 100% to allow the LED to be set to a specific brightness value.\nAlloutputs are set to the same PWM frequency.\nEach LED output can be off or on (no PWM control), or set at its individual PWM controller\nvalue. The LED output driver is programmed to be either open-drain with a 25mA current\nsink capability at 5V or totempole with a 25mA sink, 10mA source capability at 5V. The\nPCA9685 operates with a supply voltage range of 2.3V to 5.5V and the inputs and"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "outputs are 5.5V tolerant. LEDs can be directly connected to the LED output (up to\n25mA, 5.5V) or controlled with external drivers and a minimum amount of discrete\ncomponents for larger current or higher voltage LEDs.\nThe PCA9685 is in the new Fast-mode Plus (Fm+) family. Fm+ devices offer higher\nfrequency (up to 1MHz) and more densely populated bus operation (up to 4000pF).\nAlthough the PCA9635 and PCA9685 have many similar features, the PCA9685 has"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "some unique features that make it more suitable for applications such as LCD or LED\nbacklighting and Ambilight:\n• The PCA9685 allows staggered LED output on and off times to minimize current\nsurges. The on and off time delay is independently programmable for each of the\n16channels. This feature is not available in PCA9635.\n• The PCA9685 has 4096steps (12-bit PWM) of individual LED brightness control. The\nPCA9635 has only 256steps (8-bit PWM)."
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "PCA9635 has only 256steps (8-bit PWM).\n• When multiple LED controllers are incorporated in a system, the PWM pulse widths\nbetween multiple devices may differ if PCA9635s are used. The PCA9685 has a\nprogrammable prescaler to adjust the PWM pulse widths of multiple devices.\n• The PCA9685 has an external clock input pin that will accept user-supplied clock\n(50MHz max.) in place of the internal 25MHz oscillator. This feature allows"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "synchronization of multiple devices. The PCA9635 does not have external clock input\nfeature.\n• Like the PCA9635, PCA9685 also has a built-in oscillator for the PWM control.\nHowever, the frequency used for PWM control in the PCA9685 is adjustable from\nabout 24Hz to 1526Hz as compared to the typical 97.6kHz frequency of the\nPCA9635. This allows the use of PCA9685 with external power supply controllers. All\nbits are set at the same frequency."
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "bits are set at the same frequency.\n• The Power-On Reset (POR) default state of LEDn output pins is LOW in the case of\nPCA9685. It is HIGH for PCA9635.PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nThe activeLOW Output Enable input pin (OE) allows asynchronous control of the LED\noutputs and can be used to set all the outputs to a defined I2C-bus programmable logic\nstate. The OE can also be used to externally ‘pulse width modulate’ the outputs, which is"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "useful when multiple devices need to be dimmed or blinked together using software\ncontrol.\nSoftware programmable LED All Call and three Sub Call I2C-bus addresses allow all or\ndefined groups of PCA9685 devices to respond to a common I2C-bus address, allowing\nfor example, all red LEDs to be turned on or off at the same time or marquee chasing\neffect, thus minimizing I2C-bus commands. Six hardware address pins allow up to\n62devices on the same bus."
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "62devices on the same bus.\nThe Software Reset (SWRST) General Call allows the master to perform a reset of the\nPCA9685 through the I2C-bus, identical to the Power-On Reset (POR) that initializes the\nregisters to their default state causing the outputs to be set LOW. This allows an easy and\nquick way to reconfigure all device registers to the same condition via software.\n2. Features and benefits\n 16 LED drivers. Each output programmable at:\nOff\nOn\nProgrammable LED brightness"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "Off\nOn\nProgrammable LED brightness\nProgrammable LED turn-on time to help reduce EMI\n 1MHz Fast-mode Plus compatible I2C-bus interface with 30mA high drive capability\non SDA output for driving high capacitive buses\n 4096-step (12-bit) linear programmable brightness per LED output varying from fully\noff (default) to maximum brightness\n LED output frequency (all LEDs) typically varies from 24Hz to 1526Hz (Default of 1Eh"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "in PRE_SCALE register results in a 200Hz refresh rate with oscillator clock of\n25MHz.)\n Sixteen totempole outputs (sink 25mA and source 10mA at 5V) with software\nprogrammable open-drain LED outputs selection (default at totempole). No input\nfunction.\n Output state change programmable on the Acknowledge or the STOP Command to\nupdate outputs byte-by-byte or all at the same time (default to ‘Change on STOP’).\n Active LOW Output Enable (OE) input pin. LEDn outputs programmable to logic1,"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "logic0 (default at power-up) or ‘high-impedance’ when OE is HIGH.\n 6 hardware address pins allow 62 PCA9685 devices to be connected to the same\nI2C-bus\n Toggling OE allows for hardware LED blinking\n 4 software programmable I2C-bus addresses (one LED All Call address and three LED\nSub Call addresses) allow groups of devices to be addressed at the same time in any\ncombination (for example, one register used for ‘All Call’ so that all the PCA9685s on"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "the I2C-bus can be addressed at the same time and the second register used for three\ndifferent addresses so that 1⁄ of all devices on the bus can be addressed at the same\n3\ntime in a group). Software enable and disable for these I2C-bus address.\n Software Reset feature (SWRSTGeneral Call) allows the device to be reset through\nthe I2C-bus\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved."
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "Product data sheet Rev. 4 — 16 April 2015 2 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n 25MHz typical internal oscillator requires no external components\n External 50MHz (max.) clock input\n Internal power-on reset\n Noise filter on SDA/SCL inputs\n Edge rate control on outputs\n No output glitches on power-up\n Supports hot insertion\n Low standby current\n Operating power supply voltage range of 2.3V to 5.5V\n 5.5V tolerant inputs"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": " 5.5V tolerant inputs\n 40C to +85C operation\n ESD protection exceeds 2000V HBM per JESD22-A114, 200V MM per\nJESD22-A115 and 1000V CDM per JESD22-C101\n Latch-up testing is done to JEDEC Standard JESD78 which exceeds 100mA\n Packages offered: TSSOP28, HVQFN28\n3. Applications\n RGB or RGBA LED drivers\n LED status information\n LED displays\n LCD backlights\n Keypad backlights for cellular phones or handheld devices"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "PCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 3 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n4. Ordering information\nTable 1. Ordering info rmation\nType number Topside mark Package\nName Description Version\nPCA9685PW PCA9685PW TSSOP28 plastic thin shrink small outline package; SOT361-1\n28leads; bodywidth4.4mm"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "28leads; bodywidth4.4mm\nPCA9685PW/Q900[1] PCA9685PW TSSOP28 plastic thin shrink small outline package; SOT361-1\n28leads; bodywidth4.4mm\nPCA9685BS P9685 HVQFN28 plastic thermal enhanced very thin quad flat SOT788-1\npackage; noleads; 28terminals;\nbody660.85mm\n[1] PCA9685PW/Q900 is AEC-Q100 compliant. Contact i2c.support@nxp.com for PPAP.\n4.1 Ordering options\nTable 2. Ordering opt ions\nType number Orderable Package Packing method Minimum Temperature\npartnumber order\nquantity"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "partnumber order\nquantity\nPCA9685PW PCA9685PW,118 TSSOP28 REEL 13\" Q1/T1 2500 T =40C to +85C\namb\n*STANDARD MARK\nSMD\nPCA9685PW/Q900 PCA9685PW/Q900,118 TSSOP28 REEL 13\" Q1/T1 2500 T =40C to +85C\namb\n*STANDARD MARK\nSMD\nPCA9685BS PCA9685BS,118 HVQFN28 REEL 13\" Q1/T1 4000 T =40C to +85C\namb\n*STANDARD MARK\nSMD\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved."
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "Product data sheet Rev. 4 — 16 April 2015 4 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n5. Block diagram\nA0 A1 A2 A3 A4 A5\nPCA9685\nSCL\nINPUT FILTER\nSDA\nI2C-BUS\nCONTROL\nPOWER-ON\nVDD\nRESET VDD\nVSS\nLED\nSTATE\nSELECT\nREGISTER\nPWM\nREGISTER X\nPRESCALE\nBRIGHTNESS LEDn\nCONTROL\n25 MHz\nOSCILLATOR CLOCK MUX/\nSWITCH CONTROL\nEXTCLK\n'0' – permanently OFF\n'1' – permanently ON\nOE\n002aac824\nRemark: Only one LED output shown for clarity.\nFig 1. Block diagram of PCA9685"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "Fig 1. Block diagram of PCA9685\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 5 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n6. Pinning information\n6.1 Pinning\nA0 1 28 VDD\nA1 2 27 SDA\nA2 3 26 SCL\nA3 4 25 EXTCLK\nA4 5 24 A5\nA3 A5\nLED0 6 23 OE\nA4 OE\nLED1 7 PCA9685PW 22 LED15\nLED0 LED15\nLED2 8 PCA9685PW/Q900 21 LED14"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "LED0 LED15\nLED2 8 PCA9685PW/Q900 21 LED14\nLED1 PCA9685BS LED14\nLED3 9 20 LED13\nLED2 LED13\nLED4 10 19 LED12\nLED3 LED12\nLED5 11 18 LED11\nLED4 LED11\nLED6 12 17 LED10\nLED7 13 16 LED9\nVSS 14 15 LED8 002aad236\n002aac825\nFig 2. Pin configuration for TSSOP28 Fig 3. Pin configuration for HVQFN28\n6.2 Pin description\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 6 of 52\n2A"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "2A\n5DEL\n1A\n6DEL\n0A\n7DEL\nDDV\nSSV\nADS\n8DEL\nLCS\n9DEL\nKLCTXE\n01DEL\n1 21\n2 20\n3 19\n4 18\n5 17\n6 16\n7 15\nTransparent top view\n82\n8\n72\n9\n62\n01\n52\n11\n42\n21\n32\n31\n22\n41\nterminal 1\nindex area\nTable 3. Pin description\nSymbol Pin Type Description\nTSSOP28 HVQFN28\nA0 1 26 I address input 0\nA1 2 27 I address input 1\nA2 3 28 I address input 2\nA3 4 1 I address input 3\nA4 5 2 I address input 4\nLED0 6 3 O LED driver 0\nLED1 7 4 O LED driver 1\nLED2 8 5 O LED driver 2\nLED3 9 6 O LED driver 3\nLED4 10 7 O LED driver 4"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "LED3 9 6 O LED driver 3\nLED4 10 7 O LED driver 4\nLED5 11 8 O LED driver 5\nLED6 12 9 O LED driver 6\nLED7 13 10 O LED driver 7\nV 14 11[1] power supply supply ground\nSS\nLED8 15 12 O LED driver 8\nLED9 16 13 O LED driver 9\nLED10 17 14 O LED driver 10\nLED11 18 15 O LED driver 11PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nTable 3. Pin description …continued\nSymbol Pin Type Description\nTSSOP28 HVQFN28\nLED12 19 16 O LED driver 12\nLED13 20 17 O LED driver 13"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "LED13 20 17 O LED driver 13\nLED14 21 18 O LED driver 14\nLED15 22 19 O LED driver 15\nOE 23 20 I activeLOW output enable\nA5 24 21 I address input 5\nEXTCLK 25 22 I external clock input[2]\nSCL 26 23 I serial clock line\nSDA 27 24 I/O serial data line\nV 28 25 power supply supply voltage\nDD\n[1] HVQFN28 package die supply ground is connected to both V pin and exposed center pad. V pin must\nSS SS\nbe connected to supply ground for proper device operation. For enhanced thermal, electrical, and board"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "level performance, the exposed pad needs to be soldered to the board using a corresponding thermal pad\non the board and for proper heat conduction through the board, thermal vias need to be incorporated in the\nPCB in the thermal pad region.\n[2] This pin must be grounded when this feature is not used.\n7. Functional description\nRefer to Figure 1 “Block diagram of PCA9685”.\n7.1 Device addresses\nFollowing a START condition, the bus master must output the address of the slave it is\naccessing."
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "accessing.\nThere are a maximum of 64 possible programmable addresses using the 6 hardware\naddress pins. Two of these addresses, Software Reset and LED All Call, cannot be used\nbecause their default power-up state is ON, leaving a maximum of 62 addresses. Using\nother reserved addresses, as well as any other subcall address, will reduce the total\nnumber of possible addresses even further.\n7.1.1 Regular I2C-bus slave address"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "7.1.1 Regular I2C-bus slave address\nThe I2C-bus slave address of the PCA9685 is shown in Figure4. To conserve power, no\ninternal pull-up resistors are incorporated on the hardware selectable address pins and\nthey must be pulled HIGH or LOW.\nRemark: Using reserved I2C-bus addresses will interfere with other devices, but only if\nthe devices are on the bus and/or the bus will be open to other I2C-bus systems at some"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "later date. In a closed system where the designer controls the address assignment these\naddresses can be used since the PCA9685 treats them like any other address. The\nLEDAllCall, Software Reset and PCA9564 or PCA9665 slave address (if on the bus) can\nnever be used for individual device addresses.\n• PCA9685 LEDAllCall address (1110000) and Software Reset (00000110) which are\nactive on start-up"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "active on start-up\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 7 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n• PCA9564 (0000000) or PCA9665 (1110000) slave address which is active on\nstart-up\n• ‘reserved for future use’ I2C-bus addresses (0000011, 11111XX)\n• slave devices that use the 10-bit addressing scheme (11110XX)"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "• slave devices that are designed to respond to the General Call address (0000000)\nwhich is used as the software reset address\n• High-speed mode (Hs-mode) master code (00001XX)\nslave address\n1 A5 A4 A3 A2 A1 A0 R/W\nfixed hardware selectable\n002aad168\nFig 4. Slave address\nThe last bit of the address byte defines the operation to be performed. When set to logic1\na read is selected, while a logic0 selects a write operation.\n7.1.2 LED All Call I2C-bus address"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "7.1.2 LED All Call I2C-bus address\n• Default power-up value (ALLCALLADR register): E0h or 1110000X\n• Programmable through I2C-bus (volatile programming)\n• At power-up, LED All Call I2C-bus address is enabled. PCA9685 sends an ACK when\nE0h (R/W=0) or E1h (R/W=1) is sent by the master.\nSee Section 7.3.7 “ALLCALLADR, LED All Call I2C-bus address” for more detail.\nRemark: The default LED All Call I2C-bus address (E0h or 1110000X) must not be used"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "as a regular I2C-bus slave address since this address is enabled at power-up. All the\nPCA9685s on the I2C-bus will acknowledge the address if sent by the I2C-bus master.\n7.1.3 LED Sub Call I2C-bus addresses\n• 3 different I2C-bus addresses can be used\n• Default power-up values:\n– SUBADR1 register: E2h or 1110001X\n– SUBADR2 register: E4h or 1110010X\n– SUBADR3 register: E8h or 1110100X\n• Programmable through I2C-bus (volatile programming)"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "• At power-up, Sub Call I2C-bus addresses are disabled. PCA9685 does not send an\nACK when E2h (R/W=0) or E3h (R/W=1), E4h (R/W=0) or E5h (R/W=1), or\nE8h(R/W=0) or E9h (R/W=1) is sent by the master.\nSee Section 7.3.6 “SUBADR1 to SUBADR3, I2C-bus subaddress 1 to 3” for more detail.\nRemark: The default LED Sub Call I2C-bus addresses may be used as regular I2C-bus\nslave addresses as long as they are disabled."
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "slave addresses as long as they are disabled.\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 8 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n7.1.4 Software Reset I2C-bus address\nThe address shown in Figure5 is used when a reset of the PCA9685 needs to be"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "performed by the master. The Software Reset address (SWRST Call) must be used with\nR/W=logic0. If R/W=logic1, the PCA9685 does not acknowledge the SWRST. See\nSection 7.6 “Software reset” for more detail.\nR/W\n0 0 0 0 0 1 1 0\n002aab416\nFig 5. Software Reset address\nRemark: The Software Reset I2C-bus address is a reserved address and cannot be used\nas a regular I2C-bus slave address or as an LED AllCall or LED Sub Call address.\n7.2 Control register"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "7.2 Control register\nFollowing the successful acknowledgement of the slave address, LED All Call address or\nLED Sub Call address, the bus master will send a byte to the PCA9685, which will be\nstored in the Control register.\nThis register is used as a pointer to determine which register will be accessed.\nD7 D6 D5 D4 D3 D2 D1 D0\n002aac826\nreset state = 00h\nRemark: The Control register does not apply to the Software Reset I2C-bus address.\nFig 6. Control register"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "Fig 6. Control register\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 9 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n7.3 Register definitions\nTable 4. Register sum mary\nRegister # Register # D7 D6 D5 D4 D3 D2 D1 D0 Name Type Function\n(decimal) (hex)\n0 00 0 0 0 0 0 0 0 0 MODE1 read/write Mode register 1"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "1 01 0 0 0 0 0 0 0 1 MODE2 read/write Mode register 2\n2 02 0 0 0 0 0 0 1 0 SUBADR1 read/write I2C-bus subaddress 1\n3 03 0 0 0 0 0 0 1 1 SUBADR2 read/write I2C-bus subaddress 2\n4 04 0 0 0 0 0 1 0 0 SUBADR3 read/write I2C-bus subaddress 3\n5 05 0 0 0 0 0 1 0 1 ALLCALLADR read/write LED All Call I2C-bus\naddress\n6 06 0 0 0 0 0 1 1 0 LED0_ON_L read/write LED0 output and\nbrightness control byte 0\n7 07 0 0 0 0 0 1 1 1 LED0_ON_H read/write LED0 output and\nbrightness control byte 1"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "brightness control byte 1\n8 08 0 0 0 0 1 0 0 0 LED0_OFF_L read/write LED0 output and\nbrightness control byte 2\n9 09 0 0 0 0 1 0 0 1 LED0_OFF_H read/write LED0 output and\nbrightness control byte 3\n10 0A 0 0 0 0 1 0 1 0 LED1_ON_L read/write LED1 output and\nbrightness control byte 0\n11 0B 0 0 0 0 1 0 1 1 LED1_ON_H read/write LED1 output and\nbrightness control byte 1\n12 0C 0 0 0 0 1 1 0 0 LED1_OFF_L read/write LED1 output and\nbrightness control byte 2"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "brightness control byte 2\n13 0D 0 0 0 0 1 1 0 1 LED1_OFF_H read/write LED1 output and\nbrightness control byte 3\n14 0E 0 0 0 0 1 1 1 0 LED2_ON_L read/write LED2 output and\nbrightness control byte 0\n15 0F 0 0 0 0 1 1 1 1 LED2_ON_H read/write LED2 output and\nbrightness control byte 1\n16 10 0 0 0 1 0 0 0 0 LED2_OFF_L read/write LED2 output and\nbrightness control byte 2\n17 11 0 0 0 1 0 0 0 1 LED2_OFF_H read/write LED2 output and\nbrightness control byte 3"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "brightness control byte 3\n18 12 0 0 0 1 0 0 1 0 LED3_ON_L read/write LED3 output and\nbrightness control byte 0\n19 13 0 0 0 1 0 0 1 1 LED3_ON_H read/write LED3 output and\nbrightness control byte 1\n20 14 0 0 0 1 0 1 0 0 LED3_OFF_L read/write LED3 output and\nbrightness control byte 2\n21 15 0 0 0 1 0 1 0 1 LED3_OFF_H read/write LED3 output and\nbrightness control byte 3"
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "brightness control byte 3\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 10 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nTable 4. Register summary …continued\nRegister # Register # D7 D6 D5 D4 D3 D2 D1 D0 Name Type Function\n(decimal) (hex)\n22 16 0 0 0 1 0 1 1 0 LED4_ON_L read/write LED4 output and\nbrightness control byte 0"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "brightness control byte 0\n23 17 0 0 0 1 0 1 1 1 LED4_ON_H read/write LED4 output and\nbrightness control byte 1\n24 18 0 0 0 1 1 0 0 0 LED4_OFF_L read/write LED4 output and\nbrightness control byte 2\n25 19 0 0 0 1 1 0 0 1 LED4_OFF_H read/write LED4 output and\nbrightness control byte 3\n26 1A 0 0 0 1 1 0 1 0 LED5_ON_L read/write LED5 output and\nbrightness control byte 0\n27 1B 0 0 0 1 1 0 1 1 LED5_ON_H read/write LED5 output and\nbrightness control byte 1"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "brightness control byte 1\n28 1C 0 0 0 1 1 1 0 0 LED5_OFF_L read/write LED5 output and\nbrightness control byte 2\n29 1D 0 0 0 1 1 1 0 1 LED5_OFF_H read/write LED5 output and\nbrightness control byte 3\n30 1E 0 0 0 1 1 1 1 0 LED6_ON_L read/write LED6 output and\nbrightness control byte 0\n31 1F 0 0 0 1 1 1 1 1 LED6_ON_H read/write LED6 output and\nbrightness control byte 1\n32 20 0 0 1 0 0 0 0 0 LED6_OFF_L read/write LED6 output and\nbrightness control byte 2"
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "brightness control byte 2\n33 21 0 0 1 0 0 0 0 1 LED6_OFF_H read/write LED6 output and\nbrightness control byte 3\n34 22 0 0 1 0 0 0 1 0 LED7_ON_L read/write LED7 output and\nbrightness control byte 0\n35 23 0 0 1 0 0 0 1 1 LED7_ON_H read/write LED7 output and\nbrightness control byte 1\n36 24 0 0 1 0 0 1 0 0 LED7_OFF_L read/write LED7 output and\nbrightness control byte 2\n37 25 0 0 1 0 0 1 0 1 LED7_OFF_H read/write LED7 output and\nbrightness control byte 3"
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "brightness control byte 3\n38 26 0 0 1 0 0 1 1 0 LED8_ON_L read/write LED8 output and\nbrightness control byte 0\n39 27 0 0 1 0 0 1 1 1 LED8_ON_H read/write LED8 output and\nbrightness control byte 1\n40 28 0 0 1 0 1 0 0 0 LED8_OFF_L read/write LED8 output and\nbrightness control byte 2\n41 29 0 0 1 0 1 0 0 1 LED8_OFF_H read/write LED8 output and\nbrightness control byte 3"
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "brightness control byte 3\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 11 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nTable 4. Register summary …continued\nRegister # Register # D7 D6 D5 D4 D3 D2 D1 D0 Name Type Function\n(decimal) (hex)\n42 2A 0 0 1 0 1 0 1 0 LED9_ON_L read/write LED9 output and\nbrightness control byte 0"
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "brightness control byte 0\n43 2B 0 0 1 0 1 0 1 1 LED9_ON_H read/write LED9 output and\nbrightness control byte 1\n44 2C 0 0 1 0 1 1 0 0 LED9_OFF_L read/write LED9 output and\nbrightness control byte 2\n45 2D 0 0 1 0 1 1 0 1 LED9_OFF_H read/write LED9 output and\nbrightness control byte 3\n46 2E 0 0 1 0 1 1 1 0 LED10_ON_L read/write LED10 output and\nbrightness control byte 0\n47 2F 0 0 1 0 1 1 1 1 LED10_ON_H read/write LED10 output and\nbrightness control byte 1"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "brightness control byte 1\n48 30 0 0 1 1 0 0 0 0 LED10_OFF_L read/write LED10 output and\nbrightness control byte 2\n49 31 0 0 1 1 0 0 0 1 LED10_OFF_H read/write LED10 output and\nbrightness control byte 3\n50 32 0 0 1 1 0 0 1 0 LED11_ON_L read/write LED11 output and\nbrightness control byte 0\n51 33 0 0 1 1 0 0 1 1 LED11_ON_H read/write LED11 output and\nbrightness control byte 1\n52 34 0 0 1 1 0 1 0 0 LED11_OFF_L read/write LED11 output and\nbrightness control byte 2"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "brightness control byte 2\n53 35 0 0 1 1 0 1 0 1 LED11_OFF_H read/write LED11 output and\nbrightness control byte 3\n54 36 0 0 1 1 0 1 1 0 LED12_ON_L read/write LED12 output and\nbrightness control byte 0\n55 37 0 0 1 1 0 1 1 1 LED12_ON_H read/write LED12 output and\nbrightness control byte 1\n56 38 0 0 1 1 1 0 0 0 LED12_OFF_L read/write LED12 output and\nbrightness control byte 2\n57 39 0 0 1 1 1 0 0 1 LED12_OFF_H read/write LED12 output and\nbrightness control byte 3"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "brightness control byte 3\n58 3A 0 0 1 1 1 0 1 0 LED13_ON_L read/write LED13 output and\nbrightness control byte 0\n59 3B 0 0 1 1 1 0 1 1 LED13_ON_H read/write LED13 output and\nbrightness control byte 1\n60 3C 0 0 1 1 1 1 0 0 LED13_OFF_L read/write LED13 output and\nbrightness control byte 2\n61 3D 0 0 1 1 1 1 0 1 LED13_OFF_H read/write LED13 output and\nbrightness control byte 3"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "brightness control byte 3\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 12 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nTable 4. Register summary …continued\nRegister # Register # D7 D6 D5 D4 D3 D2 D1 D0 Name Type Function\n(decimal) (hex)\n62 3E 0 0 1 1 1 1 1 0 LED14_ON_L read/write LED14 output and\nbrightness control byte 0"
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "brightness control byte 0\n63 3F 0 0 1 1 1 1 1 1 LED14_ON_H read/write LED14 output and\nbrightness control byte 1\n64 40 0 1 0 0 0 0 0 0 LED14_OFF_L read/write LED14 output and\nbrightness control byte 2\n65 41 0 1 0 0 0 0 0 1 LED14_OFF_H read/write LED14 output and\nbrightness control byte 3\n66 42 0 1 0 0 0 0 1 0 LED15_ON_L read/write LED15 output and\nbrightness control byte 0\n67 43 0 1 0 0 0 0 1 1 LED15_ON_H read/write LED15 output and\nbrightness control byte 1"
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "brightness control byte 1\n68 44 0 1 0 0 0 1 0 0 LED15_OFF_L read/write LED15 output and\nbrightness control byte 2\n69 45 0 1 0 0 0 1 0 1 LED15_OFF_H read/write LED15 output and\nbrightness control byte 3\n... reserved for future use\n250 FA 1 1 1 1 1 0 1 0 ALL_LED_ON_L write/read load all the LEDn_ON\nzero registers, byte0\n251 FB 1 1 1 1 1 0 1 1 ALL_LED_ON_H write/read load all the LEDn_ON\nzero registers, byte1\n252 FC 1 1 1 1 1 1 0 0 ALL_LED_OFF_L write/read load all the LEDn_OFF"
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "zero registers, byte0\n253 FD 1 1 1 1 1 1 0 1 ALL_LED_OFF_H write/read load all the LEDn_OFF\nzero registers, byte1\n254 FE 1 1 1 1 1 1 1 0 PRE_SCALE[1] read/write prescaler for PWM output\nfrequency\n255 FF 1 1 1 1 1 1 1 1 TestMode[2] read/write defines the test mode to\nbe entered\n... All further addresses are reserved for future use; reserved addresses will not be acknowledged.\n[1] Writes to PRE_SCALE register are blocked when SLEEP bit is logic0 (MODE1)."
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "[2] Reserved. Writes to this register may cause unpredictable results.\nRemark: Auto Increment past register 69 will point to MODE1 register (register 0).\nAutoIncrement also works from register 250 to register 254, then rolls over to register 0.\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 13 of 52PCA9685\nNXP Semiconductors"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "NXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n7.3.1 Mode register 1, MODE1\nTable 5. MODE1 - Mo de register 1 (address 00h) bit description\nLegend: * default value.\nBit Symbol Access Value Description\n7 RESTART R Shows state of RESTART logic. See Section7.3.1.1 for detail.\nW User writes logic1 to this bit to clear it to logic0. A user write of logic0 will have no\neffect. See Section7.3.1.1 for detail.\n0* Restart disabled.\n1 Restart enabled."
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "0* Restart disabled.\n1 Restart enabled.\n6 EXTCLK R/W To use the EXTCLK pin, this bit must be set by the following sequence:\n1. Set the SLEEP bit in MODE1. This turns off the internal oscillator.\n2. Write logic1s to both the SLEEP and EXTCLK bits in MODE1. The switch is\nnow made. The external clock can be active during the switch because the\nSLEEP bit is set.\nThis bit is a ‘sticky bit’, that is, it cannot be cleared by writing a logic0 to it. The"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "EXTCLK bit can only be cleared by a power cycle or software reset.\nEXTCLK range is DC to 50MHz.\nEXTCLK\nrefresh_rate = -------------------------------------------------------\n4096prescale+1\n0* Use internal clock.\n1 Use EXTCLK pin clock.\n5 AI R/W 0* Register Auto-Increment disabled[1].\n1 Register Auto-Increment enabled.\n4 SLEEP R/W 0 Normal mode[2].\n1* Low power mode. Oscillator off[3][4].\n3 SUB1 R/W 0* PCA9685 does not respond to I2C-bus subaddress 1."
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "1 PCA9685 responds to I2C-bus subaddress 1.\n2 SUB2 R/W 0* PCA9685 does not respond to I2C-bus subaddress 2.\n1 PCA9685 responds to I2C-bus subaddress 2.\n1 SUB3 R/W 0* PCA9685 does not respond to I2C-bus subaddress 3.\n1 PCA9685 responds to I2C-bus subaddress 3.\n0 ALLCALL R/W 0 PCA9685 does not respond to LED All Call I2C-bus address.\n1* PCA9685 responds to LED All Call I2C-bus address."
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "[1] When the AutoIncrement flag is set, AI=1, the Control register is automatically incremented after a read or write. This allows the user\nto program the registers sequentially.\n[2] It takes 500s max. for the oscillator to be up and running once SLEEP bit has been set to logic0. Timings on LEDn outputs are not\nguaranteed if PWM control registers are accessed within the 500s window. There is no start-up delay required when using the\nEXTCLK pin as the PWM clock."
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "EXTCLK pin as the PWM clock.\n[3] No PWM control is possible when the oscillator is off.\n[4] When the oscillator is off (Sleep mode) the LEDn outputs cannot be turned on, off or dimmed/blinked.\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 14 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n7.3.1.1 Restart mode"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "7.3.1.1 Restart mode\nIf the PCA9685 is operating and the user decides to put the chip to sleep (setting MODE1\nbit4) without stopping any of the PWM channels, the RESTART bit (MODE1 bit7) will be\nset to logic1 at the end of the PWM refresh cycle. The contents of each PWM register are\nheld valid when the clock is off.\nTo restart all of the previously active PWM channels with a few I2C-bus cycles do the\nfollowing steps:\n1. Read MODE1 register."
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "following steps:\n1. Read MODE1 register.\n2. Check that bit7 (RESTART) is a logic1. If it is, clear bit4 (SLEEP). Allow time for\noscillator to stabilize (500s).\n3. Write logic1 to bit7 of MODE1 register. All PWM channels will restart and the\nRESTART bit will clear.\nRemark: The SLEEP bit must be logic0 for at least 500s, before a logic1 is written into\nthe RESTART bit.\nOther actions that will clear the RESTART bit are:\n1. Power cycle.\n2. I2C Software Reset command."
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "1. Power cycle.\n2. I2C Software Reset command.\n3. If the MODE2 OCH bit is logic0, write to any PWM register then issue an I2C-bus\nSTOP.\n4. If the MODE2 OCH bit is logic1, write to all four PWM registers in any PWM channel.\nLikewise, if the user does an orderly shutdown1 of all the PWM channels before setting\nthe SLEEP bit, the RESTART bit will be cleared. If this is done the contents of all PWM\nregisters are invalidated and must be reloaded before reuse."
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "An example of the use of the RESTART bit would be the restoring of a customer’s laptop\nLCD backlight intensity coming out of Standby to the level it was before going into\nStandby.\n1. Two methods can be used to do an orderly shutdown. The fastest is to write a logic1 to bit4 in register ALL_LED_OFF_H. The\nother method is to write logic1 to bit4 in each active PWM channel LEDn_OFF_H register."
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "PCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 15 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n7.3.2 Mode register 2, MODE2\nTable 6. MODE2 - Mo de register 2 (address 01h) bit description\nLegend: * default value.\nBit Symbol Access Value Description\n7 to 5 - read only 000* reserved"
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "7 to 5 - read only 000* reserved\n4 INVRT[1] R/W 0* Output logic state not inverted. Value to use when external driver used.\nApplicable when OE=0.\n1 Output logic state inverted. Value to use when no external driver used.\nApplicable when OE=0.\n3 OCH R/W 0* Outputs change on STOP command[2].\n1 Outputs change on ACK[3].\n2 OUTDRV[1] R/W 0 The 16 LEDn outputs are configured with an open-drain structure.\n1* The 16 LEDn outputs are configured with a totempole structure."
+  },
+  {
+    "faiss_index_id": 68,
+    "text": "1to0 OUTNE[1:0][4] R/W 00* When OE = 1 (output drivers not enabled), LEDn = 0.\n01 When OE = 1 (output drivers not enabled):\nLEDn = 1 when OUTDRV=1\nLEDn=high-impedance when OUTDRV=0 (same as OUTNE[1:0]=10)\n1X When OE = 1 (output drivers not enabled), LEDn = high-impedance.\n[1] See Section 7.7 “Using the PCA9685 with and without external drivers” for more details. Normal LEDs can be driven directly in either"
+  },
+  {
+    "faiss_index_id": 69,
+    "text": "mode. Some newer LEDs include integrated Zener diodes to limit voltage transients, reduce EMI, protect the LEDs and these must be\ndriven only in the open-drain mode to prevent overheating the IC. Power on reset default state of LEDn output pins is LOW.\n[2] Change of the outputs at the STOP command allows synchronizing outputs of more than one PCA9685. Applicable to registers from\n06h (LED0_ON_L) to 45h (LED15_OFF_H) only. 1 or more registers can be written, in any order, before STOP."
+  },
+  {
+    "faiss_index_id": 70,
+    "text": "[3] Update on ACK requires all 4 PWM channel registers to be loaded before outputs will change on the last ACK.\n[4] See Section 7.4 “Active LOW output enable input” for more details.\n7.3.3 LED output and PWM control\nThe turn-on time of each LED driver output and the duty cycle of PWM can be controlled\nindependently using the LEDn_ON and LEDn_OFF registers.\nThere will be two 12-bit registers per LED output. These registers will be programmed by"
+  },
+  {
+    "faiss_index_id": 71,
+    "text": "the user. Both registers will hold a value from 0 to 4095. One 12-bit register will hold a\nvalue for the ON time and the other 12-bit register will hold the value for the OFF time. The\nON and OFF times are compared with the value of a 12-bit counter that will be running\ncontinuously from 0000h to 0FFFh (0 to 4095 decimal).\nUpdate on ACK requires all 4PWM channel registers to be loaded before outputs will\nchange on the last ACK."
+  },
+  {
+    "faiss_index_id": 72,
+    "text": "change on the last ACK.\nThe ON time, which is programmable, will be the time the LED output will be asserted and\nthe OFF time, which is also programmable, will be the time when the LED output will be\nnegated. In this way, the phase shift becomes completely programmable. The resolution\nfor the phase shift is 1⁄ of the target frequency. Table7 lists these registers.\n4096\nThe following two examples illustrate how to calculate values to be loaded into these\nregisters."
+  },
+  {
+    "faiss_index_id": 73,
+    "text": "registers.\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 16 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nExample 1: (assumes that the LED0 output is used and\n(delaytime)+(PWMdutycycle)100%)\nDelay time = 10%; PWM duty cycle = 20% (LED on time = 20%; LED off time = 80%).\nDelay time = 10% = 409.6 ~ 410 counts = 19Ah."
+  },
+  {
+    "faiss_index_id": 74,
+    "text": "Delay time = 10% = 409.6 ~ 410 counts = 19Ah.\nSince the counter starts at 0 and ends at 4095, we will subtract 1, so delay time = 199h\ncounts.\nLED0_ON_H= 1h; LED0_ON_L= 99h (LED start turn on after this delay count to\n409)\nLED on time = 20% = 819.2 ~ 819 counts.\nLED off time = 4CCh (decimal 410+8191=1228)\nLED0_OFF_H = 4h; LED0_OFF_L = CCh (LED start turn off after this count to 1228)\nSTOP\n0 819 4095 0 4095 0 4095 0\n(LED ON)\nLED OFF\nexample 1\nLEDn_ON 409 409 409 409\nLEDn_OFF 1228 1228 1228 1228"
+  },
+  {
+    "faiss_index_id": 75,
+    "text": "LEDn_OFF 1228 1228 1228 1228\n002aad812\nFig 7. LED output, example1\nExample 2: (assumes that the LED4 output is used and\n(delaytime)+(PWMdutycycle>100%)\nDelay time = 90%; PWM duty cycle = 90% (LED on time = 90%; LED off time = 10%).\nDelay time = 90% = 3686.4~3686 counts1 = 3685 = E65h.\nLED4_ON_H = Eh; LED4_ON_L = 65h (LED start turn on after this delay count to\n3685)\nLED on time = 90% = 3686 counts.\nSince the delay time and LED on period of the duty cycle is greater than 4096 counts,"
+  },
+  {
+    "faiss_index_id": 76,
+    "text": "the LEDn_OFF count will occur in the next frame. Therefore, 4096 is subtracted from\nthe LEDn_OFF count to get the correct LEDn_OFF count. See Figure9, Figure10 and\nFigure11.\nLED off time = CCBh (decimal 3685+3686 = 73724096 = 3275)\nLED4_OFF_H = Ch; LED4_OFF_L = CBh (LED start turn off after this count to 3275)\nSTOP\n0 4095 0 4095 0 4095 0\nexample 2 LED ON (90 %)\nLEDn_ON\n3685 3685 3685\nLEDn_OFF 3275 3275\n002aad813\nFig 8. LED output, example2"
+  },
+  {
+    "faiss_index_id": 77,
+    "text": "002aad813\nFig 8. LED output, example2\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 17 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nSTOP\n0 4095 0 4095 0 4095 0\nexample 1\nLEDn_ON 511 511 511\nLEDn_OFF 3071 3071 3071\nexample 2\nLEDn_ON 2047 2047 2047\nLEDn_OFF 767 767\nexample 3\nLEDn_ON 1023\nexample 4\noff\nLEDn_ON 1023\nLEDn_OFF 1023"
+  },
+  {
+    "faiss_index_id": 78,
+    "text": "example 4\noff\nLEDn_ON 1023\nLEDn_OFF 1023\n002aad193\nExample 1: LEDn_ON (511) < LEDn_OFF (3071)\nExample 2: LEDn_ON (2047) > LEDn_OFF (767)\nExample 3: LEDn_ON[12] = 1; LEDn_ON[11:0] = 1022; LEDn_OFF[12] = 0; LEDn_OFF[11:0] = don’t care\nExample 4: LEDn_ON[12] = 0; LEDn_OFF[12] = 0; LEDn_ON[11:0] = LEDn_OFF[11:0]\nFig 9. Output example\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved."
+  },
+  {
+    "faiss_index_id": 79,
+    "text": "Product data sheet Rev. 4 — 16 April 2015 18 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nSTOP\n0 4095 0 4095 0 4095 0\nregister(s) updated in this cycle output(s) updated in this cycle\nexample 1\nLEDn_ON 511 511 511\nLEDn_OFF 3071 1023 1023\nexample 2\nLEDn_ON 511 767 767\nLEDn_OFF 3071 1023 1023\nexample 3\nLEDn_ON 511 3071\nLEDn_OFF 3071 1023\nexample 4\noff\nLEDn_ON 511\nLEDn_OFF 3071\n002aad194\nExample 1: LEDn_ON unchanged and LEDn_OFF decreased."
+  },
+  {
+    "faiss_index_id": 80,
+    "text": "Example 2: LEDn_ON increased and LEDn_OFF decreased.\nExample 3: LEDn_ON made > LEDn_OFF.\nExample 4: LEDn_OFF[12] set to 1.\nFig 10. Update examples when LEDn_ON < LEDn_OFF\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 19 of 52xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxx x x x xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxx xx xx xxxxx"
+  },
+  {
+    "faiss_index_id": 81,
+    "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxx x x\nxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxx\nxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxx xxx\nProduct\ndata\nsheet\nRev.\n4\n—\n16\nApril\n2015\n20\nof\n52\nPCA9685\nAll\ninformation\nprovided\nin\nthis\ndocument\nis\nsubject\nto\nlegal\ndisclaimers.\n©\nNXP\nSemiconductors\nN.V.\n2015.\nAll\nrights\nreserved.\n16-channel,\n12-bit\nPWM\nFm+\nI C-bus"
+  },
+  {
+    "faiss_index_id": 82,
+    "text": "reserved.\n16-channel,\n12-bit\nPWM\nFm+\nI C-bus\nLED\ncontroller\n2\nNXP\nSemiconductors\nPCA9685\nSTOP\n0 4095 0 4095 0 4095 0 4095 0\nregister(s) updated in this cycle output(s) updated in this cycle\nexample 1\nLEDn_ON 3071 3071\nLEDn_OFF 1023 511\nexample 2\nLEDn_ON 3071 3413 3413\nLEDn_OFF 1023 511 511\nexample 3\nLEDn_ON 3071 3071 3071\nLEDn_OFF 1023 3413 3413\non\nexample 4 off\nLEDn_ON\nLEDn_OFF\n002aad195\nExample 1: LEDn_ON unchanged and LEDn_OFF decreased, but delay still > LEDn_OFF"
+  },
+  {
+    "faiss_index_id": 83,
+    "text": "Example 2: LEDn_ON changed and LEDn_OFF changed, but delay still > LEDn_OFF\nExample 3: LEDn_ON unchanged and LEDn_OFF increased where LEDn_ON < LEDn_OFF\nExample 4: LEDn_ON[12] = 1 and LEDn_OFF[12] changed from 0 to 1\nFig 11. Update examples when LEDn_ON > LEDn_OFFPCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nTable 7. LED_ON, LED_OFF control registers (address 06h to 45h) bit description\nLegend: * default value.\nAddress Register Bit Symbol Access Value Description"
+  },
+  {
+    "faiss_index_id": 84,
+    "text": "06h LED0_ON_L 7:0 LED0_ON_L[7:0] R/W 0000 0000* LEDn_ON count for LED0, 8LSBs\n07h LED0_ON_H 7:5 reserved R 000* non-writable\n4 LED0_ON_H[4] R/W 0* LED0 full ON\n3:0 LED0_ON_H[3:0] R/W 0000* LEDn_ON count for LED0, 4MSBs\n08h LED0_OFF_L 7:0 LED0_OFF_L[7:0] R/W 0000 0000* LEDn_OFF count for LED0, 8LSBs\n09h LED0_OFF_H 7:5 reserved R 000* non-writable\n4 LED0_OFF_H[4] R/W 1* LED0 full OFF\n3:0 LED0_OFF_H[3:0] R/W 0000*\n0Ah LED1_ON_L 7:0 LED1_ON_L[7:0] R/W 0000 0000* LEDn_ON count for LED1, 8LSBs"
+  },
+  {
+    "faiss_index_id": 85,
+    "text": "0Bh LED1_ON_H 7:5 reserved R 000* non-writable\n4 LED1_ON_H[4] R/W 0* LED1 full ON\n3:0 LED1_ON_H[3:0] R/W 0000* LEDn_ON count for LED1, 4MSBs\n0Ch LED1_OFF_L 7:0 LED1_OFF_L[7:0] R/W 0000 0000* LEDn_OFF count for LED1, 8LSBs\n0Dh LED1_OFF_H 7:5 reserved R 000* non-writable\n4 LED1_OFF_H[4] R/W 1* LED1 full OFF\n3:0 LED1_OFF_H[3:0] R/W 0000* LEDn_OFF count for LED1, 4MSBs\n0Eh LED2_ON_L 7:0 LED2_ON_L[7:0] R/W 0000 0000* LEDn_ON count for LED2, 8LSBs\n0Fh LED2_ON_H 7:5 reserved R 000* non-writable"
+  },
+  {
+    "faiss_index_id": 86,
+    "text": "0Fh LED2_ON_H 7:5 reserved R 000* non-writable\n4 LED2_ON_H[4] R/W 0* LED2 full ON\n3:0 LED2_ON_H[3:0] R/W 0000* LEDn_ON count for LED2, 4MSBs\n10h LED2_OFF_L 7:0 LED2_OFF_L[7:0] R/W 0000 0000* LEDn_OFF count for LED2, 8LSBs\n11h LED2_OFF_H 7:5 reserved R 000* non-writable\n4 LED2_OFF_H[4] R/W 1* LED2 full OFF\n3:0 LED2_OFF_H[3:0] R/W 0000* LEDn_OFF count for LED2, 4MSBs\n12h LED3_ON_L 7:0 LED3_ON_L[7:0] R/W 0000 0000* LEDn_ON count for LED3, 8LSBs\n13h LED3_ON_H 7:5 reserved R 000* non-writable"
+  },
+  {
+    "faiss_index_id": 87,
+    "text": "13h LED3_ON_H 7:5 reserved R 000* non-writable\n4 LED3_ON_H[4] R/W 0* LED3 full ON\n3:0 LED3_ON_H[3:0] R/W 0000* LEDn_ON count for LED3, 4MSBs\n14h LED3_OFF_L 7:0 LED3_OFF_L[7:0] R/W 0000 0000* LEDn_OFF count for LED3, 8LSBs\n15h LED3_OFF_H 7:5 reserved R 000* non-writable\n4 LED3_OFF_H[4] R/W 1* LED3 full OFF\n3:0 LED3_OFF_H[3:0] R/W 0000* LEDn_OFF count for LED3, 4MSBs\n16h LED4_ON_L 7:0 LED4_ON_L[7:0] R/W 0000 0000* LEDn_ON count for LED4, 8LSBs\n17h LED4_ON_H 7:5 reserved R 000* non-writable"
+  },
+  {
+    "faiss_index_id": 88,
+    "text": "17h LED4_ON_H 7:5 reserved R 000* non-writable\n4 LED4_ON_H[4] R/W 0* LED4 full ON\n3:0 LED4_ON_H[3:0] R/W 0000* LEDn_ON count for LED4, 4MSBs\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 21 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nTable 7. LED_ON, LED_OFF control registers (address 06h to 45h) bit description …continued"
+  },
+  {
+    "faiss_index_id": 89,
+    "text": "Legend: * default value.\nAddress Register Bit Symbol Access Value Description\n18h LED4_OFF_L 7:0 LED4_OFF_L[7:0] R/W 0000 0000* LEDn_OFF count for LED4, 8LSBs\n19h LED4_OFF_H 7:5 reserved R 000* non-writable\n4 LED4_OFF_H[4] R/W 1* LED4 full OFF\n3:0 LED4_OFF_H[3:0] R/W 0000* LEDn_OFF count for LED4, 4MSBs\n1Ah LED5_ON_L 7:0 LED5_ON_L[7:0] R/W 0000 0000* LEDn_ON count for LED5, 8LSBs\n1Bh LED5_ON_H 7:5 reserved R 000* non-writable\n4 LED5_ON_H[4] R/W 0* LED5 full ON"
+  },
+  {
+    "faiss_index_id": 90,
+    "text": "4 LED5_ON_H[4] R/W 0* LED5 full ON\n3:0 LED5_ON_H[3:0] R/W 0000* LEDn_ON count for LED5, 4MSBs\n1Ch LED5_OFF_L 7:0 LED5_OFF_L[7:0] R/W 0000 0000* LEDn_OFF count for LED5, 8LSBs\n1Dh LED5_OFF_H 7:5 reserved R 000* non-writable\n4 LED5_OFF_H[4] R/W 1* LED5 full OFF\n3:0 LED5_OFF_H[3:0] R/W 0000* LEDn_OFF count for LED5, 4MSBs\n1Eh LED6_ON_L 7:0 LED6_ON_L[7:0] R/W 0000 0000* LEDn_ON count for LED6, 8LSBs\n1Fh LED6_ON_H 7:5 reserved R 000* non-writable\n4 LED6_ON_H[4] R/W 0* LED6 full ON"
+  },
+  {
+    "faiss_index_id": 91,
+    "text": "4 LED6_ON_H[4] R/W 0* LED6 full ON\n3:0 LED6_ON_H[3:0] R/W 0000* LEDn_ON count for LED6, 4MSBs\n20h LED6_OFF_L 7:0 LED6_OFF_L[7:0] R/W 0000 0000* LEDn_OFF count for LED6, 8LSBs\n21h LED6_OFF_H 7:5 reserved R 000* non-writable\n4 LED6_OFF_H[4] R/W 1* LED6 full OFF\n3:0 LED6_OFF_H[3:0] R/W 0000* LEDn_OFF count for LED6, 4MSBs\n22h LED7_ON_L 7:0 LED7_ON_L[7:0] R/W 0000 0000* LEDn_ON count for LED7, 8LSBs\n23h LED7_ON_H 7:5 reserved R 000* non-writable\n4 LED7_ON_H[4] R/W 0* LED7 full ON"
+  },
+  {
+    "faiss_index_id": 92,
+    "text": "4 LED7_ON_H[4] R/W 0* LED7 full ON\n3:0 LED7_ON_H[3:0] R/W 0000* LEDn_ON count for LED7, 4MSBs\n24h LED7_OFF_L 7:0 LED7_OFF_L[7:0] R/W 0000 0000* LEDn_OFF count for LED7, 8LSBs\n25h LED7_OFF_H 7:5 reserved R 000* non-writable\n4 LED7_OFF_H[4] R/W 1* LED7 full OFF\n3:0 LED7_OFF_H[3:0] R/W 0000* LEDn_OFF count for LED7, 4MSBs\n26h LED8_ON_L 7:0 LED8_ON_L[7:0] R/W 0000 0000* LEDn_ON count for LED8, 8LSBs\n27h LED8_ON_H 7:5 reserved R 000* non-writable\n4 LED8_ON_H[4] R/W 0* LED8 full ON"
+  },
+  {
+    "faiss_index_id": 93,
+    "text": "4 LED8_ON_H[4] R/W 0* LED8 full ON\n3:0 LED8_ON_H[3:0] R/W 0000* LEDn_ON count for LED8, 4MSBs\n28h LED8_OFF_L 7:0 LED8_OFF_L[7:0] R/W 0000 0000* LEDn_OFF count for LED8, 8LSBs\n29h LED8_OFF_H 7:5 reserved R 000* non-writable\n4 LED8_OFF_H[4] R/W 1* LED8 full OFF\n3:0 LED8_OFF_H[3:0] R/W 0000* LEDn_OFF count for LED8, 4MSBs\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved."
+  },
+  {
+    "faiss_index_id": 94,
+    "text": "Product data sheet Rev. 4 — 16 April 2015 22 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nTable 7. LED_ON, LED_OFF control registers (address 06h to 45h) bit description …continued\nLegend: * default value.\nAddress Register Bit Symbol Access Value Description\n2Ah LED9_ON_L 7:0 LED9_ON_L[7:0] R/W 0000 0000* LEDn_ON count for LED9, 8LSBs\n2Bh LED9_ON_H 7:5 reserved R 000* non-writable\n4 LED9_ON_H[4] R/W 0* LED9 full ON"
+  },
+  {
+    "faiss_index_id": 95,
+    "text": "4 LED9_ON_H[4] R/W 0* LED9 full ON\n3:0 LED9_ON_H[3:0] R/W 0000* LEDn_ON count for LED9, 4MSBs\n2Ch LED9_OFF_L 7:0 LED9_OFF_L[7:0] R/W 0000 0000* LEDn_OFF count for LED9, 8LSBs\n2Dh LED9_OFF_H 7:5 reserved R 000* non-writable\n4 LED9_OFF_H[4] R/W 1* LED9 full OFF\n3:0 LED9_OFF_H[3:0] R/W 0000* LEDn_OFF count for LED9, 4MSBs\n2Eh LED10_ON_L 7:0 LED10_ON_L[7:0] R/W 0000 0000* LEDn_ON count for LED10, 8LSBs\n2Fh LED10_ON_H 7:5 reserved R 000* non-writable\n4 LED10_ON_H[4] R/W 0* LED10 full ON"
+  },
+  {
+    "faiss_index_id": 96,
+    "text": "4 LED10_ON_H[4] R/W 0* LED10 full ON\n3:0 LED10_ON_H[3:0] R/W 0000* LEDn_ON count for LED10, 4MSBs\n30h LED10_OFF_L 7:0 LED10_OFF_L[7:0] R/W 0000 0000* LEDn_OFF count for LED10, 8LSBs\n31h LED10_OFF_H 7:5 reserved R 000* non-writable\n4 LED10_OFF_H[4] R/W 1* LED10 full OFF\n3:0 LED10_OFF_H[3:0] R/W 0000* LEDn_OFF count for LED10, 4MSBs\n32h LED11_ON_L 7:0 LED11_ON_L[7:0] R/W 0000 0000* LEDn_ON count for LED11, 8LSBs\n33h LED11_ON_H 7:5 reserved R 000* non-writable\n4 LED11_ON_H[4] R/W 0* LED11 full ON"
+  },
+  {
+    "faiss_index_id": 97,
+    "text": "4 LED11_ON_H[4] R/W 0* LED11 full ON\n3:0 LED11_ON_H[3:0] R/W 0000* LEDn_ON count for LED11, 4MSBs\n34h LED11_OFF_L 7:0 LED11_OFF_L[7:0] R/W 0000 0000* LEDn_OFF count for LED11, 8LSBs\n35h LED11_OFF_H 7:5 reserved R 000* non-writable\n4 LED11_OFF_H[4] R/W 1* LED11 full OFF\n3:0 LED11_OFF_H[3:0] R/W 0000* LEDn_OFF count for LED11, 4MSBs\n36h LED12_ON_L 7:0 LED12_ON_L[7:0] R/W 0000 0000* LEDn_ON count for LED12, 8LSBs\n37h LED12_ON_H 7:5 reserved R 000* non-writable\n4 LED12_ON_H[4] R/W 0* LED12 full ON"
+  },
+  {
+    "faiss_index_id": 98,
+    "text": "4 LED12_ON_H[4] R/W 0* LED12 full ON\n3:0 LED12_ON_H[3:0] R/W 0000* LEDn_ON count for LED12, 4MSBs\n38h LED12_OFF_L 7:0 LED12_OFF_L[7:0] R/W 0000 0000* LEDn_OFF count for LED12, 8LSBs\n39h LED12_OFF_H 7:5 reserved R 000* non-writable\n4 LED12_OFF_H[4] R/W 1* LED12 full OFF\n3:0 LED12_OFF_H[3:0] R/W 0000* LEDn_OFF count for LED12, 4MSBs\n3Ah LED13_ON_L 7:0 LED13_ON_L[7:0] R/W 0000 0000* LEDn_ON count for LED13, 8LSBs\n3Bh LED13_ON_H 7:5 reserved R 000* non-writable\n4 LED13_ON_H[4] R/W 0* LED13 full ON"
+  },
+  {
+    "faiss_index_id": 99,
+    "text": "4 LED13_ON_H[4] R/W 0* LED13 full ON\n3:0 LED13_ON_H[3:0] R/W 0000* LEDn_ON count for LED13, 4MSBs\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 23 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nTable 7. LED_ON, LED_OFF control registers (address 06h to 45h) bit description …continued\nLegend: * default value."
+  },
+  {
+    "faiss_index_id": 100,
+    "text": "Legend: * default value.\nAddress Register Bit Symbol Access Value Description\n3Ch LED13_OFF_L 7:0 LED13_OFF_L[7:0] R/W 0000 0000* LEDn_OFF count for LED13, 8LSBs\n3Dh LED13_OFF_H 7:5 reserved R 000* non-writable\n4 LED13_OFF_H[4] R/W 1* LED13 full OFF\n3:0 LED13_OFF_H[3:0] R/W 0000* LEDn_OFF count for LED13, 4MSBs\n3Eh LED14_ON_L 7:0 LED14_ON_L[7:0] R/W 0000 0000* LEDn_ON count for LED14, 8LSBs\n3Fh LED14_ON_H 7:5 reserved R 000* non-writable\n4 LED14_ON_H[4] R/W 0* LED14 full ON"
+  },
+  {
+    "faiss_index_id": 101,
+    "text": "4 LED14_ON_H[4] R/W 0* LED14 full ON\n3:0 LED14_ON_H[3:0] R/W 0000* LEDn_ON count for LED14, 4MSBs\n40h LED14_OFF_L 7:0 LED14_OFF_L[7:0] R/W 0000 0000* LEDn_OFF count for LED14, 8LSBs\n41h LED14_OFF_H 7:5 reserved R 000* non-writable\n4 LED14_OFF_H[4] R/W 1* LED14 full OFF\n3:0 LED14_OFF_H[3:0] R/W 0000* LEDn_OFF count for LED14, 4MSBs\n42h LED15_ON_L 7:0 LED15_ON_L[7:0] R/W 0000 0000* LEDn_ON count for LED15, 8LSBs\n43h LED15_ON_H 7:5 reserved R 000* non-writable\n4 LED15_ON_H[4] R/W 0* LED15 full ON"
+  },
+  {
+    "faiss_index_id": 102,
+    "text": "4 LED15_ON_H[4] R/W 0* LED15 full ON\n3:0 LED15_ON_H[3:0] R/W 0000* LEDn_ON count for LED15, 4MSBs\n44h LED15_OFF_L 7:0 LED15_OFF_L[7:0] R/W 0000 0000* LEDn_OFF count for LED15, 8LSBs\n45h LED15_OFF_H 7:5 reserved R 000* non-writable\n4 LED15_OFF_H[4] R/W 1* LED15 full OFF\n3:0 LED15_OFF_H[3:0] R/W 0000* LEDn_OFF count for LED15, 4MSBs\nThe LEDn_ON_H output control bit4, when set to logic1, causes the output to be always\nON. The turning ON of the LED is delayed by the amount in the LEDn_ON registers."
+  },
+  {
+    "faiss_index_id": 103,
+    "text": "LEDn_OFF[11:0] are ignored. When this bit=0, then the LEDn_ON and LEDn_OFF\nregisters are used according to their normal definition.\nThe LEDn_OFF_H output control bit4, when set to logic1, causes the output to be\nalways OFF. In this case the values in the LEDn_ON registers are ignored.\nRemark: When all LED outputs are configured as ‘alwaysOFF’, the prescale counter and\nall associated PWM cycle timing logic are disabled. If LEDn_ON_H[4] and"
+  },
+  {
+    "faiss_index_id": 104,
+    "text": "LEDn_OFF_H[4] are set at the same time, the LEDn_OFF_H[4] function takes\nprecedence.\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 24 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n7.3.4 ALL_LED_ON and ALL_LED_OFF control\nThe ALL_LED_ON and ALL_LED_OFF registers allow just four I2C-bus write sequences"
+  },
+  {
+    "faiss_index_id": 105,
+    "text": "to fill all the ON and OFF registers with the same patterns.\nTable 8. ALL_LED_O N and ALL_LED_OFF control registers (address FAh to FEh) bit description\nLegend: * default value.\nAddress Register Bit Symbol Access Value Description\nFAh ALL_LED_ON_L 7:0 ALL_LED_ON_L[7:0] W only 0000 0000* LEDn_ON count for ALL_LED, 8MSBs\nFBh ALL_LED_ON_H 7:5 reserved R 000* non-writable\n4 ALL_LED_ON_H[4] W only 1* ALL_LED full ON\n3:0 ALL_LED_ON_H[3:0] W only 0000* LEDn_ON count for ALL_LED, 4MSBs"
+  },
+  {
+    "faiss_index_id": 106,
+    "text": "FCh ALL_LED_OFF_L 7:0 ALL_LED_OFF_L[7:0] W only 0000 0000* LEDn_OFF count for ALL_LED,\n8MSBs\nFDh ALL_LED_OFF_H 7:5 reserved R 000* non-writable\n4 ALL_LED_OFF_H[4] W only 1* ALL_LED full OFF\n3:0 ALL_LED_OFF_H[3:0] W only 0000* LEDn_OFF count for ALL_LED,\n4MSBs\nFEh PRE_SCALE 7:0 PRE_SCALE[7:0] R/W 0001 1110* prescaler to program the PWM output\nfrequency (default is 200 Hz)\nThe LEDn_ON and LEDn_OFF counts can vary from 0 to 4095. The LEDn_ON and"
+  },
+  {
+    "faiss_index_id": 107,
+    "text": "LEDn_OFF count registers should never be programmed with the same values.\nBecause the loading of the LEDn_ON and LEDn_OFF registers is via the I2C-bus, and\nasynchronous to the internal oscillator, we want to ensure that we do not see any visual\nartifacts of changing the ON and OFF values. This is achieved by updating the changes at\nthe end of the LOW cycle.\n7.3.5 PWM frequency PRE_SCALE\nThe hardware forces a minimum value that can be loaded into the PRE_SCALE register"
+  },
+  {
+    "faiss_index_id": 108,
+    "text": "at ‘3’. The PRE_SCALE register defines the frequency at which the outputs modulate. The\nprescale value is determined with the formula shown in Equation1:\nprescale value = round ------------- o --- s --- c --- _ --- c --- l -- o ---- c --- k ------------- –1 (1)\n4096update_rate\nwhere the update rate is the output modulation frequency required. For example, for an\noutput default frequency of 200Hz with an oscillator clock frequency of 25MHz:"
+  },
+  {
+    "faiss_index_id": 109,
+    "text": "prescale value = round ---- 2 --- 5 --- -- M ----- H ----- z ----- –1 = 30 0x1Eh (2)\n4096200\nThe maximum PWM frequency is 1526 Hz if the PRE_SCALE register is set \"0x03h\".\nThe minimum PWM frequency is 24 Hz if the PRE_SCALE register is set \"0xFFh\".\nThe PRE_SCALE register can only be set when the SLEEP bit of MODE1 register is set to\nlogic1.\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved."
+  },
+  {
+    "faiss_index_id": 110,
+    "text": "Product data sheet Rev. 4 — 16 April 2015 25 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n7.3.6 SUBADR1 to SUBADR3, I2C-bus subaddress 1 to 3\nTable 9. SUBADR1toSUBADR3 - I2C-bus subaddress registers 0to3 (address 02h to\n04h) bit description\nLegend: * default value.\nAddress Register Bit Symbol Access Value Description\n02h SUBADR1 7:1 A1[7:1] R/W 1110 001* I2C-bus subaddress 1\n0 A1[0] R only 0* reserved"
+  },
+  {
+    "faiss_index_id": 111,
+    "text": "0 A1[0] R only 0* reserved\n03h SUBADR2 7:1 A2[7:1] R/W 1110 010* I2C-bus subaddress 2\n0 A2[0] R only 0* reserved\n04h SUBADR3 7:1 A3[7:1] R/W 1110 100* I2C-bus subaddress 3\n0 A3[0] R only 0* reserved\nSubaddresses are programmable through the I2C-bus. Default power-up values are E2h,\nE4h, E8h, and the device(s) will not acknowledge these addresses right after power-up\n(the corresponding SUBx bit in MODE1 register is equal to 0)."
+  },
+  {
+    "faiss_index_id": 112,
+    "text": "Once subaddresses have been programmed to their right values, SUBx bits need to be\nset to logic1 in order to have the device acknowledging these addresses (MODE1\nregister).\nOnly the 7MSBs representing the I2C-bus subaddress are valid. The LSB in SUBADRx\nregister is a read-only bit (0).\nWhen SUBx is set to logic1, the corresponding I2C-bus subaddress can be used during\neither an I2C-bus read or write sequence.\n7.3.7 ALLCALLADR, LED All Call I2C-bus address"
+  },
+  {
+    "faiss_index_id": 113,
+    "text": "7.3.7 ALLCALLADR, LED All Call I2C-bus address\nTable 10. ALLCALLADR - LED All Call I2C-bus address register (address 05h) bit\ndescription\nLegend: * default value.\nAddress Register Bit Symbol Access Value Description\n05h ALLCALLADR 7:1 AC[7:1] R/W 1110 000* ALLCALL I2C-bus\naddress register\n0 AC[0] R only 0* reserved\nThe LED All Call I2C-bus address allows all the PCA9685s in the bus to be programmed\nat the same time (ALLCALL bit in register MODE1 must be equal to 1 (power-up default"
+  },
+  {
+    "faiss_index_id": 114,
+    "text": "state)). This address is programmable through the I2C-bus and can be used during either\nan I2C-bus read or write sequence. The register address can also be programmed as a\nSubCall.\nOnly the 7MSBs representing the All Call I2C-bus address are valid. The LSB in\nALLCALLADR register is a read-only bit (0).\nIf ALLCALL bit=0, the device does not acknowledge the address programmed in register\nALLCALLADR."
+  },
+  {
+    "faiss_index_id": 115,
+    "text": "ALLCALLADR.\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 26 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n7.4 Active LOW output enable input\nThe activeLOW output enable (OE) pin, allows to enable or disable all the LED outputs at\nthe same time.\n• When a LOW level is applied to OE pin, all the LED outputs are enabled and follow"
+  },
+  {
+    "faiss_index_id": 116,
+    "text": "the output state defined in the LEDn_ON and LEDn_OFF registers with the polarity\ndefined by INVRT bit (MODE2 register).\n• When a HIGH level is applied to OE pin, all the LED outputs are programmed to the\nvalue that is defined by OUTNE[1:0] in the MODE2 register.\nTable 11. LED outputs when OE=1\nOUTNE1 OUTNE0 LED outputs\n0 0 0\n0 1 1 if OUTDRV=1, high-impedance if OUTDRV=0\n1 0 high-impedance\n1 1 high-impedance\nThe OE pin can be used as a synchronization signal to switch on/off several PCA9685"
+  },
+  {
+    "faiss_index_id": 117,
+    "text": "devices at the same time. This requires an external clock reference that provides blinking\nperiod and the duty cycle.\nThe OE pin can also be used as an external dimming control signal. The frequency of the\nexternal clock must be high enough not to be seen by the human eye, and the duty cycle\nvalue determines the brightness of the LEDs.\n7.5 Power-on reset\nWhen power is applied to V , an internal power-on reset holds the PCA9685 in a reset\nDD"
+  },
+  {
+    "faiss_index_id": 118,
+    "text": "DD\ncondition until V has reached V . At this point, the reset condition is released and the\nDD POR\nPCA9685 registers and I2C-bus state machine are initialized to their default states.\nThereafter, V must be lowered below 0.2V to reset the device.\nDD\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 27 of 52PCA9685\nNXP Semiconductors"
+  },
+  {
+    "faiss_index_id": 119,
+    "text": "NXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n7.6 Software reset\nThe Software Reset Call (SWRST Call) allows all the devices in the I2C-bus to be reset to\nthe power-up state value through a specific formatted I2C-bus command. To be performed\ncorrectly, it implies that the I2C-bus is functional and that there is no device hanging the\nbus.\nThe SWRST Call function is defined as the following:\n1. A START command is sent by the I2C-bus master."
+  },
+  {
+    "faiss_index_id": 120,
+    "text": "1. A START command is sent by the I2C-bus master.\n2. The reserved SWRST I2C-bus address ‘0000000’ with the R/W bit set to ‘0’ (write) is\nsent by the I2C-bus master.\n3. The PCA9685 device(s) acknowledge(s) after seeing the General Call address\n‘00000000’ (00h) only. If the R/W bit is set to ‘1’ (read), no acknowledge is returned to\nthe I2C-bus master.\n4. Once the General Call address has been sent and acknowledged, the master sends\n1byte with 1 specific value (SWRST data byte1):"
+  },
+  {
+    "faiss_index_id": 121,
+    "text": "1byte with 1 specific value (SWRST data byte1):\na. Byte 1=06h: the PCA9685 acknowledges this value only. If byte1 is not equal to\n06h, the PCA9685 does not acknowledge it.\nIf more than 1byte of data is sent, the PCA9685 does not acknowledge any more.\n5. Once the correctbyte (SWRST data byte1) has been sent and correctly\nacknowledged, the master sends a STOP command to end the SWRSTCall: the\nPCA9685 then resets to the default value (power-up value) and is ready to be"
+  },
+  {
+    "faiss_index_id": 122,
+    "text": "addressed again within the specified bus free time (t ).\nBUF\nGeneral Call address SWRST data byte 1\nS 0 0 0 0 0 0 0 0 A 0 0 0 0 0 1 1 0 A P\nSTART condition acknowledge acknowledge\nfrom slave from slave\nSTOP\ncondition\n002aac900\nFig 12. SWRST Call\nThe I2C-bus master must interpret a non-acknowledge from the PCA9685 (at any time) as\na ‘SWRST Call Abort’. The PCA9685 does not initiate a reset of its registers. This\nhappens only when the format of the SWRST Call sequence is not correct."
+  },
+  {
+    "faiss_index_id": 123,
+    "text": "PCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 28 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n7.7 Using the PCA9685 with and without external drivers\nThe PCA9685 LED output drivers are 5.5V only tolerant and can sink up to 25mA at 5V.\nIf the device needs to drive LEDs to a higher voltage and/or higher current, use of an"
+  },
+  {
+    "faiss_index_id": 124,
+    "text": "external driver is required.\n• INVRT bit (MODE2 register) can be used to keep the LED PWM control firmware the\nsame independently of the type of external driver. This bit allows LED output polarity\ninversion/non-inversion only when OE=0.\n• OUTDRV bit (MODE2 register) allows minimizing the amount of external components\nrequired to control the external driver (N-type or P-type device).\nTable 12. Use of INVRT and OUTDRV based on connection to the LEDn outputs when OE=0[1]"
+  },
+  {
+    "faiss_index_id": 125,
+    "text": "INVRT OUTDRV Direct connection to LEDn External N-type driver External P-type driver\nFirmware External Firmware External Firmware External\npull-up pull-up pull-up\nresistor resistor resistor\n0 0 formulas and LED LED current formulas and LED required formulas and LED required\noutput state values limiting R[2] output state output state values\ninverted values inverted apply\n0 1 formulas and LED LED current formulas and LED not formulas and LED not required"
+  },
+  {
+    "faiss_index_id": 126,
+    "text": "output state values limiting R[2] output state required[3] output state values\ninverted values apply[3] inverted\n1 0 formulas and LED LED current formulas and LED required formulas and LED required\noutput state values limiting R output state output state values\napply[2] values apply inverted\n1 1 formulas and LED LED current formulas and LED not required formulas and LED not\noutput state values limiting R output state output state values required[4]\napply[2] values inverted apply[4]"
+  },
+  {
+    "faiss_index_id": 127,
+    "text": "apply[2] values inverted apply[4]\n[1] When OE=1, LED output state is controlled only by OUTNE[1:0] bits (MODE2 register).\n[2] Correct configuration when LEDs directly connected to the LEDn outputs (connection to V through current limiting resistor).\nDD\n[3] Optimum configuration when external N-type (NPN, NMOS) driver used.\n[4] Optimum configuration when external P-type (PNP, PMOS) driver used.\n+5 V +5 V\nLED0\nLED0\nLED0 +VDD\n002aad169 002aad170 002aad171\nINVRT = 0 INVRT = 1 INVRT = 1"
+  },
+  {
+    "faiss_index_id": 128,
+    "text": "INVRT = 0 INVRT = 1 INVRT = 1\nOUTDRV = 1 OUTDRV = 1 OUTDRV = 0\nFig 13. External N-type driver Fig 14. External P-type driver Fig 15. Direct LED connection\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 29 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n8. Characteristics of the I2C-bus"
+  },
+  {
+    "faiss_index_id": 129,
+    "text": "8. Characteristics of the I2C-bus\nThe I2C-bus is for 2-way, 2-line communication between different ICs or modules. The two\nlines are a serial data line (SDA) and a serial clock line (SCL). Both lines must be\nconnected to a positive supply via a pull-up resistor when connected to the output stages\nof a device. Data transfer may be initiated only when the bus is not busy.\n8.1 Bit transfer\nOne data bit is transferred during each clock pulse. The data on the SDA line must remain"
+  },
+  {
+    "faiss_index_id": 130,
+    "text": "stable during the HIGH period of the clock pulse as changes in the data line at this time\nwill be interpreted as control signals (see Figure16).\nSDA\nSCL\ndata line change\nstable; of data\ndata valid allowed mba607\nFig 16. Bit transfer\n8.1.1 START and STOP conditions\nBoth data and clock lines remain HIGH when the bus is not busy. A HIGH-to-LOW\ntransition of the data line while the clock is HIGH is defined as the START condition (S). A"
+  },
+  {
+    "faiss_index_id": 131,
+    "text": "LOW-to-HIGH transition of the data line while the clock is HIGH is defined as the STOP\ncondition (P) (see Figure17).\nSDA\nSCL\nS P\nSTART condition STOP condition\nmba608\nFig 17. Definition of START and STOP conditions\n8.2 System configuration\nA device generating a message is a ‘transmitter’; a device receiving is the ‘receiver’. The\ndevice that controls the message is the ‘master’ and the devices which are controlled by\nthe master are the ‘slaves’ (see Figure18)."
+  },
+  {
+    "faiss_index_id": 132,
+    "text": "the master are the ‘slaves’ (see Figure18).\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 30 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nSDA\nSCL\nMASTER SLAVE SLAVE MASTER MASTER I2C-BUS\nTRANSMITTER/ RECEIVER TRANSMITTER/ TRANSMITTER TRANSMITTER/ MULTIPLEXER\nRECEIVER RECEIVER RECEIVER\nSLAVE\n002aaa966\nFig 18. System configuration"
+  },
+  {
+    "faiss_index_id": 133,
+    "text": "SLAVE\n002aaa966\nFig 18. System configuration\n8.3 Acknowledge\nThe number of data bytes transferred between the START and the STOP conditions from\ntransmitter to receiver is not limited. Each byte of eightbits is followed by one\nacknowledge bit. The acknowledge bit is a HIGH level put on the bus by the transmitter,\nwhereas the master generates an extra acknowledge related clock pulse.\nA slave receiver which is addressed must generate an acknowledge after the reception of"
+  },
+  {
+    "faiss_index_id": 134,
+    "text": "each byte. Also a master must generate an acknowledge after the reception of each byte\nthat has been clocked out of the slave transmitter. The device that acknowledges has to\npull down the SDA line during the acknowledge clock pulse, so that the SDA line is stable\nLOW during the HIGH period of the acknowledge related clock pulse; set-up time and hold\ntime must be taken into account.\nA master receiver must signal an end of data to the transmitter by not generating an"
+  },
+  {
+    "faiss_index_id": 135,
+    "text": "acknowledge on the last byte that has been clocked out of the slave. In this event, the\ntransmitter must leave the data line HIGH to enable the master to generate a STOP\ncondition.\ndata output\nby transmitter\nnot acknowledge\ndata output\nby receiver\nacknowledge\nSCL from master\n1 2 8 9\nS\nclock pulse for\nSTART acknowledgement\ncondition 002aaa987\nFig 19. Acknowledgement on the I2C-bus"
+  },
+  {
+    "faiss_index_id": 136,
+    "text": "Fig 19. Acknowledgement on the I2C-bus\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 31 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n9. Bus transactions\nslave address control register data for register D[7:0](1)\nS 1 A5 A4 A3 A2 A1 A0 0 A D7 D6 D5 D4 D3 D2 D1 D0 A A P\nSTART condition R/W acknowledge acknowledge acknowledge"
+  },
+  {
+    "faiss_index_id": 137,
+    "text": "from slave from slave from slave\nSTOP\ncondition\n002aac829\n(1) See Table4 for register definition.\nFig 20. Write to a specific register\nslave address control register = MODE1 register MODE1 register MODE2 register\nS 1 A5 A4 A3 A2 A1 A0 0 A 0 0 0 0 0 0 0 0 A 1 A A (cont.)\nSTART condition R/W acknowledge acknowledge AI bit set acknowledge acknowledge\nfrom slave from slave from slave from slave\nLED15_OFF_L register LED15_OFF_H register\n(cont.) A A P\nacknowledge acknowledge\nfrom slave from slave"
+  },
+  {
+    "faiss_index_id": 138,
+    "text": "acknowledge acknowledge\nfrom slave from slave\nSTOP\ncondition 002aad187\nFig 21. Write to all registers using the Auto-Increment feature; AI initially clear\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 32 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nslave address control register = MODE1 register MODE1 register"
+  },
+  {
+    "faiss_index_id": 139,
+    "text": "S 1 A5 A4 A3 A2 A1 A0 0 A 0 0 0 0 0 0 0 0 A 1 A (cont.)\nSTART condition R/W acknowledge acknowledge AI bit set acknowledge\nfrom slave from slave from slave\nslave address data from MODE1 data from MODE2\n(cont.) Sr 1 A5 A4 A3 A2 A1 A0 1 A A A\nReSTART R/W acknowledge acknowledge acknowledge\ncondition from slave from master from master\ndata from LED15_OFF_H register\nA P\nnot acknowledge STOP\nfrom master condition\n002aad188"
+  },
+  {
+    "faiss_index_id": 140,
+    "text": "from master condition\n002aad188\nFig 22. Read all registers using the Auto-Increment feature; AI initially clear\ncontrol register =\nslave address ALL_LED_ON_L register ALL_LED_ON_L register ALL_LED_ON_H register\nS 1 A5 A4 A3 A2 A1 A0 0 A 1 1 1 1 1 0 1 0 A A A (cont.)\nSTART condition R/W acknowledge acknowledge acknowledge acknowledge\nfrom slave from slave from slave from slave\nALL_LED_OFF_L register ALL_LED_OFF_H register\n(cont.) A A P\nacknowledge acknowledge STOP condition\nfrom slave from slave"
+  },
+  {
+    "faiss_index_id": 141,
+    "text": "from slave from slave\n002aad189\nFig 23. Write to ALL_LED_ON and ALL_LED_OFF registers using the Auto-Increment feature; AI initially set\ncontrol register =\nslave address ALL_LED_OFF_H register ALL_LED_OFF_H register\nS 1 A5 A4 A3 A2 A1 A0 0 A 1 1 1 1 1 1 0 1 A 0 0 0 1 X X X X A P\nSTART condition R/W acknowledge acknowledge acknowledge\nfrom slave from slave from slave\nSTOP\ncondition\n002aad190\nFig 24. Write to ALL_LED_OFF_H to turn OFF all PWMs"
+  },
+  {
+    "faiss_index_id": 142,
+    "text": "PCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 33 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nslave address control register data for MODE1 register\nsequence (A)(1) S 1 A5 A4 A3 A2 A1 A0 0 A 0 0 0 0 0 0 0 0 A 0 0 1 0 0 1 1 1 A P\nMODE1\nSTART condition R/W register selection AI on enable ALL CALL STOP\ncondition"
+  },
+  {
+    "faiss_index_id": 143,
+    "text": "condition\nacknowledge acknowledge acknowledge\nfrom slave from slave from slave\nslave address control register new LEDALLCALL I2C-bus address\nsequence (B)(1) S 1 A5 A4 A3 A2 A1 A0 0 A 0 0 0 0 0 1 0 1 A 1 0 1 0 1 0 1 X A P\nALLCALLADR\nSTART condition R/W acknowledge acknowledge STOP\nregister selection\nfrom slave from slave condition\nacknowledge\nfrom slave data for control register\nLEDALLCALL I2C-bus address control register ALL_LED_ON_L"
+  },
+  {
+    "faiss_index_id": 144,
+    "text": "sequence (C) S 1 0 1 0 1 0 1 0 A 1 1 1 1 1 0 1 0 A 0 0 0 0 0 0 0 0 A (cont.)\nSTART condition R/W ALL_LED_ON_L acknowledge(2) acknowledge(2)\nregister selection\nacknowledge(2) from all the from slave from slave\ndevices configured for the new\nLEDALLCALL I2C-bus address ALL_LED_OFF_H\n(cont.) 0 0 0 0 0 0 0 0 A 0 0 0 0 0 0 0 0 A 0 0 0 0 1 0 0 0 A P\nALL_LED_ON_H data for ALL_LED_OFF_L\nacknowledge(2) acknowledge(2) STOP\ncontrol register control register\nfrom slave from slave condition\nacknowledge(2)"
+  },
+  {
+    "faiss_index_id": 145,
+    "text": "from slave from slave condition\nacknowledge(2)\nfrom slave 002aad192\n(1) In this example, several PCA9685s are used and the same sequences (A) and (B) above are sent to each of them.\n(2) Acknowledge from all the slave devices configured for the new LED All Call I2C-bus address in sequence (B).\nFig 25. LED All Call I2C-bus address programming and LED All Call sequence example"
+  },
+  {
+    "faiss_index_id": 146,
+    "text": "PCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 34 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n10. Application design-in information\n5 V\n12 V\nVDD = 2.5 V, 3.3 V or 5.0 V\n(1) (1) 10 kΩ(2)\nI2C-BUS/SMBus\nMASTER\nVDD\nSDA SDA LED0\nSCL SCL LED1\nLED2\nOE OE\nLED3\n5 V\n12 V\nPCA9685\nLED4\nLED5\nLED6\nLED7\n5 V\n12 V\nLED8\nLED9\nLED10\nLED11"
+  },
+  {
+    "faiss_index_id": 147,
+    "text": "LED5\nLED6\nLED7\n5 V\n12 V\nLED8\nLED9\nLED10\nLED11\nEXTCLK 5 V\n12 V\nA0\nA1\nA2\nA3 LED12\nA4\nLED13\nA5\nLED14\nVSS LED15\n002aac827\nI2C-bus address = 1010101x.\nAll 16 of the LEDn outputs configurable as either open-drain or totempole. Mixing of configuration is not possible.\nRemark: Set INVRT=0, OUTDRV=1, OUTNE=01 (MODE2 register bits)\n(1) Resistor value should be chosen by referencing section7 of UM10204, “I2C-bus specification and user manual”."
+  },
+  {
+    "faiss_index_id": 148,
+    "text": "(2) OE requires pull-up resistor if control signal from the master is open-drain.\nFig 26. Typical application\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 35 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nQuestion 1: What kind of edge rate control is there on the outputs?"
+  },
+  {
+    "faiss_index_id": 149,
+    "text": "• The typical edge rates depend on the output configuration, supply voltage, and the\napplied load. The outputs can be configured as either open-drain NMOS or totempole\noutputs. If the customer is using the part to directly drive LEDs, they should be using it\nin an open-drain NMOS, if they are concerned about the maximum I and ground\nSS\nbounce. The edge rate control was designed primarily to slow down the turn-on of the"
+  },
+  {
+    "faiss_index_id": 150,
+    "text": "output device; it turns off rather quickly (~1.5ns). In simulation, the typical turn-on\ntime for the open-drain NMOS was ~14ns (V =3.6V; C =50pF; R =500).\nDD L PU\nQuestion 2: Is ground bounce possible?\n• Ground bounce is a possibility, especially if all 16 outputs are changed at full current\n(25mA each). There is a fair amount of decoupling capacitance on chip (~50pF),\nwhich is intended to suppress some of the ground bounce. The customer will need to"
+  },
+  {
+    "faiss_index_id": 151,
+    "text": "determine if additional decoupling capacitance externally placed as close as\nphysically possible to the device is required.\nQuestion 3: Can I really sink 400mA through the single ground pin on the package and\nwill this cause any ground bounce problem due to the PWM of the LEDs?\n• Yes, you can sink 400mA through a single ground pin on the package. Although the\npackage only has one ground pin, there are two ground pads on the die itself"
+  },
+  {
+    "faiss_index_id": 152,
+    "text": "connected to this one pin. Although some ground bounce is likely, it will not disrupt the\noperation of the part and would be reduced by the external decoupling capacitance.\nQuestion 4: I can’t turn the LEDs on or off, but their registers are set properly. Why?\n• Check the MODE1 register SLEEP (bit4) setting. The bit needs to be 0 in order to\nenable the clocking. If both clock sources (internal osc and EXTCLK) are turned OFF\n(bit4=1), the LEDs cannot be dimmed or blinked."
+  },
+  {
+    "faiss_index_id": 153,
+    "text": "(bit4=1), the LEDs cannot be dimmed or blinked.\nQuestion 5: I’m using LEDs with integrated Zener diodes and the IC is getting very hot.\nWhy?\n• The IC outputs can be set to either open-drain or push-pull and default to push-pull\noutputs. In this application with the Zener diodes, they need to be set to open-drain\nsince in the push-pull architecture there is a low resistance path to GND through the\nZener and this is causing the IC to overheat."
+  },
+  {
+    "faiss_index_id": 154,
+    "text": "Zener and this is causing the IC to overheat.\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 36 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nLED supply CONSTANT FB\nVIN CURRENT\nOUT\nSWITCH MODE\nREGULATOR Iconstant\nLIGHT\nSENSOR\nVDD = 2.5 V, 3.3 V or 5.0 V\nLED\nstring\n(1) (1) 10 kΩ(2)\nASIC/MICRO\nVDD\nSDA SDA LED0\nSCL SCL LED1\nRsense"
+  },
+  {
+    "faiss_index_id": 155,
+    "text": "ASIC/MICRO\nVDD\nSDA SDA LED0\nSCL SCL LED1\nRsense\nLED2\nOE OE\nLED3\nPCA9685\nLED4\nLED5\nLED6\nLED7\nEXTCLK\nLED8\nLED9\nLED10\nLED11\nA0\nA1\nA2\nA3 LED12\nA4\nLED13\nA5\nLED14\nVSS LED15\n002aac828\nI2C-bus address = 1010101x.\nRemark: Set INVRT = 0, OUTDRV = 1, OUTNE = 01 (MODE2 register bits) for this configuration.\n(1) Resistor value should be chosen by referencing Section7 of UM10204, “I2C-bus specification and\nuser manual”.\n(2) OE requires pull-up resistor if control signal from the master is open-drain."
+  },
+  {
+    "faiss_index_id": 156,
+    "text": "Fig 27. LCD backlighting application\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 37 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n11. Limiting values\nTable 13. Limiting values\nIn accordance with the Absolute Maximum Rating System (IEC 60134).\nSymbol Parameter Conditions Min Max Unit\nV supply voltage 0.5 +6.0 V\nDD"
+  },
+  {
+    "faiss_index_id": 157,
+    "text": "V supply voltage 0.5 +6.0 V\nDD\nV voltage on an input/output pin V 0.5 5.5 V\nI/O SS\nI output current on pin LEDn - 25 mA\nO(LEDn)\nI ground supply current - 400 mA\nSS\nP total power dissipation - 400 mW\ntot\nT storage temperature 65 +150 C\nstg\nT ambient temperature operating 40 +85 C\namb\n12. Static characteristics\nTable 14. Static charac teristics\nV =2.3V to 5.5V; V =0V; T =40Cto+85C; unless otherwise specified.\nDD SS amb\nSymbol Parameter Conditions Min Typ Max Unit\nSupply"
+  },
+  {
+    "faiss_index_id": 158,
+    "text": "Supply\nV supply voltage 2.3 - 5.5 V\nDD\nI supply current operating mode; noload; - 6 10 mA\nDD\nf =1MHz; V =2.3Vto5.5V\nSCL DD\nI standby current no load; f =0Hz; V =V orV ; - 2.2 15.5 A\nstb SCL I DD SS\nV =2.3Vto5.5V\nDD\nV power-on reset voltage no load; V =V or V [1] - 1.70 2.0 V\nPOR I DD SS\nInput SCL; input/output SDA\nV LOW-level input voltage 0.5 - +0.3V V\nIL DD\nV HIGH-level input voltage 0.7V - 5.5 V\nIH DD\nI LOW-level output current V =0.4V; V =2.3V 20 28 - mA\nOL OL DD"
+  },
+  {
+    "faiss_index_id": 159,
+    "text": "OL OL DD\nV =0.4V; V =5.0V 30 40 - mA\nOL DD\nI leakage current V =V or V 1 - +1 A\nL I DD SS\nC input capacitance V =V - 6 10 pF\ni I SS\nLED driver outputs\nI LOW-level output current V =0.5V; V =2.3Vto4.5V [2] 12 25 - mA\nOL OL DD\nI total LOW-level output current V =0.5V;V =4.5V [2] - - 400 mA\nOL(tot) OL DD\nI HIGH-level output current open-drain; V =V 10 - +10 A\nOH OH DD\nV HIGH-level output voltage I =10mA; V =2.3V 1.6 - - V\nOH OH DD\nI =10mA; V =3.0V 2.3 - - V\nOH DD\nI =10mA; V =4.5V 4.0 - - V"
+  },
+  {
+    "faiss_index_id": 160,
+    "text": "OH DD\nI =10mA; V =4.5V 4.0 - - V\nOH DD\nI OFF-state output current 3-state; V =V or V 10 - +10 A\nOZ OH DD SS\nC output capacitance - 5 8 pF\no\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 38 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nTable 14. Static characteristics …continued"
+  },
+  {
+    "faiss_index_id": 161,
+    "text": "Table 14. Static characteristics …continued\nV =2.3V to 5.5V; V =0V; T =40Cto+85C; unless otherwise specified.\nDD SS amb\nSymbol Parameter Conditions Min Typ Max Unit\nAddress inputs; OE input; EXTCLK\nV LOW-level input voltage 0.5 - +0.3V V\nIL DD\nV HIGH-level input voltage 0.7V - 5.5 V\nIH DD\nI input leakage current 1 - +1 A\nLI\nC input capacitance - 3 5 pF\ni\n[1] V must be lowered to 0.2V in order to reset part.\nDD"
+  },
+  {
+    "faiss_index_id": 162,
+    "text": "DD\n[2] Each bit must be limited to a maximum of 25mA and the total package limited to 400mA due to internal busing limits.\n002aad877 002aad878\n10 60\nIDD\n(mA) IOL\n8 (mA) VDD = 4.5 V\nVDD = 5.5 V\n40\n3.0 V\n6\n4 2.3 V\n3.3 V\n20\n2.3 V\n2\n0 0\n−50 0 50 100 −50 0 50 100\nTamb (°C) Tamb (°C)\nFig 28. I typical values with OSC on and Fig 29. I typical drive (LEDn outputs) versus\nDD OL\nf =1MHz versus temperature temperature\nSCL\n002aad879\n5\nIstb\n(μA)\n4\n3\nVDD = 5.5 V\n2\n1\n3.3 V\n2.3 V\n0\n−50 0 50 100\nTamb (°C)"
+  },
+  {
+    "faiss_index_id": 163,
+    "text": "2\n1\n3.3 V\n2.3 V\n0\n−50 0 50 100\nTamb (°C)\nFig 30. Standby supply current versus temperature\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 39 of 52xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxx x x x xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxx xx xx xxxxx"
+  },
+  {
+    "faiss_index_id": 164,
+    "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxx x x\nxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxx\nxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxx xxx\nProduct\ndata\nsheet\nRev.\n4\n—\n16\nApril\n2015\n40\nof\n52\nPCA9685\nAll\ninformation\nprovided\nin\nthis\ndocument\nis\nsubject\nto\nlegal\ndisclaimers.\n©\nNXP\nSemiconductors\nN.V.\n2015.\nAll\nrights\nreserved.\n16-channel,\n12-bit\nPWM\nFm+\nI C-bus"
+  },
+  {
+    "faiss_index_id": 165,
+    "text": "reserved.\n16-channel,\n12-bit\nPWM\nFm+\nI C-bus\nLED\ncontroller\n2\nNXP\nSemiconductors\nPCA9685\n13. Dynamic characteristics\nTable 15. Dynamic cha racteristics\nSymbol Parameter Conditions Standard-mode Fast-mode I2C-bus Fast-mode Plus Unit\nI2C-bus I2C-bus\nMin Max Min Max Min Max\nf SCL clock frequency [1] 0 100 0 400 0 1000 kHz\nSCL\nf frequency on pin EXTCLK DC 50 DC 50 DC 50 MHz\nEXTCLK\nt bus free time between a STOP 4.7 - 1.3 - 0.5 - s\nBUF\nand START condition"
+  },
+  {
+    "faiss_index_id": 166,
+    "text": "BUF\nand START condition\nt hold time (repeated) START 4.0 - 0.6 - 0.26 - s\nHD;STA\ncondition\nt set-up time for a repeated 4.7 - 0.6 - 0.26 - s SU;STA\nSTART condition\nt set-up time for STOP condition 4.0 - 0.6 - 0.26 - s SU;STO\nt data hold time 0 - 0 - 0 - ns\nHD;DAT\nt data valid acknowledge time [2] 0.3 3.45 0.1 0.9 0.05 0.45 s VD;ACK\nt data valid time [3] 0.3 3.45 0.1 0.9 0.05 0.45 s\nVD;DAT\nt data set-up time 250 - 100 - 50 - ns\nSU;DAT\nt LOW period of the SCL clock 4.7 - 1.3 - 0.5 - s\nLOW"
+  },
+  {
+    "faiss_index_id": 167,
+    "text": "LOW\nt HIGH period of the SCL clock 4.0 - 0.6 - 0.26 - s\nHIGH\nt fall time of both SDA and SCL [4][5] - 300 20+0.1C [6] 300 - 120 ns f b\nsignals\nt rise time of both SDA and SCL - 1000 20+0.1C [6] 300 - 120 ns\nr b\nsignals\nt pulse width of spikes that must [7] - 50 - 50 - 50 ns\nSP\nbe suppressed by the input filter\nt LOW to OFF-state propagation OEtoLEDn; - 40 - 40 - 40 ns\nPLZ delay OUTNE[1:0]=10or11\ninMODE2 register\nt OFF-state to LOW propagation OEtoLEDn; - 60 - 60 - 60 ns\nPZL"
+  },
+  {
+    "faiss_index_id": 168,
+    "text": "PZL\ndelay OUTNE[1:0]=10or11\ninMODE2 register\nt HIGH to OFF-state propagation OEtoLEDn; - 60 - 60 - 60 ns\nPHZ\ndelay OUTNE[1:0]=10or11\ninMODE2 registerxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxx x x x xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxx xx xx xxxxx\nxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxx x x"
+  },
+  {
+    "faiss_index_id": 169,
+    "text": "xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxx\nxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxx xxx\nProduct\ndata\nsheet\nRev.\n4\n—\n16\nApril\n2015\n41\nof\n52\nPCA9685\nAll\ninformation\nprovided\nin\nthis\ndocument\nis\nsubject\nto\nlegal\ndisclaimers.\n©\nNXP\nSemiconductors\nN.V.\n2015.\nAll\nrights\nreserved.\n16-channel,\n12-bit\nPWM\nFm+\nI C-bus\nLED\ncontroller\n2\nNXP\nSemiconductors\nPCA9685\nTable 15. Dynamic characteristics …continued"
+  },
+  {
+    "faiss_index_id": 170,
+    "text": "Table 15. Dynamic characteristics …continued\nSymbol Parameter Conditions Standard-mode Fast-mode I2C-bus Fast-mode Plus Unit\nI2C-bus I2C-bus\nMin Max Min Max Min Max\nt OFF-state to HIGH propagation OEtoLEDn; - 40 - 40 - 40 ns\nPZH\ndelay OUTNE[1:0]=10or11\ninMODE2 register\nt LOWtoHIGH propagation delay OEtoLEDn; - 40 - 40 - 40 ns\nPLH\nOUTNE[1:0]=01\ninMODE2 register\nt HIGHtoLOW propagation delay OEtoLEDn; - 60 - 60 - 60 ns\nPHL\nOUTNE[1:0]=00\ninMODE2 register"
+  },
+  {
+    "faiss_index_id": 171,
+    "text": "PHL\nOUTNE[1:0]=00\ninMODE2 register\n[1] Minimum SCL clock frequency is limited by the bus time-out feature, which resets the serial bus interface if either SDA or SCL is held LOW for a minimum of 25ms.\nDisable bus time-out feature for DC operation.\n[2] tVD;ACK =time for Acknowledgement signal from SCL LOW to SDA (out) LOW.\n[3] t =minimum time for SDA data out to be valid following SCL LOW.\nVD;DAT"
+  },
+  {
+    "faiss_index_id": 172,
+    "text": "VD;DAT\n[4] A master device must internally provide a hold time of at least 300ns for the SDA signal (refer to the V of the SCL signal) in order to bridge the undefined region of\nIL\nSCL’s falling edge.\n[5] The maximum tf for the SDA and SCL bus lines is specified at 300ns. The maximum fall time (t f ) for the SDA output stage is specified at 250ns. This allows series"
+  },
+  {
+    "faiss_index_id": 173,
+    "text": "protection resistors to be connected between the SDA and the SCL pins and the SDA/SCL bus lines without exceeding the maximum specified tf .\n[6] C =total capacitance of one bus line in pF. b\n[7] Input filters on the SDA and SCL inputs suppress noise spikes less than 50ns.PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n0.7 × V\nDA\n0.3 × V\ntBUF tr tf tHD;STA tSP\ntLOW\n0.7 × V\nCL\n0.3 × V\ntHD;STA tSU;STA tSU;STO\nP S tHD;DAT tHIGH tSU;DAT Sr P\n002aaa9"
+  },
+  {
+    "faiss_index_id": 174,
+    "text": "P S tHD;DAT tHIGH tSU;DAT Sr P\n002aaa9\nFig 31. Definition of timing\nSTART bit 7 STOP\nbit 6 bit 1 bit 0 acknowledge\nprotocol condition MSB condition\n(A6) (D1) (D0) (A)\n(S) (A7) (P)\ntSU;STA tLOW tHIGH\n1 / fSCL\nSCL\n0.7 × VDD\n0.3 × VDD\ntBUF tf\ntr\nSDA\n0.7 × VDD\n0.3 × VDD\ntHD;STA tSU;DAT tHD;DAT tVD;DAT tVD;ACK tSU;STO\n002aab285\nRise and fall times refer to V and V .\nIL IH\nFig 32. I2C-bus timing diagram\nVI\nOE input VM VM\nVSS\ntPLZ tPZL\nVDD\nLEDn output\nLOW-to-OFF VM\nOFF-to-LOW\nVOL VX\ntPHZ\ntPZH"
+  },
+  {
+    "faiss_index_id": 175,
+    "text": "LOW-to-OFF VM\nOFF-to-LOW\nVOL VX\ntPHZ\ntPZH\nLEDn output\nVOH\nVY\nHIGH-to-OFF VM\nOFF-to-HIGH\nVSS\noutputs outputs outputs\nenabled disabled enabled\n002aad810\nFig 33. t , t and t , t times\nPLZ PZL PHZ PZH\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 42 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n14. Test information\nVDD\nopen\nVDD RL"
+  },
+  {
+    "faiss_index_id": 176,
+    "text": "14. Test information\nVDD\nopen\nVDD RL\nVSS\n500 Ω\nVI VO\nPULSE\nDUT\nGENERATOR\nRT C\n50\nL\npF\n002aab880\nR = Load resistor for LEDn.\nL\nCL = Load capacitance includes jig and probe capacitance.\nR = Termination resistance should be equal to the output impedance Z of the pulse generators.\nT o\nFig 34. Test circuitry for switching times\nS1 VDD × 2\nopen\nVDD RL\nVSS\n500 Ω\nVI VO\nPULSE\nDUT\nGENERATOR\nRT C 50 L pF R 50 L 0 Ω\n002aad811\nR = Load resistor for LEDn.\nL"
+  },
+  {
+    "faiss_index_id": 177,
+    "text": "002aad811\nR = Load resistor for LEDn.\nL\nCL = Load capacitance includes jig and probe capacitance.\nRT = Termination resistance should be equal to the output impedance Z o of the pulse generators.\nTest data are given in Table16.\nFig 35. Test circuitry for switching times for enable/disable\nT able 16. Test data for enable/disable switching times\nTest Load Switch\nC R\nL L\nt 50pF 500 open\nPD\nt , t 50pF 500 V 2\nPLZ PZL DD\nt , t 50pF 500 V\nPHZ PZH SS"
+  },
+  {
+    "faiss_index_id": 178,
+    "text": "PLZ PZL DD\nt , t 50pF 500 V\nPHZ PZH SS\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 43 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n15. Package outline\nTSSOP28: plastic thin shrink small outline package; 28 leads; body width 4.4 mm SOT361-1\nD E A\nX\nc\ny HE v M A\nZ\n28 15\nQ\nA2 (A 3 ) A\npin 1 index A1\nθ\nLp\nL\n1 14\ndetail X\nw M\ne bp"
+  },
+  {
+    "faiss_index_id": 179,
+    "text": "pin 1 index A1\nθ\nLp\nL\n1 14\ndetail X\nw M\ne bp\n0 2.5 5 mm\nscale\nDIMENSIONS (mm are the original dimensions)\nUNIT\nm\nA\nax.\nA1 A2 A3 bp c D(1) E(2) e HE L Lp Q v w y Z(1) θ\nmm 1.1 0 0 . . 1 0 5 5 0 0 . . 9 8 5 0 0.25 0 0 . . 3 1 0 9 0 0 . . 2 1 9 9 . . 8 6 4 4 . . 5 3 0.65 6 6 . . 6 2 1 0 0 . . 7 5 5 0 0 0 . . 4 3 0.2 0.13 0.1 0 0 . . 8 5 8 0 o o\nNotes\n1. Plastic or metal protrusions of 0.15 mm maximum per side are not included."
+  },
+  {
+    "faiss_index_id": 180,
+    "text": "2. Plastic interlead protrusions of 0.25 mm maximum per side are not included.\nOUTLINE REFERENCES EUROPEAN\nISSUE DATE\nVERSION IEC JEDEC JEITA PROJECTION\n99-12-27\nSOT361-1 MO-153\n03-02-19\nFig 36. Package outline SOT361-1 (TSSOP28)\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 44 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller"
+  },
+  {
+    "faiss_index_id": 181,
+    "text": "16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nHVQFN28: plastic thermal enhanced very thin quad flat package; no leads;\n28 terminals; body 6 x 6 x 0.85 mm SOT788-1\nD B A\nterminal 1\nindex area\nA\nE\nA1\nc\ndetail X\nC\ne1\ne b v M C A B y1 C y\n8 14 w M C\nL\n7 15\ne\nEh e2\n1 21\nterminal 1\nindex area 28 22\nDh X\n0 2.5 5 mm\nscale\nDIMENSIONS (mm are the original dimensions)\nA(1)\nUNIT max. A1 b c D(1) Dh E(1) Eh e e1 e2 L v w y y1\n0.05 0.35 6.1 4.25 6.1 4.25 0.75\nmm 1 0.2 0.65 3.9 3.9 0.1 0.05 0.05 0.1"
+  },
+  {
+    "faiss_index_id": 182,
+    "text": "mm 1 0.2 0.65 3.9 3.9 0.1 0.05 0.05 0.1\n0.00 0.25 5.9 3.95 5.9 3.95 0.50\nNote\n1. Plastic or metal protrusions of 0.075 mm maximum per side are not included.\nOUTLINE REFERENCES EUROPEAN\nISSUE DATE\nVERSION IEC JEDEC JEITA PROJECTION\nSOT788-1 - - - MO-220 - - - 02-10-22\nFig 37. Package outline SOT788-1 (HVQFN28)\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved."
+  },
+  {
+    "faiss_index_id": 183,
+    "text": "Product data sheet Rev. 4 — 16 April 2015 45 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n16. Handling information\nAll input and output pins are protected against ElectroStatic Discharge (ESD) under\nnormal handling. When handling ensure that the appropriate precautions are taken as\ndescribed in JESD625-A or equivalent standards.\n17. Soldering of SMD packages\nThis text provides a very brief insight into a complex technology. A more in-depth account"
+  },
+  {
+    "faiss_index_id": 184,
+    "text": "of soldering ICs can be found in Application Note AN10365 “Surface mount reflow\nsoldering description”.\n17.1 Introduction to soldering\nSoldering is one of the most common methods through which packages are attached to\nPrinted Circuit Boards (PCBs), to form electrical circuits. The soldered joint provides both\nthe mechanical and the electrical connection. There is no single soldering method that is\nideal for all IC packages. Wave soldering is often preferred when through-hole and"
+  },
+  {
+    "faiss_index_id": 185,
+    "text": "Surface Mount Devices (SMDs) are mixed on one printed wiring board; however, it is not\nsuitable for fine pitch SMDs. Reflow soldering is ideal for the small pitches and high\ndensities that come with increased miniaturization.\n17.2 Wave and reflow soldering\nWave soldering is a joining technology in which the joints are made by solder coming from\na standing wave of liquid solder. The wave soldering process is suitable for the following:\n• Through-hole components"
+  },
+  {
+    "faiss_index_id": 186,
+    "text": "• Through-hole components\n• Leaded or leadless SMDs, which are glued to the surface of the printed circuit board\nNot all SMDs can be wave soldered. Packages with solder balls, and some leadless\npackages which have solder lands underneath the body, cannot be wave soldered. Also,\nleaded SMDs with leads having a pitch smaller than ~0.6mm cannot be wave soldered,\ndue to an increased probability of bridging.\nThe reflow soldering process involves applying solder paste to a board, followed by"
+  },
+  {
+    "faiss_index_id": 187,
+    "text": "component placement and exposure to a temperature profile. Leaded packages,\npackages with solder balls, and leadless packages are all reflow solderable.\nKey characteristics in both wave and reflow soldering are:\n• Board specifications, including the board finish, solder masks and vias\n• Package footprints, including solder thieves and orientation\n• The moisture sensitivity level of the packages\n• Package placement\n• Inspection and repair\n• Lead-free soldering versus SnPb soldering"
+  },
+  {
+    "faiss_index_id": 188,
+    "text": "• Lead-free soldering versus SnPb soldering\n17.3 Wave soldering\nKey characteristics in wave soldering are:\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 46 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n• Process issues, such as application of adhesive and flux, clinching of leads, board"
+  },
+  {
+    "faiss_index_id": 189,
+    "text": "transport, the solder wave parameters, and the time during which components are\nexposed to the wave\n• Solder bath specifications, including temperature and impurities\n17.4 Reflow soldering\nKey characteristics in reflow soldering are:\n• Lead-free versus SnPb soldering; note that a lead-free reflow process usually leads to\nhigher minimum peak temperatures (see Figure38) than a SnPb process, thus\nreducing the process window"
+  },
+  {
+    "faiss_index_id": 190,
+    "text": "reducing the process window\n• Solder paste printing issues including smearing, release, and adjusting the process\nwindow for a mix of large and small components on one board\n• Reflow temperature profile; this profile includes preheat, reflow (in which the board is\nheated to the peak temperature) and cooling down. It is imperative that the peak\ntemperature is high enough for the solder to make reliable solder joints (a solder paste"
+  },
+  {
+    "faiss_index_id": 191,
+    "text": "characteristic). In addition, the peak temperature must be low enough that the\npackages and/or boards are not damaged. The peak temperature of the package\ndepends on package thickness and volume and is classified in accordance with\nTable17 and18\nTable 17. SnPb eutectic process (from J-STD-020D)\nPackage thickness (mm) Package reflow temperature (C)\nVolume (mm3)\n< 350  350\n< 2.5 235 220\n 2.5 220 220\nTable 18. Lead-free process (from J-STD-020D)"
+  },
+  {
+    "faiss_index_id": 192,
+    "text": "Table 18. Lead-free process (from J-STD-020D)\nPackage thickness (mm) Package reflow temperature (C)\nVolume (mm3)\n< 350 350 to 2000 > 2000\n< 1.6 260 260 260\n1.6 to 2.5 260 250 245\n> 2.5 250 245 245\nMoisture sensitivity precautions, as indicated on the packing, must be respected at all\ntimes.\nStudies have shown that small packages reach higher temperatures during reflow\nsoldering, see Figure38."
+  },
+  {
+    "faiss_index_id": 193,
+    "text": "soldering, see Figure38.\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 47 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nmaximum peak temperature\n= MSL limit, damage level\ntemperature\nminimum peak temperature\n= minimum soldering temperature\npeak\ntemperature\ntime\n001aac844\nMSL: Moisture Sensitivity Level"
+  },
+  {
+    "faiss_index_id": 194,
+    "text": "time\n001aac844\nMSL: Moisture Sensitivity Level\nFig 38. Temperature profiles for large and small components\nFor further information on temperature profiles, refer to Application Note AN10365\n“Surface mount reflow soldering description”.\n18. Abbreviations\nTable 19. Abbreviations\nAcronym Description\nCDM Charged-Device Model\nDUT Device Under Test\nEMI ElectroMagnetic Interference\nESD ElectroStatic Discharge\nHBM Human Body Model\nI2C-bus Inter-Integrated Circuit bus\nLCD Liquid Crystal Display"
+  },
+  {
+    "faiss_index_id": 195,
+    "text": "LCD Liquid Crystal Display\nLED Light Emitting Diode\nLSB Least Significant Bit\nMM Machine Model\nMSB Most Significant Bit\nNMOS Negative-channel Metal-Oxide Semiconductor\nPCB Printed-Circuit Board\nPMOS Positive-channel Metal-Oxide Semiconductor\nPOR Power-On Reset\nPWM Pulse Width Modulation; Pulse Width Modulator\nRGB Red/Green/Blue\nRGBA Red/Green/Blue/Amber\nSMBus System Management Bus"
+  },
+  {
+    "faiss_index_id": 196,
+    "text": "SMBus System Management Bus\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 48 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n19. Revision history\nTable 20. Revision history\nDocument ID Release date Data sheet status Change notice Supersedes\nPCA9685 v.4 20150416 Product data sheet - PCA9685 v.3"
+  },
+  {
+    "faiss_index_id": 197,
+    "text": "Modifications: • Changed programmable frequency to “24 Hz to 1526 Hz” throughout\n• Minor edits to text and figures to provide clarity regarding cycle count throughout\nPCA9685 v.3 20100902 Product data sheet - PCA9685 v.2\nPCA9685 v.2 20090716 Product data sheet - PCA9685 v.1\nPCA9685 v.1 20080724 Product data sheet - -\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved."
+  },
+  {
+    "faiss_index_id": 198,
+    "text": "Product data sheet Rev. 4 — 16 April 2015 49 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n20. Legal information\n20.1 Data sheet status\nDocument status[1][2] Product status[3] Definition\nObjective [short] data sheet Development This document contains data from the objective specification for product development.\nPreliminary [short] data sheet Qualification This document contains data from the preliminary specification."
+  },
+  {
+    "faiss_index_id": 199,
+    "text": "Product [short] data sheet Production This document contains the product specification.\n[1] Please consult the most recently issued document before initiating or completing a design.\n[2] The term ‘short data sheet’ is explained in section “Definitions”.\n[3] The product status of device(s) described in this document may have changed since this document was published and may differ in case of multiple devices. The latest product status"
+  },
+  {
+    "faiss_index_id": 200,
+    "text": "information is available on the Internet at URLhttp://www.nxp.com.\n20.2 Definitions Suitability for use — NXP Semiconductors products are not designed,\nauthorized or warranted to be suitable for use in life support, life-critical or\nsafety-critical systems or equipment, nor in applications where failure or\nDraft — The document is a draft version only. The content is still under\nmalfunction of an NXP Semiconductors product can reasonably be expected"
+  },
+  {
+    "faiss_index_id": 201,
+    "text": "internal review and subject to formal approval, which may result in\nto result in personal injury, death or severe property or environmental\nmodifications or additions. NXP Semiconductors does not give any\ndamage. NXP Semiconductors and its suppliers accept no liability for\nrepresentations or warranties as to the accuracy or completeness of\ninclusion and/or use of NXP Semiconductors products in such equipment or\ninformation included herein and shall have no liability for the consequences of"
+  },
+  {
+    "faiss_index_id": 202,
+    "text": "applications and therefore such inclusion and/or use is at the customer’s own\nuse of such information.\nrisk.\nShort data sheet — A short data sheet is an extract from a full data sheet\nApplications — Applications that are described herein for any of these\nwith the same product type number(s) and title. A short data sheet is intended\nproducts are for illustrative purposes only. NXP Semiconductors makes no\nfor quick reference only and should not be relied upon to contain detailed and"
+  },
+  {
+    "faiss_index_id": 203,
+    "text": "representation or warranty that such applications will be suitable for the\nfull information. For detailed and full information see the relevant full data\nspecified use without further testing or modification.\nsheet, which is available on request via the local NXP Semiconductors sales\noffice. In case of any inconsistency or conflict with the short data sheet, the Customers are responsible for the design and operation of their applications"
+  },
+  {
+    "faiss_index_id": 204,
+    "text": "full data sheet shall prevail. and products using NXP Semiconductors products, and NXP Semiconductors\naccepts no liability for any assistance with applications or customer product\nProduct specification — The information and data provided in a Product design. It is customer’s sole responsibility to determine whether the NXP\ndata sheet shall define the specification of the product as agreed between Semiconductors product is suitable and fit for the customer’s applications and"
+  },
+  {
+    "faiss_index_id": 205,
+    "text": "NXP Semiconductors and its customer, unless NXP Semiconductors and products planned, as well as for the planned application and use of\ncustomer have explicitly agreed otherwise in writing. In no event however, customer’s third party customer(s). Customers should provide appropriate\nshall an agreement be valid in which the NXP Semiconductors product is design and operating safeguards to minimize the risks associated with their"
+  },
+  {
+    "faiss_index_id": 206,
+    "text": "deemed to offer functions and qualities beyond those described in the applications and products.\nProduct data sheet.\nNXP Semiconductors does not accept any liability related to any default,\ndamage, costs or problem which is based on any weakness or default in the\n20.3 Disclaimers customer’s applications or products, or the application or use by customer’s\nthird party customer(s). Customer is responsible for doing all necessary\ntesting for the customer’s applications and products using NXP"
+  },
+  {
+    "faiss_index_id": 207,
+    "text": "Limited warranty and liability — Information in this document is believed to\nSemiconductors products in order to avoid a default of the applications and\nbe accurate and reliable. However, NXP Semiconductors does not give any\nthe products or of the application or use by customer’s third party\nrepresentations or warranties, expressed or implied, as to the accuracy or\ncustomer(s). NXP does not accept any liability in this respect."
+  },
+  {
+    "faiss_index_id": 208,
+    "text": "completeness of such information and shall have no liability for the\nconsequences of use of such information. NXP Semiconductors takes no Limiting values — Stress above one or more limiting values (as defined in\nresponsibility for the content in this document if provided by an information the Absolute Maximum Ratings System of IEC60134) will cause permanent\nsource outside of NXP Semiconductors. damage to the device. Limiting values are stress ratings only and (proper)"
+  },
+  {
+    "faiss_index_id": 209,
+    "text": "operation of the device at these or any other conditions above those given in\nIn no event shall NXP Semiconductors be liable for any indirect, incidental,\nthe Recommended operating conditions section (if present) or the\npunitive, special or consequential damages (including - without limitation - lost\nCharacteristics sections of this document is not warranted. Constant or\nprofits, lost savings, business interruption, costs related to the removal or"
+  },
+  {
+    "faiss_index_id": 210,
+    "text": "repeated exposure to limiting values will permanently and irreversibly affect\nreplacement of any products or rework charges) whether or not such\nthe quality and reliability of the device.\ndamages are based on tort (including negligence), warranty, breach of\ncontract or any other legal theory. Terms and conditions of commercial sale — NXP Semiconductors\nproducts are sold subject to the general terms and conditions of commercial\nNotwithstanding any damages that customer might incur for any reason"
+  },
+  {
+    "faiss_index_id": 211,
+    "text": "whatsoever, NXP Semiconductors’ aggregate and cumulative liability towards sale, as published at http://www.nxp.com/profile/terms, unless otherwise\ncustomer for the products described herein shall be limited in accordance agreed in a valid written individual agreement. In case an individual\nwith the Terms and conditions of commercial sale of NXP Semiconductors. agreement is concluded only the terms and conditions of the respective"
+  },
+  {
+    "faiss_index_id": 212,
+    "text": "agreement shall apply. NXP Semiconductors hereby expressly objects to\nRight to make changes — NXP Semiconductors reserves the right to make applying the customer’s general terms and conditions with regard to the\nchanges to information published in this document, including without purchase of NXP Semiconductors products by customer.\nlimitation specifications and product descriptions, at any time and without"
+  },
+  {
+    "faiss_index_id": 213,
+    "text": "notice. This document supersedes and replaces all information supplied prior No offer to sell or license — Nothing in this document may be interpreted or\nto the publication hereof. construed as an offer to sell products that is open for acceptance or the grant,\nconveyance or implication of any license under any copyrights, patents or\nother industrial or intellectual property rights."
+  },
+  {
+    "faiss_index_id": 214,
+    "text": "other industrial or intellectual property rights.\nPCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 50 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\nExport control — This document as well as the item(s) described herein own risk, and (c) customer fully indemnifies NXP Semiconductors for any"
+  },
+  {
+    "faiss_index_id": 215,
+    "text": "may be subject to export control regulations. Export might require a prior liability, damages or failed product claims resulting from customer design and\nauthorization from competent authorities. use of the product for automotive applications beyond NXP Semiconductors’\nstandard warranty and NXP Semiconductors’ product specifications.\nNon-automotive qualified products — Unless this data sheet expressly"
+  },
+  {
+    "faiss_index_id": 216,
+    "text": "states that this specific NXP Semiconductors product is automotive qualified, Translations — A non-English (translated) version of a document is for\nthe product is not suitable for automotive use. It is neither qualified nor tested reference only. The English version shall prevail in case of any discrepancy\nin accordance with automotive testing or application requirements. NXP between the translated and English versions.\nSemiconductors accepts no liability for inclusion and/or use of"
+  },
+  {
+    "faiss_index_id": 217,
+    "text": "non-automotive qualified products in automotive equipment or applications.\n20.4 Trademarks\nIn the event that customer uses the product for design-in and use in\nautomotive applications to automotive specifications and standards, customer\nNotice: All referenced brands, product names, service names and trademarks\n(a) shall use the product without NXP Semiconductors’ warranty of the\nare the property of their respective owners."
+  },
+  {
+    "faiss_index_id": 218,
+    "text": "are the property of their respective owners.\nproduct for such automotive applications, use and specifications, and (b)\nwhenever customer uses the product for automotive applications beyond\nNXP Semiconductors’ specifications such use shall be solely at customer’s\n21. Contact information\nFor more information, please visit: http://www.nxp.com\nFor sales office addresses, please send an email to: salesaddresses@nxp.com"
+  },
+  {
+    "faiss_index_id": 219,
+    "text": "PCA9685 All information provided in this document is subject to legal disclaimers. © NXP Semiconductors N.V. 2015. All rights reserved.\nProduct data sheet Rev. 4 — 16 April 2015 51 of 52PCA9685\nNXP Semiconductors\n16-channel, 12-bit PWM Fm+ I2C-bus LED controller\n22. Contents\n1 General description. . . . . . . . . . . . . . . . . . . . . . 1 17.1 Introduction to soldering. . . . . . . . . . . . . . . . . 46"
+  },
+  {
+    "faiss_index_id": 220,
+    "text": "2 Features and benefits . . . . . . . . . . . . . . . . . . . . 2 17.2 Wave and reflow soldering. . . . . . . . . . . . . . . 46\n17.3 Wave soldering . . . . . . . . . . . . . . . . . . . . . . . 46\n3 Applications. . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n17.4 Reflow soldering . . . . . . . . . . . . . . . . . . . . . . 47\n4 Ordering information. . . . . . . . . . . . . . . . . . . . . 4\n18 Abbreviations . . . . . . . . . . . . . . . . . . . . . . . . . 48"
+  },
+  {
+    "faiss_index_id": 221,
+    "text": "4.1 Ordering options. . . . . . . . . . . . . . . . . . . . . . . . 4\n19 Revision history . . . . . . . . . . . . . . . . . . . . . . . 49\n5 Block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n20 Legal information . . . . . . . . . . . . . . . . . . . . . . 50\n6 Pinning information. . . . . . . . . . . . . . . . . . . . . . 6\n20.1 Data sheet status. . . . . . . . . . . . . . . . . . . . . . 50\n6.1 Pinning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6"
+  },
+  {
+    "faiss_index_id": 222,
+    "text": "20.2 Definitions . . . . . . . . . . . . . . . . . . . . . . . . . . . 50\n6.2 Pin description . . . . . . . . . . . . . . . . . . . . . . . . . 6\n20.3 Disclaimers . . . . . . . . . . . . . . . . . . . . . . . . . . 50\n7 Functional description . . . . . . . . . . . . . . . . . . . 7\n20.4 Trademarks . . . . . . . . . . . . . . . . . . . . . . . . . . 51\n7.1 Device addresses. . . . . . . . . . . . . . . . . . . . . . . 7\n21 Contact information . . . . . . . . . . . . . . . . . . . . 51"
+  },
+  {
+    "faiss_index_id": 223,
+    "text": "7.1.1 Regular I2C-bus slave address. . . . . . . . . . . . . 7\n22 Contents. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52\n7.1.2 LED All Call I2C-bus address . . . . . . . . . . . . . . 8\n7.1.3 LED Sub Call I2C-bus addresses. . . . . . . . . . . 8\n7.1.4 Software Reset I2C-bus address . . . . . . . . . . . 9\n7.2 Control register. . . . . . . . . . . . . . . . . . . . . . . . . 9\n7.3 Register definitions. . . . . . . . . . . . . . . . . . . . . 10"
+  },
+  {
+    "faiss_index_id": 224,
+    "text": "7.3.1 Mode register 1, MODE1 . . . . . . . . . . . . . . . . 14\n7.3.1.1 Restart mode . . . . . . . . . . . . . . . . . . . . . . . . . 15\n7.3.2 Mode register 2, MODE2 . . . . . . . . . . . . . . . . 16\n7.3.3 LED output and PWM control. . . . . . . . . . . . . 16\n7.3.4 ALL_LED_ON and ALL_LED_OFF control. . . 25\n7.3.5 PWM frequency PRE_SCALE . . . . . . . . . . . . 25\n7.3.6 SUBADR1 to SUBADR3, I2C-bus\nsubaddress 1 to 3. . . . . . . . . . . . . . . . . . . . . . 26"
+  },
+  {
+    "faiss_index_id": 225,
+    "text": "7.3.7 ALLCALLADR, LED All Call I2C-bus address. 26\n7.4 Active LOW output enable input. . . . . . . . . . . 27\n7.5 Power-on reset. . . . . . . . . . . . . . . . . . . . . . . . 27\n7.6 Software reset. . . . . . . . . . . . . . . . . . . . . . . . . 28\n7.7 Using the PCA9685 with and without\nexternal drivers. . . . . . . . . . . . . . . . . . . . . . . . 29\n8 Characteristics of the I2C-bus . . . . . . . . . . . . 30\n8.1 Bit transfer . . . . . . . . . . . . . . . . . . . . . . . . . . . 30"
+  },
+  {
+    "faiss_index_id": 226,
+    "text": "8.1.1 START and STOP conditions. . . . . . . . . . . . . 30\n8.2 System configuration . . . . . . . . . . . . . . . . . . . 30\n8.3 Acknowledge . . . . . . . . . . . . . . . . . . . . . . . . . 31\n9 Bus transactions . . . . . . . . . . . . . . . . . . . . . . . 32\n10 Application design-in information . . . . . . . . . 35\n11 Limiting values. . . . . . . . . . . . . . . . . . . . . . . . . 38\n12 Static characteristics. . . . . . . . . . . . . . . . . . . . 38"
+  },
+  {
+    "faiss_index_id": 227,
+    "text": "13 Dynamic characteristics. . . . . . . . . . . . . . . . . 40\n14 Test information. . . . . . . . . . . . . . . . . . . . . . . . 43\n15 Package outline. . . . . . . . . . . . . . . . . . . . . . . . 44\n16 Handling information. . . . . . . . . . . . . . . . . . . . 46\n17 Soldering of SMD packages . . . . . . . . . . . . . . 46\nPlease be aware that important notices concerning this document and the product(s)\ndescribed herein, have been included in section ‘Legal information’."
+  },
+  {
+    "faiss_index_id": 228,
+    "text": "© NXP Semiconductors N.V. 2015. All rights reserved.\nFor more information, please visit: http://www.nxp.com\nFor sales office addresses, please send an email to: salesaddresses@nxp.com\nDate of release: 16 April 2015\nDocument identifier: PCA9685"
+  }
+]

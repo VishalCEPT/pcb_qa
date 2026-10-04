@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component MAX3485 have a supply voltage of 10V according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The MAX3485 datasheet linked in the netlist specifies it as a 3.3V low-power transceiver, and it is connected to the +3V3 rail in the schematic.",
+        "is_final": true
+    }
+}

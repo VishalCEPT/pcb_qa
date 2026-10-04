@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component LTC4412xS6 have an internal CAN clock according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The LTC4412xS6 is a Low Loss PowerPath Controller (ideal-diode controller) and does not contain CAN communication or clock circuitry.",
+        "is_final": true
+    }
+}

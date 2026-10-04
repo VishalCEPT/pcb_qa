@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to SCK?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, pin 5 (SCK) of component U2 is connected to the 'SCK' net, which is also linked to the microcontroller U1 and other temperature sensors.",
+        "is_final": true
+    }
+}

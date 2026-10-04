@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ADS1115IDGS have a maximum operating temperature of 125\u00b0C according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The ADS1115IDGS datasheet specifies an operating temperature range of -40\u00b0C to +125\u00b0C.",
+        "is_final": true
+    }
+}

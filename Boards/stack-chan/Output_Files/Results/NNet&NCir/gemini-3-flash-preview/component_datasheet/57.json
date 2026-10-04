@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component MAX3485 have a driver slew time of 10ns according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The MAX3485 datasheet specifies a typical driver differential propagation delay of 20ns to 35ns and a maximum of 80ns to 90ns, rather than a 10ns slew time.",
+        "is_final": true
+    }
+}

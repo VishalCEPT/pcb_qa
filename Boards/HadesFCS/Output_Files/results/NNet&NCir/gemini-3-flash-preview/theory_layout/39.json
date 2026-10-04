@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component FCC1 connected to SPI1_MISO_FCC?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, pin 30 of component FCC1 (STM32H753VITx) is connected to the net named SPI1_MISO_FCC.",
+        "is_final": true
+    }
+}

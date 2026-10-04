@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to NFC_SDA?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, pin 62 (PB9) of component U2 (STM32L476RGT6) is connected to the net named NFC_SDA.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component J4 connected to GND__pH_?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "Component J4 is connected to net /PGND_T and /PRB_T, whereas GND_pH is an isolated ground net connected to M2 and FB3.",
+        "is_final": true
+    }
+}

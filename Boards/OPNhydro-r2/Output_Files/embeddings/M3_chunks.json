@@ -1,0 +1,486 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "V 6.6\nRevised 3/26\nEZO-EC™\nEmbedded Conductivity Circuit\nISO 7888 Compliant\n(determination of electrical conductivity)\nReads Conductivity = μS/cm\nTotal dissolved solids = ppm\nSalinity = PSU 0.00 – 42.00\nSpecific gravity\n(sea water only) = 1.00 – 1.300\nRange 0.07 − 500,000+ μS/cm\nAccuracy +/– 2%\nEC reading time 600ms\nSupported probes K 0.01 – K 10.2 any brand\nCalibration 2 or 3 point\nTemp compensation Yes\nData protocol UART & I2C\nDefault I2C address 100 (0x64)\nOperating voltage 3.3V − 5V"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "Operating voltage 3.3V − 5V\nData format ASCII\nPATENT PROTECTED\nWritten by Jordan Press\nDesigned by Noah Press This is an evolving document, check back for updates.The EZO™ EC Circuit has all the features of this bench top meter.\nIsolated Power Supply = VCC\nOFF\nGND\nTX\nRX\nIsolated Carrier Board\n8 12 Calibration\nRead\nDRY\n1\n23.56\n12,880\nTimed Reading\n9\nLow point\nμS/cm\n1 sec\n80,000\n2\nEC\nHigh point\n4 6 On Off\n3 7\n10\nµS TDS/ppm 5 Salinity Specific gravity Device Name 13\nof seawater\nEC Meter 1"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "of seawater\nEC Meter 1\nOn Off On Off 0.54 On Off 25 °C\n11\nConversion factor On Off Voltage 5.0\n1 Multi decimal EC reading\n2 Temperature used for reading 8 Immediate reading\n3 Enable EC readings 9 Timed readings\n4 Enable TDS/ ppm readings 10 Set device name\n5 Variable TDS conversion factor 11 Voltage usage\n6 Enable salinity readings 12 Multi-point variable calibration\n7 Enable specific gravity readings 13 Temperature compensation"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "The EZO Complete-EC™ is compatible with any brand of EC probe from K 0.01 – K10.2Conductivity probe range\nThe EZO™ Conductivity circuit is compatible with any brand of two-conductor conductivity\nprobe, ranging from:\n10.2\nAtlas Scientific™ has tested three different K value probe types:\nK 0.1 K 1.0 K 10\naccurate reading range accurate reading range accurate reading range\n0.07μS/cm – 50,000μS/cm 5μS/cm – 200,000+μS/cm 10μS/cm – 1S/cm"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "TDS (ppm) 0 – 25,000 TDS (ppm) 2 – 100,000 TDS (ppm) 5 – 500,000\nSalinity 0 – 33 Salinity 0 – 42* Salinity 0 – 42*\n*salinity scale cannot go any higher *salinity scale cannot go any higher\nAtlas Scientific™ does not know what the accurate reading range would be for conductivity\nprobes, other than the above mentioned values. Determining the accurate reading range of\nsuch probes, i.e. K 2.6, or K 0.66, is the responsibility of the embedded systems engineer.\n3"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "3\nCopyright © Atlas Scientific LLCResolution\n13.97mm\nThe EZO™ Conductivity circuit, employs a method of scaling resolution. As the conductivity\nincreases the resolution between readings decreases.\n(0.55”)\nThe EZO™ Conductivity circuit will output conductivity readings where the first 4 digits\nare valid and the others are set to 0. This excludes conductivity readings that are less than\n9.99. In that case, only 3 conductivity digits will be output.\n0.07 – 99.99\nResolution = 0.01µS/cm"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "0.07 – 99.99\nResolution = 0.01µS/cm\n100.1 – 999.9\nResolution = 0.1µS/cm\n20.16mm\n1,000 – 9,999\nResolution = 1.0µS/cm (0.79”)\n10,000 – 99,990\nResolution = 10µS/cm\n100,000 – 999,900\nResolution = 100µS/cm\n10.8mm\n5.8mm 8.38mm\n4\nCopyright © Atlas Scientific LLC\n1mm Ø (0.4”)\n(0.22”) (0.32”)Available data protocols\nDefault\nUnavailable data protocols\nSPI\nAnalog\nRS-485\nMod Bus\n4–20mA\n5\nCopyright © Atlas Scientific LLCAre there specific soldering instructions? Yes, see page 75."
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "Can you make a warranty claim after soldering? No.\nIf you have not used this product before; Observe how\na properly working sensor behaves BEFORE embedding\nit into your PCB.\nGet this device working using one Do not embed before you have\nof these methods first. experience with this sensor.\nRX TX\n5\nA 5v3vGNDRXTX A\nB B PWR\nC C RX\nD D TX\nE E\nF F\nG G\nH H\nI I\nJ J\n5\nAtlas\nScientific\nr 0.1\nBSU\nCCV FFO DNG XT XR\ndraoB\nreirraC\ndetalosITable of contents\nAvailable data protocols 5 Correct wiring 11"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "Available data protocols 5 Correct wiring 11\nCircuit dimensions 8 Default state 12\nPower consumption 8 Circuit footprint 77\nAbsolute max ratings 8 Datasheet change log 78\nElectrical isolation 9 Warranty 83\nConductivity probe range 3\nResolution 4\nCalibration theory 65\nUART I2C\nUART mode 13 I2C mode 40\nLED color definition 14 Sending commands 41\nReceiving data from device 15 Requesting data 42\nSending commands to device 16 Response codes 43\nUART quick command page 17 LED color definition 44"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "LED control 18 I2C quick command page 45\nFind 19 LED control 46\nContinuous reading mode 20 Find 47\nSingle reading mode 21 Taking reading 48\nCalibration 22 Calibration 49\nChange TDS conversion factor 23 Change TDS conversion factor 50\nExport calibration 24 Export calibration 51\nImport calibration 25 Import calibration 52\nSetting the probe type 26 Setting the probe type 53\nTemperature compensation 27 Temperature compensation 54\nEnable/disable parameters 28 Enable/disable parameters 55"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "Naming device 29 Naming device 56\nDevice information 30 Device information 57\nResponse codes 31 Reading device status 58\nReading device status 32 Sleep mode/low power 59\nSleep mode/low power 33 Protocol lock 60\nChange baud rate 34 I2C address change 61\nProtocol lock 35 Factory reset 62\nFactory reset 36 Change to UART mode 63\nChange to I2C mode 37 Manual switching to UART 64\nManual switching to I2C 38EZO TM circuit dimensions\n13.97mm\n(0.55”)\n20.16mm\n(0.79”)\n10.8mm\n5.8mm 8.38mm\n1mm Ø (0.4”)"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "20.16mm\n(0.79”)\n10.8mm\n5.8mm 8.38mm\n1mm Ø (0.4”)\n(0.22”) (0.32”)\nPower consumption Absolute max ratings\nLED MAX STANDBY SLEEP Parameter MIN TYP MAX\n5V ON 50 mA 18.14 mA 0.7 mA Storage temperature\n-60 °C 150 °C\n(EZO™ Conductivity)\nOFF 45 mA 15.64 mA\nOperational temperature\n-40 °C 25 °C 125 °C\n3.3V ON 35 mA 16.85 mA 0.4 mA (EZO™ Conductivity)\nOFF 34 mA 15.85 mA\nVCC 3.3V 5V 5.5V\n8\nCopyright © Atlas Scientific LLCElectrical isolation"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "Conductivity readings will introduce significant electrical interference into your water.\nThis electrical interference will affect other sensors, such as pH, ORP, and dissolved\noxygen. Electrical isolation is 100% effective in preventing this electrical interference.\nUnlike other probes, a conductivity probe provides a low-resistance pathway from\nyour water to your electronics. If an accidental electrical surge passes through your"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "water, it will travel up your conductivity probe and into your electronics. Electrical\nisolation is 100% effective at stopping an accidental electrical surge from destroying your\ncomputer system.\nAdvice:\nWhen reading conductivity along with other sensors, electrical isolation is strongly recommended.\nNever build a commercial product without electrical isolation.\n1 5 10 15 20 25 30 1 5 10 15 20 25 30\nA A A A\nB B B B\nC CorrectC C IncorrectC"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "A A A A\nB B B B\nC CorrectC C IncorrectC\nAtlas Scientific offers severaDl different electrical isolation proDducts thDat can be used D\nE E E E\nin your design. Select the electrical isolation product that works best for your design.\nF F F F\nG G G G\nH H H H\nI I I I\nJ J J J\n1 5 10 15 20 25 30 1 5 10 15 20 25 30\n1 5 10 15 20 25 30 1 5 10 15 20 25 30\nA A A A\nB B B B\nC C C C\nD D D D\nE E E E\nF F F F\nG G G G\nH H H H\nI I I I\nJ J J J\n1 5 10 15 20 25 30 1 5 10 15 20 25 30"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "J J J J\n1 5 10 15 20 25 30 1 5 10 15 20 25 30\ni1 InterLink i2 InterLink i3 InterLink i4 InterLink\nElectrically Isolated EZO™ Vertical Isolator Electrically Isolated Gen 2 Electrically Isolated\nCarrier Board (old style) EZO™ Carrier Board USB EZO™ Carrier Board\n9\nCopyright © Atlas Scientific LLCFor various reasons, you may need to build your own electrical isolator. Because electrical\nisolation is so important, we have published our isolation schematic for anyone to use."
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "This isolation schematic is based on the ADM3260, which can output up to 150 mW\nof isolated power. PCB layout requires special attention for EMI/EMC and RF Control.\nHaving good ground planes and keeping the capacitors as close to the chip as possible\nare crucial for proper performance.\nThe two data channels have a 4.7kΩ pull-up resistor on both the isolated and non-isolated\nlines (R1, R2, R3, and R4). The output voltage is set using a voltage divider (R6 and R7)."
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "This produces a voltage of 3.9V regardless of your input voltage.\nIsolated ground is different from non-isolated ground, these two lines should not\nbe connected together.\nVCC = 3.0v − 5.5v\nISO-VCC\nVCC\nADM3260\nVCC VCC\nVDDP VDDISO ISO-VCC\nISO-VCC\nVIN VISO\nR7\nINPUT R2 4.7K R1 4.7K VSEL\nVCC 10K\nOUTPUT\nRX/SCL SCL2 SCL1\nVCC\nTX/SDA\nSDA2 SDA1 RX/SCL\nEN\nTX/SDA\nGND\nVCC NC NC NC\nGND\nC1\nGNDP\n0.1uf R6\nGNDP GNDISO\nGND 4.7K\nGNDP GNDISO R4 4.7K\nC4\nGNDP GNDISO\nC3 R3 4.7K ISO-GND\nVCC 10uF\nPDIS GNDISO"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "C3 R3 4.7K ISO-GND\nVCC 10uF\nPDIS GNDISO\nVCC R5 GND 0.1uF ISO-VCC\nR8 C2\nD\n1M\n1M N-FET 0.1uF ISO-VCC\nG\n(GENERAL PURPOSE TRANSISTOR) C6\nS\n10uF\nC5\nGND\n10uF\nNon-isolated Isolated\nISO-GND\n10\nCopyright © Atlas Scientific LLCCorrect wiring\nIncorrect wiring\nExtended leads Sloppy setup Perfboards or Protoboards *Embedded into your device\nABCDE FGHI J\n1 1\n5 5\n10 10\n15 15\n20 20\n25 25\n30 30\n35 35\n40 40\n45 45\n50 50 NEVER\nAtlas\nScientific\n*Only after you are familar\n55 55 use Perfboards or Protoboards"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "55 55 use Perfboards or Protoboards\nwith EZO TM circuits operation\n60 60 Flux residue and shorting wires make\nit very hard to get accurate readings.\nABCDE FGHI J\nCCV C/N DNG XT XR\ndetalosI-noN\nRX TX\nA A\nA 5v3vGNDRXTX A\nB B\nB B\nC C\nC C\nD D\nD D E E\nE E\nPULL UP F F\nF F\nG G\nG G\nH H\nH H\nI I\nI I VCCPRBPGND\nJ J\n5 J J\n5\nBread board Bread board via USB Non-Isolated Electrically Isolated USB\nEZO™ Carrier Board EZO™ Carrier Board carrier board\nCCV FFO DNG XT XR\ndraoB\nreirraC\ndetalosI\nPWR\nRX\nTX\nAtlas\nAtlas"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "draoB\nreirraC\ndetalosI\nPWR\nRX\nTX\nAtlas\nAtlas\nScientific\nScientific\nsaltA\ncfiitneicS\nBSU\nAtlas\nScientific\n11\nCopyright © Atlas Scientific LLCDefault state\nUART mode\nBaud 9,600\nReadings continuous\nUnits μS/cm\nSpeed 1 reading per second\nLED on\n1,000 ms\nGreen Cyan\nStandby Taking reading Transmitting\nSDA SCL\n(TX) (RX)\nSolid Blue LED\nin I2C mode\nNot UART ready\n12\nCopyright © Atlas Scientific LLC\nSDA SCL SDA SCL\n(TX) (RX) (TX) (RX)\nSolid Green LED\nin UART mode\nNot I2C readyUART mode"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "in UART mode\nNot I2C readyUART mode\n8 data bits no parity\n1 stop bit no flow control\nBaud\n300\n1,200\n2,400\n9,600 default\n19,200\n38,400\n57,600\n115,200\nTX RX\nRX\nData in RX TX\nTX\nTX RX\nData out\nCPU\nVcc\n3.3V – 5.5V\nVCC\n0V 0V\nData format\nReading Terminator carriage return\nConductivity = Deafult Data type floating point\nTotal dissolved solids\nDecimal places 3\nSalinity = Must be enabled\nSpecific gravity Smallest string 3 characters\nOrder EC,TDS,SAL,SG Largest string 40 characters\nEncoding ASCII"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "Encoding ASCII\nFormat string\n13\nCopyright © Atlas Scientific LLC\nGreen Cyan Purple Red White Blue\nUART standby Taking reading Changing Command Find I2C standby\nbaud rate not understoodTX RX\nRX TX\nTX RX\nCPU\nLED color definition\nGreen Cyan Purple Red White Blue\nUART standby Taking reading Changing Command Find I2C standby\nbaud rate not understood\nLED ON\n5V +2.5 mA\n3.3V +1 mA\nSettings that are retained if power is cut Settings that are NOT retained if power is cut\nBaud rate Find"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "Baud rate Find\nCalibration Sleep mode\nContinuous mode Temperature compensation\nDevice name\nEnable/disable parameters\nEnable/disable response codes\nHardware switch to I2C mode\nLED control\nProtocol lock\nSoftware switch to I2C mode\nr 0.1Receiving data from device\n2 parts\nASCII data string Carriage return <cr>\nCommand Terminator\n9,600 baud\n(default)\nTX RX\nCPU\n1,413 <cr>\nReceiver\nSender\nAdvanced\nASCII: 1 , 4 1 3 <cr>\nHex: 31 2C 34 31 33 0D\nDec: 49 44 52 49 51 13\n15\nCopyright © Atlas Scientific LLC"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "15\nCopyright © Atlas Scientific LLC\nBlue Green Purple Red White\nI2C standby Taking reading Changing Command Find\nI2C address not understoodSending commands to device\n2 parts\nCommand (not case sensitive) Carriage return <cr>\nASCII data string Terminator\nTX RX\nCPU\nSleep <cr>\nSender\nReceiver\nShort\nAdvanced\nASCII: S l e e p <cr>\nHex: 53 6C 65 65 70 0D\nDec: 83 108 101 101 112 13\nShort\n16\nCopyright © Atlas Scientific LLCUART mode\ncommand quick reference"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "command quick reference\nAll commands are ASCII strings or single ASCII characters.\nCommand Function Default state\nBaud change baud rate pg. 34 9,600\nC enable/disable continuous reading pg. 20 enabled\nCal performs calibration pg. 22 n/a\nExport export calibration pg. 24 n/a\nFactory enable factory reset pg. 36 n/a\nFind finds device with blinking white LED pg. 19 n/a\ni device information pg. 30 n/a\nI2C change to I2C mode pg. 37 not set\nImport import calibration pg. 25 n/a"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "Import import calibration pg. 25 n/a\nK Set probe type pg. 26 K 1.0\nL enable/disable LED pg. 18 enabled\nName set/show name of device pg. 29 not set\nO enable/disable parameters pg. 28 all enabled\nPlock enable/disable protocol lock pg. 35 disabled\nR returns a single reading pg. 21 n/a\nSleep enter sleep mode/low power pg. 33 n/a\nStatus retrieve status information pg. 32 enable\nT temperature compensation pg. 27 25˚C\nTDS change the TDS conversion factor pg. 23 0.54"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "TDS change the TDS conversion factor pg. 23 0.54\n*OK enable/disable response codes pg. 31 enableLED control\nCommand syntax\nL,1 <cr> LED on default\nL,0 <cr> LED off\nL,? <cr> LED state on/off?\nExample Response\nL,1 <cr> *OK <cr>\nL,0 <cr> *OK <cr>\nL,? <cr> ?L,1 < c r > or ?L,0 <cr>\n*OK <cr>\nL,1 L,0\n18\nCopyright © Atlas Scientific LLC\n1,000 ms1,000 ms\nGreen Green Cyan Cyan\nStandby StandTbayking readiTnagking reaTdrianngsmittingTransmittingFind\nCommand syntax\nThis command will disable continuous mode"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "This command will disable continuous mode\nSend any character or command to terminate find.\nFind <cr> LED rapidly blinks white, used to help find device\nExample Response\nFind <cr> *OK <cr>\nSettings that are retained if power is cut Settings that are NOT retained if power is cut\nBaud rate Find\nCalibration Sleep mode\nContinuous mode Temperature compensation\nDevice name\nEnable/disable parameters\nEnable/disable response codes\n19\nHarCdowpyarigreht s©w Aittlcash S tcoie nIt2iCfic LmLCode\nLED control"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "LED control\nProtocol lock\nSoftware switch to I2C modeContinuous reading mode\nCommand syntax\nC,1 <cr> enable continuous readings once per second default\nC,n <cr> continuous readings every n seconds (n = 2 to 99 sec)\nC,0 <cr> disable continuous readings\nC,? <cr> continuous reading mode on/off?\nExample Response\nC,1 <cr> *OK <cr>\nEC,TDS,SAL,SG (1 sec)\n<cr>\nEC,TDS,SAL,SG (2 sec) <cr>\nEC,TDS,SAL,SG (3 sec) <cr>\nC,30 <cr> *OK <cr>\nEC,TDS,SAL,SG (30 sec)\n<cr>\nEC,TDS,SAL,SG (60 sec)\n<cr>"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "<cr>\nEC,TDS,SAL,SG (60 sec)\n<cr>\nEC,TDS,SAL,SG (90 sec)\n<cr>\nC,0 <cr> *OK <cr>\nC,? <cr> ?C,1 < c r > or ?C,0 < c r > or ?C,30 <cr>\n*OK <cr>\n20\nCopyright © Atlas Scientific LLCSingle reading mode\nCommand syntax\nR <cr> takes single reading\nExample Response\nR <cr> 1,413 <cr>\n*OK <cr>\n1,000 ms\nGreen Cyan\nStandby Taking reading Transmitting\n600 ms\n21\nCopyright © Atlas Scientific LLCCalibration\nCommand syntax\nDry calibration must always be done first!\nCal,dry <cr> dry calibration"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "Cal,dry <cr> dry calibration\nCal,n <cr> single point calibration, where n = any value\nCal,low,n <cr> low end calibration, where n = any value\nCal,high,n <cr> high end calibration, where n = any value\nCal,clear <cr> delete calibration data\nCal,? <cr> device calibrated?\nExample Response\nCal,dry <cr> *OK <cr>\nCal,84 <cr> *OK <cr>\nCal,low,12880 <cr> *OK <cr>\nCal,high,80000 <cr> *OK <cr>\nCal,clear <cr> *OK <cr>\nCal,? <cr> ?CAL,0 < c r > or ?CAL,1 < c r > or ?CAL,2\ntwo point three point\n*OK <cr>"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "two point three point\n*OK <cr>\nTwo point calibration: Three point calibration:\nStep 1. \"cal,dry\" Step 1 \"cal,dry\"\nStep 2. \"cal,n\" Step 2 \"cal,low,n\"\nCalibration complete! Step 3 \"cal,high.n\"\nCalibration complete!\n22\nCopyright © Atlas Scientific LLCChanging the TDS (ppm)\nconversion factor\nThere are several different conversion factors\nused to read TDS(ppm). For some applications,\nCommand syntax it may be necessary to use a conversion factor\nother than the default value of 0.54"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "other than the default value of 0.54\nTDS,n <cr> set custom conversion factor, n = any value between 0.01 – 1.00\nTDS,? <cr> conversion factor being used\nExample Response\nTDS,? <cr> ?TDS,0.54 <cr>\n*OK <cr>\nEC TDS\nR <cr> 100,54 <cr>\n*OK\n<cr>\nTDS,0.46 <cr> *OK <cr>\nEC TDS\nR <cr> 100,46 <cr>\n*OK <cr>\nCommon conversion factors Formula\nNaCl 0.47 – 0.50 EC x conversion factor = TDS\nKCL 0.50 - 0.57\n“442” 0.65 – 0.85\n23\nCopyright © Atlas Scientific LLCExport calibration\nCommand syntax"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "Command syntax\nExport: Use this command to download calibration settings\nExport,? calibration string info\n<cr>\nExport export calibration string from calibrated device\n<cr>\nExample Response\nExport,? <cr> 10,120 <cr> Response breakdown\n10, 120\n# of strings to export # of bytes to export\nExport strings can be up to 12 characters long,\nand is always followed by <cr>\nExport <cr> 59 6F 75 20 61 72 <cr> (1 of 10)\nExport <cr> 65 20 61 20 63 6F <cr> (2 of 10)\n(7 more)"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "(7 more)\nExport <cr> 6F 6C 20 67 75 79 <cr> (10 of 10)\nExport <cr> *DONE\nDisabling *OK simplifies this process\nExport <cr>\n1\n2 TX RX\n3\n4\n5 MCU\n6\n7\n8\n9\n10\n[10,120]\n*DONE\n24\nCopyright © Atlas Scientific LLC\n1\nTX RX 2\n3\n4\nMCU 5\n6\n7\n8\n9\n10\n[10,120]\n1\nTX RX 2\n3\n4\nMCU 5\n6\n7\n8\n9\n10\n[10,120]Import calibration\nCommand syntax\nImport: Use this command to upload calibration\nsettings to one or more devices.\nImport,n import calibration string to new device\n<cr>\nExample Response"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "<cr>\nExample Response\nImport, 59 6F 75 20 61 72 <cr> (1 of 10) *OK <cr>\n1\nImport, 65 20 61 20 63 6F <cr> (2 of 10) *OTXKR<Xcr>\n2\n3\n4\n5 MCU\n6\n7\n8\nImport, 6F 6C 20 67 75 79 <cr> (10 of 10) *OK <cr>\n9\n10\n[10,120]\nImport,n <cr>\n1 2 TX RX1\n3 TX RX 2\n4\n5 M3CU\n6\n7 4\n8 MCU 5\n9\n10 6\n[10,120]\n7\n8\n9\n10\n1 [10,120]\nTX RX 2\n3\n4\nMCU 5\n6\n7\n8 *OK <cr>\n9\n10\n[10,120] system will reboot\n1\nTX RX 2\n3 * If one of the imported strings is not\n1\nTX RX 2 4\n3\n4 MCU 5 correctly entered, the device will not\nMCU 5 6\n6"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "MCU 5 6\n6\n7 8 7 accept the import, respond with *ER\n9 8\n10\n[10,120] 9 and reboot.\n10\n[10,120]\n*ER <cr>\n25\nCopyright © Atlas Scientific LLCSetting the probe type\nCommand syntax\nK 1.0 is the default value\nK,n <cr> n = any value; floating point in ASCII\nK,? <cr> probe K value?\nExample Response\nK,10 <cr> *OK <cr>\nK,? <cr> ?K,10 <cr>\n*OK <cr>\nK 0.1 K 1.0 K 10\n26\nCopyright © Atlas Scientific LLCTemperature compensation\nDefault temperature = 25°C\nCommand syntax Temperature is always in Celsius"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "Command syntax Temperature is always in Celsius\nTemperature is not retained if power is cut\nT,n <cr> n = any value; floating point or int\nT,? <cr> compensated temperature value?\nRT,n <cr> set temperature compensation and take a reading\nExample Response\nT,19.5 <cr> *OK <cr>\nRT,19.5 <cr> *OK <cr>\n8.91 <cr>\nT,? <cr> ?T,19.5 <cr>\n*OK <cr>\nSDA SCL SDA SCL\n(TX) (RX) (TX) (RX)\nT,19.5 <cr>\n8.82 8.91\n27\nCopyright © Atlas Scientific LLC\nSolidS Bolluide BLlEuDe LED\nin I2C mino Id2Ce mode"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "in I2C mino Id2Ce mode\nNot UANRoTt UreAaRdTy ready\nSDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)\nSolid GrSeoelnid L GEDreen LED\nin UART miond UeART mode\nNot I2C reaNdoyt I2C readyEnable/disable parameters\nfrom output string\nCommand syntax\nO, [parameter],[1,0] <cr> enable or disable output parameter\nO,? <cr> enabled parameter?\nExample Response\nO,EC,1 / O,EC,0 <cr> *OK <cr> enable / disable conductivity"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "O,TDS,1 / O,TDS,0 <cr> *OK <cr> enable / disable total dissolved solids\nO,S,1 / O,S,0 <cr> *OK <cr> enable / disable salinity\nO,SG,1 / O,SG,0 <cr> *OK <cr> enable / disable specific gravity\nO,? <cr> ?,O,EC,TDS,S,SG <cr> if all are enabled\nParameters * If you disable all possible data types\nyour readings will display “no output”.\nEC Conductivity = μS/cm\nTDS Total dissolved solids = ppm\nS Salinity = PSU 0.00 – 42.00\nSG Specific gravity (sea water only) = 1.00 – 1.300\nFollowed by 1 or 0\n1 enabled"
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "Followed by 1 or 0\n1 enabled\n0 disabled\n28\nCopyright © Atlas Scientific LLCNaming device\nCommand syntax\nDo not use spaces in the name\nn = _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nName,n <cr> set name\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\nName, <cr> clears name\nUp to 16 ASCII characters\nName,? <cr> show name\nExample Response\nName, <cr> *OK <cr> name has been cleared\nName,zzt <cr> *OK <cr>\nName,? <cr> ?Name,zzt <cr>\n*OK <cr>\nName,zzt Name,?\n*OK <cr> ?Name,zzt <cr>\n*OK <cr>\n29"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "*OK <cr> ?Name,zzt <cr>\n*OK <cr>\n29\nCopyright © Atlas Scientific LLC\n1,000 ms 1,000 ms\nGreen Cyan Green Cyan\nStandby Taking readinSgtandby TransmitTtaiknigng reading TransmittingDevice information\nCommand syntax\ni <cr> device information\nExample Response\ni <cr> ?i,EC,2.16<cr>\n*OK <cr>\nResponse breakdown\n?i, EC, 2.16\nDevice Firmware\n30\nCopyright © Atlas Scientific LLCResponse codes\nCommand syntax\n*OK,1 <cr> enable response default\n*OK,0 <cr> disable response\n*OK,? <cr> response on/off?"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "*OK,? <cr> response on/off?\nExample Response\nR <cr> 1,413 <cr>\n*OK <cr>\n*OK,0 <cr> no response, *OK disabled\nR <cr> 1,413 <cr> *OK disabled\n*OK,? <cr> ?*OK,1 <cr> or ?*OK,0 <cr>\nOther response codes\n*ER unknown command\n*OV over volt (VCC>=5.5V)\n*UV under volt (VCC<=3.1V) These response codes\n*RS reset cannot be disabled\n*RE boot up complete, ready\n*SL entering sleep mode\n*WA wake up\n31\nCopyright © Atlas Scientific LLCReading device status\nCommand syntax"
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "Command syntax\nStatus <cr> voltage at Vcc pin and reason for last restart\nExample Response\nStatus <cr> ?Status,P,5.038 <cr>\n*OK <cr>\nResponse breakdown\n?Status, P, 5.038\nReason for restart Voltage at Vcc\nRestart codes\nP powered off\nS software reset\nB brown out\nW watchdog\nU unknown\n32\nCopyright © Atlas Scientific LLCSleep mode/low power\nCommand syntax Send any character or\ncommand to awaken device.\nSleep <cr> enter sleep mode/low power\nExample Response\nSleep <cr> *OK <cr>\n*SL <cr>"
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "Example Response\nSleep <cr> *OK <cr>\n*SL <cr>\nAny command *WA <cr> wakes up device\nSTANDBY SLEEP\n5V 18.14 mA 0.7 mA\n3.3V 16.85 mA 0.4 mA\nSleep <cr>\nStandby Sleep\n18.14 mA 0.7 mA\n33\nCopyright © Atlas Scientific LLC\n1,000 ms 1,000 ms\nGreen CyGarneen Cyan\nStandby TakingS rteaanddibnyg TrTaanksimngit trienagding TransmittingChange baud rate\nCommand syntax\nBaud,n <cr> change baud rate\nExample Response\nBaud,38400 <cr> *OK <cr>\nBaud,? <cr> ?Baud,38400 <cr>\n*OK\n<cr>\n300\n1200\n2400\nn = 9600 default\n19200"
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "*OK\n<cr>\n300\n1200\n2400\nn = 9600 default\n19200\n38400\n57600\n115200\nBaud,38400 <cr> (reboot)\nStandby Changing Standby\nbaud rate\n*OK <cr>\n34\nCopyright © Atlas Scientific LLC\n1,000 ms 1,000 ms 1,000 ms\nGreen Cyan Green GCryeaenn Cyan\nStandby Taking reading Transmitting Standby TakiSntga nrdebadying TaTkrainngsm reitatdiningg TransmittingProtocol lock\nCommand syntax\nLocks device to UART mode.\nPlock,1 <cr> enable Plock TX RX\nPlock,0 <cr> disable Plock default\nCPU\nPlock,? <cr> Plock on/off?"
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "CPU\nPlock,? <cr> Plock on/off?\nExample Response\nPlock,1 <cr> *OK <cr>\nPlock,0 <cr> *OK <cr>\nPlock,? <cr> ?Plock,1 <cr> or ?Plock,0 <cr>\nPlock,1 I2C,100\nShort\n*OK <cr> cannot change to I2C cannot change to I2C\n*ER <cr>\n35 Short\nCopyright © Atlas Scientific LLC\n1,000 ms 1,000 ms\nGreen Cyan Green Cyan\nStandby Taking reading Transmitting Standby Taking reading TransmittingFactory reset\nClears calibration\nCommand syntax LED on\n\"*OK\" enabled\nFactory <cr> enable factory reset\nExample Response"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "Example Response\nFactory <cr> *OK <cr>\nFactory <cr>\n(reboot)\n*OK <cr> *RS <cr>\n*RE <cr>\nBaud rate will not change\n36\nC1op,y0rig0ht ©0 A tmlas Sscientific LLC 1,000 ms\nGreen Cyan Green Cyan\nStandby Taking reading StanTdrbaynsmitting Taking reading TransmittingChange to I2C mode\nCommand syntax\nDefault I2C address 100 (0x64)\nI2C,n <cr> sets I2C address and reboots into I2C mode\nn = any number 1 – 127\nExample Response\nI2C,100 <cr> *OK (reboot in I2C mode)\nWrong example Response"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "Wrong example Response\nI2C,139 <cr> n > 127 *ER <cr>\nI2C,100\n(reboot)\nGreen Blue\n*OK <cr> now in I2C mode\n1,000 ms\n37\nCopyright © Atlas Scientific LLC\nGreen Cyan\nStandby Taking reading Transmitting\n1,000 ms\nGreen Cyan\nStandby Taking reading TransmittingManual switching to I2C\n• Disconnect ground (power off)\n• Disconnect TX and RX\n• Connect TX to the right PRB\nTX RX\n• Confirm RX is disconnected\n• Connect ground (power on)\nCPU\n• Wait for LED to change from Green to Blue"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "CPU\n• Wait for LED to change from Green to Blue\n• Disconnect ground (power off)\n• Reconnect all data and power\nManually switching to I2C will set the I2C address to 100 (0x64)\nExample\nShort\nWrong Example\nShort\nDisconnect RX line\n38\nCopyright © Atlas Scientific LLCI2C mode\nThe I2C protocol is considerably more complex than the UART\n(RS–232) protocol. Atlas Scientific assumes the embedded\nsystems engineer understands this protocol.\nTo set your EZOTM device into I2C mode click here"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "To set your EZOTM device into I2C mode click here\nSettings that are retained if power is cut Settings that are NOT retained if power is cut\nCalibration Find\nChange I2C address Sleep mode\nEnable/disable parameters Temperature compensation\nHardware switch to UART mode\nLED control\nProtocol lock\nSoftware switch to UART mode\nr 0.2I2C mode\nI2C address (0x01 – 0x7F)\n100 (0x64) default\nVcc 3.3V – 5.5V\nClock speed 100 – 400 kHz\n4.7k resistor\nVCC may be needed VCC\nSDA\nSDA SDA\nSCL\nSCL SCL\nSDA SCL"
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "SDA\nSDA SDA\nSCL\nSCL SCL\nSDA SCL\n(TX) (RX)\nVCC\nSCL SDA\n0V 0V\nCPU\nSDA\nSCL\nVCC\nData format\n0V 0V\nReading Format s tring\nConductivity = Deafult Data type floating point\nTotal dissolved solids\nDecimal places 3\nSalinity = Must be enabled\nSpecific gravity Smallest string 3 characters\nOrder EC,TDS,SAL,SG Largest string 40 characters\nEncoding ASCII\nSDA SCL SDA SCL\n(TX) (RX) (TX) (RX)\n40\nCopyright © Atlas Scientific LLC SCL SDA\nCPU4.7k resistor\nVCC may be needed VCC\nSDA SDA\nSCL SCL\nSDA SCL\n(TX) (RX)"
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "SDA SDA\nSCL SCL\nSDA SCL\n(TX) (RX)\nSCL SDA\nSending commands to device\nCPU\nSDA\n5 parts\nSCL\nStart I2C address Write Command (not case sensitive) Stop\nVCC\n100 (0x64) ASCII command string\n0V 0V\nExample\nStart 100 (0x64) Write Sleep Stop\nI2C address Command\nSDA SCL SDA SCL\n(TX) (RX) (TX) (RX)\nSCL SDA\nCPU\nAdvanced\nAddress bits The entire command as ASCII with all arguments\nSDA\nA6 A5 A4 A3 A2 A1 A0 W ACK First letter of command ACK Last letter of command ACK\nSCL\nStart Stop\nW = low\n41"
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "SCL\nStart Stop\nW = low\n41\nCopyright © Atlas Scientific LLCSDA SCL\n(TX) (RX)\nCPU\nRequesting data from device\n7 parts\nStart I2C address Read Response code Data string Null Stop\n100 (0x64) 1 byte \"1,413\" Terminator\n(Dec 0)\nSDA SCL\n(TX) (RX)\nSCL SDA\nCPU\n1,413\nAdvanced\nAll bytes\nAddress bits N bytes of data after data are Null R = High\nSDA\nA6 − A0 R ACK Response code ACK Data ACK Data N ACK Null ACK Null\nSCL\nStart NACK Stop\n1 49 44 52 49 51 0 = 1,413\nDec Dec\nASCII\n42"
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "1 49 44 52 49 51 0 = 1,413\nDec Dec\nASCII\n42\nCopyright © Atlas Scientific LLCResponse codes\nAfter a command has been issued, a 1 byte response\ncode can be read in order to confirm that the command\nwas processed successfully.\nReading back the response code is completely optional,\nand is not required for normal operation.\nSend\ncommand\nSDA SCL\n(TX) (RX)\nCPU\nProcessing delay\nReceiving\ndata\nExample\nThe response code will always be 254,\nif you do not wait for the processing\nI2C_start;\ndelay."
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "I2C_start;\ndelay.\nI2C_address;\nI2C_write(EZO_comSmDAanSCdL);\n(TX) (RX)\nI2C_stop; Response codes\nSCL SDA\nSingle byte, not string\ndelay(300); Processing delay\nCP25U5 no data to send\nI2C_start; 254 still processing, not ready\nI2C_address; 2 syntax error\nChar[ ] = I2C_read;\n1 successful request\nI2C_stop;\n43\nCopyright © Atlas Scientific LLCTX RX\nCPU\nSDA SCL\n(TX) (RX)\nLED color definition\nSolid Blue LED\nin I2C mode\nNot UART ready\nBlue Green Purple Red White"
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "Not UART ready\nBlue Green Purple Red White\nI2C standby Taking reading Changing Command Find\nI2C address not understood\nSDA SCL SDA SCL\n(TX) (RX) (TX) (RX)\nLED ON\n5V +2.5 mA\n3.3V +1 mA\nSolid Green LED\nin UART mode\nNot I2C ready\n44\nCopyright © Atlas Scientific LLCI2C mode\ncommand quick reference\nAll commands are ASCII strings or single ASCII characters.\nCommand Function\nBaud switch back to UART mode pg. 63\nCal performs calibration pg. 49\nExport export calibration pg. 51"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "Export export calibration pg. 51\nFactory enable factory reset pg. 62\nFind finds device with blinking white LED pg. 47\ni device information pg. 57\nI2C change I2C address pg. 61\nImport import calibration pg. 52\nK set probe type pg. 53\nL enable/disable LED pg. 46\nName set/show name of device pg. 56\nO enable/disable parameters pg. 55\nPlock enable/disable protocol lock pg. 60\nR returns a single reading pg. 48\nSleep enter sleep mode/low power pg. 59\nStatus retrieve status information pg. 58"
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "Status retrieve status information pg. 58\nT temperature compensation pg. 54\nTDS change the TDS conversion factor pg. 50\n45\nCopyright © Atlas Scientific LLCLED control\nCommand syntax\n300ms processing delay\nL,1 LED on default\nL,0 LED off\nL,? LED state on/off?\nExample Response\nL,1\n1 0\nWait 300ms\nDec Null\nL,0 1 0\nWait 300ms Dec Null\nL,? 1 ?L,1 0 1 ?L,0 0\nor\nDec ASCII Null Dec ASCII Null\nWait 300ms\nSDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)\nL,1 L,0\n46"
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "L,1 L,0\n46\nCopyright © Atlas Scientific LLC\nShort Short\nSDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)Find\n300ms processing delay\nCommand syntax\nThis command will disable continuous mode\nSend any character or command to terminate find.\nFind LED rapidly blinks white, used to help find device\nExample Response\nFind\n1 0\nWait 300ms\nDec Null\nSDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX)\nShort\nSDA SCL SDA SCL SDA SCL"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "Short\nSDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX)\n47\nCopyright © Atlas Scientific LLC\nShort\nSDA SCL SDA SCL\n(TX) (RX) (TX) (RX)Taking reading\nCommand syntax\n600ms processing delay\nR return 1 reading\nExample Response\nR 1 1,413 0\nDec ASCII Null\nWait 600ms\nSDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX)\nWait 600ms\nGreen Blue\nTaking reading Transmitting Standby\n48\nCopyright © Atlas Scientific LLCCalibration\n600ms processing delay\nCommand syntax"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "600ms processing delay\nCommand syntax\nDry calibration must always be done first!\nCal,dry dry calibration\nCal,n single point calibration, where n = any value\nCal,low,n low end calibration, where n = any value\nCal,high,n high end calibration, where n = any value\nCal,clear delete calibration data\nCal,? device calibrated?\nExample Response\nCal,dry 1 0\nWait 600ms Dec Null\nCal,84 1 0\nWait 600ms Dec Null\nCal,low,12880 1 0\nWait 600ms Dec Null\nCal,high,80000 1 0\nWait 600ms Dec Null\nCal,clear 1 0"
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "Wait 600ms Dec Null\nCal,clear 1 0\nWait 300ms Dec Null\nCal,? 1 ?CAL,0 0 or 1 ?CAL,1 0 or 1 ?CAL,2 0\nWait 300ms Dec ASCII Null Dec ASCII Null Dec ASCII Null\ntwo point three point\nTwo point calibration: Three point calibration:\nStep 1. \"cal,dry\" Step 1 \"cal,dry\"\nStep 2. \"cal,n\" Step 2 \"cal,low,n\"\nCalibration complete! Step 3 \"cal,high,n\"\nCalibration complete!\n49\nCopyright © Atlas Scientific LLCChanging the TDS (ppm)\nconversion factor\n300ms processing delay"
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "conversion factor\n300ms processing delay\nThere are several different conversion factors\nused to read TDS(ppm). For some applications,\nCommand syntax it may be necessary to use a conversion factor\nother than the default value of 0.54\nTDS,n set custom conversion factor, n = any value between 0.01 – 1.00\nTDS,? conversion factor being used\nExample Response\nTDS,? 1 ?TDS,0.54 0\nDec ASCII Null\nWait 300ms\nEC TDS\nR\n1 100,54 0\nWait 300ms\nDec ASCII Null\nTDS,0.46 1 0\nWait 300ms\nDec Null\nEC TDS\nR\n1 100,46 0"
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "Wait 300ms\nDec Null\nEC TDS\nR\n1 100,46 0\nWait 300ms\nDec ASCII Null\nCommon conversion factors Formula\nNaCl 0.47 – 0.50 EC x conversion factor = TDS\nKCL 0.50 - 0.57\n“442” 0.65 – 0.85\n50\nCopyright © Atlas Scientific LLCExport calibration\n300ms processing delay\nCommand syntax\nExport: Use this command to download calibration settings\nExport,? calibration string info\nExport export calibration string from calibrated device\nExample Response\nExport,? 1 10,120 0 Response breakdown"
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "Export,? 1 10,120 0 Response breakdown\nWait 300ms Dec ASCII Null 10, 120\n# of strings to export # of bytes to export\nExport strings can be up to 12 characters long\n1 59 6F 75 20 61 72 0 (1 of 10)\nExport\nWait 300ms Dec ASCII Null\n1 65 20 61 20 63 6F 0 (2 of 10)\nExport\nWait 300ms Dec ASCII Null\n(7 more)\n1 6F 6C 20 67 75 79 0 (10 of 10)\nExport\nWait 300ms Dec ASCII Null\n1 *DONE 0\nExport\nWait 300ms Dec ASCII Null\n51\nCopyright © Atlas Scientific LLCImport calibration\n300ms processing delay"
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "300ms processing delay\nCommand syntax\nImport: Use this command to upload calibration\nsettings to one or more devices.\nImport,n import calibration string to new device\nExample Response\nImport, 59 6F 75 20 61 72 (1 of 10) 1 0\nWait 300ms Dec Null\nImport, 65 20 61 20 63 61 F (2 of 10) 1 0\nSDA SCL 2 SCL SDA\n(TX) (RX) Wait 300ms Dec Null\n3\n4\n5 MCU\n6\n7\nImport, 6F 6C 20 67 75 78 9 (10 of 10) 1 0\n9\n10 Wait 300ms Dec Null\n[10,120]\nImport,n\nS ( D TX) AS ( C RX) L 1 2 3 SCL SDA SCLSD1 2 A SDA SCL"
+  },
+  {
+    "faiss_index_id": 68,
+    "text": "4 (TX) (RX)\n5 M3CU\n6 4\n7\n8 MCU 5\n9\n10 6\n[10,120]\n7\n8\n9\n10\n1 [10,120]\nSCLSDA 2 S ( D TX) AS ( C RX) L\n3\n4\nMCU 5\n6\n7\n8 1 *Pending 0\n9\n10\n[10,120] Dec ASCII Null\nsystem will reboot\n1\nSCL SCA 2 SDA SCL\n(TX) (RX)\n3\n1\nSCLSCA 2 S ( D TX 4 ) AS ( C RX) L * If one of the imported strings is not\n3 4 MCU 5\nMCU 5 6 correctly entered, the device will not\n6\n7 7\n8\n9 8 accept the import and reboot.\n10 9\n[10,120]\n10\n[10,120]\nreboot\n52\nCopyright © Atlas Scientific LLCSetting the probe type\nCommand syntax"
+  },
+  {
+    "faiss_index_id": 69,
+    "text": "Command syntax\n300ms processing delay\nK,n n = any value; floating point in ASCII K 1.0 is the default value\nK,? probe K value?\nExample Response\nK,10\n1 0\nWait 300ms\nDec Null\nK,? 1 K,10 0\nDec ASCII Null\nWait 600ms\nK 0.1 K 1.0 K 10\n53\nCopyright © Atlas Scientific LLCTemperature compensation\nDefault temperature = 25°C\nCommand syntax Temperature is always in Celsius\nSDA SCL SDA SCL SDTAeSmCLperatureSD iAs SnCoL t retained if power is ScDuAtSCL SDA SCL"
+  },
+  {
+    "faiss_index_id": 70,
+    "text": "(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)\nT,n n = any value; floating point or int 300ms processing delay\nT,? compensated temperature value?\nRT,n set temperature compensation and take a reading\nExamGprleeen GreReensponse Blue Blue\nTaking reTaadkiningg reading TransmittTinragnsmitting Standby Standby\nT,19.5 1 0\nWait 300ms Dec Null\nRT,19.5 1 8.91 0\nWait 900ms Dec ASCII Null\nT,? 1 ?T,19.5 0\nWait 300ms Dec ASCII Null\nT,19.5\n8.82 8.91\n54"
+  },
+  {
+    "faiss_index_id": 71,
+    "text": "Wait 300ms Dec ASCII Null\nT,19.5\n8.82 8.91\n54\nCopyright © Atlas Scientific LLCEnable/disable parameters\nfrom output string\nCommand syntax\n300ms processing delay\nO, [parameter],[1,0] enable or disable output parameter\nO,? enabled parameter?\nExample Response\nO,EC,1 / O,EC,0 1 0 enable / disable conductivity\nWait 300ms Dec Null\nO,TDS,1 / O,TDS,0 1 0 enable / disable total dissolved solids\nWait 300ms Dec Null\nO,S,1 / O,S,0 1 0 enable / disable salinity\nWait 300ms Dec Null"
+  },
+  {
+    "faiss_index_id": 72,
+    "text": "Wait 300ms Dec Null\nO,SG,1 / O,SG,0 1 0 enable / disable specific gravity\nWait 300ms Dec Null\nO,? 1 ?,O,EC,TDS,S,SG 0 if all are enabled\nWait 300ms Dec ASCII Null\nParameters * If you disable all possible data types\nyour readings will display “no output”.\nEC Conductivity = μS/cm\nTDS Total dissolved solids = ppm\nS Salinity = PSU 0.00 – 42.00\nSG Specific gravity (sea water only) = 1.00 – 1.300\nFollowed by 1 or 0\n1 enabled\n0 disabled\n55\nCopyright © Atlas Scientific LLCNaming device"
+  },
+  {
+    "faiss_index_id": 73,
+    "text": "55\nCopyright © Atlas Scientific LLCNaming device\n300ms processing delay\nCommand syntax\nDo not use spaces in the name\nn = _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nName,n set name\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\nName, clears name\nUp to 16 ASCII characters\nName,? show name\nExample Response\n1 0\nName, name has been cleared\nWait 300ms Dec Null\n1 0\nName,zzt\nWait 300ms Dec Null\n1 ?Name,zzt 0\nName,?\nWait 300ms Dec ASCII Null\nName,zzt\nName,?\nSDA SCL SDA SCL SDA SCL SDA SCL"
+  },
+  {
+    "faiss_index_id": 74,
+    "text": "Name,zzt\nName,?\nSDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)\n1 0 1 ?Name,zzt 0\n56\nCopyright © Atlas Scientific LLC\nr 0.1\nShort Short\nSDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)Device information\nCommand syntax\n300ms processing delay\ni device information\nExample Response\ni\n1 ?i,EC, 2.16 0\nWait 300ms Dec ASCII Null\nResponse breakdown\n?i, EC, 2.16\nDevice Firmware\n57"
+  },
+  {
+    "faiss_index_id": 75,
+    "text": "?i, EC, 2.16\nDevice Firmware\n57\nCopyright © Atlas Scientific LLCReading device status\nCommand syntax\n300ms processing delay\nStatus voltage at Vcc pin and reason for last restart\nExample Response\nStatus\n1 ?Status,P,5.038 0\nWait 300ms Dec ASCII Null\nResponse breakdown\n?Status, P, 5.038\nReason for restart Voltage at Vcc\nRestart codes\nP powered off\nS software reset\nB brown out\nW watchdog\nU unknown\n58\nCopyright © Atlas Scientific LLCSleep mode/low power\nCommand syntax\nSend any character or"
+  },
+  {
+    "faiss_index_id": 76,
+    "text": "Command syntax\nSend any character or\nSleep enter sleep mode/low power\ncommand to awaken device.\nExample Response\nDo not read status byte after\nSleep no response\nissuing sleep command.\nAny command wakes up device\nSTANDBY SLEEP\n5V 18.14 mA 0.7 mA\n3.3V 16.85 mA 0.4 mA\nSDA SCL SDA SSCDLA SCL SDA SCL\n(TX) (RX) (TX) (RX(T)X) (RX) (TX) (RX)\nSleep\nStandby Sleep\n59\nCopyright © Atlas Scientific LLC\nShort Short\nSDA SCL SDSADASCSLCL SDASDSACLSCL SDA SCL"
+  },
+  {
+    "faiss_index_id": 77,
+    "text": "SDA SCL SDSADASCSLCL SDASDSACLSCL SDA SCL\n(TX) (RX) (TX)(TX) (RX)(RX) (TX) (TX)(RX) (RX) (TX) (RX)SDSADASCSSLCDLA SCL SDSADASCSSLCDLA SCL\n(TX) (TX) (RX)(R(TXX)) (RX) (TX) (TX) (RX)(R(TXX)) (RX)\nProtocol lock\nCommand syntax\n300ms processing delay\nPlock,1 enable Plock Locks device to I2C mode.\nPlock,0 disable Plock default\nPlock,? Plock on/off?\nExample Response\nPlock,1\n1 0\nWait 300ms\nDec Null\nPlock,0 1 0\nWait 300ms Dec Null\nPlock,? 1 ?Plock,1 0\nDec ASCII Null\nWait 300ms"
+  },
+  {
+    "faiss_index_id": 78,
+    "text": "Plock,? 1 ?Plock,1 0\nDec ASCII Null\nWait 300ms\nPlock,1 Baud, 9600 ShSohrotrSthort\nSDASDSACLSCLSDA SCL SDASDSACLSCLSDA SCL SDASDSACLSCLSDA SCL\n(TX) (TX)(RX) (RX) (TX) (RX) (TX) (TX)(RX) (RX) (TX) (RX) (TX) (TX)(RX) (RX) (TX) (RX)\ncannot change to UART cannot change to UART\n60\nCopyright © Atlas Scientific LLCI2C address change\nCommand syntax\n300ms processing delay\nI2C,n sets I2C address and reboots into I2C mode\nExample Response\nI2C,101 device reboot\n(no response given)"
+  },
+  {
+    "faiss_index_id": 79,
+    "text": "I2C,101 device reboot\n(no response given)\nWarning! n = any number 1 – 127\nChanging the I2C address will prevent\ncommunication between the circuit and\nthe CPU until your CPU is updated with\nthe new I2C address.\nDefault I2C address is 100 (0x64).\nI2C,101\nSDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)\n(reboot)\n61\nCopyright © Atlas Scientific LLC\nShort Short\nSDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL"
+  },
+  {
+    "faiss_index_id": 80,
+    "text": "SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)Factory reset\nCommand syntax\nFactory reset will not take the device out of I2C mode.\nFactory enable factory reset I2C address will not change\nExample Response\nFactory device reboot\n(no response given)\nClears calibration\nLED on\nResponse codes enabled\nFactory\nSDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)\n(reboot)\n62\nCopyright © Atlas Scientific LLC\nShort Short"
+  },
+  {
+    "faiss_index_id": 81,
+    "text": "62\nCopyright © Atlas Scientific LLC\nShort Short\nSDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)Change to UART mode\nCommand syntax TX RXTX RX TX RX\nBaud,n switch from I2C to UART CPCUPU CPU\nExample Response\nBaud,9600 reboot in UART mode\n(no response given)\n300\n1200\n2400\nn = 9600\n19200\n38400\n57600\n115200\nBaud,9600 (reboot)\nChanging to\nBlueBlue GreeGnreen PurpPluerpleBlue RedRedGreen WhiWtehPiuterple Red White\nUART mode"
+  },
+  {
+    "faiss_index_id": 82,
+    "text": "UART mode\nI2C stIa2nCd sbtyandbyTakinTga rkeinadgi nregading ChangCihnagngI2iCn gstanCdobmy mCaonmdTmakainndg readingFind FCinhdanging Command Find\nI2C adI2dCr easdsdressnot unnodte rusntdoeordstood I2C address not understood\n63\nCopyright © Atlas Scientific LLCManual switching to UART\nSDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX)\n• Disconnect ground (power off)\n• Disconnect TX and RX\n• Connect TX to the right PRB\n• Confirm RX is disconnected\n• Connect ground (power on)"
+  },
+  {
+    "faiss_index_id": 83,
+    "text": "• Connect ground (power on)\n• Wait for LED to change from Blue to Green\n• Disconnect ground (power off)\n• Reconnect all data and power\nExample\nShort\nSDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX)\nWrong Example\nShort\nDisconnect RX line\nSDA SCL SDA SCL\n(TX) (RX) (TX) (RX)\n64\nCopyright © Atlas Scientific LLCCalibration theory\nThe accuracy of your readings is directly related to the quality of your calibration.\n(Calibration is not difficult, and a little bit of care goes a long way)"
+  },
+  {
+    "faiss_index_id": 84,
+    "text": "A properly calibrated conductivity probe will never need recalibration. Once calibrated, you\ncan use the probe continuously year after year without concern. This is because a conductivity\nprobe does not contain any parts that wear out over time.\nHowever, changing the cable length of the probe or moving the EZO-EC circuit from one\nmachine to another may require recalibration. This is because such actions will change the\nelectrical properties of the probe or EC circuit.\nPWR\nGNDTXRX RX\nTX\nBSU\n65"
+  },
+  {
+    "faiss_index_id": 85,
+    "text": "PWR\nGNDTXRX RX\nTX\nBSU\n65\nCopyright © Atlas Scientific LLCTwo point or Three point calibration\nNo calibration Two point calibration\nApproximation\nNarrow band accuracy\nThree point calibration\nWide range accuracy\nRecommended calibration points\nK 0.1 K 1.0 K 10\n84µS 1,413µS 12,880µS 80,000µS 12,880µS 150,000µS\nLow High Low High Low High\nWhen calibrating, Atlas Scientific recommends using the above µS values. However, you\ncan use any µS values you want.\n66"
+  },
+  {
+    "faiss_index_id": 86,
+    "text": "can use any µS values you want.\n66\nCopyright © Atlas Scientific LLCTemperature compensation during calibration\nTemperature has a significant effect on conductivity readings. The EZO™ Conductivity\ncircuit has its temperature compensation set to 25˚ C as the default. At no point should\nyou change the default temperature compensation during calibration.\nIf the solution is +/- 5˚ C (or more), refer to the chart on the\nbottle, and calibrate to that value.\nµS/cm µS/cm\nTime\nConductivity"
+  },
+  {
+    "faiss_index_id": 87,
+    "text": "µS/cm µS/cm\nTime\nConductivity\nTemperature compensation example\nFor this example, we brought the temperature of the solution down to 10˚ C.\nReferring to chart on the bottle, you can see the value you should calibrate to is 9,330µS.\nµS/cm µS/cm\n1100˚˚CC\n12,880µS\nOver time, the readings will normalize as the solution\nwarms to 25˚ C.\nSee pages 27 or 54 for more information.\n9,330µS\n67\nCopyright © Atlas Scientific LLC1. Pre-calibration setup"
+  },
+  {
+    "faiss_index_id": 88,
+    "text": "Connect the dry conductivity probe and take continous readings.\nPWR GNDTXRX RX\nTX\n2. Set probe type\nIf your probe = K 1.0 (default), then set the probe type by using the \"K,n\" command.\n(where n = K value of your probe) for more information, see page 26 or 53. 1,000 ms\n1,000 ms\nD\nABCE 1 5 10 15 20 25 30\nD\nABCE\nD\nABCED ABCE 1 5 10 15 20 25 30\nD\nABCE\nGHF\nJI 1 5 10ASctileans1t5ific 20 25 30\nGHF\nJI\nGHF JIGHF\nJI 1 5 10ASctileans1t5ific 20 25 30\nGHF\nJI\n3. Dry calibration"
+  },
+  {
+    "faiss_index_id": 89,
+    "text": "GHF\nJI\n3. Dry calibration\nPerform a dry calibration using the command \"Cal,dry\" Even though youG mreaeyn see readiCnygasn\nGreen Cyan\nof 0.00 beforeD AB\nGH\nCE\nF JI\n1\n1\nis 5\n5\ns 1\n1\n0\n0\nu\nASctileans\n1\n1t\n5\n5ifi\ni\nc\nn 2\n2\n0\n0\ng 2\n2\n5\n5\n3\n3\n0\n0\ntD AB\nGH\nCE\nF JI\nhe \"Cal,dry\" commD AB\nGH\nCE\nF JI\nD AB\nGH\nCE\nF JI\na 1\n1\n5\n5\nn 1\n1\n0\n0\nd\nASctileans\n1\n1t\n5\n5i\n,\nfic\n2\n2\n0\n0\nit 2\n2\n5\n5\nis 3\n3\n0\n0\nD AB\nGH\nCE\nF JI\nstill a neces\nS\ns\nta\na\nn\nr\nd\ny\nb y\nparStt aondf\nT\nb\na\ncy\nki\na\nng\nli b\nre\nr\na\na\ndi\nt\nn\nTi\ng"
+  },
+  {
+    "faiss_index_id": 90,
+    "text": "T\nb\na\ncy\nki\na\nng\nli b\nre\nr\na\na\ndi\nt\nn\nTi\ng\naokinng. rea\nT\nd\nr\ni\na\nn\nn\ng\nsmitting\nTransmitting\n“Cal,dry”\nCorrect\n00.00 0.00 Correct\n“Cal,dry”\n17.00 0.00 Also correct\nAlso correct\nKCl Conductivity\n125ml Solution\nTM\n+/- 5 25°C / 77°F\nA\n8\ntlas-S\n5\nci\n7\nen\n4\nt\n3\nifi\n4\nc.co\n0\nm\n0\n/\n5\nm\n0\nsd\n3\ns.htm\n9\nl\n1,413µS\n1122 °C50505 °45567 F10987 1111 µ ,,,, S80124 /92471 cm60783 33445 °C05050 111 012 89 °F 432 6511122 µ,,,,, S57801 /c41605 m81098\nKCl Conductivity\n125ml Solution\nTM\n+/- 5 25°C / 77°F\nA\n8\ntlas-S"
+  },
+  {
+    "faiss_index_id": 91,
+    "text": "125ml Solution\nTM\n+/- 5 25°C / 77°F\nA\n8\ntlas-S\n5\nci\n7\nen\n4\nt\n3\nifi\n4\nc.co\n0\nm\n0\n/\n5\nm\n0\nsd\n3\ns.htm\n9\nl\n1,413µS\n1122 °C50505 °45567 F10987 1111 µ ,,,, S80124 /92471 cm60783 33445 °C05050 111 012 89 °F 432 6511122 µ,,,,, S57801 /c41605 m81098\nBSU\nPWR GNDTXRX RX\nTX\nBSU\nNot yet!\nDo not put the probe\ninto calibration solution.\n68\nCopyright © Atlas Scientific LLCD\nABC\nE\n1 5 10 15 20 25 30\nD\nABC\nE D\nABC\nED\nABC\nE\n1 5 10 15 20 25 30\nD\nABC\nE\nGH F\nJI\n1 5 10 ASctileans1\nt\n5\nific\n20 25 30\nGH F\nJI\nGH F\nJI"
+  },
+  {
+    "faiss_index_id": 92,
+    "text": "t\n5\nific\n20 25 30\nGH F\nJI\nGH F\nJI\nGH F\nJI\n1 5 10 ASctileans1\nt\n5\nific\n20 25 30\nGH F\nJI\n4. Calibration\nAtlas Scientific recommends performing a three point calibration (dry, low point & high\npoint) to obtain the greatest sensing range possible. However, depending on your situation\na two point calibration may suffice.\nTo perform a two or three point calibration, follow the instructions below.\n“CTwo paoint lca,libdrationry”"
+  },
+  {
+    "faiss_index_id": 93,
+    "text": "“CTwo paoint lca,libdrationry”\nAfter completing the dry calibration; Pour a small amount of calibration solution into a\n12,880µS12,880µS 12,880µS12,880µS\ncup (µS value of your choice). Shake the probe to make sure you do not have trapped air\nin the probe. You should see readings that are off by +/- 40% from the stated value of the\ncalibration solution. Wait for readings to stabilize (small movement from one reading to\nthe next is normal).\n84μS 84μS\n50µS – 11570µµSS – 117µS 0.00µS 0.00µS"
+  },
+  {
+    "faiss_index_id": 94,
+    "text": "84μS 84μS\n50µS – 11570µµSS – 117µS 0.00µS 0.00µS\nTrapped air in sensing check probe connection,\narea (shake to remove) you cannot calibrate to 0.\n53\n54 Unstabilized\n56\nKCl Conductivity\n59\n125ml Solution\n59 Stabilized TM\n59\n59 Once the readings stabilize, issue the single point\ncal,84 +/- 5 ca25li°Cb / r77a°Ftion command.\"cal,n\" where n = any value.\nAtl*as-OScienKtific.com/msds.html °C\n5\n°\n4\nF\n1\nµ\n(\nS\n8\n/\nR9\ncm\n6e3\n°C\n0a8\n°F\n6d1\nµ\n,\nS\n5i\n/c\n4\nm\nn8 gs will change, calibration complete).a"
+  },
+  {
+    "faiss_index_id": 95,
+    "text": "/c\n4\nm\nn8 gs will change, calibration complete).a\n10 501,020 35 951,711\n84 15 591,147 401041,860\n88457434 00503 9 1,413µS 2 2 0 5 6 7 8 7 1 1 , , 2 4 7 1 8 3 4 5 5 0 1 1 1 2 3 2 2 2 , , 0 1 0 5 9 8\nSend\nCalibration complete!\n69\nCopyright © Atlas Scientific LLCThree point calibration - low point\n• Complete the dry calibration process first.\n• Pour a small amount of the low point calibration solution into a cup.\n• Shake the probe to remove trapped air.\n• Readings may be off by +/- 40%"
+  },
+  {
+    "faiss_index_id": 96,
+    "text": "• Readings may be off by +/- 40%\n• Wait for readings to stabilize.\n16,247\n15,491 Unstabilized\n14,053\n13,756\n13,756\nStabilized\n13,756\n13,756 Once the readings stabilize, issue the low point\ncal,low,12880 calibration command.\"cal,low,12880\"\n*OK (Readings will NOT change)\n13,756\n13,756\nSend\nThree point calibration - high point\n• Rinse off the probe before calibrating to the high point.\n• Pour a small amount of the high point calibration solution into a cup.\n• Shake the probe to remove trapped air."
+  },
+  {
+    "faiss_index_id": 97,
+    "text": "• Shake the probe to remove trapped air.\n• Readings may be off by +/- 40%\n• Wait for readings to stabilize.\n51,674\n53,826 Unstabilized\n55,193\n56,493\n56,493\nStabilized\n56,493\nOnce the readings stabilize, issue the high point\n56,493\ncal,high,80000 calibration command.\"cal,high,80000\"\n*OK (Readings will change, calibration complete).\n80,000\n80,000\nSend\nCalibration complete!\n70\nCopyright © Atlas Scientific LLCBest practices for calibration"
+  },
+  {
+    "faiss_index_id": 98,
+    "text": "Always watch the readings throughout the calibration process.\nIssue calibration commands once the readings have stabilized.\n51,674\n53,684\n55,193\n5561,,469734\n5563,,469834\nC55a,l,1h9ig3h,80000\n*5O6,K493\n8506,,040903\n8C0a,l0,h0ig0h,80000\n8*O0,K000\n80,000\n80,000\n80,000\nNever do a blind calibration!\nIssuing a calibration command before the readings stabilize will result in drifting readings.\n53,684\n56,493\nCal,high,80000\n*5O3,K684\n8506,,040903\n8C0a,l1,h5ig0h,80000\n8*O0,K640\n8800,,905030\n8810,,315540"
+  },
+  {
+    "faiss_index_id": 99,
+    "text": "8*O0,K640\n8800,,905030\n8810,,315540\n8810,,765410\n80,953\n81,354\n81,751\n71\nCopyright © Atlas Scientific LLCUnderstanding salinity measurements\nPSS-78\nWhen you enable the salinity output of the EZO-EC circuit it mathematically converts\nconductivity to salinity using the Practical Salinity Scale (PSS-78).\nPSS-78 was developed in 1978 to standardize how the salinity of seawater is measured.\nThe salinity scale created a new way to define salinity based on electrical conductivity"
+  },
+  {
+    "faiss_index_id": 100,
+    "text": "instead of chemical titration.\n38.00\nPSU\nConductivity of seawater\nSalinity =\nConductivity of PSS Standard\nPSS KCl standard Seawater\n32.4 g/kg of water @15˚C\nThe PSS salinity measurement does not determine the mass of salt in the water; rather,\nit determines salinity from the electrical conductivity of the water relative to a standard\nsolution.\n72\nCopyright © Atlas Scientific LLCUnderstanding salinity measurements\n0.31\n3.80\n7.53\n11\n21.09\n41.20"
+  },
+  {
+    "faiss_index_id": 101,
+    "text": "0.31\n3.80\n7.53\n11\n21.09\n41.20\nRaw conductivity readings can fluctuate quite a bit, which may make it appear that salinity\nis changing. However, when conductivity is converted to Practical Salinity (PSS-78), those\nfluctuations translate into very small changes in salinity values, making the readings\nappear more stable.\n41.78\n73\nCopyright © Atlas Scientific LLCLong-term conductivity\nmeasurements in stagnant water\nTaking continuous conductivity readings in stagnant water:"
+  },
+  {
+    "faiss_index_id": 102,
+    "text": "*Reading *Reading *Reading\n100µ 105µ 126µ\nTime Time Time\n1 min\n1 hour 10 hrs\nA small amount of energy must be put into the water to measure conductivity. This small\namount of energy will start to affect the readings in stagnant water. Over time, the energy\npassing through the stagnant water will start to align the dissolved salts along a path\nof least resistance. Lowering the resistance of the water will increase the water‘s\nconductivity."
+  },
+  {
+    "faiss_index_id": 103,
+    "text": "conductivity.\nMoving the probe or the water will disrupt this alignment and cause the readings\nto suddenly return to normal.\n*These are example readings; there is no way to predict how the readings will\nchange over time.\nConductivity\n130µ\n115µ\n100µ\n50µ\n1 min 1 hr 5 hr 10 hrs\nTime\n74\nCopyright © Atlas Scientific LLCSoldering\nDo not directly solder an EZO circuit to your PCB. If something goes wrong during the"
+  },
+  {
+    "faiss_index_id": 104,
+    "text": "soldering process it may become impossible to correct the problem. It is simply not worth\nthe risk.\nInstead, solder female header pins to your PCB and place the EZO device in the female\nheaders.\nAvoid using rosin core solder.\nUse as little flux as possible.\nFlux residue will severely affect your readings. Any Flux residue that comes in contact\nwith the PRB pins or your probes connector will cause a “flux short”.\nFlux residue\nYou MUST remove all the flux residue from your PCB after soldering.\n75"
+  },
+  {
+    "faiss_index_id": 105,
+    "text": "75\nCopyright © Atlas Scientific LLCSoldering\nRemoving flux residue can be done with commercially available products such as flux off or\nyou can use alcohol and a tooth brush.\nA\nL\nC\nO\nH\nO\nL\nRemove EZO Circuit and\nsoak in alcohol for 10 mins. Brush with tooth brush.\nDONE\nSoak in alcohol for 5 mins. Let it dry in the air.\nWhat does a flux short look like?\nReadings move slowly and take serval minutes to reach the correct value.\n76\nCopyright © Atlas Scientific LLCEZO TM circuit footprint\n17.78mm"
+  },
+  {
+    "faiss_index_id": 106,
+    "text": "17.78mm\n(0.7\")\n3.0\n2.54mm\n(0.1\")\n1 2 3\nIn your CAD software, Place a 3 position header at both Delete the 8 position header. The two 3\nplace a 8 position header. top and bottom of the 8 position. position headers are now 17.78mm (0.7”)\napart from each other.\n1.05mm Ø 17.78mm\n(0.7\")\n77\nCopyright © Atlas Scientific LLCDatasheet change log\nDatasheet V 6.6\nAdded a section \"Understanding salinity measurements\" on page 72.\nDatasheet V 6.5\nRevised calibration theroy on pages 65 - 70.\nDatasheet V 6.4"
+  },
+  {
+    "faiss_index_id": 107,
+    "text": "Datasheet V 6.4\nRevised entire document.\nDatasheet V 6.3\nRevised naming device info on pages 36 & 63.\nDatasheet V 6.2\nAdded new command:\n\"TDS,n\" Changing the TDS (ppm) conversion factor on pages 30 (UART) & 57 (I2C).\nDatasheet V 6.1\nCorrected typos within the datasheet.\nDatasheet V 6.0\nChanged the K value range from 0.1 to 0.01 on pg 5.\nDatasheet V 5.9\nMoved Default state to pg 17.\nDatasheet V 5.8\nRevised conductivity probe range information on pg 5.\nDatasheet V 5.7"
+  },
+  {
+    "faiss_index_id": 108,
+    "text": "Datasheet V 5.7\nRevised response for the sleep command in UART mode on pg 39.\nDatasheet V 5.6\nAdded more information on the Export calibration and Import calibration commands.\n78\nCopyright © Atlas Scientific LLCDatasheet V 5.5\nRevised calibration theory pages, added information on temperature compensation\non pg. 15, moved data isolation to pg 9, and correct wiring to pg 11.\nDatasheet V 5.4\nRevised isolation schematic on pg. 13\nDatasheet V 5.3\nAdded new command:"
+  },
+  {
+    "faiss_index_id": 109,
+    "text": "Datasheet V 5.3\nAdded new command:\n\"RT,n\" for Temperature compensation located on pages 30 (UART) & 55 (I2C).\nAdded firmware information to Firmware update list.\nDatasheet V 5.2\nRevised calibration information on pages 27 & 52.\nDatasheet V 5.1\nAdded more information about temperature compensation on pages 30 & 55.\nDatasheet V 5.0\nChanged \"Max rate\" to \"Response time\" on cover page.\nDatasheet V 4.9\nRemoved note from certain commands about firmware version."
+  },
+  {
+    "faiss_index_id": 110,
+    "text": "Added steps to calibration command pages 27 (UART) and 52 (I2C).\nDatasheet V 4.8\nRevised definition of response codes on pg 46.\nDatasheet V 4.7\nRevised cover page art.\nDatasheet V 4.6\nUpdated calibration processing delay time on pg.52.\nDatasheet V 4.5\nRevised Enable/disable parameters information on pages 31 & 56.\n79\nCopyright © Atlas Scientific LLCDatasheet V 4.4\nUpdated High point calibration info on page 11.\nDatasheet V 4.3\nUpdated calibration info on pages 27 (UART) and 52 (I2C)."
+  },
+  {
+    "faiss_index_id": 111,
+    "text": "Datasheet V 4.2\nRevised Plock pages to show default value.\nDatasheet V 4.1\nCorrected I2C calibration delay on pg. 52.\nDatasheet V 4.0\nRevised entire datasheet.\n80\nCopyright © Atlas Scientific LLCFirmware updates\nV1.0 – Initial release (April 17, 2014)\nV1.1 – (June 2, 2014)\n• Change specific gravity equation to return 1.0 when the uS reading is < 1000 (previously returned 0.0)\n• Change accuracy of specific gravity from 2 decimal places to 3 decimal places"
+  },
+  {
+    "faiss_index_id": 112,
+    "text": "• Don’t save temperature changes to EEPROM\nV1.2 – (Aug 1, 2014)\n• Baud rate change is now a long, purple blink\nV1.5 – Baud rate change (Nov 6, 2014)\n• Change default baud rate to 9600\nV1.6 – I2C bug (Dec 1, 2014)\n• Fixed I2C bug where the circuit may inappropriately respond when other I2C devices are connected\nV1.8 – Factory (April 14, 2015)\n• Changed “X” command to “Factory”\nV1.95 – Plock (March 31, 2016)\n• Added protocol lock feature “Plock”\nV1.96 – EEPROM (April 26, 2016)"
+  },
+  {
+    "faiss_index_id": 113,
+    "text": "V1.96 – EEPROM (April 26, 2016)\n• Fixed bug where EEPROM would get erased if the circuit lost power 900ms into startup\nThis would cause the EZO circuit to revert back to UART mode if set to I2C\nV2.10 – (April 12, 2017)\n• Added \"Find\" command.\n• Added \"Export/import\" command.\n• Modified continuous mode to be able to send readings every \"n\" seconds.\n• Default output changed from CSV string of 4 values to just conductivity; Other values must be enabled\nV2.11 – (April 28, 2017)"
+  },
+  {
+    "faiss_index_id": 114,
+    "text": "V2.11 – (April 28, 2017)\n• Fixed \"Sleep\"bug, where it would draw excessive current.\nV2.12 – (May 9, 2017)\n• Fixed bug in sleep mode, where circuit would wake up to a different I2C address.\nV2.13 – (July 16, 2018)\n• Added “RT” command to Temperature compensation\nV2.14 – (Nov 26, 2019)\n• The K value range has been extended to 0.01\nV2.15 – (June 29, 2020)\n• Fixed bug where output doesnt always round to 0Firmware updates\nV2.16 – (Dec 14, 2021)\n• Internal update for new part compatibility."
+  },
+  {
+    "faiss_index_id": 115,
+    "text": "• Internal update for new part compatibility.\nV2.17 – (June 30, 2023)\n• Improved sleep mode.\n82\nCopyright © Atlas Scientific LLCWarranty\nAtlas Scientific™ Warranties the EZO™ class Conductivity circuit to be free of defect during\nthe debugging phase of device implementation, or 30 days after receiving the EZO™class\nConductivity circuit (which ever comes first).\nThe debugging phase\nThe debugging phase as defined by Atlas Scientific™ is the time period when the EZO™"
+  },
+  {
+    "faiss_index_id": 116,
+    "text": "class Conductivity circuit is inserted into a bread board, or shield. If the EZO™ class\nConductivity circuit is being debugged in a bread board, the bread board must be devoid\nof other components. If the EZO™ class Conductivity circuit is being connected to a micro-\ncontroller, the microcontroller must be running code that has been designed to drive the\nEZO™ class Conductivity circuit exclusively and output the EZO™ class Conductivity circuit\ndata as a serial string."
+  },
+  {
+    "faiss_index_id": 117,
+    "text": "data as a serial string.\nIt is important for the embedded systems engineer to keep in mind that the following\nactivities will void the EZO™ class Conductivity circuit warranty:\n• Soldering any part of the EZO™ class Conductivity circuit.\n• Running any code, that does not exclusively drive the EZO™ class Conductivity\ncircuit and output its data in a serial string.\n• Embedding the EZO™ class Conductivity circuit into a custom made device.\n• Removing any potting compound.\n83"
+  },
+  {
+    "faiss_index_id": 118,
+    "text": "• Removing any potting compound.\n83\nCopyright © Atlas Scientific LLCReasoning behind this warranty\nBecause Atlas Scientific™ does not sell consumer electronics; once the device has been em-\nbedded into a custom made system, Atlas Scientific™ cannot possibly warranty the EZO™\nclass Conductivity circuit, against the thousands of possible variables that may cause the\nEZO™ class Conductivity circuit to no longer function properly.\nPlease keep this in mind:"
+  },
+  {
+    "faiss_index_id": 119,
+    "text": "Please keep this in mind:\n1. All Atlas Scientific™ devices have been designed to be embedded into a custom\nmade system by you, the embedded systems engineer.\n2. All Atlas Scientific™ devices have been designed to run indefinitely without\nfailure in the field.\n3. All Atlas Scientific™ devices can be soldered into place, however you do so at your\nown risk.\nAtlas Scientific™ is simply stating that once the device is being used in your application,"
+  },
+  {
+    "faiss_index_id": 120,
+    "text": "Atlas Scientific™ can no longer take responsibility for the EZO™ class Conductivity circuits\ncontinued operation. This is because that would be equivalent to Atlas Scientific™ taking\nresponsibility over the correct operation of your entire device.\n84\nCopyright © Atlas Scientific LLC"
+  }
+]

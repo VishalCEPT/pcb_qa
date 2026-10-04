@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component MAX3485 have a transmit rate of 10Mbps according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The component description and datasheet field for U1 (MAX3485) in the netlist explicitly state it is a 10Mbps RS-485/RS-422 transceiver.",
+        "is_final": true
+    }
+}

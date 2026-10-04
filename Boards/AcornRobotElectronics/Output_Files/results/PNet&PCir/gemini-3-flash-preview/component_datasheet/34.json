@@ -1,0 +1,23 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component LTC4412xS6 have an internal CAN clock according to its datasheet?",
+    "tool_calls": {
+        "function_name": "get_relevant_context_from_question",
+        "function_args": {
+            "question": "Does the component LTC4412xS6 have an internal CAN clock?",
+            "component_ref": "U6",
+            "project_context": {
+                "circuit_json_file": "./outputs/AcornRobotElectronics/cm4-robot.json",
+                "spice_json_file": "./outputs/AcornRobotElectronics/cm4-robot_SPICE_circuit.json",
+                "datasheet_files": [
+                    "./outputs/AcornRobotElectronics/datasheets/U6.pdf"
+                ]
+            }
+        }
+    },
+    "response": {
+        "answer": "NO",
+        "reasoning": "Based on the provided datasheet context, the LTC4412 is a PowerPath controller (specifically a Low Loss PowerPath Controller in ThinSOT). Its primary function is to control an external P-channel MOSFET to create a near-ideal diode function for power management. The datasheet mentions supply voltage ranges, package descriptions (TSOT-23), and electrical characteristics related to gate drive and sensing. There is no mention of CAN (Controller Area Network) functionality, communication protocols, or an internal clock, as these features are not relevant to a power diode controller.",
+        "is_final": true
+    }
+}

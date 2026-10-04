@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component U10 connected to GND?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, pins 4 (GND1) and 5 (GND2) of component U10 are both connected to the GND net.",
+        "is_final": true
+    }
+}

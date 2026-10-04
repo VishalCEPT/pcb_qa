@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component MAX3485 have flash capabilities according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The MAX3485 is a hardware transceiver for RS-485/RS-422 communication and does not contain any programmable flash memory or storage capabilities.",
+        "is_final": true
+    }
+}

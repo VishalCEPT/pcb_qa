@@ -1,0 +1,303 @@
+[
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have flash capabilities according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the pwm signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to SCK?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component R3 have flash capabilities according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net net-_q2-b_ maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U3 have a maximum voltage of 5.5V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component C2 connected to _p_5V?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /pwm_out maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have a minimum voltage of 1.8V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the pwm signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U3 connected to TACH?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net net-_q1-g_ maintain a voltage of 5V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component R4 have a maximum operating temperature of 125°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U3 have a minimum voltage of 1.8V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net net-_q1-g_ maintain a voltage of 3.3V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component Q1 connected to VCC_OUT?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U1 have a maximum operating temperature of 125°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net net-_q2-b_ maintain a voltage of 3.3V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U1 have flash capabilities according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component D1 connected to TACH?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component R2 have a minimum operating temperature of -55°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /tach_in maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to RST?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component C2 have flash capabilities according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have a maximum voltage of 5.5V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /tach_in maintain a voltage of 5V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U3 connected to SDA?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component R2 have flash capabilities according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component C2 have a minimum operating temperature of -55°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net tach maintain a voltage of 5V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U1 have a maximum input voltage of 15V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U1 connected to VCC?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net tach maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have a maximum voltage of 5V according to its datasheet?",
+    "answer": "NO"
+  },  
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U3 have flash capabilities according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net rst maintain a voltage of 10V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U1 have a maximum input voltage of 10V according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component C2 connected to Net__J1_Pin_1_?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the vcc signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component C1 have a maximum operating temperature of 125°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to PWM?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net +5v maintain a voltage of 10V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component R4 have flash capabilities according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the vcc signal maintain a voltage of 5V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component Q1 connected to Net__Q2_B_?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the pwm signal maintain a voltage of 5V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component D1 connected to TACH?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U1 connected to _p_5V?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component Q2 connected to Net__Q1_G_?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net net-_q2-b_ maintain a voltage of 10V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the rst signal maintain a voltage of 5V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component C2 connected to GND?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U1 connected to GND?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the +5v signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component D1 connected to POT?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component Q2 connected to GND?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U3 have SPI capabilities according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component C2 connected to RST?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component D1 connected to GND?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the +5v signal maintain a voltage of 5V during the entire simulation?",
+    "answer": "YES"
+  }
+]
+

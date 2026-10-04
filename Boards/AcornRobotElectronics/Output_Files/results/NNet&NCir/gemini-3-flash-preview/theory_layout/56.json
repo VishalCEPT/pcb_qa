@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component Module1 connected to _3_3V_PI_OUT?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "Module1 pin 86 is connected to the net 3.3V_PI_OUT, which serves as the 3.3V output from the Compute Module 4.",
+        "is_final": true
+    }
+}

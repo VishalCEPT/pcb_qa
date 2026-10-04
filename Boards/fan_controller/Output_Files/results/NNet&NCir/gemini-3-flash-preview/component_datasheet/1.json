@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ATtiny45-20P have flash capabilities according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The ATtiny45-20P is an 8-bit AVR microcontroller which, as specified in the datasheet link provided in the netlist, contains 4K bytes of In-System Programmable Flash memory.",
+        "is_final": true
+    }
+}

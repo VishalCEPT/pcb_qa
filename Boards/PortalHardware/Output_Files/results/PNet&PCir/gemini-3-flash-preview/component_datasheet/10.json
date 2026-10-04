@@ -1,0 +1,22 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component STM32L476RGT6 have an output current of 20mA for any I/O pin according to its datasheet?",
+    "tool_calls": {
+        "function_name": "get_relevant_context_from_question",
+        "function_args": {
+            "project_context": {
+                "circuit_json_file": "./outputs/PortalHardware/PCB.json",
+                "datasheet_files": [
+                    "./outputs/PortalHardware/datasheets/U2.pdf"
+                ],
+                "spice_json_file": "./outputs/PortalHardware/PortalHardware_SPICE_circuit.json"
+            },
+            "question": "Does the component STM32L476RGT6 have an output current of 20mA for any I/O pin according to its datasheet?"
+        }
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the STM32L476xx datasheet (specifically in the 'Output driving current' section under Electrical Characteristics), the I/O pins are capable of sinking or sourcing up to +/- 8 mA in standard mode and up to +/- 20 mA in high-sink mode (for specific pins or under specific VDD conditions, typically with a relaxed VOH/VOL threshold). The absolute maximum ratings also specify that the output current sourced or sunk by any I/O pin must not exceed 25 mA.",
+        "is_final": true
+    }
+}

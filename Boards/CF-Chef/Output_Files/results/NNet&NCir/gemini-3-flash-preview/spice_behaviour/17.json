@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net net-_u8-bst_ maintain a voltage of 0V for the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net Net-_U8-BST_ is connected to the bootstrap capacitor C13 and the switching node of the AP63203 buck converter, which will oscillate and rise above 0V during operation.",
+        "is_final": true
+    }
+}

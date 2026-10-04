@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component Module1 connected to HDMI0_HOTPLUG?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, pin 153 of Module1 is explicitly connected to the net named '/HDMI0_HOTPLUG'.",
+        "is_final": true
+    }
+}

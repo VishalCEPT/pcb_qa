@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component 10K have flash capabilities according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The component with the value '10K' refers to resistors R1, R3, and R6, which are passive devices and do not possess flash memory or programmable capabilities.",
+        "is_final": true
+    }
+}

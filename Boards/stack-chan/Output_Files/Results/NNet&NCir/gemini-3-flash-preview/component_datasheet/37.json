@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component BC857 have a collector emitter voltage of -50V according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The BC857 datasheet specifies a maximum Collector-Emitter Voltage (Vceo) of -45V, not -50V.",
+        "is_final": true
+    }
+}

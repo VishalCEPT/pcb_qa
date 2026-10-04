@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component LM1117-5.0 have a maximum input voltage of 10V according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The LM1117-5.0 datasheet linked in the netlist specifies an absolute maximum input voltage of 15V, not 10V.",
+        "is_final": true
+    }
+}

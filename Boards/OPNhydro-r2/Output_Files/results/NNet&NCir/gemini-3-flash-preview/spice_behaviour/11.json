@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /sdaec maintain a voltage of 0V for the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net /sdaec is connected to the isolated power rail /VEC through pull-up resistor R17, and since /VEC is derived from the active isolated supply U4, the net will pull up to a non-zero voltage.",
+        "is_final": true
+    }
+}

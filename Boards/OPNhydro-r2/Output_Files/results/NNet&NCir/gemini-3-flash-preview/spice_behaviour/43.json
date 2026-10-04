@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /float_low reach a steady state voltage of 2.5V for the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net FLOAT_LOW is connected to +3V3 through a 10k pull-up resistor (R6) and to /BPUMP through a 4.7k resistor (R2), which would result in a steady state voltage of approximately 3.3V or a divided value, but not 2.5V.",
+        "is_final": true
+    }
+}

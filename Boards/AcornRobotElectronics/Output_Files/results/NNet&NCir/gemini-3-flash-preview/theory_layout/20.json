@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component Module1 connected to WS2812?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "Module1 pin 28 (GPIO13) is connected to the net 'WS2812', which is then connected to the input of the level shifter U7 that drives the WS2812B LED chain.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /pwm_out maintain a voltage of 0V during the entire simulation?",
+    "tool_calls": {
+        "arguments": "{\"expected_voltage\":\"0V\",\"spice_circuit_file\":\"./outputs/spice_circuits/fan_controller.json\",\"net_name\":\"/PWM_OUT\"}",
+        "name": "calculate_spice_behaviour"
+    },
+    "response": {
+        "answer": "NO",
+        "reasoning": "The SPICE simulation results indicate that the voltage on the /PWM_OUT net does not remain at a constant 0V throughout the duration of the simulation.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component LM2576HVS-5 have a maximum supply voltage of 63V according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The 'HV' version of the LM2576 series, such as the LM2576HVS-5, is specifically rated for a maximum input voltage of 60V to 63V depending on the specific manufacturer's datasheet (e.g., TI or HGSEMI).",
+        "is_final": true
+    }
+}

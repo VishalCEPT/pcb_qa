@@ -1,0 +1,13 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component IRLML6402 have a maximum drain voltage of -20V according to its datasheet?",
+    "tool_calls": {
+        "arguments": "{\"question\":\"Does the component IRLML6402 have a maximum drain voltage of -20V according to its datasheet?\",\"component_ref\":\"Q1\",\"project_context\":{\"spice_json_file\":\"./outputs/stack-chan/m5-pantilt_SPICE_circuit.json\",\"datasheet_files\":[\"./outputs/stack-chan/datasheets/Q1.pdf\"],\"circuit_json_file\":\"./outputs/stack-chan/m5-pantilt.json\"}}",
+        "name": "get_relevant_context_from_question"
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "The datasheet specifies a Drain-to-Source Breakdown Voltage (V(BR)DSS) of -20V, which represents the maximum voltage the drain can withstand relative to the source.",
+        "is_final": true
+    }
+}

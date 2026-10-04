@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component R13 connected to Net__J8_Pin_3_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The SPICE netlist explicitly lists R13 as being connected to Net-_J8-Pin_3_ and Net-_J3-Pin_3_.",
+        "is_final": true
+    }
+}

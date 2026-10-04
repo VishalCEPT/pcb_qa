@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component 1825232-1 have dielectric strength of 500V AC according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The component 1825232-1 is a TE Connectivity Alcoswitch slide switch, and its standard datasheet specifications for this series include a dielectric strength of 500V AC.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net net-_u8-bst_ maintain a voltage of 3.3V for the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "Net-_U8-BST_ is the bootstrap pin of the AP63203WU buck converter, which is connected to the switching node (SW) via capacitor C13 and will oscillate at the switching frequency rather than maintaining a constant 3.3V.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,2926 @@
+{
+    "name": "top",
+    "description": "",
+    "source_file": "controller.kicad_sch",
+    "tstamps": "",
+    "components": {
+        "H1": {
+            "symbol": "Mechanical",
+            "ref": "H1",
+            "value": "MountingHole",
+            "footprint": "MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad",
+            "datasheet": "~",
+            "description": "Mounting Hole without connection",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "controller.kicad_sch",
+                "ki_keywords": "mounting hole",
+                "ki_fp_filters": "MountingHole*"
+            },
+            "tstamps": "651e4997-f927-41c0-a8e0-e67ce5c1ee19",
+            "fields": {
+                "Footprint": "MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad",
+                "Datasheet": "~",
+                "Description": "Mounting Hole without connection"
+            },
+            "pins": []
+        },
+        "H2": {
+            "symbol": "Mechanical",
+            "ref": "H2",
+            "value": "MountingHole",
+            "footprint": "MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad",
+            "datasheet": "~",
+            "description": "Mounting Hole without connection",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "controller.kicad_sch",
+                "ki_keywords": "mounting hole",
+                "ki_fp_filters": "MountingHole*"
+            },
+            "tstamps": "01ff991e-c481-466c-ba03-1c7d09330bac",
+            "fields": {
+                "Footprint": "MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad",
+                "Datasheet": "~",
+                "Description": "Mounting Hole without connection"
+            },
+            "pins": []
+        },
+        "H3": {
+            "symbol": "Mechanical",
+            "ref": "H3",
+            "value": "MountingHole",
+            "footprint": "MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad",
+            "datasheet": "~",
+            "description": "Mounting Hole without connection",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "controller.kicad_sch",
+                "ki_keywords": "mounting hole",
+                "ki_fp_filters": "MountingHole*"
+            },
+            "tstamps": "85b512bc-9159-4959-a1ed-d79c1e886b4c",
+            "fields": {
+                "Footprint": "MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad",
+                "Datasheet": "~",
+                "Description": "Mounting Hole without connection"
+            },
+            "pins": []
+        },
+        "H4": {
+            "symbol": "Mechanical",
+            "ref": "H4",
+            "value": "MountingHole",
+            "footprint": "MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad",
+            "datasheet": "~",
+            "description": "Mounting Hole without connection",
+            "properties": {
+                "Sheetname": "Root",
+                "Sheetfile": "controller.kicad_sch",
+                "ki_keywords": "mounting hole",
+                "ki_fp_filters": "MountingHole*"
+            },
+            "tstamps": "8d5c9850-496f-47e6-9ff7-ce284d70a563",
+            "fields": {
+                "Footprint": "MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad",
+                "Datasheet": "~",
+                "Description": "Mounting Hole without connection"
+            },
+            "pins": []
+        }
+    },
+    "nets": {},
+    "subcircuits": [
+        {
+            "name": "Microcontroller",
+            "description": "",
+            "source_file": "mcu.kicad_sch",
+            "tstamps": "",
+            "components": {
+                "C1": {
+                    "symbol": "Device",
+                    "ref": "C1",
+                    "value": "0.1uF",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Unpolarized capacitor",
+                    "properties": {
+                        "LCSC": "C49678",
+                        "Field6": "",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "70b45dbe-02e5-43c4-8d86-c2d9c139ed75",
+                    "fields": {
+                        "LCSC": "C49678",
+                        "Field6": "",
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Unpolarized capacitor"
+                    },
+                    "pins": []
+                },
+                "C7": {
+                    "symbol": "Device",
+                    "ref": "C7",
+                    "value": "10uF",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Unpolarized capacitor",
+                    "properties": {
+                        "LCSC`": "C15850",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "1432cbcc-2ae3-4353-8b7c-6d81dd270cbf",
+                    "fields": {
+                        "LCSC`": "C15850",
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Unpolarized capacitor"
+                    },
+                    "pins": []
+                },
+                "C8": {
+                    "symbol": "Device",
+                    "ref": "C8",
+                    "value": "1uF",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Unpolarized capacitor",
+                    "properties": {
+                        "LCSC": "C28323",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "b1f8150c-f1b4-4f9a-adc4-c408fc4a24fd",
+                    "fields": {
+                        "LCSC": "C28323",
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Unpolarized capacitor"
+                    },
+                    "pins": []
+                },
+                "C12": {
+                    "symbol": "Device",
+                    "ref": "C12",
+                    "value": "1uF",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Unpolarized capacitor",
+                    "properties": {
+                        "LCSC": "C28323",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "e5ed1d1b-b0dc-4fe5-8dff-ff1e72e00595",
+                    "fields": {
+                        "LCSC": "C28323",
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Unpolarized capacitor"
+                    },
+                    "pins": []
+                },
+                "D1": {
+                    "symbol": "LED",
+                    "ref": "D1",
+                    "value": "WS2812B",
+                    "footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+                    "datasheet": "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf",
+                    "description": "RGB LED with integrated controller",
+                    "properties": {
+                        "LCSC": "C2874885",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "RGB LED NeoPixel addressable",
+                        "ki_fp_filters": "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*"
+                    },
+                    "tstamps": "ea5b0eda-9d75-40e4-b430-080df75c0ac5",
+                    "fields": {
+                        "LCSC": "C2874885",
+                        "Footprint": "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+                        "Datasheet": "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf",
+                        "Description": "RGB LED with integrated controller"
+                    },
+                    "pins": []
+                },
+                "D2": {
+                    "symbol": "Device",
+                    "ref": "D2",
+                    "value": "LED",
+                    "footprint": "LED_SMD:LED_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Light emitting diode",
+                    "properties": {
+                        "Sim.Pins": "1=K 2=A",
+                        "LCSC": "C84256",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "LED diode",
+                        "ki_fp_filters": "LED* LED_SMD:* LED_THT:*"
+                    },
+                    "tstamps": "5485a5ce-b95d-430a-b7db-db2fae7f16db",
+                    "fields": {
+                        "Sim.Pins": "1=K 2=A",
+                        "LCSC": "C84256",
+                        "Footprint": "LED_SMD:LED_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Light emitting diode"
+                    },
+                    "pins": []
+                },
+                "D3": {
+                    "symbol": "",
+                    "ref": "D3",
+                    "value": "D",
+                    "footprint": "Package_TO_SOT_SMD:TSOT-23",
+                    "datasheet": "~",
+                    "description": "Diode",
+                    "properties": {
+                        "Sim.Device": "D",
+                        "Sim.Pins": "1=K 2=A",
+                        "LCSC": "C14308",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "diode",
+                        "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+                    },
+                    "tstamps": "e0c974b0-ebbd-4f5a-8f06-97f2af809347",
+                    "fields": {
+                        "Sim.Device": "D",
+                        "Sim.Pins": "1=K 2=A",
+                        "LCSC": "C14308",
+                        "Footprint": "Package_TO_SOT_SMD:TSOT-23",
+                        "Datasheet": "~",
+                        "Description": "Diode"
+                    },
+                    "pins": []
+                },
+                "D4": {
+                    "symbol": "Device",
+                    "ref": "D4",
+                    "value": "D",
+                    "footprint": "Package_TO_SOT_SMD:TSOT-23",
+                    "datasheet": "~",
+                    "description": "Diode",
+                    "properties": {
+                        "Sim.Device": "D",
+                        "Sim.Pins": "1=K 2=A",
+                        "LCSC": "C14308",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "diode",
+                        "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+                    },
+                    "tstamps": "ae19f1ac-9278-44eb-969f-6c5ad12027f3",
+                    "fields": {
+                        "Sim.Device": "D",
+                        "Sim.Pins": "1=K 2=A",
+                        "LCSC": "C14308",
+                        "Footprint": "Package_TO_SOT_SMD:TSOT-23",
+                        "Datasheet": "~",
+                        "Description": "Diode"
+                    },
+                    "pins": []
+                },
+                "D5": {
+                    "symbol": "Device",
+                    "ref": "D5",
+                    "value": "D_TVS",
+                    "footprint": "Diode_SMD:D_SOD-323F",
+                    "datasheet": "~",
+                    "description": "Bidirectional transient-voltage-suppression diode",
+                    "properties": {
+                        "LCSC": "C502541",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "diode TVS thyrector",
+                        "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+                    },
+                    "tstamps": "ef940ca8-0350-47e1-a0b9-15f758228b11",
+                    "fields": {
+                        "LCSC": "C502541",
+                        "Footprint": "Diode_SMD:D_SOD-323F",
+                        "Datasheet": "~",
+                        "Description": "Bidirectional transient-voltage-suppression diode"
+                    },
+                    "pins": []
+                },
+                "D6": {
+                    "symbol": "Device",
+                    "ref": "D6",
+                    "value": "D_TVS",
+                    "footprint": "Diode_SMD:D_SOD-323F",
+                    "datasheet": "~",
+                    "description": "Bidirectional transient-voltage-suppression diode",
+                    "properties": {
+                        "LCSC": "C502541",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "diode TVS thyrector",
+                        "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+                    },
+                    "tstamps": "95c3ea93-552b-47a5-8129-b01e7344380e",
+                    "fields": {
+                        "LCSC": "C502541",
+                        "Footprint": "Diode_SMD:D_SOD-323F",
+                        "Datasheet": "~",
+                        "Description": "Bidirectional transient-voltage-suppression diode"
+                    },
+                    "pins": []
+                },
+                "J5": {
+                    "symbol": "Connector",
+                    "ref": "J5",
+                    "value": "Screw_Terminal_01x02",
+                    "footprint": "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "screw terminal",
+                        "ki_fp_filters": "TerminalBlock*:*"
+                    },
+                    "tstamps": "62c46e9b-f7d7-4005-960e-dcaeafc5d61a",
+                    "fields": {
+                        "Footprint": "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "J6": {
+                    "symbol": "Connector",
+                    "ref": "J6",
+                    "value": "Screw_Terminal_01x02",
+                    "footprint": "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "screw terminal",
+                        "ki_fp_filters": "TerminalBlock*:*"
+                    },
+                    "tstamps": "065648e4-61d2-4528-94db-91969035de0c",
+                    "fields": {
+                        "Footprint": "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "J12": {
+                    "symbol": "Connector",
+                    "ref": "J12",
+                    "value": "USB_C_Receptacle_USB2.0_14P",
+                    "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+                    "datasheet": "https://www.usb.org/sites/default/files/documents/usb_type-c.zip",
+                    "description": "USB 2.0-only 14P Type-C Receptacle connector",
+                    "properties": {
+                        "LCSC": "C2765186",
+                        "FT Position Offset": "0,1.3335",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "usb universal serial bus type-C USB2.0",
+                        "ki_fp_filters": "USB*C*Receptacle*"
+                    },
+                    "tstamps": "29f1be23-4719-4f6f-a684-a9dba08f8424",
+                    "fields": {
+                        "LCSC": "C2765186",
+                        "FT Position Offset": "0,1.3335",
+                        "Footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+                        "Datasheet": "https://www.usb.org/sites/default/files/documents/usb_type-c.zip",
+                        "Description": "USB 2.0-only 14P Type-C Receptacle connector"
+                    },
+                    "pins": []
+                },
+                "R1": {
+                    "symbol": "Device",
+                    "ref": "R1",
+                    "value": "5.1k",
+                    "footprint": "Resistor_SMD:R_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Resistor, US symbol",
+                    "properties": {
+                        "LCSC": "C27834",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "R res resistor",
+                        "ki_fp_filters": "R_*"
+                    },
+                    "tstamps": "3b8bb058-c16e-4352-b42f-927727f12dde",
+                    "fields": {
+                        "LCSC": "C27834",
+                        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Resistor, US symbol"
+                    },
+                    "pins": []
+                },
+                "R2": {
+                    "symbol": "Device",
+                    "ref": "R2",
+                    "value": "10k",
+                    "footprint": "Resistor_SMD:R_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Resistor, US symbol",
+                    "properties": {
+                        "LCSC": "C84376",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "R res resistor",
+                        "ki_fp_filters": "R_*"
+                    },
+                    "tstamps": "3a6cd4ce-479b-4946-bf2f-0b2c7b0b8da1",
+                    "fields": {
+                        "LCSC": "C84376",
+                        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Resistor, US symbol"
+                    },
+                    "pins": []
+                },
+                "R3": {
+                    "symbol": "Device",
+                    "ref": "R3",
+                    "value": "500",
+                    "footprint": "Resistor_SMD:R_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Resistor, US symbol",
+                    "properties": {
+                        "LCSC": "C2828857",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "R res resistor",
+                        "ki_fp_filters": "R_*"
+                    },
+                    "tstamps": "235cec65-f149-4f44-842d-ef4cba93f019",
+                    "fields": {
+                        "LCSC": "C2828857",
+                        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Resistor, US symbol"
+                    },
+                    "pins": []
+                },
+                "R5": {
+                    "symbol": "Device",
+                    "ref": "R5",
+                    "value": "10K",
+                    "footprint": "Resistor_SMD:R_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Resistor, US symbol",
+                    "properties": {
+                        "LCSC": "C84376",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "R res resistor",
+                        "ki_fp_filters": "R_*"
+                    },
+                    "tstamps": "85d1cd7c-562e-4051-8d37-8bf868f0b48d",
+                    "fields": {
+                        "LCSC": "C84376",
+                        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Resistor, US symbol"
+                    },
+                    "pins": []
+                },
+                "R6": {
+                    "symbol": "Device",
+                    "ref": "R6",
+                    "value": "10k",
+                    "footprint": "Resistor_SMD:R_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Resistor, US symbol",
+                    "properties": {
+                        "LCSC": "C84376",
+                        "Field6": "",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "R res resistor",
+                        "ki_fp_filters": "R_*"
+                    },
+                    "tstamps": "9e4f6dc3-b1b5-44f5-88c2-3d5f0ae66f23",
+                    "fields": {
+                        "LCSC": "C84376",
+                        "Field6": "",
+                        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Resistor, US symbol"
+                    },
+                    "pins": []
+                },
+                "R7": {
+                    "symbol": "Device",
+                    "ref": "R7",
+                    "value": "5.1k",
+                    "footprint": "Resistor_SMD:R_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Resistor, US symbol",
+                    "properties": {
+                        "LCSC": "C27834",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "R res resistor",
+                        "ki_fp_filters": "R_*"
+                    },
+                    "tstamps": "122c7f19-136b-403a-bae5-ed73cb38e0cf",
+                    "fields": {
+                        "LCSC": "C27834",
+                        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Resistor, US symbol"
+                    },
+                    "pins": []
+                },
+                "R11": {
+                    "symbol": "Device",
+                    "ref": "R11",
+                    "value": "10k",
+                    "footprint": "Resistor_SMD:R_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Resistor, US symbol",
+                    "properties": {
+                        "LCSC": "C84376",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "R res resistor",
+                        "ki_fp_filters": "R_*"
+                    },
+                    "tstamps": "1199a70c-b20b-459c-b767-056bf9b8409d",
+                    "fields": {
+                        "LCSC": "C84376",
+                        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Resistor, US symbol"
+                    },
+                    "pins": []
+                },
+                "TP4": {
+                    "symbol": "Connector",
+                    "ref": "TP4",
+                    "value": "TestPoint",
+                    "footprint": "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm",
+                    "datasheet": "~",
+                    "description": "test point",
+                    "properties": {
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "test point tp",
+                        "ki_fp_filters": "Pin* Test*"
+                    },
+                    "tstamps": "013ec710-a527-45f7-8fba-567f9c4f834e",
+                    "fields": {
+                        "Footprint": "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm",
+                        "Datasheet": "~",
+                        "Description": "test point"
+                    },
+                    "pins": []
+                },
+                "TP5": {
+                    "symbol": "Connector",
+                    "ref": "TP5",
+                    "value": "TestPoint",
+                    "footprint": "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm",
+                    "datasheet": "~",
+                    "description": "test point",
+                    "properties": {
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "test point tp",
+                        "ki_fp_filters": "Pin* Test*"
+                    },
+                    "tstamps": "bc0995b5-62bd-40a7-9832-09418c2fb8ee",
+                    "fields": {
+                        "Footprint": "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm",
+                        "Datasheet": "~",
+                        "Description": "test point"
+                    },
+                    "pins": []
+                },
+                "TP6": {
+                    "symbol": "Connector",
+                    "ref": "TP6",
+                    "value": "TestPoint",
+                    "footprint": "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm",
+                    "datasheet": "~",
+                    "description": "test point",
+                    "properties": {
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "test point tp",
+                        "ki_fp_filters": "Pin* Test*"
+                    },
+                    "tstamps": "dcbb6a4d-3d51-4b0d-865f-8fe348ab97d5",
+                    "fields": {
+                        "Footprint": "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm",
+                        "Datasheet": "~",
+                        "Description": "test point"
+                    },
+                    "pins": []
+                },
+                "U1": {
+                    "symbol": "PCM_Espressif",
+                    "ref": "U1",
+                    "value": "ESP32-C3-MINI-1",
+                    "footprint": "PCM_Espressif:ESP32-C3-MINI-1",
+                    "datasheet": "https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf",
+                    "description": ".",
+                    "properties": {
+                        "LCSC": "C2838502",
+                        "FT Position Offset": "0,-2.7305",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch",
+                        "ki_keywords": "esp32-c3"
+                    },
+                    "tstamps": "404c5351-ebea-46ac-8c00-d57b93714674",
+                    "fields": {
+                        "LCSC": "C2838502",
+                        "FT Position Offset": "0,-2.7305",
+                        "Footprint": "PCM_Espressif:ESP32-C3-MINI-1",
+                        "Datasheet": "https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf",
+                        "Description": "."
+                    },
+                    "pins": []
+                },
+                "U6": {
+                    "symbol": "TPS1H200A",
+                    "ref": "U6",
+                    "value": "TPS1H200AQDGNRQ1",
+                    "footprint": "TPS1H200:SOP65P490X110-9N",
+                    "datasheet": "",
+                    "description": "",
+                    "properties": {
+                        "SNAPEDA_LINK": "https://www.snapeda.com/parts/TPS1H200AQDGNRQ1/Texas+Instruments/view-part/?ref=snap",
+                        "CHECK_PRICES": "https://www.snapeda.com/parts/TPS1H200AQDGNRQ1/Texas+Instruments/view-part/?ref=eda",
+                        "PURCHASE-URL": "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=3210362&manufacturer=Texas Instruments&part_name=TPS1H200AQDGNRQ1&search_term=tps1h200aqdgnrq1",
+                        "PACKAGE": "HVSSOP-8 Texas Instruments",
+                        "PRICE": "None",
+                        "Package": "HVSSOP-8 Texas Instruments",
+                        "Check_prices": "https://www.snapeda.com/parts/TPS1H200AQDGNRQ1/Texas+Instruments/view-part/?ref=eda",
+                        "SnapEDA_Link": "https://www.snapeda.com/parts/TPS1H200AQDGNRQ1/Texas+Instruments/view-part/?ref=snap",
+                        "Price": "None",
+                        "MF": "Texas Instruments",
+                        "MP": "TPS1H200AQDGNRQ1",
+                        "Description_1": "40-V, 200-mÎ©, 1-ch automotive smart high-side switch with adjustable current limit",
+                        "Availability": "In Stock",
+                        "AVAILABILITY": "In Stock",
+                        "DESCRIPTION": "40-V, 200-mÎ©, 1-ch automotive smart high-side switch with adjustable current limit",
+                        "LCSC": "C2653785",
+                        "FT Rotation Offset": "-90",
+                        "Sheetname": "Microcontroller",
+                        "Sheetfile": "mcu.kicad_sch"
+                    },
+                    "tstamps": "d12b7f0e-08a0-4fb4-835a-548eb4fd39e1",
+                    "fields": {
+                        "SNAPEDA_LINK": "https://www.snapeda.com/parts/TPS1H200AQDGNRQ1/Texas+Instruments/view-part/?ref=snap",
+                        "CHECK_PRICES": "https://www.snapeda.com/parts/TPS1H200AQDGNRQ1/Texas+Instruments/view-part/?ref=eda",
+                        "PURCHASE-URL": "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=3210362&manufacturer=Texas Instruments&part_name=TPS1H200AQDGNRQ1&search_term=tps1h200aqdgnrq1",
+                        "PACKAGE": "HVSSOP-8 Texas Instruments",
+                        "PRICE": "None",
+                        "Package": "HVSSOP-8 Texas Instruments",
+                        "Check_prices": "https://www.snapeda.com/parts/TPS1H200AQDGNRQ1/Texas+Instruments/view-part/?ref=eda",
+                        "SnapEDA_Link": "https://www.snapeda.com/parts/TPS1H200AQDGNRQ1/Texas+Instruments/view-part/?ref=snap",
+                        "Price": "None",
+                        "MF": "Texas Instruments",
+                        "MP": "TPS1H200AQDGNRQ1",
+                        "Description_1": "40-V, 200-mÎ©, 1-ch automotive smart high-side switch with adjustable current limit",
+                        "Availability": "In Stock",
+                        "AVAILABILITY": "In Stock",
+                        "DESCRIPTION": "40-V, 200-mÎ©, 1-ch automotive smart high-side switch with adjustable current limit",
+                        "LCSC": "C2653785",
+                        "FT Rotation Offset": "-90",
+                        "Footprint": "TPS1H200:SOP65P490X110-9N",
+                        "Datasheet": "",
+                        "Description": ""
+                    },
+                    "pins": []
+                }
+            },
+            "nets": {
+                "_p_3V3": [
+                    {
+                        "component": "C12",
+                        "pin": {
+                            "name": "C12",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C8",
+                        "pin": {
+                            "name": "C8",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "D1",
+                        "pin": {
+                            "name": "D1",
+                            "number": "1",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "R11",
+                        "pin": {
+                            "name": "R11",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "R2",
+                        "pin": {
+                            "name": "R2",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "R5",
+                        "pin": {
+                            "name": "R5",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "R6",
+                        "pin": {
+                            "name": "R6",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "3",
+                            "type": "power_in"
+                        }
+                    }
+                ],
+                "_p_5V": [
+                    {
+                        "component": "J12",
+                        "pin": {
+                            "name": "J12",
+                            "number": "A4",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J12",
+                        "pin": {
+                            "name": "J12",
+                            "number": "A9",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J12",
+                        "pin": {
+                            "name": "J12",
+                            "number": "B4",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J12",
+                        "pin": {
+                            "name": "J12",
+                            "number": "B9",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "_p_12V": [
+                    {
+                        "component": "C1",
+                        "pin": {
+                            "name": "C1",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U6",
+                        "pin": {
+                            "name": "U6",
+                            "number": "8",
+                            "type": "power_in"
+                        }
+                    }
+                ],
+                "Microcontroller_HEATER": [
+                    {
+                        "component": "D2",
+                        "pin": {
+                            "name": "D2",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J5",
+                        "pin": {
+                            "name": "J5",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "13",
+                            "type": "bidirectional"
+                        }
+                    },
+                    {
+                        "component": "U6",
+                        "pin": {
+                            "name": "U6",
+                            "number": "1",
+                            "type": "input"
+                        }
+                    },
+                    {
+                        "component": "U6",
+                        "pin": {
+                            "name": "U6",
+                            "number": "2",
+                            "type": "input"
+                        }
+                    }
+                ],
+                "Microcontroller_LED": [
+                    {
+                        "component": "D1",
+                        "pin": {
+                            "name": "D1",
+                            "number": "4",
+                            "type": "input"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "12",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "Microcontroller_USB_D_p": [
+                    {
+                        "component": "J12",
+                        "pin": {
+                            "name": "J12",
+                            "number": "A6",
+                            "type": "bidirectional"
+                        }
+                    },
+                    {
+                        "component": "J12",
+                        "pin": {
+                            "name": "J12",
+                            "number": "B6",
+                            "type": "bidirectional"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "27",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "Microcontroller_USB_D_n": [
+                    {
+                        "component": "J12",
+                        "pin": {
+                            "name": "J12",
+                            "number": "A7",
+                            "type": "bidirectional"
+                        }
+                    },
+                    {
+                        "component": "J12",
+                        "pin": {
+                            "name": "J12",
+                            "number": "B7",
+                            "type": "bidirectional"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "26",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "CS0": [
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "18",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "CS1": [
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "20",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "CS2": [
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "21",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "FAN_0_TACH": [
+                    {
+                        "component": "D4",
+                        "pin": {
+                            "name": "D4",
+                            "number": "3",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "D5",
+                        "pin": {
+                            "name": "D5",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "FAN_1_TACH": [
+                    {
+                        "component": "D3",
+                        "pin": {
+                            "name": "D3",
+                            "number": "3",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "D6",
+                        "pin": {
+                            "name": "D6",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "GND": [
+                    {
+                        "component": "C1",
+                        "pin": {
+                            "name": "C1",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C12",
+                        "pin": {
+                            "name": "C12",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C7",
+                        "pin": {
+                            "name": "C7",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C8",
+                        "pin": {
+                            "name": "C8",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "D1",
+                        "pin": {
+                            "name": "D1",
+                            "number": "3",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "D5",
+                        "pin": {
+                            "name": "D5",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "D6",
+                        "pin": {
+                            "name": "D6",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J12",
+                        "pin": {
+                            "name": "J12",
+                            "number": "A1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J12",
+                        "pin": {
+                            "name": "J12",
+                            "number": "A12",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J12",
+                        "pin": {
+                            "name": "J12",
+                            "number": "B1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J12",
+                        "pin": {
+                            "name": "J12",
+                            "number": "B12",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J12",
+                        "pin": {
+                            "name": "J12",
+                            "number": "S1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J5",
+                        "pin": {
+                            "name": "J5",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J6",
+                        "pin": {
+                            "name": "J6",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "R1",
+                        "pin": {
+                            "name": "R1",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "R3",
+                        "pin": {
+                            "name": "R3",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "R7",
+                        "pin": {
+                            "name": "R7",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "1",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "11",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "14",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "36",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "37",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "38",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "39",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "40",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "41",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "42",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "43",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "44",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "45",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "46",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "47",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "48",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "49",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "50",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "51",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "52",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "53",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U6",
+                        "pin": {
+                            "name": "U6",
+                            "number": "4",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U6",
+                        "pin": {
+                            "name": "U6",
+                            "number": "6",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U6",
+                        "pin": {
+                            "name": "U6",
+                            "number": "9",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "Net__D2_K_": [
+                    {
+                        "component": "D2",
+                        "pin": {
+                            "name": "D2",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "R3",
+                        "pin": {
+                            "name": "R3",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__D3_A_": [
+                    {
+                        "component": "D3",
+                        "pin": {
+                            "name": "D3",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "R2",
+                        "pin": {
+                            "name": "R2",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "TP4",
+                        "pin": {
+                            "name": "TP4",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "31",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "Net__D4_A_": [
+                    {
+                        "component": "D4",
+                        "pin": {
+                            "name": "D4",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "R11",
+                        "pin": {
+                            "name": "R11",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "TP5",
+                        "pin": {
+                            "name": "TP5",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "30",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "Net__J6_Pin_2_": [
+                    {
+                        "component": "J6",
+                        "pin": {
+                            "name": "J6",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U6",
+                        "pin": {
+                            "name": "U6",
+                            "number": "7",
+                            "type": "output"
+                        }
+                    }
+                ],
+                "Net__J12_CC1_": [
+                    {
+                        "component": "J12",
+                        "pin": {
+                            "name": "J12",
+                            "number": "A5",
+                            "type": "bidirectional"
+                        }
+                    },
+                    {
+                        "component": "R1",
+                        "pin": {
+                            "name": "R1",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__J12_CC2_": [
+                    {
+                        "component": "J12",
+                        "pin": {
+                            "name": "J12",
+                            "number": "B5",
+                            "type": "bidirectional"
+                        }
+                    },
+                    {
+                        "component": "R7",
+                        "pin": {
+                            "name": "R7",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__U1_EN_slash_CHIP_PU_": [
+                    {
+                        "component": "C7",
+                        "pin": {
+                            "name": "C7",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "R5",
+                        "pin": {
+                            "name": "R5",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "8",
+                            "type": "input"
+                        }
+                    }
+                ],
+                "Net__U1_GPIO2_slash_ADC1_CH2_": [
+                    {
+                        "component": "R6",
+                        "pin": {
+                            "name": "R6",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "5",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "Net__U6___FAULT__": [
+                    {
+                        "component": "TP6",
+                        "pin": {
+                            "name": "TP6",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U6",
+                        "pin": {
+                            "name": "U6",
+                            "number": "3",
+                            "type": "output"
+                        }
+                    }
+                ],
+                "SCK": [
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "19",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "SO": [
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "16",
+                            "type": "bidirectional"
+                        }
+                    }
+                ]
+            },
+            "subcircuits": [],
+            "annotations": []
+        },
+        {
+            "name": "Thermocouples",
+            "description": "",
+            "source_file": "thermocouples.kicad_sch",
+            "tstamps": "",
+            "components": {
+                "C3": {
+                    "symbol": "Device",
+                    "ref": "C3",
+                    "value": "1uF",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Unpolarized capacitor",
+                    "properties": {
+                        "LCSC": "C28323",
+                        "Sheetname": "Thermocouples",
+                        "Sheetfile": "thermocouples.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "8fdfe432-c897-4f13-948c-8bb3f86b8730",
+                    "fields": {
+                        "LCSC": "C28323",
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Unpolarized capacitor"
+                    },
+                    "pins": []
+                },
+                "C4": {
+                    "symbol": "Device",
+                    "ref": "C4",
+                    "value": "1uF",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Unpolarized capacitor",
+                    "properties": {
+                        "LCSC": "C28323",
+                        "Sheetname": "Thermocouples",
+                        "Sheetfile": "thermocouples.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "e9aa7ae1-754c-41d2-9bb8-e3def2210d08",
+                    "fields": {
+                        "LCSC": "C28323",
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Unpolarized capacitor"
+                    },
+                    "pins": []
+                },
+                "C6": {
+                    "symbol": "Device",
+                    "ref": "C6",
+                    "value": "1uF",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Unpolarized capacitor",
+                    "properties": {
+                        "LCSC": "C28323",
+                        "Sheetname": "Thermocouples",
+                        "Sheetfile": "thermocouples.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "433e0760-6368-4e82-a933-48cbdc67956f",
+                    "fields": {
+                        "LCSC": "C28323",
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Unpolarized capacitor"
+                    },
+                    "pins": []
+                },
+                "J1": {
+                    "symbol": "Connector",
+                    "ref": "J1",
+                    "value": "Conn_01x02_Pin",
+                    "footprint": "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "Thermocouples",
+                        "Sheetfile": "thermocouples.kicad_sch",
+                        "ki_keywords": "screw terminal",
+                        "ki_fp_filters": "TerminalBlock*:*"
+                    },
+                    "tstamps": "46918821-eb1e-4129-92a3-90d7b9676f5a",
+                    "fields": {
+                        "Footprint": "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "J2": {
+                    "symbol": "Connector",
+                    "ref": "J2",
+                    "value": "Conn_01x02_Pin",
+                    "footprint": "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "Thermocouples",
+                        "Sheetfile": "thermocouples.kicad_sch",
+                        "ki_keywords": "screw terminal",
+                        "ki_fp_filters": "TerminalBlock*:*"
+                    },
+                    "tstamps": "11cad31a-a736-4174-91d4-e1af366532e0",
+                    "fields": {
+                        "Footprint": "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "J3": {
+                    "symbol": "Connector",
+                    "ref": "J3",
+                    "value": "Conn_01x02_Pin",
+                    "footprint": "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "Thermocouples",
+                        "Sheetfile": "thermocouples.kicad_sch",
+                        "ki_keywords": "screw terminal",
+                        "ki_fp_filters": "TerminalBlock*:*"
+                    },
+                    "tstamps": "fd19f97b-ee57-49fc-af8a-2119aac1fb5b",
+                    "fields": {
+                        "Footprint": "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "U2": {
+                    "symbol": "Sensor_Temperature",
+                    "ref": "U2",
+                    "value": "MAX31855KASA",
+                    "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+                    "datasheet": "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf",
+                    "description": "Cold Junction K-type Thermocouple Interface, SPI, SOIC-8",
+                    "properties": {
+                        "LCSC": "C52028",
+                        "Sheetname": "Thermocouples",
+                        "Sheetfile": "thermocouples.kicad_sch",
+                        "ki_keywords": "Maxim",
+                        "ki_fp_filters": "SOIC*3.9x4.9mm*P1.27mm*"
+                    },
+                    "tstamps": "5ea89abf-e650-450e-a8fa-d8ce5805c3d5",
+                    "fields": {
+                        "LCSC": "C52028",
+                        "Footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+                        "Datasheet": "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf",
+                        "Description": "Cold Junction K-type Thermocouple Interface, SPI, SOIC-8"
+                    },
+                    "pins": []
+                },
+                "U3": {
+                    "symbol": "Sensor_Temperature",
+                    "ref": "U3",
+                    "value": "MAX31855KASA",
+                    "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+                    "datasheet": "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf",
+                    "description": "Cold Junction K-type Thermocouple Interface, SPI, SOIC-8",
+                    "properties": {
+                        "LCSC": "C52028",
+                        "Sheetname": "Thermocouples",
+                        "Sheetfile": "thermocouples.kicad_sch",
+                        "ki_keywords": "Maxim",
+                        "ki_fp_filters": "SOIC*3.9x4.9mm*P1.27mm*"
+                    },
+                    "tstamps": "a3bdeeac-e228-41e8-a3a2-a5df4204dde7",
+                    "fields": {
+                        "LCSC": "C52028",
+                        "Footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+                        "Datasheet": "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf",
+                        "Description": "Cold Junction K-type Thermocouple Interface, SPI, SOIC-8"
+                    },
+                    "pins": []
+                },
+                "U4": {
+                    "symbol": "Sensor_Temperature",
+                    "ref": "U4",
+                    "value": "MAX31855KASA",
+                    "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+                    "datasheet": "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf",
+                    "description": "Cold Junction K-type Thermocouple Interface, SPI, SOIC-8",
+                    "properties": {
+                        "LCSC": "C52028",
+                        "Sheetname": "Thermocouples",
+                        "Sheetfile": "thermocouples.kicad_sch",
+                        "ki_keywords": "Maxim",
+                        "ki_fp_filters": "SOIC*3.9x4.9mm*P1.27mm*"
+                    },
+                    "tstamps": "0c9da9fe-ab85-47b0-b6bd-16cad86278a2",
+                    "fields": {
+                        "LCSC": "C52028",
+                        "Footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+                        "Datasheet": "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf",
+                        "Description": "Cold Junction K-type Thermocouple Interface, SPI, SOIC-8"
+                    },
+                    "pins": []
+                }
+            },
+            "nets": {
+                "_p_3V3": [
+                    {
+                        "component": "C3",
+                        "pin": {
+                            "name": "C3",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C4",
+                        "pin": {
+                            "name": "C4",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C6",
+                        "pin": {
+                            "name": "C6",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U2",
+                        "pin": {
+                            "name": "U2",
+                            "number": "4",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U3",
+                        "pin": {
+                            "name": "U3",
+                            "number": "4",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "4",
+                            "type": "power_in"
+                        }
+                    }
+                ],
+                "CS0": [
+                    {
+                        "component": "U2",
+                        "pin": {
+                            "name": "U2",
+                            "number": "6",
+                            "type": "input"
+                        }
+                    }
+                ],
+                "CS1": [
+                    {
+                        "component": "U3",
+                        "pin": {
+                            "name": "U3",
+                            "number": "6",
+                            "type": "input"
+                        }
+                    }
+                ],
+                "CS2": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "6",
+                            "type": "input"
+                        }
+                    }
+                ],
+                "GND": [
+                    {
+                        "component": "C3",
+                        "pin": {
+                            "name": "C3",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C4",
+                        "pin": {
+                            "name": "C4",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C6",
+                        "pin": {
+                            "name": "C6",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U2",
+                        "pin": {
+                            "name": "U2",
+                            "number": "1",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U3",
+                        "pin": {
+                            "name": "U3",
+                            "number": "1",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "1",
+                            "type": "power_in"
+                        }
+                    }
+                ],
+                "Net__J1_Pin_1_": [
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U2",
+                        "pin": {
+                            "name": "U2",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__J1_Pin_2_": [
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U2",
+                        "pin": {
+                            "name": "U2",
+                            "number": "3",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__J2_Pin_1_": [
+                    {
+                        "component": "J2",
+                        "pin": {
+                            "name": "J2",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U3",
+                        "pin": {
+                            "name": "U3",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__J2_Pin_2_": [
+                    {
+                        "component": "J2",
+                        "pin": {
+                            "name": "J2",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U3",
+                        "pin": {
+                            "name": "U3",
+                            "number": "3",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__J3_Pin_1_": [
+                    {
+                        "component": "J3",
+                        "pin": {
+                            "name": "J3",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__J3_Pin_2_": [
+                    {
+                        "component": "J3",
+                        "pin": {
+                            "name": "J3",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "3",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "SCK": [
+                    {
+                        "component": "U2",
+                        "pin": {
+                            "name": "U2",
+                            "number": "5",
+                            "type": "input"
+                        }
+                    },
+                    {
+                        "component": "U3",
+                        "pin": {
+                            "name": "U3",
+                            "number": "5",
+                            "type": "input"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "5",
+                            "type": "input"
+                        }
+                    }
+                ],
+                "SO": [
+                    {
+                        "component": "U2",
+                        "pin": {
+                            "name": "U2",
+                            "number": "7",
+                            "type": "tri_state"
+                        }
+                    },
+                    {
+                        "component": "U3",
+                        "pin": {
+                            "name": "U3",
+                            "number": "7",
+                            "type": "tri_state"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "7",
+                            "type": "tri_state"
+                        }
+                    }
+                ]
+            },
+            "subcircuits": [],
+            "annotations": []
+        },
+        {
+            "name": "Power",
+            "description": "",
+            "source_file": "power.kicad_sch",
+            "tstamps": "",
+            "components": {
+                "C2": {
+                    "symbol": "Device",
+                    "ref": "C2",
+                    "value": "10uF",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Unpolarized capacitor",
+                    "properties": {
+                        "LCSC": "C15850",
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "93a49f3e-b02c-4b74-b554-1824f05abcde",
+                    "fields": {
+                        "LCSC": "C15850",
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Unpolarized capacitor"
+                    },
+                    "pins": []
+                },
+                "C5": {
+                    "symbol": "Device",
+                    "ref": "C5",
+                    "value": "10nF",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Unpolarized capacitor",
+                    "properties": {
+                        "LCSC": "C1710",
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "e4c7d644-ec95-4837-bf03-b7ab5d3dbe9a",
+                    "fields": {
+                        "LCSC": "C1710",
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Unpolarized capacitor"
+                    },
+                    "pins": []
+                },
+                "C9": {
+                    "symbol": "Device",
+                    "ref": "C9",
+                    "value": "22uF",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Unpolarized capacitor",
+                    "properties": {
+                        "LCSC": "C5674",
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "a4755cba-2d1f-4490-9f80-70d32ed32efe",
+                    "fields": {
+                        "LCSC": "C5674",
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Unpolarized capacitor"
+                    },
+                    "pins": []
+                },
+                "C10": {
+                    "symbol": "Device",
+                    "ref": "C10",
+                    "value": "22uF",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Unpolarized capacitor",
+                    "properties": {
+                        "LCSC": "C5674",
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "606b499d-b29b-487d-903b-c8cd531acfc8",
+                    "fields": {
+                        "LCSC": "C5674",
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Unpolarized capacitor"
+                    },
+                    "pins": []
+                },
+                "C11": {
+                    "symbol": "Device",
+                    "ref": "C11",
+                    "value": "10uF",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Unpolarized capacitor",
+                    "properties": {
+                        "LCSC": "C15850",
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "9bb5c762-3c8f-4b78-af66-419612fdf9ad",
+                    "fields": {
+                        "LCSC": "C15850",
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Unpolarized capacitor"
+                    },
+                    "pins": []
+                },
+                "C13": {
+                    "symbol": "Device",
+                    "ref": "C13",
+                    "value": "100nF",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Unpolarized capacitor",
+                    "properties": {
+                        "LCSC": "C1711",
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "c61fe652-2985-45cc-a88f-48a9561ffea7",
+                    "fields": {
+                        "LCSC": "C1711",
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Unpolarized capacitor"
+                    },
+                    "pins": []
+                },
+                "D7": {
+                    "symbol": "Device",
+                    "ref": "D7",
+                    "value": "D",
+                    "footprint": "Diode_SMD:D_SMA",
+                    "datasheet": "~",
+                    "description": "Diode",
+                    "properties": {
+                        "Sim.Device": "D",
+                        "Sim.Pins": "1=K 2=A",
+                        "LCSC": "C445494",
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch",
+                        "ki_keywords": "diode",
+                        "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+                    },
+                    "tstamps": "42373f96-63a1-4b92-8de5-36ff5cc78c3d",
+                    "fields": {
+                        "Sim.Device": "D",
+                        "Sim.Pins": "1=K 2=A",
+                        "LCSC": "C445494",
+                        "Footprint": "Diode_SMD:D_SMA",
+                        "Datasheet": "~",
+                        "Description": "Diode"
+                    },
+                    "pins": []
+                },
+                "J7": {
+                    "symbol": "Connector",
+                    "ref": "J7",
+                    "value": "Conn_01x04_Pin",
+                    "footprint": "Connector:FanPinHeader_1x04_P2.54mm_Vertical",
+                    "datasheet": "~",
+                    "description": "Generic connector, single row, 01x04, script generated",
+                    "properties": {
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch",
+                        "ki_keywords": "connector",
+                        "ki_fp_filters": "Connector*:*_1x??_*"
+                    },
+                    "tstamps": "dc73fa5d-d36d-4273-ba8e-6998a2149227",
+                    "fields": {
+                        "Footprint": "Connector:FanPinHeader_1x04_P2.54mm_Vertical",
+                        "Datasheet": "~",
+                        "Description": "Generic connector, single row, 01x04, script generated"
+                    },
+                    "pins": []
+                },
+                "J8": {
+                    "symbol": "Connector",
+                    "ref": "J8",
+                    "value": "Conn_01x04_Pin",
+                    "footprint": "Connector:FanPinHeader_1x04_P2.54mm_Vertical",
+                    "datasheet": "~",
+                    "description": "Generic connector, single row, 01x04, script generated",
+                    "properties": {
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch",
+                        "ki_keywords": "connector",
+                        "ki_fp_filters": "Connector*:*_1x??_*"
+                    },
+                    "tstamps": "812fd8be-3634-4554-9e0d-f55cca3d29eb",
+                    "fields": {
+                        "Footprint": "Connector:FanPinHeader_1x04_P2.54mm_Vertical",
+                        "Datasheet": "~",
+                        "Description": "Generic connector, single row, 01x04, script generated"
+                    },
+                    "pins": []
+                },
+                "J11": {
+                    "symbol": "Connector",
+                    "ref": "J11",
+                    "value": "Barrel_Jack",
+                    "footprint": "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal",
+                    "datasheet": "~",
+                    "description": "DC Barrel Jack",
+                    "properties": {
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch",
+                        "ki_keywords": "DC power barrel jack connector",
+                        "ki_fp_filters": "BarrelJack*"
+                    },
+                    "tstamps": "973a6ae9-a1d8-4d13-baf0-9bb5a002438f",
+                    "fields": {
+                        "Footprint": "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal",
+                        "Datasheet": "~",
+                        "Description": "DC Barrel Jack"
+                    },
+                    "pins": []
+                },
+                "L1": {
+                    "symbol": "Device",
+                    "ref": "L1",
+                    "value": "3.9uH",
+                    "footprint": "Inductor_SMD:L_APV_ANR3015",
+                    "datasheet": "~",
+                    "description": "Inductor",
+                    "properties": {
+                        "LCSC": "C42429305",
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch",
+                        "ki_keywords": "inductor choke coil reactor magnetic",
+                        "ki_fp_filters": "Choke_* *Coil* Inductor_* L_*"
+                    },
+                    "tstamps": "d041689f-e226-4b46-9813-63b53e8b420b",
+                    "fields": {
+                        "LCSC": "C42429305",
+                        "Footprint": "Inductor_SMD:L_APV_ANR3015",
+                        "Datasheet": "~",
+                        "Description": "Inductor"
+                    },
+                    "pins": []
+                },
+                "R12": {
+                    "symbol": "Device",
+                    "ref": "R12",
+                    "value": "51.1k",
+                    "footprint": "Resistor_SMD:R_0805_2012Metric",
+                    "datasheet": "~",
+                    "description": "Resistor, US symbol",
+                    "properties": {
+                        "LCSC": "C17731",
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch",
+                        "ki_keywords": "R res resistor",
+                        "ki_fp_filters": "R_*"
+                    },
+                    "tstamps": "d811e9f9-39e4-4bef-a187-daaa21580515",
+                    "fields": {
+                        "LCSC": "C17731",
+                        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+                        "Datasheet": "~",
+                        "Description": "Resistor, US symbol"
+                    },
+                    "pins": []
+                },
+                "TP1": {
+                    "symbol": "Connector",
+                    "ref": "TP1",
+                    "value": "TestPoint",
+                    "footprint": "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm",
+                    "datasheet": "~",
+                    "description": "test point",
+                    "properties": {
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch",
+                        "ki_keywords": "test point tp",
+                        "ki_fp_filters": "Pin* Test*"
+                    },
+                    "tstamps": "a6b79dba-f569-47c6-bd37-ed5d120d13f7",
+                    "fields": {
+                        "Footprint": "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm",
+                        "Datasheet": "~",
+                        "Description": "test point"
+                    },
+                    "pins": []
+                },
+                "TP2": {
+                    "symbol": "Connector",
+                    "ref": "TP2",
+                    "value": "TestPoint",
+                    "footprint": "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm",
+                    "datasheet": "~",
+                    "description": "test point",
+                    "properties": {
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch",
+                        "ki_keywords": "test point tp",
+                        "ki_fp_filters": "Pin* Test*"
+                    },
+                    "tstamps": "05bb0631-5d82-46b2-a1d8-ddbf62f7ac09",
+                    "fields": {
+                        "Footprint": "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm",
+                        "Datasheet": "~",
+                        "Description": "test point"
+                    },
+                    "pins": []
+                },
+                "TP3": {
+                    "symbol": "Connector",
+                    "ref": "TP3",
+                    "value": "TestPoint",
+                    "footprint": "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm",
+                    "datasheet": "~",
+                    "description": "test point",
+                    "properties": {
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch",
+                        "ki_keywords": "test point tp",
+                        "ki_fp_filters": "Pin* Test*"
+                    },
+                    "tstamps": "510958c5-8dd9-4f70-9704-1dad8f196a4f",
+                    "fields": {
+                        "Footprint": "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm",
+                        "Datasheet": "~",
+                        "Description": "test point"
+                    },
+                    "pins": []
+                },
+                "U5": {
+                    "symbol": "TPS2121",
+                    "ref": "U5",
+                    "value": "TPS2121RUXR",
+                    "footprint": "TPS2121RUXR:IC_TPS2121RUXR",
+                    "datasheet": "",
+                    "description": "",
+                    "properties": {
+                        "MF": "Texas Instruments",
+                        "Description_1": "2.7-VÂ to 22-V, 56-mâ¦, 4.5-A, power mux with seamless switchover",
+                        "Package": "VQFN-HR-12 Texas Instruments",
+                        "Price": "None",
+                        "Check_prices": "https://www.snapeda.com/parts/TPS2121RUXR/Texas+Instruments/view-part/?ref=eda",
+                        "STANDARD": "Manufacturer Recommendations",
+                        "SnapEDA_Link": "https://www.snapeda.com/parts/TPS2121RUXR/Texas+Instruments/view-part/?ref=snap",
+                        "MP": "TPS2121RUXR",
+                        "Availability": "In Stock",
+                        "MANUFACTURER": "TEXAS INSTRUMENTS",
+                        "LCSC": "C485916",
+                        "FT Rotation Offset": "270",
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch"
+                    },
+                    "tstamps": "ec58d896-2ed6-47ab-afe2-f9c5fb1135a0",
+                    "fields": {
+                        "MF": "Texas Instruments",
+                        "Description_1": "2.7-VÂ to 22-V, 56-mâ¦, 4.5-A, power mux with seamless switchover",
+                        "Package": "VQFN-HR-12 Texas Instruments",
+                        "Price": "None",
+                        "Check_prices": "https://www.snapeda.com/parts/TPS2121RUXR/Texas+Instruments/view-part/?ref=eda",
+                        "STANDARD": "Manufacturer Recommendations",
+                        "SnapEDA_Link": "https://www.snapeda.com/parts/TPS2121RUXR/Texas+Instruments/view-part/?ref=snap",
+                        "MP": "TPS2121RUXR",
+                        "Availability": "In Stock",
+                        "MANUFACTURER": "TEXAS INSTRUMENTS",
+                        "LCSC": "C485916",
+                        "FT Rotation Offset": "270",
+                        "Footprint": "TPS2121RUXR:IC_TPS2121RUXR",
+                        "Datasheet": "",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "U8": {
+                    "symbol": "Regulator_Switching",
+                    "ref": "U8",
+                    "value": "AP63203WU",
+                    "footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+                    "datasheet": "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf",
+                    "description": "2A, 1.1MHz Buck DC/DC Converter, fixed 3.3V output voltage, TSOT-23-6",
+                    "properties": {
+                        "LCSC": "C780769",
+                        "FT Rotation Offset": "90",
+                        "Sheetname": "Power",
+                        "Sheetfile": "power.kicad_sch",
+                        "ki_keywords": "2A Buck DC/DC",
+                        "ki_fp_filters": "TSOT?23*"
+                    },
+                    "tstamps": "31173c2a-12fe-4977-9ee2-d592f58b9e4b",
+                    "fields": {
+                        "LCSC": "C780769",
+                        "FT Rotation Offset": "90",
+                        "Footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+                        "Datasheet": "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf",
+                        "Description": "2A, 1.1MHz Buck DC/DC Converter, fixed 3.3V output voltage, TSOT-23-6"
+                    },
+                    "pins": []
+                }
+            },
+            "nets": {
+                "_p_3V3": [
+                    {
+                        "component": "C10",
+                        "pin": {
+                            "name": "C10",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C9",
+                        "pin": {
+                            "name": "C9",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "L1",
+                        "pin": {
+                            "name": "L1",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "TP2",
+                        "pin": {
+                            "name": "TP2",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U8",
+                        "pin": {
+                            "name": "U8",
+                            "number": "1",
+                            "type": "input"
+                        }
+                    }
+                ],
+                "_p_5V": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "2",
+                            "type": "input"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "2_1",
+                            "type": "input"
+                        }
+                    }
+                ],
+                "_p_12V": [
+                    {
+                        "component": "C2",
+                        "pin": {
+                            "name": "C2",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "D7",
+                        "pin": {
+                            "name": "D7",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J11",
+                        "pin": {
+                            "name": "J11",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J7",
+                        "pin": {
+                            "name": "J7",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J8",
+                        "pin": {
+                            "name": "J8",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "7",
+                            "type": "input"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "7_1",
+                            "type": "input"
+                        }
+                    }
+                ],
+                "FAN_0_TACH": [
+                    {
+                        "component": "J7",
+                        "pin": {
+                            "name": "J7",
+                            "number": "3",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "FAN_1_TACH": [
+                    {
+                        "component": "J8",
+                        "pin": {
+                            "name": "J8",
+                            "number": "3",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "GND": [
+                    {
+                        "component": "C10",
+                        "pin": {
+                            "name": "C10",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C11",
+                        "pin": {
+                            "name": "C11",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C2",
+                        "pin": {
+                            "name": "C2",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C5",
+                        "pin": {
+                            "name": "C5",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C9",
+                        "pin": {
+                            "name": "C9",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "D7",
+                        "pin": {
+                            "name": "D7",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J11",
+                        "pin": {
+                            "name": "J11",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J7",
+                        "pin": {
+                            "name": "J7",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J8",
+                        "pin": {
+                            "name": "J8",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "R12",
+                        "pin": {
+                            "name": "R12",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "TP3",
+                        "pin": {
+                            "name": "TP3",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "12",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "3",
+                            "type": "input"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "4",
+                            "type": "input"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "5",
+                            "type": "input"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "6",
+                            "type": "input"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "9",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U8",
+                        "pin": {
+                            "name": "U8",
+                            "number": "4",
+                            "type": "power_in"
+                        }
+                    }
+                ],
+                "Net__U5_ILIM_": [
+                    {
+                        "component": "R12",
+                        "pin": {
+                            "name": "R12",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "10",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__U5_SS_": [
+                    {
+                        "component": "C5",
+                        "pin": {
+                            "name": "C5",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "11",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__U8_BST_": [
+                    {
+                        "component": "C13",
+                        "pin": {
+                            "name": "C13",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U8",
+                        "pin": {
+                            "name": "U8",
+                            "number": "6",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__U8_SW_": [
+                    {
+                        "component": "C13",
+                        "pin": {
+                            "name": "C13",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "L1",
+                        "pin": {
+                            "name": "L1",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U8",
+                        "pin": {
+                            "name": "U8",
+                            "number": "5",
+                            "type": "output"
+                        }
+                    }
+                ],
+                "VBUS": [
+                    {
+                        "component": "C11",
+                        "pin": {
+                            "name": "C11",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "TP1",
+                        "pin": {
+                            "name": "TP1",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "1",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "1_1",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "8",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "8_1",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U8",
+                        "pin": {
+                            "name": "U8",
+                            "number": "2",
+                            "type": "input"
+                        }
+                    },
+                    {
+                        "component": "U8",
+                        "pin": {
+                            "name": "U8",
+                            "number": "3",
+                            "type": "power_in"
+                        }
+                    }
+                ]
+            },
+            "subcircuits": [],
+            "annotations": []
+        }
+    ],
+    "annotations": []
+}

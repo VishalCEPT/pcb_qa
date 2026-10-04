@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to PWM?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, pin 6 (PB1) of component U2 is connected to the net named 'PWM'.",
+        "is_final": true
+    }
+}

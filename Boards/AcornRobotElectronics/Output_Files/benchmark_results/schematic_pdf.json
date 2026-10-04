@@ -1,0 +1,41 @@
+{
+    "board_name": "AcornRobotElectronics",
+    "strategy": "schematic_pdf",
+    "accuracy": 1.0,
+    "precision": 0.5,
+    "recall": 0.5,
+    "f1": 0.5,
+    "confusion_matrix": [
+        [
+            3,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "results": [
+        {
+            "question_number": 1,
+            "question": "Is the component Module1 connected to _p_5V?",
+            "expected": "YES",
+            "predicted": "YES",
+            "correct": true
+        },
+        {
+            "question_number": 2,
+            "question": "Is the component U14 connected to RX4?",
+            "expected": "YES",
+            "predicted": "YES",
+            "correct": true
+        },
+        {
+            "question_number": 3,
+            "question": "Is the component J3 connected to USBC_VBUS_IN?",
+            "expected": "YES",
+            "predicted": "YES",
+            "correct": true
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component IIS2MDCTR have a data output of 16-bits according to its datasheet?",
+    "tool_calls": {
+        "function_name": "get_relevant_context_from_question",
+        "function_args": {
+            "question": "Does the component IIS2MDCTR have a data output of 16-bits according to its datasheet?",
+            "project_context": {
+                "circuit_json_file": "./outputs/HadesFCS/Hades.json",
+                "spice_json_file": "./outputs/HadesFCS/Hades_SPICE_circuit.json",
+                "datasheet_files": [
+                    "./outputs/HadesFCS/datasheets/U8.pdf"
+                ]
+            }
+        }
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the datasheet context provided for the IIS2MDC (the base part for IIS2MDCTR), the device provides magnetic data and temperature data in 16-bit formats. Specifically, the temperature sensor output is explicitly described as a signed 16-bit value in 2\u2019s complement, and the magnetic data registers (X, Y, and Z axes) are also structured as 16-bit outputs (composed of High and Low 8-bit registers).",
+        "is_final": true
+    }
+}

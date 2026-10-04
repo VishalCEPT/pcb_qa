@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component Q1 connected to Net__Q1_G_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The SPICE netlist explicitly shows resistor R5 connected between Net-_Q1-G_ and Net-_J5-Pin_1_, and the schematic net 37 confirms Q1 pin 1 (G) is connected to Net-(Q1-G).",
+        "is_final": true
+    }
+}

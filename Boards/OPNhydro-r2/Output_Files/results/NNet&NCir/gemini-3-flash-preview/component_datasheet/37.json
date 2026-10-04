@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ATLAS_EZO_RTD have a minimum operating temperature of -40\u00b0C according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The datasheet for the EZO-RTD circuit (M4) specifies an operating temperature range of -40\u00b0C to 125\u00b0C, but the probe (PR) it interfaces with (ATLAS PT-1000) has a sensing range starting at -200\u00b0C.",
+        "is_final": true
+    }
+}

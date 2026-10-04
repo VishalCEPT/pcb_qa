@@ -1,0 +1,438 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "MIC26903\n28V, 9A Hyper Light Load™\nSynchronous DC/DC Buck Regulator\nSuperSwitcher IIG™\nGeneral Description Features\nThe Micrel MIC26903 is a constant-frequency, • Hyper Light Load™ efficiency – up to 80% at 10mA\nsynchronous DC/DC buck regulator featuring adaptive on- • Hyper Speed Control™ architecture enables\ntime control architecture. The MIC26903 operates over a\n− High delta V operation (V = 28V and V = 0.8V)\nsupply range of 4.5V to 28V. It has an internal linear IN OUT"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "− Small output capacitance\nregulator which provides a regulated 5V to power the\ninternal control circuitry. MIC26903 operates at a constant • Input voltage range: 4.5V to 28V\n600kHz switching frequency in continuous conduction • Output current up to 9A\nmode and can be used to provide up to 9A of output\n• Up to 95% efficiency\ncurrent. The output voltage is adjustable down to 0.8V.\n• Adjustable output voltage from 0.8V to 5.5V\nMicrel’s Hyper Light Load™ architecture provides the same"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "• ±1% FB accuracy\nhigh-efficiency and ultra-fast transient response as the\n• Any CapacitorTM stable − zero-to-high ESR\nHyper Speed Control™ architecture under medium to heavy\nloads, but also maintains high efficiency under light load • 600kHz switching frequency\nconditions by transitioning to variable frequency, • Power Good (PG) output\ndiscontinuous mode operation.\n• Foldback current-limit and “hiccup” mode short-circuit\nThe MIC26903 offers a full suite of protection features to protection"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "ensure protection of the IC during fault conditions. These\n• Safe start-up into pre-biased loads\ninclude undervoltage lockout to ensure proper operation\n• 5mm × 6mm MLF® package\nunder power-sag conditions, thermal shutdown, internal\nsoft-start to reduce the inrush current, foldback current • –40°C to +125°C junction temperature range\nlimit and “hiccup mode” short-circuit protection. The\nApplications\nMIC26903 includes a Power Good (PG) output to allow"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "simple sequencing. • Distributed power systems\nAll support documentation can be found on Micrel’s web • Telecom/networking infrastructure\nsite at: www.micrel.com.\n• Printers, scanners, graphic cards and video cards\n___________________________________________________________________________________________________________\nTypical Application\nEfficiency (V = 12V)\nIN\nvs. Output Current\n100\n95\n90\n85\n80\n75\n70\n65\n60\n55\n50\n0 3 6 9\nOUTPUT CURRENT (A)"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "80\n75\n70\n65\n60\n55\n50\n0 3 6 9\nOUTPUT CURRENT (A)\nHyper Speed Control, Hyper Light Load, SuperSwitcher II, and Any Capacitor are trademarks of Micrel, Inc.\nMLF and MicroLeadFrame are registered trademarks of Amkor Technology, Inc.\nMicrel Inc. • 2180 Fortune Drive • San Jose, CA 95131 • USA • tel +1 (408) 944-0800 • fax + 1 (408) 474-1000 • http://www.micrel.com\n)%(\nYCNEICIFFE\n5.0V\n3.3V\n2.5V\n1.8V\n1.5V\n1.2V\n1.0V\n0.9V\n0.8V\nVIN = 12V\n12\nJuly 2011 M9999-071311-AMicrel, Inc. MIC26903"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "12\nJuly 2011 M9999-071311-AMicrel, Inc. MIC26903\nOrdering Information\nJunction Temperature\nPart Number Voltage Switching Frequency Package Lead Finish\nRange\nMIC26903YJL Adjustable 600kHz –40°C to +125°C 28-Pin 5mm × 6mm MLF® Pb-Free\nPin Configuration\n28-Pin 5mm x 6mm MLF® (YJL)\nPin Description\nPin Number Pin Name Pin Function\n5V Internal Linear Regulator (Output): PVDD supply is the power MOSFET gate drive supply"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "voltage and created by internal LDO from V . When V < +5.5V, PVDD should be tied to PVIN\n1 PVDD IN IN\npins.\nA 2.2µF ceramic capacitor from the PVDD pin to PGND (pin 2) must be place next to the IC.\n3 NC No Connect.\nSwitch Node (Output): Internal connection for the high-side MOSFET source and low-side\n4, 9, 10, 11, 12 SW MOSFET drain. Due to the high speed switching on this pin, the SW pin should be routed away\nfrom sensitive nodes."
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "from sensitive nodes.\nPower Ground. PGND is the ground path for the MIC26903 buck converter power stage. The\nPGND pins connect to the low-side N-Channel internal MOSFET gate drive supply ground, the\n2, 5, 6, 7, 8, 21 PGND sources of the MOSFETs, the negative terminals of input capacitors, and the negative terminals of\noutput capacitors. The loop for the power ground should be as small as possible and separate\nfrom the Signal ground (SGND) loop."
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "from the Signal ground (SGND) loop.\nHigh-Side N-internal MOSFET Drain Connection (Input): The PV operating voltage range is from\n13,14,15, IN\nPVIN 4.5V to 26V. Input capacitors between the PVIN pins and the power ground (PGND) are required\n16,17,18,19\nand keep the connection short.\nBoost (output): Bootstrapped voltage to the high-side N-channel MOSFET driver. A Schottky diode\nis connected between the PVDD pin and the BST pin. A boost capacitor of 0.1μF is connected\n20 BST"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "20 BST\nbetween the BST pin and the SW pin. Adding a small resistor at the BST pin can slow down the\nturn-on time of high-side N-Channel MOSFETs.\nJuly 2011 2 M9999-071311-AMicrel, Inc. MIC26903\nPin Description (Continued)\nPin Number Pin Name Pin Function\nCurrent Sense (Input): The CS pin senses current by monitoring the voltage across the low-side\nMOSFET during the OFF-time. The current sensing is necessary for short circuit protection and zero"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "22 CS current cross comparator. In order to sense the current accurately, connect the low-side MOSFET\ndrain to SW using a Kelvin connection. The CS pin is also the high-side MOSFET’s output driver\nreturn.\nSignal ground. SGND must be connected directly to the ground planes. Do not route the SGND pin\n23 SGND\nto the PGND Pad on the top layer, see PCB layout guidelines for details.\nFeedback (Input): Input to the transconductance amplifier of the control loop. The FB pin is regulated"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "24 FB to 0.8V. A resistor divider connecting the feedback to the output is used to adjust the desired output\nvoltage.\nPower Good (Output): Open Drain Output. The PG pin is externally tied with a resistor to VDD. A\n25 PG\nhigh output is asserted when V > 92% of nominal.\nOUT\nEnable (Input): A logic level control of the output. The EN pin is CMOS-compatible. Logic high =\n26 EN enable, logic low = shutdown. In the off state, supply current of the device is greatly reduced (typically"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "5µA). The EN pin should not be left open.\n27 VIN Power Supply Voltage (Input): Requires bypass capacitor to SGND.\n5V Internal Linear Regulator (Output): VDD supply is the supply bus for the IC control circuit. VDD is\n28 VDD created by internal LDO from V . When V < +5.5V, VDD should be tied to PVIN pins. A 1.0µF\nIN IN\nceramic capacitor from the VDD pin to SGND pins must be place next to the IC.\nJuly 2011 3 M9999-071311-AMicrel, Inc. MIC26903\nAbsolute Maximum Ratings(1,2) Operating Ratings(3)"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "PV to PGND................................................−0.3V to +29V Supply Voltage (PV , V ).................................4.5V to 28V\nIN IN IN\nV IN to PGND....................................................−0.3V to PV IN PVDD, VDD Supply Voltage (PV DD , V DD ).........4.5V to 5.5V\nPV DD , V DD to PGND.........................................−0.3V to +6V Enable Input (V EN )..................................................0V to V IN"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "V SW , V CS to PGND..............................−0.3V to (PV IN +0.3V) Junction Temperature (T J )........................−40°C to +125°C\nV to V ........................................................−0.3V to 6V Maximum Power Dissipation......................................Note 4\nBST SW Package Thermal Resistance(4)\nV to PGND..................................................−0.3V to 35V\nBST 5mm x 6mm MLF®-24L (θ ) .............................28°C/W"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "V , V to PGND...............................−0.3V to (V + 0.3V) JA\nFB PG DD\nV to PGND........................................−0.3V to (V +0.3V)\nEN IN\nPGND to SGND...........................................−0.3V to +0.3V\nJunction Temperature..............................................+150°C\nStorage Temperature (T ).........................−65°C to +150°C\nS\nLead Temperature (soldering, 10sec)........................260°C\nElectrical Characteristics(5)"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "Electrical Characteristics(5)\nPV = V = V = 12V, V – V = 5V; T = 25°C, unless noted. Bold values indicate −40°C ≤ T ≤ +125°C.\nIN IN EN BST SW A J\nParameter Condition Min. Typ. Max. Units\nPower Supply Input\nInput Voltage Range (V , PV ) 4.5 28 V\nIN IN\nQuiescent Supply Current V = 1.5V (non-switching) 450 750 µA\nFB\nShutdown Supply Current V = 0V 5 10 µA\nEN\nV Supply Voltage\nDD\nV Output Voltage V = 7V to 28V, I = 25mA 4.8 5 5.4 V\nDD IN DD\nV UVLO Threshold V Rising 3.7 4.2 4.5 V\nDD DD"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "V UVLO Threshold V Rising 3.7 4.2 4.5 V\nDD DD\nV UVLO Hysteresis 400 mV\nDD\nDropout Voltage (V – V ) I = 25mA 380 600 mV\nIN DD DD\nDC/DC Controller\nOutput-Voltage Adjust Range\n0.8 5.5 V\n(V )\nOUT\nReference\n0°C ≤ T ≤ 85°C (±1.0%) 0.792 0.8 0.808\nJ\nV\n−40°C ≤ T ≤ 125°C (±1.5%) 0.788 0.8 0.812\nJ\nLoad Regulation I = 3A to 9A (Continuous Mode) 0.25 %\nOUT\nLine Regulation V = 4.5V to 28V 0.25 %\nIN\nFB Bias Current V = 0.8V 50 500 nA\nFB\nEnable Control\nEN Logic Level High 1.8 V\nEN Logic Level Low 0.6 V"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "EN Logic Level Low 0.6 V\nEN Bias Current V = 12V 6 30 µA\nEN\nOscillator\nSwitching Frequency (6) 450 600 750 kHz\nMaximum Duty Cycle (7) V = 0V 82 %\nFB\nMinimum Duty Cycle V = 1.0V 0 %\nFB\nMinimum Off-Time 300 ns\nJuly 2011 4 M9999-071311-AMicrel, Inc. MIC26903\nElectrical Characteristics(5) (Continued)\nPV = V = V = 12V, V – V = 5V; T = 25°C, unless noted. Bold values indicate −40°C ≤ T ≤ +125°C.\nIN IN EN BST SW A J\nParameter Condition Min. Typ. Max. Units\nSoft-Start\nSoft-Start time 5 ms"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "Soft-Start\nSoft-Start time 5 ms\nShort-Circuit Protection\nCurrent-Limit Threshold V = 0.8V, T = 25°C 12.5 15 20 A\nFB J\nCurrent-Limit Threshold V = 0.8V, T = 125°C 11.25 15 20 A\nFB J\nShort-Circuit Current V = 0V 4 A\nFB\nInternal FETs\nTop-MOSFET R I = 3A 27 mΩ\nDS (ON) SW\nBottom-MOSFET R I = 3A 10.5 mΩ\nDS (ON) SW\nSW Leakage Current V = 0V 60 µA\nEN\nV Leakage Current V = 0V 25 µA\nIN EN\nPower Good (PG)\nPG Threshold Voltage Sweep V from Low to High 85 92 95 %V\nFB OUT"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "FB OUT\nPG Hysteresis Sweep V from High to Low 5.5 %V\nFB OUT\nPG Delay Time Sweep V from Low to High 100 µs\nFB\nPG Low Voltage Sweep V < 0.9 × V , I = 1mA 70 200 mV\nFB NOM PG\nThermal Protection\nOver-Temperature Shutdown T Rising 160 °C\nJ\nOver-Temperature Shutdown\n15 °C\nHysteresis\nNotes:\n1. Exceeding the absolute maximum rating may damage the device.\n2. Devices are ESD sensitive. Handling precautions recommended. Human body model, 1.5kΩ in series with 100pF."
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "3. The device is not guaranteed to function outside operating range.\n4. PD = (T – T )/ θ , where θ depends upon the printed circuit layout. A 5 square inch 4 layer, 0.62”, FR-4 PCB with 2oz finish copper weight\n(MAX) J(MAX) A JA JA\nper layer is used for the θ .\nJA\n5. Specification for packaged product only.\n6. Measured in test mode.\n7. The maximum duty-cycle is limited by the fixed mandatory off-time t of typically 300ns.\nOFF\nJuly 2011 5 M9999-071311-AMicrel, Inc. MIC26903"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "July 2011 5 M9999-071311-AMicrel, Inc. MIC26903\nTypical Characteristics\nV IN Operating Supply Current V IN Shutdown Current V DD Output Voltage\nvs. Input Voltage vs. Input Voltage vs. Input Voltage\n1.0 60 10\n0.8 8\n45\n0.6 6\n30\n0.4 4\n0.2 15 2\n0.0 0\n0\n4 10 16 22 28 4 10 16 22 2\n4 10 16 22 28\nINPUT VOLTAGE (V)\nJuly 2011 6 M9999-071311-A\n)V(\nEGATLOV\nDDV\nINPUT VOLTAGE (V)\n)Aµ(\nTNERRUC\nNWODTUHS\nVEN = 0V\nREN = OPEN\nINPUT VOLTAGE (V)\n)Am(\nTNERRUC\nYLPPUS VOUT = 1.8V\nIOUT = 0A\nSWITCHING VFB = 0.9V"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "YLPPUS VOUT = 1.8V\nIOUT = 0A\nSWITCHING VFB = 0.9V\nIDD = 10mA\n8\nFeedback Voltage Total Regulation Current Limit\nvs. Input Voltage vs. Input Voltage vs. Input Voltage\n0.808 0.2% 20\n16\n0.804 0.1%\n12\n0.800 0.0%\n8\n0.796\n-0.1% 4\n0.792 0\n4 10 16 22 28 -0.2% 4 10 16 22 2\n4 10 16 22 28\nINPUT VOLTAGE (V)\n)A(\nTIMIL\nTNERRUC\nINPUT VOLTAGE (V)\n)V(\nEGATLOV\nKCABDEEF\nINPUT VOLTAGE (V)\n)%(\nNOITALUGER\nLATOT\nVOUT = 1.8V\nIOUT = 2A to 9A\nVOUT = 1.8V VOUT = 1.8V\nIOUT = 2A\n8"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "VOUT = 1.8V VOUT = 1.8V\nIOUT = 2A\n8\nSwitching Frequency Enable Input Current PG/V Ratio\nREF\nvs. Input Voltage vs. Input Voltage vs. Input Voltage\n700 16 100%\n650 12 95%\n600 8 90%\n550 85% 4\n500 80%\n0\n4 10 16 22 28 4.0 10.0 16.0 22.0 28.0\n4 10 16 22 28\nINPUT VOLTAGE (V)\n)%(\nFERV/DLOHSERHT\nGPV\nVREF = 0.7V\nINPUT VOLTAGE (V)\n)Aµ(\nTNERRUC\nTUPNI\nNE\nVEN = VIN\nINPUT VOLTAGE (V)\n)zHk(\nYCNEUQERF\nVOUT = 1.8V\nIOUT = 2AMicrel, Inc. MIC26903\nTypical Characteristics (Continued)\nV Operating Supply Current IN"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "V Operating Supply Current IN\nvs. Temperature\n1.0\n0.8\n0.6\n0.4\n0.2\n0.0\n-50 -25 0 25 50 75 100 125\nTEMPERATURE (°C)\nJuly 2011 7 M9999-071311-A\n)Am(\nTNERRUC\nYLPPUS\nV Shutdown Current IN\nvs. Temperature\n10\nVIN = 12V\nVOUT = 1.8V 8\nIOUT = 0A\nSWITCHING\n6\n4\n2\n0\n-50 -25 0 25 50 75 100 125\nTEMPERATURE (°C)\n)Au(\nTNERRUC\nNWODTUHS\nV UVLO Threshold DD\nvs. Temperature\n5\n4\n3\n2\nVIN = 12V\n1\nIOUT = 0A\nVEN = 0V\n0\n-50 -25 0 25 50 75 100 125\nTEMPERATURE (°C)\n)V(\nDLOHSERHT\nDDV\nRising\nFalling\nHyst\nFeedback Voltage"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "DDV\nRising\nFalling\nHyst\nFeedback Voltage\nvs. Temperature\n0.808\n0.804\n0.800\n0.796\n0.792\n0.788\n-50 -25 0 25 50 75 100 125\nTEMPERATURE (°C)\n)V(\nEGATLOV\nKCABEEF\nLoad Regulation\nvs. Temperature\n0.2%\nVIN = 12V VOUT = 1.8V 0.1% IOUT = 2A\n0.0%\n-0.1%\n-0.2%\n-50 -25 0 25 50 75 100 125\nTEMPERATURE (°C)\n)%( NOITALUGER\nDAOL\nLine Regulation\nvs. Temperature\n0.2%\n0.1%\n0.0%\nVIN = 12V -0.1%\nVOUT = 1.8V\nIOUT =2A to 9A\n-0.2%\n-50 -25 0 25 50 75 100 125\nTEMPERATURE (°C)\n)%( NOITALUGER"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "TEMPERATURE (°C)\n)%( NOITALUGER\nENIL VIN = 4.5V to 28V VOUT = 1.8V\nIOUT = 2A\nSwitching Frequency\nvs. Temperature\n700\n650\n600\n550\n500\n-50 -25 0 25 50 75 100 125\nTEMPERATURE (°C)\n)zHk(\nYCNEUQERF\nV\nDD\nvs. Temperature\n6\nVIN = 12V\nVOUT = 1.8V 5\nIOUT = 2A\n4\n3\n2\n-50 -25 0 25 50 75 100 125\nTEMPERATURE (°C)\n)V(\nDDV\nCurrent Limit\nvs. Temperature\n20\n16\n12\n8\nVIN = 12V\nVOUT = 1.8V 4\nIOUT =0A\n0\n-50 -25 0 25 50 75 100 125\nTEMPERATURE (°C)\n)A(\nTIMIL\nTNERRUC\nVIN = 12V\nVOUT = 1.8VMicrel, Inc. MIC26903"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "VIN = 12V\nVOUT = 1.8VMicrel, Inc. MIC26903\nTypical Characteristics (Continued)\nEfficiency\nvs. Output Current\n100\n90\n80\n70\n60\n50\n0 1.5 3 4.5 6 7.5 9\nOUTPUT CURRENT (A)\nJuly 2011 8 M9999-071311-A\n)%(\nYCNEICIFFE\nFeedback Voltage\nvs. Output Current\n0.808\n12VIN\n0.804\n24VIN\n0.800\nVOUT = 1.8V 0.796\n0.792\n0 1.5 3 4.5 6 7.5 9\nOUTPUT CURRENT (A)\n)V(\nEGATLOV\nKCABDEEF\nOutput Voltage\nvs. Output Current\n1.819\n1.814\n1.810\n1.805\n1.800\n1.796\n1.791 VIN = 12V\nVOUT = 1.8V 1.787\n1.782\n0 1.5 3 4.5 6 7.5 9"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "VOUT = 1.8V 1.787\n1.782\n0 1.5 3 4.5 6 7.5 9\nOUTPUT CURRENT (A)\n)V( EGATLOV\nTUPTUO\nVIN = 12V VOUT = 1.8V\nLine Regulation\nvs. Output Current\n1.0%\n0.5%\n0.0%\n-0.5%\n-1.0%\n0 2 3 5 6 8 9\nOUTPUT CURRENT (A)\n)%(\nNOITALUGER\nENIL\nSwitching Frequency\nvs. Output Current\n700\nVIN = 4.5V to 28V\nVOUT = 1.8V\n650\n600\n550\n500\n3 4.5 6 7.5\nOUTPUT CURRENT (A)\n)zHk(\nYCNEUQERF\nOutput Voltage (V = 5V) IN\nvs. Output Current\n5.0\nVIN = 12V 4.6\nVOUT = 1.8V\n4.2\n3.8\n3.4\n3.0\n0 2 4 6 8 10 1\n9\nOUTPUT CURRENT (A)\n)V(\nEGATLOV"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "0 2 4 6 8 10 1\n9\nOUTPUT CURRENT (A)\n)V(\nEGATLOV\nTUPTUO\nVIN = 5V\nVFB < 0.8V\nTA\n25ºC\n85ºC\n125ºC\n2\nEfficiency (V = 5V)\nIN\nvs. Output Current\n100\n95 90\n85\n80\n75\n70\n65\n60\n55\n50\n0 3 6 9 1\nOUTPUT CURRENT (A)\n)%(\nYCNEICIFFE\nIC Power Dissipation (VIN = 5V)\nvs. Output Current\n3.0\n2.5\n2.0\n1.5\n1.0\n0.5\n0.0 2\n0 1.5 3 4.5 6 7.5 9\nOUTPUT CURRENT (A)\n)W(\nNOITAPISSID\nREWOP\nDie Temperature* (V = 5V) IN\nvs. Output Current\n100\nV = 5V\nIN V = 0.8,V, 1.0V, 1.2V, 1.5V, 1.8V,2.5V, 3.3V OUT 80\n60\n40\n3.3V\n20 0.8V\n0"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "60\n40\n3.3V\n20 0.8V\n0\n0 2 3 5 6 8\nOUTPUT CURRENT (A)\n)C°(\nERUTAREPMET\nEID\n3.3V\n2.5V\n1.8V\n1.5V\n1.2V\n1.0V 0.9V\n0.8V\nVIN = 5V\nVIN = 5V VOUT = 1.8V\n9Micrel, Inc. MIC26903\nTypical Characteristics (Continued)\nEfficiency (V = 12V)\nIN\nvs. Output Current\n100\n95 90\n85\n80\n75\n70\n65\n60\n55\n50\n0 3 6 9 1\nOUTPUT CURRENT (A)\nJuly 2011 9 M9999-071311-A\n)%(\nYCNEICIFFE\nIC Power Dissipation (VIN = 12V)\nvs. Output Current\n3.0\n5.0V 3.3V 2.5 2.5V\n1.8V\n1.5V 2.0\n1.2V\n1.0V\n0.9V 1.5\n0.8V\n1.0\nVIN = 12V\n0.5\n0.0 2"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "1.2V\n1.0V\n0.9V 1.5\n0.8V\n1.0\nVIN = 12V\n0.5\n0.0 2\n0 1.5 3 4.5 6 7.5 9\nOUTPUT CURRENT (A)\n)W(\nNOITAPISSID\nREWOP\nDie Temperature* (V = 12V)\nIN\nvs. Output Current\n100\nV = 12V IN V = 0.8,V, 1.0V, 1.2V, 1.5V, 1.8V,2.5V, 3.3V, 5.0V OUT 80\n60\n40\n5.0V\n0.8V 20\n0\n0 2 3 5 6 8 9\nOUTPUT CURRENT (A)\n)C°(\nERUTAREPMET\nEID\nVIN = 12V\nVOUT = 1.8V\nEfficiency (V = 24V) IN\nvs. Output Current\n95\n90 85\n80\n75\n70\n65\n60\n55\n50\n0 3 6 9 1\nOUTPUT CURRENT (A)\n)%(\nYCNEICIFFE\nIC Power Dissipation (VIN = 24V)"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": ")%(\nYCNEICIFFE\nIC Power Dissipation (VIN = 24V)\nvs. Output Current 3.5\n5.0V\n3.3V 2.5V 3.0 1.8V 1.5V 2.5\n1.2V\n1.0V 2.0\n0.9V\n0.8V\n1.5\nVIN = 24V 1.0\n0.5\n0.0 2\n0 1.5 3 4.5 6 7.5 9\nOUTPUT CURRENT (A)\n)W( NOITAPISSID\nREWOP\nDie Temperature* (V = 24V) IN\nvs. Output Current\n100\nV = 24V\nIN V = 0.8,V, 1.0V, 1.2V, 1.5V, 1.8V,2.5V, 3.3V, 5.0V OUT 80\n60\n40\n5.0V\n0.8V 20\n0\n0 2 3 5 6 8 9\nOUTPUT CURRENT (A)\n)C°( ERUTAREPMET\nEID\nVIN = 24V\nVOUT = 1.8V\nThermal Derating*\nvs. Ambient Temperature\n14\n12\n10\n8\n6\n4\n2\n0"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "vs. Ambient Temperature\n14\n12\n10\n8\n6\n4\n2\n0\n-50 -25 0 25 50 75 100 125\nAMBIENT TEMPERATURE (°C)\n)A(\nTNERRUC\nTUPTUO\nThermal Derating*\nvs. Ambient Temperature\n14\n12 0.8V\n10\n8\n1.5V\n6\nVIN = 5V 4\nVOUT = 0.8, 1.2, 1.5V 2\n0\n-50 -25 0 25 50 75 100 125\nAMBIENT TEMPERATURE (°C)\n)A(\nTNERRUC\nTUPTUO\nThermal Derating*\nvs. Ambient Temperature\n14\n12 1.8V\n10\n8\n3.3V\n6\n4\nVIN = 5V\nVOUT = 1.8, 2.5, 3.3V 2\n0\n-50 -25 0 25 50 75 100 125\nAMBIENT TEMPERATURE (°C)\n)A(\nTNERRUC\nTUPTUO\n0.8V\n1.8V\nVIN = 12V"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": ")A(\nTNERRUC\nTUPTUO\n0.8V\n1.8V\nVIN = 12V\nVOUT = 0.8, 1.2, 1.8VMicrel, Inc. MIC26903\nTypical Characteristics (Continued)\nThermal Derating*\nvs. Ambient Temperature\n14\n12\n10\n8\n6\n4\n2\n0\n-50 -25 0 25 50 75 100 125\nAMBIENT TEMPERATURE (°C)\nJuly 2011 10 M9999-071311-A\n)A(\nTNERRUC\nTUPTUO\nThermal Derating*\nvs. Ambient Temperature\n14\n2.5V 12\n10\n5V\n8\n6\nVIN = 12V 4\nVOUT = 2.5, 3.3, 5V\n2\n0\n-50 -25 0 25 50 75 100 125\nAMBIENT TEMPERATURE (°C)\n)A(\nTNERRUC\nTUPTUO\n0.8V\n2.5V\nVIN = 24V\nVOUT = 0.8, 1.2, 2.5V"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "TUPTUO\n0.8V\n2.5V\nVIN = 24V\nVOUT = 0.8, 1.2, 2.5V\nDie Temperature* : The temperature measurement was taken at the hottest point on the MIC26903 case mounted on a 5 square inch 4 layer, 0.62”,\nFR-4 PCB with 2oz finish copper weight per layer, see Thermal Measurement section. Actual results will depend upon the size of the PCB, ambient\ntemperature and proximity to other heat emitting components.Micrel, Inc. MIC26903\nFunctional Characteristics\nJuly 2011 11 M9999-071311-AMicrel, Inc. MIC26903"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "July 2011 11 M9999-071311-AMicrel, Inc. MIC26903\nFunctional Characteristics (Continued)\nJuly 2011 12 M9999-071311-AMicrel, Inc. MIC26903\nFunctional Characteristics (Continued)\nJuly 2011 13 M9999-071311-AMicrel, Inc. MIC26903\nFunctional Diagram\nFigure 1. MIC26903 Block Diagram\nJuly 2011 14 M9999-071311-AMicrel, Inc. MIC26903\nFunctional Description The maximum duty cycle is obtained from the 300ns\nt :\nOFF(min)\nThe MIC26903 is an adaptive ON-time synchronous"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "The MIC26903 is an adaptive ON-time synchronous\nstep-down DC/DC regulator with an internal 5V linear\nregulator and a Power Good (PG) output. It is designed t -t 300ns\nD = S OFF(min) =1- Eq. 2\nto operate over a wide input voltage range from 4.5V to max t t\nS S\n28V and provides a regulated output voltage at up to 7A\nof output current. An adaptive ON-time control scheme is\nemployed in to obtain a constant switching frequency where t = 1/600kHz = 1.66μs.\nS"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "S\nand to simplify the control compensation. Over-current\nIt is not recommended to use MIC26903 with a OFF-time\nprotection is implemented without the use of an external\nclose to t during steady-state operation. Also, as\nOFF(min)\nsense resistor. The device includes an internal soft-start\nV increases, the internal ripple injection will increase\nOUT\nfunction which reduces the power supply input surge\nand reduce the line regulation performance. Therefore,"
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "current at start-up by controlling the output voltage rise\nthe maximum output voltage of the MIC26903 should be\ntime.\nlimited to 5.5V and the maximum external ripple injection\nshould be limited to 200mV. Please refer to “Setting\nTheory of Operation\nOutput Voltage” subsection in Application Information for\nThe MIC26903 is able to operate in either continuous more details.\nmode or discontinuous mode. The operating mode is\nThe actual ON-time and resulting switching frequency"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "determined by the output of the Zero Cross comparator\nwill vary with the part-to-part variation in the rise and fall\n(ZC) as shown in Figure 1.\ntimes of the internal MOSFETs, the output load current,\nand variations in the V voltage. Also, the minimum t\nContinuous Mode DD ON\nresults in a lower switching frequency in high V to V\nIn continuous mode, the output voltage is sensed by the IN OUT\napplications, such as 24V to 1.0V. The minimum t\nMIC26903 feedback pin FB via the voltage divider R1 ON"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "measured on the MIC26903 evaluation board is about\nand R2, and compared to a 0.8V reference voltage V\nREF 100ns. During load transients, the switching frequency is\nat the error comparator through a low gain\nchanged due to the varying OFF-time.\ntransconductance (g ) amplifier. If the feedback voltage\nm\nTo illustrate the control loop operation, we will analyze\ndecreases and the output of the g amplifier is below\nm\nboth the steady-state and load transient scenarios."
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "0.8V, then the error comparator will trigger the control\nlogic and generate an ON-time period. The ON-time Figure 2 shows the MIC26903 control loop timing during\nperiod length is predetermined by the “FIXED t steady-state operation. During steady-state, the g\nON m\nESTIMATION” circuitry: amplifier senses the feedback voltage ripple, which is\nproportional to the output voltage ripple and the inductor\ncurrent ripple, to trigger the ON-time period. The ON-\nV"
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "V\nt = OUT Eq. 1 time is predetermined by the t ON estimator. The\nON(estimated) V ×600kHz termination of the OFF-time is controlled by the feedback\nIN\nvoltage. At the valley of the feedback voltage ripple,\nwhich occurs when V falls below V , the OFF period\nFB REF\nwhere V is the output voltage and V is the power\nOUT IN ends and the next ON-time period is triggered through\nstage input voltage.\nthe control logic circuitry.\nAt the end of the ON-time period, the internal high-side"
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "driver turns off the high-side MOSFET and the low-side\ndriver turns on the low-side MOSFET. The OFF-time\nperiod length depends upon the feedback voltage in\nmost cases. When the feedback voltage decreases and\nthe output of the g amplifier is below 0.8V, the ON-time\nm\nperiod is triggered and the OFF-time period ends. If the\nOFF-time period determined by the feedback voltage is\nless than the minimum OFF-time t , which is about\nOFF(min)\n300ns, the MIC26903 control logic will apply the t\nOFF(min)"
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "OFF(min)\ninstead. t is required to maintain enough energy in\nOFF(min)\nthe boost capacitor (C ) to drive the high-side\nBST\nMOSFET.\nJuly 2011 15 M9999-071311-AMicrel, Inc. MIC26903\nUnlike true current-mode control, the MIC26903 uses the\noutput voltage ripple to trigger an ON-time period. The\noutput voltage ripple is proportional to the inductor\ncurrent ripple if the ESR of the output capacitor is large\nenough. The MIC26903 control loop has the advantage"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "of eliminating the need for slope compensation.\nIn order to meet the stability requirements, the\nMIC26903 feedback voltage ripple should be in phase\nwith the inductor current ripple and large enough to be\nsensed by the g amplifier and the error comparator.\nm\nThe recommended feedback voltage ripple is\n20mV~100mV. If a low-ESR output capacitor is selected,\nthen the feedback voltage ripple may be too small to be"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "Figure 2. MIC26903 Control Loop Timing sensed by the g m amplifier and the error comparator.\nAlso, the output voltage ripple and the feedback voltage\nripple are not necessarily in phase with the inductor\ncurrent ripple if the ESR of the output capacitor is very\nFigure 3 shows the operation of the MIC26903 during a low. In these cases, ripple injection is required to ensure\nload transient. The output voltage drops due to the proper operation. Please refer to “Ripple Injection”"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "sudden load increase, which causes the V to be less subsection in Application Information for more details\nFB\nthan V . This will cause the error comparator to trigger about the ripple injection technique.\nREF\nan ON-time period. At the end of the ON-time period, a\nminimum OFF-time t is generated to charge C Discontinuous Mode\nOFF(min) BST\nsince the feedback voltage is still below V REF . Then, the In continuous mode, the inductor current is always"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "next ON-time period is triggered due to the low feedback greater than zero; however, at light loads the MIC26903\nvoltage. Therefore, the switching frequency changes is able to force the inductor current to operate in\nduring the load transient, but returns to the nominal fixed discontinuous mode. Discontinuous mode is where the\nfrequency once the output has stabilized at the new load inductor current falls to zero, as indicated by trace (I )\nL"
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "L\ncurrent level. With the varying duty cycle and switching shown in Figure 4. During this period, the efficiency is\nfrequency, the output recovery time is fast and the optimized by shutting down all the non-essential circuits\noutput voltage deviation is small in MIC26903 converter. and minimizing the supply current. The MIC26903 wakes\nup and turns on the high-side MOSFET when the\nfeedback voltage V drops below 0.8V.\nFB\nThe MIC26903 has a zero crossing comparator that"
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "The MIC26903 has a zero crossing comparator that\nmonitors the inductor current by sensing the voltage\ndrop across the low-side MOSFET during its ON-time. If\nthe V > 0.8V and the inductor current goes slightly\nFB\nnegative, then the MIC26903 automatically powers down\nmost of the IC circuitry and goes into a low-power mode.\nOnce the MIC26903 goes into discontinuous mode, both\nLSD and HSD are low, which turns off the high-side and\nlow-side MOSFETs. The load current is supplied by the"
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "output capacitors and V drops. If the drop of V\nOUT OUT\ncauses V to go below V , then all the circuits will\nFB REF\nwake up into normal continuous mode. First, the bias\ncurrents of most circuits reduced during the\ndiscontinuous mode are restored, then a t pulse is\nON\ntriggered before the drivers are turned on to avoid any\nFigure 3. MIC26903 Load Transient Response\npossible glitches. Finally, the high-side driver is turned\non. Figure 4 shows the control loop timing in\ndiscontinuous mode."
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "discontinuous mode.\nJuly 2011 16 M9999-071311-AMicrel, Inc. MIC26903\nCurrent Limit\nThe MIC26903 uses the R of the internal low-side\nDS(ON)\npower MOSFET to sense over-current conditions. This\nmethod will avoid adding cost, board space and power\nlosses taken by a discrete current sense resistor. The\nlow-side MOSFET is used because it displays much\nlower parasitic oscillations during switching than the\nhigh-side MOSFET.\nIn each switching cycle of the MIC26903 converter, the"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "inductor current is sensed by monitoring the low-side\nMOSFET in the OFF period. If the inductor current is\ngreater than 15A, then the MIC26903 turns off the high-\nside MOSFET and a soft-start sequence is triggered.\nThis mode of operation is called “hiccup mode” and its\npurpose is to protect the downstream load in case of a\nhard short. The load current-limit threshold has a fold\nback characteristic related to the feedback voltage as\nshown in Figure 5.\nPower-Good (PG)"
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "shown in Figure 5.\nPower-Good (PG)\nFigure 4. MIC26903 Control Loop Timing\n(Discontinuous Mode) The Power Good (PG) pin is an open drain output which\nindicates logic high when the output is nominally 92% of\nits steady state voltage. A pull-up resistor of more than\nDuring discontinuous mode, the zero crossing 10kΩ should be connected from PG to VDD.\ncomparator and the current limit comparator are turned\noff. The bias current of most circuits are reduced. As a Current Limit Threshold"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "result, the total power supply current during vs. Feedback Voltage\ndiscontinuous mode is only about 450μA, allowing the 20\nMIC26903 to achieve high efficiency in light load\n16\napplications.\n12\nV Regulator\nDD\nThe MIC26903 provides a 5V regulated output for input 8\nvoltage V ranging from 5.5V to 28V. When V < 5.5V,\nIN IN\nV DD should be tied to PVIN pins to bypass the internal 4\nlinear regulator.\n0\nSoft-Start 0.0 0.2 0.4 0.6 0.8 1.0\nFEEDBACK VOLTAGE (V)"
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "FEEDBACK VOLTAGE (V)\nSoft-start reduces the power supply input surge current\nat startup by controlling the output voltage rise time. The\ninput surge appears while the output capacitor is\ncharged up. A slower output rise time will draw a lower\ninput surge current.\nThe MIC26903 implements an internal digital soft-start\nby making the 0.8V reference voltage V ramp from 0\nREF\nto 100% in about 5ms with 9.7mV steps. Therefore, the\noutput voltage is controlled to increase slowly by a stair-"
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "case V ramp. Once the soft-start cycle ends, the\nFB\nrelated circuitry is disabled to reduce current\nconsumption. V must be powered up at the same time\nDD\nor after V to make the soft-start function correctly.\nIN\nJuly 2011 17 M9999-071311-A\n)A(\nDLOHSERHT\nTIMIL\nTNERRUC\nFigure 5. MIC26903 Current Limit Foldback CharacteristicMicrel, Inc. MIC26903\nMOSFET Gate Drive\nThe Block Diagram (Figure 1) shows a bootstrap circuit, The drive voltage is derived from the V supply voltage.\nDD"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "DD\nconsisting of D1 (a Schottky diode is recommended) and The nominal low-side gate drive voltage is V and the\nDD\nC . This circuit supplies energy to the high-side drive nominal high-side gate drive voltage is approximately\nBST\ncircuit. Capacitor C is charged, while the low-side V – V , where V is the voltage drop across\nBST DD DIODE DIODE\nMOSFET is on, and the voltage on the SW pin is D1. An approximate 30ns delay between the high-side"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "approximately 0V. When the high-side MOSFET driver is and low-side driver transitions is used to prevent current\nturned on, energy from C is used to turn the MOSFET from simultaneously flowing unimpeded through both\nBST\non. As the high-side MOSFET turns on, the voltage on MOSFETs.\nthe SW pin increases to approximately V\nIN\n. Diode D1 is\nreverse biased and C floats high while continuing to\nBST\nkeep the high-side MOSFET on. The bias current of the"
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "high-side driver is less than 10mA so a 0.1μF to 1μF is\nsufficient to hold the gate voltage with minimal droop for\nthe power stroke (high-side switching) cycle, i.e. ΔBST =\n10mA x 1.67μs/0.1μF = 167mV. When the low-side\nMOSFET is turned back on, C is recharged through\nBST\nD1. A small resistor R , which is in series with C , can\nG BST\nbe used to slow down the turn-on time of the high-side\nN-channel MOSFET.\nJuly 2011 18 M9999-071311-AMicrel, Inc. MIC26903"
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "July 2011 18 M9999-071311-AMicrel, Inc. MIC26903\nApplication Information Maximizing efficiency requires the proper selection of\ncore material and minimizing the winding resistance. The\nhigh frequency operation of the MIC26903 requires the\nInductor Selection\nuse of ferrite materials for all but the most cost sensitive\nValues for inductance, peak, and RMS currents are\napplications. Lower cost iron powder cores may be used\nrequired to select the output inductor. The input and"
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "but the increase in core loss will reduce the efficiency of\noutput voltages and the inductance value determine the\nthe power supply. This is especially noticeable at low\npeak-to-peak inductor ripple current. Generally, higher\noutput power. The winding resistance decreases\ninductance values are used with higher input voltages.\nefficiency at the higher output current levels. The\nLarger peak-to-peak ripple currents will increase the\nwinding resistance must be minimized although this"
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "power dissipation in the inductor and MOSFETs. Larger\nusually comes at the expense of a larger inductor. The\noutput ripple currents will also require more output\npower dissipated in the inductor is equal to the sum of\ncapacitance to smooth out the larger ripple current.\nthe core and copper losses. At higher output loads, the\nSmaller peak-to-peak ripple currents require a larger\ncore losses are usually insignificant and can be ignored.\ninductance value and therefore a larger and more"
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "inductance value and therefore a larger and more\nAt lower output currents, the core losses can be a\nexpensive inductor. A good compromise between size,\nsignificant contributor. Core loss information is usually\nloss and cost is to set the inductor ripple current to be\navailable from the magnetics vendor. Copper loss in the\nequal to 20% of the maximum output current. The\ninductor is calculated by Equation 7:\ninductance value is calculated by Equation 3:\nP = I 2 × R Eq. 7"
+  },
+  {
+    "faiss_index_id": 68,
+    "text": "P = I 2 × R Eq. 7\nINDUCTOR(Cu) L(RMS) WINDING\nV ×(V −V )\nL= OUT IN(max) OUT Eq. 3\nV × f ×20%×I\nIN(max) sw OUT(max)\nThe resistance of the copper wire, R , increases\nWINDING\nwith the temperature. The value of the winding\nwhere: resistance used should be at the operating temperature.\nf = switching frequency, 600kHz\nSW\n20% = ratio of AC ripple current to DC output current P WINDING(Ht) = R WINDING(20°C) × (1 + 0.0042 × (T H – T 20°C ))\nV\nIN(max)\n= maximum power stage input voltage Eq. 8"
+  },
+  {
+    "faiss_index_id": 69,
+    "text": "IN(max)\n= maximum power stage input voltage Eq. 8\nThe peak-to-peak inductor current ripple is:\nwhere:\nΔI = V OUT ×(V IN(max) −V OUT ) Eq. 4 T H = temperature of wire under full load\nL(pp) V IN(max) × f sw ×L T 20°C = ambient temperature\nR = room temperature winding resistance\nWINDING(20°C)\n(usually specified by the manufacturer)\nThe peak inductor current is equal to the average output\ncurrent plus one half of the peak-to-peak inductor current Output Capacitor Selection\nripple."
+  },
+  {
+    "faiss_index_id": 70,
+    "text": "ripple.\nThe type of the output capacitor is usually determined by\nits equivalent series resistance (ESR). Voltage and RMS\nI =I + 0.5 × ΔI Eq. 5 current capability are two other important factors for\nL(pk) OUT(max) L(pp)\nselecting the output capacitor. Recommended capacitor\ntypes are tantalum, low-ESR aluminum electrolytic, OS-\nThe RMS inductor current is used to calculate the I2R\nCON and POSCAP. The output capacitor’s ESR is\nlosses in the inductor."
+  },
+  {
+    "faiss_index_id": 71,
+    "text": "losses in the inductor.\nusually the main cause of the output ripple. The output\ncapacitor ESR also affects the control loop from a\nstability point of view.\nΔI 2\nI = I 2 + L(PP) Eq. 6\nL(RMS) OUT(max)\n12\nJuly 2011 19 M9999-071311-AMicrel, Inc. MIC26903\nThe maximum value of ESR is calculated: Input Capacitor Selection\nThe input capacitor for the power stage input V should\nIN\nbe selected for ripple current rating and voltage rating.\nΔV"
+  },
+  {
+    "faiss_index_id": 72,
+    "text": "ΔV\nESR ≤ OUT(pp) Eq. 9 Tantalum input capacitors may fail when subjected to\nC\nOUT ΔI L(PP) high inrush currents, caused by turning the input supply\non. A tantalum input capacitor’s voltage rating should be\nat least two times the maximum input voltage to\nwhere:\nmaximize reliability. Aluminum electrolytic, OS-CON, and\nΔVOUT(pp) = peak-to-peak output voltage ripple multilayer polymer film capacitors can handle the higher\nΔI\nL(PP)"
+  },
+  {
+    "faiss_index_id": 73,
+    "text": "ΔI\nL(PP)\n= peak-to-peak inductor current ripple inrush currents without voltage de-rating. The input\nvoltage ripple will primarily depend on the input\ncapacitor’s ESR. The peak input current is equal to the\nThe total output ripple is a combination of the ESR and\npeak inductor current, so:\noutput capacitance. The total ripple is calculated in\nEquation 10:\nΔV = I × ESR Eq. 13\nIN L(pk) CIN\n2\nΔV = ⎜ ⎛ ΔI L(PP) ⎟ ⎞ + ( ΔI ×ESR )2 The input capacitor must be rated for the input current"
+  },
+  {
+    "faiss_index_id": 74,
+    "text": "OUT(pp) ⎜C ×f ×8⎟ L(PP) C OUT ripple. The RMS value of input capacitor current is\n⎝ OUT SW ⎠\ndetermined at the maximum output current. Assuming\nEq. 10 the peak-to-peak inductor current ripple is low:\nwhere:\nI ≈I × D×(1−D) Eq. 14\nD = duty cycle CIN(RMS) OUT(max)\nC\nOUT\n= output capacitance value\nThe power dissipated in the input capacitor is:\nf\nSW\n= switching frequency\nP = I 2 × ESR Eq. 15\nAs described in the “Theory of Operation” subsection in DISS(CIN) CIN(RMS) CIN"
+  },
+  {
+    "faiss_index_id": 75,
+    "text": "the Functional Description section, the MIC26903\nrequires at least 20mV peak-to-peak ripple at the FB pin\nto make the g m amplifier and the error comparator Ripple Injection\nbehave properly. Also, the output voltage ripple should\nThe V ripple required for proper operation of the\nbe in phase with the inductor current. Therefore, the FB\nMIC26903 g amplifier and error comparator is 20mV to\noutput voltage ripple caused by the output capacitors m"
+  },
+  {
+    "faiss_index_id": 76,
+    "text": "100mV. However, the output voltage ripple is generally\nvalue should be much smaller than the ripple caused by\ndesigned as 1% to 2% of the output voltage. For a low\nthe output capacitor ESR. If low-ESR capacitors, such\noutput voltage, such as a 1V, the output voltage ripple is\nas ceramic capacitors, are selected as the output\nonly 10mV to 20mV, and the feedback voltage ripple is\ncapacitors, a ripple injection method should be applied to\nless than 20mV. If the feedback voltage ripple is so small"
+  },
+  {
+    "faiss_index_id": 77,
+    "text": "provide the enough feedback voltage ripple. Please refer\nthat the g amplifier and error comparator can’t sense it,\nto the “Ripple Injection” subsection for more details. m\nthen the MIC26903 will lose control and the output\nThe voltage rating of the capacitor should be twice the voltage is not regulated. In order to have some amount\noutput voltage for a tantalum and 20% greater for of V ripple, a ripple injection method is applied for low\nFB"
+  },
+  {
+    "faiss_index_id": 78,
+    "text": "FB\naluminum electrolytic or OS-CON. The output capacitor output voltage ripple applications.\nRMS current is calculated below:\nΔI\nL(PP)\nI = Eq. 11\nC (RMS)\nOUT 12\nThe power dissipated in the output capacitor is:\nP =I 2 ×ESR Eq. 12\nDISS(C ) C (RMS) C\nOUT OUT OUT\nJuly 2011 20 M9999-071311-AMicrel, Inc. MIC26903\nThe applications are divided into three situations\naccording to the amount of the feedback voltage ripple:\n1. Enough ripple at the feedback voltage due to the"
+  },
+  {
+    "faiss_index_id": 79,
+    "text": "large ESR of the output capacitors. MIC26903\nAs shown in Figure 6a, the converter is stable without\nany ripple injection. The feedback voltage ripple is:\nFigure 6c. Invisible Ripple at FB\nR2\nΔV = ×ESR ×ΔI Eq. 16\nFB(pp)\nR1+R2\nC\nOUT\nL(pp)\nIn this situation, the output voltage ripple is less than\n20mV. Therefore, additional ripple is injected into the FB\nwhere: ΔI is the peak-to-peak value of the inductor\nL(pp) pin from the switching node SW via a resistor R and a\ncurrent ripple. inj"
+  },
+  {
+    "faiss_index_id": 80,
+    "text": "current ripple. inj\ncapacitor C , as shown in Figure 6c. The injected ripple\ninj\n2. Inadequate ripple at the feedback voltage due to the is:\nsmall ESR of the output capacitors.\n1\nThe output voltage ripple is fed into the FB pin through a ΔV =V ×K ×D×(1-D)× Eq. 18\nFB(pp) IN div f ×τ\nfeedforward capacitor C in this situation, as shown in SW\nff\nFigure 6b. The typical C value is between 1nF and\nff\n100nF. With the feedforward capacitor, the feedback\nR1//R2"
+  },
+  {
+    "faiss_index_id": 81,
+    "text": "R1//R2\nvoltage ripple is very close to the output voltage ripple: K div = Eq. 19\nR +R1//R2\ninj\nΔV ≈ESR×ΔI Eq. 17\nFB(pp) L(pp) where:\nV = Power stage input voltage\nIN\n3. Virtually no ripple at the FB pin voltage due to the D = duty cycle\nvery low ESR of the output capacitors.\nf = switching frequency\nSW\nτ = (R1//R2//R ) × C\ninj ff\nIn Equations 21 and 22, it is assumed that the time\nMIC26903\nconstant associated with C must be much greater than\nff\nthe switching period:\n1 T\n= <<1 Eq. 20\nf\nSW\n×τ τ"
+  },
+  {
+    "faiss_index_id": 82,
+    "text": "the switching period:\n1 T\n= <<1 Eq. 20\nf\nSW\n×τ τ\nFigure 6a. Enough Ripple at FB\nIf the voltage divider resistors R1 and R2 are in the kΩ\nrange, a C of 1nF to 100nF can easily satisfy the large\nff\ntime constant requirements. Also, a 100nF injection\ncapacitor C is used in order to be considered as short\ninj\nfor a wide range of the frequencies.\nMIC26903\nFigure 6b. Inadequate Ripple at FB\nJuly 2011 21 M9999-071311-AMicrel, Inc. MIC26903"
+  },
+  {
+    "faiss_index_id": 83,
+    "text": "July 2011 21 M9999-071311-AMicrel, Inc. MIC26903\nThe process of sizing the ripple injection resistor and In addition to the external ripple injection added at the\ncapacitors is: FB pin, internal ripple injection is added at the inverting\ninput of the comparator inside the MIC26903, as shown\nStep 1. Select C to feed all output ripples into the\nff\nfeedback pin and make sure the large time constant in Figure 8. The inverting input voltage V INJ is clamped to"
+  },
+  {
+    "faiss_index_id": 84,
+    "text": "assumption is satisfied. Typical choice of C ff is 1nF to 1.2V. As V OUT is increased, the swing of V INJ will be\n100nF if R1 and R2 are in kΩ range. clamped. The clamped V INJ reduces the line regulation\nbecause it is reflected as a DC error on the FB terminal.\nStep 2. Select R according to the expected feedback\ninj Therefore, the maximum output voltage of the MIC26903\nvoltage ripple using Equation 22,\nshould be limited to 5.5V to avoid this problem.\nΔV f ×τ\nK = FB(pp) × SW Eq. 21"
+  },
+  {
+    "faiss_index_id": 85,
+    "text": "ΔV f ×τ\nK = FB(pp) × SW Eq. 21\ndiv V D×(1-D)\nIN\nThen the value of R is obtained as:\ninj\n1\nR =(R1//R2)×( −1) Eq. 22\ninj\nK\ndiv\nStep 3. Select C as 100nF, which could be considered\ninj\nas short for a wide range of the frequencies.\nSetting Output Voltage\nThe MIC26903 requires two resistors to set the output\nvoltage as shown in Figure 7.\nThe output voltage is determined by the equation:\nFigure 8. Internal Ripple Injection\nR1\nV =V ×(1+ ) Eq. 23\nOUT FB\nR2"
+  },
+  {
+    "faiss_index_id": 86,
+    "text": "R1\nV =V ×(1+ ) Eq. 23\nOUT FB\nR2\nwhere: V = 0.8V. A typical value of R1 can be between\nFB\n3kΩ and 10kΩ. If R1 is too large, it may allow noise to be\nintroduced into the voltage feedback loop. If R1 is too\nsmall, it will decrease the efficiency of the power supply,\nespecially at light loads. Once R1 is selected, R2 can be\ncalculated using:\nV ×R1\nR2= FB Eq. 24\nV −V\nOUT FB\nFigure 7. Voltage-Divider Configuration\nJuly 2011 22 M9999-071311-AMicrel, Inc. MIC26903\nThermal Measurements"
+  },
+  {
+    "faiss_index_id": 87,
+    "text": "Thermal Measurements\nMeasuring the IC’s case temperature is recommended to\ninsure it is within its operating limits. Although this might\nseem like a very elementary task, it is easy to get\nerroneous results. The most common mistake is to use\nthe standard thermal couple that comes with a thermal\nmeter. This thermal couple wire gauge is large, typically\n22 gauge, and behaves like a heatsink, resulting in a\nlower case measurement.\nTwo methods of temperature measurement are using a"
+  },
+  {
+    "faiss_index_id": 88,
+    "text": "smaller thermal couple wire or an infrared thermometer.\nIf a thermal couple wire is used, it must be constructed\nof 36 gauge wire or higher then (smaller wire size) to\nminimize the wire heat-sinking effect. In addition, the\nthermal couple tip must be covered in either thermal\ngrease or thermal glue to make sure that the thermal\ncouple junction is making good contact with the case of\nthe IC. Omega brand thermal couple (5SC-TT-K-36-36)\nis adequate for most applications."
+  },
+  {
+    "faiss_index_id": 89,
+    "text": "is adequate for most applications.\nWherever possible, an infrared thermometer is\nrecommended. The measurement spot size of most\ninfrared thermometers is too large for an accurate\nreading on a small form factor ICs. However, a IR\nthermometer from Optris has a 1mm spot size, which\nmakes it a good choice for measuring the hottest point\non the case. An optional stand makes it easy to hold the\nbeam on the IC for long periods of time.\nJuly 2011 23 M9999-071311-AMicrel, Inc. MIC26903"
+  },
+  {
+    "faiss_index_id": 90,
+    "text": "July 2011 23 M9999-071311-AMicrel, Inc. MIC26903\nPCB Layout Guidelines Inductor\n• Keep the inductor connection to the switch node\nWarning!!! To minimize EMI and output noise, follow\n(SW) short.\nthese layout recommendations.\n• Do not route any digital lines underneath or close to\nPCB Layout is critical to achieve reliable, stable and\nthe inductor.\nefficient performance. A ground plane is required to"
+  },
+  {
+    "faiss_index_id": 91,
+    "text": "control EMI and minimize the inductance in power, • Keep the switch node (SW) away from the feedback\nsignal and return paths. (FB) pin.\nThe following guidelines should be followed to insure • The CS pin should be connected directly to the SW\nproper operation of the MIC26903 regulator. pin to accurate sense the voltage across the low-\nside MOSFET.\nIC\n• To minimize noise, place a ground plane underneath\n• A 2.2µF ceramic capacitor, which is connected to the inductor."
+  },
+  {
+    "faiss_index_id": 92,
+    "text": "the PVDD pin, must be located right at the IC. The\n• The inductor can be placed on the opposite side of\nPVDD pin is very noise sensitive and placement of\nthe PCB with respect to the IC. It does not matter\nthe capacitor is very critical. Use wide traces to\nwhether the IC or inductor is on the top or bottom as\nconnect to the PVDD and PGND pins.\nlong as there is enough air flow to keep the power\n• A 1.0uF ceramic capacitor must be placed right components within their temperature limits. The"
+  },
+  {
+    "faiss_index_id": 93,
+    "text": "between VDD and the signal ground SGND. The input and output capacitors must be placed on the\nSGND must be connected directly to the ground same side of the board as the IC.\nplanes. Do not route the SGND pin to the PGND\nOutput Capacitor\nPad on the top layer.\n• Use a wide trace to connect the output capacitor\n• Place the IC close to the point-of-load (POL).\nground terminal to the input capacitor ground\n• Use fat traces to route the input and output power terminal.\nlines."
+  },
+  {
+    "faiss_index_id": 94,
+    "text": "lines.\n• Phase margin will change as the output capacitor\n• Signal and power grounds should be kept separate value and ESR changes. Contact the factory if the\nand connected at only one location. output capacitor is different from what is shown in\nthe BOM.\nInput Capacitor\n• The feedback trace should be separate from the\n• Place the input capacitor next.\npower trace and connected as close as possible to"
+  },
+  {
+    "faiss_index_id": 95,
+    "text": "power trace and connected as close as possible to\n• Place the input capacitors on the same side of the the output capacitor. Sensing a long high current\nboard and as close to the IC as possible. load trace can degrade the DC load regulation.\n• Keep both the PVIN pin and PGND connections Optional RC Snubber\nshort.\n• Place the RC snubber on either side of the board\n• Place several vias to the ground plane close to the and as close to the SW pin as possible.\ninput capacitor ground terminal."
+  },
+  {
+    "faiss_index_id": 96,
+    "text": "input capacitor ground terminal.\n• Use either X7R or X5R dielectric input capacitors.\nDo not use Y5V or Z5U type capacitors.\n• Do not replace the ceramic input capacitor with any\nother type of capacitor. Any type of capacitor can be\nplaced in parallel with the input capacitor.\n• If a Tantalum input capacitor is placed in parallel\nwith the input capacitor, it must be recommended for\nswitching regulator applications and the operating\nvoltage must be derated by 50%."
+  },
+  {
+    "faiss_index_id": 97,
+    "text": "voltage must be derated by 50%.\n• In “Hot-Plug” applications, a Tantalum or Electrolytic\nbypass capacitor must be used to limit the over-\nvoltage spike seen on the input supply with power is\nsuddenly applied.\nJuly 2011 24 M9999-071311-AMicrel, Inc. MIC26903\nEvaluation Board Schematic\nFigure 9. Schematic of MIC26903 Evaluation Board\n(J11, R13, R15 are for testing purposes)\nJuly 2011 25 M9999-071311-AMicrel, Inc. MIC26903\nBill of Materials\nItem Part Number Manufacturer Description Qty.\nC1 Open"
+  },
+  {
+    "faiss_index_id": 98,
+    "text": "C1 Open\n12105C475KAZ2A AVX(1)\nC2, C3 GRM32ER71H475KA88L Murata(2) 4.7µF Ceramic Capacitor, X7R, Size 1210, 50V 2\nC3225X7R1H475K TDK(3)\nC13, C15 Open\n12106D107MAT2A AVX(1)\nC4, C5 GRM32ER60J107ME20L Murata(2) 100µF Ceramic Capacitor, X5R, Size 1210, 6.3V 3\nC3225X5R0J107M TDK(3)\n06035C104KAT2A AVX(1)\nC6, C7, C10 GRM188R71H104KA93D Murata(2) 0.1µF Ceramic Capacitor, X7R, Size 0603, 50V 3\nC1608X7R1H104K TDK(3)\n0603ZC105KAT2A AVX(1)"
+  },
+  {
+    "faiss_index_id": 99,
+    "text": "C1608X7R1H104K TDK(3)\n0603ZC105KAT2A AVX(1)\nC8 GRM188R71A105KA61D Murata(2) 1.0µF Ceramic Capacitor, X7R, Size 0603, 10V 1\nC1608X7R1A105K TDK(3)\n0603ZD225KAT2A AVX(1)\nC9 GRM188R61A225KE34D Murata(2) 2.2µF Ceramic Capacitor, X5R, Size 0603, 10V 1\nC1608X5R1A225K TDK(3)\n06035C472KAZ2A AVX(1)\nC12 GRM188R71H472K Murata(2) 4.7nF Ceramic Capacitor, X7R, Size 0603, 50V 1\nC1608X7R1H472K TDK(3)\nC14 B41851F7227M EPCOS(4) 220µF Aluminum Capacitor, 35V 1\nC11, C16 Open\nSD103AWS MCC(5)"
+  },
+  {
+    "faiss_index_id": 100,
+    "text": "C11, C16 Open\nSD103AWS MCC(5)\nD1 SD103AWS-7 Diodes Inc(6) 40V, 350mA, Schottky Diode, SOD323 1\nSD103AWS Vishay(7)\nL1 HCF1305-2R2-R Cooper Bussmann(8) 2.2µH Inductor, 15A Saturation Current 1\nR1 CRCW06032R21FKEA Vishay Dale(7) 2.21Ω Resistor, Size 0603, 1% 1\nR2 CRCW06032R00FKEA Vishay Dale(7) 2.00Ω Resistor, Size 0603, 1% 1\nR3 CRCW060319K6FKEA Vishay Dale(7) 19.6kΩ Resistor, Size 0603, 1% 1\nR4 CRCW06032K49FKEA Vishay Dale(7) 2.49kΩ Resistor, Size 0603, 1% 1"
+  },
+  {
+    "faiss_index_id": 101,
+    "text": "R5 CRCW060320K0FKEA Vishay Dale(7) 20.0kΩ Resistor, Size 0603, 1% 1\nR6, R14, R17 CRCW060310K0FKEA Vishay Dale(7) 10.0kΩ Resistor, Size 0603, 1% 3\nR7 CRCW06034K99FKEA Vishay Dale(7) 4.99kΩ Resistor, Size 0603, 1% 1\nR8 CRCW06032K87FKEA Vishay Dale(7) 2.87kΩ Resistor, Size 0603, 1% 1\nR9 CRCW06032K006FKEA Vishay Dale(7) 2.00kΩ Resistor, Size 0603, 1% 1\nR10 CRCW06031K18FKEA Vishay Dale(7) 1.18kΩ Resistor, Size 0603, 1% 1\nR11 CRCW0603806RFKEA Vishay Dale(7) 806Ω Resistor, Size 0603, 1% 1"
+  },
+  {
+    "faiss_index_id": 102,
+    "text": "R12 CRCW0603475RFKEA Vishay Dale(7) 475Ω Resistor, Size 0603, 1% 1\nJuly 2011 26 M9999-071311-AMicrel, Inc. MIC26903\nBill of Materials (Continued)\nItem Part Number Manufacturer Description Qty\nR13 CRCW06030000FKEA Vishay Dale(7) 0 Ω Resistor, Size 0603, 5% 1\nR15 CRCW060349R9FKEA Vishay Dale(7) 49.9Ω Resistor, Size 0603, 1% 1\nR16, R18 CRCW06031R21FKEA Vishay Dale(7) 1.21Ω Resistor, Size 0603, 1% 2\nR20 Open\nU1 MIC26903YJL Micrel. Inc.(9) 28V, 9A Hyper Light Load™ Synchronous 1\nDC/DC Buck Regulator"
+  },
+  {
+    "faiss_index_id": 103,
+    "text": "DC/DC Buck Regulator\nNotes:\n1. AVX: www.avx.com.\n2. Murata: www.murata.com.\n3. TDK: www.tdk.com.\n4. EPCOS: www.epcos.com.\n5. SANYO: www.sanyo.com.\n6. Diode Inc.: www.diodes.com.\n7. Vishay: www.vishay.com.\n8. Cooper Bussmann: www.cooperbussmann.com.\n9. Micrel, Inc.: www.micrel.com.\nJuly 2011 27 M9999-071311-AMicrel, Inc. MIC26903\nPCB Layout\nFigure 10. MIC26903 Evaluation Board Top Layer\nFigure 11. MIC26903 Evaluation Board Mid-Layer 1 (Ground Plane)"
+  },
+  {
+    "faiss_index_id": 104,
+    "text": "July 2011 28 M9999-071311-AMicrel, Inc. MIC26903\nPCB Layout (Continued)\nFigure 12. MIC26903 Evaluation Board Mid-Layer 2\nFigure 13. MIC26903 Evaluation Board Bottom Layer\nJuly 2011 29 M9999-071311-AMicrel, Inc. MIC26903\nRecommended Land and Solder Stencil Pattern\nJuly 2011 30 M9999-071311-AMicrel, Inc. MIC26903\nPackage Information\n28-Pin 5mm × 6mm MLF® (YJL)\nMICREL, INC. 2180 FORTUNE DRIVE SAN JOSE, CA 95131 USA\nTEL +1 (408) 944-0800 FAX +1 (408) 474-1000 WEB http://www.micrel.com"
+  },
+  {
+    "faiss_index_id": 105,
+    "text": "Micrel makes no representations or warranties with respect to the accuracy or completeness of the information furnished in this data sheet. This\ninformation is not intended as a warranty and Micrel does not assume responsibility for its use. Micrel reserves the right to change circuitry,\nspecifications and descriptions at any time without notice. No license, whether express, implied, arising by estoppel or otherwise, to any intellectual"
+  },
+  {
+    "faiss_index_id": 106,
+    "text": "property rights is granted by this document. Except as provided in Micrel’s terms and conditions of sale for such products, Micrel assumes no liability\nwhatsoever, and Micrel disclaims any express or implied warranty relating to the sale and/or use of Micrel products including liability or warranties\nrelating to fitness for a particular purpose, merchantability, or infringement of any patent, copyright or other intellectual property right."
+  },
+  {
+    "faiss_index_id": 107,
+    "text": "Micrel Products are not designed or authorized for use as components in life support appliances, devices or systems where malfunction of a product\ncan reasonably be expected to result in personal injury. Life support devices or systems are devices or systems that (a) are intended for surgical implant\ninto the body or (b) support or sustain life, and whose failure to perform can be reasonably expected to result in a significant injury to the user. A"
+  },
+  {
+    "faiss_index_id": 108,
+    "text": "Purchaser’s use or sale of Micrel Products for use in life support appliances, devices or systems is a Purchaser’s own risk and Purchaser agrees to fully\nindemnify Micrel for any damages resulting from such use or sale.\n© 2011 Micrel, Incorporated.\nJuly 2011 31 M9999-071311-AMouser Electronics\nAuthorized Distributor\nClick to View Pricing, Inventory, Delivery & Lifecycle Information:\nM icrochip:\nMIC26903YJL TR MIC26903YJL-TR"
+  }
+]

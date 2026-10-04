@@ -1,0 +1,50 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "WS2812B\nIntelligent control LED\nintegrated light source\nFeatures and Benefits\n Intelligent reverse connect protection, the power supply reverse connection does not damage the IC.\n The control circuit and the LED share the only power source.\n Control circuit and RGB chip are integrated in a package of 5050 components, form a complete control of pixel\npoint.\n Built-in signal reshaping circuit, after wave reshaping to the next driver, ensure wave-form distortion not\naccumulate."
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "accumulate.\n Built-in electric reset circuit and power lost reset circuit.\n Each pixel of the three primary color can achieve 256 brightness display, completed 16777216 color full color\ndisplay, and scan frequency not less than 400Hz/s.\n Cascading port transmission signal by single line.\n Any two point the distance more than 5m transmission signal without any increase circuit.\n When the refresh rate is 30fps, cascade number are not less than1024 points.\n Send data at speeds of 800Kbps."
+  },
+  {
+    "faiss_index_id": 2,
+    "text": " Send data at speeds of 800Kbps.\n The color of the light were highly consistent, cost-effective..\nApplications\n Full-color module, Full color soft lights a lamp strip.\n LED decorative lighting, Indoor/outdoor LED video irregular screen.\nGeneral description\nWS2812B is a intelligent control LED light source that the control circuit and RGB chip are integrated in\na package of 5050 components. It internal include intelligent digital port data latch and signal reshaping ampli"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "fication drive circuit. Also include a precision internal oscillator and a 12V voltage programmable constant curr\ne-nt control part, effectively ensuring the pixel point light color height consistent.\nThe data transfer protocol use single NZR communication mode. After the pixel power-on reset, the DIN\nport receive data from controller, the first pixel collect initial 24bit data then sent to the internal data latch,"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "the other data which reshaping by the internal signal reshaping amplification circuit sent to the next cascade\npixel through the DO port. After transmission for each pixel，the signal to reduce 24bit. pixel adopt auto resha\n-ping transmit technology, making the pixel cascade number is not limited the signal transmission, only depend\non the speed of signal transmission.\nLED with low driving voltage, environmental protection and energy saving, high brightness, scattering angl"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "e is large, good consistency, low power, long life and other advantages. The control chip integrated in LED\nabove becoming more simple circuit, small volume, convenient installation.WS2812B\nIntelligent control LED\nintegrated light source\nMechanical Dimensions\nPIN configuration\nPIN function\nNO. Symbol Function description\n1 VDD Power supply LED\n2 DOUT Control data signal output\n3 VSS Ground\n4 DIN Control data signal input\nAbsolute Maximum Ratings\nPrameter Symbol Ratings Unit"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "Prameter Symbol Ratings Unit\nPower supply voltage V +3.5~+5.3 V\nDD\nInput voltage V -0.5～VDD+0.5 V\nI\nOperation junction\nTopt -25～+80 ℃\ntemperature\nStorage temperature range Tstg -40~+105 ℃\nElectrical Characteristics（T =-20～+70℃，V =4.5～5.5V,V =0V,unless otherwise specified）\nA DD SSWS2812B\nIntelligent control LED\nintegrated light source\nPrameter Smybol conditions Min Tpy Max Unit\nInput current I V=V /V —— —— ±1 µA\nI I DD SS\nV D ，SET 0.7V —— —— V\nIH IN DD\nInput voltage level\nV D ，SET —— —— 0.3 V V"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "Input voltage level\nV D ，SET —— —— 0.3 V V\nIL IN DD\nHysteresis voltage V D ，SET —— 0.35 —— V\nH IN\nSwitching characteristics（T =-20～+70℃，V =4.5～5.5V,V =0V,unless otherwise specified）\nA DD SS\nPrameter Symbol Condition Min Tpy Max Unit\nTransmission delay CL=15pF,DIN→\nt —— —— 300 ns\nPLZ\ntime DOUT,RL=10KΩ\nCL=300pF,OUTR/OU\nFall time t —— —— 120 µs\nTHZ\nTG/OUTB\nInput capcity C —— —— —— 15 pF\nI\nRGB IC characteristic parameter\nEmitting color Model Wavelength(nm) Luminous intensity(mcd) Voltage(V)"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "Red 13CBAUP\n620-625 390-420 2.0-2.2\nGreen 13CGAUP\n522-525 660-720 3.0-3.4\nBlue 10R1MUX\n465-467 180-200 3.0-3.4\nData transfer time( TH+TL=1.25µs±600ns)\nT0H 0 code ,high voltage time 0.4us ±150ns\nT1H 1 code ,high voltage time 0.8us ±150ns\nT0L 0 code , low voltage time 0.85us ±150ns\nT1L 1 code ,low voltage time 0.45us ±150ns\nRES low voltage time Above 50µs\nSequence chart:WS2812B\nIntelligent control LED\nintegrated light source\nT0L\n0 code\nT0H\nT1L\n1 code\nT1H\nTreset\nRET code\nCascade method:"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "T1L\n1 code\nT1H\nTreset\nRET code\nCascade method:\nD1 D2 D3 D4\nDIN DO DIN DO DIN DO\nPIX1 PIX2 PIX3\nData transmission method：\nreset code\n>=50us reset\ncode\nData refresh cycle 1 Data refresh cycle 2\nsecond second\nD1 first 24bit 24bit third 24bit first 24bit 24bit third 24bit\nsecond second\nthird 24bit third 24bit\nD2 24bit 24bit\nD3 third 24bit third 24bit\nD41 2 3 4 5 6\nD D\nWS2812B\nIntelligent control LED\nintegrated light source"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "Intelligent control LED\nintegrated light source\nNote: The data of D1 is send by MCU,and D2, D3, D4 through pixel internal reshaping amplification to\ntransmit.\nComposition of 24bit data:\nG7 G6 G5 G4 G3 G2 G1 G0 R7 R6 R5 R4 R3 R2 R1 R0 B7 B6 B5 B4 B3 B2 B1 B0\nNote: Follow the order of GRB to sent data and the high bit sent at first.\nC C\nTypical application circuit:\nU1\n5V\n1 4DIN\nVDD DIN\nC1 2 3\nDOUT VSS\n104\nWS2812B\nU2\n5V\n1 4\nVDD DIN\nC2 2 3\nDOUT VSS\n104\nWS2812B\nB B\nU1\n5V\n1 4\nVDD DIN\nC1 DOUT2 3"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "104\nWS2812B\nB B\nU1\n5V\n1 4\nVDD DIN\nC1 DOUT2 3\nDOUT VSS\n104\nWS2812B\nA A\nTitle\nSize Number Revision\nB\nDate: 9-Apr-2013 Sheet of\nFile: E:\\芯片资料\\WS2812\\WS2812B\\原理图.DdbDrawn By:\n1 2 3 4 5 6"
+  }
+]

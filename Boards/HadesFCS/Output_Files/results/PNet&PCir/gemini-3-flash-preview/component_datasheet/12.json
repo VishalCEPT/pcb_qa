@@ -1,0 +1,22 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component TDD01H0SB1R have a minimum operating temperature of -30\u00b0C according to its datasheet?",
+    "tool_calls": {
+        "function_name": "get_relevant_context_from_question",
+        "function_args": {
+            "question": "Does the component TDD01H0SB1R have a minimum operating temperature of -30\u00b0C according to its datasheet?",
+            "project_context": {
+                "circuit_json_file": "./outputs/HadesFCS/Hades.json",
+                "spice_json_file": "./outputs/HadesFCS/Hades_SPICE_circuit.json",
+                "datasheet_files": [
+                    "./outputs/HadesFCS/datasheets/SW3.pdf"
+                ]
+            }
+        }
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the datasheet for the TDD01H0SB1R (C&K Components), the 'OPERATING TEMPERATURE' is explicitly listed as -30\u00b0C to 85\u00b0C. Therefore, the minimum operating temperature is indeed -30\u00b0C.",
+        "is_final": true
+    }
+}

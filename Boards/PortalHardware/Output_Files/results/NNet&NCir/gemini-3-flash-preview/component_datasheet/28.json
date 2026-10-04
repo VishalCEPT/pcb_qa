@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component STM32L476RGT6 have a maximum operating temperature of 125\u00b0C according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The STM32L476RGT6 belongs to the STM32L476xx family, which supports temperature grade 3 with an operating range up to 125\u00b0C as specified in the datasheet.",
+        "is_final": true
+    }
+}

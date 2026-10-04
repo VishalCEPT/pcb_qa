@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component IIS2MDCTR have a data output of 16-bits according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The IIS2MDCTR is a high-performance 3-axis magnetometer that provides 16-bit data output for each magnetic axis according to its technical specifications.",
+        "is_final": true
+    }
+}

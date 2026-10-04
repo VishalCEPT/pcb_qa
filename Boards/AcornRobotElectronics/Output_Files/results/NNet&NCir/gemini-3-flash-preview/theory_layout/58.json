@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component Y4 connected to Net__U14_XTAL2_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist and SPICE file, pin 1 of crystal Y4 is connected to the net 'Net-(U14-XTAL2)' (or Net-_U14-XTAL2_ in SPICE notation).",
+        "is_final": true
+    }
+}

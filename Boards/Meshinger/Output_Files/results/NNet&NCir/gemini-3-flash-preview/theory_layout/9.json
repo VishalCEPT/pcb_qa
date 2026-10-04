@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component U5 connected to p_3V3?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "Component U5 (SKW92A) has pins 28 and 29 (3.3VD) connected to the +3V3 net in the netlist.",
+        "is_final": true
+    }
+}

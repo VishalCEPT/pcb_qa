@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component 24CW1280T-I_OT have a maximum I2C frequency of 1MHz according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The 24CW1280T-I_OT is a 128-Kbit I2C EEPROM that supports the Fast-mode Plus (Fm+) protocol with a maximum clock frequency of 1 MHz.",
+        "is_final": true
+    }
+}

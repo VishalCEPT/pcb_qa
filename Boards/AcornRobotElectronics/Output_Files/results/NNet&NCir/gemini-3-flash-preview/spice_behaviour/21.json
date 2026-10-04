@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net 3.3v_pi_out maintain a voltage of 0V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net 3.3v_pi_out is connected to the +3.3v output of the Compute Module 4 (Module1 pin 86), which is powered by the active 3.3V DC source in the simulation.",
+        "is_final": true
+    }
+}

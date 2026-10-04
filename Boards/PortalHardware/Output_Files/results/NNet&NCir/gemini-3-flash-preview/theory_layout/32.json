@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to NFC_SCL?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, net NFC_SCL is connected to pin 61 (PB8) of component U2 and pin 3 of component U3.",
+        "is_final": true
+    }
+}

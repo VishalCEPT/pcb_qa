@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component 24CW1280T-I_OT have a flash size of 128Kbit according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The netlist and component description for U3 and U9 (24CW1280T-I_OT) explicitly state it is a 128Kbit EEPROM.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,302 @@
+[
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U33 have a maximum operating temperature of 125°C according to its datasheet?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net FB obtain a steady state of ~1.2V after the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component Module1 connected to _p_5V?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net serial_can_pwr_3.3v maintain a voltage of 3.3V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net ser_select maintain a voltage of 3.3V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U12 have a maximum ambient temperature of 85°C according to its datasheet?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net net-_q9-g_ maintain a voltage of 5V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component U14 connected to RX4?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U33 have a minimum operating temperature of -40°C according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component J3 connected to USBC_VBUS_IN?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net net-_d8-k_ maintain a voltage of 3.3V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U32 have flash capabilities according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component TR1 connected to TRD1_P?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component Y2 connected to Net__U8___RESET__?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net scl0_gpio45 maintain a voltage of 3.3V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component Module1 connected to SERIAL_CAN_PWR_3_3V?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net sbus_rx maintain a voltage of 3.3V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net estop_sink_local maintain a voltage of 3.3V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component C6 connected to HDMI_5v?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component Module1 connected to WS2812?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net 3.3v_pi_out maintain a voltage of 0V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U12 have I2C capabilities according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U6 have SPI capabilities according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net a3 maintain a voltage of 0V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component R7 connected to GND?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U6 have I2C capabilities according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U12 have a minimum operating ambient temperature of -30° according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net scl6 maintain a voltage of 0V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component U10 connected to GND?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net estop_out maintain a voltage of 0V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component TR1 connected to Net__C47_Pad2_?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U6 have a maximum operating junction temperature of 150° according to its datasheet?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net net-_d11-a_ maintain a voltage of 5V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U6 have an internal CAN clock according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net net-_d3-k_ maintain a voltage of 5V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component Module1 connected to USB_SERIAL_D_p?",
+        "answer": "NO"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U12 have SPI capabilities according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net vc4 maintain a voltage of 0V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U25 have a maximum operating junction temperature of 150° according to its datasheet?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component C19 connected to EXTRA_GPIO?",
+        "answer": "NO"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U32 have motion sensor capabilities according to its datasheet?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component Module1 connected to HDMI0_HOTPLUG?",
+        "answer": "YES"
+    },    
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U25 have a minimum operating junction temperature of -40° according to its datasheet?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net vc4 maintain a voltage of 5V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U33 have flash capabilities according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component C18 have a minimum operating temperature of -55° according to its datasheet?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U3 have a minimum operating temperature of -40° according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net net-_d3-k_ maintain a voltage of 0V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component R3 connected to Net__D23_K_?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U12 have flash capabilities according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net net-_d11-a_ maintain a voltage of 3.3V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component Module1 connected to SER_SELECT?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component D24 connected to VOUTP?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U32 have magnetic sensor capabilities according to its datasheet?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net eth_ledg maintain a voltage of 3.3V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component Module1 connected to _3_3V_PI_OUT?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component J25 connected to D3P?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component Y4 connected to Net__U14_XTAL2_?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net eth_ledg maintain a voltage of 0V during the entire simulation?",
+        "answer": "YES"
+    },    
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U3 have a maximum supply voltage of 63V according to its datasheet?",
+        "answer": "YES"
+    }
+] 

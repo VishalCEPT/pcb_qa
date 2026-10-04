@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net-_q1-s_ signal maintain a voltage of 0V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net-_q1-s_ signal is connected to ground through a 0.47 ohm resistor (R1) and to the source of MOSFET Q1, which will develop a non-zero voltage whenever current flows through the transistor during the transient simulation.",
+        "is_final": true
+    }
+}

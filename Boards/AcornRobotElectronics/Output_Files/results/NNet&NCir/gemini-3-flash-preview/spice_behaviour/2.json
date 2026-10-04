@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net FB obtain a steady state of ~1.2V after the entire simulation?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The net FB is part of a voltage divider between +12V and GND using R17 (1.8M\u03a9) and R16 (205k\u03a9), which results in a steady-state voltage of approximately 1.227V.",
+        "is_final": true
+    }
+}

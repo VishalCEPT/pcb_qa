@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component J12 connected to _p_5V?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, pins A4, A9, B4, and B9 of J12 are connected to the net '+5V'.",
+        "is_final": true
+    }
+}

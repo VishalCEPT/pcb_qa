@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component Micro_SD_Card have UART capabilities according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The Micro_SD_Card component (J2) uses SPI and SDIO interfaces (DAT, CMD, CLK) as defined in its datasheet and pinout, which are distinct from UART communication protocols.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,41 @@
+
+Note: No compatibility mode selected!
+
+warning, can't find model 'led_d_led_d_g' from line
+    ddled2 net-_led2-k_ +3v3 led_d_led_d_g
+warning, can't find model 'led_d_led_d_g' from line
+    ddled1 net-_led1-k_ +5v led_d_led_d_g
+warning, can't find model 'led_d_led_d_b' from line
+    ddled8 net-_led8-k_ led_f_fcc led_d_led_d_b
+warning, can't find model 'led_d_led_d_y' from line
+    ddled5 net-_led5-k_ led_c_fcc led_d_led_d_y
+warning, can't find model 'led_d_led_d_b' from line
+    ddled6 net-_led6-k_ led_d_fcc led_d_led_d_b
+warning, can't find model 'led_d_led_d_b' from line
+    ddled7 net-_led7-k_ led_e_fcc led_d_led_d_b
+warning, can't find model 'led_d_led_d_r' from line
+    ddled4 net-_led4-k_ led_b_fcc led_d_led_d_r
+warning, can't find model 'led_d_led_d_r' from line
+    ddled3 net-_led3-k_ led_a_fcc led_d_led_d_r
+warning, can't find model 'led_d_led_d_b' from line
+    ddled12 net-_led12-k_ led_d_navc led_d_led_d_b
+warning, can't find model 'led_d_led_d_y' from line
+    ddled11 net-_led11-k_ led_c_navc led_d_led_d_y
+warning, can't find model 'led_d_led_d_r' from line
+    ddled9 net-_led9-k_ led_a_navc led_d_led_d_r
+warning, can't find model 'led_d_led_d_r' from line
+    ddled10 net-_led10-k_ led_b_navc led_d_led_d_r
+warning, can't find model 'led_d_led_d_g' from line
+    ddled14 net-_led14-k_ net-_d5-a_ led_d_led_d_g
+warning, can't find model 'led_d_led_d_g' from line
+    ddled13 net-_led13-k_ net-_d4-a_ led_d_led_d_g
+
+Circuit: KiCad schematic
+
+Warning: Value of resistor r50 is too small, set to 1.000000e-12
+Warning: Value of resistor r51 is too small, set to 1.000000e-12
+Error on line 14 or its substitute:
+  ddled2 net-_led2-k_ +3v3 led_d_led_d_g
+could not find a valid modelname
+    Simulation interrupted due to error!
+

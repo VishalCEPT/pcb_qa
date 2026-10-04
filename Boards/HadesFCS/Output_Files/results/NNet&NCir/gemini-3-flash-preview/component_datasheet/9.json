@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component TDD01H0SB1R have a memory chip according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The component TDD01H0SB1R is described in the netlist and its datasheet field as a 2-position DIP/SIP jumper switch, not a memory chip.",
+        "is_final": true
+    }
+}

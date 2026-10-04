@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component STM32L476RGT6 have flash capabilities according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The netlist description for the STM32L476RGTx component explicitly states it is an ARM Cortex-M4 MCU with 1024KB of flash memory.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Is the display_power_switch signal at 5V for the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The SPICE netlist defines V_3V3 at 3.3V and V_BAT at 25V, and since Display_Power_Switch is connected to +3.3V via MOSFET Q2, it cannot be 5V.",
+        "is_final": true
+    }
+}

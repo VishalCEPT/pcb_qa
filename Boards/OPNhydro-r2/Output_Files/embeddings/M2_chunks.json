@@ -1,0 +1,438 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "V 6.1\nRevised 2/24\nEZO-pH™\nEmbedded pH Circuit\nISO 10523 Compliant\n(determination of pH)\nReads pH\nRange .001 − 14.000\nResolution .001\nAccuracy +/– 0.002\npH reading time 800ms\nSupported probes Any type & brand\nCalibration 1, 2, 3 point\nTemp compensation Yes\nData protocol UART & I2C\nDefault I2C address 99 (0x63)\nOperating voltage 3.3V − 5V\nData format ASCII\nPATENT PROTECTED\nWritten by Jordan Press"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "PATENT PROTECTED\nWritten by Jordan Press\nDesigned by Noah Press This is an evolving document, check back for updates.The EZO™ pH Circuit has all the features of this bench top meter.\n= VCC\nIsolated Power Supply OFF\nGND\nTX\nRX\nIsolated Carrier Board\n9\n4 Calibration\nExtended\n1 Range\nOn Off 7.0\n9.230\n5 Mid point\nRead\n4.0\nTimed Reading\n6 Low point\npH 1 sec\n2 10.0\nOn Off\nHigh point\nSlope 7 Device Name 10\n3 pH Meter 1\n5.7 99.7 100.3\nmV % % 25 °C\n8\nVoltage 5.0"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "5.7 99.7 100.3\nmV % % 25 °C\n8\nVoltage 5.0\n1 Three decimal pH reading 6 Timed readings\n2 Temperature used for reading 7 Set device name\n3 Calibration slope 8 Voltage usage\n4 Extended range capability 9 Multi point calibration\n5 Immediate reading 10 Manual temperatue compensation\nThe EZO™ pH Circuit is compatible with any brand of pH probe.Available data protocols\nDefault\nUnavailable data protocols\nSPI\nAnalog\nRS-485\nMod Bus\n4–20mA\n3"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "SPI\nAnalog\nRS-485\nMod Bus\n4–20mA\n3\nCopyright © Atlas Scientific LLCAre there specific soldering instructions? Yes, see page 71.\nCan you make a warranty claim after soldering? No.\nIf you have not used this product before; Observe how\na properly working sensor behaves BEFORE embedding\nit into your PCB.\nGet this device working using one Do not embed before you have\nof these methods first. experience with this sensor.\nRX TX\n5\nA 5v3vGNDRXTX A\nB B PWR\nC C RX\nD D TX\nE E\nF F\nG G\nH H\nI I\nJ J\n5\nAtlas"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "C C RX\nD D TX\nE E\nF F\nG G\nH H\nI I\nJ J\n5\nAtlas\nScientific\nBSU\nCCV FFO DNG XT XR\ndraoB\nreirraC\ndetalosITable of contents\nAvailable data protocols 3 Correct wiring 9\nCircuit dimensions 6 Default state 12\nPower consumption 6 Circuit footprint 73\nAbsolute max ratings 6 Datasheet change log 74\nElectrical isolation 7 Warranty 79\nCalibration theory 63\nUnderstanding pH Slope 68\nUART I2C\nUART mode 13 I2C mode 39\nLED color definition 14 Sending commands 40\nReceiving data from device 15 Requesting data 41"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "Receiving data from device 15 Requesting data 41\nSending commands to device 16 Response codes 42\nUART quick command page 17 LED color definition 43\nLED control 18 I2C quick command page 44\nFind 19 LED control 45\nContinuous reading mode 20 Find 46\nSingle reading mode 21 Taking reading 47\nCalibration 22 Calibration 48\nExport calibration 23 Export calibration 49\nImport calibration 24 Import calibration 50\nSlope 25 Slope 51\nExtended pH scale 26 Extended pH scale 52"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "Extended pH scale 26 Extended pH scale 52\nTemperature compensation 27 Temperature compensation 53\nNaming device 28 Naming device 54\nDevice information 29 Device information 55\nResponse codes 30 Reading device status 56\nReading device status 31 Sleep mode/low power 57\nSleep mode/low power 32 Protocol lock 58\nChange baud rate 33 I2C address change 59\nProtocol lock 34 Factory reset 60\nFactory reset 35 Change to UART mode 61\nChange to I2C mode 36 Manual switching to UART 62"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "Change to I2C mode 36 Manual switching to UART 62\nManual switching to I2C 37EZO TM circuit dimensions\n13.97mm\n(0.55”)\n20.16mm\n(0.79”)\n10.8mm\n5.8mm 8.38mm\n1mm Ø (0.4”)\n(0.22”) (0.32”)\nPower consumption Absolute max ratings\nLED MAX STANDBY SLEEP Parameter MIN TYP MAX\n5V ON 18.3 mA 16 mA 1.16 mA Storage temperature\n-65 °C 125 °C\n(EZO™ pH)\nOFF 13.8 mA 13.8 mA\nOperational temperature\n-40 °C 25 °C 85 °C\n3.3V ON 14.5 mA 13.9 mA 0.995 mA (EZO™ pH)\nOFF 13.3 mA 13.3 mA\nVCC 3.3V 5V 5.5V\n6"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "OFF 13.3 mA 13.3 mA\nVCC 3.3V 5V 5.5V\n6\nCopyright © Atlas Scientific LLCElectrical isolation\nThe Atlas Scientific EZO™ pH circuit is a very sensitive device. This sensitivity is what gives\nthe pH circuit its accuracy. It also means that the pH circuit can read micro-voltages\nbleeding into the water from unnatural sources such as pumps, solenoid valves, or other\nprobes/sensors.\nWhen electrical noise interferes with the pH readings, it is common to see rapidly"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "fluctuating readings or readings that are pinned to 14 or 0. To verify that electrical noise is\ncausing inaccurate readings, place the pH probe in a cup of water by itself. The readings\nshould stabilize quickly, confirming that electrical noise was the issue.\n14 6.31\nAdvice:\n1. When reading pH along with other sensors, electrical isolation is strongly recommended.\n2. Never build a commercial product without electrical isolation."
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "Atlas Scientific offers several different electrical isolation products that can be used\nin your design. Select the electrical isolation product that works best for your design.\ni1 InterLink i2 InterLink i3 InterLink i4 InterLink\nElectrically Isolated EZO™ Vertical Isolator Electrically Isolated Gen 2 Electrically Isolated\nCarrier Board (old style) EZO™ Carrier Board USB EZO™ Carrier Board\n7"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "7\nCopyright © Atlas Scientific LLCFor various reasons, you may need to build your own electrical isolator. Because electrical\nisolation is so important, we have published our isolation schematic for anyone to use.\nThis isolation schematic is based on the ADM3260, which can output up to 150 mW\nof isolated power. PCB layout requires special attention for EMI/EMC and RF Control.\nHaving good ground planes and keeping the capacitors as close to the chip as possible"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "are crucial for proper performance.\nThe two data channels have a 4.7kΩ pull-up resistor on both the isolated and non-isolated\nlines (R1, R2, R3, and R4). The output voltage is set using a voltage divider (R6 and R7).\nThis produces a voltage of 3.9V regardless of your input voltage.\nIsolated ground is different from non-isolated ground, these two lines should not\nbe connected together.\nVCC = 3.0v − 5.5v\nISO-VCC\nVCC\nADM3260\nVCC VCC\nVDDP VDDISO ISO-VCC\nISO-VCC\nVIN VISO\nR7"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "VCC VCC\nVDDP VDDISO ISO-VCC\nISO-VCC\nVIN VISO\nR7\nINPUT R2 4.7K R1 4.7K VSEL\nVCC 10K\nOUTPUT\nRX/SCL SCL2 SCL1\nVCC\nTX/SDA\nSDA2 SDA1 RX/SCL\nEN\nTX/SDA\nGND\nVCC NC NC NC\nGND\nC1\nGNDP\n0.1uf R6\nGNDP GNDISO\nGND 4.7K\nGNDP GNDISO R4 4.7K\nC4\nGNDP GNDISO\nC3 R3 4.7K ISO-GND\nVCC 10uF\nPDIS GNDISO\nVCC R5 GND 0.1uF ISO-VCC\nR8 C2\nD\n1M\n1M N-FET 0.1uF ISO-VCC\nG\n(GENERAL PURPOSE TRANSISTOR) C6\nS\n10uF\nC5\nGND\n10uF\nNon-isolated Isolated\nISO-GND\n8\nCopyright © Atlas Scientific LLCCorrect wiring\nAtlas\nScientific"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "Atlas\nScientific\nCCV C/N DNG XT XR\ndetalosI-noN\nRX TX\nA A\nA 5v3vGNDRXTX A\nB B\nB B\nC C\nC C\nD D\nD D E E\nE E\nPULL UP F F\nF F\nG G\nG G\nH H\nH H\nI I\nI I VCCPRBPGND\nJ J\n5 J J\n5\nBread board Bread board via USB Non-Isolated Electrically Isolated USB\nEZO™ Carrier Board EZO™ Carrier Board carrier board\nIncorrect wiring\nExtended leads Sloppy setup Perfboards or Protoboards *Embedded into your device\nABCDE FGHI J\n1 1\n5 5\n10 10\n15 15\n20 20\n25 25\n30 30\n35 35\n40 40\n45 45\n50 50 NEVER\n*Only after you are familar"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "45 45\n50 50 NEVER\n*Only after you are familar\n55 55 use Perfboards or Protoboards\nwith EZO TM circuits operation\n60 60 Flux residue and shorting wires make\nit very hard to get accurate readings.\nABCDE FGHI J\nCCV FFO DNG XT XR\ndraoB\nreirraC\ndetalosI\nPWR\nRX\nTX\nAtlas\nAtlas\nScientific\nScientific\nBSU\nAtlas\nScientific\nsaltA\ncfiitneicS\n9\nCopyright © Atlas Scientific LLCNEVER EXTEND THE CABLE\nWITH CHEAP JUMPER WIRES!\nRX TX\n1 5 10 15 20\nA 5v 3vGNDRXTX A\nB B\nC C\nD D\nE E\nF F\nG G\nH H\nI I\nJ J\n1 5 15 15 20"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "B B\nC C\nD D\nE E\nF F\nG G\nH H\nI I\nJ J\n1 5 15 15 20\nDO NOT CUT THE PROBE CABLE\nWITHOUT REFERING TO THIS DOCUMENT!\n10\nCopyright © Atlas Scientific LLCDO NOT MAKE YOUR OWN\nUNSHIELDED CABLES!\nRX TX\n1 5 10 15 20\nA 5v 3vGNDRXTX A\nB B\nC C\nD D\nE E\nF F\nG G\nH H\nI I\nJ J\n1 5 15 15 20\nONLY USE SHIELDED CABLES.\n11\nCopyright © Atlas Scientific LLCDefault state\nUART mode\nBaud 9,600\nReadings continuous\nUnits pH\nSpeed 1 reading per second\nLED on\n1,000 ms\nGreen Cyan\nStandby Taking reading Transmitting"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "Green Cyan\nStandby Taking reading Transmitting\nSolid Blue LED\nin I2C mode\nNot UART ready\n12\nCopyright © Atlas Scientific LLCUART mode\n8 data bits no parity\n1 stop bit no flow control\nBaud\n300\n1,200\n2,400\n9,600 default\n19,200\n38,400\n57,600\n115,200\nTX RX\nRX\nData in RX TX\nTX\nTX RX\nData out\nCPU\nVcc\n3.3V – 5.5V\nVCC\n0V 0V\nData format\nReading pH Data type floating point\nEncoding ASCII Decimal places 3\nFormat s tring Smallest string 4 characters\nTerminator carriage return Largest string 40 characters"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "13\nCopyright © Atlas Scientific LLC\nGreen Cyan Purple Red White Blue\nUART standby Taking reading Changing Command Find I2C standby\nbaud rate not understoodTX RX\nRX TX\nTX RX\nCPU\nLED color definition\nGreen Cyan Purple Red White Blue\nUART standby Taking reading Changing Command Find I2C standby\nbaud rate not understood\nLED ON\n5V +2.2 mA\n3.3V +0.6 mA\nSettings that are retained if power is cut Settings that are NOT retained if power is cut\nBaud rate Find\nCalibration Sleep mode"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "Baud rate Find\nCalibration Sleep mode\nContinuous mode Temperature compensation\nDevice name\nEnable/disable response codes\nHardware switch to I2C mode\nLED control\nProtocol lock\nSoftware switch to I2C mode\n14\nCopyright © Atlas Scientific LLC\nSettings that are retained if power is cut Settings that are NOT retained if power is cut\nCalibration Find\nChange I2C address Sleep mode\nHardware switch to UART mode Temperature compensation\nLED control\nProtocol lock"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "LED control\nProtocol lock\nSoftware switch to UART modeReceiving data from device\n2 parts\nASCII data string Carriage return <cr>\nCommand Terminator\n9,600 baud\n(default)\nTX RX\nCPU\n9.560 <cr>\nReceiver\nSender\nAdvanced\nASCII: 9 . 5 6 0 <cr>\nHex: 39 2E 35 36 30 0D\nDec: SDA S5CL7 46 53 54SDA SC4L 8 13 SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)\n15\nCopyright © Atlas Scientific LLC\nBlue Green Purple Red White\nI2C standby Taking reading Changing Command Find"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "I2C standby Taking reading Changing Command Find\nI2C address not understoodSending commands to device\n2 parts\nCommand (not case sensitive) Carriage return <cr>\nASCII data string Terminator\nTX RX\nCPU\nSleep <cr>\nSender\nReceiver\nShort\nAdvanced\nASCII: S l e e p <cr>\nHex: 53 6C 65 65 70 0D\nDec: 83 108 101 101 112 13\nShort\n16\nCopyright © Atlas Scientific LLCUART mode\ncommand quick reference\nAll commands are ASCII strings or single ASCII characters.\nCommand Function Default state"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "Command Function Default state\nBaud change baud rate pg. 33 9,600\nC enable/disable continuous reading pg. 20 enabled\nCal performs calibration pg. 22 n/a\nExport export calibration pg. 23 n/a\nFactory enable factory reset pg. 35 n/a\nFind finds device with blinking white LED pg. 19 n/a\ni device information pg. 29 n/a\nI2C change to I2C mode pg. 36 not set\nImport import calibration pg. 24 n/a\nL enable/disable LED pg. 18 enabled\nName set/show name of device pg. 28 not set"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "Name set/show name of device pg. 28 not set\npHext enable/disable extended pH scale pg. 26 disabled\nPlock enable/disable protocol lock pg. 34 disabled\nR returns a single reading pg. 21 n/a\nSleep enter sleep mode/low power pg. 32 n/a\nSlope returns the slope of the pH probe pg. 25 n/a\nStatus retrieve status information pg. 31 enable\nT temperature compensation pg. 27 25˚C\n*OK enable/disable response codes pg. 30 enableLED control\nCommand syntax\nL,1 <cr> LED on default\nL,0 <cr> LED off"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "L,1 <cr> LED on default\nL,0 <cr> LED off\nL,? <cr> LED state on/off?\nExample Response\nL,1 <cr> *OK <cr>\nL,0 <cr> *OK <cr>\nL,? <cr> ?L,1 < c r > or ?L,0 <cr>\n*OK <cr>\nL,1 L,0\n18\nCopyright © Atlas Scientific LLC\n1,000 ms1,000 ms\nGreen Green Cyan Cyan\nStandby StandTbayking readiTnagking reaTdrianngsmittingTransmittingFind\nCommand syntax\nThis command will disable continuous mode\nSend any character or command to terminate find.\nFind <cr> LED rapidly blinks white, used to help find device"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "Example Response\nFind <cr> *OK <cr>\nSDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX)\n19\nCopyright © Atlas Scientific LLCContinuous reading mode\nCommand syntax\nC,1 <cr> enable continuous readings once per second default\nC,n <cr> continuous readings every n seconds (n = 2 to 99 sec)\nC,0 <cr> disable continuous readings\nC,? <cr> continuous reading mode on/off?\nExample Response\nC,1 <cr> *OK <cr>\npH (1 sec)\n<cr>\npH (2 sec) <cr>\npH (n sec) <cr>\nC,30 <cr> *OK <cr>\npH (30 sec)\n<cr>\npH (60 sec)"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "C,30 <cr> *OK <cr>\npH (30 sec)\n<cr>\npH (60 sec)\n<cr>\npH (90 sec)\n<cr>\nC,0 <cr> *OK <cr>\nC,? <cr> ?C,1 < c r > or ?C,0 < c r > or ?C,30 <cr>\n*OK <cr>\n20\nCopyright © Atlas Scientific LLCSingle reading mode\nCommand syntax\nA single reading takes 800ms\nR <cr> takes single reading\nExample Response\nR <cr> 9.560 <cr>\n*OK <cr>\n1,000 ms\nGreen Cyan\nStandby Taking reading Transmitting\n800 ms\n21\nCopyright © Atlas Scientific LLCCalibration\nIssuing the cal,mid command after the"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "Issuing the cal,mid command after the\nEZOTM pH circuit has been calibrated, will\nCommand syntax clear the other calibration points. Full\ncalibration will have to be redone.\nCal,mid,n <cr> single point calibration at midpoint\nCal,low,n <cr> two point calibration at lowpoint\nCal,high,n <cr> three point calibration at highpoint\nCal,clear <cr> delete calibration data\nCal,? <cr> device calibrated?\nExample Response\nCal,mid,7.00 <cr> *OK <cr>\nCal,low,4.00 <cr> *OK <cr>\nCal,high,10.00 <cr> *OK <cr>"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "Cal,high,10.00 <cr> *OK <cr>\nCal,clear <cr> *OK <cr>\nCal,? <cr> ?Cal,0 < c r > or ?Cal,1 < c r > or\none point\n?Cal,2 < c r > or ?Cal,3 <cr>\ntwo point three point\n*OK <cr>\n22\nCopyright © Atlas Scientific LLCExport calibration\nCommand syntax\nExport: Use this command to download calibration settings\nExport,? calibration string info\n<cr>\nExport export calibration string from calibrated device\n<cr>\nExample Response\nExport,? <cr> 10,120 <cr> Response breakdown\n10, 120"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "10, 120\n# of strings to export # of bytes to export\nExport strings can be up to 12 characters long,\nand is always followed by <cr>\nExport <cr> 59 6F 75 20 61 72 <cr> (1 of 10)\nExport <cr> 65 20 61 20 63 6F <cr> (2 of 10)\n(7 more)\nExport <cr> 6F 6C 20 67 75 79 <cr> (10 of 10)\nExport <cr> *DONE\nDisabling *OK simplifies this process\nExport <cr>\n1\n2 TX RX\n3\n4\n5 MCU\n6\n7\n8\n9\n10\n[10,120]\n*DONE\n23\nCopyright © Atlas Scientific LLC\n1\nTX RX 2\n3\n4\nMCU 5\n6\n7\n8\n9\n10\n[10,120]\n1\nTX RX 2\n3\n4\nMCU 5\n6\n7\n8\n9\n10"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "7\n8\n9\n10\n[10,120]\n1\nTX RX 2\n3\n4\nMCU 5\n6\n7\n8\n9\n10\n[10,120]Import calibration\nCommand syntax\nImport: Use this command to upload calibration\nsettings to one or more devices.\nImport,n import calibration string to new device\n<cr>\nExample Response\nImport, 59 6F 75 20 61 72 <cr> (1 of 10) *OK <cr>\n1\nImport, 65 20 61 20 63 6F <cr> (2 of 10) *OTXKR<Xcr>\n2\n3\n4\n5 MCU\n6\n7\n8\nImport, 6F 6C 20 67 75 7 9 9 <cr> (10 of 10) *OK <cr>\n10\n[10,120]\nImport,n <cr>\n1 2 TX RX1\n3 TX RX 2\n4\n5 M3CU\n6\n7 4\n8 MCU 5\n9\n10 6"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "3 TX RX 2\n4\n5 M3CU\n6\n7 4\n8 MCU 5\n9\n10 6\n[10,120]\n7\n8\n9\n10\n1 [10,120]\nTX RX 2\n3\n4\nMCU 5\n6\n7\n8 *OK <cr>\n9\n10\n[10,120] system will reboot\n1\nTX RX 2\n3 * If one of the imported strings is not\n1\nTX RX 2 4\n3\n4 MCU 5 correctly entered, the device will not\nMCU 5 6\n6\n7 8 7 accept the import, respond with *ER\n9 8\n10\n[10,120] 9 and reboot.\n10\n[10,120]\n*ER <cr>\n24\nCopyright © Atlas Scientific LLCSlope\nAfter calibrating a pH probe issuing the\nslope command will show how closely (in"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "slope command will show how closely (in\nCommand syntax percentage) the calibrated pH probe is working\ncompared to the “ideal” pH probe.\nSlope,? <cr> returns the slope of the pH probe\nExample Response\nSlope,? <cr> ?Slope,99.7,100.3, -0.89 <cr>\n*OK <cr>\nResponse breakdown\n?Slope, 99.7 100.3 -0.89\n99.7% is how closely the 100.3% is how closely the This is how many millivolts\nslope of the acid calibration slope of the base calibration the zero point is off from"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "line matched the “ideal” matches the “ideal” pH true 0.\npH probe. probe.\n0.3% from ideal\n0.3% from ideal\n25\nCopyright © Atlas Scientific LLC\nFuming\nHCLExtended pH scale\nVery strong acids and basses can exceed the\ntraditional pH scale. This command extends\nthe pH scale to show below 0 and above 14.\nCommand syntax Lowest possible reading: -1.6\nHighest possible reading: 15.6\npHext,0 <cr> extended pH scale off (0 – 14) default\npHext,1 <cr> extended pH scale on (-1.6 – 15.6)"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "pHext,1 <cr> extended pH scale on (-1.6 – 15.6)\npHext,? <cr> extended pH scale on/off?\nExample Response\n0.3% from ideal 0.3% from ideal\npHext,1 <cr> *OK <cr>\npHext,0 <cr> *OK <cr>\n0.3% from ideal 0.3% from ideal\npHext,? <cr> ?pHext,1 <cr> or ?pHext,0 <cr>\npHext,0 pHext,1\nFuming Fuming\nHCL HCL\npH = 0.000 pH = -1.220\n26\nCopyright © Atlas Scientific LLCTemperature compensation\nDefault temperature = 25°C\nCommand syntax Temperature is always in Celsius\nTemperature is not retained if power is cut"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "Temperature is not retained if power is cut\nT,n <cr> n = any value; floating point or int\nT,? <cr> compensated temperature value?\nRT,n <cr> set temperature compensation and take a reading\nExample Response\nT,19.5 <cr> *OK <cr>\nRT,19.5 <cr> *OK <cr>\n8.91 <cr>\nT,? <cr> ?T,19.5 <cr>\n*OK <cr>\nT,19.5 <cr>\n8.82 8.91\n27\nCopyright © Atlas Scientific LLC\nSDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)Naming device\nCommand syntax\nDo not use spaces in the name"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "Command syntax\nDo not use spaces in the name\nn = _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nName,n <cr> set name\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\nName, <cr> clears name\nUp to 16 ASCII characters\nName,? <cr> show name\nExample Response\nName, <cr> *OK <cr> name has been cleared\nName,zzt <cr> *OK <cr>\nName,? <cr> ?Name,zzt <cr>\n*OK <cr>\nName,zzt Name,?\n*OK <cr> ?Name,zzt <cr>\n*OK <cr>\n28\nCopyright © Atlas Scientific LLC\n1,000 ms 1,000 ms\nGreen Cyan Green Cyan"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "1,000 ms 1,000 ms\nGreen Cyan Green Cyan\nStandby Taking readinSgtandby TransmitTtaiknigng reading TransmittingDevice information\nCommand syntax\ni <cr> device information\nExample Response\ni <cr> ?i,pH,2.16<cr>\n*OK <cr>\nResponse breakdown\n?i, pH, 2.16\nDevice Firmware\n29\nCopyright © Atlas Scientific LLCResponse codes\nCommand syntax\n*OK,1 <cr> enable response default\n*OK,0 <cr> disable response\n*OK,? <cr> response on/off?\nExample Response\nR <cr> 9.560 <cr>\n*OK <cr>"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "Example Response\nR <cr> 9.560 <cr>\n*OK <cr>\n*OK,0 <cr> no response, *OK disabled\nR <cr> 9.560 <cr> *OK disabled\n*OK,? <cr> ?*OK,1 <cr> or ?*OK,0 <cr>\nOther response codes\n*ER unknown command\n*OV over volt (VCC>=5.5V)\n*UV under volt (VCC<=3.1V) These response codes\n*RS reset cannot be disabled\n*RE boot up complete, ready\n*SL entering sleep mode\n*WA wake up\n30\nCopyright © Atlas Scientific LLCReading device status\nCommand syntax\nStatus <cr> voltage at Vcc pin and reason for last restart"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "Example Response\nStatus <cr> ?Status,P,5.038 <cr>\n*OK <cr>\nResponse breakdown\n?Status, P, 5.038\nReason for restart Voltage at Vcc\nRestart codes\nP powered off\nS software reset\nB brown out\nW watchdog\nU unknown\n31\nCopyright © Atlas Scientific LLCSleep mode/low power\nCommand syntax Send any character or\ncommand to awaken device.\nSleep <cr> enter sleep mode/low power\nExample Response\nSleep <cr> *OK <cr>\n*SL <cr>\nAny command *WA <cr> wakes up device\nSTANDBY SLEEP\n5V 16 mA 1.16 mA"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "STANDBY SLEEP\n5V 16 mA 1.16 mA\n3.3V 13.9 mA 0.995 mA\nSleep <cr>\nStandby Sleep\n16 mA 1.16 mA\n32\nCopyright © Atlas Scientific LLC\n1,000 ms 1,000 ms\nGreen CyGarneen Cyan\nStandby TakingS rteaanddibnyg TrTaanksimngit trienagding TransmittingChange baud rate\nTX RX\nRX TX\nCommand syntax\nBaud,n <cr> change baud rate\nTX RX\nExample Response CPU\nBaud,38400 <cr> *OK <cr>\nBaud,? <cr> ?Baud,38400 <cr>\n*OK\n<cr>\n300\n1200\n2400\nn = 9600 default\n19200\n38400\n57600\n115200\nBaud,38400 <cr> (reboot)"
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "19200\n38400\n57600\n115200\nBaud,38400 <cr> (reboot)\nStandby Changing Standby\nGreen Cyan Purple Red White\nbaud rate\nUART standby Taking reading C * h O a K n g < i c n r g > Command Find\nbaud rate not understood\n33\nCopyright © Atlas Scientific LLC\n1,000 ms 1,000 ms\nGreen Cyan Green Cyan\nStandby Taking reading Transmitting Standby Taking reading TransmittingTX RX TX RX\nRX TX RX TX\nProtocol lock\nTX RX TX RX\nCommand syntax\nCPU CPU\nLocks device to UART mode.\nPlock,1 <cr> enable Plock\nTX RX"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "Plock,1 <cr> enable Plock\nTX RX\nPlock,0 <cr> disable Plock default\nPlock,? <cr> Plock on/off?\nCPU\nExample Response\nPlock,1 <cr> *OK <cr>\nPlock,0 <cr> *OK <cr>\nPlock,? <cr> ?Plock,1 <cr> or ?Plock,0 <cr>\nPlock,1 I2C,100\nShort\nGreen Cyan G*OrKe<Pecrun>rple caCnnyoat ncRhaendge to I2C PurcpWalnenhoitt cehange to IR2Ced White\n*ER <cr>\nUART standby Taking readingUART sCtahnadnbgying Taking rCeoamdimngand ChanginFgind Command Find\nbaud rate not understood baud rate not understood\nShort\n34"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "Short\n34\nCopyright © Atlas Scientific LLCFactory reset\nClears calibration\nCommand syntax LED on\n\"*OK\" enabled\nFactory <cr> enable factory reset\nExample Response\nFactory <cr> *OK <cr>\nFactory <cr>\n(reboot)\n*OK <cr> *RS <cr>\n*RE <cr>\nBaud rate will not change\n35\nC1op,y0rig0ht ©0 A tmlas Sscientific LLC 1,000 ms\nGreen Cyan Green Cyan\nStandby Taking reading StanTdrbaynsmitting Taking reading TransmittingTX RX TX RX\nRX TX RX TX\nTX RX TX RX\nChange to I2C mode\nCPUCPU\nCommand syntax"
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "Change to I2C mode\nCPUCPU\nCommand syntax\nDefault I2C address 99 (0x63)\nI2C,n <cr> sets I2C address and reboots into I2C mode\nn = any number 1 – 127\nExample Response\nI2C,100 <cr> *OK (reboot in I2C mode)\nWrong example Response\nI2C,139 <cr> n > 127 *ER <cr>\nI2C,100\n(reboot)\nGreen Blue\nGreen Green Cyan Cyan Purple Purple Red Red White White\n*OK <cr> now in I2C mode\nUART stanUdAbRyT staTnadkibnyg reaTdaiknigng readCinhgangingChangingCommandCommand Find Find"
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "baud ratebaud nraotte undernstooto udnderstood\n36\nCopyright © Atlas Scientific LLCManual switching to I2C\n• Disconnect ground (power off)\n• Disconnect TX and RX\n• Connect TX to PGND\nTX RX\n• Confirm RX is disconnected\n• Connect ground (power on)\nCPU\n• Wait for LED to change from Green to Blue\n• Disconnect ground (power off)\n• Reconnect all data and power\nManually switching to I2C will set the I2C address to 99 (0x63)\nExample\nShort\nWrong Example\nShort\nDisconnect RX line\n37"
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "Short\nWrong Example\nShort\nDisconnect RX line\n37\nCopyright © Atlas Scientific LLCI2C mode\nSettings thaTth aer eI2 Cre tparinoetdo cifo pl oisw ceorn iss icduetrablyS emttoinrges c tohmatp alreex N tOhaTn r etthaein UedA iRf Tp ower is cut\n(RS–232) protocol. Atlas Scientific assumes the embedded\nBaud rate Find\nCalibration systems engineer understand S s le t e h p is m p o r d o e tocol.\nContinuous mode Temperature compensation\nDevice name To set your EZOTM device into I2C mode click here"
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "Enable/disable response codes\nHardware switch to I2C mode\nLED control\nProtocol lock\nSoftware switch to I2C mode\nSettings that are retained if power is cut Settings that are NOT retained if power is cut\nCalibration Find\nChange I2C address Sleep mode\nHardware switch to UART mode Temperature compensation\nLED control\nProtocol lock\nSoftware switch to UART mode\nr 0.1I2C mode\nI2C address (0x01 – 0x7F)\n99 (0x63) default\nVcc 3.3V – 5.5V\nClock speed 100 – 400 kHz\n4.7k resistor\nVCC may be needed VCC\nSDA"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "4.7k resistor\nVCC may be needed VCC\nSDA\nSDA SDA\nSCL\nSCL SCL\nSDA SCL\n(TX) (RX)\nVCC\nSCL SDA\n0V 0V\nCPU\nSDA\nSCL\nVCC\n0V 0V\nData format\nReading pH Data type floating point\nUnits pH Decimal places 3\nEncoding ASCII Smallest string 4 characters\nFormat s tring Largest string 40 characters\nSDA SCL SDA SCL\n(TX) (RX) (TX) (RX)\n39\nCopyright © Atlas Scientific LLC SCL SDA\nCPU4.7k resistor\nVCC may be needed VCC\nSDA SDA\nSCL SCL\nSDA SCL\n(TX) (RX)\nSCL SDA\nSending commands to device\nCPU\nSDA\n5 parts\nSCL"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "Sending commands to device\nCPU\nSDA\n5 parts\nSCL\nStart I2C address Write Command (not case sensitive) Stop\nVCC\n99 (0x63) ASCII command string\n0V 0V\nExample\nStart 99 (0x63) Write Sleep Stop\nI2C address Command\nSDA SCL SDA SCL\n(TX) (RX) (TX) (RX)\nSCL SDA\nCPU\nAdvanced\nAddress bits The entire command as ASCII with all arguments\nSDA\nA6 A5 A4 A3 A2 A1 A0 W ACK First letter of command ACK Last letter of command ACK\nSCL\nStart Stop\nW = low\n40\nCopyright © Atlas Scientific LLCSDA SCL\n(TX) (RX)\nCPU"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "(TX) (RX)\nCPU\nRequesting data from device\n7 parts\nStart I2C address Read Response code Data string Null Stop\n99 (0x63) 1 byte \"9.65\" Terminator\n(Dec 0)\nSDA SCL\n(TX) (RX)\nSCL SDA\nCPU\n9.560\nAdvanced\nAll bytes\nAddress bits N bytes of data after data are Null R = High\nSDA\nA6 − A0 R ACK Response code ACK Data ACK Data N ACK Null ACK Null\nSCL\nStart NACK Stop\n1 57 46 53 54 48 0 = 9.560\nDec Dec\nASCII\n41\nCopyright © Atlas Scientific LLCResponse codes\nAfter a command has been issued, a 1 byte response"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "code can be read in order to confirm that the command\nwas processed successfully.\nReading back the response code is completely optional,\nand is not required for normal operation.\nSend\ncommand\nSDA SCL\n(TX) (RX)\nCPU\nProcessing delay\nReceiving\ndata\nExample\nIf there is no processing delay or the\nprocessing delay is too short, the response\nI2C_start;\ncode will always be 254.\nI2C_address;\nI2C_write(EZO_comSmDAanSCdL);\n(TX) (RX)\nI2C_stop; Response codes\nSCL SDA\nSingle byte, not string"
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "SCL SDA\nSingle byte, not string\ndelay(300); Processing delay\nCP25U5 no data to send\nI2C_start; 254 still processing, not ready\nI2C_address; 2 syntax error\nChar[ ] = I2C_read;\n1 successful request\nI2C_stop;\n42\nCopyright © Atlas Scientific LLCTX RX\nCPU\nLED color definition\nSDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)\nBlue Green Purple Red White\nI2C standby Taking reading Changing Command Find\nI2C address not understood\nSDA SCL SDA SCL\n(TX) (RX) (TX) (RX)\nLED ON"
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "SDA SCL SDA SCL\n(TX) (RX) (TX) (RX)\nLED ON\n5V +2.2 mA\n3.3V +0.6 mA\nSDA SCL\n(TX) (RX)\nSolid Green LED\nin UART mode\nNot I2C ready\n43\nCopyright © Atlas Scientific LLCI2C mode\ncommand quick reference\nAll commands are ASCII strings or single ASCII characters.\nCommand Function\nBaud switch back to UART mode pg. 61\nCal performs calibration pg. 48\nExport export calibration pg. 49\nFactory enable factory reset pg. 60\nFind finds device with blinking white LED pg. 46\ni device information pg. 55"
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "i device information pg. 55\nI2C change I2C address pg. 59\nImport import calibration pg. 50\nL enable/disable LED pg. 45\nName set/show name of device pg. 54\npHext enable/disable extended pH scale pg. 52\nPlock enable/disable protocol lock pg. 58\nR returns a single reading pg. 47\nSleep enter sleep mode/low power pg. 57\nSlope returns the slope of the pH probe pg. 51\nStatus retrieve status information pg. 56\nT temperature compensation pg. 53\n44\nCopyright © Atlas Scientific LLCLED control"
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "44\nCopyright © Atlas Scientific LLCLED control\nCommand syntax\n300ms processing delay\nL,1 LED on default\nL,0 LED off\nL,? LED state on/off?\nExample Response\nL,1\n1 0\nWait 300ms\nDec Null\nL,0 1 0\nWait 300ms Dec Null\nL,? 1 ?L,1 0 1 ?L,0 0\nor\nDec ASCII Null Dec ASCII Null\nWait 300ms\nSDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)\nL,1 L,0\n45\nCopyright © Atlas Scientific LLC\nShort Short\nSDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)Find\n300ms processing delay\nCommand syntax\nThis command will disable continuous mode\nSend any character or command to terminate find.\nFind LED rapidly blinks white, used to help find device\nExample Response\nFind\n1 0\nWait 300ms\nDec Null\nSDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX)\n46\nCopyright © Atlas Scientific LLCTaking reading\nCommand syntax\n900ms processing delay"
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "Command syntax\n900ms processing delay\nR return 1 reading\nExample Response\nR 1 9.560 0\nDec ASCII Null\nWait 900ms\nSDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX)\nWait 900ms\nGreen Blue\nTaking reading Transmitting Standby\nShort\nSDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX)\n47\nCopyright © Atlas Scientific LLC\nShort\nSDA SCL SDA SCL\n(TX) (RX) (TX) (RX)CCaalliibbrraattiioonn\n900ms processing delay\nIssuing the cal,mid command after the\nEZOTM pH circuit has been calibrated, will"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "EZOTM pH circuit has been calibrated, will\nCommand syntax clear the other calibration points. Full\ncalibration will have to be redone.\nCal,mid,n single point calibration at midpoint\nCal,low,n two point calibration at lowpoint\nCal,high,n three point calibration at highpoint\nCal,clear delete calibration data\nCal,? device calibrated?\nExample Response\nCal,mid,7.00 1 0\nWait 900ms Dec Null\nCal,low,4.00 1 0\nWait 900ms Dec Null\nCal,high,10.00 1 0\nWait 900ms Dec Null\nCal,clear 1 0\nWait 300ms Dec Null"
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "Cal,clear 1 0\nWait 300ms Dec Null\n1 ?Cal,0 0 or 1 ?Cal,1 0\nCal,?\nDec ASCII Null Dec ASCII Null\nWait 300ms\none point\n1 ?Cal,2 0 or 1 ?Cal,3 0\nDec ASCII Null Dec ASCII Null\ntwo point three point\n48\nCopyright © Atlas Scientific LLCExport calibration\n300ms processing delay\nCommand syntax\nExport: Use this command to download calibration settings\nExport,? calibration string info\nExport export calibration string from calibrated device\nExample Response\nExport,? 1 10,120 0 Response breakdown"
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "Export,? 1 10,120 0 Response breakdown\nWait 300ms Dec ASCII Null 10, 120\n# of strings to export # of bytes to export\nExport strings can be up to 12 characters long\n1 59 6F 75 20 61 72 0 (1 of 10)\nExport\nWait 300ms Dec ASCII Null\n1 65 20 61 20 63 6F 0 (2 of 10)\nExport\nWait 300ms Dec ASCII Null\n(7 more)\n1 6F 6C 20 67 75 79 0 (10 of 10)\nExport\nWait 300ms Dec ASCII Null\n1 *DONE 0\nExport\nWait 300ms Dec ASCII Null\n49\nCopyright © Atlas Scientific LLCImport calibration\n300ms processing delay"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "300ms processing delay\nCommand syntax\nImport: Use this command to upload calibration\nsettings to one or more devices.\nImport,n import calibration string to new device\nExample Response\nImport, 59 6F 75 20 61 72 (1 of 10) 1 0\nWait 300ms Dec Null\nImport, 65 20 61 20 63 61 F (2 of 10) 1 0\nSDA SCL 2 SCL SDA\n(TX) (RX) Wait 300ms Dec Null\n3\n4\n5 MCU\n6\n7\nImport, 6F 6C 20 67 75 78 9 (10 of 10) 1 0\n9\n10 Wait 300ms Dec Null\n[10,120]\nImport,n\nS ( D TX) AS ( C RX) L 1 2 3 SCL SDA SCLSD1 2 A SDA SCL"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "4 (TX) (RX)\n5 M3CU\n6 4\n7\n8 MCU 5\n9\n10 6\n[10,120]\n7\n8\n9\n10\n1 [10,120]\nSCLSDA 2 S ( D TX) AS ( C RX) L\n3\n4\nMCU 5\n6\n7\n8 1 *Pending 0\n9\n10\n[10,120] Dec ASCII Null\nsystem will reboot\n1\nSCL SCA 2 SDA SCL\n(TX) (RX)\n3\n1\nSCLSCA 2 S ( D TX 4 ) AS ( C RX) L * If one of the imported strings is not\n3 4 MCU 5\nMCU 5 6 correctly entered, the device will not\n6\n7 7\n8\n9 8 accept the import and reboot.\n10 9\n[10,120]\n10\n[10,120]\nreboot\n50\nCopyright © Atlas Scientific LLCSlope\n300ms processing delay"
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "300ms processing delay\nAfter calibrating a pH probe issuing the\nslope command will show how closely\nCommand syntax (in percentage) the calibrated pH probe is\nworking compared to the “ideal” pH probe.\nSlope,? returns the slope of the pH probe\nExample Response\nSlope,?\n1 ?Slope,99.7,100.3, -0.89 0\nWait 300ms Dec ASCII Null\nResponse breakdown\n?Slope, 99.7 100.3 -0.89\n99.7% is how closely the 100.3% is how closely the This is how many millivolts"
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "slope of the acid calibration slope of the base calibration the zero point is off from\nline matched the “ideal” matches the “ideal” pH true 0.\npH probe. probe.\n0.3% from ideal\n0.3% from ideal\n51\nCopyright © Atlas Scientific LLC\nFuming\nHCLExtended pH scale\n300ms processing delay Very strong acids and basses can exceed the\ntraditional pH scale. This command extends\nthe pH scale to show below 0 and above 14.\nCommand syntax Lowest possible reading: -1.6\nHighest possible reading: 15.6"
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "Highest possible reading: 15.6\npHext,0 extended pH scale off (0 – 14) default\npHext,1 extended pH scale on (-1.6 – 15.6)\npHext,? extended pH scale on/off?\nExample Response\n0.3% from ideal 0.3% from ideal\n1 0\npHext,1\nWait 300ms Dec Null\npHext,0 1 0\nWait 300ms Dec Null\n0.3% from ideal 0.3% from ideal\npHext,? 1 ?pHext,1 0 or 1 ?pHext,0 0\nWait 300ms Dec ASCII Null Dec ASCII Null\npHext,0 pHext,1\nFuming Fuming\nHCL HCL\npH = 0.000 pH = -1.220\n52\nCopyright © Atlas Scientific LLCTemperature compensation"
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "Default temperature = 25°C\nCommand syntax Temperature is always in Celsius\nTemperature is not retained if power is cut\nT,n n = any value; floating point or int 300ms processing delay\nT,? compensated temperature value?\nRT,n set temperature compensation and take a reading\nExample Response\nT,19.5 1 0\nWait 300ms Dec Null\nRT,19.5 1 8.91 0\nWait 900ms Dec ASCII Null\nT,? 1 ?T,19.5 0\nWait 300ms Dec ASCII Null\nT,19.5\n8.82 8.91\n53\nCopyright © Atlas Scientific LLC\n0.3% from ideal 0.3% from ideal"
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "0.3% from ideal 0.3% from ideal\n0.3% from ideal 0.3% from ideal\nFuming Fuming\nHCL HCLNaming device\n300ms processing delay\nCommand syntax\nDo not use spaces in the name\nn = _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nName,n set name\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\nName, clears name\nUp to 16 ASCII characters\nName,? show name\nExample Response\n1 0\nName, name has been cleared\nWait 300ms Dec Null\n1 0\nName,zzt\nWait 300ms Dec Null\n1 ?Name,zzt 0\nName,?\nWait 300ms Dec ASCII Null\nName,zzt Name,?"
+  },
+  {
+    "faiss_index_id": 68,
+    "text": "Name,?\nWait 300ms Dec ASCII Null\nName,zzt Name,?\nSDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)\n1 0 1 ?Name,zzt 0\n54\nCopyright © Atlas Scientific LLC\nShort Short\nSDASCL SDASCL SDASCL SDASCL SDASCL SDASCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)Device information\nCommand syntax\n300ms processing delay\ni device information\nExample Response\ni\n1 ?i,pH,1.98 0\nWait 300ms Dec ASCII Null\nResponse breakdown\n?i, pH, 1.98\nDevice Firmware\n55"
+  },
+  {
+    "faiss_index_id": 69,
+    "text": "?i, pH, 1.98\nDevice Firmware\n55\nCopyright © Atlas Scientific LLCReading device status\nCommand syntax\n300ms processing delay\nStatus voltage at Vcc pin and reason for last restart\nExample Response\nStatus\n1 ?Status,P,5.038 0\nWait 300ms Dec ASCII Null\nResponse breakdown\n?Status, P, 5.038\nReason for restart Voltage at Vcc\nRestart codes\nP powered off\nS software reset\nB brown out\nW watchdog\nU unknown\n56\nCopyright © Atlas Scientific LLCSleep mode/low power\nCommand syntax\nSend any character or"
+  },
+  {
+    "faiss_index_id": 70,
+    "text": "Command syntax\nSend any character or\nSleep enter sleep mode/low power\ncommand to awaken device.\nExample Response\nDo not read status byte after\nSleep no response\nissuing sleep command.\nAny command wakes up device\nSTANDBY SLEEP\n5V 16 mA 1.16 mA\n3.3V 13.9 mA 0.995 mA\nSDA SCL SDA SSCDLA SCL SDA SCL\n(TX) (RX) (TX) (RX()TX) (RX) (TX) (RX)\nSleep\nStandby Sleep\n57\nCopyright © Atlas Scientific LLC\nShort Short\nSDA SCL SDSADASCSLCL SDASDSACLSCL SDA SCL"
+  },
+  {
+    "faiss_index_id": 71,
+    "text": "SDA SCL SDSADASCSLCL SDASDSACLSCL SDA SCL\n(TX) (RX) (TX)(TX) (RX)(RX) (TX) (TX)(RX) (RX) (TX) (RX)SDSADASCSLSCDLA SCL SDSADASCSLSCDLA SCL\n(TX) (TX) (RX)(R(TXX)) (RX) (TX) (TX) (RX)(R(TXX)) (RX)\nProtocol lock\nCommand syntax\n300ms processing delay\nPlock,1 enable Plock Locks device to I2C mode.\nPlock,0 disable Plock default\nPlock,? Plock on/off?\nExample Response\nPlock,1\n1 0\nWait 300ms\nDec Null\nPlock,0 1 0\nWait 300ms Dec Null\nPlock,? 1 ?Plock,1 0\nDec ASCII Null\nWait 300ms"
+  },
+  {
+    "faiss_index_id": 72,
+    "text": "Plock,? 1 ?Plock,1 0\nDec ASCII Null\nWait 300ms\nPlock,1 Baud, 9600 ShSohrotrSthort\nSDASDSACLSCLSDA SCL SDASDSACLSCLSDA SCL SDASDSACLSCLSDA SCL\n(TX) (TX)(RX) (RX) (TX) (RX) (TX) (TX)(RX) (RX) (TX) (RX) (TX) (TX)(RX) (RX) (TX) (RX)\ncannot change to UART cannot change to UART\n58\nCopyright © Atlas Scientific LLCI2C address change\nCommand syntax\n300ms processing delay\nI2C,n sets I2C address and reboots into I2C mode\nExample Response\nI2C,100 device reboot\n(no response given)"
+  },
+  {
+    "faiss_index_id": 73,
+    "text": "I2C,100 device reboot\n(no response given)\nWarning! n = any number 1 – 127\nChanging the I2C address will prevent\ncommunication between the circuit and\nthe CPU until the CPU is updated with the\nnew I2C address.\nDefault I2C address is 99 (0x63).\nI2C,100\nSDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)\n(reboot)\n59\nCopyright © Atlas Scientific LLC\nShort Short\nSDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL"
+  },
+  {
+    "faiss_index_id": 74,
+    "text": "SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)Factory reset\nCommand syntax\nFactory reset will not take the device out of I2C mode.\nFactory enable factory reset I2C address will not change\nExample Response\nFactory device reboot\n(no response given)\nClears calibration\nLED on\nResponse codes enabled\nFactory\nSDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)\n(reboot)\n60\nCopyright © Atlas Scientific LLC\nShort Short"
+  },
+  {
+    "faiss_index_id": 75,
+    "text": "60\nCopyright © Atlas Scientific LLC\nShort Short\nSDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)Change to UART mode\nCommand syntax TX RX TX RX TX RX\nBaud,n switch from I2C to UART CPUCPU CPU\nExample Response\nBaud,9600 reboot in UART mode\n(no response given)\n300\n1200\n2400\nn = 9600\n19200\n38400\n57600\n115200\nSDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL SDA SCL"
+  },
+  {
+    "faiss_index_id": 76,
+    "text": "(TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX) (TX) (RX)\nBaud,9600 (reboot)\nChanging to UART\nBlue Blue GreenGreen PurplPeurplBelue Red ReGdreeWn hiteWhiPteurple Red White\nmode\nI2C stanI2dCb sytandbTyaking Traekaidnign greadingChangiCnghanI2gCi nsgtanCdobmymaCnodTmamkianngd readFiningd FinCdhanging Command Find\nI2C addIr2eCs asddrenssot undneorts utonodderstood I2C address not understood\n61"
+  },
+  {
+    "faiss_index_id": 77,
+    "text": "61\nCopyright © Atlas Scientific LLCManual switching to UART\nSDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX)\n• Disconnect ground (power off)\n• Disconnect TX and RX\n• Connect TX to PGND\n• Confirm RX is disconnected\n• Connect ground (power on)\n• Wait for LED to change from Blue to Green\nGreen Blue\n• Disconnect ground (power off)\n• RecToankniencgt raella ddaintag and power Transmitting Standby\nExample\nShort\nSDA SCL SDA SCL SDA SCL\n(TX) (RX) (TX) (RX) (TX) (RX)\nWrong Example\nShort"
+  },
+  {
+    "faiss_index_id": 78,
+    "text": "(TX) (RX) (TX) (RX) (TX) (RX)\nWrong Example\nShort\nDisconnect RX line\nSDA SCL SDA SCL\n(TX) (RX) (TX) (RX)\n62\nCopyright © Atlas Scientific LLCCalibration theory\nThe accuracy of your readings is directly related to the quality of your calibration.\n(Calibration is not difficult, and a little bit of care goes a long way).\nSingle, Two point, or Three point calibration accuracy\nSingle point calibration\nMid point\nTwo point calibration Three point calibration\n14"
+  },
+  {
+    "faiss_index_id": 79,
+    "text": "Two point calibration Three point calibration\n14\nLow point Mid point Low point Mid point High point\nConfirm the pH probe is working correctly\n~3.8 – 4.2 14 0\nA new Atlas Scientific pH probe, still in its If your pH probe gives a reading of zero, seven or 14\nsoaker bottle will read a pH of ~3.8 – 4.2 continuously and that reading cannot be changed no\nmatter what solution the probe is in, your probe cannot be\ncalibrated and may be damaged.\nContact Atlas Scientific customer support for assistance."
+  },
+  {
+    "faiss_index_id": 80,
+    "text": "63\nCopyright © Atlas Scientific LLCCalibration order\nIf this is your first time calibrating the EZO™ pH circuit, we recommend that you follow this\ncalibration order.\nASPH7P ASPH4P ASPH10P\nCalibration solutions\nThe Atlas Scientific EZO™ pH circuit can work with any brand or value of calibration\nsolution. We recommend using calibration solutions that have simple values.\npH 10.01 pH 9.637\nCal,high,10.01 Cal,high,9.637\nBUFFER SOLUTION\npH 9.637\nSimple value Complex value"
+  },
+  {
+    "faiss_index_id": 81,
+    "text": "pH 9.637\nSimple value Complex value\nWhile you can use calibration solutions that have complex values, we recommend avoiding\nunnecessary complexity. Unusually specific calibration values should be treated with\nsuspicion.\n64\nCopyright © Atlas Scientific LLCBest practices for calibration\nAlways watch the readings throughout the calibration process.\nIssue calibration commands once the readings have stabilized.\n8.7\n8.9\n9.2\n98..87\n98..89\nC9.a2l,high,10\n*9O.8K\n190.8.0\n1C0a.l0,high,10\n1*O0.K0\n10.0\n10.0"
+  },
+  {
+    "faiss_index_id": 82,
+    "text": "*9O.8K\n190.8.0\n1C0a.l0,high,10\n1*O0.K0\n10.0\n10.0\n10.0\nNever do a blind calibration!\nIssuing a calibration command before the readings stabilize will result in drifting readings.\n8.7\n8.9\nCal,high,10\n*8O.7K\n180.9.0\n1C0a.l2,high,10\n1*O0.K8\n1100..80\n1110..22\n1110..58\n10.8\n11.2\n11.5\n65\nCopyright © Atlas Scientific LLCBest practices for calibration\nAvoid extended stabilization time.\n1\nHR\nLetting the probes pre-calibrtion readings stabilize over an extended period will cause"
+  },
+  {
+    "faiss_index_id": 83,
+    "text": "your calibrated readings to take a long time to stabilize.\nAvoid frequent recalibrations.\nif it ain't broke, don't fix it.\npH probes loose accuracy slowly. Frequent recalibrations to insure high accuracy will\noften have the opposite effect. It is far more llikly that you will misscalibrate the probe\nrather then improve its accuracy.\n66\nCopyright © Atlas Scientific LLC1. Mid point calibration\nAfter\n6.917\n7.126 Unstabilized Calibration\n7.223\n7.225\n1 − 2 mins 7.225\nStabilized\n7.225 After\n6.917"
+  },
+  {
+    "faiss_index_id": 84,
+    "text": "1 − 2 mins 7.225\nStabilized\n7.225 After\n6.917\n7 7 . . 2 1 2 2 5 6 Unstabilized Calibration\ncal,mid,7\n7.223\n*OK\n7.225\n7.000\n1 − 2 mins 7.225\nASPH7P 7 7 . . 0 2 0 2 0 5 Stabilized After\n6.917\n7 7 . . 2 1 2 2 5 6 Unstabilized Send Calibration\ncal,mid,7 Mid point\n*\n7\n7\nO\n.\n.\n2\n2\nK\n2\n2\n3\n5 calibrated\nP4HPSA\n7.000\n1 − 2 mins 7.225 After\nASPH7P 27 7.. .10 280 220 5 Stabilized\n2. Low point calibration 27..925235 UnstabilizedSend Calibration\n3ca.6l,0m1id,7\n3*O.9K98 P4HPSA\n1 − 2 mins 37..909080"
+  },
+  {
+    "faiss_index_id": 85,
+    "text": "3*O.9K98 P4HPSA\n1 − 2 mins 37..909080\nStabilized\nASPH7P 3 27. ..9 109 808 20 After\n3 2 . . 9 9 9 5 8 3 UnstabilizedSend Calibration\ncal,low,4\n3.601\n*OK\n4\n3\n.\n.\n0\n9\n0\n9\n0\n8 P4HPSA\n1 − 2 mins 3.998\nASPH4P 4 3 . . 0 9 0 9 0 8 Stabilized After\n2.182\n3 2 . . 9 9 9 5 8 3 Unstabilized Send Calibration\ncal,low,4\n*\n3\n3\nO\n.\n.\n6\n9\nK\n0\n9\n1\n8\nP01HPSA\n4.000\n1 − 2 mins 3.998 After\nASPH4P 74 3.. .90 950 930 8 Stabilized\n83..191918 UnstabilizedSend Calibration\n9ca.3l,2lo0w,4\nLow point\n9*O.6K40 P01HPSA"
+  },
+  {
+    "faiss_index_id": 86,
+    "text": "9ca.3l,2lo0w,4\nLow point\n9*O.6K40 P01HPSA\n1 − 2 mins 94..604000 calibrated\nStabilized\nASPH4P 9 74. ..6 904 500 30 After\n3. High point calibration 9 8 . . 6 1 4 1 0 1 UnstabilizedSend Calibration\ncal,high,10\n9.320\n*\n1\n9 O\n0\n.6\n.\nK\n0\n4\n0\n0\n0\nP01HPSA\n1 − 2 mins 9.640\nASPH10P 1 9 0 .6 .0 4 0 0 0 Stabilized After\n7.953\n9 8 . . 6 1 4 1 0 1 Unstabilized Send Calibration\ncal,high,10\n9.320\n*OK\n9.640\n10.000\n1 − 2 mins 9.640\nASPH10P 1 9 0 .6 .0 4 0 0 0 Stabilized\n9.640 Send\ncal,high,10\n*OK\n10.000"
+  },
+  {
+    "faiss_index_id": 87,
+    "text": "9.640 Send\ncal,high,10\n*OK\n10.000\nASPH10P 10.000\nSend\nHigh point\ncalibrated\nOptional steps:\nConfirm your calibration accuracy using the slope command.\nRecalibre a single point if required.Understanding pH slope\nThe slope function is a powerful tool used to verify calibration and determine the overall\nhealth of a pH probe. By evaluating the slope of a pH probe's response curve, you can\ndetermine how well a pH probe was calibrated or when that probe is reaching end of life."
+  },
+  {
+    "faiss_index_id": 88,
+    "text": "Slope and calibration are directly related. The slope is updated when a calibration\ncommand is given. The slope does not update automatically.\nGenerally speaking, all pH probes behave the same way. This means a probe's response to\ncalibration can be compared to a simulated pH probe that is mathematically perfect in all\nways.\nThe slope is broken into three sections; acid, base, and neutral.\nEach section is evaluated separately.\nAcid (pH 1 – 6.9)\nBase (pH 7.1 – 14)\nNeutral (pH 7)"
+  },
+  {
+    "faiss_index_id": 89,
+    "text": "Base (pH 7.1 – 14)\nNeutral (pH 7)\nAn uncalibrated pH probe will have a mathematically perfect slope. Because no pH probe\nis mathematically perfect, the slope can be used to determine if the pH was calibrated.\nUncalibrated slope: 100, 100, 0 (acid, base, neutral)\n% %\nmV\nThe first two numbers are percentages, and the third is millivolts. The slope shows that the\nprobe's response to acid and base is 100% correct, and it detects 0 mv in a pH 7. Because"
+  },
+  {
+    "faiss_index_id": 90,
+    "text": "such perfection does not exist in the real world, we know this probe was not calibrated.\n68\nCopyright © Atlas Scientific LLCUnderstanding pH slope\npH 7 is the absence of pH; it is not an acid or a base. Therefore it should always be your\nfirst calibration point. It is equivalent to the tare function on a scale because it establishes\nthe probe's zero point.\n=\n0.0\nG\ncal,mid,7\n*OK\nAfter pH 7 calibration, use the slope command to see how the probe performed during\ncalibration."
+  },
+  {
+    "faiss_index_id": 91,
+    "text": "calibration.\nThe slope after pH 7 calibration: 100, 100, -1.2\nHere we see the probe reads -1.2mV in pH 7. The closer this number is to 0, the better.\nA new pH probe should give a millivolt offset no greater than -5mV to 5mV. Over time\nthis number’s distance to 0 may increase; the larger the number, the lower the accuracy.\nA reading >10mV will result in noticeable performance issues.\nIt is important to remember that a high number is not definitive evidence that the"
+  },
+  {
+    "faiss_index_id": 92,
+    "text": "probe is inaccurate or malfunctioning. It is very common to see a high number if the\ncalibration solution was contaminated and not actually its stated value.\n69\nCopyright © Atlas Scientific LLCUnderstanding pH slope\nThe next two calibration points (pH 4 and pH 10) report their slope in percentage. A new\npH probe should have a slope of >95%.\nThe slope after pH 4 calibration: 98.2, 100, -1.2\nThe slope after pH 10 calibration: 98.2, 97.8, -1.2\nTips:"
+  },
+  {
+    "faiss_index_id": 93,
+    "text": "Tips:\nThroughout this explanation, we have looked at the slope after each calibration event.\nThis is unnecessary; in reality, it is best to fully calibrate the probe and look at the slope\nonce calibration has been completed.\nTo gain a deeper understanding of how slope affects the stability and accuracy of a pH\nprobe, intentionally miscalibrate the probe and see how it affects the slope.\nP01HPSA\nP4HPSA\n70\nCopyright © Atlas Scientific LLCSoldering"
+  },
+  {
+    "faiss_index_id": 94,
+    "text": "70\nCopyright © Atlas Scientific LLCSoldering\nDo not directly solder an EZO circuit to your PCB. If something goes wrong during the\nsoldering process it may become impossible to correct the problem. It is simply not worth\nthe risk.\nInstead, solder female header pins to your PCB and place the EZO device in the female\nheaders.\nAvoid using rosin core solder.\nUse as little flux as possible.\nFlux residue will severely affect your readings. Any Flux residue that comes in contact"
+  },
+  {
+    "faiss_index_id": 95,
+    "text": "with the PRB pins or your probes connector will cause a “flux short”.\nFlux residue\nYou MUST remove all the flux residue from your PCB after soldering.\n71\nCopyright © Atlas Scientific LLCSoldering\nRemoving flux residue can be done with commercially available products such as flux off or\nyou can use alcohol and a tooth brush.\nA\nL\nC\nO\nH\nO\nL\nRemove EZO Circuit and\nsoak in alcohol for 10 mins. Brush with tooth brush.\nDONE\nSoak in alcohol for 5 mins. Let it dry in the air."
+  },
+  {
+    "faiss_index_id": 96,
+    "text": "What does a flux short look like?\n1: Readings move slowly and take serval minutes to reach the correct value.\n2: Readings are pinned to 0, 7 or 14.\n72\nCopyright © Atlas Scientific LLCEZO TM circuit footprint\n17.78mm\n(0.7\")\n5.0\n2.54mm\n(0.1\")\n1 2 3\nIn your CAD software Place a 3 position header at both Delete the 8 position header. The two 3\nplace a 8 position header. top and bottom of the 8 position. position headers are now 17.78mm (0.7”)\napart from each other.\n1.05mm Ø 17.78mm\n(0.7\")\n73"
+  },
+  {
+    "faiss_index_id": 97,
+    "text": "apart from each other.\n1.05mm Ø 17.78mm\n(0.7\")\n73\nCopyright © Atlas Scientific LLCDatasheet change log\nDatasheet V 6.1\nRevised electrical isolation section on page 7.\nDatasheet V 6.0\nRevised entire document.\nDatasheet V 5.9\nRevised naming device info on pages 32 & 58.\nDatasheet V 5.8\nRevised calibration info and art on pages 11 & 12.\nDatasheet V 5.7\nAdded new command:\n\"Extended pH Scale\" pages 30 (UART) & 56 (I2C).\nDatasheet V 5.6\nRevised information on the slope command found on pages 29 & 54."
+  },
+  {
+    "faiss_index_id": 98,
+    "text": "Datasheet V 5.5\nRevised artwork within datasheet.\nDatasheet V 5.4\nMoved the Default state to pg 14.\nDatasheet V 5.3\nRevised response for the sleep command in UART mode on pg 35.\nDatasheet V 5.2\nRevised calibration theory on page 11, and added more information on the Export\ncalibration and Import calibration commands.\nDatasheet V 5.1\nRevised isolation schematic on pg 10.\n74\nCopyright © Atlas Scientific LLCDatasheet V 5.0\nAdded more information about temperature compensation on pages 29 & 53."
+  },
+  {
+    "faiss_index_id": 99,
+    "text": "Datasheet V 4.9\nChanged \"Max rate\" to \"Response time\" on cover page.\nDatasheet V 4.8\nAdded new command:\n\"RT,n\" for Temperature compensation located on pages 29 (UART) & 53 (I2C).\nAdded firmware information to Firmware update list.\nDatasheet V 4.7\nRemoved note from certain commands about firmware version.\nDatasheet V 4.6\nAdded information to calibration theory on pg 7.\nDatasheet V 4.5\nRevised definition of response codes on pg 44.\nDatasheet V 4.4\nAdded resolution range to cover page."
+  },
+  {
+    "faiss_index_id": 100,
+    "text": "Added resolution range to cover page.\nDatasheet V 4.3\nRevised isolation information on pg 9.\nDatasheet V 4.2\nRevised Plock pages to show default value.\nDatasheet V 4.1\nAdded new commands:\n\"Find\" pages 23 (UART) & 46 (I2C).\n\"Export/Import calibration\" pages 27 (UART) & 49 (I2C).\nAdded new feature to continous mode \"C,n\" pg 24.\nDatasheet V 4.0\nAdded accuracy range on cover page, and revised isolation info on pg. 10.\nDatasheet V 3.9\nRevised calibration theory on pg. 7.Datasheet V 3.8"
+  },
+  {
+    "faiss_index_id": 101,
+    "text": "Revised entire datasheet.Firmware updates\nV1.5 – Baud rate change (Nov 6, 2014)\n• Change default baud rate to 9600\nV1.6 – I2C bug (Dec 1, 2014)\n• Fixed I2C bug where the circuit may inappropriately respond when other I2C devices\nare connected.\nV1.7 – Factory (April 14, 2015)\n• Changed “X” command to “Factory”\nV1.95 – Plock (March 31, 2016)\n• Added protocol lock feature “Plock”\nV1.96 – EEPROM (April 26, 2016)\n• Fixed bug where EEPROM would get erased if the circuit lost power 900ms\ninto startup"
+  },
+  {
+    "faiss_index_id": 102,
+    "text": "into startup\nV1.97 – EEPROM (Oct 10, 2016)\n• Added the option to save and load calibration.\nV1.98 – EEPROM (Nov 14, 2016)\n• Fixed bug during calibration process.\nV2.10 – (May 9, 2017)\n• Added \"Find\" command.\n• Added \"Export/import\" command.\n• Modified continuous mode to be able to send readings every \"n\" seconds.\nV2.11 – (June 12, 2017)\n• Fixed \"I\" command to return \"pH\" instead of \"PH\".\nV2.12 – (April 16, 2018)\n• Fixed “cal,clear” was not clearing stored calibration in EEPROM."
+  },
+  {
+    "faiss_index_id": 103,
+    "text": "• Added “RT” command to Temperature compensation.\nV2.13 – (June 25, 2019)\n• Added calibration offset to slope.\n• Added calibration with temperature compensation.\nV2.14 – (June 10, 2020)\n• Added extended pH scale.\nv2.15 – (Nov 3, 2021)\n• Internal update for new part compatibility.\nv2.16 – (Nov 19, 2021)\n• Fixed bug in I2C mode with timing and sleep mode.v2.17 – (July 6, 2023)\n• Improved sleep mode\n78\nCopyright © Atlas Scientific LLCWarranty"
+  },
+  {
+    "faiss_index_id": 104,
+    "text": "78\nCopyright © Atlas Scientific LLCWarranty\nAtlas Scientific™ Warranties the EZO™ class pH circuit to be free of defect during the\ndebugging phase of device implementation, or 30 days after receiving the EZO™class pH\ncircuit (which ever comes first).\nThe debugging phase\nThe debugging phase as defined by Atlas Scientific™ is the time period when the EZO™\nclass pH circuit is inserted into a bread board, or shield. If the EZO™ class pH circuit is"
+  },
+  {
+    "faiss_index_id": 105,
+    "text": "being debugged in a bread board, the bread board must be devoid of other components. If\nthe EZO™ class pH circuit is being connected to a microcontroller, the microcontroller must\nbe running code that has been designed to drive the EZO™ class pH circuit exclusively and\noutput the EZO™ class pH circuit data as a serial string.\nIt is important for the embedded systems engineer to keep in mind that the following\nactivities will void the EZO™ class pH circuit warranty:"
+  },
+  {
+    "faiss_index_id": 106,
+    "text": "• Soldering any part of the EZO™ class pH circuit.\n• Running any code, that does not exclusively drive the EZO™ class pH circuit and\noutput its data in a serial string.\n• Embedding the EZO™ class pH circuit into a custom made device.\n• Removing any potting compound.\n79\nCopyright © Atlas Scientific LLC\nr 0.1Reasoning behind this warranty\nBecause Atlas Scientific™ does not sell consumer electronics; once the device has been"
+  },
+  {
+    "faiss_index_id": 107,
+    "text": "embedded into a custom made system, Atlas Scientific™ cannot possibly warranty the EZO™\nclass pH circuit, against the thousands of possible variables that may cause the EZO™ class\npH circuit to no longer function properly.\nPlease keep this in mind:\n1. All Atlas Scientific™ devices have been designed to be embedded into a custom\nmade system by you, the embedded systems engineer.\n2. All Atlas Scientific™ devices have been designed to run indefinitely without\nfailure in the field."
+  },
+  {
+    "faiss_index_id": 108,
+    "text": "failure in the field.\n3. All Atlas Scientific™ devices can be soldered into place, however you do so at your\nown risk.\nAtlas Scientific™ is simply stating that once the device is being used in your application,\nAtlas Scientific™ can no longer take responsibility for the EZO™ class pH circuits continued\noperation. This is because that would be equivalent to Atlas Scientific™ taking responsibility\nover the correct operation of your entire device.\n80\nCopyright © Atlas Scientific LLC\nr 0.1"
+  }
+]

@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component IIS2MDCTR have a minimum operating temperature of -40\u00b0C according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The component IIS2MDCTR is described in the netlist as having a temperature range of -40 to +85\u00b0C, which is standard for this STMicroelectronics MEMS magnetometer.",
+        "is_final": true
+    }
+}

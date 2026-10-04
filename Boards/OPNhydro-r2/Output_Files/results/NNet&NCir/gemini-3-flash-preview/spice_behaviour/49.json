@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /vselph maintain a voltage of 0V for the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net /vselph is connected to the /VpH supply through resistor R20 (16.9k) and to ground through R22 (10k), forming a voltage divider that results in a non-zero steady-state voltage.",
+        "is_final": true
+    }
+}

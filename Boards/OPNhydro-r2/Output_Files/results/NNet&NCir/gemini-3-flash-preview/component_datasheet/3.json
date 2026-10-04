@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ATLAS_EZO_EC have a maximum operating voltage of 5V according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The component ATLAS_EZO_EC (EZO-EC) is specified in the design as having a VCC power input typically operating at 3.3V to 5V, consistent with Atlas Scientific EZO platform standards.",
+        "is_final": true
+    }
+}

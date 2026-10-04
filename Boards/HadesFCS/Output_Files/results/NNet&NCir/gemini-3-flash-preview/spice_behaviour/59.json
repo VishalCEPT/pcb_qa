@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the boot0_fcc signal maintain a voltage of 0V during the entire simulation?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The netlist and SPICE file show BOOT0_FCC is connected to Net-_SW2-C_ via R22, and since SW2 is a jumper switch with pin 2 connected to GND, the signal remains at 0V throughout the simulation.",
+        "is_final": true
+    }
+}

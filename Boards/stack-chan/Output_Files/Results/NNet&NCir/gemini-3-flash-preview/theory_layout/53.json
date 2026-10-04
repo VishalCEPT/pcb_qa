@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component R14 connected to TTL?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist and SPICE file, R14 pin 1 is connected to the net named /TTL.",
+        "is_final": true
+    }
+}

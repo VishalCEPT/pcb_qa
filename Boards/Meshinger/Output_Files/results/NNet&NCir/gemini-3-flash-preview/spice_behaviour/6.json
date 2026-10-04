@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Is the +3.3V power rail stable at approximately 3.3V throughout the simulation?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The SPICE netlist includes a direct DC voltage source 'V_3V3' that fixes the +3.3V node to exactly 3.3V throughout the transient simulation.",
+        "is_final": true
+    }
+}

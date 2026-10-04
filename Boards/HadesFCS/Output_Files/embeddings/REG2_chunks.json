@@ -1,0 +1,262 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "LD39200\nDatasheet\n2 A high PSRR ultra low drop linear regulator with reverse current protection\nFeatures\n• Input voltage from 1.25 V to 6.0 V\n• Ultra low drop: 130 mV (typ.) at 2 A load\n• 1 % output accuracy at 25 °C, 2 % in full temperature range\n• High PSRR: 70 dB at 1 kHz\n• Reverse current protection\n• 2 A guaranteed output current\n• Available in fixed and adjustable output voltage version from 0.5 V with 100 mV\nstep\n• Power Good\n• Internal current and thermal limit"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "• Power Good\n• Internal current and thermal limit\n• Operating junction temperature range: -40 °C to 125 °C\n• DFN6 (3 x 3 mm) and DFN8 (4 x 4 mm) packages\nApplications\n• Telecom infrastructure\n• Medium power POL\nDescription\nThe LD39200 provides 2 A of maximum current with an input voltage range from 1.25\nV to 6.0 V, and a typical dropout voltage of 130 mV.\nMaturity status link\nIt is stable with ceramic capacitors on the output (10 µF).\nLD39200"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "LD39200\nTypical power supply rejection ratio is 70 dB at 1 kHz and starts to roll off at 20 kHz.\nThe enable logic control function puts the LD39200 in shutdown mode, reducing the\ntotal current consumption to 10 nA (typ.).\nPower Good flag is available on a dedicated pin.\nThe device also includes reverse current protection, short-circuit constant current\nlimit and thermal protection.\nTypical applications are for Telecom infrastructure and consumer.\nDS10079 - Rev 3 - September 2018 www.st.com"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "DS10079 - Rev 3 - September 2018 www.st.com\nFor further information contact your local STMicroelectronics sales office.LD39200\nBlock diagram\n1 Block diagram\nFigure 1. Block diagram\nVIN\nPower good\nVREF\nPG\nVFB\nBandgap R1 RC filter\nreference 500mV 500mV Reverse\ncurrent\nprotection\nOPAMP\nR2 VFB\nPMOS\nVOUT\nR3\nInternal\nEN enable\nEnable\nR4\nAM13907V1\nDS10079 - Rev 3 page 2/29LD39200\nPin configuration and description\n2 Pin configuration and description\nFigure 2. Pin configuration (top view)\nOUT IN\nOUT IN"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "OUT IN\nOUT IN\nOUT IN\nADJ/SENSE EN\nADJ/SENSE EN\nGND PG\nGND PG\nAM13909V1\nTable 1. DFN6 (3 x 3 mm) package pin description\nPin name Pin number Description\nIN 6 Input voltage\nGND 3 Ground\nEN 5 Enable pin. The device is in OFF state when this pin is pulled low\nAdjustable pin on ADJ version can be connected to external resistor divider to set the output\nADJ/sense (1) 2 voltage.\nOutput sense pin on the fixed version has to be connected to VOUT\nOUT 1 Output voltage\nPG 4 Power Good"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "OUT 1 Output voltage\nPG 4 Power Good\nGND Exposed pad Exposed pad should be connected to GND\n1. The output sense pin of the fixed version has to be connected to the output pin for proper operation.\nTable 2. DFN8 (4 x 4 mm) package pin description\nPin name Pin number Description\nIN (1) 7, 8 Input voltage\nGND 4 Ground\nEN 6 Enable pin. The device is in OFF state when this pin is pulled low\nAdjustable pin on ADJ version can be connected to external resistor divider to set the output"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "ADJ/sense (2) 3 voltage.\nOutput sense pin on the fixed version has to be connected to VOUT\nOUT (3) 1, 2 Output voltage\nPG 5 Power Good\nGND Exposed pad Exposed pad should be connected to GND\n1. Both of input pins have to be connected together on the board.\n2. The output sense pin of the fixed version has to be connected to the OUT pin for proper operation.\n3. Both of output pins have to be connected together on the board.\nDS10079 - Rev 3 page 3/29LD39200\nTypical application\n3 Typical application"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "Typical application\n3 Typical application\nFigure 3. LD39200 typical application schematic\nIN OUT IN OUT\nCIN LD39200 COUT R1 CBYP CIN LD39200 COUT\n(optional)\nEN ADJ EN SENSE\nON GND PG R2 ON GND PG\nOFF OFF\nAdjustable version Fixed version\nAM13909V1\nNote: R1 and R2 are calculated according to the following formula: R1 = R2 x (V / V - 1). Recommended value\nOUT ADJ\nfor C and C is 10 μF.\nIN OUT\nDS10079 - Rev 3 page 4/29LD39200\nMaximum ratings\n4 Maximum ratings\nTable 3. Absolute maximum ratings"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "Table 3. Absolute maximum ratings\nSymbol Parameter Value Unit\nVIN Input supply voltage -0.3 to 7 V\nVADJ Adjustable voltage -0.3 to 2 V\nVOUT /VSENSE Output voltage/output sense voltage -0.3 to 7 V\nIOUT Output current Internally limited A\nEN Enable pin voltage -0.3 to 7 V\nPG Power Good pin voltage -0.3 to 7 V\nPD Power dissipation Internally limited W\nCharge device model ±500\nESD V\nHuman body model ±2000\nTJ-OP Operating junction temperature -40 to 125 °C\nTJ-MAX Maximum junction temperature 150 °C"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "TJ-MAX Maximum junction temperature 150 °C\nTSTG Storage temperature -55 to 150 °C\nNote: Absolute maximum ratings are those values beyond which damage to the device may occur. Functional\noperation under these conditions is not implied.\nTable 4. Thermal data\nSymbol Parameter DFN6 (3 x 3 mm) DFN8 (4 x 4 mm) Unit\nRTHJC Junction-to-case thermal resistance 10 4\n°C/W\nRTHJA Junction-to- ambient thermal resistance 55 40\nDS10079 - Rev 3 page 5/29LD39200\nElectrical characteristics"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "Electrical characteristics\n5 Electrical characteristics\n(T = 25 °C, V = V +1 V; V = V ; C = 10 µF; C = 10 µF; I = 10 mA; V = V )\nJ IN OUT OUT ADJ IN OUT OUT EN IN\nTable 5. Electrical characteristics, adjustable version\nSymbol Parameter Test conditions Min. Typ. Max. Unit\nOperating input voltage\nVIN\nrange\n1.25 6.0 V\nAdjustable pin voltage 0.5 V\nVADJ\nAdjustable pin voltage\nTJ = 25 °C -1.0 1.0\n%\naccuracy\n-40 °C < TJ < 125 °C -2.0 2.0\nIADJ Adjustable pin current -40 °C < TJ < 125 °C 100 nA"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "∆VADJ%/ VOUT + 1 V < VIN < 6.0 V; TJ = 25 °C 0.01\nStatic line regulation %/V\n∆VIN\n-40 °C < TJ < 125 °C 0.2\n∆VADJ%/ 0 mA < IOUT < 2 A; TJ = 25 °C 0.1\nStatic load regulation %/A\n∆IOUT\n-40 °C < TJ < 125 °C 0.4\nVIN = 1.4 V; IOUT = 1 A;\n120 250\n-40 °C < TJ < 125 °C\nVIN = 2.5 V; IOUT = 2 A;\nVDROP Dropout voltage (1) 135 250 mV\n-40 °C < TJ < 125 °C\nVIN = 5.3 V; IOUT = 2 A;\n110 250\n-40 °C < TJ < 125 °C\nVOUT = VADJ ; µVRMS /\neN Output noise voltage 45\nf = 10 Hz to 100 kHz\nVOUT"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "f = 10 Hz to 100 kHz\nVOUT\nVIN = VOUT + 0.4 V, IOUT = 700 mA;\nCIN = COUT = 10 µF, R2 = 10 kΩ,\neN Output noise voltage\nR1 = (VOUT – 0.5) x 20 kΩ,\n24 µVRMS\nCbyp = 470 nF\nVOUT = 1.8 V; VIN = VOUT+0.5 V;\nCOUT = 10 µF; IOUT = 10 mA; 70\nTJ = 25 °C; f = 1 kHz\ndB\nVOUT = 1.8 V; VIN = VOUT + 0.5 V;\nCOUT = 10 µF; IOUT = 10 mA; 50\nTJ = 25 °C; f = 100 kHz\nSVR Supply voltage rejection\nVOUT = 1.8 V; VIN = VOUT + 0.5 V;\nCOUT = 10 µF; IOUT = 10 mA; 50\nTJ = 25 °C; f = 500 kHz\ndB\nVOUT = 1.8 V; VIN = VOUT + 0.5 V;"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "dB\nVOUT = 1.8 V; VIN = VOUT + 0.5 V;\nCOUT = 10 µF; IOUT = 10 mA; 40\nTJ = 25 °C; f = 1 MHz\nDS10079 - Rev 3 page 6/29LD39200\nElectrical characteristics\nSymbol Parameter Test conditions Min. Typ. Max. Unit\nIOUT = 0 A 100 µA\nIOUT = 0 A; -40 °C < TJ < 125 °C 300\nQuiescent current\nIQ IOUT = 2 A; 1 mA\nIOUT = 2 A; -40 °C < TJ < 125 °C 3\nShutdown current Ven = 0, Vin = 6 V 10 nA\nISC Short-circuit current VOUT = 0 V 3.5 A\nIMIN Minimum output current 0 A\nEnable input logic low 1.25 V < VIN < 6.0 V 0.5"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "Enable input logic low 1.25 V < VIN < 6.0 V 0.5\nVEN V\nEnable input logic high -40 °C < TJ < 125 °C 1.2\nIEN Enable pin input current VEN = VIN; 1.25 < VIN < 6.0 V 10 nA\nPower Good output\nRising edge 0.92* Vout\nthreshold\nPG\nFalling edge 0.8*Vout\nV\nPower Good output voltage\nIsink = 6 mA open drain output 0.4\nlow\nThermal shutdown 170\nTSHDN °C\nHysteresis 20\n1. Dropout voltage is the input-to-output voltage difference at which the output voltage is 100 mV below its nominal value; this"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "specification does not apply to nominal output voltages below 1.2 V.\n(T = 25 °C, V = V +1 V; C = 10 µF; C = 10 µF; I = 10 mA; V = V )\nJ IN OUT IN OUT OUT EN IN\nTable 6. Electrical characteristics, fixed version\nSymbol Parameter Test conditions Min. Typ. Max. Unit\nVIN Operating input voltage range 1.25 6.0 V\nTJ = 25 °C -1.0 1.0\nVOUT Output voltage accuracy %\n-40 °C < TJ < 125 °C -2.0 2.0\nVOUT + 1 V < VIN < 6.0 V;\n∆VADJ%/\nStatic line regulation TJ = 25 °C\n0.01\n%/V\n∆VIN\n-40 °C < TJ < 125 °C 0.1"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "0.01\n%/V\n∆VIN\n-40 °C < TJ < 125 °C 0.1\n∆VADJ%/ 0 mA < IOUT < 2 A; TJ = 25 °C 0.05\nStatic load regulation %/A\n∆IOUT\n-40 °C < TJ < 125 °C 0.4\nVOUT = 3.3 V; IOUT = 2 A;\nVDROP Dropout voltage 130 250 mV\n-40 °C < TJ < 125 °C\neN Output noise voltage VOUT = 2.5 V; f = 10 Hz to 100 kHz 40 µ\n/V\nV\nO\nR\nU\nM\nT\nS\nDS10079 - Rev 3 page 7/29LD39200\nElectrical characteristics\nSymbol Parameter Test conditions Min. Typ. Max. Unit\nVOUT = 1.8 V; VIN = VOUT + 0.5 V;\nCOUT = 10 µF; IOUT = 10 mA; 70"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "COUT = 10 µF; IOUT = 10 mA; 70\nTJ = 25 °C; f = 1 kHz\nVOUT = 1.8 V; VIN = VOUT + 0.5 V;\nCOUT = 10 µF; IOUT = 10 mA; 50\nTJ = 25 °C; f = 100 kHz\nSVR Supply voltage rejection dB\nVOUT = 1.8 V; VIN = VOUT + 0.5 V;\nCOUT = 10 µF; IOUT = 10 mA; 50\nTJ = 25 °C; f = 500 kHz\nVOUT = 1.8 V; VIN = VOUT + 0.5 V;\nCOUT = 10 µF; IOUT = 10 mA; 40\nTJ = 25 °C; f = 1 MHz\nIOUT = 0 A 100 µA\nIOUT = 0 A; -40 °C < TJ < 125 °C 300\nQuiescent current\nIQ IOUT = 2 A; 1 mA\nIOUT = 2 A; -40 °C < TJ < 125 °C 3"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "IOUT = 2 A; -40 °C < TJ < 125 °C 3\nShutdown current Ven = 0, Vin = 6 V 50 nA\nISC Short-circuit current VOUT = 0 V 3.5 A\nIMIN Minimum output current 0 A\nEnable input logic low 1.25 V < VIN < 6.0 V 0.5\nVEN V\nEnable input logic high -40 °C < TJ < 125 °C 1.2\nIEN Enable pin input current VEN = VIN; 1.25 < VIN < 6.0 V 10 nA\nRising edge 0.92*VOUT\nPower Good output threshold\nPG\nFalling edge 0.8*VOUT\nV\nPower Good output voltage\nIsink = 6 mA open drain output 0.4\nlow\nThermal shutdown 170\nTSHDN °C"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "low\nThermal shutdown 170\nTSHDN °C\nHysteresis 20\nDS10079 - Rev 3 page 8/29LD39200\nApplication information\n6 Application information\n6.1 Thermal and short-circuit protections\nThe LD39200 is self-protected from short-circuit conditions and overtemperature. When the output load is higher\nthan the one supported by the device, the output current rises until the limit of typically 3.5 A is reached; at this"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "point the current is kept constant even when the load impedance is zero. The thermal protection acts when the\njunction temperature reaches 170 °C. The IC enters the shutdown status. As soon as the junction temperature\nfalls again below 150 °C the device starts working again. In order to calculate the maximum power the device can\ndissipate, keeping the junction temperature below T , the following formula is used:\nJ-OP\n(1)\nPDMAX= 125− TAMB /RTHJ−A\n6.2 Output voltage setting for ADJ version"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "6.2 Output voltage setting for ADJ version\nIn the adjustable version, the output voltage can be set from 0.5 V up to the input voltage minus the voltage drop\nacross the pass transistor (dropout voltage), by connecting a resistor divider between the ADJ pin and the output,\nallowing remote voltage sensing. The resistor divider can be selected using the following equation:\n(2)\nVOUT= VADJ 1+ R1/R2 ,witℎVADJ= 0.5V typ.\n6.3 Enable pin"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "6.3 Enable pin\nThe LD39200 features an enable function. When the EN voltage is higher than 1.2 V the device is ON, and if it is\nlower than 0.5 V the device is OFF. In shutdown mode, the total current consumption is 10 nA (typ). The EN pin\ndoes not have an internal pull-up, therefore it cannot be left floating if it is not used.\n6.4 Power Good pin (PG)\nSome applications require a flag showing that the output voltage is in the correct range. Power Good threshold"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "depends on the output voltage. When the output voltage is higher than 0.92 * V , the PG pin goes to high\nOUT(nom)\nimpedance. If the output voltage is below 0.80 * V the PG pin goes to low impedance. If the device works\nOUT(nom)\nwell, the PG pin is at high impedance.\n6.5 Reverse current protection\nThe device avoids the reverse current to flow from the output to the input during any operating condition (EN = 0"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "or EN = 1, V > V + V ). During fast turn-on/off this function prevents a big current from flowing to the\nIN OUT DROP\ninput. Moreover it is used to avoid the reverse current to flow from the output pin to the input one, when other\npower supplies, providing a voltage higher than the input voltage, are connected to the output pin. If a power\nsupply, providing a voltage lower than LDO output voltage, is connected to OUT pin, LDO works in current"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "protection, causing high power dissipation inside the device.\nWhen the device is disabled (EN = low) and V > 0 V, a small current (few µA) is sunk from the OUT pin.\nOUT\nDS10079 - Rev 3 page 9/297 Typical performance characteristics\n(The following plots are referred to the typical application circuit and, unless otherwise noted, at T = 25 °C)\nA\nFigure 4. Dropout voltage vs. temperature\n(Vin = 1.3 V, Iout = 1 A)\n250\n200\n150\n100\n50\n0\n-40 -25 0 25 55 85 125\nVm"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "250\n200\n150\n100\n50\n0\n-40 -25 0 25 55 85 125\nVm\nFigure 5. Dropout voltage vs. temperature\n(Vin = 1.4 V, Iout = 1 A)\n250\n200\n150\n100\n50\n0\n-40 -25 0 25 55 85 125\nTemperature ºC\nAM13910V1 AM13911V1\nVm\nTemperature ºC\nFigure 6. Dropout voltage vs. temperature\n(Vin = 1.4 V, Iout = 2 A)\n500\n450\n400\n350\n300\n250\n200\n150\n100\n50\n0\n-40 -25 0 25 55 85 125\nAM13912V1\nVm\nFigure 7. Dropout voltage vs. temperature\n(Vin = 1.5 V, Iout = 1 A)\n250\n200\n150\n100\n50\n0\n-40 -25 0 25 55 85 125\nTemperature ºC\nAM13913V1\nVm"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "Temperature ºC\nAM13913V1\nVm\nLD39200\nTypical performance characteristics\nTemperature ºC\nDS10079 - Rev 3 page 10/29Figure 8. Dropout voltage vs. temperature\n(Vin = 1.5 V, Iout = 2 A)\n500\n450\n400\n350\n300\n250\n200\n150\n100\n50\n0\n-40 -25 0 25 55 85 125\nAM13914V1\nVm\nFigure 9. Dropout voltage vs. temperature\n(Vin = 2.5 V, Iout = 1 A)\n140\n120\n100\n80\n60\n40\n20\n0\n-40 -25 0 25 55 85 125\nTemperature ºC\nAM13915V1\nVm\nTemperature ºC\nFigure 10. Dropout voltage vs. temperature\n(Vin = 2.5 V, Iout = 2 A)\n300\n250\n200"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "(Vin = 2.5 V, Iout = 2 A)\n300\n250\n200\n150\n100\n50\n0\n-40 -25 0 25 55 85 125\nAM13916V1\nVm\nFigure 11. Reference voltage vs. temperature\n(Vin = 1.5 V, Iout = 10 mA)\n0.55\n0.53\n0.51\n0.49\n0.47\n0.45\n-40 -25 0 25 55 85 125\nTemperature ºC\nAM13917V1\n]V[jdaV\nTemperature ºC\nFigure 12. Quiescent current vs. temperature\n(Vin = 1.5 V, Iout = 0 mA)\n0.3\n0.25\n0.2\n0.15\n0.1\n0.05\n0\n-40 -25 0 25 55 85 125\nAM13918V1\n]Am[\ntnerruc\ntnecseiuQ\nFigure 13. Quiescent current vs. temperature\n(Vin = 1.5 V, Iout = 2 A)\n2\n1.8\n1.6"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "(Vin = 1.5 V, Iout = 2 A)\n2\n1.8\n1.6\n1.4\n1.2\n1\n0.8\n0.6\n0.4\n0.2\n0\n-40 -25 0 25 55 85 125\nTemperature ºC\nAM13919V1\n]Am[\ntnerruc\ntnecseiuQ\nLD39200\nTypical performance characteristics\nTemperature ºC\nDS10079 - Rev 3 page 11/29Figure 14. Quiescent current vs. output current\n1.4\n1.2\n1\n0.8\n0.6\n0.4\n0.2\n0\n0 1 10 100 500 1000 1250 1500 1750 2000\nAM13920V2\n]Am[\ntnerruc\ntnecseiuQ\nFigure 15. Line regulation vs. temperature\n(1.5 V ≤ Vin ≤ 6 V, Iout = 10 mA)\n0.1\n0.09\n0.08\n0.07\n0.06\n0.05\n0.04\n0.03\n0.02\n0.01\n0"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "0.09\n0.08\n0.07\n0.06\n0.05\n0.04\n0.03\n0.02\n0.01\n0\n-40 -25 0 25 55 85 125\nOutput current [mA]\nAM13920V1\n]V/%[\nnoitaluger\neniL\nTemperature ºC\nFigure 16. Load regulation vs. temperature\n(Vin = 1.5 V, 0 < Iout < 2 A)\n0.5\n0.45\n0.4\n0.35\n0.3\n0.25\n0.2\n0.15\n0.1\n0.05\n0\n-40 -25 0 25 55 85 125\nAM13921V1\n]A/%[\nnoitaluger\ndaoL\nFigure 17. SVR vs. frequency\n100.0\n90.0\n80.0\n70.0\n60.0\n50.0\n40.0\n30.0\n20.0\n10.0\n0.0\n100 1000 10000 100000 1000000\nTemperature ºC\nAM13922V1\n]Bd[\nRVS\nVIN = 2.3V + Vripple"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "AM13922V1\n]Bd[\nRVS\nVIN = 2.3V + Vripple\nVIN = 4.0V + Vripple\nf [Hz]\nFigure 18. Noise spectral density (no Cbyp)\n10.0\n9.0\n8.0\n7.0\n6.0\n5.0\n4.0\n3.0\n2.0\n1.0\n0.0\n10 100 1000 10000 100000\nAM13923V1\n])zH(TRQS/Vu[\nNe\nFigure 19. Noise spectral density (Cbyp = 470 nF)\n10.0\nVIN = 1.6V VOUT = 1.2V CBP = 0 ILOAD = 0.7A\nVIN = 3.7V VOUT = 3.3V CBP = 0 ILOAD = 0.7A 9.0\nVIN = 5.4V VOUT = 5.0V CBP = 0 ILOAD = 0.7A\n8.0\n7.0\n6.0\n5.0\n4.0\n3.0\n2.0\n1.0\n0.0\n10 100 1000 10000 100000\nf [Hz]\nAM13924V1\n])zH(TRQS/Vu[\nNe"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "f [Hz]\nAM13924V1\n])zH(TRQS/Vu[\nNe\nLD39200\nTypical performance characteristics\nVIN = 1.6V VOUT = 1.2V CBP = 470nF ILOAD = 0.7A\nVIN = 3.7V VOUT = 3.3V CBP = 470nF ILOAD = 0.7A\nVIN = 5.4V VOUT = 5.0V CBP = 470nF ILOAD = 0.7A\nf [Hz]\nDS10079 - Rev 3 page 12/29Figure 20. Stability plan\n10\n1\n0.1\n0.01\n0 1 2 3 4 5 6 7 8 9 1011121314151617181920212223\nAM13925V1\n]Ω[zHK001\n@\nRSE\nLD39200\nTypical performance characteristics\nFigure 21. Enable startup, Vin = 1.25 V, Iout = 2 A\nSTABILITY AREA"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "STABILITY AREA\nCOUT [µF] (nominal value)\nFigure 22. Enable startup, Vin = 6 V, Iout = 2 A Figure 23. Enable startup, no Cbyp\nV\nOUT\nV\nEN\nVIN = 3.7 V, VEN = from 0 to 2 V, IOUT = 100 mA, VOUT = 3.3 V, CIN = COUT = 10 µF, CBYP = 0\nGIPG080420141550MT\nFigure 25. Line transient\nFigure 24. Enable startup, Cbyp = 470 nF\nV\nOUT\nV\nEN\nV\nIN\nV\nOUT\nVIN = 3.7 V, VOUT = 3.3 V, VEN = from 0 to 2V, IOUT = 100 mA, CIN = COUT = 10 µF, CBYP = 470"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "VIN = VEN = from 1.5 to 5.5 V, IOUT = 10 mA, NO CIN = COUT = 10 µF, TRISE = TFALL = 10 µs\nGIPG080420141552MT\nGIPG140420141401MT\nDS10079 - Rev 3 page 13/29LD39200\nTypical performance characteristics\nFigure 27. Load transient, Cbyp = 470 nF\nFigure 26. Load transient, no Cbyp\nV\nV OUT\nOUT\nV\nIN\nV\nIN\nVIN = 3.7 V, VOUT = 3.3 V, ILOAD = 10 mA to 2 A, CBYP = 470 nF\nVIN = 3.7 V, VOUT = 3.3 V, ILOAD = 10 mA to 2 A, CBYP = 0\nGIPG140420141403MT\nGIPG140420141405MT\nDS10079 - Rev 3 page 14/29LD39200"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "DS10079 - Rev 3 page 14/29LD39200\nPackage mechanical data\n8 Package mechanical data\nIn order to meet environmental requirements, ST offers these devices in different grades of ECOPACK®\npackages, depending on their level of environmental compliance. ECOPACK® specifications, grade definitions\nand product status are available at: www.st.com. ECOPACK® is an ST trademark.\nDS10079 - Rev 3 page 15/29LD39200\nDFN6 (3 x 3 mm) mechanical data\n8.1 DFN6 (3 x 3 mm) mechanical data"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "8.1 DFN6 (3 x 3 mm) mechanical data\nFigure 28. DFN6 (3 x 3 mm) package outline\n7946637_C\nDS10079 - Rev 3 page 16/29LD39200\nDFN6 (3 x 3 mm) mechanical data\nTable 7. DFN6 (3 x 3 mm) mechanical data\nmm\nDim.\nMin. Typ. Max.\nA 0.80 1\nA1 0 0.02 0.05\nA3 0.20\nb 0.23 0.45\nD 2.90 3 3.10\nD2 2.23 2.50\nE 2.90 3 3.10\nE2 1.50 1.75\ne 0.95\nL 0.30 0.40 0.50\nFigure 29. DFN6 (3 x 3 mm) recommended footprint (all dimensions are in mm)\n7946637_C\nDS10079 - Rev 3 page 17/29LD39200"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "7946637_C\nDS10079 - Rev 3 page 17/29LD39200\nDFN6 (3 x 3 mm) tape and reel mechanical data\n8.2 DFN6 (3 x 3 mm) tape and reel mechanical data\nFigure 30. DFN6 (3 x 3 mm) tape outline\n7875978_N\nDS10079 - Rev 3 page 18/29LD39200\nDFN6 (3 x 3 mm) tape and reel mechanical data\nFigure 31. DFN6 (3 x 3 mm) reel outline\n7875978_N\nTable 8. DFN6 (3 x 3 mm) tape and reel mechanical data\nmm\nDim.\nMin. Typ. Max.\nA0 3.20 3.30 3.40\nB0 3.20 3.30 3.40\nK0 1 1.10 1.20\nDS10079 - Rev 3 page 19/29LD39200"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "K0 1 1.10 1.20\nDS10079 - Rev 3 page 19/29LD39200\nDFN8 (4 x 4 mm) mechanical data\n8.3 DFN8 (4 x 4 mm) mechanical data\nFigure 32. DFN8 (4 x 4 mm) package outline\nDS10079 - Rev 3 page 20/29LD39200\nDFN8 (4 x 4 mm) mechanical data\nTable 9. DFN8 (4 x 4 mm) mechanical data\nmm\nDim.\nMin. Typ. Max.\nA 0.80 0.90 1\nA1 0 0.02 0.05\nA3 0,20\nb 0.23 0.30 0.38\nD 3.90 4 4.10\nD2 2.82 3 3.23\nE 3.90 4 4.10\nE2 2.05 2.20 2.30\ne 0.80\nL 0.40 0.50 0.60"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "E2 2.05 2.20 2.30\ne 0.80\nL 0.40 0.50 0.60\nFigure 33. DFN8 (4 x 4 mm) recommended footprint (all dimensions are in mm)\nAM11889v1\nDS10079 - Rev 3 page 21/29LD39200\nDFN8 (4 x 4 mm) reel mechanical data\n8.4 DFN8 (4 x 4 mm) reel mechanical data\nFigure 34. DFN8 (4 x 4 mm) tape outline (all dimensions are in mm)\n7279936\nDS10079 - Rev 3 page 22/29LD39200\nDFN8 (4 x 4 mm) reel mechanical data\nFigure 35. DFN8 (4 x 4 mm) reel outline\nTable 10. DFN8 (4 x 4 mm) reel mechanical data\nmm\nDim.\nMin. Typ. Max."
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "mm\nDim.\nMin. Typ. Max.\nA 330\nC 12.8 13.0 13.2\nD 20.2\nN 60\nT 22.4\nDS10079 - Rev 3 page 23/29LD39200\nOrdering information\n9 Ordering information\nTable 11. Order codes\nDFN6 (3 x 3 mm) DFN8 (4 x 4 mm) Output voltage\nLD39200PUR LD39200DPUR ADJ\nLD39200PU33R 3.3 V\nDS10079 - Rev 3 page 24/29LD39200\nRevision history\nTable 12. Document revision history\nDate Revision Changes\n08-Jul-2014 1 Initial release.\nUpdated Table 11: \"Order codes\".\n06-Jul-2017 2\nMinor text changes."
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "06-Jul-2017 2\nMinor text changes.\n17-Sep-2018 3 Updated note Section 3 Typical application.\nDS10079 - Rev 3 page 25/29LD39200\nContents\nContents\n1 Block diagram.....................................................................2\n2 Pin configuration and description..................................................3\n3 Typical application.................................................................4\n4 Maximum ratings ..................................................................5"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "5 Electrical characteristics...........................................................6\n6 Application information............................................................9\n6.1 Thermal and short-circuit protections..............................................9\n6.2 Output voltage setting for ADJ version.............................................9\n6.3 Enable pin ....................................................................9"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "6.4 Power Good pin (PG)...........................................................9\n6.5 Reverse current protection.......................................................9\n7 Typical performance characteristics ..............................................10\n8 Package information..............................................................15\n8.1 DFN6 (3 x 3 mm) package information............................................15"
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "8.2 DFN6 (3 x 3 mm) packing information ............................................17\n8.3 DFN8 (4 x 4 mm) package information............................................19\n8.4 DFN8 (4 x 4 mm) packing information ............................................21\n9 Ordering information .............................................................24\nRevision history .......................................................................25\nDS10079 - Rev 3 page 26/29LD39200\nList of tables"
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "DS10079 - Rev 3 page 26/29LD39200\nList of tables\nList of tables\nTable 1. DFN6 (3 x 3 mm) package pin description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\nTable 2. DFN8 (4 x 4 mm) package pin description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3"
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "Table 3. Absolute maximum ratings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\nTable 4. Thermal data. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\nTable 5. Electrical characteristics, adjustable version . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6"
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "Table 6. Electrical characteristics, fixed version . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7\nTable 7. DFN6 (3 x 3 mm) mechanical data. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17\nTable 8. DFN6 (3 x 3 mm) tape and reel mechanical data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "Table 9. DFN8 (4 x 4 mm) mechanical data. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21\nTable 10. DFN8 (4 x 4 mm) reel mechanical data. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23\nTable 11. Order codes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "Table 12. Document revision history. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25\nDS10079 - Rev 3 page 27/29LD39200\nList of figures\nList of figures\nFigure 1. Block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "Figure 2. Pin configuration (top view) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\nFigure 3. LD39200 typical application schematic . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4\nFigure 4. Dropout voltage vs. temperature (Vin = 1.3 V, Iout = 1 A). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "Figure 5. Dropout voltage vs. temperature (Vin = 1.4 V, Iout = 1 A). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10\nFigure 6. Dropout voltage vs. temperature (Vin = 1.4 V, Iout = 2 A). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10\nFigure 7. Dropout voltage vs. temperature (Vin = 1.5 V, Iout = 1 A). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10"
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "Figure 8. Dropout voltage vs. temperature (Vin = 1.5 V, Iout = 2 A). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11\nFigure 9. Dropout voltage vs. temperature (Vin = 2.5 V, Iout = 1 A). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11\nFigure 10. Dropout voltage vs. temperature (Vin = 2.5 V, Iout = 2 A). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11"
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "Figure 11. Reference voltage vs. temperature (Vin = 1.5 V, Iout = 10 mA) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11\nFigure 12. Quiescent current vs. temperature (Vin = 1.5 V, Iout = 0 mA) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11\nFigure 13. Quiescent current vs. temperature (Vin = 1.5 V, Iout = 2 A). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11"
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "Figure 14. Quiescent current vs. output current . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12\nFigure 15. Line regulation vs. temperature (1.5 V ≤ Vin ≤ 6 V, Iout = 10 mA) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12\nFigure 16. Load regulation vs. temperature (Vin = 1.5 V, 0 < Iout < 2 A). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12"
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "Figure 17. SVR vs. frequency . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12\nFigure 18. Noise spectral density (no Cbyp) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12\nFigure 19. Noise spectral density (Cbyp = 470 nF). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "Figure 20. Stability plan . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13\nFigure 21. Enable startup, Vin = 1.25 V, Iout = 2 A . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13\nFigure 22. Enable startup, Vin = 6 V, Iout = 2 A . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13"
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "Figure 23. Enable startup, no Cbyp . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13\nFigure 24. Enable startup, Cbyp = 470 nF. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13\nFigure 25. Line transient. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "Figure 26. Load transient, no Cbyp. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14\nFigure 27. Load transient, Cbyp = 470 nF . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14\nFigure 28. DFN6 (3 x 3 mm) package outline. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16"
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "Figure 29. DFN6 (3 x 3 mm) recommended footprint (all dimensions are in mm). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17\nFigure 30. DFN6 (3 x 3 mm) tape outline. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18\nFigure 31. DFN6 (3 x 3 mm) reel outline . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19"
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "Figure 32. DFN8 (4 x 4 mm) package outline. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20\nFigure 33. DFN8 (4 x 4 mm) recommended footprint (all dimensions are in mm). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21\nFigure 34. DFN8 (4 x 4 mm) tape outline (all dimensions are in mm). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "Figure 35. DFN8 (4 x 4 mm) reel outline . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23\nDS10079 - Rev 3 page 28/29LD39200\nIMPORTANT NOTICE – PLEASE READ CAREFULLY\nSTMicroelectronics NV and its subsidiaries (“ST”) reserve the right to make changes, corrections, enhancements, modifications, and improvements to ST"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "products and/or to this document at any time without notice. Purchasers should obtain the latest relevant information on ST products before placing orders. ST\nproducts are sold pursuant to ST’s terms and conditions of sale in place at the time of order acknowledgement.\nPurchasers are solely responsible for the choice, selection, and use of ST products and ST assumes no liability for application assistance or the design of\nPurchasers’ products."
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "Purchasers’ products.\nNo license, express or implied, to any intellectual property right is granted by ST herein.\nResale of ST products with provisions different from the information set forth herein shall void any warranty granted by ST for such product.\nST and the ST logo are trademarks of ST. All other product or service names are the property of their respective owners."
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "Information in this document supersedes and replaces information previously supplied in any prior versions of this document.\n© 2018 STMicroelectronics – All rights reserved\nDS10079 - Rev 3 page 29/29"
+  }
+]

@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component R15 connected to Net__LED3_K_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The SPICE netlist explicitly defines a connection between R15 and Net-_LED3-K_ on the same line.",
+        "is_final": true
+    }
+}

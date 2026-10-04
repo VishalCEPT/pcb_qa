@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component AP63203WU have a minimum input voltage of 4V according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The AP63203WU datasheet specifies an operating input voltage range of 3.8V to 32V, with a typical minimum startup voltage of 4V.",
+        "is_final": true
+    }
+}

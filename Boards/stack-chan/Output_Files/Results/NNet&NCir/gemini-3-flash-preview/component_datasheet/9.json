@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component IRLML6402 have a maximum drain voltage of 35V according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The netlist and component description for IRLML6402 specify a Vds (drain-source voltage) of -20V, not 35V.",
+        "is_final": true
+    }
+}

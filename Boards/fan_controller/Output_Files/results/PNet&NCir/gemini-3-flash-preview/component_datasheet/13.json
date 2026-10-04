@@ -1,0 +1,13 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component 1K have a maximum operating temperature of 125\u00b0C according to its datasheet?",
+    "tool_calls": {
+        "arguments": "{\"question\":\"Does the component have a maximum operating temperature of 125\u00b0C?\",\"project_context\":{\"spice_json_file\":\"./outputs/fan_controller/fan_controller.json\",\"circuit_json_file\":\"./outputs/fan_controller/fan_controller.json\",\"datasheet_files\":[\"./outputs/fan_controller/datasheets/R4.pdf\"]},\"component_ref\":\"R4\"}",
+        "name": "get_relevant_context_from_question"
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "The datasheet context specifies that high temperature exposure tests are conducted at the maximum operating temperature, which is defined as +125\u00b0C in the T.C.R. test conditions.",
+        "is_final": true
+    }
+}

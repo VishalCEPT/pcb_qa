@@ -1,0 +1,302 @@
+[
+    {
+        "category": "spice_behaviour",
+        "question": "Does the /txd2 signal maintain a voltage of 0V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component D2 connected to Net__D2_K_?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the /txd2 signal maintain a voltage of 3.3V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component Q2 have flash capabilities according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component R13 connected to Net__J8_Pin_3_?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net-_q2-b_ signal maintain a voltage of 3.3V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U1 have flash capabilities according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net-_q2-b_ signal maintain a voltage of 5V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component Q1 have a maximum drain voltage of 35V according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net-_j5-pin_1_ signal maintain a voltage of 5V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component U1 connected to Net__Q1_G_?",
+        "answer": "NO"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component Q2 have a collector current of -100mA according to its datasheet?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net-_j5-pin_1_ signal maintain a voltage of 0V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component SW1 connected to GND?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U1 have a supply voltage of 10V according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the +3v3 signal maintain a voltage of 0V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component J3 connected to Net__D1_A_?",
+        "answer": "NO"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component Q1 have I2C capabilities according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the +3v3 signal maintain a voltage of 3.3V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component J3 connected to GND?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component Q2 have a collector base voltage of -50V according to its datasheet?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net-_d2-k_ signal maintain a voltage of 3.3V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component Q1 have a maximum drain voltage of -20V according to its datasheet?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component R15 connected to Net__U1_B_?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net-_d2-k_ signal maintain a voltage of 0V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U1 have a transmit rate of 10Mbps according to its datasheet?",
+        "answer": "YES"
+    },    
+    {
+        "category": "spice_behaviour",
+        "question": "Does the /pwm2_c2 signal maintain a voltage of 0V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component J7 connected to Net__D2_K_?",
+        "answer": "NO"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component Q2 have flash capabilities according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net-_u1-b_ signal maintain a voltage of 1.65V during the entire simulation?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component J7 connected to GND?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component Q1 have a maximum junction temperature of 120°C according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net-_j8-pin_3_ signal maintain a voltage of 1.65V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component C4 connected to GND?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component Q1 connected to Net__Q1_G_?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net-_j8-pin_3_ signal maintain a voltage of 10V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component Q2 have a collector emitter voltage of -50V according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the /ttl signal maintain a voltage of 10V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U1 have SPI capabilities according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component SW1 connected to Net__Q2_B_?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the /ttl signal maintain a voltage of 0V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component R9 connected to PWM1_C1?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component Q2 have a junction temperature of 150°C according to its datasheet?",
+        "answer": "YES"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the /pwm2_c2 signal maintain a voltage of 5V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component R9 connected to PWM1?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component Q1 have a minimum junction temperature of -55°C according to its datasheet?",
+        "answer": "YES"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component R9 connected to RXD2?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net-_j3-pin_3_ signal maintain a voltage of 5V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component Q1 connected to Net__J5_Pin_1_?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U1 have a shutdown current of 2nA according to its datasheet?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component Q1 have flash capabilities according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the net-_j3-pin_3_ signal maintain a voltage of 0V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component R14 connected to TTL?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component Q2 have a maximum output capacitance of 10pF according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "spice_behaviour",
+        "question": "Does the /pwm1 signal maintain a voltage of 0V during the entire simulation?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component U1 connected to TXD2?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component U1 have a driver slew time of 10ns according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component C5 connected to GND?",
+        "answer": "YES"
+    },
+    {
+        "category": "component_datasheet",
+        "question": "Does the component Q1 have SPI capabilities according to its datasheet?",
+        "answer": "NO"
+    },
+    {
+        "category": "theory_layout",
+        "question": "Is the component SW1 connected to Net__Q1_G_?",
+        "answer": "YES"
+    }
+]

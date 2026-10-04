@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net +5v maintain a voltage of 10V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The SPICE circuit file explicitly defines the voltage source V_5V for the +5V net as 5.0V DC, not 10V.",
+        "is_final": true
+    }
+}

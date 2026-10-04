@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component TDD01H0SB1R have a minimum operating temperature of -30\u00b0C according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The TDD01H0SB1R is a C&K TDD series jumper switch which, according to standard manufacturer specifications for this series, typically features an operating temperature range of -40\u00b0C to +85\u00b0C.",
+        "is_final": true
+    }
+}

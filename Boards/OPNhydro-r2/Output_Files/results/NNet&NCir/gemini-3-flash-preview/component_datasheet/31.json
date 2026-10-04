@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ATLAS_EZO_EC have a 3.6k\u03a9 pull-up resistor between its data channels according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The Atlas Scientific EZO-EC datasheet specifies that the device does not include internal pull-up resistors, and the provided netlist uses external 2.2k\u03a9 pull-up resistors (R17 and R19) for its isolated I2C data channels.",
+        "is_final": true
+    }
+}

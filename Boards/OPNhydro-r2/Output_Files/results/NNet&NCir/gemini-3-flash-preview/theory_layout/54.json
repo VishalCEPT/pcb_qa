@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component F1 connected to _p_24V__FB_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, net '/+24V_{FB}' is connected to pin 1 of component F1.",
+        "is_final": true
+    }
+}

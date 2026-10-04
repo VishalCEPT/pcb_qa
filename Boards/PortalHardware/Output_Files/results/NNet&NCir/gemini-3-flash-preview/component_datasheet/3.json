@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component NT3H2111W0FT1X have RFID capabilities according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The NT3H2111W0FT1X is an NTAG I2C plus chip designed for NFC Forum Type 2 Tag applications, which is a subset of RFID technology operating at 13.56 MHz.",
+        "is_final": true
+    }
+}

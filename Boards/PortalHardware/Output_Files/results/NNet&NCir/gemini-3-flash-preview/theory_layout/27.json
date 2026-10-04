@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component A2 connected to Net__A2_BTN_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The netlist and SPICE file both show that pin 1 of component A2 (labeled BTN) is connected to the net named Net-(A2-BTN) via resistor R8.",
+        "is_final": true
+    }
+}

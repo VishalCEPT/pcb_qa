@@ -1,0 +1,22 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component TDD01H0SB1R have a memory chip according to its datasheet?",
+    "tool_calls": {
+        "function_name": "get_relevant_context_from_question",
+        "function_args": {
+            "question": "Does the component TDD01H0SB1R have a memory chip according to its datasheet?",
+            "project_context": {
+                "circuit_json_file": "./outputs/HadesFCS/Hades.json",
+                "spice_json_file": "./outputs/HadesFCS/Hades_SPICE_circuit.json",
+                "datasheet_files": [
+                    "./outputs/HadesFCS/datasheets/SW3.pdf"
+                ]
+            }
+        }
+    },
+    "response": {
+        "answer": "NO",
+        "reasoning": "According to the datasheet for the TDD series (specifically the TDD01H0SB1R), the component is described as a 'Jumper Switch' or 'DIP Switch' with an SPDT schematic. The specifications list mechanical and electrical properties such as contact ratings (25 mA @ 24 V DC) and materials (PPS case). There is no mention of a memory chip, integrated circuit, or any storage capabilities; it is a purely mechanical switch component.",
+        "is_final": true
+    }
+}

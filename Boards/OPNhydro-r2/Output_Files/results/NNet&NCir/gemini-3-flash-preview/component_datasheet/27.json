@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ESP32-C6-DEVKIT have Wifi capabilities according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The component description for M1 (ESP32-C6-DEVKIT) explicitly states it supports 802.11 b/g/n/ax Wi-Fi connectivity.",
+        "is_final": true
+    }
+}

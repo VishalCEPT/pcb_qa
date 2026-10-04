@@ -1,0 +1,106 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "TVS Diodes Datasheet\nSZSMF6L Series\nAutomotive, Surface Mount 600 W in SOD-123FL\nRoHS Pb e3\nDescription\nThe SZSMF6L series is designed to protect sensitive systems or\ncomponents from high voltage, high energy transients. It offers a\nfast response time, low Zener impedance, high surge and excellent\nclamping capabilities. Because of its small size, it is ideal for use in\nautomotive electronics applications.\nFeatures\n■ Automotive grade, AEC-Q101 ■ ESD rating of class 3 (> 16 KV)"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "qualified and PPAP-capable per human body model\n■ Peak power − 600 W @ 1ms ■ Zener transient overvoltage\nMaximum Ratings & Thermal Characteristics\n■ Working peak reverse voltage suppressors\nrange - 5 V to 75 V for uni- ■ Excellent clamping capability\nParameter Symbol Value Unit\ndirectional and 10 V to 75 V for ■ V @T = V @ 25 °C x (1+αT"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "M (PW ax − im 10 u / m 10 P 0 P 0 K µ D s is ) s (N ip o a t t e io 1 n ) P PK 600 W ■ b S i t - a d n ir d e a c r t d io z n e a n l er breakdown x C B o ( R T e J f fi - c 2 J i 5 e ) n ) t , B ( α R ty T p :T i e ca m l p v e al r u a e tu i r s e\nDC Power Dissipation @ T = 75 °C voltage range - 6.4 V to 92.1 V 0.1 %)\nL 3.85 W\nMeasured Zero Lead Length (Note 2) P for uni-directional and 11.1 V to ■ Maximum temperature"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "Derate Above 75 °C D 38.5 mW/°C 92.1 V for bi-directional coefficient specified\nDC Power Dissipation @ T = 25 °C 462 mW ■ Planar chip design with low ■ Response time is typically <\n( D N e o r t a e te 3 A ) bove 25 °C A P D 3.1 mW/°C ■ l C e o a m ka p g a e c c t u d r e re si n g t n p i e n r f S o O rm D a -1 n 2 c 3 e FL ■ 1 Le n a s d orientation in tape:\nThermal Resistance from Junction to R 65 °C/W package cathode lead to sprocket holes\nAmbient ƟJA"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "Ambient ƟJA\n■ ESD protection of data lines in ■ These components are Pb-\nT L h e e ad rm al Resistance from Junction to R ƟJL 26 °C/W a\n2\nc\n3\nc\n0\no r\nk\nd\nV\na n\n(A\nce\nir )\nw\n, 3\nit\n0\nh\nk\nIE\nV\nC\n(C\n6\no\n1\nn\n0\nt\n0\na\n0\nc\n-\nt\n4\n)\n- free and are ROHS-compliant\nForward Surge Current (Note 4) @ T\nA I 30 A\n= 25 °C FSM\nOperating and Storage Temperature T -55 to\nJ, °C\nRange T +175\nstg\nStresses exceeding Maximum Ratings may damage the component. Maximum Ratings are"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "stress ratings only. Functional operation above the Recommended Operating Conditions is\nnot implied. Extended exposure to stresses above the Recommended Operating Conditions\nmay affect component reliability.\n1. 10/1000 µs, non-repetitive current pulse at T = 25 °C\nA\n2. 1” square copper pad, FR−4 board\n3. FR−4 board, using Littelfuse minimum recommended footprint\n4. 1/2 sine wave (or equivalent square wave), PW = 8.3 ms, duty cycle = 4 pulses per minute"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "maximum - for unidirectional only. Applications\nTVS components are ideal for the protection of I/O Interfaces, V\nFunctional Diagram CC\nbus and other vulnerable circuits used in automotive electronic\napplications.\nBi-directional\nCathode Anode\nUni-directional\n© 2025 Littelfuse, Inc.\nSpecifications are subject to change without notice.\nRevised: FW.05/16/25TVS Diodes Datasheet\nSZSMF6L Series\nAutomotive, Surface Mount 600 W in SOD-123FL\nElectrical Characteristics"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "Electrical Characteristics\nWorking Breakdown Test Maximum Maximum\nN ( u P U m a n r b t i) e r Nu P ( m B ar i b ) t e r U M ni arking Bi V R V ( R e o N P W v o l e t M t e a a e r ( k g 4 s V ) e e ) M V i o n ( l ( V N ta ) o g t @ e e 5 ) V I M T BR ax C ( u m r I r T A e n ) t V C o la @ lt m ( a V g p I ) p e i p n V g C Pu M ls a I p e P x p e i C m a ( u A k u r ) r m en t L R e ( a e N @ ( k µ v o a t e A V e g r ) 6 R s e ) e I R\nSZSMF6L5.0AT3G - AE - 5.0 6.40 7.00 10 9.2 65.2 50"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "SZSMF6L6.0AT3G - AG - 6.0 6.67 7.37 10 10.3 58.3 50\nSZSMF6L6.5AT3G - AK - 6.5 7.22 7.98 10 11.2 53.6 40\nSZSMF6L7.0AT3G - AM - 7.0 7.78 8.60 10 12.0 50.0 40\nSZSMF6L7.5AT3G - AP - 7.5 8.33 9.21 1 12.9 46.5 30\nSZSMF6L8.0AT3G - AR - 8.0 8.89 9.83 1 13.6 44.1 5\nSZSMF6L8.5AT3G - AT - 8.5 9.44 10.40 1 14.4 41.7 5\nSZSMF6L9.0AT3G - AV - 9.0 10.00 11.10 1 15.4 39.0 2\nSZSMF6L10AT3G SZSMF6L10CAT3G AX AXC 10 11.10 12.30 1 17.0 35.3 0.2\nSZSMF6L11AT3G SZSMF6L11CAT3G AZ AZC 11 12.20 13.50 1 18.2 33.0 0.2"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "SZSMF6L12AT3G SZSMF6L12CAT3G BE BEC 12 13.30 14.70 1 19.9 30.2 0.2\nSZSMF6L13AT3G SZSMF6L13CAT3G BG BGC 13 14.40 15.90 1 21.5 27.9 0.2\nSZSMF6L14AT3G SZSMF6L14CAT3G BK BKC 14 15.60 17.20 1 23.2 25.8 0.2\nSZSMF6L15AT3G SZSMF6L15CAT3G BM BMC 15 16.70 18.50 1 24.4 24.0 0.2\nSZSMF6L16AT3G SZSMF6L16CAT3G BP BPC 16 17.80 19.70 1 26.0 23.1 0.2\nSZSMF6L17AT3G SZSMF6L17CAT3G BR BRC 17 18.90 20.90 1 27.6 21.7 0.2\nSZSMF6L18AT3G SZSMF6L18CAT3G BT BTC 18 20.00 22.10 1 29.2 20.5 0.2"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "SZSMF6L20AT3G SZSMF6L20CAT3G BV BVC 20 22.20 24.50 1 32.4 18.5 0.2\nSZSMF6L22AT3G SZSMF6L22CAT3G BX BXC 22 24.40 26.90 1 35.5 16.9 0.2\nSZSMF6L24AT3G SZSMF6L24CAT3G BZ BZC 24 26.70 29.50 1 38.9 15.4 0.2\nSZSMF6L26AT3G SZSMF6L26CAT3G CE CEC 26 28.90 31.90 1 42.1 14.2 0.2\nSZSMF6L28AT3G SZSMF6L28CAT3G CG CGC 28 31.10 34.40 1 45.4 13.2 0.2\nSZSMF6L30AT3G SZSMF6L30CAT3G CK CKC 30 33.30 36.80 1 48.4 12.4 0.2\nSZSMF6L33AT3G SZSMF6L33CAT3G CM CMC 33 36.70 40.60 1 53.3 11.3 0.2"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "SZSMF6L36AT3G SZSMF6L36CAT3G CP CPC 36 40.00 44.20 1 58.1 10.3 0.2\nSZSMF6L40AT3G SZSMF6L40CAT3G CR CRC 40 44.40 49.10 1 64.5 9.3 0.2\nSZSMF6L43AT3G SZSMF6L43CAT3G CT CTC 43 47.80 52.80 1 69.4 8.6 0.2\nSZSMF6L45AT3G SZSMF6L45CAT3G CV CVC 45 50.00 55.30 1 72.7 8.3 0.2\nSZSMF6L48AT3G SZSMF6L48CAT3G CX CXC 48 53.30 58.90 1 77.4 7.7 0.2\nSZSMF6L51AT3G SZSMF6L51CAT3G CZ CZC 51 56.70 62.70 1 82.4 7.3 0.2\nSZSMF6L54AT3G SZSMF6L54CAT3G DE DEC 54 60.00 66.30 1 87.1 6.9 0.2"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "SZSMF6L58AT3G SZSMF6L58CAT3G DG DGC 58 64.40 71.20 1 93.6 6.4 0.2\nSZSMF6L60AT3G SZSMF6L60CAT3G DK DKC 60 66.70 73.70 1 96.8 6.2 0.2\nSZSMF6L64AT3G SZSMF6L64CAT3G DM DMC 64 71.10 78.60 1 103.0 5.8 0.2\nSZSMF6L70AT3G SZSMF6L70CAT3G DP DPC 70 77.80 86.00 1 113.0 5.3 0.2\nSZSMF6L75AT3G SZSMF6L75CAT3G DR DRC 75 83.30 92.10 1 121.0 4.9 0.2"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "4. A transient suppressor is normally selected according to the working peak reverse voltage (V ), which should be equal to or greater than the DC or continuous peak operating voltage level.\nRWM\n5. V measured at pulse test current I at an ambient temperature of 25 °C.\nBR T\n6. For bidirectional type having V of 10 volts and less, the I limit is double.\nR R\n© 2025 Littelfuse, Inc.\nSpecifications are subject to change without notice.\nRevised: FW.05/16/25TVS Diodes Datasheet\nSZSMF6L Series"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "SZSMF6L Series\nAutomotive, Surface Mount 600 W in SOD-123FL\nI-V Curve Characteristics (T = 25 °C unless otherwise noted, V = 3.5 V Max. @ I = 30 A)* - For Uni-directional\nA F F\nSymbol Parameter\nI Maximum Reverse Peak Pulse Current\nPP\nV Clamping Voltage @ I\nC PP\nV Working Peak Reverse Voltage\nRWM\nI Maximum Reverse Leakage Current @ V\nR RWM\nV Breakdown Voltage @ I\nBR T\nI Breakdown Current Current\nT\nV Forward Voltage @ I\nF F\nI Forward Current\nF"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "T\nV Forward Voltage @ I\nF F\nI Forward Current\nF\n*1/2 sine wave (or equivalent square wave), PW = 8.3 ms, non−repetitive duty cycle.\nFigure 1. Pulse Rating Curve Figure 2. 10/1000 µs Pulse Waveform\n100.0\n10.0\n1.0\n0.1\n0.0001 0.001 0.01 0.1 1 10\n© 2025 Littelfuse, Inc.\nSpecifications are subject to change without notice.\nRevised: FW.05/16/25\n)WK(\nrewoP\nkaeP\n,\nP\nKP\nNon-Repetitive\nPulse Waveform\nt , Pulse Width(ms)\nP t, Time (ms)\n)%(\neulaV\nI\nV\nFor Uni-directional"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "P t, Time (ms)\n)%(\neulaV\nI\nV\nFor Uni-directional\nI-V Curve Characteristics (T = 25 °C unless otherwise noted) – For Bi-directional\nA\nI Symbol Parameter\nI PP I PP Maximum Reverse Peak Pulse Current\nV Clamping Voltage @ I\nC PP\nV Working Peak Reverse Voltage\nRWM\nI I Maximum Reverse Leakage Current @ V\nT R RWM\nV C V BR VRWM I R V V BR Breakdown Voltage @ I T\nI R V RWM V BR V C I Test Current\nI T\nT\nI\nPP\nFor Bi-directional\nPulse width (t) is defined\nP\nas that point where the peak t≤ 10 µs"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "P\nas that point where the peak t≤ 10 µs\nr current decays to 50 % of I RSM\n100\nPeak Value - I PP\nI\nHalf value - PP\n50 2\nt\nP\n0\n0 1 2 3 4 5TVS Diodes Datasheet\nSZSMF6L Series\nAutomotive, Surface Mount 600 W in SOD-123FL\nFigure 3. Surge Derating Curve Figure 4. Typical Junction Capacitance vs. Bias Voltage\n© 2025 Littelfuse, Inc.\nSpecifications are subject to change without notice.\nRevised: FW.05/16/25\n)\nI(\ntnerruC\nro\n) P(\nrewoP\nesluP\nkaeP\nPP\nPP\n%\negatnecreP\nni\ngnitareD\n100\n80\n60\n40\n20\n0"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "PP\nPP\n%\negatnecreP\nni\ngnitareD\n100\n80\n60\n40\n20\n0\n0 25 50 75 100 125 150 175\nT - Initial Junction Temperature (°C)\nJ\n)Fp(\njC\n10000\nUni-directional @ V=0V\n1000\nBi-directional @ V=0V\nUni-directional @ V=V R\n100\nBi-directional @ V=V\nR\n10\n1\n1 10 100 1000\nV - Working Peak Reverse Voltage (V)\nR\nSoldering Parameters\nLead–free\nReflow Condition\nassembly\n- Temperature Min (T ) 150 °C\nPre Heat - Temperature Max (T\ns(min)\n) 200 °C TP\ntp\ns(max)\n- Time (min to max) (t) 60 – 120 seconds Ramp-up Critical Zone"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "Average Ramp Up Rate (Liquidus Te\ns\nmp (T L ) to Peak 3 °C/second max )T TL tL\nTL to TP\nT S(max) to T L - Ramp-up Rate 3 °C/second max\n(\ne ru\nTs(max)\nReflow\n-\n-\nT\nT\ne\nim\nm\ne\np e\n(m\nra\ni\nt\nn\nu r\nt\ne\no\n(\nm\nT\nL\na\n)\nx\n(\n)\nL i\n(\nq\nt s\nu\n)\nidus) 2\n6\n1\n0\n7\n–\n°\n1\nC\n5 0 seconds\nta\nre\np\nm eT\nTs(min)\nPre t h s eat\nRamp-down\nPeak Temperature (T) 260+0/-5 °C\nP\nTime Within 5 °C of Actual Peak Temperature (t) 30 seconds max 25˚C\np t 25˚C to Peak\nRamp-down Rate 6 °C/second max Time (t)"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "Ramp-down Rate 6 °C/second max Time (t)\nTime 25 °C to Peak Temperature (T) 8 minutes max\nP\nDo Not Exceed 260 °C\nPhysical Specifications Environmental Specifications\nWeight 0.006 ounce, 0.0171 grams High Temperature Storage JESD22-A103\nCase JEDEC SOD−123FL HTRB JESD22-A108\nColor band denotes cathode for unidirectional\nPolarity Temperature Cycling JESD22-A104\ncomponents\nTerminal Matte tin-plated leads, solderable per JESD22-B102 MSL JEDEC-J-STD-020, Level 1\nH3TRB JESD22-A101"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "H3TRB JESD22-A101\nRSH JESD22--A111TVS Diodes Datasheet\nSZSMF6L Series\nAutomotive, Surface Mount 600 W in SOD-123FL\nDimensions\nE\nMillimeters Inches\nDim\nMin Nom Max Min Nom Max\nD\n1 2 A 1.20 1.30 1.40 0.047 0.051 0.055\nA1 A1 0.00 0.05 0.10 0 0.002 0.004\nTop View A\nEnd View b 1.10 1.20 1.30 0.043 0.047 0.051\nc 0.10 0.17 0.25 0.004 0.007 0.01\nD 2.25 2.35 2.45 0.089 0.093 0.096\nE 3.25 3.35 3.45 0.128 0.132 0.136\nHE c L 0.35 0.47 0.60 0.014 0.019 0.024\nSide View\nHE 3.75 3.85 3.95 0.148 0.152 0.156\n2X"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "Side View\nHE 3.75 3.85 3.95 0.148 0.152 0.156\n2X\nL Ɵ 2° − 8° 2° − 8°\n2Xb\nBottom View\nSoldering Footprint\n4.20\n2X\n1.30\n2X1.40\nDimensions: Millimeters\nOrdering Information\nDevice Package Packaging Option Quantity\nSZSMF6LxxXXT3G SOD−123FL (Pb−Free) Tape & Reel - 12 mm tape / 13” reel 5,000\nPart Numbering System Part Marking System\nCathode band for uni-directional\nSZS MF6Lx xC AT3G\nproducts only\nPb Free Plating\nTape & Reel Designat or\nLFXXXX\nT3: 13 “ Reel 1 2\nYMAWW\nType Code\nA: Uni Directional TVS"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "YMAWW\nType Code\nA: Uni Directional TVS\nCA: Bi Directional TVS\nXXX = Device Code\nV Voltage\nR Y = Year\nSeries Name\nM = Month\nZener Automotive\nA = Assembly Location\nWW = Lot Code\n© 2025 Littelfuse, Inc.\nSpecifications are subject to change without notice.\nRevised: FW.05/16/25TVS Diodes Datasheet\nSZSMF6L Series\nAutomotive, Surface Mount 600 W in SOD-123FL\nTape and Reel Specification\n0.157\n(4.0)\n0.47\n(12.0)\nCathode\n0.157 0.059 DIA Cover tape\n(4.0) (1.5)\nOptional\n7” 7.0 (178)\n13” 13.0 (330)"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "(4.0) (1.5)\nOptional\n7” 7.0 (178)\n13” 13.0 (330)\nDimensions are in inches\n0.80 (20.2) (and millimeters).\nArbor Hole Dia.\nDirection of Feed\n0.49\n(12.5)\nLabel\nDisclaimer Notice - Information furnished is believed to be accurate and reliable. However, users should independently evaluate the suitability of and test each product selected for their own applications. Littelfuse products are"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "not designed for, and may not be used in, all applications. Read complete Disclaimer Notice at http://www.littelfuse.com/disclaimer-electronics.\n© 2025 Littelfuse, Inc.\nSpecifications are subject to change without notice.\nRevised: FW.05/16/25"
+  }
+]

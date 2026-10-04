@@ -1,0 +1,138 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "Is Now Part of\nTo learn more about ON Semiconductor, please visit our website at\nwww.onsemi.com\nPlease note: As part of the Fairchild Semiconductor integration, some of the Fairchild orderable part numbers\nwill need to change in order to meet ON Semiconductor’s system requirements. Since the ON Semiconductor\nproduct management systems do not have the ability to manage part nomenclature that utilizes an underscore"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "(_), the underscore (_) in the Fairchild part numbers will be changed to a dash (-). This document may contain\ndevice numbers with an underscore (_). Please check the ON Semiconductor website to verify the updated\ndevice numbers. The most current and up-to-date ordering information can be found at www.onsemi.com. Please\nemail any questions regarding the system integration to Fairchild_questions@onsemi.com."
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "ON Semiconductor and the ON Semiconductor logo are trademarks of Semiconductor Components Industries, LLC dba ON Semiconductor or its subsidiaries in the United States and/or other countries. ON Semiconductor owns the rights to a number\nof patents, trademarks, copyrights, trade secrets, and other intellectual property. A listing of ON Semiconductor’s product/patent coverage may be accessed at www.onsemi.com/site/pdf/Patent-Marking.pdf. ON Semiconductor reserves the right"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "to make changes without further notice to any products herein. ON Semiconductor makes no warranty, representation or guarantee regarding the suitability of its products for any particular purpose, nor does ON Semiconductor assume any liability\narising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation special, consequential or incidental damages. Buyer is responsible for its products and applications using ON"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "Semiconductor products, including compliance with all laws, regulations and safety requirements or standards, regardless of any support or applications information provided by ON Semiconductor. “Typical” parameters which may be provided in ON\nSemiconductor data sheets and/or specifications can and do vary in different applications and actual performance may vary over time. All operating parameters, including “Typicals” must be validated for each customer application by customer’s"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "technical experts. ON Semiconductor does not convey any license under its patent rights nor the rights of others. ON Semiconductor products are not designed, intended, or authorized for use as a critical component in life support systems or any FDA\nClass 3 medical devices or medical devices with a same or similar classification in a foreign jurisdiction or any devices intended for implantation in the human body. Should Buyer purchase or use ON Semiconductor products for any such unintended"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "or unauthorized application, Buyer shall indemnify and hold ON Semiconductor and its officers, employees, subsidiaries, affiliates, and distributors harmless against all claims, costs, damages, and expenses, and reasonable attorney fees arising out\nof, directly or indirectly, any claim of personal injury or death associated with such unintended or unauthorized use, even if such claim alleges that ON Semiconductor was negligent regarding the design or manufacture of the part. ON Semiconductor"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "is an Equal Opportunity/Affirmative Action Employer. This literature is subject to all applicable copyright laws and is not for resale in any manner.©2006 Fairchild Semiconductor Corporation 1 www.fairchildsemi.com\nBC856- BC860 Rev. B\nBC856-\nBC860\nPNP\nEpitaxial\nSilicon\nTransistor\nAugust 2006\nBC856- BC860\ntm\nPNP Epitaxial Silicon Transistor\nFeatures\n• Switching and Amplifier Applications\n• Suitable for automatic insertion in thick and thin-film circuits\n3\n• Low Noise: BC859, BC860"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "3\n• Low Noise: BC859, BC860\n• Complement to BC846 ... BC850\n2\nSOT-23\n1\n1. Base 2. Emitter 3. Collector\nAbsolute Maximum Ratings*\nTa = 25°C unless otherwise noted\nSymbol Parameter Value Units\nV Collector-Base Voltage\nCBO\n: BC856 -80 V\n: BC857/860 -50 V\n: BC858/859 -30 V\nV Collector-Emitter Voltage\nCEO\n: BC856 -65 V\n: BC857/860 -45 V\n: BC858/859 -30 V\nV Emitter-Base Voltage -5 V\nEBO\nI Collector Current (DC) -100 mA\nC\nP Collector Power Dissipation 310 mW\nC\nT Junction Temperature 150 °C\nJ"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "C\nT Junction Temperature 150 °C\nJ\nT Storage Temperature -65 ~ 150 °C\nSTG\n* These ratings are limiting values above which the serviceability of any semiconductor device may be impaired.\nElectrical Characteristics*\nT =25°C unless otherwise noted\na\nSymbol Parameter Test Condition Min. Typ. Max. Units\nI Collector Cut-off Current V = -30V, I =0 -15 nA\nCBO CB E\nh DC Current Gain V = -5V, I = -2mA 110 800\nFE CE C\nV (sat) Collector-Emitter Saturation Voltage I = -10mA, I = -0.5mA -90 -300 mV\nCE C B"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "CE C B\nI = -100mA, I = -5mA -250 -650 mV\nC B\nV (sat) Base-Emitter Saturation Voltage I = -10mA, I = -0.5mA -700 mV\nBE C B\nI = -100mA, I = -5mA -900 mV\nC B\nV (on) Base-Emitter On Voltage V = -5V, I = -2mA -600 -660 -750 mV\nBE CE C\nV = -5V, I = -10mA -800 mV\nCE C\nf Current Gain Bandwidth Product V = -5V, I = -10mA 150 MHz\nT CE C\nf=100MHz\nC Output Capacitance V = -10V, I =0, f=1MHz 6 pF\nob CB E\nNF Noise Figure\n: BC856/857/858 V\nCE\n= -5V, I\nC\n= -200µA 2 10 dB\n: BC859/860 R =2KΩ, f=1KHz 1 4 dB\nG"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": ": BC859/860 R =2KΩ, f=1KHz 1 4 dB\nG\n: BC859 V = -5V, I = -200µA 1.2 4 dB\nCE C\n: BC860 R =2KΩ, f=30~15000Hz 1.2 2 dB\nG\n* Pulse Test: Pulse Width≤300µs, Duty Cycle≤2%2 www.fairchildsemi.com\nBC856- BC860 Rev. B\nBC856-\nBC860\nPNP\nEpitaxial\nSilicon\nTransistor\nh Classification\nFE\nClassification A B C\nh 110 ~ 220 200 ~ 450 420 ~ 800\nFE\nOrdering Information\nDevice(note1) Device Marking Package Packing Method Qty(pcs) Pin Difinitions\nBC856AMTF 9AA SOT-23 Tape & Reel 3000 1.Base 2.Emitter 3.Collector"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "BC856BMTF 9AB SOT-23 Tape & Reel 3000 1.Base 2.Emitter 3.Collector\nBC856CMTF 9AC SOT-23 Tape & Reel 3000 1.Base 2.Emitter 3.Collector\nBC857AMTF 9BA SOT-23 Tape & Reel 3000 1.Base 2.Emitter 3.Collector\nBC857BMTF 9BB SOT-23 Tape & Reel 3000 1.Base 2.Emitter 3.Collector\nBC857CMTF 9BC SOT-23 Tape & Reel 3000 1.Base 2.Emitter 3.Collector\nBC858AMTF 9CA SOT-23 Tape & Reel 3000 1.Base 2.Emitter 3.Collector\nBC858BMTF 9CB SOT-23 Tape & Reel 3000 1.Base 2.Emitter 3.Collector"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "BC858CMTF 9CC SOT-23 Tape & Reel 3000 1.Base 2.Emitter 3.Collector\nBC859AMTF 9DA SOT-23 Tape & Reel 3000 1.Base 2.Emitter 3.Collector\nBC859BMTF 9DB SOT-23 Tape & Reel 3000 1.Base 2.Emitter 3.Collector\nBC859CMTF 9DC SOT-23 Tape & Reel 3000 1.Base 2.Emitter 3.Collector\nBC860AMTF 9EA SOT-23 Tape & Reel 3000 1.Base 2.Emitter 3.Collector\nBC860BMTF 9EB SOT-23 Tape & Reel 3000 1.Base 2.Emitter 3.Collector\nBC860CMTF 9EC SOT-23 Tape & Reel 3000 1.Base 2.Emitter 3.Collector"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "Note1 : Affix “-A,-B,-C” means hFE classification.\nAffix “-M” means the matte type package.\nAffix “-TF” means the tape & reel type packing.3 www.fairchildsemi.com\nBC856- BC860 Rev. B\nBC856-\nBC860\nPNP\nEpitaxial\nSilicon\nTransistor\nTypical Performance Characteristics\n-50\n-45\nI = - 400µA B -40 I = - 350µA B\n-35 I B = - 300µA\nI = - 250µA\n-30 B\n-25 I = - 200µA\nB\n-20 I = - 150µA\nB\n-15 I = - 100µA B\n-10\nI = - 50µA\n-5 B\n-0 -0 -2 -4 -6 -8 -10 -12 -14 -16 -18 -20"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "-5 B\n-0 -0 -2 -4 -6 -8 -10 -12 -14 -16 -18 -20\nFigure 1. Static Characteristic Figure 2. DC current Gain\nFigure 3. Base-Emitter Saturation Voltage Figure 4. Base-Emitter On Voltage\nCollector-Emitter Saturation Voltage\nFigure 5. Collector Output Capacitance Figure 6. Current Gain Bandwidth Product\nTNERRUC\nROTCELLOC\n,]Am[I\nC\n1000\nV = - 5V CE\n100\n10 -0.1 -1 -10 -100\nV [V], COLLECTOR-EMITTER VOLTAGE\nCE\nNIAG\nTNERRUC\nCD\n,\nh\nEF\nI[mA], COLLECTOR CURRENT\nC\n-10\nIC = 10 IB\n-1 VBE(sat)\n-0.1\nVCE(sat)\n-0.01"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "C\n-10\nIC = 10 IB\n-1 VBE(sat)\n-0.1\nVCE(sat)\n-0.01\n-0.1 -1 -10 -100\nEGATLOV\nNOITARUTAS\n,]V[)tas(ECV\n,)tas(EBV\n-100\nVCE = - 5V\n-10\n-1\n-0.1\n-0.2 -0.4 -0.6 -0.8 -1.0 -1.2\nIC[mA], COLLECTOR CURRENT\nTNERRUC\nROTCELLOC\n,]Am[CI\nVBE[V], BASE-EMITTER VOLTAGE\nf=1MHz IE=0\n10\n1\n-1 -10 -100\nECNATICAPAC\n,]Fp[boC\n1000\nf=1MHz IE=0\n100\n10\n-1 -10\nVCB[V], COLLECTOR-BASE VOLTAGE\nTCUDORP\nHTDIWDNAB-NIAG\nTNERRUC\n,]zHM[Tf\nIC[mA], COLLECTOR CURRENT4 www.fairchildsemi.com\nBC856- BC860 Rev. B\nBC856-\nBC860\nPNP\nEpitaxial"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "BC856- BC860 Rev. B\nBC856-\nBC860\nPNP\nEpitaxial\nSilicon\nTransistor\nMechanical Dimensions\n0.03~0.10\n0.38 REF\n0.40 ±0.03\n0.12\n0.96~1.14\n2.90 ±0.10\n0.95 ±0.03 0.95 ±0.03\n1.90 ±0.03 0.508REF\n06.0~54.0\n01.0±\n03.1\nFER79.0\n01.0±\n04.2\n+0.05\n–0.023\nNIM\n02.0\nSOT-23\n0.40 ±0.03\nDimensions in MillimetersTRADEMARKS\nThe following are registered and unregistered trademarks Fairchild Semiconductor owns or is authorized to use and is not intended to\nbe an exhaustive list of all such trademarks.\nBC856-\nBC860\nPNP"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "BC856-\nBC860\nPNP\nEpitaxial\nSilicon\nTransistor\nACEx™ FACT Quiet Series™ OCX™ SILENT SWITCHER® UltraFET®\nActiveArray™ GlobalOptoisolator™ OCXPro™ SMART START™ UniFET™\nBottomless™ GTO™ OPTOLOGIC® SPM™ VCX™\nBuild it Now™ HiSeC™ OPTOPLANAR™ Stealth™ Wire™\nCoolFET™ I2C™ PACMAN™ SuperFET™\nCROSSVOLT™ i-Lo™ POP™ SuperSOT™-3\nDOME™ ImpliedDisconnect™ Power247™ SuperSOT™-6\nEcoSPARK™ IntelliMAX™ PowerEdge™ SuperSOT™-8\nE2CMOS™ ISOPLANAR™ PowerSaver™ SyncFET™\nEnSigna™ LittleFET™ PowerTrench® TCM™"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "EnSigna™ LittleFET™ PowerTrench® TCM™\nFACT™ MICROCOUPLER™ QFET® TinyBoost™\nFAST® MicroFET™ QS™ TinyBuck™\nFASTr™ MicroPak™ QT Optoelectronics™ TinyPWM™\nFPS™ MICROWIRE™ Quiet Series™ TinyPower™\nFRFET™ MSX™ RapidConfigure™ TinyLogic®\nMSXPro™ RapidConnect™ TINYOPTO™\nAcross the board. Around the world.™ µSerDes™ TruTranslation™\nThe Power Franchise® ScalarPump™ UHC™\nProgrammable Active Droop™\nDISCLAIMER"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "Programmable Active Droop™\nDISCLAIMER\nFAIRCHILD SEMICONDUCTOR RESERVES THE RIGHT TO MAKE CHANGES WITHOUT FURTHER NOTICE TO ANY PRODUCTS HEREIN TO\nIMPROVE RELIABILITY, FUNCTION OR DESIGN. FAIRCHILD DOES NOT ASSUME ANY LIABILITY ARISING OUT OF THE APPLICATION OR USE\nOF ANY PRODUCT OR CIRCUIT DESCRIBED HEREIN;NEITHER DOES IT CONVEY ANY LICENSE UNDER ITS PATENT RIGHTS, NOR THE\nRIGHTS OF OTHERS. THESE SPECIFICATIONS DO NOT EXPAND THE TERMS OF FAIRCHILD’S WORLDWIDE TERMS AND CONDITIONS, SPE-"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "CIFICALLY THE WARRANTY THEREIN, WHICH COVERS THESE PRODUCTS.\nLIFE SUPPORT POLICY\nFAIRCHILD’S PRODUCTS ARE NOT AUTHORIZED FOR USE AS CRITICAL COMPONENTS IN LIFE SUPPORT DEVICES OR SYSTEMS WITHOUT\nTHE EXPRESS WRITTEN APPROVAL OF FAIRCHILD SEMICONDUCTOR CORPORATION.\nAs used herein:\n1. Life support devices or systems are devices or systems which, (a) are 2. A critical component is any component of a life support device or system"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "intended for surgical implant into the body, or (b) support or sustain life, or whose failure to perform can be reasonably expected to cause the failure\n(c) whose failure to perform when properly used in accordance with of the life support device or system, or to affect its safety or effectiveness.\ninstructions for use provided in the labeling, can be reasonably expected\nto result in significant injury to the user.\nPRODUCT STATUS DEFINITIONS\nDefinition of Terms"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "PRODUCT STATUS DEFINITIONS\nDefinition of Terms\nDatasheet Identification Product Status Definition\nAdvance Information Formative or In Design This datasheet contains the design specifications for\nproduct development. Specifications may change in\nany manner without notice.\nPreliminary First Production This datasheet contains preliminary data, and\nsupplementary data will be published at a later date.\nFairchild Semiconductor reserves the right to make"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "changes at any time without notice in order to improve\ndesign.\nNo Identification Needed Full Production This datasheet contains final specifications. Fairchild\nSemiconductor reserves the right to make changes at\nany time without notice in order to improve design.\nObsolete Not In Production This datasheet contains specifications on a product\nthat has been discontinued by Fairchild semiconductor.\nThe datasheet is printed for reference information only.\nRev. I20\n5 www.fairchildsemi.com"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "Rev. I20\n5 www.fairchildsemi.com\nBC856- BC860 Rev. B\nBC856-\nBC860\nPNP\nEpitaxial\nSilicon\nTransistorON Semiconductor and are trademarks of Semiconductor Components Industries, LLC dba ON Semiconductor or its subsidiaries in the United States and/or other countries.\nON Semiconductor owns the rights to a number of patents, trademarks, copyrights, trade secrets, and other intellectual property. A listing of ON Semiconductor’s product/patent"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "coverage may be accessed at www.onsemi.com/site/pdf/Patent−Marking.pdf. ON Semiconductor reserves the right to make changes without further notice to any products herein.\nON Semiconductor makes no warranty, representation or guarantee regarding the suitability of its products for any particular purpose, nor does ON Semiconductor assume any liability"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation special, consequential or incidental damages.\nBuyer is responsible for its products and applications using ON Semiconductor products, including compliance with all laws, regulations and safety requirements or standards,"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "regardless of any support or applications information provided by ON Semiconductor. “Typical” parameters which may be provided in ON Semiconductor data sheets and/or\nspecifications can and do vary in different applications and actual performance may vary over time. All operating parameters, including “Typicals” must be validated for each customer"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "application by customer’s technical experts. ON Semiconductor does not convey any license under its patent rights nor the rights of others. ON Semiconductor products are not\ndesigned, intended, or authorized for use as a critical component in life support systems or any FDA Class 3 medical devices or medical devices with a same or similar classification"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "in a foreign jurisdiction or any devices intended for implantation in the human body. Should Buyer purchase or use ON Semiconductor products for any such unintended or unauthorized\napplication, Buyer shall indemnify and hold ON Semiconductor and its officers, employees, subsidiaries, affiliates, and distributors harmless against all claims, costs, damages, and"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "expenses, and reasonable attorney fees arising out of, directly or indirectly, any claim of personal injury or death associated with such unintended or unauthorized use, even if such\nclaim alleges that ON Semiconductor was negligent regarding the design or manufacture of the part. ON Semiconductor is an Equal Opportunity/Affirmative Action Employer. This\nliterature is subject to all applicable copyright laws and is not for resale in any manner.\nPUBLICATION ORDERING INFORMATION"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "PUBLICATION ORDERING INFORMATION\nLITERATURE FULFILLMENT: N. American Technical Support: 800−282−9855 Toll Free ON Semiconductor Website: www.onsemi.com\nLiterature Distribution Center for ON Semiconductor USA/Canada\n19521 E. 32nd Pkwy, Aurora, Colorado 80011 USA Europe, Middle East and Africa Technical Support: Order Literature: http://www.onsemi.com/orderlit\nPhone: 303−675−2175 or 800−344−3860 Toll Free USA/Canada Phone: 421 33 790 2910"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "Fax: 303−675−2176 or 800−344−3867 Toll Free USA/Canada Japan Customer Focus Center For additional information, please contact your local\nEmail: orderlit@onsemi.com Phone: 81−3−5817−1050 Sales Representative\n© Semiconductor Components Industries, LLC www.onsemi.com www.onsemi.com\n1"
+  }
+]

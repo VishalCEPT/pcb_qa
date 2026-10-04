@@ -1,0 +1,11 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: KiCad schematic
+
+Error on line 137 or its substitute:
+  set filetype=ascii
+Unable to find definition of model 
+    Simulation interrupted due to error!
+

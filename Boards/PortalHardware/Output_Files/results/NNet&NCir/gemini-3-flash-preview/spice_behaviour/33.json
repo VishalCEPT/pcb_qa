@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the disp_res signal maintain a voltage of 0V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The DISP_RES net is connected to VCC (3.3V) through a 10k pull-up resistor (R4), which pulls the signal high rather than maintaining it at 0V.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "board_name": "HadesFCS",
+    "strategy": "schematic_pdf",
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "confusion_matrix": [
+        [
+            2,
+            0
+        ],
+        [
+            0,
+            1
+        ]
+    ],
+    "results": [
+        {
+            "question_number": 1,
+            "question": "Is the component NAVC1 connected to SWDIO_FCC?",
+            "expected": "NO",
+            "predicted": "NO",
+            "correct": true
+        },
+        {
+            "question_number": 2,
+            "question": "Is the component R27 connected to BOOT1_NAVC?",
+            "expected": "YES",
+            "predicted": "YES",
+            "correct": true
+        },
+        {
+            "question_number": 3,
+            "question": "Is the component TP3 connected to I2C1_SCL_NAVC?",
+            "expected": "YES",
+            "predicted": "YES",
+            "correct": true
+        }
+    ]
+}

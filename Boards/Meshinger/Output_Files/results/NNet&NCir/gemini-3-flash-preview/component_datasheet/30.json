@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component 1825232-1 have dielectric strength of 120V AC according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The datasheet for the 1825232-1 slide switch specifies a dielectric strength of 500V AC for 1 minute, not 120V AC.",
+        "is_final": true
+    }
+}

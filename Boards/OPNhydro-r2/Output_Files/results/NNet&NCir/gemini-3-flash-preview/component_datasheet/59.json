@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ESP32-C6-DEVKIT have a UART port according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The component description explicitly states it features a USB Type-C to UART port for power and communication and includes a USB-to-UART bridge.",
+        "is_final": true
+    }
+}

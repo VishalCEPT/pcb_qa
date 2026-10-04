@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component NT3H2111W0FT1X have a maximum operating temperature of 105\u00b0C according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The NT3H2111W0FT1X (NTAG I2C plus) datasheet specifies an operating ambient temperature range of -40\u00b0C to +105\u00b0C.",
+        "is_final": true
+    }
+}

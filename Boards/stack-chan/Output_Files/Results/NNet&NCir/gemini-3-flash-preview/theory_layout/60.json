@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component SW1 connected to Net__Q1_G_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The SPICE netlist explicitly shows that SW1 pin 2 is connected to the net named Net-_Q1-G_.",
+        "is_final": true
+    }
+}

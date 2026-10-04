@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /sdaec maintain a voltage of 3.3V for the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net /sdaec is pulled up to /vec, which is the isolated output of the ADM3260 isolator (U4) and is not directly connected to the 3.3V supply rail.",
+        "is_final": true
+    }
+}

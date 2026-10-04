@@ -1,0 +1,13 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ADS1115IDGS have a maximum operating temperature of 125\u00b0C according to its datasheet?",
+    "tool_calls": {
+        "arguments": "{\"project_context\":{\"circuit_json_file\":\"./outputs/AcornRobotElectronics/cm4-robot.json\",\"datasheet_files\":[\"./outputs/AcornRobotElectronics/datasheets/U33.pdf\"],\"spice_json_file\":\"./outputs/AcornRobotElectronics/cm4-robot.json\"},\"component_ref\":\"U33\",\"question\":\"What is the maximum operating temperature of the ADS1115IDGS?\"}",
+        "name": "get_relevant_context_from_question"
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "The datasheet context explicitly states an operating temperature range of -40\u00b0C to +125\u00b0C for the ADS111x family, including the ADS1115.",
+        "is_final": true
+    }
+}

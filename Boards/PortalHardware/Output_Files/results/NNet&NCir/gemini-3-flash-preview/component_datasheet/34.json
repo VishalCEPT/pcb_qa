@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component NT3H2111W0FT1X have a maximum I2C frequency of 400kHz according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The NT3H2111W0FT1X is an NTAG I2C plus device which supports the I2C-bus Fast-mode with a maximum frequency of 400 kHz.",
+        "is_final": true
+    }
+}

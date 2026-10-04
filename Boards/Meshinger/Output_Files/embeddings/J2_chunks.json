@@ -1,0 +1,126 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "microSD™ Card Connectors\nDM3 Series\n■\nFeatures\n◆ Common to the entire Series ◆ DM3D (Push -Pull, manual, without\nejection mechanism)\n1. Extremely small in size\nSmall external dimensions and the above-the-board height · Partial card insertion hold\nmake the connectors the smallest on the market. Card will not fall-out even when it is not fully inserted. Full\n2. Reverse card insertion protection insertion and electrical / mechanical connection is confirmed\nwith a distinct tactile feel."
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "with a distinct tactile feel.\nUnique card slot design (patented) protects the connector\n· Accessible termination areas\nfrom damage when the card is attempted to be inserted in\nreverse, allowing it to re-inserted correctly. An inner lead system that can be reworked is used in this design.\n3. Effective ground and shield configuration Contact solder terminations may be inspected and reworked.\n4-connection points of the metal cover to the printed circuit"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "board assures secure connection of the ground circuit and\nprovides EMI protection.\n4. Rigid and strong construction\nDespite its small size, high-strengths materials used in the\nconnectors produced a strong and rigid structure.\n5. Card detection switch\nCard insertion-ejection Series Image Page\nThe card detection switch is Normally Open\n◆ DM3AT and DM3BT (Push - Push, with\nejection mechanism) DM3AT 2~4\n· Card fall-out prevention\nBuilt-in card tray and the unique push insertion-push ejection"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "mechanism (patented) prevent accidental card ejection or fall- Push-Push\nout.\nDespite its small size the connectors will eject the card to a\ndistance of 4.0mm, allowing easy hold and removal of the card.\nDM3BT 5~6\n· Exposed termination leads\nEasy inspection and rework of the solder termination joints.\n◆ DM3CS (Hinge, Push-Pull, manual, without\nejection mechanism)\n· Simple and reliable card insertion Hinge-manual\ninsertion/ DM3CS 7~8\nHinged metal cover provides location and guides the card"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "ejection\nduring the insertion / removal. Closing of the cover confirms\nthe electrical and mechanical connection with a tactile click\nsensation.\n· Reliable contact with the card contact pads\nUnique contact design and card slide action will clean the Push-Pull\ncontact areas of the card. manual insertion/ DM3D 9~10\nejection\n· Accessible termination areas\nContact solder terminations may be inspected and reworked.\n2017.1③ 1\n.devreseR\nsthgiR\nllA\n.DTL\n,.OC\nCIRTCELE\nESORIH\n6202\nthgirypoC"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "llA\n.DTL\n,.OC\nCIRTCELE\nESORIH\n6202\nthgirypoC\n6202.1.beFDM3 Series●microSD™Card Connectors\n■Product Specifications (DM3 Series)\nCurrent rating : 0.5A Operating temperature range : -25ç to +85ç (Note 1) Operating humidity range : RH 95% max.\nRatings\nVoltage rating : 125V AC Storage temperature range : -40ç to +85ç (Note 2) (No condensation)\nItem Specification Conditions\n1.Insulation resistance 1000Mø min. (Initial value) Measure at 500V DC"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "2.Withstanding voltage No flashover or insulation breakdown 500 V AC / 1 minute\n3.Contact resistance 100mø max. (Initial value) 1mA\nNo electrical discontinuity of 100 ns or longer Frequency : 10 to 55Hz, single amplitude of 0.75mm,\n4.Vibration\nNo damage, cracks or parts dislocation. 3 directions for 2 hours\nContact resistance : 40mø max. (change from initial value)\n5.Humidity Insulation resistance : 100Mø min. 96 hours at of 40 ± 2ç, and humidity of 90 to 95%"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "No damage, cracks or parts dislocation.\nContact resistance : 40mø max. (change from initial value) -55ç ➝5 to 35ç ➝85ç ➝5 to 35ç\n6.Temperature cycle Insulation resistance : 100Mø min. Times : 30 min. ➝5 min. ➝30 min. ➝5 min.\nNo damage, cracks or parts dislocation. 5 cycles\n10,000 cycles, 400 to 600 cycles per hour (DM3AT, DM3B)\n7.Durability Contact resistance : 40mø max. (change from initial value)\n5,000 cycles, 400 to 600 cycles per hour (DM3C, DM3D)"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "8.Resistance to Reflow : At the recommended temperature profile\nNo deformation of components affecting performance.\nsoldering heat Manual soldering : 350ç for 3 seconds\nNote 1 : Includes temperature rise caused by current flow.\nNote 2 : The term \"storage\" refers to products stored for long period prior to mounting and use.\n■Materials / Finish\nDM3AT, DM3BT\nPart Material Finish Remarks\nInsulator LCP Color : Black UL94V-0\nContact area : Gold plated\nContacts Copper alloy -------------------"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "Contacts Copper alloy -------------------\nLead area : Gold plated\nStainless steel (DM3AT)\nGuide cover Lead area : Gold plated -------------------\nCopper alloy (DM3BT)\nStainless steel (DM3AT, DM3BT) ------------------- Other components -------------------\nPiano wire (DM3BT) Nickel plated\nDM3CS, DM3D\nPart Material Finish Remarks\nInsulator LCP Color : Black UL94V-0\nContact area : Gold plated\nContacts Copper alloy -------------------\nLead area : Gold plated\n------------------- (DM3CS)"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "------------------- (DM3CS)\nGuide cover Stainless steel -------------------\nTin plated (DM3D)\n■Product Number Structure\nRefer to the chart below when determining the product specifications from the product number.\nPlease select from the product numbers listed in this catalog when placing orders.\nDM3 AT – SF – PEJM5\n1 2 3 4\n1 Series name : DM3 3 Termination type : SF Right-angle SMT(Standard)"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "2 Connector type : AT Push-Push (ejection mechanism), Top board mounting (Standard) DSF Right-angle SMT(Reverse)\nBT Push-Push (ejection mechanism), Bottom board mounting (Reverse) 4 Card ejection code :PEJM5, PEJS\nCS Hinge, Push-Pull (no ejection mechanism), Top board mounting (Standard) (Push insert/push eject)\nD Push-Pull (no ejection mechanism), Top board mounting (Standard) None : Manual card\nNumber of contacts : 8 insertion/ejection\n2\n.devreseR\nsthgiR\nllA\n.DTL\n,.OC\nCIRTCELE\nESORIH\n6202"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "sthgiR\nllA\n.DTL\n,.OC\nCIRTCELE\nESORIH\n6202\nthgirypoC\n6202.1.beFDM3 Series●microSD™Card Connectors\n■Recommended PCB mounting pattern\n8.65\n1.3\n3\n1.51\nC 0.15\nXAM1.41\n2.7\n8.2 8.0\n1\n9.1\n10MIN\n9.25MAX\n7.7\n1.55\n1\nP=1.1\n0.7\n(3.2)\n9.1 3.25\n50.41\n9.9\nNIM9.7\n7.3\n2.1\nNIM51.0\n2.1\n5.41\n0.7\nNIM3.31\n8.2MIN 0.5\nXAM4.4\nNIM6\n0.15\nXAM7.5\n■DM3AT Push-Push (ejection mechanism), Top board mounting (Standard)\n#5(CLK)\n#4(VDD)\n#3(CMD)\n#2(CD/DAT3)\n#1(DAT2)\nCARD DETECTION (7.35)\nSWITCH(B) (3.2)\nPart No. HRS No."
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "SWITCH(B) (3.2)\nPart No. HRS No.\nDM3AT-SF-PEJM5 609-0031-0\nCARD DETECTION\nSWITCH(A)\nmicroSD CARD\n2.9±0.15\nNo t e 1 C L indicates the center line of the\nmicroSD card slot.\n8.9MIN 2\nCard detection switch\nWithout the card Card inserted\n3 Open Closed\n3\n3 (A) (B) (A) (B)\n3 No conductive traces.\n1 ＣＣＬＬ\nAll dimensions : mm\n)51(\nO\nNN\nTIO\nSITIN\nE P\nO\nO\nSI\nTI\nO\nR\nO K\nK\nP\nO\nSI\nA\nR D O V E R S T\nC\nA R D L O C\nD\nE J E C T P\n(16.75): C\n( 1\n7. 5\n5):\n5\n5): C\nA R\n1.\n2 (\n(0.8)\n59.51\n#6(VSS)\n#7(DAT0)\n#8(DAT1)"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "A R\n1.\n2 (\n(0.8)\n59.51\n#6(VSS)\n#7(DAT0)\n#8(DAT1)\n13.85\n1.68\n2\n5\n9 5. 1\n2\n(5.5) CL 1\n(11)\nAll dimensions : mm\n.devreseR\nsthgiR\nllA\n.DTL\n,.OC\nCIRTCELE\nESORIH\n6202\nthgirypoC\n6202.1.beFDM3 Series●microSD™Card Connectors\nBPackaging Specifications\n4\n2.41\n)53.61(\n20\nØ 1\n.5\n57.1\nUNREELING DIRECTION\nP=4\n2\n23\n4.82\n●Embossed carrier tape dimensions (1,500 pcs/reel)\n(3.2)\n●Reel Dimensions\n32.4\n08Ø 083Ø\nAll dimensions : mm\nPORTION EQUIPPED\nTRAILER WITH COMPONENTS LEADER(400mm MIN)\nCIRCLE\nSTART END"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "CIRCLE\nSTART END\nOVAL EMPTY(100mm MIN)\nEMPTY(160mm MIN)\nTOP COVER TAPE\nEMBOSSED CARRIER TAPE\n.devreseR\nsthgiR\nllA\n.DTL\n,.OC\nCIRTCELE\nESORIH\n6202\nthgirypoC\n6202.1.beFDM3 Series●microSD™Card Connectors\n■DM3BT, Push-Push (ejection mechanism), Bottom board mounting (Reverse)\n#4(VDD) #5(CLK)\n#3(CMD) #6(VSS)\n#2(CD/DAT3) #7(DAT0)\n#1(DAT2) #8(DAT1)\nPart No. HRS No.\nDM3BT-DSF-PEJS 609-0029-9\nmicroSD CARD\nCL (5.5)\n(11)\n5\nNOITISOP\nTCEJE\nDRAC:)55.12(\nNOITISOP\nKCOL\nDRAC:)55.71(\nNOITISOP\nEKORTS\nREVO"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "NOITISOP\nKCOL\nDRAC:)55.71(\nNOITISOP\nEKORTS\nREVO\nDRAC:)57.61(\n59.51\n)51(\n(0.55)\n50.61\n13.85\nCARD DETECTION\nSWITCH(B)\nCARD DETECTION\nSWITCH(A)\n54.51\n2.9±0.15\nXAM7.2\nXAM7.6\n(3.2)\n2.38MAX\n1.83\n1.51\n(6.5)\n2\n3\n3\n3\n2\n1\n■Recommended PCB mounting pattern\n7.9\n3.31\n0.7\n2.1\n10MIN\n9.25MAX\n7.7\nP=1.1\n0.7\n3.05 8.9\n9.1\n1.2\n4.1\n57.41 3.41\n2.0\nNIM53.0\n8.0\n5.3\n2.3\nNIM7.7\nAll dimensions : mm\n8.65\n1.9\nNo t e 1 C L indicates the center line of the\n1±0.05\nmicroSD card slot.\n2\nCard detection switch"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "1±0.05\nmicroSD card slot.\n2\nCard detection switch\nWithout the card Card inserted\nOpen Closed\n4\n(A) (B) (A) (B)\n0.15\nＣ\n3 Oblique-hatched area is projection\nＣＬ 1 of contact.\n0.5\n4 No conductive traces.\n1.5 (3.2)\nAll dimensions : mm\n.devreseR\nsthgiR\nllA\n.DTL\n,.OC\nCIRTCELE\nESORIH\n6202\nthgirypoC\n6202.1.beFDM3 Series●microSD™Card Connectors\n32.4\nTRAILER\nCIRCLE\nSTART\nOVAL\n6\n08Ø 083Ø\nBPackaging Specifications\nUNREELING DIRECTION\n(3.75)\nPORTION EQUIPPED\nWITH COMPONENTS LEADER(400mm MIN)\nEND"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "WITH COMPONENTS LEADER(400mm MIN)\nEND\nEMPTY(100mm MIN)\nEMPTY(160mm MIN)\nTOP COVER TAPE\nEMBOSSED CARRIER TAPE\n23\n4.82\nP＝4\n2 57.1\n20\nØ 1\n.5\n2.41\n)53.61(\n●Embossed carrier tape dimensions (1,200 pcs/reel)\nAll dimensions : mm\n●Reel Dimensions\n.devreseR\nsthgiR\nllA\n.DTL\n,.OC\nCIRTCELE\nESORIH\n6202\nthgirypoC\n6202.1.beFDM3 Series●microSD™Card Connectors\n■Recommended PCB mounting pattern\n7\nXAM8.7\nNIM4.5\nXAM8.7\n8.25MIN 0.55MIN\nXAM9.2\n(13.8)\n4.21 )1.41( 10.1MIN 4.1MIN 9.5MAX 3.5MAX\n0.7\nP＝1.1\n7.7\n2.1 4.1\n1.5"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "0.7\nP＝1.1\n7.7\n2.1 4.1\n1.5\n１ 9.3 2.8\n9.21\n6.2\n6.2\n9.21 4.41\n■DM3CS, Hinge, Push -Pull (no ejection mechanism), Top board mounting (Standard)\nPart No. HRS No.\nDM3CS-SF 609-0032-3\n6.3 1.65\n1.4\n2.7\n2.7 1.2\nNo t e 1 C L indicates the center line of the\nmicroSD card slot.\n2\nCard detection switch\nWithout the card Card inserted\nOpen Closed\n3 3 3 GND(1) GND(1)\nGND(2) GND(2)\nGND(3) GND(3)\nGND(4) GND(4)\n1 ＣＬ\n3 No conductive traces.\n(3.2)\n21\n0.1\nNOITISOP\nKCOL:)54.51( 1.41\n9.31\nCARD DETECTION SWITCH 2\n13.8"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "9.31\nCARD DETECTION SWITCH 2\n13.8\n(6.9)\n(0.2) 1.83\n(5.5) ＣＬ 1 microSD CARD\n(0.93) (11)\n(1.78)\n＃8(DAT1) ＃1(DAT2)\nAll dimensions : mm\n＃7(DAT0) ＃2(CD/DAT3)\n＃6(VSS) ＃3(CMD)\n＃5(CLK) ＃4(VDD)\nAll dimensions : mm\n.devreseR\nsthgiR\nllA\n.DTL\n,.OC\nCIRTCELE\nESORIH\n6202\nthgirypoC\n6202.1.beFDM3 Series●microSD™Card Connectors\n8\n08Ø 083Ø\nBPackaging Specifications\n(3.4)\nPORTION EQUIPPED\n32.4 TRAILER WITH COMPONENTS LEADER(400mm MIN)\nCIRCLE\nSTART END\nOVAL\nEMPTY(100mm MIN)\nEMPTY(160mm MIN)"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "START END\nOVAL\nEMPTY(100mm MIN)\nEMPTY(160mm MIN)\nEMBOSSED CARRIER TAPE TOP COVER TAPE\n2.41\n20\nØ 1\n.5\n57.1\nP＝4\n2\n23\n4.82\n●Embossed carrier tape dimensions (1,300 pcs/reel)\nUNREELING DIRECTION\nAll dimensions : mm\n●Reel Dimensions\n.devreseR\nsthgiR\nllA\n.DTL\n,.OC\nCIRTCELE\nESORIH\n6202\nthgirypoC\n6202.1.beFDM3 Series●microSD™Card Connectors\n■Recommended PCB mounting pattern\n9\n5.1\n5.1\n57.1\n1.1\n7.7\n53.8\n1\n58.6\n5.1\n5.7\n51.9 7.01\n8.1MIN\n5.05MIN\n2.55MAX 1\n0.4MIN\n0.8 0.8\n( 4.5 )\n0.55\n1.85\n9.4\n10.9"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "0.4MIN\n0.8 0.8\n( 4.5 )\n0.55\n1.85\n9.4\n10.9\nNIM2.01 XAM2.8\nNIM6\nXAM4\n4.1\n■DM3D, Push-Pull (no ejection mechanism), Top board mounting (Standard)\nCard Detection\nSwitch (B)\nCard Detection Switch (A)\nPart No. HRS No.\nCard microSD Card\nDM3D-SF 609-0025-8 Center\n＃8(DAT1) ＃1(DAT2)\n＃7(DAT0) ＃2(CD/DAT3)\n＃6(VSS) ＃3(CMD)\n＃5(CLK) ＃4(VDD)\n3\nNo t e 1 C L indicates the center line of the\nmicroSD card slot.\n2 Card detection switch\nWithout the card Card inserted\nOpen Closed\n(A) (B) (A) (B)\nCL 1"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "Open Closed\n(A) (B) (A) (B)\nCL 1\n3 No conductive traces.\n1 DETRESNI\nYLLUF\nDRAC:)8.51(\n9.0\n(6)\n(4.5)\n(11)\n7.2\n1.55\n54.11 54.11\n11.95\n53.3\n(5.5)\n)51(\n(0.7)\n56.9\n2\n2\nAll dimensions : mm\nAll dimensions : mm\n.devreseR\nsthgiR\nllA\n.DTL\n,.OC\nCIRTCELE\nESORIH\n6202\nthgirypoC\n6202.1.beFDM3 Series●microSD™Card Connectors\nEnd section Lead section (400mm min.)\n24.4\nBlank section Mounting section Blank section\n(160mm min.) (100mm min.)\nEmbossed carrier tape Top cover tape\n10\n08Ø 083Ø\nBPackaging Specifications"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "10\n08Ø 083Ø\nBPackaging Specifications\n2 Unreeling direction\nUnreeling direction\n42\n52.22\n57.1\n5.11\nØ1.5 16\n) 58.11\n(\n●Embossed carrier tape dimensions (2,000 pcs/reel)\nP=4\nAll dimensions : mm\n●Reel Dimensions\n.devreseR\nsthgiR\nllA\n.DTL\n,.OC\nCIRTCELE\nESORIH\n6202\nthgirypoC\n6202.1.beFDM3 Series●microSD™Card Connectors\nBRecommended temperature profile\nHRS test condition\nSolder method : Reflow, IR/hot air\nEnvironment : Room air\nSolder composition: Paste, 96.5%Sn/3.0%Ag/0.5%Cu"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "Solder composition: Paste, 96.5%Sn/3.0%Ag/0.5%Cu\n(Senju Metal Industry, Co., Ltd.'s\nPart Number:M705-GRN360-K2-V)\nTest board : Glass epoxy 60mm∞100mm∞1.0mm thick\nMetal mask : 0.12mm thick\nNumber of reflow cycles: 2cycles max.\nThe temperature profiles shown are based on the above\nconditions.\nIn individual applications the actual temperature may vary,\ndepending on solder paste type, volume / thickness and board\nsize / thickness. Consult your solder paste and equipment"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "manufacturer for specific recommendations.\nBPrecautions\n1.Do not immerse or clean the entire connector with cleaning solutions as this may affect proper operation of the\nejection mechanism and electrical performance of the connector\n2. Do not apply excessive force to the connector when handling or after installation on the PC board.\n3.The connectors will reliably connect and operate with the correctly inserted microSDTMcards."
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "Follow the correct insertion / ejection procedure for the specific connector in use.\nAttempts of incorrect insertion of the card may cause damage to the connector or the card.\n4.The connector must be correctly mounted on the PC board before the card can be inserted. Do not insert the card in\nthe un-mounted connector.\n5.Mounting on the Flexible Printed Circuit (FPC)\nTo assure correct performance it is recommended that a flat reinforcement plate 0.3 mm min. thick be used under\nthe FPC."
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "the FPC.\n6.Small visible residual manufacturing fluids or tooling marks do not affect connector's performance.\n7.Repeated insertions and removal of the cards may leave some marks on the card itself. This will have no affect on\nthe connector performance.\n●Refer to applicable Operation Manual listed below for additional precautions.\nSeries Operation Manual Number\nDM3AT Series ETAD-F0345\nDM3BT Series ETAD-F0324\nDM3CS Series ETAD-F0335\nDM3D Series ETAD-F0353\n11\nerutarepmeT\n(ç)\nPeak:250ç MAX\n250"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "11\nerutarepmeT\n(ç)\nPeak:250ç MAX\n250\n230ç min.\n200 50\nseconds\n200ç\nSoldering\n150\n150ç\n100 90 to 120 seconds\nPreheating\n50\nTime (Seconds)\n.devreseR\nsthgiR\nllA\n.DTL\n,.OC\nCIRTCELE\nESORIH\n6202\nthgirypoC\n6202.1.beFDM3 Series●microSD™Card Connectors\nThe characteristics and the specifications contained herein are for reference purpose. Please refer to the latest customer drawings prior to use.\n12"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "12\nThe contents of this catalog are current as of date of 01/2017. Contents are subject to change without notice for the purpose of improvements.\n.devreseR\nsthgiR\nllA\n.DTL\n,.OC\nCIRTCELE\nESORIH\n6202\nthgirypoC\n6202.1.beF"
+  }
+]

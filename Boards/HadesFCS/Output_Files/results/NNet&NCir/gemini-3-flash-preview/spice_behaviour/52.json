@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the boot0_fcc signal maintain a voltage of 0V during the entire simulation?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "In the netlist and SPICE file, BOOT0_FCC is connected to GND through resistor R22 and the open switch SW2, and there are no active voltage sources or signal transitions defined in the simulation to pull this node high.",
+        "is_final": true
+    }
+}

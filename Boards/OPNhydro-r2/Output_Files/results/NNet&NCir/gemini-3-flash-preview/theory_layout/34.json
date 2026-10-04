@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component C3 connected to I2C_SDA?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "According to the netlist and SPICE file, C3 is connected between the +24V rail and GND, not to the I2C_SDA net.",
+        "is_final": true
+    }
+}

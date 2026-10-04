@@ -1,0 +1,594 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "LM1117\nSNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023\nLM1117 800-mA, Low-Dropout Linear Regulator\n1 Features 3 Description\n• For a newer drop-in alternative, see the TLV1117 The LM1117 is a low dropout voltage regulator with a\n• For drop-in replacements in fixed output SOT-223 dropout of 1.2 V at 800 mA of load current.\npackage configuration and improved functionality,\nThe LM1117 is available in an adjustable version,\nsee the TLV761\nwhich can set the output voltage from 1.25 V to 13.8 V"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "• Available in 1.8 V, 2.5 V, 3.3 V, 5 V, and adjustable\nwith only two external resistors. In addition, the device\nversions\nis available in five fixed voltages, 1.8 V, 2.5 V, 3.3 V,\n• Space-saving SOT-223 and WSON packages\nand 5 V.\n• Current limiting and thermal protection\n• Output current: 800 mA The LM1117 offers current limiting and thermal\n• Line regulation: 0.2% (maximum) shutdown. The circuit includes a Zener trimmed band-"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "• Load regulation: 0.4% (maximum) gap reference to assure output voltage accuracy to\n• Temperature range: within ±1%.\n– LM1117: 0°C to +125°C\nA minimum of 10-µF tantalum capacitor is required\n– LM1117I: –40°C to +125°C\nat the output to improve the transient response and\n2 Applications stability.\n• AC drive power stage modules Package Information\n• Merchant network and server PSU PART NUMBER PACKAGE(1) BODY SIZE (NOM)\n• Industrial AC/DC DCY (SOT-223, 4) 6.50 mm × 3.50 mm\n• Ultrasound scanners"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "• Ultrasound scanners\nNDE (TO-220, 3) 14.986 mm × 10.16 mm\n• Servo drive control modules LM1117,\nNDP (TO-252, 3) 6.58 mm × 6.10 mm\nLM1117I\nNGN (WSON, 8) 4.00 mm × 4.00 mm\nKTT (TO-263, 3) 10.18 mm × 8.41 mm\n(1) For all available packages, see the orderable addendum at\nthe end of the data sheet.\nAdjustable Output Regulator\nAn IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "intellectual property matters and other important disclaimers. PRODUCTION DATA.LM1117\nSNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023 www.ti.com\nTable of Contents\n1 Features............................................................................1 8.3 Feature Description...................................................11\n2 Applications.....................................................................1 8.4 Device Functional Modes..........................................13"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "3 Description.......................................................................1 9 Application and Implementation..................................14\n4 Revision History..............................................................2 9.1 Application Information.............................................14\n5 Device Comparison Table...............................................3 9.2 Typical Application....................................................14"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "6 Pin Configuration and Functions...................................3 9.3 System Examples.....................................................16\n7 Specifications..................................................................4 9.4 Power Supply Recommendations.............................17\n7.1 Absolute Maximum Ratings........................................4 9.5 Layout.......................................................................17"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "7.2 ESD Ratings...............................................................4 10 Device and Documentation Support..........................22\n7.3 Recommended Operating Conditions.........................4 10.1 Documentation Support..........................................22\n7.4 Thermal Information....................................................4 10.2 Receiving Notification of Documentation Updates..22"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "7.5 LM1117 Electrical Characteristics...............................5 10.3 Support Resources.................................................22\n7.6 LM1117I Electrical Characteristics..............................7 10.4 Trademarks.............................................................22\n7.7 Typical Characteristics................................................9 10.5 Electrostatic Discharge Caution..............................22"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "8 Detailed Description......................................................11 10.6 Glossary..................................................................22\n8.1 Overview...................................................................11 11 Mechanical, Packaging, and Orderable\n8.2 Functional Block Diagram.........................................11 Information....................................................................22\n4 Revision History"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "4 Revision History\nNOTE: Page numbers for previous revisions may differ from page numbers in the current version.\nChanges from Revision P (July 2022) to Revision Q (January 2023) Page\n• Added drop-in replacement bullet for TLV761 to Features section.....................................................................1\nChanges from Revision O (June 2020) to Revision P (July 2022) Page"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "• Updated the numbering format for tables, figures, and cross-references throughout the document..................1\n2 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM1117LM1117\nwww.ti.com SNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023\n5 Device Comparison Table\nI PARAMETER LM1117 TLV1117 UNIT\nOUT\nInput voltage range (max) 15 15 V\nLoad regulation accuracy 1.6 1.6 %\nPSRR (120 Hz) 75 75 dB\nRecommended operating temperature 0 – 125 -40 – 125 °C"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "800 mA SOT-223 T 61.6 104.3 °C/W\nJA\nTO-220 T 23.8 30.1 °C/W\nJA\nTO-252 T 45.1 50.9 °C/W\nJA\nTO-263 T 41.3 27.5 °C/W\nJA\nWSON-8 T 39.3 38.3 °C/W\nJA\n6 Pin Configuration and Functions\nFigure 6-2. NDE Package, 3-Pin TO-220 (Top View)\nFigure 6-1. DCY Package, 4-Pin SOT (Top View)\nFigure 6-3. KTT Package, 3-Pin TO-263 (Top View)\nFigure 6-4. NDP Package, 3-Pin TO-252 (Top View)\nADJ/GND 1 8 NOT CONNECTED\nVIN 2 7 VOUT\nVOUT\nVIN 3 6 VOUT\nVIN 4 5 VOUT"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "VIN 2 7 VOUT\nVOUT\nVIN 3 6 VOUT\nVIN 4 5 VOUT\nWhen using the WSON package pins 2, 3, and 4 must be connected together and pins 5, 6, and 7 must be connected together.\nFigure 6-5. NGN Package, 8-Pin WSON (Top View)\nTable 6-1. Pin Functions\nPIN\nI/O DESCRIPTION\nNAME TO-252 WSON SOT-223 TO-263 TO-220\nAdjust pin for adjustable output option. Ground pin for fixed\nADJ/GND 1 1 1 1 1 —\noutput option.\nV 3 2, 3, 4 3 3 3 I Input voltage pin for the regulator\nIN\n5, 6, 7,"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "IN\n5, 6, 7,\nV 2 , TAB 2, 4 2, TAB 2, TAB O Output voltage pin for the regulator\nOUT TAB\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 3\nProduct Folder Links: LM1117LM1117\nSNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023 www.ti.com\n7 Specifications\n7.1 Absolute Maximum Ratings\nover operating free-air temperature range (unless otherwise noted)(1)\nMIN MAX UNIT\nMaximum input voltage (V to GND) 20 V\nIN\nPower dissipation(2) Internally Limited"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "IN\nPower dissipation(2) Internally Limited\nJunction temperature (T )(2) 150 °C\nJ\nStorage temperature, T –65 150 °C\nstg\n(1) Stresses beyond those listed under Absolute Maximum Ratings may cause permanent damage to the device. These are stress\nratings only, which do not imply functional operation of the device at these or any other conditions beyond those indicated under\nRecommended Operating Conditions. Exposure to absolute-maximum-rated conditions for extended periods may affect device"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "reliability.\n(2) The maximum power dissipation is a function of T , R , and T . The maximum allowable power dissipation at any ambient\nJ(max) θJA A\ntemperature is P = (T –T )/R . All numbers apply for packages soldered directly into a PCB.\nD J(max) A θJA\n7.2 ESD Ratings\nVALUE UNIT\nV Electrostatic discharge Human-body model (HBM), per ANSI/ESDA/JEDEC JS-001(1) ±2000 V\n(ESD)"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "(ESD)\n(1) JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process. Pins listed as\n±2000 V may actually have higher performance.\n7.3 Recommended Operating Conditions\nover operating free-air temperature range (unless otherwise noted)\nMIN MAX UNIT\nInput voltage (V to GND) 15 V\nIN\nLM1117 0 125 °C\nJunction temperature (T )(1)\nJ\nLM1117I −40 125"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "Junction temperature (T )(1)\nJ\nLM1117I −40 125\n(1) The maximum power dissipation is a function of T , R , and T . The maximum allowable power dissipation at any ambient\nJ(max) θJA A\ntemperature is P = (T –T )/R . All numbers apply for packages soldered directly into a PCB.\nD J(max) A θJA\n7.4 Thermal Information\nLM1117, LM1117I\nDCY NDE NDP NGN KTT\nTHERMAL METRIC(1) UNIT\n(SOT-223) (TO-220) (TO-252) (WSON) (TO-263)\n4 PINS 3 PINS 3 PINS 8 PINS 3 PINS"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "4 PINS 3 PINS 3 PINS 8 PINS 3 PINS\nRθJA Junction-to-ambient thermal resistance 61.6 23.8 45.1 39.3 41.3 °C/W\nRθJC(top) Junction-to-case (top) thermal resistance 42.5 16.6 52.1 31.4 44.1 °C/W\nRθJB Junction-to-board thermal resistance 10.4 5.3 29.8 16.5 24.2 °C/W\nψJT Junction-to-top characterization parameter 2.9 3.1 4.5 0.3 10.9 °C/W\nψJB Junction-to-board characterization parameter 10.3 5.3 29.4 16.7 23.2 °C/W\nRθJC(bot) Junction-to-case (bottom) thermal resistance — 1.5 1.3 5.6 1.3 °C/W"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "(1) For more information about traditional and new thermal metrics, see the Semiconductor and IC package thermal metrics application\nreport.\n4 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM1117LM1117\nwww.ti.com SNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023\n7.5 LM1117 Electrical Characteristics\nunless otherwise specified, T = 25°C\nJ\nPARAMETER TEST CONDITIONS MIN(1) TYP(2) MAX(1) UNIT\nLM1117-ADJ\n1.238 1.25 1.262"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "LM1117-ADJ\n1.238 1.25 1.262\nIOUT = 10 mA, VIN – VOUT = 2 V, TJ = 25°C\nVREF Reference voltage LM1117-ADJ TJ = 25°C 1.25 V\n10 mA ≤ IOUT ≤ 800 mA, 1.4 V ≤ over the junction temperature range\nVIN – VOUT ≤ 10 V 0°C to 125°C 1.225 1.27\nLM1117-1.8\n1.782 1.8 1.818\nIOUT = 10 mA, VIN = 3.8 V, TJ = 25°C\nLM1117-1.8 TJ = 25°C 1.8 V\n0 ≤ IOUT ≤ 800 mA, 3.2 V ≤ VIN ≤ over the junction temperature range\n10 V 0°C to 125°C 1.746 1.854\nLM1117-2.5\n2.475 2.5 2.525\nIOUT = 10 mA, VIN = 4.5 V, TJ = 25°C"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "IOUT = 10 mA, VIN = 4.5 V, TJ = 25°C\nLM1117-2.5 TJ = 25°C 2.5 V\n0 ≤ IOUT ≤ 800 mA, 3.9 V ≤ VIN ≤ over the junction temperature range\n10 V 0°C to 125°C 2.45 2.55\nVOUT Output voltage\nLM1117-3.3\n3.267 3.3 3.333\nIOUT = 10 mA, VIN = 5 V TJ = 25°C\nLM1117-3.3 TJ = 25°C 3.3 V\n0 ≤ IOUT ≤ 800 mA, 4.75 V ≤ VIN over the junction temperature range\n≤ 10 V 0°C to 125°C 3.235 3.365\nLM1117-5.0\n4.95 5 5.05\nIOUT = 10 mA, VIN = 7 V, TJ = 25°C\nLM1117-5.0 TJ = 25°C 5 V"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "LM1117-5.0 TJ = 25°C 5 V\n0 ≤ IOUT ≤ 800 mA, 6.5 V ≤ VIN ≤ over the junction temperature range\n12 V 0°C to 125°C 4.9 5.1\nLM1117-ADJ TJ = 25°C 0.035%\nIOUT = 10mA, 1.5V ≤ VIN-VOUT ≤ over the junction temperature range\n13.75V 0°C to 125°C 0.2%\nTJ = 25°C 1\nLM1117-1.8\nIOUT = 0 mA, 3.2 V ≤ VIN ≤ 10 V over the junction temperature range 6 mV\n0°C to 125°C\nTJ = 25°C 1\nLM1117-2.5\nΔVOUT Line regulation(3) IOUT = 0 mA, 3.9 V ≤ VIN ≤ 10 V over the junction temperature range 6 mV\n0°C to 125°C\nTJ = 25°C 1"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "0°C to 125°C\nTJ = 25°C 1\nLM1117-3.3\nIOUT = 0 mA, 4.75 V ≤ VIN ≤ 15 V over the junction temperature range 6 mV\n0°C to 125°C\nTJ = 25°C 1\nLM1117-5.0\nIOUT = 0 mA, 6.5 V ≤ VIN ≤ 15 V over the junction temperature range 10 mV\n0°C to 125°C\nLM1117-ADJ TJ = 25°C 0.2%\nVIN – VOUT = 3 V, 10 ≤ IOUT ≤ 800 over the junction temperature range\nmA 0°C to 125°C 0.4%\nTJ = 25°C 1\nLM1117-1.8\nVIN = 3.2 V, 0 ≤ IOUT ≤ 800 mA over the junction temperature range 10 mV\n0°C to 125°C\nTJ = 25°C 1\nLM1117-2.5"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "0°C to 125°C\nTJ = 25°C 1\nLM1117-2.5\nΔVOUT Load regulation(3) VIN = 3.9 V, 0 ≤ IOUT ≤ 800 mA over the junction temperature range 10 mV\n0°C to 125°C\nTJ = 25°C 1\nLM1117-3.3\nVIN = 4.75 V, 0 ≤ IOUT ≤ 800 mA over the junction temperature range 10 mV\n0°C to 125°C\nTJ = 25°C 1\nLM1117-5.0\nVIN = 6.5 V, 0 ≤ IOUT ≤ 800 mA over the junction temperature range 15 mV\n0°C to 125°C\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 5\nProduct Folder Links: LM1117LM1117"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "Product Folder Links: LM1117LM1117\nSNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023 www.ti.com\n7.5 LM1117 Electrical Characteristics (continued)\nunless otherwise specified, T = 25°C\nJ\nPARAMETER TEST CONDITIONS MIN(1) TYP(2) MAX(1) UNIT\nTJ = 25°C 1.1\nIOUT = 100 mA over the junction temperature range V\n1.2\n0°C to 125°C\nTJ = 25°C 1.15\nV V IN O U – T Dropout voltage(4) IOUT = 500 mA over the junction temperature range 1.25 V\n0°C to 125°C\nTJ = 25°C 1.2"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "0°C to 125°C\nTJ = 25°C 1.2\nIOUT = 800 mA over the junction temperature range V\n1.3\n0°C to 125°C\nILIMIT Current limit VIN – VOUT = 5 V, TJ = 25°C 800 1200 1500 mA\nTJ = 25°C 1.7\nMinimum load LM1117-ADJ\ncurrent(5) VIN = 15 V over the junction temperature range 5 mA\n0°C to 125°C\nTJ = 25°C 5\nLM1117-1.8\nVIN ≤ 15 V over the junction temperature range 10 mA\n0°C to 125°C\nTJ = 25°C 5\nLM1117-2.5\nVIN ≤ 15 V over the junction temperature range 10 mA\n0°C to 125°C\nQuiescent current\nTJ = 25°C 5\nLM1117-3.3"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "Quiescent current\nTJ = 25°C 5\nLM1117-3.3\nVIN ≤ 15 V over the junction temperature range 10 mA\n0°C to 125°C\nTJ = 25°C 5\nLM1117-5.0\nVIN ≤ 15 V over the junction temperature range 10 mA\n0°C to 125°C\nThermal regulation TA = 25°C, 30-ms pulse 0.01 0.1 %/W\nTJ = 25°C 75\nRipple regulation V fR I V PP R L IP E P = LE 1 = 2 1 0 V H P z P , VIN – VOUT = 3 over the junction temperature range 60 dB\n0°C to 125°C\nTJ = 25°C 60\nAdjust pin current μA\nover the junction temperature range 0°C to 125°C 120"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "TJ = 25°C 0.2\nA ch d a ju n s g t e pin current 1 1 . 0 4 ≤ V I O ≤ U V T IN ≤ – 8 0 V 0 O m UT A ≤ , 10 V over the junction temperature range 5 µA\n0°C to 125°C\nTemperature stability 0.5%\nLong term stability TA = 125°C, 1000 hours 0.3%\nRMS output noise (% of VOUT), 10 Hz ≤ f ≤ 10 kHz 0.003%\n(1) All limits are ensured by testing or statistical analysis.\n(2) Typical Values represent the most likely parametric normal.\n(3) Load and line regulation are measured at constant junction room temperature."
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "(4) The dropout voltage is the input/output differential at which the circuit ceases to regulate against further reduction in input voltage. This\nvoltage is measured when the output voltage has dropped 100 mV from the nominal value obtained at V = V + 1.5 V.\nIN OUT\n(5) The minimum output current required to maintain regulation.\n6 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM1117LM1117\nwww.ti.com SNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "7.6 LM1117I Electrical Characteristics\nunless otherwise specified, T = 25°C\nJ\nPARAMETER TEST CONDITIONS MIN(1) TYP(2) MAX(1) UNIT\nLM1117I-ADJ\n1.238 1.25 1.262\nI = 10 mA, V – V = 2 V, T = 25°C\nOUT IN OUT J\nT = 25°C 1.25\nV REF Reference voltage LM1117I-ADJ J V\n10 mA ≤ I ≤ 800 mA, 1.4 V ≤ V over the junction\nOUT IN\n– V ≤ 10 V temperature range – 1.2 1.29\nOUT\n40°C to 125°C\nLM1117I-3.3\n3.267 3.3 3.333\nI = 10 mA, V = 5 V, T = 25°C\nOUT IN J\nT = 25°C 3.3\nLM1117I-3.3 J V"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "OUT IN J\nT = 25°C 3.3\nLM1117I-3.3 J V\n0 ≤ I ≤ 800 mA, 4.75 V ≤ V ≤ 10 over the junction\nOUT IN\nV temperature range – 3.168 3.432\n40°C to 125°C\nV Output voltage\nOUT\nLM1117I-5.0\n4.95 5 5.05\nI = 10 mA, V = 7 V, T = 25°C\nOUT IN J\nT = 25°C 5\nLM1117I-5.0 J V\n0 ≤ I ≤ 800 mA, 6.5 V ≤ V ≤ 12 over the junction\nOUT IN\nV temperature range – 4.8 5.2\n40°C to 125°C\nT = 25°C 0.035%\nJ\nLM1117I-ADJ\nI = 10 mA, 1.5 V ≤ V – V ≤ over the junction\nOUT IN OUT\n13.75 V temperature range – 0.3%\n40°C to 125°C\nT = 25°C 1\nJ"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "40°C to 125°C\nT = 25°C 1\nJ\nΔV Line regulation(3) LM1117I-3.3 over the junction mV\nOUT I OUT = 0 mA, 4.75 V ≤ V IN ≤ 15 V temperature range – 10\n40°C to 125°C\nT = 25°C 1\nJ\nLM1117I-5.0 over the junction mV\nI OUT = 0 mA, 6.5 V ≤ V IN ≤ 15 V temperature range – 15\n40°C to 125°C\nT = 25°C 0.2%\nJ\nLM1117I-ADJ\nV – V = 3 V, 10 ≤ I ≤ 800 over the junction\nIN OUT OUT\nmA temperature range – 0.5%\n40°C to 125°C\nT = 25°C 1\nJ\nΔV Load regulation(3) LM1117I-3.3 over the junction mV"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "OUT V IN = 4.75 V, 0 ≤ I OUT ≤ 800 mA temperature range – 15\n40°C to 125°C\nT = 25°C 1\nJ\nLM1117I-5.0 over the junction mV\nV IN = 6.5 V, 0 ≤ I OUT ≤ 800 mA temperature range – 20\n40°C to 125°C\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 7\nProduct Folder Links: LM1117LM1117\nSNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023 www.ti.com\n7.6 LM1117I Electrical Characteristics (continued)\nunless otherwise specified, T = 25°C\nJ"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "unless otherwise specified, T = 25°C\nJ\nPARAMETER TEST CONDITIONS MIN(1) TYP(2) MAX(1) UNIT\nT = 25°C 1.1\nJ\nI = 100 mA over the junction V\nOUT\ntemperature range – 1.3\n40°C to 125°C\nT = 25°C 1.15\nJ\nV -V Dropout voltage(4) I = 500 mA over the junction V\nIN OUT OUT\ntemperature range – 1.35\n40°C to 125°C\nT = 25°C 1.2\nJ\nI = 800 mA over the junction V\nOUT\ntemperature range – 1.4\n40°C to 125°C\nI Current limit V – V = 5 V, T = 25°C 800 1200 1500 mA\nLIMIT IN OUT J\nT = 25°C 1.7\nJ"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "LIMIT IN OUT J\nT = 25°C 1.7\nJ\nMinimum load LM1117I-ADJ over the junction mA\ncurrent(5) V IN = 15 V temperature range – 5\n40°C to 125°C\nT = 25°C 5\nJ\nLM1117I-3.3 over the junction mA\nV IN ≤ 15 V temperature range – 15\n40°C to 125°C\nQuiescent current\nT = 25°C 5\nJ\nLM1117I-5.0 over the junction mA\nV IN ≤ 15 V temperature range – 15\n40°C to 125°C\nThermal regulation T = 25°C, 30-ms pulse 0.01 0.1 %/W\nA\nT = 25°C 75\nJ\nRipple regulation f RIPPLE = 120 Hz, V IN – V OUT = 3 V over the junction dB"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "V RIPPLE = 1 V PP temperature range – 60\n40°C to 125°C\nT = 25°C 60\nJ\nAdjust pin current μA\nover the junction temperature range –40°C to 125°C 120\nT = 25°C 0.2\nJ\nAdjust pin current 10 ≤ I OUT ≤ 800 mA, over the junction µA\nchange 1.4 V ≤ V IN – V OUT ≤ 10 V temperature range – 10\n40°C to 125°C\nTemperature\n0.5%\nstability\nLong term stability T = 125°C, 1000 hours 0.3%\nA\nRMS output noise (% of V ), 10 Hz ≤ f ≤ 10 kHz 0.003%\nOUT\n(1) All limits are ensured by testing or statistical analysis."
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "(2) Typical Values represent the most likely parametric normal.\n(3) Load and line regulation are measured at constant junction room temperature.\n(4) The dropout voltage is the input/output differential at which the circuit ceases to regulate against further reduction in input voltage. This\nvoltage is measured when the output voltage has dropped 100 mV from the nominal value obtained at V = V + 1.5 V.\nIN OUT\n(5) The minimum output current required to maintain regulation."
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "8 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM1117LM1117\nwww.ti.com SNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023\n7.7 Typical Characteristics\nFigure 7-1. Dropout Voltage (V – V ) Figure 7-2. Short-Circuit Current\nIN OUT\nFigure 7-3. Load Regulation Figure 7-4. LM1117-ADJ Ripple Rejection\nFigure 7-5. LM1117-ADJ Ripple Rejection vs Current Figure 7-6. Temperature Stability"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "Copyright © 2023 Texas Instruments Incorporated Submit Document Feedback 9\nProduct Folder Links: LM1117LM1117\nSNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023 www.ti.com\n7.7 Typical Characteristics (continued)\nFigure 7-7. Adjust Pin Current Figure 7-8. LM1117-5.0 Load Transient Response\nFigure 7-9. LM1117-5.0 Line Transient Response\n10 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM1117LM1117"
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "Product Folder Links: LM1117LM1117\nwww.ti.com SNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023\n8 Detailed Description\n8.1 Overview\nThe LM1117 adjustable version develops a 1.25-V reference voltage, V , between the output and the adjust\nREF\npin. As shown in Figure 8-1, this voltage is applied across resistor R1 to generate a constant current I1. The\ncurrent I from the adjust pin can introduce error to the output, but because this current is very small (60 μA)\nADJ"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "ADJ\ncompared to the I1 and very constant with line and load changes, the error can be ignored. The constant current\nI1 then flows through the output set resistor R2 and sets the output voltage to the desired level.\nFor fixed voltage devices, R1 and R2 are integrated inside the devices.\nFigure 8-1. Basic Adjustable Regulator\n8.2 Functional Block Diagram\n8.3 Feature Description\n8.3.1 Load Regulation"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "8.3 Feature Description\n8.3.1 Load Regulation\nThe LM1117 regulates the voltage that appears between the output and ground pins, or between the output and\nadjust pins. In some cases, line resistances can introduce errors to the voltage across the load. To obtain the\nbest load regulation, a few precautions are needed.\nFigure 8-2 illustrates a typical application using a fixed output regulator. The Rt1 and Rt2 are the line"
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "resistances. Obviously the V is less than the V by the sum of the voltage drops along the line\nLOAD OUT\nresistances. In this case, the load regulation at the R is degraded from the data sheet specification. To\nLOAD\nimprove this degradation, the load must be tied directly to the output terminal on the positive side and directly\ntied to the ground terminal on the negative side.\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 11\nProduct Folder Links: LM1117LM1117"
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "Product Folder Links: LM1117LM1117\nSNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023 www.ti.com\nFigure 8-2. Typical Application Using Fixed Output Regulator\nWhen the adjustable regulator is used (Figure 8-3), the best performance is obtained with the positive side of\nthe resistor R1 tied directly to the output terminal of the regulator rather than near the load. This eliminates\nline drops from appearing effectively in series with the reference and degrading regulation. For example, a 5-V"
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "regulator with 0.05-Ω resistance between the regulator and load has a load regulation resulting from the line\nresistance of 0.05 Ω × I . If R1 (= 125 Ω) is connected near the load, the effective line resistance is 0.05 Ω (1 +\nL\nR2 / R1) or in this case, four times worse. In addition, the ground side of the resistor R2 can be returned near the\nground of the load to provide remote ground sensing and improve load regulation.\nFigure 8-3. Best Load Regulation Using Adjustable Output Regulator"
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "12 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM1117LM1117\nwww.ti.com SNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023\n8.4 Device Functional Modes\n8.4.1 Protection Diodes\nUnder normal operation, the LM1117 regulators do not need any protection diode. With the adjustable device,\nthe internal resistance between the adjust and output terminals limits the current. No diode is needed to divert"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "the current around the regulator even with capacitor on the adjust terminal. The adjust pin can take a transient\nsignal of ±25V with respect to the output voltage without damaging the device.\nWhen a output capacitor is connected to a regulator and the input is shorted to ground, the output capacitor\nwill discharge into the output of the regulator. The discharge current depends on the value of the capacitor, the"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "output voltage of the regulator, and rate of decrease of V . In the LM1117 regulators, the internal diode between\nIN\nthe output and input pins can withstand microsecond surge currents of 10A to 20A. With an extremely large\noutput capacitor (≥1000 µF), and with input instantaneously shorted to ground, the regulator could be damaged.\nIn this case, an external diode is recommended between the output and input pins to protect the regulator, as\nshown in Figure 8-4."
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "shown in Figure 8-4.\nFigure 8-4. Regulator With Protection Diode\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 13\nProduct Folder Links: LM1117LM1117\nSNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023 www.ti.com\n9 Application and Implementation\nNote\nInformation in the following applications sections is not part of the TI component specification,\nand TI does not warrant its accuracy or completeness. TI’s customers are responsible for"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "determining suitability of components for their purposes, as well as validating and testing their design\nimplementation to confirm system functionality.\n9.1 Application Information\nThe LM1117 is a versatile and high performance linear regulator with a wide temperature range and tight line/\nload regulation operation. An output capacitor is required to further improve transient response and stability. For"
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "the adjustable option, the ADJ pin can also be bypassed to achieve very high ripple-rejection ratios. The LM1117\nis versatile in its applications, including being used as a post regulator for DC/DC converters, battery chargers,\nand microprocessor supplies.\n9.2 Typical Application\nFigure 9-1. 1.25-V to 10-V Adjustable Regulator With Improved Ripple Rejection\n9.2.1 Design Requirements\nThe device component count is very minimal, employing two resistors as part of a voltage divider circuit"
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "and an output capacitor for load regulation. A 10-μF tantalum on the input is a suitable input capacitor for\nalmost all applications. An optional bypass capacitor across R2 can also be used to improve PSRR. See the\nRecommended Operating Conditions table for more information.\n9.2.2 Detailed Design Procedure\nThe output voltage is set based on the selection of the two resistors, R1 and R2, as shown in Figure 9-1. For\ndetails on capacitor selection, see the External Capacitors section."
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "9.2.2.1 External Capacitors\n9.2.2.1.1 Input Bypass Capacitor\nAn input capacitor is recommended. A 10-µF tantalum on the input is a suitable input capacitor for almost all\napplications.\n9.2.2.1.2 Adjust Terminal Bypass Capacitor\nThe adjust terminal can be bypassed to ground with a bypass capacitor (C ) to improve ripple rejection. This\nADJ\nbypass capacitor prevents ripple from being amplified as the output voltage is increased. At any ripple frequency,"
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "the impedance of the C must be less than R1 to prevent the ripple from being amplified:\nADJ\n14 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM1117LM1117\nwww.ti.com SNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023\n1 / (2π × f × C ) < R1 (1)\nRIPPLE ADJ\nThe R1 is the resistor between the output and the adjust pin. The value is normally in the range of 100 Ω to 200\nΩ. For example, with R1 = 124 Ω and f = 120 Hz, the C must be > 11µF.\nRIPPLE ADJ"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "RIPPLE ADJ\n9.2.2.1.3 Output Capacitor\nThe output capacitor is critical in maintaining regulator stability, and must meet the required conditions for both\nminimum amount of capacitance and equivalent series resistance (ESR). The minimum output capacitance\nrequired by the LM1117 is 10 µF, if a tantalum capacitor is used. Any increase of the output capacitance will\nmerely improve the loop stability and transient response. The ESR of the output capacitor should range between"
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "0.3 Ω to 22 Ω. In the case of the adjustable regulator, when the C is used, a larger output capacitance (22-µF\nADJ\ntantalum) is required.\n9.2.3 Application Curve\nAs shown in Figure 9-2, the dropout voltage will vary with output current and temperature. Care should be taken\nduring design to ensure the dropout voltage requirement is met across the entire operating temperature and\noutput current range.\nFigure 9-2. Dropout Voltage (V – V )\nIN OUT"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "Figure 9-2. Dropout Voltage (V – V )\nIN OUT\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 15\nProduct Folder Links: LM1117LM1117\nSNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023 www.ti.com\n9.3 System Examples\nSeveral circuits can be realized with the LM1117. The circuit diagrams in this section demonstrate multiple\nsystem examples that can be utilized in many applications.\nFigure 9-3. Fixed Output Regulator\nFigure 9-4. Adjusting Output of Fixed Regulators"
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "Figure 9-4. Adjusting Output of Fixed Regulators\nFigure 9-5. Regulator With Reference\nFigure 9-6. 5-V Logic Regulator With Electronic\nShutdown*\nFigure 9-7. Battery Backed-Up Regulated Supply\nFigure 9-8. Low Dropout Negative Supply\n16 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM1117LM1117\nwww.ti.com SNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023\n9.4 Power Supply Recommendations"
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "9.4 Power Supply Recommendations\nThe input supply to the LM1117 must be kept at a voltage level such that the maximum rating is not exceeded.\nThe minimum dropout voltage must also be met with extra headroom when possible to keep the LM1117 in\nregulation. An input capacitor is recommended. For more information regarding capacitor selection, see the\nExternal Capacitors section.\n9.5 Layout\n9.5.1 Layout Guidelines"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "9.5 Layout\n9.5.1 Layout Guidelines\nSome layout guidelines must be followed to ensure proper regulation of the output voltage with minimum noise.\nTraces carrying the load current must be wide to reduce the amount of parasitic trace inductance and the\nfeedback loop from V to ADJ must be kept as short as possible. To improve PSRR, a bypass capacitor can\nOUT\nbe placed at the ADJ pin and must be located as close as possible to the IC. In cases when V shorts to\nIN"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "IN\nground, an external diode must be placed from V to V to divert the surge current from the output capacitor\nOUT IN\nand protect the IC. The diode must be placed close to the corresponding IC pins to increase their effectiveness.\n9.5.1.1 Heat Sink Requirements\nWhen an integrated circuit operates with an appreciable current, the junction temperature is elevated. The\nthermal limits must be quantified in order to achieve acceptable performance and reliability. This limit is"
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "determined by summing the individual parts consisting of a series of temperature rises from the semiconductor\njunction to the operating environment. A one-dimensional steady-state model of conduction heat transfer is\ndemonstrated in Figure 9-9. The heat generated at the device junction flows through the die to the die attach\npad, through the lead frame to the surrounding case material, to the printed circuit board, and eventually to the"
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "ambient environment. Below is a list of variables that may affect the thermal resistance and in turn the need for a\nheat sink.\nTable 9-1. Component and Application Variables\nR (COMPONENT VARIABLES) R (Application Variables)\nθJC θJA\nLead frame size and material Mounting pad size, material, and location\nNo. of conduction pins Placement of mounting pad\nDie size PCB size and material\nDie attach material Traces length and width\nAdjacent heat sources\nVolume of air\nMolding compound size and material"
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "Volume of air\nMolding compound size and material\nAmbient temperature\nShape of mounting pad\nThe case temperature is measured at the point where the leads contact with the mounting pad surface\nFigure 9-9. Cross-Sectional View of Integrated Circuit Mounted on a Printed Circuit Board\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 17\nProduct Folder Links: LM1117LM1117\nSNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023 www.ti.com"
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "The LM1117 regulators have internal thermal shutdown to protect the device from over-heating. Under all\npossible operating conditions, the junction temperature of the LM1117 must be within the range of 0°C to\n+125°C. A heat sink can be required depending on the maximum power dissipation and maximum ambient\ntemperature of the application. To determine if a heat sink is needed, the power dissipated by the regulator, P ,\nD\nmust be calculated:\nI = I + I (2)\nIN L G\nP = (V -V )I + V I (3)"
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "I = I + I (2)\nIN L G\nP = (V -V )I + V I (3)\nD IN OUT L ING\nFigure 9-10 shows the voltages and currents which are present in the circuit.\nFigure 9-10. Power Dissipation Diagram\nThe next parameter which must be calculated is the maximum allowable temperature rise, T (max):\nR\nT (max) = T (max)-T (max) (4)\nR J A\nwhere\n• T (max) is the maximum allowable junction temperature (125°C) which is encountered in the application\nJ"
+  },
+  {
+    "faiss_index_id": 68,
+    "text": "J\n• T (max) is the maximum ambient temperature which is encountered in the application\nA\nUsing the calculated values for T (max) and P , the maximum allowable value for the junction-to-ambient\nR D\nthermal resistance (R ) can be calculated:\nθJA\nR = T (max) / P (5)\nθJA R D\nFor the maximum allowable value for θ , see the Thermal Information table.\nJA\nAs a design aid, Table 9-2 shows the value of the θ of SOT-223 and TO-252 for different heat sink area. Figure\nJA"
+  },
+  {
+    "faiss_index_id": 69,
+    "text": "JA\n9-11 and Figure 9-12 reflects the same test results as what are in the Table 9-2\nFigure 9-13 and Figure 9-14 shows the maximum allowable power dissipation vs. ambient temperature for the\nSOT-223 and TO-252 device. Figure 9-15 and Figure 9-16 shows the maximum allowable power dissipation vs.\ncopper area (in2) for the SOT-223 and TO-252 devices. Please see AN1028 for power enhancement techniques\nto be used with SOT-223 and TO-252 packages."
+  },
+  {
+    "faiss_index_id": 70,
+    "text": "to be used with SOT-223 and TO-252 packages.\nThe AN-1187 Leadless Leadframe Package (LLP) application note discusses improved thermal performance\nand power dissipation for the WSON.\nTable 9-2. R Different Heat Sink Area\nθJA\nLAYOUT COPPER AREA THERMAL RESISTANCE\nTop Side (in2)(1) Bottom Side (in2) (θ ,°C/W) SOT-223 (θ ,°C/W) TO-252\nJA JA\n1 0.0123 0 136 103\n2 0.066 0 123 87\n3 0.3 0 84 60\n4 0.53 0 75 54\n5 0.76 0 69 52\n6 1 0 66 47\n7 0 0.2 115 84"
+  },
+  {
+    "faiss_index_id": 71,
+    "text": "5 0.76 0 69 52\n6 1 0 66 47\n7 0 0.2 115 84\n18 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM1117LM1117\nwww.ti.com SNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023\nTable 9-2. R Different Heat Sink Area (continued)\nθJA\nLAYOUT COPPER AREA THERMAL RESISTANCE\n8 0 0.4 98 70\n9 0 0.6 89 63\n10 0 0.8 82 57\n11 0 1 79 57\n12 0.066 0.066 125 89\n13 0.175 0.175 93 72\n14 0.284 0.284 83 61\n15 0.392 0.392 75 55\n16 0.5 0.5 70 53"
+  },
+  {
+    "faiss_index_id": 72,
+    "text": "15 0.392 0.392 75 55\n16 0.5 0.5 70 53\n(1) Tab of device attached to topside copper\nFigure 9-11. R vs 1-oz Copper Area for SOT-223 Figure 9-12. R vs 2-oz Copper Area for TO-252\nθJA θJA\nFigure 9-13. Maximum Allowable Power Figure 9-14. Maximum Allowable Power\nDissipation vs Ambient Temperature for SOT-223 Dissipation vs Ambient Temperature for TO-252\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 19\nProduct Folder Links: LM1117LM1117"
+  },
+  {
+    "faiss_index_id": 73,
+    "text": "Product Folder Links: LM1117LM1117\nSNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023 www.ti.com\nFigure 9-15. Maximum Allowable Power Figure 9-16. Maximum Allowable Power\nDissipation vs 1-oz Copper Area for SOT-223 Dissipation vs 2-oz Copper Area for TO-252\nFigure 9-17. Top View of the Thermal Test Pattern in Actual Scale\n20 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM1117LM1117\nwww.ti.com SNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023"
+  },
+  {
+    "faiss_index_id": 74,
+    "text": "Figure 9-18. Bottom View of the Thermal Test Pattern in Actual Scale\n9.5.2 Layout Example\nFigure 9-19. Layout Example (SOT-223)\nCopyright © 2023 Texas Instruments Incorporated Submit Document Feedback 21\nProduct Folder Links: LM1117LM1117\nSNOS412Q – FEBRUARY 2000 – REVISED JANUARY 2023 www.ti.com\n10 Device and Documentation Support\n10.1 Documentation Support\n10.1.1 Related Documentation\nFor related documentation see the following:"
+  },
+  {
+    "faiss_index_id": 75,
+    "text": "For related documentation see the following:\nTexas Instruments, AN-1187 Leadless Leadframe Package (LLP) application note\n10.2 Receiving Notification of Documentation Updates\nTo receive notification of documentation updates, navigate to the device product folder on ti.com. Click on\nSubscribe to updates to register and receive a weekly digest of any product information that has changed. For\nchange details, review the revision history included in any revised document.\n10.3 Support Resources"
+  },
+  {
+    "faiss_index_id": 76,
+    "text": "10.3 Support Resources\nTI E2E™ support forums are an engineer's go-to source for fast, verified answers and design help — straight\nfrom the experts. Search existing answers or ask your own question to get the quick design help you need.\nLinked content is provided \"AS IS\" by the respective contributors. They do not constitute TI specifications and do\nnot necessarily reflect TI's views; see TI's Terms of Use.\n10.4 Trademarks\nTI E2E™ is a trademark of Texas Instruments."
+  },
+  {
+    "faiss_index_id": 77,
+    "text": "TI E2E™ is a trademark of Texas Instruments.\nAll trademarks are the property of their respective owners.\n10.5 Electrostatic Discharge Caution\nThis integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled\nwith appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.\nESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may"
+  },
+  {
+    "faiss_index_id": 78,
+    "text": "be more susceptible to damage because very small parametric changes could cause the device not to meet its published\nspecifications.\n10.6 Glossary\nTI Glossary This glossary lists and explains terms, acronyms, and definitions.\n11 Mechanical, Packaging, and Orderable Information\nThe following pages include mechanical, packaging, and orderable information. This information is the most\ncurrent data available for the designated devices. This data is subject to change without notice and revision of"
+  },
+  {
+    "faiss_index_id": 79,
+    "text": "this document. For browser-based versions of this data sheet, refer to the left-hand navigation.\n22 Submit Document Feedback Copyright © 2023 Texas Instruments Incorporated\nProduct Folder Links: LM1117PACKAGE OPTION ADDENDUM\nwww.ti.com 9-Nov-2025\nPACKAGING INFORMATION\nOrderable part number Status Material type Package | Pins Package qty | Carrier RoHS Lead finish/ MSL rating/ Op temp (°C) Part marking\n(1) (2) (3) Ball material Peak reflow (6)\n(4) (5)"
+  },
+  {
+    "faiss_index_id": 80,
+    "text": "(1) (2) (3) Ball material Peak reflow (6)\n(4) (5)\nLM1117DT-1.8/NOPB Active Production TO-252 (NDP) | 3 75 | TUBE Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-1.8\nLM1117DT-1.8/NOPB.B Active Production TO-252 (NDP) | 3 75 | TUBE Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-1.8\nLM1117DT-2.5/NOPB Active Production TO-252 (NDP) | 3 75 | TUBE Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-2.5\nLM1117DT-2.5/NOPB.B Active Production TO-252 (NDP) | 3 75 | TUBE Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117"
+  },
+  {
+    "faiss_index_id": 81,
+    "text": "DT-2.5\nLM1117DT-3.3/NOPB Active Production TO-252 (NDP) | 3 75 | TUBE Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-3.3\nLM1117DT-3.3/NOPB.B Active Production TO-252 (NDP) | 3 75 | TUBE Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-3.3\nLM1117DT-5.0/NOPB Active Production TO-252 (NDP) | 3 75 | TUBE Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-5.0\nLM1117DT-5.0/NOPB.B Active Production TO-252 (NDP) | 3 75 | TUBE Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-5.0"
+  },
+  {
+    "faiss_index_id": 82,
+    "text": "DT-5.0\nLM1117DT-ADJ/NOPB Active Production TO-252 (NDP) | 3 75 | TUBE Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-ADJ\nLM1117DT-ADJ/NOPB.B Active Production TO-252 (NDP) | 3 75 | TUBE Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-ADJ\nLM1117DTX-1.8/NOPB Active Production TO-252 (NDP) | 3 2500 | LARGE T&R Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-1.8\nLM1117DTX-1.8/NOPB.B Active Production TO-252 (NDP) | 3 2500 | LARGE T&R Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-1.8"
+  },
+  {
+    "faiss_index_id": 83,
+    "text": "DT-1.8\nLM1117DTX-2.5/NOPB Active Production TO-252 (NDP) | 3 2500 | LARGE T&R Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-2.5\nLM1117DTX-2.5/NOPB.B Active Production TO-252 (NDP) | 3 2500 | LARGE T&R Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-2.5\nLM1117DTX-3.3/NOPB Active Production TO-252 (NDP) | 3 2500 | LARGE T&R Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-3.3\nLM1117DTX-3.3/NOPB.B Active Production TO-252 (NDP) | 3 2500 | LARGE T&R Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-3.3"
+  },
+  {
+    "faiss_index_id": 84,
+    "text": "DT-3.3\nAddendum-Page 1PACKAGE OPTION ADDENDUM\nwww.ti.com 9-Nov-2025\nOrderable part number Status Material type Package | Pins Package qty | Carrier RoHS Lead finish/ MSL rating/ Op temp (°C) Part marking\n(1) (2) (3) Ball material Peak reflow (6)\n(4) (5)\nLM1117DTX-5.0/NOPB Active Production TO-252 (NDP) | 3 2500 | LARGE T&R Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-5.0\nLM1117DTX-5.0/NOPB.B Active Production TO-252 (NDP) | 3 2500 | LARGE T&R Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-5.0"
+  },
+  {
+    "faiss_index_id": 85,
+    "text": "DT-5.0\nLM1117DTX-ADJ/NOPB Active Production TO-252 (NDP) | 3 2500 | LARGE T&R Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-ADJ\nLM1117DTX-ADJ/NOPB.B Active Production TO-252 (NDP) | 3 2500 | LARGE T&R Yes SN Level-2-260C-1 YEAR 0 to 125 LM1117\nDT-ADJ\nLM1117IDT-3.3/NOPB Active Production TO-252 (NDP) | 3 75 | TUBE Yes SN Level-2-260C-1 YEAR -40 to 125 LM1117\nIDT-3.3\nLM1117IDT-3.3/NOPB.B Active Production TO-252 (NDP) | 3 75 | TUBE Yes SN Level-2-260C-1 YEAR -40 to 125 LM1117\nIDT-3.3"
+  },
+  {
+    "faiss_index_id": 86,
+    "text": "IDT-3.3\nLM1117IDT-5.0/NOPB Active Production TO-252 (NDP) | 3 75 | TUBE Yes SN Level-2-260C-1 YEAR -40 to 125 LM1117\nIDT-5.0\nLM1117IDT-5.0/NOPB.B Active Production TO-252 (NDP) | 3 75 | TUBE Yes SN Level-2-260C-1 YEAR -40 to 125 LM1117\nIDT-5.0\nLM1117IDT-ADJ/NOPB Active Production TO-252 (NDP) | 3 75 | TUBE Yes SN Level-2-260C-1 YEAR -40 to 125 LM1117\nIDT-ADJ\nLM1117IDT-ADJ/NOPB.B Active Production TO-252 (NDP) | 3 75 | TUBE Yes SN Level-2-260C-1 YEAR -40 to 125 LM1117\nIDT-ADJ"
+  },
+  {
+    "faiss_index_id": 87,
+    "text": "IDT-ADJ\nLM1117IDTX-3.3/NOPB Active Production TO-252 (NDP) | 3 2500 | LARGE T&R Yes SN Level-2-260C-1 YEAR -40 to 125 LM1117\nIDT-3.3\nLM1117IDTX-5.0/NOPB Active Production TO-252 (NDP) | 3 2500 | LARGE T&R Yes SN Level-2-260C-1 YEAR -40 to 125 LM1117\nIDT-5.0\nLM1117IDTX-ADJ/NOPB Active Production TO-252 (NDP) | 3 2500 | LARGE T&R Yes SN Level-2-260C-1 YEAR -40 to 125 LM1117\nIDT-ADJ\nLM1117ILD-ADJ/NOPB Active Production WSON (NGN) | 8 1000 | SMALL T&R Yes SN Level-3-260C-168 HR -40 to 125 1117IAD"
+  },
+  {
+    "faiss_index_id": 88,
+    "text": "LM1117ILD-ADJ/NOPB.B Active Production WSON (NGN) | 8 1000 | SMALL T&R Yes SN Level-3-260C-168 HR -40 to 125 1117IAD\nLM1117IMP-3.3/NOPB Active Production SOT-223 (DCY) | 4 1000 | SMALL T&R Yes SN Level-1-260C-UNLIM -40 to 125 N05B\nLM1117IMP-3.3/NOPB.B Active Production SOT-223 (DCY) | 4 1000 | SMALL T&R Yes SN Level-1-260C-UNLIM -40 to 125 N05B\nLM1117IMP-5.0/NOPB Active Production SOT-223 (DCY) | 4 1000 | SMALL T&R Yes SN Level-1-260C-UNLIM -40 to 125 N06B"
+  },
+  {
+    "faiss_index_id": 89,
+    "text": "LM1117IMP-5.0/NOPB.B Active Production SOT-223 (DCY) | 4 1000 | SMALL T&R Yes SN Level-1-260C-UNLIM -40 to 125 N06B\nLM1117IMP-ADJ/NOPB Active Production SOT-223 (DCY) | 4 1000 | SMALL T&R Yes SN Level-1-260C-UNLIM -40 to 125 N03B\nLM1117IMP-ADJ/NOPB.B Active Production SOT-223 (DCY) | 4 1000 | SMALL T&R Yes SN Level-1-260C-UNLIM -40 to 125 N03B\nAddendum-Page 2PACKAGE OPTION ADDENDUM\nwww.ti.com 9-Nov-2025"
+  },
+  {
+    "faiss_index_id": 90,
+    "text": "www.ti.com 9-Nov-2025\nOrderable part number Status Material type Package | Pins Package qty | Carrier RoHS Lead finish/ MSL rating/ Op temp (°C) Part marking\n(1) (2) (3) Ball material Peak reflow (6)\n(4) (5)\nLM1117IMPX-3.3/NOPB Active Production SOT-223 (DCY) | 4 2000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 N05B\nLM1117IMPX-5.0/NOPB Active Production SOT-223 (DCY) | 4 2000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 N06B"
+  },
+  {
+    "faiss_index_id": 91,
+    "text": "LM1117IMPX-ADJ/NOPB Active Production SOT-223 (DCY) | 4 2000 | LARGE T&R Yes SN Level-1-260C-UNLIM -40 to 125 N03B\nLM1117LD-1.8/NOPB Active Production WSON (NGN) | 8 1000 | SMALL T&R Yes SN Level-3-260C-168 HR 0 to 125 1117-18\nLM1117LD-1.8/NOPB.B Active Production WSON (NGN) | 8 1000 | SMALL T&R Yes SN Level-3-260C-168 HR 0 to 125 1117-18\nLM1117LD-2.5/NOPB Active Production WSON (NGN) | 8 1000 | SMALL T&R Yes SN Level-3-260C-168 HR 0 to 125 1117-25"
+  },
+  {
+    "faiss_index_id": 92,
+    "text": "LM1117LD-2.5/NOPB.B Active Production WSON (NGN) | 8 1000 | SMALL T&R Yes SN Level-3-260C-168 HR 0 to 125 1117-25\nLM1117LD-3.3/NOPB Active Production WSON (NGN) | 8 1000 | SMALL T&R Yes SN Level-3-260C-168 HR 0 to 125 1117-33\nLM1117LD-3.3/NOPB.B Active Production WSON (NGN) | 8 1000 | SMALL T&R Yes SN Level-3-260C-168 HR 0 to 125 1117-33\nLM1117LD-ADJ/NOPB Active Production WSON (NGN) | 8 1000 | SMALL T&R Yes SN Level-3-260C-168 HR 0 to 125 1117ADJ"
+  },
+  {
+    "faiss_index_id": 93,
+    "text": "LM1117LD-ADJ/NOPB.B Active Production WSON (NGN) | 8 1000 | SMALL T&R Yes SN Level-3-260C-168 HR 0 to 125 1117ADJ\nLM1117LDX-1.8/NOPB Active Production WSON (NGN) | 8 4500 | LARGE T&R Yes SN Level-3-260C-168 HR 0 to 125 1117-18\nLM1117LDX-1.8/NOPB.B Active Production WSON (NGN) | 8 4500 | LARGE T&R Yes SN Level-3-260C-168 HR 0 to 125 1117-18\nLM1117LDX-ADJ/NOPB Active Production WSON (NGN) | 8 4500 | LARGE T&R Yes SN Level-3-260C-168 HR 0 to 125 1117ADJ"
+  },
+  {
+    "faiss_index_id": 94,
+    "text": "LM1117LDX-ADJ/NOPB.B Active Production WSON (NGN) | 8 4500 | LARGE T&R Yes SN Level-3-260C-168 HR 0 to 125 1117ADJ\nLM1117MP-1.8/NOPB Active Production SOT-223 (DCY) | 4 1000 | SMALL T&R Yes SN Level-1-260C-UNLIM 0 to 125 N12A\nLM1117MP-1.8/NOPB.B Active Production SOT-223 (DCY) | 4 1000 | SMALL T&R Yes SN Level-1-260C-UNLIM 0 to 125 N12A\nLM1117MP-2.5/NOPB Active Production SOT-223 (DCY) | 4 1000 | SMALL T&R Yes SN Level-1-260C-UNLIM 0 to 125 N13A"
+  },
+  {
+    "faiss_index_id": 95,
+    "text": "LM1117MP-2.5/NOPB.B Active Production SOT-223 (DCY) | 4 1000 | SMALL T&R Yes SN Level-1-260C-UNLIM 0 to 125 N13A\nLM1117MP-3.3/NOPB Active Production SOT-223 (DCY) | 4 1000 | SMALL T&R Yes SN Level-1-260C-UNLIM 0 to 125 N05A\nLM1117MP-3.3/NOPB.B Active Production SOT-223 (DCY) | 4 1000 | SMALL T&R Yes SN Level-1-260C-UNLIM 0 to 125 N05A\nLM1117MP-5.0/NOPB Active Production SOT-223 (DCY) | 4 1000 | SMALL T&R Yes SN Level-1-260C-UNLIM 0 to 125 N06A"
+  },
+  {
+    "faiss_index_id": 96,
+    "text": "LM1117MP-5.0/NOPB.B Active Production SOT-223 (DCY) | 4 1000 | SMALL T&R Yes SN Level-1-260C-UNLIM 0 to 125 N06A\nLM1117MP-ADJ/NOPB Active Production SOT-223 (DCY) | 4 1000 | SMALL T&R Yes SN Level-1-260C-UNLIM 0 to 125 N03A\nLM1117MP-ADJ/NOPB.B Active Production SOT-223 (DCY) | 4 1000 | SMALL T&R Yes SN Level-1-260C-UNLIM 0 to 125 N03A\nLM1117MPX-1.8/NOPB Active Production SOT-223 (DCY) | 4 2000 | LARGE T&R Yes SN Level-1-260C-UNLIM 0 to 125 N12A"
+  },
+  {
+    "faiss_index_id": 97,
+    "text": "LM1117MPX-1.8/NOPB.B Active Production SOT-223 (DCY) | 4 2000 | LARGE T&R Yes SN Level-1-260C-UNLIM 0 to 125 N12A\nLM1117MPX-2.5/NOPB Active Production SOT-223 (DCY) | 4 2000 | LARGE T&R Yes SN Level-1-260C-UNLIM 0 to 125 N13A\nLM1117MPX-2.5/NOPB.B Active Production SOT-223 (DCY) | 4 2000 | LARGE T&R Yes SN Level-1-260C-UNLIM 0 to 125 N13A\nLM1117MPX-3.3 Obsolete Production SOT-223 (DCY) | 4 - - Call TI Call TI - N05A"
+  },
+  {
+    "faiss_index_id": 98,
+    "text": "LM1117MPX-3.3/NOPB Active Production SOT-223 (DCY) | 4 2000 | LARGE T&R Yes SN Level-1-260C-UNLIM 0 to 125 N05A\nAddendum-Page 3PACKAGE OPTION ADDENDUM\nwww.ti.com 9-Nov-2025\nOrderable part number Status Material type Package | Pins Package qty | Carrier RoHS Lead finish/ MSL rating/ Op temp (°C) Part marking\n(1) (2) (3) Ball material Peak reflow (6)\n(4) (5)\nLM1117MPX-3.3/NOPB.B Active Production SOT-223 (DCY) | 4 2000 | LARGE T&R Yes SN Level-1-260C-UNLIM 0 to 125 N05A"
+  },
+  {
+    "faiss_index_id": 99,
+    "text": "LM1117MPX-5.0/NOPB Active Production SOT-223 (DCY) | 4 2000 | LARGE T&R Yes SN Level-1-260C-UNLIM 0 to 125 N06A\nLM1117MPX-5.0/NOPB.B Active Production SOT-223 (DCY) | 4 2000 | LARGE T&R Yes SN Level-1-260C-UNLIM 0 to 125 N06A\nLM1117MPX-ADJ/NOPB Active Production SOT-223 (DCY) | 4 2000 | LARGE T&R Yes SN Level-1-260C-UNLIM 0 to 125 N03A\nLM1117MPX-ADJ/NOPB.B Active Production SOT-223 (DCY) | 4 2000 | LARGE T&R Yes SN Level-1-260C-UNLIM 0 to 125 N03A"
+  },
+  {
+    "faiss_index_id": 100,
+    "text": "LM1117S-ADJ/NOPB Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR 0 to 125 LM1117S\nTO-263 (KTT) | 3 ADJ\nLM1117S-ADJ/NOPB.B Active Production DDPAK/ 45 | TUBE ROHS Exempt SN Level-3-245C-168 HR 0 to 125 LM1117S\nTO-263 (KTT) | 3 ADJ\nLM1117SX-3.3/NOPB Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR 0 to 125 LM1117S\nTO-263 (KTT) | 3 3.3\nLM1117SX-3.3/NOPB.B Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR 0 to 125 LM1117S"
+  },
+  {
+    "faiss_index_id": 101,
+    "text": "TO-263 (KTT) | 3 3.3\nLM1117SX-5.0/NOPB Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR 0 to 125 LM1117S\nTO-263 (KTT) | 3 5.0\nLM1117SX-5.0/NOPB.B Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR 0 to 125 LM1117S\nTO-263 (KTT) | 3 5.0\nLM1117SX-ADJ/NOPB Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR 0 to 125 LM1117S\nTO-263 (KTT) | 3 ADJ"
+  },
+  {
+    "faiss_index_id": 102,
+    "text": "TO-263 (KTT) | 3 ADJ\nLM1117SX-ADJ/NOPB.B Active Production DDPAK/ 500 | LARGE T&R ROHS Exempt SN Level-3-245C-168 HR 0 to 125 LM1117S\nTO-263 (KTT) | 3 ADJ\nLM1117T-2.5/NOPB Active Production TO-220 (NDE) | 3 45 | TUBE Yes SN Level-1-NA-UNLIM 0 to 125 LM1117T\n2.5\nLM1117T-2.5/NOPB.B Active Production TO-220 (NDE) | 3 45 | TUBE Yes SN Level-1-NA-UNLIM 0 to 125 LM1117T\n2.5\nLM1117T-3.3/NOPB Active Production TO-220 (NDE) | 3 45 | TUBE Yes SN Level-1-NA-UNLIM 0 to 125 LM1117T\n3.3"
+  },
+  {
+    "faiss_index_id": 103,
+    "text": "3.3\nLM1117T-3.3/NOPB.B Active Production TO-220 (NDE) | 3 45 | TUBE Yes SN Level-1-NA-UNLIM 0 to 125 LM1117T\n3.3\nLM1117T-5.0/NOPB Active Production TO-220 (NDE) | 3 45 | TUBE Yes SN Level-1-NA-UNLIM 0 to 125 LM1117T\n5.0\nLM1117T-5.0/NOPB.B Active Production TO-220 (NDE) | 3 45 | TUBE Yes SN Level-1-NA-UNLIM 0 to 125 LM1117T\n5.0\nLM1117T-ADJ/NOPB Active Production TO-220 (NDE) | 3 45 | TUBE Yes SN Level-1-NA-UNLIM 0 to 125 LM1117T\nADJ\nAddendum-Page 4PACKAGE OPTION ADDENDUM\nwww.ti.com 9-Nov-2025"
+  },
+  {
+    "faiss_index_id": 104,
+    "text": "www.ti.com 9-Nov-2025\nOrderable part number Status Material type Package | Pins Package qty | Carrier RoHS Lead finish/ MSL rating/ Op temp (°C) Part marking\n(1) (2) (3) Ball material Peak reflow (6)\n(4) (5)\nLM1117T-ADJ/NOPB.B Active Production TO-220 (NDE) | 3 45 | TUBE Yes SN Level-1-NA-UNLIM 0 to 125 LM1117T\nADJ\n(1) Status: For more details on status, see our product life cycle."
+  },
+  {
+    "faiss_index_id": 105,
+    "text": "(2) Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,\nreliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional"
+  },
+  {
+    "faiss_index_id": 106,
+    "text": "waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.\n(3) RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.\n(4) Lead finish/Ball material: Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum\ncolumn width."
+  },
+  {
+    "faiss_index_id": 107,
+    "text": "column width.\n(5) MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.\nRefer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board."
+  },
+  {
+    "faiss_index_id": 108,
+    "text": "(6) Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.\nMultiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a \"~\" will appear on a part. If a line is indented then it is a continuation of the previous line and the two\ncombined represent the entire part marking for that device."
+  },
+  {
+    "faiss_index_id": 109,
+    "text": "Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and\nmakes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative"
+  },
+  {
+    "faiss_index_id": 110,
+    "text": "and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers\nand other limited information may not be available for release.\nIn no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis."
+  },
+  {
+    "faiss_index_id": 111,
+    "text": "OTHER QUALIFIED VERSIONS OF LM1117 :\n•Automotive : LM1117-Q1\nNOTE: Qualified Version Definitions:\nAddendum-Page 5PACKAGE OPTION ADDENDUM\nwww.ti.com 9-Nov-2025\n•Automotive - Q100 devices qualified for high-reliability automotive applications targeting zero defects\nAddendum-Page 6PACKAGE MATERIALS INFORMATION\nwww.ti.com 16-Feb-2026\nTAPE AND REEL INFORMATION\nREEL DIMENSIONS TAPE DIMENSIONS\nK0 P1\nW\nB0\nReel\nDiameter\nCavity A0\nA0 Dimension designed to accommodate the component width"
+  },
+  {
+    "faiss_index_id": 112,
+    "text": "B0 Dimension designed to accommodate the component length\nK0 Dimension designed to accommodate the component thickness\nW Overall width of the carrier tape\nP1 Pitch between successive cavity centers\nReel Width (W1)\nQUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE\nSprocket Holes\nQ1 Q2 Q1 Q2\nQ3 Q4 Q3 Q4 User Direction of Feed\nPocket Quadrants\n*All dimensions are nominal\nDevice Package Package Pins SPQ Reel Reel A0 B0 K0 P1 W Pin1\nType Drawing Diameter Width (mm) (mm) (mm) (mm) (mm) Quadrant"
+  },
+  {
+    "faiss_index_id": 113,
+    "text": "(mm) W1 (mm)\nLM1117DTX-1.8/NOPB TO-252 NDP 3 2500 330.0 16.4 6.9 10.5 2.7 8.0 16.0 Q2\nLM1117DTX-2.5/NOPB TO-252 NDP 3 2500 330.0 16.4 6.9 10.5 2.7 8.0 16.0 Q2\nLM1117DTX-3.3/NOPB TO-252 NDP 3 2500 330.0 16.4 6.9 10.5 2.7 8.0 16.0 Q2\nLM1117DTX-5.0/NOPB TO-252 NDP 3 2500 330.0 16.4 6.9 10.5 2.7 8.0 16.0 Q2\nLM1117DTX-ADJ/NOPB TO-252 NDP 3 2500 330.0 16.4 6.9 10.5 2.7 8.0 16.0 Q2\nLM1117IDTX-3.3/NOPB TO-252 NDP 3 2500 330.0 16.4 6.9 10.5 2.7 8.0 16.0 Q2"
+  },
+  {
+    "faiss_index_id": 114,
+    "text": "LM1117IDTX-5.0/NOPB TO-252 NDP 3 2500 330.0 16.4 6.9 10.5 2.7 8.0 16.0 Q2\nLM1117IDTX-ADJ/NOPB TO-252 NDP 3 2500 330.0 16.4 6.9 10.5 2.7 8.0 16.0 Q2\nLM1117ILD-ADJ/NOPB WSON NGN 8 1000 177.8 12.4 4.3 4.3 1.3 8.0 12.0 Q1\nLM1117IMP-3.3/NOPB SOT-223 DCY 4 1000 330.0 16.4 7.0 7.5 2.2 12.0 16.0 Q3\nLM1117IMP-5.0/NOPB SOT-223 DCY 4 1000 330.0 16.4 7.0 7.5 2.2 12.0 16.0 Q3\nLM1117IMP-ADJ/NOPB SOT-223 DCY 4 1000 330.0 16.4 7.0 7.5 2.2 12.0 16.0 Q3"
+  },
+  {
+    "faiss_index_id": 115,
+    "text": "LM1117IMPX-3.3/NOPB SOT-223 DCY 4 2000 330.0 16.4 7.0 7.5 2.2 12.0 16.0 Q3\nLM1117IMPX-5.0/NOPB SOT-223 DCY 4 2000 330.0 16.4 7.0 7.5 2.2 12.0 16.0 Q3\nLM1117IMPX-ADJ/NOPB SOT-223 DCY 4 2000 330.0 16.4 7.0 7.5 2.2 12.0 16.0 Q3\nLM1117LD-1.8/NOPB WSON NGN 8 1000 177.8 12.4 4.3 4.3 1.3 8.0 12.0 Q1\nPack Materials-Page 1PACKAGE MATERIALS INFORMATION\nwww.ti.com 16-Feb-2026\nDevice Package Package Pins SPQ Reel Reel A0 B0 K0 P1 W Pin1\nType Drawing Diameter Width (mm) (mm) (mm) (mm) (mm) Quadrant"
+  },
+  {
+    "faiss_index_id": 116,
+    "text": "(mm) W1 (mm)\nLM1117LD-2.5/NOPB WSON NGN 8 1000 177.8 12.4 4.3 4.3 1.3 8.0 12.0 Q1\nLM1117LD-3.3/NOPB WSON NGN 8 1000 177.8 12.4 4.3 4.3 1.3 8.0 12.0 Q1\nLM1117LD-ADJ/NOPB WSON NGN 8 1000 177.8 12.4 4.3 4.3 1.3 8.0 12.0 Q1\nLM1117LDX-1.8/NOPB WSON NGN 8 4500 330.0 12.4 4.3 4.3 1.3 8.0 12.0 Q1\nLM1117LDX-ADJ/NOPB WSON NGN 8 4500 330.0 12.4 4.3 4.3 1.3 8.0 12.0 Q1\nLM1117MP-1.8/NOPB SOT-223 DCY 4 1000 330.0 16.4 7.0 7.5 2.2 12.0 16.0 Q3"
+  },
+  {
+    "faiss_index_id": 117,
+    "text": "LM1117MP-2.5/NOPB SOT-223 DCY 4 1000 330.0 16.4 7.0 7.5 2.2 12.0 16.0 Q3\nLM1117MP-3.3/NOPB SOT-223 DCY 4 1000 330.0 16.4 7.0 7.5 2.2 12.0 16.0 Q3\nLM1117MP-5.0/NOPB SOT-223 DCY 4 1000 330.0 16.4 7.0 7.5 2.2 12.0 16.0 Q3\nLM1117MP-ADJ/NOPB SOT-223 DCY 4 1000 330.0 16.4 7.0 7.5 2.2 12.0 16.0 Q3\nLM1117MPX-1.8/NOPB SOT-223 DCY 4 2000 330.0 16.4 7.0 7.5 2.2 12.0 16.0 Q3\nLM1117MPX-2.5/NOPB SOT-223 DCY 4 2000 330.0 16.4 7.0 7.5 2.2 12.0 16.0 Q3"
+  },
+  {
+    "faiss_index_id": 118,
+    "text": "LM1117MPX-3.3/NOPB SOT-223 DCY 4 2000 330.0 16.4 7.0 7.5 2.2 12.0 16.0 Q3\nLM1117MPX-5.0/NOPB SOT-223 DCY 4 2000 330.0 16.4 7.0 7.5 2.2 12.0 16.0 Q3\nLM1117MPX-ADJ/NOPB SOT-223 DCY 4 2000 330.0 16.4 7.0 7.5 2.2 12.0 16.0 Q3\nLM1117SX-3.3/NOPB DDPAK/ KTT 3 500 330.0 24.4 10.75 14.85 5.0 16.0 24.0 Q2\nTO-263\nLM1117SX-5.0/NOPB DDPAK/ KTT 3 500 330.0 24.4 10.75 14.85 5.0 16.0 24.0 Q2\nTO-263\nLM1117SX-ADJ/NOPB DDPAK/ KTT 3 500 330.0 24.4 10.75 14.85 5.0 16.0 24.0 Q2\nTO-263"
+  },
+  {
+    "faiss_index_id": 119,
+    "text": "TO-263\nPack Materials-Page 2PACKAGE MATERIALS INFORMATION\nwww.ti.com 16-Feb-2026\nTAPE AND REEL BOX DIMENSIONS\nWidth (mm) H\nW L\n*All dimensions are nominal\nDevice Package Type Package Drawing Pins SPQ Length (mm) Width (mm) Height (mm)\nLM1117DTX-1.8/NOPB TO-252 NDP 3 2500 356.0 356.0 36.0\nLM1117DTX-2.5/NOPB TO-252 NDP 3 2500 356.0 356.0 36.0\nLM1117DTX-3.3/NOPB TO-252 NDP 3 2500 356.0 356.0 36.0\nLM1117DTX-5.0/NOPB TO-252 NDP 3 2500 356.0 356.0 36.0"
+  },
+  {
+    "faiss_index_id": 120,
+    "text": "LM1117DTX-ADJ/NOPB TO-252 NDP 3 2500 356.0 356.0 36.0\nLM1117IDTX-3.3/NOPB TO-252 NDP 3 2500 356.0 356.0 36.0\nLM1117IDTX-5.0/NOPB TO-252 NDP 3 2500 356.0 356.0 36.0\nLM1117IDTX-ADJ/NOPB TO-252 NDP 3 2500 356.0 356.0 36.0\nLM1117ILD-ADJ/NOPB WSON NGN 8 1000 208.0 191.0 35.0\nLM1117IMP-3.3/NOPB SOT-223 DCY 4 1000 367.0 367.0 35.0\nLM1117IMP-5.0/NOPB SOT-223 DCY 4 1000 367.0 367.0 35.0\nLM1117IMP-ADJ/NOPB SOT-223 DCY 4 1000 367.0 367.0 35.0\nLM1117IMPX-3.3/NOPB SOT-223 DCY 4 2000 367.0 367.0 35.0"
+  },
+  {
+    "faiss_index_id": 121,
+    "text": "LM1117IMPX-5.0/NOPB SOT-223 DCY 4 2000 367.0 367.0 35.0\nLM1117IMPX-ADJ/NOPB SOT-223 DCY 4 2000 367.0 367.0 35.0\nLM1117LD-1.8/NOPB WSON NGN 8 1000 208.0 191.0 35.0\nLM1117LD-2.5/NOPB WSON NGN 8 1000 208.0 191.0 35.0\nLM1117LD-3.3/NOPB WSON NGN 8 1000 208.0 191.0 35.0\nPack Materials-Page 3PACKAGE MATERIALS INFORMATION\nwww.ti.com 16-Feb-2026\nDevice Package Type Package Drawing Pins SPQ Length (mm) Width (mm) Height (mm)\nLM1117LD-ADJ/NOPB WSON NGN 8 1000 208.0 191.0 35.0"
+  },
+  {
+    "faiss_index_id": 122,
+    "text": "LM1117LDX-1.8/NOPB WSON NGN 8 4500 356.0 356.0 36.0\nLM1117LDX-ADJ/NOPB WSON NGN 8 4500 356.0 356.0 36.0\nLM1117MP-1.8/NOPB SOT-223 DCY 4 1000 367.0 367.0 35.0\nLM1117MP-2.5/NOPB SOT-223 DCY 4 1000 367.0 367.0 35.0\nLM1117MP-3.3/NOPB SOT-223 DCY 4 1000 367.0 367.0 35.0\nLM1117MP-5.0/NOPB SOT-223 DCY 4 1000 367.0 367.0 35.0\nLM1117MP-ADJ/NOPB SOT-223 DCY 4 1000 367.0 367.0 35.0\nLM1117MPX-1.8/NOPB SOT-223 DCY 4 2000 367.0 367.0 35.0\nLM1117MPX-2.5/NOPB SOT-223 DCY 4 2000 367.0 367.0 35.0"
+  },
+  {
+    "faiss_index_id": 123,
+    "text": "LM1117MPX-3.3/NOPB SOT-223 DCY 4 2000 367.0 367.0 35.0\nLM1117MPX-5.0/NOPB SOT-223 DCY 4 2000 367.0 367.0 35.0\nLM1117MPX-ADJ/NOPB SOT-223 DCY 4 2000 367.0 367.0 35.0\nLM1117SX-3.3/NOPB DDPAK/TO-263 KTT 3 500 356.0 356.0 45.0\nLM1117SX-5.0/NOPB DDPAK/TO-263 KTT 3 500 356.0 356.0 45.0\nLM1117SX-ADJ/NOPB DDPAK/TO-263 KTT 3 500 356.0 356.0 45.0\nPack Materials-Page 4PACKAGE MATERIALS INFORMATION\nwww.ti.com 16-Feb-2026\nTUBE\nT - Tube\nheight L - Tube length\nW - Tube\nwidth\nB - Alignment groove width"
+  },
+  {
+    "faiss_index_id": 124,
+    "text": "W - Tube\nwidth\nB - Alignment groove width\n*All dimensions are nominal\nDevice Package Name Package Type Pins SPQ L (mm) W (mm) T (µm) B (mm)\nLM1117DT-1.8/NOPB NDP TO-252 3 75 508 20 4165.6 3.1\nLM1117DT-1.8/NOPB.B NDP TO-252 3 75 508 20 4165.6 3.1\nLM1117DT-2.5/NOPB NDP TO-252 3 75 508 20 4165.6 3.1\nLM1117DT-2.5/NOPB.B NDP TO-252 3 75 508 20 4165.6 3.1\nLM1117DT-3.3/NOPB NDP TO-252 3 75 508 20 4165.6 3.1\nLM1117DT-3.3/NOPB.B NDP TO-252 3 75 508 20 4165.6 3.1"
+  },
+  {
+    "faiss_index_id": 125,
+    "text": "LM1117DT-5.0/NOPB NDP TO-252 3 75 508 20 4165.6 3.1\nLM1117DT-5.0/NOPB.B NDP TO-252 3 75 508 20 4165.6 3.1\nLM1117DT-ADJ/NOPB NDP TO-252 3 75 508 20 4165.6 3.1\nLM1117DT-ADJ/NOPB.B NDP TO-252 3 75 508 20 4165.6 3.1\nLM1117IDT-3.3/NOPB NDP TO-252 3 75 508 20 4165.6 3.1\nLM1117IDT-3.3/NOPB.B NDP TO-252 3 75 508 20 4165.6 3.1\nLM1117IDT-5.0/NOPB NDP TO-252 3 75 508 20 4165.6 3.1\nLM1117IDT-5.0/NOPB.B NDP TO-252 3 75 508 20 4165.6 3.1\nLM1117IDT-ADJ/NOPB NDP TO-252 3 75 508 20 4165.6 3.1"
+  },
+  {
+    "faiss_index_id": 126,
+    "text": "LM1117IDT-ADJ/NOPB.B NDP TO-252 3 75 508 20 4165.6 3.1\nLM1117S-ADJ/NOPB KTT TO-263 3 45 502 25 8204.2 9.19\nLM1117S-ADJ/NOPB.B KTT TO-263 3 45 502 25 8204.2 9.19\nLM1117T-2.5/NOPB NDE TO-220 3 45 502 33 6985 4.06\nLM1117T-2.5/NOPB.B NDE TO-220 3 45 502 33 6985 4.06\nLM1117T-3.3/NOPB NDE TO-220 3 45 502 33 6985 4.06\nLM1117T-3.3/NOPB.B NDE TO-220 3 45 502 33 6985 4.06\nLM1117T-5.0/NOPB NDE TO-220 3 45 502 33 6985 4.06\nLM1117T-5.0/NOPB.B NDE TO-220 3 45 502 33 6985 4.06"
+  },
+  {
+    "faiss_index_id": 127,
+    "text": "LM1117T-ADJ/NOPB NDE TO-220 3 45 502 33 6985 4.06\nLM1117T-ADJ/NOPB.B NDE TO-220 3 45 502 33 6985 4.06\nPack Materials-Page 5MECHANICAL DATA\nNDE0003B\nwww.ti.comPACKAGE OUTLINE\nKTT0003B TO-263 - 4.83 mm max height\nSCALE 1.000\nTRANSISTOR OUTLINE\nB 8.64 A\nOPTIONAL\n1\n2X 2.54\n10.41\n9.91\n3\n0.97\n3X\n0.71\n0.25 C A B\n14.35 MAX\n1.27 MAX\n0.76\n0.38\n0.25\n4.64\nGAGE PLANE 4.45 C\n0.25 1.32\n0 -8 2.24 0.00 1.22\n1.24\n5.08 MIN\n0 -8 3\n4 5.08 MIN\n0.25\n2.24 GAGE PLANE\n1.24 1\nOPTIONAL LEAD FORM\nEXPOSED\nTHERMAL PAD\nNOTE 3"
+  },
+  {
+    "faiss_index_id": 128,
+    "text": "OPTIONAL LEAD FORM\nEXPOSED\nTHERMAL PAD\nNOTE 3\nNOTE 3\n4215105/C 08/2024\nNOTES:\n1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing\nper ASME Y14.5M.\n2. This drawing is subject to change without notice.\n3. Features may not exist and shape may vary per different assembly sites.\n4. Reference JEDEC registration TO-263, except minimum lead thickness and minimum exposed pad length.\nwww.ti.comEXAMPLE BOARD LAYOUT"
+  },
+  {
+    "faiss_index_id": 129,
+    "text": "www.ti.comEXAMPLE BOARD LAYOUT\nKTT0003B TO-263 - 4.83 mm max height\nTRANSISTOR OUTLINE\n(6.99)\n(1.91)\n3X (2.16)\n3X (1.07)\n1\n(2.54)\nSYMM (10.8)\n4\n(8.33)\n3\n(R0.05) TYP\n(14.17)\nLAND PATTERN EXAMPLE\nEXPOSED METAL SHOWN\nSCALE:5X\n0.07 MAX 0.07 MIN\nALL AROUND ALL AROUND\nEXPOSED\nMETAL\nEXPOSED\nMETAL\nSOLDER MASK METAL SOLDER MASK\nOPENING METAL UNDER OPENING\nSOLDER MASK\nNON SOLDER MASK SOLDER MASK\nDEFINED DEFINED\nSOLDER MASK DETAILS\n4215105/C 08/2024\nNOTES: (continued)"
+  },
+  {
+    "faiss_index_id": 130,
+    "text": "4215105/C 08/2024\nNOTES: (continued)\n5. This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature numbers\nSLMA002(www.ti.com/lit/slm002) and SLMA004 (www.ti.com/lit/slma004).\n6. Vias are optional depending on application, refer to device data sheet. It is recommended that vias under paste be filled, plugged or tented.\nwww.ti.comEXAMPLE STENCIL DESIGN\nKTT0003B TO-263 - 4.83 mm max height\nTRANSISTOR OUTLINE\n(1.29) TYP (0.91)"
+  },
+  {
+    "faiss_index_id": 131,
+    "text": "TRANSISTOR OUTLINE\n(1.29) TYP (0.91)\n32X ( 1.09) (1.29)\n3X (2.16)\n3X (1.07)\n1\n(1.29) TYP\n(4.515)\n(2.54)\nSYMM\n4\nEXPOSED METAL\n3 TYP\n(R0.05) TYP\n14.17\nSOLDER PASTE EXAMPLE\nBASED ON 0.125 mm THICK STENCIL\nEXPOSED PAD\n60% PRINTED SOLDER COVERAGE BY AREA\nSCALE:6X\n4215105/C 08/2024\nNOTES: (continued)\n7. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate\ndesign recommendations."
+  },
+  {
+    "faiss_index_id": 132,
+    "text": "design recommendations.\n8. Board assembly site may have different recommendations for stencil design.\nwww.ti.comMECHANICAL DATA\nMPDS094A – APRIL 2001 – REVISED JUNE 2002\nDCY (R-PDSO-G4) PLASTIC SMALL-OUTLINE\n6,70 (0.264)\n6,30 (0.248)\n3,10 (0.122)\n2,90 (0.114)\n4\n0,10 (0.004) M\n7,30 (0.287) 3,70 (0.146)\n6,70 (0.264) 3,30 (0.130)\nGauge Plane\n1 2 3\n0,84 (0.033) 0°–10° 0,25 (0.010)\n2,30 (0.091)\n0,66 (0.026)\n0,10 (0.004) M\n4,60 (0.181) 0,75 (0.030) MIN\n1,70 (0.067)\n1,80 (0.071) MAX 1,50 (0.059)"
+  },
+  {
+    "faiss_index_id": 133,
+    "text": "1,70 (0.067)\n1,80 (0.071) MAX 1,50 (0.059)\n0,35 (0.014)\n0,23 (0.009)\nSeating Plane\n0,10 (0.0040) 0,08 (0.003)\n0,02 (0.0008)\n4202506/B 06/2002\nNOTES: A. All linear dimensions are in millimeters (inches).\nB. This drawing is subject to change without notice.\nC. Body dimensions do not include mold flash or protrusion.\nD. Falls within JEDEC TO-261 Variation AA.\n•\nPOST OFFICE BOX 655303 DALLAS, TEXAS 75265PACKAGE OUTLINE\nNGN0008A WSON - 0.8 mm max height\nSCALE 3.000\nPLASTIC SMALL OUTLINE - NO LEAD"
+  },
+  {
+    "faiss_index_id": 134,
+    "text": "SCALE 3.000\nPLASTIC SMALL OUTLINE - NO LEAD\n4.1 B\nA\n3.9\nPIN 1 INDEX AREA\n4.1\n3.9\nPIN 1 ID\nDETAIL A\nPIN 1 ID\nC\n0.8 MAX\nSEATING PLANE\n0.05 0.08 C\n0.00\n2.2 0.05\nEXPOSED SYMM\n(0.2) TYP\nTHERMAL PAD\n6X 0.8\n4\n5\n2X 9 SYMM\n2.4 3 0.05\nSEE\nDETAIL A\n8\n1\n0.35\n(0.25) 8X 0.25\n0.6\n(0.25) (0.2) 8X 0.1 C A B\n0.4\nPIN 1 ID (0.15) 0.05 C\n4214794/A 11/2019\nNOTES:\n1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing\nper ASME Y14.5M."
+  },
+  {
+    "faiss_index_id": 135,
+    "text": "per ASME Y14.5M.\n2. This drawing is subject to change without notice.\n3. The package thermal pad must be soldered to the printed circuit board for thermal and mechanical performance.\nwww.ti.comEXAMPLE BOARD LAYOUT\nNGN0008A WSON - 0.8 mm max height\nPLASTIC SMALL OUTLINE - NO LEAD\n(2.2)\n8X (0.5) SYMM\n1\n8X (0.3) 8\nSYMM\n9\n(3)\n(1.25)\n6X (0.8)\n4 5\n(R0.05) TYP\n( 0.2) VIA\nTYP (0.85)\n(3.3)\nLAND PATTERN EXAMPLE\nEXPOSED METAL SHOWN\nSCALE:15X\n0.07 MAX 0.07 MIN\nALL AROUND ALL AROUND\nEXPOSED EXPOSED"
+  },
+  {
+    "faiss_index_id": 136,
+    "text": "ALL AROUND ALL AROUND\nEXPOSED EXPOSED\nMETAL METAL\nSOLDER MASK METAL METAL UNDER SOLDER MASK\nOPENING SOLDER MASK OPENING\nNON SOLDER MASK\nSOLDER MASK\nDEFINED\nDEFINED\n(PREFERRED)\nSOLDER MASK DETAILS\n4214794/A 11/2019\nNOTES: (continued)\n4. This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature\nnumber SLUA271 (www.ti.com/lit/slua271)."
+  },
+  {
+    "faiss_index_id": 137,
+    "text": "number SLUA271 (www.ti.com/lit/slua271).\n5. Vias are optional depending on application, refer to device data sheet. If any vias are implemented, refer to their locations shown\non this view. It is recommended that vias under paste be filled, plugged or tented.\nwww.ti.comEXAMPLE STENCIL DESIGN\nNGN0008A WSON - 0.8 mm max height\nPLASTIC SMALL OUTLINE - NO LEAD\n0.59\nSYMM METAL\n8X (0.5) TYP\n1\n8X (0.3) 8\n4X (1.31)\nSYMM\n9\n(0.755)\n6X (0.8)\n5\n4\n(R0.05) TYP\n4X (0.98)\n(3.3)\nSOLDER PASTE EXAMPLE"
+  },
+  {
+    "faiss_index_id": 138,
+    "text": "(R0.05) TYP\n4X (0.98)\n(3.3)\nSOLDER PASTE EXAMPLE\nBASED ON 0.125 mm THICK STENCIL\nEXPOSED PAD 9:\n78% PRINTED SOLDER COVERAGE BY AREA UNDER PACKAGE\nSCALE:20X\n4214794/A 11/2019\nNOTES: (continued)\n6. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate\ndesign recommendations.\nwww.ti.comPACKAGE OUTLINE\nNDP0003B TO-252 - 2.55 mm max height\nSCALE 1.500\nTRANSISTOR OUTLINE\n10.42\n9.40\n6.22 1.27\nB\n5.97 0.88 A\n(2.345)\n1\n2.285 (2.5)"
+  },
+  {
+    "faiss_index_id": 139,
+    "text": "6.22 1.27\nB\n5.97 0.88 A\n(2.345)\n1\n2.285 (2.5)\n2 5.46 6.73\n4.57\n4.96 6.35\n3\n0.88\n3X 0.64 1.02 PKG OPTIONAL\n0.64\n0.25 C A B\n8\n8\nTOP & BOTTOM\n1.14\n0.89 C\n2.55 MAX\nSEATING PLANE\n0.88\n0.17 0.60\n0.46\n0.46\n0.51 MIN\n4.32 MIN\n3\n2 4\n1\n4219870/A 03/2018\nNOTES:\n1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing\nper ASME Y14.5M.\n2. This drawing is subject to change without notice.\n3. Reference JEDEC registration TO-252."
+  },
+  {
+    "faiss_index_id": 140,
+    "text": "3. Reference JEDEC registration TO-252.\nwww.ti.comEXAMPLE BOARD LAYOUT\nNDP0003B TO-252 - 2.55 mm max height\nTRANSISTOR OUTLINE\nSEE SOLDER MASK\nDETAIL\n2X (2.15)\n2X (1.3) (5.7)\n1\n4 SYMM\n(4.57) (5.5)\n3\n(R0.05) TYP\n(4.38) (2.285)\nPKG\nLAND PATTERN EXAMPLE\nEXPOSED METAL SHOWN\nSCALE: 8X\n0.07 MAX METAL EDGE 0.07 MIN\nALL AROUND\nALL AROUND\nMETAL UNDER\nEXPOSED SOLDER MASK\nMETAL\nEXPOSED\nMETAL\nSOLDER MASK SOLDER MASK\nOPENING OPENING\nNON SOLDER MASK SOLDER MASK DEFINED\nDEFINED\n(PREFERRED)\nSOLDER MASK DETAIL"
+  },
+  {
+    "faiss_index_id": 141,
+    "text": "DEFINED\n(PREFERRED)\nSOLDER MASK DETAIL\n4219870/A 03/2018\nNOTES: (continued)\n4. This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature numbers\nSLMA002(www.ti.com/lit/slm002) and SLMA004 (www.ti.com/lit/slma004).\n5. Vias are optional depending on application, refer to device data sheet. It is recommended that vias under paste be filled, plugged or tented.\nwww.ti.comEXAMPLE STENCIL DESIGN\nNDP0003B TO-252 - 2.55 mm max height"
+  },
+  {
+    "faiss_index_id": 142,
+    "text": "NDP0003B TO-252 - 2.55 mm max height\nTRANSISTOR OUTLINE\n(1.35) TYP\n2X (2.15)\n(0.26)\n2X (1.3)\n(R0.05) TYP\n(1.32) TYP\n(4.57)\n16X (1.12)\n16X (1.15)\n(4.38)\nPKG\nSOLDER PASTE EXAMPLE\nBASED ON 0.125 MM THICK STENCIL\nSCALE: 8X\n4219870/A 03/2018\nNOTES: (continued)\n6. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate\ndesign recommendations.\n7. Board assembly site may have different recommendations for stencil design."
+  },
+  {
+    "faiss_index_id": 143,
+    "text": "www.ti.comIMPORTANT NOTICE AND DISCLAIMER\nTI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE\nDESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”\nAND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY\nIMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD\nPARTY INTELLECTUAL PROPERTY RIGHTS."
+  },
+  {
+    "faiss_index_id": 144,
+    "text": "PARTY INTELLECTUAL PROPERTY RIGHTS.\nThese resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate\nTI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable\nstandards, and any other safety, security, regulatory or other requirements."
+  },
+  {
+    "faiss_index_id": 145,
+    "text": "These resources are subject to change without notice. TI grants you permission to use these resources only for development of an\napplication that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license\nis granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully"
+  },
+  {
+    "faiss_index_id": 146,
+    "text": "indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.\nTI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on\nti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable"
+  },
+  {
+    "faiss_index_id": 147,
+    "text": "warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products\nare standard, catalog, general purpose devices.\nTI objects to and rejects any additional or different terms you may propose.\nIMPORTANT NOTICE\nCopyright © 2026, Texas Instruments Incorporated\nLast updated 10/2025"
+  }
+]

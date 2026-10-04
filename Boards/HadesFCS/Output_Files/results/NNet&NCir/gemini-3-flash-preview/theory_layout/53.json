@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component TP2 connected to I2C1_SDA_FCC?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, net 'I2C1_SDA_FCC' (code 36) is connected to node 'TP2:1'.",
+        "is_final": true
+    }
+}

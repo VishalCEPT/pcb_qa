@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the bar_nrst_navc signal maintain a voltage of 0V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The BAR_NRST_NAVC signal is connected to the +3V3 rail via a 10k pull-up resistor (R37), which will pull the signal to 3.3V once the power supply is active in the simulation.",
+        "is_final": true
+    }
+}

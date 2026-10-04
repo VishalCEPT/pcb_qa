@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net estop_out maintain a voltage of 0V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net estop_out is connected to the output of buffer U36 (SN74LVC1G07), which is an open-drain buffer that will pull the net to a non-zero voltage when its input or enable states change during operation.",
+        "is_final": true
+    }
+}

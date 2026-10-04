@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component M3 connected to PRB__EC_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, pin 5 (PRB) of component M3 (ATLAS_EZO_EC) is connected to the net named /PRB_{EC}.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component IRLML6402 have a maximum junction temperature of 120\u00b0C according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The IRLML6402 datasheet specifies a maximum operating junction and storage temperature range of -55 to +150 degrees Celsius.",
+        "is_final": true
+    }
+}

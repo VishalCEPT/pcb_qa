@@ -1,0 +1,35 @@
+.title KiCad schematic
+J5 __J5
+J7 __J7
+D1 __D1
+SW1 __SW1
+R5 Net-_Q1-G_ Net-_J5-Pin_1_ 47k
+R7 Net-_Q2-C_ GND 20k
+Q2 __Q2
+Q1 __Q1
+R2 /TXD2 Net-_Q2-B_ 5.1k
+R1 +3V3 /TXD2 10k
+J2 __J2
+J1 __J1
+D2 __D2
+J6 __J6
+U1 __U1
+R8 +3V3 Net-_U1-B_ 2.2k
+R15 Net-_U1-B_ GND 2.2k
+C5 +3V3 GND 0.1u
+R6 +3V3 /TTL 2k
+R9 /PWM1 /PWM1_C1 0
+R10 /PWM1 /PWM1_C2 0
+R11 /PWM2 /PWM2_C1 0
+R12 /PWM2 /PWM2_C2 0
+R14 /TTL Net-_J8-Pin_3_ 0
+R13 Net-_J8-Pin_3_ Net-_J3-Pin_3_ 0
+C3 Net-_D2-K_ GND 100u
+C4 GND Net-_D2-K_ 100u
+R4 Net-_J8-Pin_3_ /PWM2 1k
+R3 Net-_J3-Pin_3_ /PWM1 1k
+C2 GND Net-_D2-K_ 100u
+C1 GND Net-_D2-K_ 100u
+J8 __J8
+J3 __J3
+.end

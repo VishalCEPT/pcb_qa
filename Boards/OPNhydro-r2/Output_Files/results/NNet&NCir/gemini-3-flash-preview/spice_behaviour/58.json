@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /gpump maintain a voltage of 0V for the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net /gpump is connected to the +3V3 rail through resistor R5 (10k), which will pull the net to a non-zero voltage unless actively driven to ground by an external source not defined as constant in the SPICE netlist.",
+        "is_final": true
+    }
+}

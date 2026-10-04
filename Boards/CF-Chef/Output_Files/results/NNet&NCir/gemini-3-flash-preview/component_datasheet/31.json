@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ESP32-C3-MINI-1 have a maximum supply voltage of 3V according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The ESP32-C3-MINI-1 datasheet specifies a typical operating voltage of 3.3V and a range of 3.0V to 3.6V, meaning its maximum supply voltage is higher than 3V.",
+        "is_final": true
+    }
+}

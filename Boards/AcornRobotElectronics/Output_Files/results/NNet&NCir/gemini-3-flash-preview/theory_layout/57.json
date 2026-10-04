@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component J25 connected to D3P?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, pin 7 of component J25 is connected to the net named '/D3P'.",
+        "is_final": true
+    }
+}

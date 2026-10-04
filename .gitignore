@@ -1,0 +1,5 @@
+.env
+.venv/
+__pycache__/
+Boards.zip
+_e2e_gui_check.py

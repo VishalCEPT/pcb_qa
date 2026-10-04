@@ -1,0 +1,306 @@
+[ 
+  {
+    "category": "component_datasheet",
+    "question": "Does the component R5 have a power rating of 0.1W according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net-_u4-vcc_ signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U3 have RFID capabilities according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have flash capabilities according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net-_u4-c2p_ signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component C1 connected to GND?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component J1 connected to SWDIO?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U4 have voltage regulation capabilities according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component J1 have a maximum voltage rating of 50V according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have an output current of 20mA for any I/O pin according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have a minimum voltage supply of 1.71V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component J1 connected to VCC?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U4 have flash capabilities according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to GND?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to VCC?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U4 have a maximum Vcc of 15V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the nfc_int signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component J1 connected to SWCLK?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U3 have a maximum operating temperature of 105°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component R10 connected to NRST?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component R10 connected to VCC?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have a minimum operating temperature of -40°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net-_u4-vcomh_ signal maintain a voltage of 5V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component A2 connected to GND?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component R8 connected to Net__A2_BTN_?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net-_u4-c2p_ signal maintain a voltage of 5V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component A2 connected to Net__A2_BTN_?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have a maximum operating temperature of 125°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the vcc signal maintain a voltage of 3.3V during the entire simulation?",
+    "answer": "YES"
+  },  
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net-_u4-vcomh_ signal maintain a voltage of 5V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component R8 connected to TSC_G2_IO2?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to NFC_SCL?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the disp_res signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "NO"
+  }, 
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U3 have a maximum I2C frequency of 400kHz according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to DISP_SDA?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net-_u4-c1p_ signal maintain a voltage of 3.3V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component C2 have a maximum operating temperature of 125°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net-_u4-vcc_ signal maintain a voltage of 5V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to DISP_SCL?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the disp_res signal maintain a voltage of 3.3V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to NFC_SDA?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component J1 have a current rating of 1A per pin according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net-_u4-c1p_ signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U4 connected to NFC_INT?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have a maximum Vcc of 3.6V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the tsc_g2_io2 signal maintain a voltage of 3.3V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U3 connected to VCC?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net-_u4-c1p_ signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have DAC channels according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net-_u4-iref_ signal maintain a voltage of 5V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U3 have a maximum input voltage of 4.6V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the nfc_sda signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U3 connected to GND?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net-_u4-iref_ signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U3 have flash capabilities according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the nfc_sda signal maintain a voltage of 3.3V during the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component C1 connected to SWDIO?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the nrst signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U2 have a 1MB flash memory according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net-_u4-vcomh_ signal maintain a voltage of 0V during the entire simulation?",
+    "answer": "YES"
+  }
+]
+
+
+
+

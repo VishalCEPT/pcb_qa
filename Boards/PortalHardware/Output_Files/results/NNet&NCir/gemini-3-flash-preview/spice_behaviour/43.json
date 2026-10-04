@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net-_u4-c1p_ signal maintain a voltage of 0V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The signal Net-_U4-C1P_ is connected to a 1uF capacitor (C12) and the charge pump pins of the SSD1306 OLED controller, which typically oscillate or change voltage during operation rather than remaining at a static 0V.",
+        "is_final": true
+    }
+}

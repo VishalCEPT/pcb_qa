@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component SW2 connected to GPIO_C_FCC?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "According to the netlist, SW2 is connected to +3V3, GND, and BOOT0_FCC (via R22), while GPIO_C_FCC is connected to PD2 on FCC1 and R42.",
+        "is_final": true
+    }
+}

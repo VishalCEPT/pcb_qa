@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net net-_u1-gpio2/adc1_ch2_ maintain a voltage of 3.3V for the entire simulation?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The net is connected to the +3V3 rail via a 10k pull-up resistor (R6) and has no other active connections or switching components to pull it low in the provided SPICE simulation.",
+        "is_final": true
+    }
+}

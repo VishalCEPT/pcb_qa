@@ -1,0 +1,426 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "LIS3MDL\nDatasheet\nDigital output magnetic sensor:\nultralow-power, high-performance 3-axis magnetometer\nFeatures\n• Wide supply voltage, 1.9 V to 3.6 V\n• Independent IO supply (1.8 V)\n• ±4/±8/±12/±16 gauss selectable magnetic full scales\n• Continuous and single-conversion modes\n• 16-bit data output\n• Interrupt generator\n• Self-test\n• I²C/SPI digital output interface\n• Power-down mode / low-power mode\n• ECOPACK and RoHS compliant\nApplications\nProduct status link\nLIS3MDL • Magnetometers\n• Compasses"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "LIS3MDL • Magnetometers\n• Compasses\nProduct summary\nDescription\nOrder code LIS3MDLTR\nTemperature The LIS3MDL is an ultralow-power high-performance 3-axis magnetic sensor with\n-40 to +85\nrange [°C] user-selectable full scales of ±4/±8/±12/±16 gauss.\nPackage LGA-12L The self-test capability allows the user to check the functioning of the sensor in the\nPacking Tape and reel final application.\nThe device may be configured to generate interrupt signals for magnetic field\ndetection.\nProduct resources"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "detection.\nProduct resources\nThe LIS3MDL includes an I²C serial bus interface that supports standard and fast\nAN4602 (device application note) mode (100 kHz and 400 kHz) and SPI serial standard interfaces.\nTN0018 (design and soldering) The device is available in a small thin plastic, land grid array (LGA) package and is\nguaranteed to operate over an extended temperature range of -40°C to +85°C.\nDS9463 - Rev 7 - December 2023 www.st.com"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "DS9463 - Rev 7 - December 2023 www.st.com\nFor further information contact your local STMicroelectronics sales office.LIS3MDL\nBlock diagram and pin description\n1 Block diagram and pin description\n1.1 Block diagram\nFigure 1. Block diagram\nX+\nY+ CHARGE CS\nZ+ AMPLIFIER\nI (M) CONTROL I2C SCL/SPC\nMUX CON A V /D E RTER LOGIC SDA/SDI/SDO\nSPI\nSDO/SA1\nZ-\nY-\nX-\nTRIMMING INTERRUPT\nCLOCK CONTROL LOGIC\nCIRCUITS GENERATOR\nDS9463 - Rev 7 page 2/321.2 Pin description\nFigure 2. Pin description\nOI_ddV\nSCL/SPC\nRes"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "Figure 2. Pin description\nOI_ddV\nSCL/SPC\nRes\nDRDY GND\nC1\nseR\nddV\n11 12\nCS 1\nINT 4 6 5\nBOTTOM VIEW\nODS/IDS/ADS\nLIS3MDL\nBlock diagram and pin description\nZ\nX\n10\nSD0/SA1\nY\nTOP VIEW 7\nDIRECTION OF\nDETECTABLE\nMAGNETIC FIELDS\nTable 1. Pin description\nPin# Name Function\nSCL I²C serial clock (SCL)\n1\nSPC SPI serial port clock (SPC)\n2 Reserved Connect to GND\n3 GND Connect to GND\n4 C1 Capacitor connection (C1 = 100 nF)\n5 Vdd Power supply\n6 Vdd_IO Power supply for I/O pins\n7 INT Interrupt\n8 DRDY Data ready"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "7 INT Interrupt\n8 DRDY Data ready\nSDO SPI serial data output (SDO)\n9\nSA1 I²C less significant bit of the device address (SA1)\nEnable SPI\nI²C/SPI mode selection\n10 CS\n(1: SPI idle mode / I²C communication enabled;\n0: SPI communication mode / I²C disabled)\nSDA I²C serial data (SDA)\n11 SDI SPI serial data input (SDI)\nSDO 3-wire interface serial data output (SDO)\n12 Reserved Connect to GND\nDS9463 - Rev 7 page 3/32LIS3MDL\nMagnetic and electrical specifications"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "Magnetic and electrical specifications\n2 Magnetic and electrical specifications\n2.1 Magnetic characteristics\n@Vdd = 2.5 V, T = 25°C unless otherwise noted. The product is factory calibrated at 2.5 V. The operational power\nsupply range is from 1.9 V to 3.6 V.\nTable 2. Magnetic characteristics\nSymbol Parameter Test conditions Min. Typ.(1) Max. Unit\n±4\n±8\nFS Measurement range gauss\n±12\n±16\nFS = ±4 gauss 6842\nFS = ±8 gauss 3421 LSB/\nGN Sensitivity\nFS = ±12 gauss 2281 gauss\nFS = ±16 gauss 1711"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "FS = ±12 gauss 2281 gauss\nFS = ±16 gauss 1711\nZgauss Zero-gauss level FS = ±4 gauss ±1 gauss\nX-axis; FS = ±12 gauss;\n3.2 mgauss\nUltrahigh-performance mode\nY-axis; FS = ±12 gauss\nRMS RMS noise 3.2 mgauss\nUltrahigh-performance mode\nZ-axis; FS = ±12 gauss\n4.1 mgauss\nUltrahigh-performance mode\nBest-fit straight line\nNL Nonlinearity FS = ±12 gauss ±0.12 %FS\nHapplied = ±6 gauss\nX-axis\n1 3\nFS = ±12 gauss\nY-axis\nST Self test(2) 1 3 gauss\nFS = ±12 gauss\nZ-axis\n0.1 1\nFS = ±12 gauss"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "FS = ±12 gauss\nZ-axis\n0.1 1\nFS = ±12 gauss\nDF Magnetic disturbance field Zero-gauss offset starts to degrade 50 gauss\nTop Operating temperature range -40 +85 °C\n1. Typical specifications are not guaranteed.\n2. Absolute value\nDS9463 - Rev 7 page 4/32LIS3MDL\nMagnetic and electrical specifications\n2.2 Temperature sensor characteristics\n@Vdd = 2.5 V, T = 25°C unless otherwise noted. The product is factory calibrated at 2.5 V.\nTable 3. Temperature sensor characteristics"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "Table 3. Temperature sensor characteristics\nSymbol Parameter Test conditions Min. Typ.(1) Max. Unit\nTSDr Temperature sensor output change vs. temperature - 8 LSB/°C\nTODR Temperature refresh rate(2) ODR Hz\nTop Operating temperature range -40 +85 °C\n1. Typical specifications are not guaranteed.\n2. If the TEMP_EN bit in CTRL_REG1 (20h) is set to1, temperature data is acquired at each conversion cycle. Refer to\nTable 21.\n2.3 Electrical characteristics"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "Table 21.\n2.3 Electrical characteristics\n@Vdd = 2.5 V, T = 25°C unless otherwise noted. The product is factory calibrated at 2.5 V. The operational power\nsupply range is from 1.9 V to 3.6 V.\nTable 4. Electrical characteristics\nSymbol Parameter Test conditions Min. Typ.(1) Max. Unit\nVdd Supply voltage 1.9 3.6 V\nVdd_IO Power supply for I/O 1.71 1.8 Vdd+0.1\nIdd_HR Current consumption in ultrahigh-resolution mode ODR = 20 Hz 270 µA\nIdd_LP Current consumption in low-power mode ODR = 20 Hz 40 µA"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "Idd_PD Current consumption in power down 1 µA\nTop Operating temperature range -40 +85 °C\n1. Typical specifications are not guaranteed.\nDS9463 - Rev 7 page 5/32LIS3MDL\nMagnetic and electrical specifications\n2.4 Communication interface characteristics\n2.4.1 SPI - serial peripheral interface\nSubject to general operating conditions for Vdd and Top.\nTable 5. SPI slave timing values\nValue(1)\nSymbol Parameter Unit\nMin. Max.\ntc(SPC) SPI clock cycle 100 ns\nfc(SPC) SPI clock frequency 10 MHz"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "fc(SPC) SPI clock frequency 10 MHz\ntsu(CS) CS setup time 5\nth(CS) CS hold time 20\ntsu(SI) SDI input setup time 5\nth(SI) SDI input hold time 15 ns\ntv(SO) SDO valid output time 50\nth(SO) SDO output hold time 5\ntdis(SO) SDO output disable time 50\n1. Values are guaranteed at 10 MHz clock frequency for SPI with both 4 and 3 wires, based on characterization results, not\ntested in production.\nFigure 3. SPI slave timing diagram\nCS\nt\nsu(CS)\ntc(SPC) t\nh(CS)\nSPC\ntsu(SI) th(SI)\nSDI MSB IN LSB IN\nt\nv(SO)\nt"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "SPC\ntsu(SI) th(SI)\nSDI MSB IN LSB IN\nt\nv(SO)\nt\nh(SO)\ntdis(SO)\nSDO MSB OUT LSB OUT\nNote: Measurement points are done at 0.3*Vdd_IO and 0.7*Vdd_IO for both input and output ports.\nDS9463 - Rev 7 page 6/32LIS3MDL\nMagnetic and electrical specifications\n2.4.2 I²C - inter IC control interface\nSubject to general operating conditions for Vdd and Top.\nTable 6. I²C slave timing values\nI²C standard mode(1) I²C fast mode(1)\nSymbol Parameter Unit\nMin. Max. Min. Max."
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "Symbol Parameter Unit\nMin. Max. Min. Max.\nf(SCL) SCL clock frequency 0 100 0 400 kHz\ntw(SCLL) SCL clock low time 4.7 1.3\nµs\ntw(SCLH) SCL clock high time 4.0 0.6\ntsu(SDA) SDA setup time 250 100 ns\nth(SDA) SDA data hold time 0 3.45 0 0.9 µs\ntr(SDA) tr(SCL) SDA and SCL rise time 1000 20 + 0.1Cb (2) 300\nns\ntf(SDA) tf(SCL) SDA and SCL fall time 300 20 + 0.1Cb (2) 300\nth(ST) START condition hold time 4 0.6\ntsu(SR) Repeated START condition setup time 4.7 0.6\nµs\ntsu(SP) STOP condition setup time 4 0.6"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "µs\ntsu(SP) STOP condition setup time 4 0.6\ntw(SP:SR) Bus free time between STOP and START condition 4.7 1.3\n1. Data based on standard I²C protocol requirement, not tested in production.\n2. Cb = total capacitance of one bus line, in pF.\nFigure 4. I²C slave timing diagram\nREPEATED\nSTART\nSTART\nt\nsu(SR)\nSDA\ntw(SP:SR) START\nt f(SDA) t r(SDA) t su(SDA) th(SDA)\nt STOP\nsu(SP)\nSCL\nth(ST) tw(SCLL) tw(SCLH) tr(SCL) tf(SCL)\nNote: Measurement points are done at 0.3*Vdd_IO and 0.7*Vdd_IO for both ports."
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "DS9463 - Rev 7 page 7/32LIS3MDL\nMagnetic and electrical specifications\n2.5 Absolute maximum ratings\nStresses above those listed as absolute maximum ratings may cause permanent damage to the device. This is a\nstress rating only and functional operation of the device under these conditions is not implied. Exposure to\nmaximum rating conditions for extended periods may affect device reliability.\nTable 7. Absolute maximum ratings\nSymbol Ratings Maximum value Unit\nVdd Supply voltage -0.3 to +4.8 V"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "Vdd Supply voltage -0.3 to +4.8 V\nVdd_IO I/O pins supply voltage -0.3 to +4.8 V\nVin Input voltage on any control pin (SCL/SPC, SDA/SDI/SDO, SDO/SA1, CS) -0.3 to Vdd_IO +0.3 V\n3,000 for 0.5 ms g\nAUNP Acceleration (any axis)\n10,000 for 0.1 ms g\nMEF Maximum exposed field 1000 gauss\nTOP Operating temperature range -40 to +85 °C\nTSTG Storage temperature range -40 to +125 °C\nNote: Supply voltage on any pin should never exceed 4.8 V."
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "This device is sensitive to mechanical shock, improper handling can cause permanent damage to the part.\nThis device is sensitive to electrostatic discharge (ESD), improper handling can cause permanent damage to the part.\nDS9463 - Rev 7 page 8/32LIS3MDL\nTerminology and functionality\n3 Terminology and functionality\n3.1 Sensitivity\nSensitivity describes the gain of the sensor and can be determined, for example, by applying a magnetic field of\n1 gauss to it.\n3.2 Zero-gauss level"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "1 gauss to it.\n3.2 Zero-gauss level\nZero-gauss level offset describes the deviation of an actual output signal from the ideal output if no magnetic field\nis present.\n3.3 Factory calibration\nThe IC interface is factory calibrated for sensitivity (So) and zero-gauss level (TyOff).\nThe trimming values are stored in the device in nonvolatile memory. Each time the device is turned on, the\ntrimming parameters are downloaded to the registers to be employed during active operation, which allows using"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "the device without further calibration.\nDS9463 - Rev 7 page 9/324 Application hints\nFigure 5. LIS3MDL electrical connections\nC =100 nF\n3\nGND\nVdd\nCPS/LCS\nODS/IDS/ADS\nLIS3MDL\nApplication hints\nZ\n12 11 CS\nX 1 10\nSDO/SA1\n2 9\n(TOP VIEW)\n3 8 DRDY\nY C =100 nF\n1\nINT\nTOP VIEW 4 55 6 77\nDIRECTION OF C =1 µF\n2\nDETECTABLE\nMAGNETIC FIELDS\nVdd_IO\n4.1 External capacitors\nThe LIS3MDL requires one external capacitor (C1 = 100 nF) connected between pin 4 and GND."
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "The device core power supply line (Vdd) needs one high-frequency decoupling capacitor (C3 = 100 nF, ceramic)\nas near as possible to the supply pin, and a low-frequency electrolytic capacitor (C2 = 1 µF). All the voltage and\nground supplies must be present at the same time to have proper behavior of the IC (refer to Figure 5).\nThe functionality of the device and the measured magnetic field data are selectable and accessible through the\nI²C / SPI interfaces."
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "I²C / SPI interfaces.\nThe functions, the threshold, and the timing of the interrupt pin (INT) can be completely programmed by the user\nthrough the I²C / SPI interfaces.\nWhen the I²C or 3-wire SPI is used, the SDO/SA1 pin must be connected to Vdd_IO or GND.\n4.2 Soldering information\nThe LGA package is compliant with the ECOPACK and RoHS standard.\nIt is qualified for soldering heat resistance according to JEDEC J-STD-020."
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "For land pattern and soldering recommendations, consult technical note TN0018 available on www.st.com.\n4.3 High-current wiring effects\nHigh current in wiring and printed circuit traces can cause errors in magnetic field measurements for compassing.\nConductor-generated magnetic fields add to the Earth’s magnetic field, causing errors in compass heading\ncomputation.\nKeep currents higher than 10 mA a few millimeters away from the sensor IC.\nDS9463 - Rev 7 page 10/32LIS3MDL\nDigital interfaces"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "Digital interfaces\n5 Digital interfaces\nThe registers embedded in the LIS3MDL may be accessed through both the I²C and SPI serial interfaces. The\nlatter may be software configured to operate either in 3-wire or 4-wire interface mode.\nThe serial interfaces are mapped to the same pads. To select/exploit the I²C interface, the CS line must be tied\nhigh (that is, connected to Vdd_IO).\nTable 8. Serial interface pin description\nPin name Pin description\nEnable SPI"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "Pin name Pin description\nEnable SPI\nCS I²C/SPI mode selection (1: SPI idle mode / I²C communication enabled;\n0: SPI communication mode / I²C disabled)\nSCL I²C serial clock (SCL)\nSPC SPI serial port clock (SPC)\nSDA I²C serial data (SDA)\nSDI SPI serial data input (SDI)\nSDO 3-wire interface serial data output (SDO)\nSA1 I²C less significant bit of the device address (SA1)\nSDO SPI serial data output (SDO)\n5.1 I²C serial interface"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "5.1 I²C serial interface\nThe LIS3MDL I²C is a bus slave. The I²C is employed to write data to registers whose content can also be read\nback.\nThe relevant I²C terminology is given in the table below.\nTable 9. I²C terminology\nTerm Description\nTransmitter The device that sends data to the bus\nReceiver The device that receives data from the bus\nMaster The device that initiates a transfer, generates clock signals, and terminates a transfer\nSlave The device addressed by the master"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "Slave The device addressed by the master\nThere are two signals associated with the I²C bus: the serial clock line (SCL) and the serial data line (SDA). The\nlatter is a bidirectional line used for sending and receiving the data to/from the interface. Both lines must be\nconnected to Vdd_IO through an external pull-up resistor. When the bus is free, both the lines are high.\nThe I²C interface is compliant with fast mode (400 kHz) I²C standards, as well as with normal mode."
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "When the I²C interface is used, the SDO/SA1 pin has to be connected to Vdd_IO or GND.\nDS9463 - Rev 7 page 11/32LIS3MDL\nDigital interfaces\n5.1.1 I²C operation\nThe transaction on the bus is started through a START (ST) signal. A START condition is defined as a high to low\ntransition on the data line while the SCL line is held high. After this has been transmitted by the master, the bus is"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "considered busy. The next byte of data transmitted after the start condition contains the address of the slave in\nthe first seven bits and the eighth bit tells whether the master is receiving data from the slave or transmitting data\nto the slave. When an address is sent, each device in the system compares the first seven bits after a start\ncondition with its address. If they match, the device considers itself addressed by the master."
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "The slave address (SAD) associated to the LIS3MDL is 00111x0b, whereas the x bit is modified by the SDO/SA1\npin in order to modify the device address. If the SDO/SA1 pin is connected to the voltage supply, the address is\n0011110b, otherwise, if the SDO/SA1 pin is connected to ground, the address is 0011100b.\nData transfer with acknowledge is mandatory. The transmitter must release the SDA line during the acknowledge"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "pulse. The receiver must then pull the data line low so that it remains stable low during the HIGH period of the\nacknowledge clock pulse. A receiver that has been addressed is obliged to generate an acknowledge after each\nbyte of data received.\nThe I²C embedded inside the LIS3MDL behaves like a slave device and the following protocol must be adhered\nto. After the START condition (ST) a slave address is sent, once a slave acknowledge (SAK) has been returned,"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "an 8-bit subaddress (SUB) is transmitted: the 7 LSb represent the actual register address while the MSb enables\naddress autoincrement. If the MSb of the SUB field is 1, the SUB (register address) is automatically increased to\nallow multiple data read/write.\nThe slave address is completed with a read/write bit. If the bit is 1 (read), a repeated START (SR) condition must\nbe issued after the two subaddress bytes; if the bit is 0 (write) the master transmits to the slave with direction"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "unchanged. Table 10 explains how the SAD+read/write bit pattern is composed, listing all the possible\nconfigurations.\nTable 10. SAD+read/write patterns\nCommand SAD[6:2] SAD[1] = SDO/SA1 SAD[0] R/W SAD+R/W\nRead 00111 0 0 1 00111001 (39h)\nWrite 00111 0 0 0 00111000 (38h)\nRead 00111 1 0 1 00111101 (3Dh)\nWrite 00111 1 0 0 00111100 (3Ch)\nTable 11. Transfer when master is writing one byte to slave\nMaster ST SAD + W SUB DATA SP\nSlave SAK SAK SAK"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "Master ST SAD + W SUB DATA SP\nSlave SAK SAK SAK\nTable 12. Transfer when master is writing multiple bytes to slave\nMaster ST SAD + W SUB DATA DATA SP\nSlave SAK SAK SAK SAK\nTable 13. Transfer when master is receiving (reading) one byte of data from slave\nMaster ST SAD + W SUB SR SAD + R NMAK SP\nSlave SAK SAK SAK DATA\nTable 14. Transfer when master is receiving (reading) multiple bytes of data from slave\nSAD+ SAD+\nMaster ST SUB SR MAK MAK NMAK SP\nW R\nSlave SAK SAK SAK DATA DATA DATA"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "W R\nSlave SAK SAK SAK DATA DATA DATA\nDS9463 - Rev 7 page 12/32LIS3MDL\nDigital interfaces\nData are transmitted in byte format (DATA). Each data transfer contains 8 bits. The number of bytes transferred\nper transfer is unlimited. Data is transferred with the most significant bit (MSb) first. If a receiver cannot receive\nanother complete byte of data until it has performed some other function, it can hold the clock line SCL low to"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "force the transmitter into a wait state. Data transfer only continues when the receiver is ready for another byte and\nreleases the data line. If a slave receiver does not acknowledge the slave address (that is, it is not able to receive\nbecause it is performing some real-time function) the data line must be left high by the slave. The master can then\nabort the transfer. A low to high transition on the SDA line while the SCL line is high is defined as a STOP"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "condition. Each data transfer must be terminated by the generation of a STOP (SP) condition.\nIn order to read multiple bytes, it is necessary to assert the most significant bit of the subaddress field. In other\nwords, SUB(7) must be equal to 1, while SUB(6-0) represents the address of the first register to be read.\nIn the presented communication format, MAK is master acknowledge and NMAK is no master acknowledge.\nDS9463 - Rev 7 page 13/32LIS3MDL\nDigital interfaces\n5.2 SPI bus interface"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "Digital interfaces\n5.2 SPI bus interface\nThe LIS3MDL SPI is a bus slave. The SPI allows writing to and reading from the registers of the device.\nThe serial interface interacts with the application using four wires: CS, SPC, SDI, and SDO.\nFigure 6. Read and write protocol\nCS\nSPC\nSDI\nRW DI7 DI6 DI5 DI4 DI3 DI2 DI1 DI0\nMS AD5 AD4AD3 AD2 AD1 AD0\nSDO\nDO7DO6DO5DO4DO3DO2DO1DO0\nCS enables the serial port and it is controlled by the SPI master. It goes low at the start of the transmission and"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "goes back high at the end. SPC is the serial port clock and it is controlled by the SPI master. It is stopped high\nwhen CS is high (no transmission). SDI and SDO are respectively the serial port data input and output. Those\nlines are driven at the falling edge of SPC and should be captured at the rising edge of SPC.\nBoth the read register and write register commands are completed in 16 clock pulses or in multiples of 8 in the"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "case of multiple byte read/write. Bit duration is the time between two falling edges of SPC. The first bit (bit 0)\nstarts at the first falling edge of SPC after the falling edge of CS while the last bit (bit 15, bit 23, ...) starts at the\nlast falling edge of SPC just before the rising edge of CS.\nbit 0: RW bit. When 0, the data DI(7:0) is written into the device. When 1, the data DO(7:0) from the device is\nread. In the latter case, the chip drives SDO at the start of bit 8."
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "bit 1: MS bit. When 0, the address remains unchanged in multiple read/write commands. When 1, the address is\nautoincremented in multiple read/write commands.\nbit 2-7: address AD(5:0). This is the address field of the indexed register.\nbit 8-15: data DI(7:0) (write mode). This is the data that is written into the device (MSb first).\nbit 8-15: data DO(7:0) (read mode). This is the data that is read from the device (MSb first)."
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "In multiple read/write commands further blocks of 8 clock periods are added. When the MS bit is 0, the address\nused to read/write data remains the same for every block. When the MS bit is 1, the address used to read/write\ndata is increased at every block.\nThe function and the behavior of SDI and SDO remain unchanged.\nDS9463 - Rev 7 page 14/32LIS3MDL\nDigital interfaces\n5.2.1 SPI read\nFigure 7. SPI read\nCS\nSPC\nSDI\nRW\nMS AD5 AD4AD3 AD2 AD1 AD0\nSDO\nDO7DO6DO5DO4DO3DO2DO1DO0"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "SDO\nDO7DO6DO5DO4DO3DO2DO1DO0\nThe SPI read command is performed with 16 clock pulses. A multiple byte read command is performed by adding\nblocks of 8 clock pulses to the previous one.\nbit 0: READ bit. The value is 1.\nbit 1: MS bit. When 0, does not increment the address; when 1, increments the address in multiple reads.\nbit 2-7: address AD(5:0). This is the address field of the indexed register.\nbit 8-15: data DO(7:0) (read mode). This is the data that is read from the device (MSb first)."
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "bit 16-... : data DO(...-8). Further data in multiple byte reads.\nFigure 8. Multiple byte SPI read protocol (2-byte example)\nDS9463 - Rev 7 page 15/32LIS3MDL\nDigital interfaces\n5.2.2 SPI write\nFigure 9. SPI write protocol\nThe SPI write command is performed with 16 clock pulses. A multiple byte write command is performed by adding\nblocks of 8 clock pulses to the previous one.\nbit 0: WRITE bit. The value is 0."
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "bit 0: WRITE bit. The value is 0.\nbit 1: MS bit. When 0, does not increment the address; when 1, increments the address in multiple writes.\nbit 2 -7: address AD(5:0). This is the address field of the indexed register.\nbit 8-15: data DI(7:0) (write mode). This is the data that is written inside the device (MSb first).\nbit 16-... : data DI(...-8). Further data in multiple byte writes.\nFigure 10. Multiple byte SPI write protocol (2-byte example)\nDS9463 - Rev 7 page 16/32LIS3MDL\nDigital interfaces"
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "Digital interfaces\n5.2.3 SPI read in 3-wire mode\n3-wire mode is entered by setting bit SIM to 1 (SPI serial interface mode selection) in CTRL_REG3 (22h).\nWhen 3-wire mode is used, the SDO/SA1 pin has to be connected to GND or Vdd_IO.\nFigure 11. SPI read protocol in 3-wire mode\nThe SPI read command is performed with 16 clock pulses:\nbit 0: READ bit. The value is 1.\nbit 1: MS bit. When 0, does not increment the address; when 1, increments the address in multiple reads."
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "bit 2-7: address AD(5:0). This is the address field of the indexed register.\nbit 8-15: data DO(7:0) (read mode). This is the data that is read from the device (MSb first).\nA multiple read command is also available in 3-wire mode.\nDS9463 - Rev 7 page 17/32LIS3MDL\nRegister mapping\n6 Register mapping\nThe table below provides a list of the 8-bit registers embedded in the device and their respective addresses.\nTable 15. Register address map\nRegister address\nName Type Default Comment\nHex Binary"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "Name Type Default Comment\nHex Binary\nReserved 00 - 04 -- -- Reserved\nOFFSET_X_REG_L_M R/W 05 00000101 00000000\nOFFSET_X_REG_H_M R/W 06 00000110 00000000\nOFFSET_Y_REG_L_M R/W 07 00000111 00000000\nHard-iron registers\nOFFSET_Y_REG_H_M R/W 08 00001000 00000000\nOFFSET_Z_REG_L_M R/W 09 00001001 00000000\nOFFSET_Z_REG_H_M R/W 0A 00001010 00000000\nReserved 0B - 0E -- -- Reserved\nWHO_AM_I R 0F 0000 1111 00111101 Dummy register\nReserved 10 - 1F -- -- Reserved\nCTRL_REG1 R/W 20 0010 0000 00010000"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "CTRL_REG1 R/W 20 0010 0000 00010000\nCTRL_REG2 R/W 21 0010 0001 00000000\nCTRL_REG3 R/W 22 0010 0010 00000011\nCTRL_REG4 R/W 23 0010 0011 00000000\nCTRL_REG5 R/W 24 0010 0100 00000000\nReserved 25 - 26 -- -- Reserved\nSTATUS_REG R 27 0010 0111 Output\nOUT_X_L R 28 0010 1000 Output\nOUT_X_H R 29 0010 1001 Output\nOUT_Y_L R 2A 0010 1010 Output\nOUT_Y_H R 2B 0010 1011 Output\nOUT_Z_L R 2C 0010 1100 Output\nOUT_Z_H R 2D 0010 1101 Output\nTEMP_OUT_L R 2E 0010 1110 Output\nTEMP_OUT_H R 2F 0010 1111 Output"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "TEMP_OUT_H R 2F 0010 1111 Output\nINT_CFG R/W 30 00110000 11101000\nINT_SRC R 31 00110001 00000000\nINT_THS_L R/W 32 00110010 00000000\nINT_THS_H R/W 33 00110011 00000000\nReserved registers or those not listed in the table above must not be changed. Writing to those registers may\ncause permanent damage to the device.\nThe content of the registers that are loaded at boot should not be changed. They contain the factory calibration"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "values. Their content is automatically restored when the device is powered up.\nDS9463 - Rev 7 page 18/32LIS3MDL\nRegisters description\n7 Registers description\n7.1 OFFSET_X_REG_L_M (05h) and OFFSET_X_REG_H_M (06h)\nThese registers comprise a 16-bit register and represent X hard-iron offset in order to compensate environmental\neffects (data in two’s complement). These values act on the magnetic output data value in order to delete the\nenvironmental offset."
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "environmental offset.\n7.2 OFFSET_Y_REG_L_M (07h) and OFFSET_Y_REG_H_M (08h)\nThese registers comprise a 16-bit register and represent Y hard-iron offset in order to compensate environmental\neffects (data in two’s complement). These values act on the magnetic output data value in order to delete the\nenvironmental offset.\n7.3 OFFSET_Z_REG_L_M (09h) and OFFSET_Z_REG_H_M (0Ah)\nThese registers comprise a 16-bit register and represent Z hard-iron offset in order to compensate environmental"
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "effects (data in two’s complement). These values act on the magnetic output data value in order to delete the\nenvironmental offset.\n7.4 WHO_AM_I (0Fh)\nDevice identification register\nTable 16. WHO_AM_I register\n0 0 1 1 1 1 0 1\nDS9463 - Rev 7 page 19/32LIS3MDL\nRegisters description\n7.5 CTRL_REG1 (20h)\nTable 17. CTRL_REG1 register\nTEMP_EN OM1 OM0 DO2 DO1 DO0 FAST_ODR ST\nTable 18. CTRL_REG1 description\nEnables temperature sensor. Default value: 0\nTEMP_EN"
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "TEMP_EN\n(0: temperature sensor disabled; 1: temperature sensor enabled)\nOM[1:0] X and Y axes operative mode selection (refer to Table 20). Default value: 00\nDO[2:0] Output data rate selection (refer to Table 21). Default value: 100\nFAST_ODR enables data rates higher than 80 Hz (refer to Table 19). Default value: 0\nFAST_ODR\n(0: FAST_ODR disabled; 1: FAST_ODR enabled)\nEnables self-test. Default value: 0\nST\n(0: self-test disabled; 1: self-test enabled)\nTable 19. Data rate configuration"
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "Table 19. Data rate configuration\nDO2 DO1 DO0 FAST_ODR ODR [Hz] OM\nX X X 1 1000 LP\nX X X 1 560 MP\nX X X 1 300 HP\nX X X 1 155 UHP\nTable 20. X and Y axes operating mode selection\nOM1 OM0 Operating mode for X and Y axes\n0 0 Low-power mode\n0 1 Medium-performance mode\n1 0 High-performance mode\n1 1 Ultrahigh-performance mode\nTable 21. Output data rate configuration\nDO2 DO1 DO0 ODR [Hz]\n0 0 0 0.625\n0 0 1 1.25\n0 1 0 2.5\n0 1 1 5\n1 0 0 10\n1 0 1 20\n1 1 0 40\n1 1 1 80\nDS9463 - Rev 7 page 20/32LIS3MDL"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "1 1 1 80\nDS9463 - Rev 7 page 20/32LIS3MDL\nRegisters description\n7.6 CTRL_REG2 (21h)\nTable 22. CTRL_REG2 register\n0(1) FS1 FS0 0(1) REBOOT SOFT_RST 0(1) 0(1)\n1. This bit must be set to 0 for the correct operation of the device.\nTable 23. CTRL_REG2 description\nFS[1:0] Full-scale configuration (refer to Table 24). Default value: 00\nReboots memory content. Default value: 0\nREBOOT\n(0: normal mode; 1: reboot memory content)\nConfiguration registers and user register reset function.\nSOFT_RST"
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "SOFT_RST\n(0: default value; 1: reset operation)\nTable 24. Full-scale selection\nFS1 FS0 Full-scale\n0 0 ±4 gauss\n0 1 ±8 gauss\n1 0 ±12 gauss\n1 1 ±16 gauss\n7.7 CTRL_REG3 (22h)\nTable 25. CTRL_REG3 register\n0(1) 0(1) LP 0(1) 0(1) SIM MD1 MD0\n1. This bit must be set to 0 for the correct operation of the device.\nTable 26. CTRL_REG3 description\nLow-power mode configuration. Default value: 0\nLP If this bit is 1, DO[2:0] is set to 0.625 Hz and the system performs, for each channel, the minimum number of"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "averages. Once the bit is set to 0, the magnetic data rate is configured by the DO bits in the CTRL_REG1 (20h)\nregister.\nSPI serial interface mode selection. Default value: 0\nSIM\n(0: 4-wire interface; 1: 3-wire interface)\nMD[1:0] Operating mode selection (refer to Table 27). Default value: 11\nTable 27. System operating mode selection\nMD1 MD0 Mode\n0 0 Continuous-conversion mode\nSingle-conversion mode\n0 1\nSingle-conversion mode has to be used with sampling frequency from 0.625 Hz to 80 Hz."
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "1 0 Power-down mode\n1 1 Power-down mode\nDS9463 - Rev 7 page 21/32LIS3MDL\nRegisters description\n7.8 CTRL_REG4 (23h)\nTable 28. CTRL_REG4 register\n0(1) 0(1) 0(1) 0(1) OMZ1 OMZ0 BLE 0(1)\n1. This bit must be set to 0 for the correct operation of the device.\nTable 29. CTRL_REG4 description\nOMZ[1:0] Z-axis operative mode selection (refer to Table 30). Default value: 00\nBig/little endian data selection. Default value: 0\nBLE\n(0: data LSb at lower address; 1: data MSb at lower address)"
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "Table 30. Z-axis operating mode selection\nOMZ1 OMZ0 Operating mode for Z-axis\n0 0 Low-power mode\n0 1 Medium-performance mode\n1 0 High-performance mode\n1 1 Ultrahigh-performance mode\n7.9 CTRL_REG5 (24h)\nTable 31. CTRL_REG5 register\nFAST_READ BDU 0(1) 0(1) 0(1) 0(1) 0(1) 0(1)\n1. This bit must be set to 0 for the correct operation of the device.\nTable 32. CTRL_REG5 description\nFAST READ allows reading the high part of DATA OUT only in order to increase reading efficiency. Default"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "FAST_READ value: 0\n(0: FAST_READ disabled; 1: FAST_READ enabled)\nBlock data update for magnetic data. Default value: 0\nBDU (0: continuous update;\n1: output registers not updated until MSb and LSb have been read)\nDS9463 - Rev 7 page 22/32LIS3MDL\nRegisters description\n7.10 STATUS_REG (27h)\nTable 33. STATUS_REG register\nZYXOR ZOR YOR XOR ZYXDA ZDA YDA XDA\nTable 34. STATUS_REG description\nX-, Y- and Z-axis data overrun. Default value: 0\nZYXOR (0: no overrun has occurred;"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "ZYXOR (0: no overrun has occurred;\n1: a new set of data has overwritten the previous set)\nZ-axis data overrun. Default value: 0\nZOR (0: no overrun has occurred;\n1: new data for the Z-axis has overwritten the previous data)\nY-axis data overrun. Default value: 0\nYOR (0: no overrun has occurred;\n1: new data for the Y-axis has overwritten the previous data)\nX-axis data overrun. Default value: 0\nXOR (0: no overrun has occurred;\n1: new data for the X-axis has overwritten the previous data)"
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "X-, Y- and Z-axis new data available. Default value: 0\nZYXDA (0: a new set of data is not yet available;\n1: a new set of data is available)\nZ-axis new data available. Default value: 0\nZDA (0: new data for the Z-axis is not yet available;\n1: new data for the Z-axis is available)\nY-axis new data available. Default value: 0\nYDA (0: new data for the Y-axis is not yet available;\n1: new data for the Y-axis is available)\nX-axis new data available. Default value: 0"
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "X-axis new data available. Default value: 0\nXDA (0: new data for the X-axis is not yet available;\n1: new data for the X-axis is available)\n7.11 OUT_X_L (28h), OUT_X_H (29h)\nX-axis data output. The value of the magnetic field is expressed as two’s complement.\n7.12 OUT_Y_L (2Ah), OUT_Y_H (2Bh)\nY-axis data output. The value of the magnetic field is expressed as two’s complement.\n7.13 OUT_Z_L (2Ch), OUT_Z_H (2Dh)\nZ-axis data output. The value of the magnetic field is expressed as two’s complement."
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "7.14 TEMP_OUT_L (2Eh), TEMP_OUT_H (2Fh)\nTemperature sensor data. The value of the temperature is expressed as two’s complement.\nDS9463 - Rev 7 page 23/32LIS3MDL\nRegisters description\n7.15 INT_CFG (30h)\nTable 35. INT_CFG register\nXIEN YIEN ZIEN 0(1) 1 IEA LIR IEN\n1. This bit must be set to 0 for the correct operation of the device.\nTable 36. INT_CFG description\nEnables interrupt generation on the X-axis. Default value: 1\nXIEN\n(0: disable interrupt request; 1: enable interrupt request)"
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "Enables interrupt generation on the Y-axis. Default value: 1\nYIEN\n(0: disable interrupt request; 1: enable interrupt request)\nEnables interrupt generation on the Z-axis. Default value: 1\nZIEN\n(0: disable interrupt request; 1: enable interrupt request)\nInterrupt active configuration on INT. Default value: 0\nIEA\n(0: low; 1: high)\nLatch interrupt request. Default value: 0\nLIR (0: interrupt request latched; 1: interrupt request not latched)"
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "Once latched, the INT pin remains in the same state until INT_SRC (31h) is read.\nEnables the interrupt on the INT pin. Default value: 0\nIEN\n(0: disabled; 1: enabled)\n7.16 INT_SRC (31h)\nTable 37. INT_SRC register\nPTH_X PTH_Y PTH_Z NTH_X NTH_Y NTH_Z MROI INT\nTable 38. INT_SRC description\nValue on the X-axis exceeds the threshold on the positive side.\nPTH_X\nDefault value: 0\nValue on the Y-axis exceeds the threshold on the positive side.\nPTH_Y\nDefault value: 0"
+  },
+  {
+    "faiss_index_id": 68,
+    "text": "PTH_Y\nDefault value: 0\nValue on the Z-axis exceeds the threshold on the positive side.\nPTH_Z\nDefault value: 0\nValue on the X-axis exceeds the threshold on the negative side.\nNTH_X\nDefault value: 0\nValue on the Y-axis exceeds the threshold on the negative side.\nNTH_Y\nDefault value: 0\nValue on the Z-axis exceeds the threshold on the negative side.\nNTH_Z\nDefault value: 0\nInternal measurement range overflow on the magnetic value.\nMROI\nDefault value: 0"
+  },
+  {
+    "faiss_index_id": 69,
+    "text": "MROI\nDefault value: 0\nINT This bit signals when an interrupt event occurs.\nDS9463 - Rev 7 page 24/32LIS3MDL\nRegisters description\n7.17 INT_THS_L(32h), INT_THS_H(33h)\nInterrupt threshold. Default value: 0.\nThe value is expressed in 16-bit unsigned.\nEven if the threshold is expressed in absolute value, the device detects both positive and negative thresholds.\nTable 39. INT_THS_L_M\nTHS7 THS6 THS5 THS4 THS3 THS2 THS1 THS0\nTable 40. INT_THS_H_M\n0(1) THS14 THS13 THS12 THS11 THS10 THS9 THS8"
+  },
+  {
+    "faiss_index_id": 70,
+    "text": "0(1) THS14 THS13 THS12 THS11 THS10 THS9 THS8\n1. This bit must be set to 0 for the correct operation of the device.\nDS9463 - Rev 7 page 25/32LIS3MDL\nPackage information\n8 Package information\nIn order to meet environmental requirements, ST offers these devices in different grades of ECOPACK packages,\ndepending on their level of environmental compliance. ECOPACK specifications, grade definitions and product\nstatus are available at: www.st.com. ECOPACK is an ST trademark."
+  },
+  {
+    "faiss_index_id": 71,
+    "text": "8.1 LGA-12L package information\nFigure 12. LGA-12 2.0 x 2.0 x 1.0 mm package outline and mechanical data\nDimensions are in millimeter unless otherwise specified\nGeneral Tolerance is +/-0.1mm unless otherwise specified\nOUTER DIMENSIONS\nITEM DIMENSION [mm] TOLERANCE [mm]\nLength [L] 2.00 ±0.15\nWidth [W] 2.00 ±0.15\nHeight [H] 1.027 MAX\n8365767_5\nDS9463 - Rev 7 page 26/32LIS3MDL\nRevision history\nTable 41. Document revision history\nDate Version Changes\n01-Feb-2013 1 Initial release"
+  },
+  {
+    "faiss_index_id": 72,
+    "text": "01-Feb-2013 1 Initial release\nUpdated note on page 12\n22-Apr-2013 2\nProduct status changed from preliminary data to production data\nAdded FAST_ODR bit to Table 18: CTRL_REG1 register and Table 19:\nCTRL_REG1 description\nAdded FAST_READ bit to Table 32: CTRL_REG5 register and Table 33:\n12-Dec-2014 3 CTRL_REG5 description\nUpdated Table 16: Register address map\nMinor textual updates throughout document\n15-May-2015 4 Added Table 20: Data rate configuration"
+  },
+  {
+    "faiss_index_id": 73,
+    "text": "28-Oct-2015 5 Updated registers 32h and 33h in Table 16: Register address map\nUpdated Table 1: Device summary\n02-May-2017 6\nUpdated default values of INT_CFG (30h)\nUpdated Notes below Figure 3. SPI slave timing diagram and Figure 4. I²C\nslave timing diagram\nAdded hard-iron offset registers OFFSET_X_REG_L_M (05h) and\n05-Dec-2023 7\nOFFSET_X_REG_H_M (06h) through OFFSET_Z_REG_L_M (09h) and\nOFFSET_Z_REG_H_M (0Ah)\nUpdated Section 8.1 LGA-12L package information\nDS9463 - Rev 7 page 27/32LIS3MDL"
+  },
+  {
+    "faiss_index_id": 74,
+    "text": "DS9463 - Rev 7 page 27/32LIS3MDL\nContents\nContents\n1 Block diagram and pin description.................................................2\n1.1 Block diagram .................................................................2\n1.2 Pin description.................................................................3\n2 Magnetic and electrical specifications..............................................4\n2.1 Magnetic characteristics.........................................................4"
+  },
+  {
+    "faiss_index_id": 75,
+    "text": "2.2 Temperature sensor characteristics ...............................................5\n2.3 Electrical characteristics.........................................................5\n2.4 Communication interface characteristics ...........................................6\n2.4.1 SPI - serial peripheral interface..............................................6\n2.4.2 I²C - inter IC control interface ...............................................7"
+  },
+  {
+    "faiss_index_id": 76,
+    "text": "2.5 Absolute maximum ratings.......................................................8\n3 Terminology and functionality .....................................................9\n3.1 Sensitivity.....................................................................9\n3.2 Zero-gauss level ...............................................................9\n3.3 Factory calibration..............................................................9"
+  },
+  {
+    "faiss_index_id": 77,
+    "text": "4 Application hints .................................................................10\n4.1 External capacitors............................................................10\n4.2 Soldering information ..........................................................10\n4.3 High-current wiring effects......................................................10\n5 Digital interfaces .................................................................11"
+  },
+  {
+    "faiss_index_id": 78,
+    "text": "5.1 I²C serial interface.............................................................11\n5.1.1 I²C operation........................................................... 12\n5.2 SPI bus interface..............................................................14\n5.2.1 SPI read .............................................................. 15\n5.2.2 SPI write.............................................................. 16"
+  },
+  {
+    "faiss_index_id": 79,
+    "text": "5.2.3 SPI read in 3-wire mode .................................................. 17\n6 Register mapping.................................................................18\n7 Registers description.............................................................19\n7.1 OFFSET_X_REG_L_M (05h) and OFFSET_X_REG_H_M (06h) .....................19\n7.2 OFFSET_Y_REG_L_M (07h) and OFFSET_Y_REG_H_M (08h) .....................19\n7.3 OFFSET_Z_REG_L_M (09h) and OFFSET_Z_REG_H_M (0Ah) .....................19"
+  },
+  {
+    "faiss_index_id": 80,
+    "text": "7.4 WHO_AM_I (0Fh).............................................................19\n7.5 CTRL_REG1 (20h)............................................................20\n7.6 CTRL_REG2 (21h)............................................................21\nDS9463 - Rev 7 page 28/32LIS3MDL\nContents\n7.7 CTRL_REG3 (22h)............................................................21\n7.8 CTRL_REG4 (23h)............................................................22"
+  },
+  {
+    "faiss_index_id": 81,
+    "text": "7.9 CTRL_REG5 (24h)............................................................22\n7.10 STATUS_REG (27h)...........................................................23\n7.11 OUT_X_L (28h), OUT_X_H (29h)................................................23\n7.12 OUT_Y_L (2Ah), OUT_Y_H (2Bh) ...............................................23\n7.13 OUT_Z_L (2Ch), OUT_Z_H (2Dh) ...............................................23\n7.14 TEMP_OUT_L (2Eh), TEMP_OUT_H (2Fh) .......................................23"
+  },
+  {
+    "faiss_index_id": 82,
+    "text": "7.15 INT_CFG (30h) ...............................................................24\n7.16 INT_SRC (31h) ...............................................................24\n7.17 INT_THS_L(32h), INT_THS_H(33h)..............................................25\n8 Package information..............................................................26\n8.1 LGA-12L package information...................................................26"
+  },
+  {
+    "faiss_index_id": 83,
+    "text": "Revision history .......................................................................27\nList of tables ..........................................................................30\nList of figures..........................................................................31\nDS9463 - Rev 7 page 29/32LIS3MDL\nList of tables\nList of tables"
+  },
+  {
+    "faiss_index_id": 84,
+    "text": "List of tables\nList of tables\nTable 1. Pin description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\nTable 2. Magnetic characteristics. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4"
+  },
+  {
+    "faiss_index_id": 85,
+    "text": "Table 3. Temperature sensor characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\nTable 4. Electrical characteristics. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\nTable 5. SPI slave timing values. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6"
+  },
+  {
+    "faiss_index_id": 86,
+    "text": "Table 6. I²C slave timing values . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7\nTable 7. Absolute maximum ratings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8\nTable 8. Serial interface pin description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11"
+  },
+  {
+    "faiss_index_id": 87,
+    "text": "Table 9. I²C terminology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11\nTable 10. SAD+read/write patterns. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12\nTable 11. Transfer when master is writing one byte to slave. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12"
+  },
+  {
+    "faiss_index_id": 88,
+    "text": "Table 12. Transfer when master is writing multiple bytes to slave. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12\nTable 13. Transfer when master is receiving (reading) one byte of data from slave. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12\nTable 14. Transfer when master is receiving (reading) multiple bytes of data from slave . . . . . . . . . . . . . . . . . . . . . . . . . 12"
+  },
+  {
+    "faiss_index_id": 89,
+    "text": "Table 15. Register address map . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18\nTable 16. WHO_AM_I register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19\nTable 17. CTRL_REG1 register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20"
+  },
+  {
+    "faiss_index_id": 90,
+    "text": "Table 18. CTRL_REG1 description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20\nTable 19. Data rate configuration. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20\nTable 20. X and Y axes operating mode selection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20"
+  },
+  {
+    "faiss_index_id": 91,
+    "text": "Table 21. Output data rate configuration. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20\nTable 22. CTRL_REG2 register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21\nTable 23. CTRL_REG2 description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21"
+  },
+  {
+    "faiss_index_id": 92,
+    "text": "Table 24. Full-scale selection. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21\nTable 25. CTRL_REG3 register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21\nTable 26. CTRL_REG3 description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21"
+  },
+  {
+    "faiss_index_id": 93,
+    "text": "Table 27. System operating mode selection. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21\nTable 28. CTRL_REG4 register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22\nTable 29. CTRL_REG4 description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22"
+  },
+  {
+    "faiss_index_id": 94,
+    "text": "Table 30. Z-axis operating mode selection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22\nTable 31. CTRL_REG5 register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22\nTable 32. CTRL_REG5 description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22"
+  },
+  {
+    "faiss_index_id": 95,
+    "text": "Table 33. STATUS_REG register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23\nTable 34. STATUS_REG description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23\nTable 35. INT_CFG register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24"
+  },
+  {
+    "faiss_index_id": 96,
+    "text": "Table 36. INT_CFG description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24\nTable 37. INT_SRC register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24\nTable 38. INT_SRC description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24"
+  },
+  {
+    "faiss_index_id": 97,
+    "text": "Table 39. INT_THS_L_M . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25\nTable 40. INT_THS_H_M . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25\nTable 41. Document revision history. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27"
+  },
+  {
+    "faiss_index_id": 98,
+    "text": "DS9463 - Rev 7 page 30/32LIS3MDL\nList of figures\nList of figures\nFigure 1. Block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2\nFigure 2. Pin description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3"
+  },
+  {
+    "faiss_index_id": 99,
+    "text": "Figure 3. SPI slave timing diagram. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6\nFigure 4. I²C slave timing diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7\nFigure 5. LIS3MDL electrical connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10"
+  },
+  {
+    "faiss_index_id": 100,
+    "text": "Figure 6. Read and write protocol. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14\nFigure 7. SPI read . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15\nFigure 8. Multiple byte SPI read protocol (2-byte example). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15"
+  },
+  {
+    "faiss_index_id": 101,
+    "text": "Figure 9. SPI write protocol . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16\nFigure 10. Multiple byte SPI write protocol (2-byte example) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16\nFigure 11. SPI read protocol in 3-wire mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17"
+  },
+  {
+    "faiss_index_id": 102,
+    "text": "Figure 12. LGA-12 2.0 x 2.0 x 1.0 mm package outline and mechanical data. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26\nDS9463 - Rev 7 page 31/32LIS3MDL\nIMPORTANT NOTICE – READ CAREFULLY\nSTMicroelectronics NV and its subsidiaries (“ST”) reserve the right to make changes, corrections, enhancements, modifications, and improvements to ST"
+  },
+  {
+    "faiss_index_id": 103,
+    "text": "products and/or to this document at any time without notice. Purchasers should obtain the latest relevant information on ST products before placing orders. ST\nproducts are sold pursuant to ST’s terms and conditions of sale in place at the time of order acknowledgment.\nPurchasers are solely responsible for the choice, selection, and use of ST products and ST assumes no liability for application assistance or the design of\npurchasers’ products."
+  },
+  {
+    "faiss_index_id": 104,
+    "text": "purchasers’ products.\nNo license, express or implied, to any intellectual property right is granted by ST herein.\nResale of ST products with provisions different from the information set forth herein shall void any warranty granted by ST for such product.\nST and the ST logo are trademarks of ST. For additional information about ST trademarks, refer to www.st.com/trademarks. All other product or service names\nare the property of their respective owners."
+  },
+  {
+    "faiss_index_id": 105,
+    "text": "are the property of their respective owners.\nInformation in this document supersedes and replaces information previously supplied in any prior versions of this document.\n© 2023 STMicroelectronics – All rights reserved\nDS9463 - Rev 7 page 32/32"
+  }
+]

@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component M2 connected to V__pH_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, pin 6 (VCC) of component M2 is connected to the net /V_{pH}.",
+        "is_final": true
+    }
+}

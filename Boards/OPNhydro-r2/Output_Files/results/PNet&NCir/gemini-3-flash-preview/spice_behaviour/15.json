@@ -1,0 +1,13 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /cp0na maintain a voltage of 5V for the entire simulation?",
+    "tool_calls": {
+        "arguments": "{\"net_name\":\"/CP0NA\",\"spice_circuit_file\":\"./outputs/OPNhydro-r2/OPNhydro_r2_spice.json\",\"expected_voltage\":\"5V\"}",
+        "name": "calculate_spice_behaviour"
+    },
+    "response": {
+        "answer": "NO",
+        "reasoning": "The SPICE simulation results indicate that the net /cp0na does not maintain a constant voltage of 5V throughout the simulation period.",
+        "is_final": true
+    }
+}

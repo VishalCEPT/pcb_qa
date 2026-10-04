@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component 1825232-1 have a maximum operating temperature of 70\u00b0C according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The TE Connectivity 1825232-1 slide switch datasheet specifies an operating temperature range of -20\u00b0C to +85\u00b0C, not a maximum of 70\u00b0C.",
+        "is_final": true
+    }
+}

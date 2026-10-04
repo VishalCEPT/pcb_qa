@@ -1,0 +1,994 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "W25N01GVxxIG/IT\n3V 1G-BIT\nSERIAL SLC NAND FLASH MEMORY WITH\nDUAL/QUAD SPI\nBUFFER READ & CONTINUOUS READ\nPublication Release Date: March 21, 2016\nRevision GW25N01GVxxIG/IT\nTable of Contents\n1. GENERAL DESCRIPTIONS ............................................................................................................. 6\n2. FEATURES ....................................................................................................................................... 6"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "3. PACKAGE TYPES AND PIN CONFIGURATIONS .......................................................................... 7\n3.1 Pad Configuration WSON 8x6-mm ...................................................................................... 7\n3.2 Pad Description WSON 8x6-mm .......................................................................................... 7\n3.3 Pin Configuration SOIC 300-mil ........................................................................................... 8"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "3.4 Pin Description SOIC 300-mil ............................................................................................... 8\n3.5 Ball Configuration TFBGA 8x6-mm (5x5 or 6x4 Ball Array) ................................................. 9\n3.6 Ball Description TFBGA 8x6-mm ......................................................................................... 9"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "4. PIN DESCRIPTIONS ...................................................................................................................... 10\n4.1 Chip Select (/CS) ................................................................................................................ 10\n4.2 Serial Data Input, Output and IOs (DI, DO and IO0, IO1, IO2, IO3) .................................. 10"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "4.3 Write Protect (/WP) ............................................................................................................. 10\n4.4 HOLD (/HOLD) ................................................................................................................... 10\n4.5 Serial Clock (CLK) .............................................................................................................. 10"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "5. BLOCK DIAGRAM .......................................................................................................................... 11\n6. FUNCTIONAL DESCRIPTIONS ..................................................................................................... 12\n6.1 Device Operation Flow ....................................................................................................... 12"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "6.1.1 Standard SPI Instructions ..................................................................................................... 12\n6.1.2 Dual SPI Instructions ............................................................................................................ 12\n6.1.3 Quad SPI Instructions ........................................................................................................... 13"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "6.1.4 Hold Function ........................................................................................................................ 13\n6.2 Write Protection .................................................................................................................. 14\n7. PROTECTION, CONFIGURATION AND STATUS REGISTERS .................................................. 15\n7.1 Protection Register / Status Register-1 (Volatile Writable, OTP lockable) ......................... 15"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "7.1.1 Block Protect Bits (BP3, BP2, BP1, BP0, TB) – Volatile Writable, OTP lockable .................. 15\n7.1.2 Write Protection Enable Bit (WP-E) – Volatile Writable, OTP lockable ................................. 16\n7.1.3 Status Register Protect Bits (SRP1, SRP0) – Volatile Writable, OTP lockable ..................... 16\n7.2 Configuration Register / Status Register-2 (Volatile Writable) ........................................... 17"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "7.2.1 One Time Program Lock Bit (OTP-L) – OTP lockable .......................................................... 17\n7.2.2 Enter OTP Access Mode Bit (OTP-E) – Volatile Writable ..................................................... 17\n7.2.3 Status Register-1 Lock Bit (SR1-L) – OTP lockable ............................................................. 17\n7.2.4 ECC Enable Bit (ECC-E) – Volatile Writable ......................................................................... 18"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "7.2.5 Buffer Read / Continuous Read Mode Bit (BUF) – Volatile Writable ..................................... 18\n7.3 Status Register-3 (Status Only) .......................................................................................... 19\n7.3.1 Look-Up Table Full (LUT-F) – Status Only ............................................................................ 19\n7.3.2 Cumulative ECC Status (ECC-1, ECC-0) – Status Only ....................................................... 19"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "7.3.3 Program/Erase Failure (P-FAIL, E-FAIL) – Status Only ........................................................ 20\n7.3.4 Write Enable Latch (WEL) – Status Only .............................................................................. 20\n7.3.5 Erase/Program In Progress (BUSY) – Status Only ............................................................... 20\n7.3.6 Reserved Bits – Non Functional ........................................................................................... 20"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "7.4 W25N01GV Status Register Memory Protection ............................................................... 21\n- 1 -W25N01GVxxIG/IT\n8. INSTRUCTIONS ............................................................................................................................. 22\n8.1 Device ID and Instruction Set Tables ................................................................................. 22"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "8.1.1 Manufacturer and Device Identification ................................................................................. 22\n8.1.2 Instruction Set Table 1 (Continuous Read, BUF = 0, xxIT Default Power Up Mode) ............ 23\n8.1.3 Instruction Set Table 2 (Buffer Read, BUF = 1, xxIG Default Power Up Mode) .................... 24\n8.2 Instruction Descriptions ...................................................................................................... 26"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "8.2.1 Device Reset (FFh) ............................................................................................................... 26\n8.2.2 Read JEDEC ID (9Fh) .......................................................................................................... 27\n8.2.3 Read Status Register (0Fh / 05h) ......................................................................................... 28"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "8.2.4 Write Status Register (1Fh / 01h) ......................................................................................... 29\n8.2.5 Write Enable (06h) ................................................................................................................ 30\n8.2.6 Write Disable (04h) ............................................................................................................... 30"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "8.2.7 Bad Block Management (A1h) .............................................................................................. 31\n8.2.8 Read BBM Look Up Table (A5h) .......................................................................................... 32\n8.2.9 Last ECC Failure Page Address (A9h) ................................................................................. 33"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "8.2.10 128KB Block Erase (D8h) ................................................................................................... 34\n8.2.11 Load Program Data (02h) / Random Load Program Data (84h) ......................................... 35\n8.2.12 Quad Load Program Data (32h) / Quad Random Load Program Data (34h) ...................... 36\n8.2.13 Program Execute (10h) ....................................................................................................... 37"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "8.2.14 Page Data Read (13h) ........................................................................................................ 38\n8.2.15 Read Data (03h) ................................................................................................................. 39\n8.2.16 Fast Read (0Bh) ................................................................................................................. 40"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "8.2.17 Fast Read with 4-Byte Address (0Ch)................................................................................. 41\n8.2.18 Fast Read Dual Output (3Bh) ............................................................................................. 42\n8.2.19 Fast Read Dual Output with 4-Byte Address (3Ch) ............................................................ 43"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "8.2.20 Fast Read Quad Output (6Bh) ............................................................................................ 44\n8.2.21 Fast Read Quad Output with 4-Byte Address (6Ch) ........................................................... 45\n8.2.22 Fast Read Dual I/O (BBh) ................................................................................................... 46"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "8.2.23 Fast Read Dual I/O with 4-Byte Address (BCh) .................................................................. 47\n8.2.24 Fast Read Quad I/O (EBh) .................................................................................................. 48\n8.2.25 Fast Read Quad I/O with 4-Byte Address (ECh) ................................................................. 50\n8.2.26 Accessing Unique ID / Parameter / OTP Pages (OTP-E=1) ............................................... 52"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "8.2.27 Parameter Page Data Definitions ....................................................................................... 53\n9. ELECTRICAL CHARACTERISTICS............................................................................................... 54\n9.1 Absolute Maximum Ratings ................................................................................................ 54"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "9.2 Operating Ranges .............................................................................................................. 54\n9.3 Power-up Power-down Timing Requirements .................................................................... 55\n9.4 DC Electrical Characteristics .............................................................................................. 56"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "9.5 AC Measurement Conditions ............................................................................................. 57\n9.6 AC Electrical Characteristics .............................................................................................. 58\n9.7 Serial Output Timing ........................................................................................................... 60"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "9.8 Serial Input Timing .............................................................................................................. 60\n9.9 /HOLD Timing ..................................................................................................................... 60\n9.10 /WP Timing ......................................................................................................................... 60"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "10. PACKAGE SPECIFICATIONS ....................................................................................................... 61\nPublication Release Date: March 21, 2016\n- 2 - Revision GW25N01GVxxIG/IT\n10.1 8-Pad WSON 8x6-mm (Package Code ZE) ....................................................................... 61\n10.2 16-Pin SOIC 300-mil (Package Code SF) .......................................................................... 62"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "10.3 24-Ball TFBGA 8x6-mm (Package Code TB, 5x5-1 Ball Array) ......................................... 63\n10.4 24-Ball TFBGA 8x6-mm (Package Code TC, 6x4 Ball Array) ............................................ 64\n11. ORDERING INFORMATION .......................................................................................................... 65\n11.1 Valid Part Numbers and Top Side Marking ........................................................................ 66"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "12. REVISION HISTORY ...................................................................................................................... 67\n- 3 -W25N01GVxxIG/IT\nTable of Figures\nFigure 1a. W25N01GV Pad Assignments, 8-pad WSON 8x6-mm (Package Code ZE) .............................. 7\nFigure 1b. W25N01GV Pin Assignments, 16-pin SOIC 300-mil (Package Code SF) .................................. 8"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "Figure 1c. W25N01GV Ball Assignments, 24-ball TFBGA 8x6-mm (Package Code TB & TC) ................... 9\nFigure 2. W25N01GV Flash Memory Architecture and Addressing ........................................................... 11\nFigure 3. W25N01GV Flash Memory Operation Diagram .......................................................................... 12\nFigure 4a. Protection Register / Status Register-1 (Address Axh) ............................................................. 15"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "Figure 4b. Configuration Register / Status Register-2 (Address Bxh) ........................................................ 17\nFigure 4c. Status Register-3 (Address Cxh) ............................................................................................... 19\nFigure 5. Device Reset Instruction .............................................................................................................. 26"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "Figure 6. Read JEDEC ID Instruction ......................................................................................................... 27\nFigure 7. Read Status Register Instruction ................................................................................................. 28\nFigure 8. Write Status Register-1/2/3 Instruction ........................................................................................ 29"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "Figure 9. Write Enable Instruction ............................................................................................................... 30\nFigure 10. Write Disable Instruction ............................................................................................................ 30\nFigure 11. Bad Block Management Instruction ........................................................................................... 31"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "Figure 12. Read BBM Look Up Table Instruction ....................................................................................... 32\nFigure 13. Last ECC Failure Page Address Instruction .............................................................................. 33\nFigure 14. 128KB Block Erase Instruction .................................................................................................. 34"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "Figure 15. Load / Random Load Program Data Instruction ........................................................................ 35\nFigure 16. Quad Load / Quad Random Load Program Data Instruction .................................................... 36\nFigure 17. Program Execute Instruction ..................................................................................................... 37"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "Figure 18. Page Data Read Instruction ....................................................................................................... 38\nFigure 19a. Read Data Instruction (Buffer Read Mode, BUF=1) ................................................................ 39\nFigure 19b. Read Data Instruction (Continuous Read Mode, BUF=0) ....................................................... 39"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "Figure 20a. Fast Read Instruction (Buffer Read Mode, BUF=1) ................................................................ 40\nFigure 20b. Fast Read Instruction (Continuous Read Mode, BUF=0) ........................................................ 40\nFigure 21a. Fast Read with 4-Byte Address Instruction (Buffer Read Mode, BUF=1) ............................... 41\nFigure 21b. Fast Read with 4-Byte Address Instruction (Continuous Read Mode, BUF=0) ....................... 41"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "Figure 22a. Fast Read Dual Output Instruction (Buffer Read Mode, BUF=1) ............................................ 42\nFigure 22b. Fast Read Dual Output Instruction (Continuous Read Mode, BUF=0) ................................... 42\nFigure 23a. Fast Read Dual Output with 4-Byte Address Instruction (Buffer Read Mode, BUF=1) ........... 43\nFigure 23b. Fast Read Dual Output with 4-Byte Address Instruction (Continuous Read Mode, BUF=0) .. 43"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "Figure 24a. Fast Read Quad Output Instruction (Buffer Read Mode, BUF=1) ........................................... 44\nFigure 24b. Fast Read Quad Output Instruction (Continuous Read Mode, BUF=0) .................................. 44\nFigure 25a. Fast Read Quad Output with 4-Byte Address Instruction (Buffer Read Mode, BUF=1) ......... 45\nFigure 25b. Fast Read Quad Output with 4-Byte Address Instruction (Continuous Read Mode, BUF=0) . 45"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "Figure 26a. Fast Read Dual I/O Instruction (Buffer Read Mode, BUF=1) .................................................. 46\nFigure 26b. Fast Read Dual I/O Instruction (Continuous Read Mode, BUF=0).......................................... 46\nFigure 27a. Fast Read Dual I/O with 4-Byte Address Instruction (Buffer Read Mode, BUF=1) ................. 47\nFigure 27b. Fast Read Dual I/O with 4-Byte Address Instruction (Continuous Read Mode, BUF=0) ........ 47"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "Figure 28a. Fast Read Quad I/O Instruction (Buffer Read Mode, BUF=1) ................................................. 48\nFigure 28b. Fast Read Quad I/O Instruction (Continuous Read Mode, BUF=0) ........................................ 49\nPublication Release Date: March 21, 2016\n- 4 - Revision GW25N01GVxxIG/IT\nFigure 29a. Fast Read Quad I/O with 4-Byte Address Instruction (Buffer Read Mode, BUF=1)................ 50"
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "Figure 29b. Fast Read Quad I/O with 4-Byte Address Instruction (Continuous Read Mode, BUF=0) ....... 51\nFigure 30a. Power-up Timing and Voltage Levels ...................................................................................... 55\nFigure 30b. Power-up, Power-Down Requirement ..................................................................................... 55"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "Figure 31. AC Measurement I/O Waveform ................................................................................................ 57\n- 5 -W25N01GVxxIG/IT\n1. GENERAL DESCRIPTIONS\nThe W25N01GV (1G-bit) Serial SLC NAND Flash Memory provides a storage solution for systems with\nlimited space, pins and power. The W25N SpiFlash family incorporates the popular SPI interface and the\ntraditional large NAND non-volatile memory space. They are ideal for code shadowing to RAM, executing"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "code directly from Dual/Quad SPI (XIP) and storing voice, text and data. The device operates on a single\n2.7V to 3.6V power supply with current consumption as low as 25mA active and 10µA for standby. All W25N\nSpiFlash family devices are offered in space-saving packages which were impossible to use in the past for\nthe typical NAND flash memory.\nThe W25N01GV 1G-bit memory array is organized into 65,536 programmable pages of 2,048-bytes each."
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "The entire page can be programmed at one time using the data from the 2,048-Byte internal buffer. Pages\ncan be erased in groups of 64 (128KB block erase). The W25N01GV has 1,024 erasable blocks.\nThe W25N01GV supports the standard Serial Peripheral Interface (SPI), Dual/Quad I/O SPI: Serial Clock,\nChip Select, Serial Data I/O0 (DI), I/O1 (DO), I/O2 (/WP), and I/O3 (/HOLD). SPI clock frequencies of up to"
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "104MHz are supported allowing equivalent clock rates of 208MHz (104MHz x 2) for Dual I/O and 416MHz\n(104MHz x 4) for Quad I/O when using the Fast Read Dual/Quad I/O instructions.\nThe W25N01GV provides a new Continuous Read Mode that allows for efficient access to the entire\nmemory array with a single Read command. This feature is ideal for code shadowing applications.\nA Hold pin, Write Protect pin and programmable write protection, provide further control flexibility."
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "Additionally, the device supports JEDEC standard manufacturer and device ID, one 2,048-Byte Unique ID\npage, one 2,048-Byte parameter page and ten 2,048-Byte OTP pages. To provide better NAND flash\nmemory manageability, user configurable internal ECC, bad block management are also available in\nW25N01GV.\n2. FEATURES\n• New W25N Family of SpiFlash Memories • Flexible Architecture with 128KB blocks\n– W25N01GV: 1G-bit / 128M-byte – Uniform 128K-Byte Block Erase"
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "– Standard SPI: CLK, /CS, DI, DO, /WP, – Flexible page data load methods\n/Hold\n• Advanced Features\n– Dual SPI: CLK, /CS, IO , IO , /WP, /Hold\n0 1 – On chip 1-Bit ECC for memory array\n– Quad SPI: CLK, /CS, IO , IO , IO , IO\n0 1 2 3 – ECC status bits indicate ECC results\n– Compatible SPI serial flash commands\n– bad block management and LUT(2) access\n– Software and Hardware Write-Protect\n• Highest Performance Serial NAND Flash\n– Power Supply Lock-Down and OTP protection"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "– Power Supply Lock-Down and OTP protection\n– 104MHz Standard/Dual/Quad SPI clocks\n– 2KB Unique ID and 2KB parameter pages\n– 208/416MHz equivalent Dual/Quad SPI\n– 50MB/S continuous data transfer rate\n– Ten 2KB OTP pages(3)\n– Fast Program/Erase performance • Space Efficient Packaging\n– More than 100,000 erase/program cycles – 8-pad WSON 8x6-mm\n– More than 10-year data retention – 16-pin SOIC 300-mil\n– 24-ball TFBGA 8x6-mm\n• Efficient “Continuous Read Mode”(1)"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "• Efficient “Continuous Read Mode”(1)\n– Contact Winbond for other package options\n– Alternative method to the Buffer Read\nMode\n– No need to issue “Page Data Read” Notes:\nbetween Read commands 1. Only the Read command structures are different between\n– Allows direct read access to the entire the “Continuous Read Mode (BUF=0)” and the “Buffer\nRead Mode (BUF=1)”, all other commands are identical.\narray\nW25N01GVxxIG: Default BUF=1 after power up\nW25N01GVxxIT: Default BUF=0 after power up"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "W25N01GVxxIT: Default BUF=0 after power up\n• Low Power, Wide Temperature Range\n2. LUT stands for Look-Up Table.\n– Single 2.7 to 3.6V supply\n3. OTP pages can only be programmed.\n– 25mA active, 10µA standby current\n– -40°C to +85°C operating range\nPublication Release Date: March 21, 2016\n- 6 - Revision GW25N01GVxxIG/IT\n3. PACKAGE TYPES AND PIN CONFIGURATIONS\nW25N01GV is offered in an 8-pad WSON 8x6-mm (package code ZE), a 16-pin SOIC 300-mil (package"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "code SF), and two 24-ball 8x6-mm TFBGA (package code TB & TC) packages as shown in Figure 1a-c\nrespectively. Package diagrams and dimensions are illustrated at the end of this datasheet.\n3.1 Pad Configuration WSON 8x6-mm\nTop View\n/CS 1 8 VCC\nDO (IO ) 2 7 /HOLD (IO )\n1 3\n/WP (IO ) 3 6 CLK\n2\nGND 4 5 DI (IO )\n0\nFigure 1a. W25N01GV Pad Assignments, 8-pad WSON 8x6-mm (Package Code ZE)\n3.2 Pad Description WSON 8x6-mm\nPAD NO. PAD NAME I/O FUNCTION\n1 /CS I Chip Select Input"
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "1 /CS I Chip Select Input\n2 DO (IO1) I/O Data Output (Data Input Output 1)(1)\n3 /WP (IO2) I/O Write Protect Input ( Data Input Output 2)(2)\n4 GND Ground\n5 DI (IO0) I/O Data Input (Data Input Output 0)(1)\n6 CLK I Serial Clock Input\n7 /HOLD (IO3) I/O Hold Input (Data Input Output 3)(2)\n8 VCC Power Supply\nNotes:\n1. IO0 and IO1 are used for Standard and Dual SPI instructions\n2. IO0 – IO3 are used for Quad SPI instructions, /WP & /HOLD functions are only available for Standard/Dual SPI."
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "- 7 -W25N01GVxxIG/IT\n3.3 Pin Configuration SOIC 300-mil\nTop View\n/HOLD (IO ) 1 16 CLK\n3\nVCC 2 15 DI (IO )\n0\nNC 3 14 NC\nNC 4 13 NC\nNC 5 12 NC\nNC 6 11 NC\n/CS 7 10 GND\nDO (IO ) 8 9 /WP (IO )\n1 2\nFigure 1b. W25N01GV Pin Assignments, 16-pin SOIC 300-mil (Package Code SF)\n3.4 Pin Description SOIC 300-mil\nPIN NO. PIN NAME I/O FUNCTION\n1 /HOLD (IO3) I/O Hold Input (Data Input Output 3)(2)\n2 VCC Power Supply\n3 N/C No Connect\n4 N/C No Connect\n5 N/C No Connect\n6 N/C No Connect\n7 /CS I Chip Select Input"
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "6 N/C No Connect\n7 /CS I Chip Select Input\n8 DO (IO1) I/O Data Output (Data Input Output 1)(1)\n9 /WP (IO2) I/O Write Protect Input (Data Input Output 2)(2)\n10 GND Ground\n11 N/C No Connect\n12 N/C No Connect\n13 N/C No Connect\n14 N/C No Connect\n15 DI (IO0) I/O Data Input (Data Input Output 0)(1)\n16 CLK I Serial Clock Input\nNotes:\n1. IO0 and IO1 are used for Standard and Dual SPI instructions"
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "2. IO0 – IO3 are used for Quad SPI instructions, /WP & /HOLD functions are only available for Standard/Dual SPI.\nPublication Release Date: March 21, 2016\n- 8 - Revision GW25N01GVxxIG/IT\n3.5 Ball Configuration TFBGA 8x6-mm (5x5 or 6x4 Ball Array)\nFigure 1c. W25N01GV Ball Assignments, 24-ball TFBGA 8x6-mm (Package Code TB & TC)\n3.6 Ball Description TFBGA 8x6-mm\nBALL NO. PIN NAME I/O FUNCTION\nB2 CLK I Serial Clock Input\nB3 GND Ground\nB4 VCC Power Supply\nC2 /CS I Chip Select Input"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "B4 VCC Power Supply\nC2 /CS I Chip Select Input\nC4 /WP (IO2) I/O Write Protect Input (Data Input Output 2)(2)\nD2 DO (IO1) I/O Data Output (Data Input Output 1)(1)\nD3 DI (IO0) I/O Data Input (Data Input Output 0)(1)\nD4 /HOLD (IO3) I/O Hold Input (Data Input Output 3)(2)\nMultiple NC No Connect\nNotes:\n1. IO0 and IO1 are used for Standard and Dual SPI instructions\n2. IO0 – IO3 are used for Quad SPI instructions, /WP & /HOLD functions are only available for Standard/Dual SPI.\n- 9 -W25N01GVxxIG/IT"
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "- 9 -W25N01GVxxIG/IT\n4. PIN DESCRIPTIONS\n4.1 Chip Select (/CS)\nThe SPI Chip Select (/CS) pin enables and disables device operation. When /CS is high the device is\ndeselected and the Serial Data Output (DO, or IO0, IO1, IO2, IO3) pins are at high impedance. When\ndeselected, the devices power consumption will be at standby levels unless an internal erase, program or\nwrite status register cycle is in progress. When /CS is brought low the device will be selected, power"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "consumption will increase to active levels and instructions can be written to and data read from the device.\nAfter power-up, /CS must transition from high to low before a new instruction will be accepted. The /CS\ninput must track the VCC supply level at power-up and power-down (see “Write Protection” and Figure\n30b). If needed, a pull-up resistor on the /CS pin can be used to accomplish this.\n4.2 Serial Data Input, Output and IOs (DI, DO and IO0, IO1, IO2, IO3)"
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "The W25N01GV supports standard SPI, Dual SPI and Quad SPI operation. Standard SPI instructions use\nthe unidirectional DI (input) pin to serially write instructions, addresses or data to the device on the rising\nedge of the Serial Clock (CLK) input pin. Standard SPI also uses the unidirectional DO (output) to read data\nor status from the device on the falling edge of CLK.\nDual and Quad SPI instructions use the bidirectional IO pins to serially write instructions, addresses or data"
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "to the device on the rising edge of CLK and read data or status from the device on the falling edge of CLK.\n4.3 Write Protect (/WP)\nThe Write Protect (/WP) pin can be used to prevent the Status Register from being written. Used in\nconjunction with the Status Register’s Block Protect bits BP[3:0] and Status Register Protect SRP bits\nSRP[1:0], a portion as small as 256K-Byte (2x128KB blocks) or up to the entire memory array can be"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "hardware protected. The WP-E bit in the Protection Register (SR-1) controls the functions of the /WP pin.\nWhen WP-E=0, the device is in the Software Protection mode that only SR-1 can be protected. The /WP\npin functions as a data I/O pin for the Quad SPI operations, as well as an active low input pin for the Write\nProtection function for SR-1. Refer to section 7.1.3 for detail information.\nWhen WP-E=1, the device is in the Hardware Protection mode that /WP becomes a dedicated active low"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "input pin for the Write Protection of the entire device. If /WP is tied to GND, all “Write/Program/Erase”\nfunctions are disabled. The entire device (including all registers, memory array, OTP pages) will become\nread-only. Quad SPI read operations are also disabled when WP-E is set to 1.\n4.4 HOLD (/HOLD)\nDuring Standard and Dual SPI operations, the /HOLD pin allows the device to be paused while it is actively"
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "selected. When /HOLD is brought low, while /CS is low, the DO pin will be at high impedance and signals\non the DI and CLK pins will be ignored (don’t care). When /HOLD is brought high, device operation can\nresume. The /HOLD function can be useful when multiple devices are sharing the same SPI signals. The\n/HOLD pin is active low.\nWhen a Quad SPI Read/Buffer Load command is issued, /HOLD pin will become a data I/O pin for the"
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "Quad operations and no HOLD function is available until the current Quad operation finishes.\n4.5 Serial Clock (CLK)\nThe SPI Serial Clock Input (CLK) pin provides the timing for serial input and output operations. (\"See SPI\nOperations\")\nPublication Release Date: March 21, 2016\n- 10 - Revision GW25N01GVxxIG/IT\n5. BLOCK DIAGRAM\nMain Memory Array (2,048-Byte)\nECC Protected Spare Area (64-Byte)\nPage\nSector 0 Sector 1 Sector 2 Sector 3 Spare 0 Spare 1 Spare 2 Spare 3\nStructure"
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "Structure\n512-Byte 512-Byte 512-Byte 512-Byte 16-Byte 16-Byte 16-Byte 16-Byte\n(2,112-Byte)\nColumn\n000h --1FFh 200h --3FFh 400h --5FFh 600h --7FFh 800h --80Fh810h --81Fh820h --82Fh830h --83Fh\nAddress\nByte Bad Block User Data User Data ECC for ECC for\nDefinition Marker II I Sector 0 Spare\nByte\n0 1 2 3 4 5 6 7 8 9 A B C D E F\nAddress\nNo ECC ECC ECC for\nProtection Protected Byte 4 to Byte D\nFigure 2. W25N01GV Flash Memory Architecture and Addressing\n- 11 -\nPage\nAddress\nPA[15:0]\n(65,536\nPages)\n1,024"
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "- 11 -\nPage\nAddress\nPA[15:0]\n(65,536\nPages)\n1,024\nBlocks\nX\n64\nPages\nAddress Bits 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0\nSpiFlash (up to 128M‐Bit) X X X X X X X X 64KB Block Addr (256 Blocks) Page Address (256 Pages) Byte Address (0‐255 Byte)\nSpiFlash (up to 32G‐Bit) 64KB Block Address Page Address (256 Pages) Byte Address (0‐255 Byte)\nX X X X Page Address (PA) [15:0] Column Address (CA) [11:0]\nSerial NAND (1G‐Bit)"
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "Serial NAND (1G‐Bit)\nX X X X 128KB Block Addr (1024 Blocks) Page Addr (64 Pages) Ext Byte Address (0‐2047 Byte)W25N01GVxxIG/IT\n6. FUNCTIONAL DESCRIPTIONS\n6.1 Device Operation Flow\nPower Up Power Up\n(default BUF=1, ECC-E=1) (default BUF=0, ECC-E=1)\nInitialization & Initialization &\nDefault Page Load (00) ~500us Default Page Load (00) ~500us\nRead Read\npage 00? N page 00? N\nLoad Page xx Load Page xx\nY tRD~50us Y tRD~50us\nStart “Buffer Read” with column address Start “Continuous Read” from column 0"
+  },
+  {
+    "faiss_index_id": 68,
+    "text": "(Page 00 or Page xx) (Page 00 or Page xx)\nSet BUF=0 Set BUF=1\nLoad Page yy Load Page yy\ntRD~50us tRD~50us\nStart “Continuous Read” from column 0 Start “Buffer Read” with column address\n(Page yy) (Page yy)\nW25N01GVxxIG W25N01GVxxIT\nFigure 3. W25N01GV Flash Memory Operation Diagram\n6.1.1 Standard SPI Instructions\nThe W25N01GV is accessed through an SPI compatible bus consisting of four signals: Serial Clock (CLK),"
+  },
+  {
+    "faiss_index_id": 69,
+    "text": "Chip Select (/CS), Serial Data Input (DI) and Serial Data Output (DO). Standard SPI instructions use the DI\ninput pin to serially write instructions, addresses or data to the device on the rising edge of CLK. The DO\noutput pin is used to read data or status from the device on the falling edge of CLK.\nSPI bus operation Mode 0 (0,0) and 3 (1,1) are supported. The primary difference between Mode 0 and"
+  },
+  {
+    "faiss_index_id": 70,
+    "text": "Mode 3 concerns the normal state of the CLK signal when the SPI bus master is in standby and data is not\nbeing transferred to the Serial Flash. For Mode 0, the CLK signal is normally low on the falling and rising\nedges of /CS. For Mode 3, the CLK signal is normally high on the falling and rising edges of /CS.\n6.1.2 Dual SPI Instructions\nThe W25N01GV supports Dual SPI operation when using instructions such as “Fast Read Dual Output"
+  },
+  {
+    "faiss_index_id": 71,
+    "text": "(3Bh)” and “Fast Read Dual I/O (BBh)”. These instructions allow data to be transferred to or from the device\nat two to three times the rate of ordinary Serial Flash devices. The Dual SPI Read instructions are ideal for\nquickly downloading code to RAM upon power-up (code-shadowing) or for executing non-speed-critical\nPublication Release Date: March 21, 2016\n- 12 - Revision GW25N01GVxxIG/IT\ncode directly from the SPI bus (XIP). When using Dual SPI instructions, the DI and DO pins become"
+  },
+  {
+    "faiss_index_id": 72,
+    "text": "bidirectional I/O pins: IO0 and IO1.\n6.1.3 Quad SPI Instructions\nThe W25N01GV supports Quad SPI operation when using instructions such as “Fast Read Quad Output\n(6Bh)”, “Fast Read Quad I/O (EBh)” and “Quad Program Data Load (32h/34h)”. These instructions allow\ndata to be transferred to or from the device four to six times the rate of ordinary Serial Flash. The Quad\nRead instructions offer a significant improvement in continuous and random access transfer rates allowing"
+  },
+  {
+    "faiss_index_id": 73,
+    "text": "fast code-shadowing to RAM or execution directly from the SPI bus (XIP). When using Quad SPI\ninstructions the DI and DO pins become bidirectional IO0 and IO1, and the /WP and /HOLD pins become\nIO2 and IO3 respectively.\n6.1.4 Hold Function\nFor Standard SPI and Dual SPI operations, the /HOLD signal allows the W25N01GV operation to be paused\nwhile it is actively selected (when /CS is low). The /HOLD function may be useful in cases where the SPI"
+  },
+  {
+    "faiss_index_id": 74,
+    "text": "data and clock signals are shared with other devices. For example, consider if the page buffer was only\npartially written when a priority interrupt requires use of the SPI bus. In this case the /HOLD function can\nsave the state of the instruction and the data in the buffer so programming can resume where it left off once\nthe bus is available again. The /HOLD function is only available for standard SPI and Dual SPI operation,"
+  },
+  {
+    "faiss_index_id": 75,
+    "text": "not during Quad SPI. When a Quad SPI command is issued, /HOLD pin will act as a dedicated IO pin (IO3).\nTo initiate a /HOLD condition, the device must be selected with /CS low. A /HOLD condition will activate on\nthe falling edge of the /HOLD signal if the CLK signal is already low. If the CLK is not already low the /HOLD\ncondition will activate after the next falling edge of CLK. The /HOLD condition will terminate on the rising"
+  },
+  {
+    "faiss_index_id": 76,
+    "text": "edge of the /HOLD signal if the CLK signal is already low. If the CLK is not already low the /HOLD condition\nwill terminate after the next falling edge of CLK. During a /HOLD condition, the Serial Data Output (DO) is\nhigh impedance, and Serial Data Input (DI) and Serial Clock (CLK) are ignored. The Chip Select (/CS)\nsignal should be kept active (low) for the full duration of the /HOLD operation to avoid resetting the internal\nlogic state of the device.\n- 13 -W25N01GVxxIG/IT\n6.2 Write Protection"
+  },
+  {
+    "faiss_index_id": 77,
+    "text": "- 13 -W25N01GVxxIG/IT\n6.2 Write Protection\nApplications that use non-volatile memory must take into consideration the possibility of noise and other\nadverse system conditions that may compromise data integrity. To address this concern, the W25N01GV\nprovides several means to protect the data from inadvertent writes.\n• Device resets when VCC is below threshold\n• Write enable/disable instructions and automatic write disable after erase or program"
+  },
+  {
+    "faiss_index_id": 78,
+    "text": "• Software and Hardware (/WP pin) write protection using Protection Register (SR-1)\n• Lock Down write protection for Protection Register (SR-1) until the next power-up\n• One Time Program (OTP) write protection for memory array using Protection Register (SR-1)\n• Hardware write protection using /WP pin when WP-E is set to 1\nUpon power-up or at power-down, the W25N01GV will maintain a reset condition while VCC is below the"
+  },
+  {
+    "faiss_index_id": 79,
+    "text": "threshold value of VWI, (See Power-up Timing and Voltage Levels and Figure 30a). While reset, all\noperations are disabled and no instructions are recognized. During power-up and after the VCC voltage\nexceeds VWI, all program and erase related instructions are further disabled for a time delay of tPUW. This\nincludes the Write Enable, Program Execute, Block Erase and the Write Status Register instructions. Note"
+  },
+  {
+    "faiss_index_id": 80,
+    "text": "that the chip select pin (/CS) must track the VCC supply level at power-up until the VCC-min level and tVSL\ntime delay is reached, and it must also track the VCC supply level at power-down to prevent adverse\ncommand sequence. If needed a pull-up resister on /CS can be used to accomplish this.\nAfter power-up the device is automatically placed in a write-disabled state with the Status Register Write"
+  },
+  {
+    "faiss_index_id": 81,
+    "text": "Enable Latch (WEL) set to a 0. A Write Enable instruction must be issued before a Program Execute or\nBlock Erase instruction will be accepted. After completing a program or erase instruction the Write Enable\nLatch (WEL) is automatically cleared to a write-disabled state of 0.\nSoftware controlled write protection is facilitated using the Write Status Register instruction and setting the\nStatus Register Protect (SRP0, SRP1) and Block Protect (TB, BP[3:0]) bits. These settings allow a portion"
+  },
+  {
+    "faiss_index_id": 82,
+    "text": "or the entire memory array to be configured as read only. Used in conjunction with the Write Protect (/WP)\npin, changes to the Status Register can be enabled or disabled under hardware control. See Protection\nRegister section for further information.\nThe WP-E bit in Protection Register (SR-1) is used to enable the hardware protection. When WP-E is set\nto 1, bringing /WP low in the system will block any Write/Program/Erase command to the W25N01GV, the"
+  },
+  {
+    "faiss_index_id": 83,
+    "text": "device will become read-only. The Quad SPI operations are also disabled when WP-E is set to 1.\nPublication Release Date: March 21, 2016\n- 14 - Revision GW25N01GVxxIG/IT\n7. PROTECTION, CONFIGURATION AND STATUS REGISTERS\nThree Status Registers are provided for W25N01GV: Protection Register (SR-1), Configuration Register\n(SR-2) & Status Register (SR-3). Each register is accessed by Read Status Register and Write Status\nRegister commands combined with 1-Byte Register Address respectively."
+  },
+  {
+    "faiss_index_id": 84,
+    "text": "The Read Status Register instruction (05h / 0Fh) can be used to provide status on the availability of the\nflash memory array, whether the device is write enabled or disabled, the state of write protection, Read\nmodes, Protection Register/OTP area lock status, Erase/Program results, ECC usage/status. The Write\nStatus Register instruction can be used to configure the device write protection features, Software/Hardware"
+  },
+  {
+    "faiss_index_id": 85,
+    "text": "write protection, Read modes, enable/disable ECC, Protection Register/OTP area lock. Write access to the\nStatus Register is controlled by the state of the non-volatile Status Register Protect bits (SRP0, SRP1), the\nWrite Enable instruction, and when WP-E is set to 1, the /WP pin.\n7.1 Protection Register / Status Register-1 (Volatile Writable, OTP lockable)\nFigure 4a. Protection Register / Status Register-1 (Address Axh)"
+  },
+  {
+    "faiss_index_id": 86,
+    "text": "7.1.1 Block Protect Bits (BP3, BP2, BP1, BP0, TB) – Volatile Writable, OTP lockable\nThe Block Protect bits (BP3, BP2, BP1, BP0 & TB) are volatile read/write bits in the status register-1 (S6,\nS5, S4, S3 & S2) that provide Write Protection control and status. Block Protect bits can be set using the\nWrite Status Register Instruction. All, none or a portion of the memory array can be protected from Program"
+  },
+  {
+    "faiss_index_id": 87,
+    "text": "and Erase instructions (see Status Register Memory Protection table). The default values for the Block\nProtection bits are 1 after power up to protect the entire array. If the SR1-L bit in the Configuration Register\n(SR-2) is set to 1, the default values will the values that are OTP locked.\n- 15 -W25N01GVxxIG/IT\n7.1.2 Write Protection Enable Bit (WP-E) – Volatile Writable, OTP lockable\nThe Write Protection Enable bit (WP-E) is a volatile read/write bits in the status register-1 (S1). The WP-E"
+  },
+  {
+    "faiss_index_id": 88,
+    "text": "bit, in conjunction with SRP1 & SRP0, controls the method of write protection: software protection, hardware\nprotection, power supply lock-down or one time programmable (OTP) protection, /WP pin functionality, and\nQuad SPI operation enable/disable. When WP-E = 0 (default value), the device is in Software Protection\nmode, /WP & /HOLD pins are multiplexed as IO pins, and Quad program/read functions are enabled all the"
+  },
+  {
+    "faiss_index_id": 89,
+    "text": "time. When WP-E is set to 1, the device is in Hardware Protection mode, all Quad functions are disabled\nand /WP & /HOLD pins become dedicated control input pins.\n7.1.3 Status Register Protect Bits (SRP1, SRP0) – Volatile Writable, OTP lockable\nThe Status Register Protect bits (SRP1 and SRP0) are volatile read/write bits in the status register (S0 and\nS7). The SRP bits control the method of write protection: software protection, hardware protection, power"
+  },
+  {
+    "faiss_index_id": 90,
+    "text": "supply lock-down or one time programmable (OTP) protection.\nSoftware Protection (Driven by Controller, Quad Program/Read is enabled)\nSRP1 SRP0 WP-E /WP / IO2 Descriptions\nNo /WP functionality\n0 0 0 X\n/WP pin will always function as IO2\nSR-1 cannot be changed (/WP = 0 during Write Status)\n0 1 0 0\n/WP pin will function as IO2 for Quad operations\nSR-1 can be changed (/WP = 1 during Write Status)\n0 1 0 1\n/WP pin will function as IO2 for Quad operations\nPower Lock Down(1) SR-1\n1 0 0 X"
+  },
+  {
+    "faiss_index_id": 91,
+    "text": "Power Lock Down(1) SR-1\n1 0 0 X\n/WP pin will always function as IO2\nEnter OTP mode to protect SR-1 (allow SR1-L=1)\n1 1 0 X\n/WP pin will always function as IO2\nHardware Protection (System Circuit / PCB layout, Quad Program/Read is disabled)\nSRP1 SRP0 WP-E /WP only Descriptions\n0 X 1 VCC SR-1 can be changed\n1 0 1 VCC Power Lock-Down(1) SR-1\n1 1 1 VCC Enter OTP mode to protect SR-1 (allow SR1-L=1)\nAll \"Write/Program/Erase\" commands are blocked\nX X 1 GND"
+  },
+  {
+    "faiss_index_id": 92,
+    "text": "X X 1 GND\nEntire device (SRs, Array, OTP area) is read-only\nNotes:\n1. When SRP1, SRP0 = (1, 0), a power-down, power-up cycle will change SRP1, SRP0 to (0, 0) state.\nPublication Release Date: March 21, 2016\n- 16 - Revision GW25N01GVxxIG/IT\n7.2 Configuration Register / Status Register-2 (Volatile Writable)\nFigure 4b. Configuration Register / Status Register-2 (Address Bxh)\n7.2.1 One Time Program Lock Bit (OTP-L) – OTP lockable"
+  },
+  {
+    "faiss_index_id": 93,
+    "text": "In addition to the main memory array, W25N01GV also provides an OTP area for the system to store critical\ndata that cannot be changed once it’s locked. The OTP area consists of 10 pages of 2,112-Byte each. The\ndefault data in the OTP area are FFh. Only Program command can be issued to the OTP area to change\nthe data from “1” to “0”, and data is not reversible (“0” to “1”) by the Erase command. Once the correct data"
+  },
+  {
+    "faiss_index_id": 94,
+    "text": "is programmed in and verified, the system developer can set OTP-L bit to 1, so that the entire OTP area\nwill be locked to prevent further alteration to the data.\n7.2.2 Enter OTP Access Mode Bit (OTP-E) – Volatile Writable\nThe OTP-E bit must be set to 1 in order to use the standard Program/Read commands to access the OTP\narea as well as to read the Unique ID / Parameter Page information. The default value after power up or a\nRESET command is 0."
+  },
+  {
+    "faiss_index_id": 95,
+    "text": "RESET command is 0.\n7.2.3 Status Register-1 Lock Bit (SR1-L) – OTP lockable\nThe SR1-L lock bit is used to OTP lock the values in the Protection Register (SR-1). Depending on the\nsettings in the SR-1, the device can be configured to have a portion of or up to the entire array to be write-\nprotected, and the setting can be OTP locked by setting SR1-L bit to 1. SR1-L bit can only be set to 1\npermanently when SRP1 & SRP0 are set to (1,1), and OTP Access Mode must be entered (OTP-E=1) to"
+  },
+  {
+    "faiss_index_id": 96,
+    "text": "execute the programming. Please refer to 8.2.26 for detailed information.\n- 17 -W25N01GVxxIG/IT\n7.2.4 ECC Enable Bit (ECC-E) – Volatile Writable\nW25N01GV has a built-in ECC algorithm that can be used to preserve the data integrity. Internal ECC\ncalculation is done during page programming, and the result is stored in the extra 64-Byte area for each\npage. During the data read operation, ECC engine will verify the data values according to the previously"
+  },
+  {
+    "faiss_index_id": 97,
+    "text": "stored ECC information and to make necessary corrections if needed. The verification and correction status\nis indicated by the ECC Status Bits. ECC function is enabled by default when power on (ECC-E=1), and it\nwill not be reset to 0 by the Device Reset command.\n7.2.5 Buffer Read / Continuous Read Mode Bit (BUF) – Volatile Writable\nW25N01GV provides two different modes for read operations, Buffer Read Mode (BUF=1) and Continuous"
+  },
+  {
+    "faiss_index_id": 98,
+    "text": "Read Mode (BUF=0). Prior to any Read operation, a Page Data Read command is needed to initiate the\ndata transfer from a specified page in the memory array to the Data Buffer. By default, after power up, the\ndata in page 0 will be automatically loaded into the Data Buffer and the device is ready to accept any read\ncommands.\nThe Buffer Read Mode (BUF=1) requires a Column Address to start outputting the existing data inside the"
+  },
+  {
+    "faiss_index_id": 99,
+    "text": "Data Buffer, and once it reaches the end of the data buffer (Byte 2,111), DO (IO1) pin will become high-Z\nstate.\nThe Continuous Read Mode (BUF=0) doesn’t require the starting Column Address. The device will always\nstart output the data from the first column (Byte 0) of the Data buffer, and once the end of the data buffer\n(Byte 2,048) is reached, the data output will continue through the next memory page. With Continuous"
+  },
+  {
+    "faiss_index_id": 100,
+    "text": "Read Mode, it is possible to read out the entire memory array using a single read command. Please refer\nto respective command descriptions for the dummy cycle requirements for each read commands under\ndifferent read modes.\nFor W25N01GVxxIG part number, the default value of BUF bit after power up is 1. BUF bit can be written\nto 0 in the Status Register-2 to perform the Continuous Read operation."
+  },
+  {
+    "faiss_index_id": 101,
+    "text": "For W25N01GVxxIT part number, the default value of BUF bit after power up is 0. BUF bit can be written\nto 1 in the Status Register-2 to perform the Buffer Read operation.\nRead Mode\nBUF ECC-E ECC Status Data Output Structure\n(Starting from Buffer)\n1 0 Buffer Read N/A 2,048 + 64\n1 1 Buffer Read Page based 2,048 + 64\n0 0 Continuous Read N/A 2,048\n0 1 Continuous Read Operation based 2,048\nPublication Release Date: March 21, 2016\n- 18 - Revision GW25N01GVxxIG/IT\n7.3 Status Register-3 (Status Only)"
+  },
+  {
+    "faiss_index_id": 102,
+    "text": "7.3 Status Register-3 (Status Only)\nFigure 4c. Status Register-3 (Address Cxh)\n7.3.1 Look-Up Table Full (LUT-F) – Status Only\nTo facilitate the NAND flash memory bad block management, the W25N01GV is equipped with an internal\nBad Block Management Look-Up-Table (BBM LUT). Up to 20 bad memory blocks may be replaced by a\ngood memory block respectively. The addresses of the blocks are stored in the internal Look-Up Table as"
+  },
+  {
+    "faiss_index_id": 103,
+    "text": "Logical Block Address (LBA, the bad block) & Physical Block Address (PBA, the good block). The LUT-F\nbit indicates whether the 20 memory block links have been fully utilized or not. The default value of LUT-F\nis 0, once all 20 links are used, LUT-F will become 1, and no more memory block links may be established.\n7.3.2 Cumulative ECC Status (ECC-1, ECC-0) – Status Only\nECC function is used in NAND flash memory to correct limited memory errors during read operations. The"
+  },
+  {
+    "faiss_index_id": 104,
+    "text": "ECC Status Bits (ECC-1, ECC-0) should be checked after the completion of a Read operation to verify the\ndata integrity. The ECC Status bits values are don’t care if ECC-E=0. These bits will be cleared to 0 after a\npower cycle or a RESET command.\n- 19 -W25N01GVxxIG/IT\nECC Status\nDescriptions\nECC-1 ECC-0\n0 0 Entire data output is successful, without any ECC correction.\nEntire data output is successful, with 1~4 bit/page ECC corrections in either a\n0 1\nsingle page or multiple pages."
+  },
+  {
+    "faiss_index_id": 105,
+    "text": "0 1\nsingle page or multiple pages.\nEntire data output contains more than 4 bits errors only in a single page\nwhich cannot be repaired by ECC.\n1 0\nIn the Continuous Read Mode, an additional command can be used to read out\nthe Page Address (PA) which had the errors.\nEntire data output contains more than 4 bits errors/page in multiple pages.\nIn the Continuous Read Mode, the additional command can only provide the\n1 1\nlast Page Address (PA) that had failures, the user cannot obtain the PAs for"
+  },
+  {
+    "faiss_index_id": 106,
+    "text": "other failure pages. Data is not suitable to use.\nNotes:\n1. ECC-1,ECC-0 = (1,1) is only applicable during Continuous Read operation (BUF=0).\n7.3.3 Program/Erase Failure (P-FAIL, E-FAIL) – Status Only\nThe Program/Erase Failure Bits are used to indicate whether the internally-controlled Program/Erase\noperation was executed successfully or not. These bits will also be set respectively when the Program or"
+  },
+  {
+    "faiss_index_id": 107,
+    "text": "Erase command is issued to a locked or protected memory array or OTP area. Both bits will be cleared at\nthe beginning of the Program Execute or Block Erase instructions as well as the device RESET instruction.\n7.3.4 Write Enable Latch (WEL) – Status Only\nWrite Enable Latch (WEL) is a read only bit in the status register (S1) that is set to 1 after executing a Write\nEnable Instruction. The WEL status bit is cleared to 0 when the device is write disabled. A write disable"
+  },
+  {
+    "faiss_index_id": 108,
+    "text": "state occurs upon power-up or after any of the following instructions: Write Disable, Program Execute, Block\nErase, Page Data Read and Program Execute for OTP pages.\n7.3.5 Erase/Program In Progress (BUSY) – Status Only\nBUSY is a read only bit in the status register (S0) that is set to a 1 state when the device is powering up or\nexecuting a Page Data Read, BBM Management, Program Execute, Block Erase, Program Execute for"
+  },
+  {
+    "faiss_index_id": 109,
+    "text": "OTP area, OTP Locking or after a Continuous Read instruction. During this time the device will ignore\nfurther instructions except for the Read Status Register and Read JEDEC ID instructions. When the\nprogram, erase or write status register instruction has completed, the BUSY bit will be cleared to a 0 state\nindicating the device is ready for further instructions.\n7.3.6 Reserved Bits – Non Functional"
+  },
+  {
+    "faiss_index_id": 110,
+    "text": "7.3.6 Reserved Bits – Non Functional\nThere are a few reserved Status Register bits that may be read out as a “0” or “1”. It is recommended to\nignore the values of those bits. During a “Write Status Register” instruction, the Reserved Bits can be written\nas “0”, but there will not be any effects.\nPublication Release Date: March 21, 2016\n- 20 - Revision GW25N01GVxxIG/IT\n7.4 W25N01GV Status Register Memory Protection\nSTATUS REGISTER(1) W25N01GV (1G-BIT / 128M-BYTE) MEMORY PROTECTION(2)\nPROTECTED"
+  },
+  {
+    "faiss_index_id": 111,
+    "text": "PROTECTED\nPROTECTED PROTECTED PROTECTED\nTB BP3 BP2 BP1 BP0 PAGE ADDRESS\nBLOCK(S) DENSITY PORTION\nPA[15:0]\nX 0 0 0 0 NONE NONE NONE NONE\n0 0 0 0 1 1022 & 1023 FF80h - FFFFh 256KB Upper 1/512\n0 0 0 1 0 1020 thru 1023 FF00h - FFFFh 512KB Upper 1/256\n0 0 0 1 1 1016 thru 1023 FE00h - FFFFh 1MB Upper 1/128\n0 0 1 0 0 1008 thru 1023 FC00h - FFFFh 2MB Upper 1/64\n0 0 1 0 1 992 thru 1023 F800h - FFFFh 4MB Upper 1/32\n0 0 1 1 0 960 thru 1023 F000h - FFFFh 8MB Upper 1/16"
+  },
+  {
+    "faiss_index_id": 112,
+    "text": "0 0 1 1 1 896 thru 1023 E000h - FFFFh 16MB Upper 1/8\n0 1 0 0 0 768 thru 1023 C000h - FFFFh 32MB Upper 1/4\n0 1 0 0 1 512 thru 1023 8000h - FFFFh 64MB Upper 1/2\n1 0 0 0 1 0 & 1 0000h – 007Fh 256KB Lower 1/512\n1 0 0 1 0 0 thru 3 0000h - 00FFh 512KB Lower 1/256\n1 0 0 1 1 0 thru 7 0000h - 01FFh 1MB Lower 1/128\n1 0 1 0 0 0 thru 15 0000h - 03FFh 2MB Lower 1/64\n1 0 1 0 1 0 thru 31 0000h - 07FFh 4MB Lower 1/32\n1 0 1 1 0 0 thru 63 0000h - 0FFFh 8MB Lower 1/16"
+  },
+  {
+    "faiss_index_id": 113,
+    "text": "1 0 1 1 0 0 thru 63 0000h - 0FFFh 8MB Lower 1/16\n1 0 1 1 1 0 thru 127 0000h - 1FFFh 16MB Lower 1/8\n1 1 0 0 0 0 thru 255 0000h - 3FFFh 32MB Lower 1/4\n1 1 0 0 1 0 thru 511 0000h - 7FFFh 64MB Lower 1/2\nX 1 0 1 X 0 thru 1023 0000h - FFFFh 128MB ALL\nX 1 1 X X 0 thru 1023 0000h - FFFFh 128MB ALL\nNotes:\n1. X = don’t care\n2. If any Erase or Program command specifies a memory region that contains protected data portion, this command will be ignored.\n- 21 -W25N01GVxxIG/IT\n8. INSTRUCTIONS"
+  },
+  {
+    "faiss_index_id": 114,
+    "text": "- 21 -W25N01GVxxIG/IT\n8. INSTRUCTIONS\nThe Standard/Dual/Quad SPI instruction set of the W25N01GV consists of 27 basic instructions that are\nfully controlled through the SPI bus (see Instruction Set Table1, 2). Instructions are initiated with the falling\nedge of Chip Select (/CS). The first byte of data clocked into the DI input provides the instruction code. Data\non the DI input is sampled on the rising edge of clock with most significant bit (MSB) first."
+  },
+  {
+    "faiss_index_id": 115,
+    "text": "Instructions vary in length from a single byte to several bytes and may be followed by address bytes, data\nbytes, dummy bytes (don’t care), and in some cases, a combination. Instructions are completed with the\nrising edge of edge /CS. Clock relative timing diagrams for each instruction are included in Figures 5 through\n29. All read instructions can be completed after any clocked bit. However, all instructions that Write,"
+  },
+  {
+    "faiss_index_id": 116,
+    "text": "Program or Erase must complete on a byte boundary (/CS driven high after a full 8-bits have been clocked)\notherwise the instruction will be ignored. This feature further protects the device from inadvertent writes.\nAdditionally, while the device is performing Program or Erase operation, BBM management, Page Data\nRead or OTP locking operations, BUSY bit will be high, and all instructions except for Read Status Register"
+  },
+  {
+    "faiss_index_id": 117,
+    "text": "or Read JEDEC ID will be ignored until the current operation cycle has completed.\n8.1 Device ID and Instruction Set Tables\n8.1.1 Manufacturer and Device Identification\nMANUFACTURER ID (MF7 - MF0)\nWinbond Serial Flash EFh\nDevice ID (ID15 - ID0)\nW25N01GV AA21h\nPublication Release Date: March 21, 2016\n- 22 - Revision GW25N01GVxxIG/IT\n8.1.2 Instruction Set Table 1 (Continuous Read, BUF = 0, xxIT Default Power Up Mode)(11)\nCommands OpCode Byte2 Byte3 Byte4 Byte5 Byte6 Byte7 Byte8 Byte9"
+  },
+  {
+    "faiss_index_id": 118,
+    "text": "Device RESET FFh\nJEDEC ID 9Fh Dummy EFh AAh 21h\nRead Status Register 0Fh / 05h SR Addr S7-0 S7-0 S7-0 S7-0 S7-0 S7-0 S7-0\nWrite Status Register 1Fh / 01h SR Addr S7-0\nWrite Enable 06h\nWrite Disable 04h\nBB Management\nA1h LBA LBA PBA PBA\n(Swap Blocks)\nRead BBM LUT A5h Dummy LBA0 LBA0 PBA0 PBA0 LBA1 LBA1 PBA1\nLast ECC failure\nA9h Dummy PA15-8 PA7-0\nPage Address\nBlock Erase D8h Dummy PA15-8 PA7-0\nProgram Data Load\n02h CA15-8 CA7-0 Data-0 Data-1 Data-2 Data-3 Data-4 Data-5\n(Reset Buffer)"
+  },
+  {
+    "faiss_index_id": 119,
+    "text": "(Reset Buffer)\nRandom Program\n84h CA15-8 CA7-0 Data-0 Data-1 Data-2 Data-3 Data-4 Data-5\nData Load\nQuad Program\n32h CA15-8 CA7-0 Data-0 / 4 Data-1 / 4 Data-2 / 4 Data-3 / 4 Data-4 / 4 Data-5 / 4\nData Load (Reset Buffer)\nRandom Quad Program\n34h CA15-8 CA7-0 Data-0 / 4 Data-1 / 4 Data-2 / 4 Data-3 / 4 Data-4 / 4 Data-5 / 4\nData Load\nProgram Execute 10h Dummy PA15-8 PA7-0\nPage Data Read 13h Dummy PA15-8 PA7-0\nRead 03h Dummy Dummy Dummy D7-0 D7-0 D7-0 D7-0 D7-0"
+  },
+  {
+    "faiss_index_id": 120,
+    "text": "Fast Read 0Bh Dummy Dummy Dummy Dummy D7-0 D7-0 D7-0 D7-0\nFast Read\n0Ch Dummy Dummy Dummy Dummy Dummy D7-0 D7-0 D7-0\nwith 4-Byte Address\nFast Read Dual Output 3Bh Dummy Dummy Dummy Dummy D7-0 / 2 D7-0 / 2 D7-0 / 2 D7-0 / 2\nFast Read Dual Output\n3Ch Dummy Dummy Dummy Dummy Dummy D7-0 / 2 D7-0 / 2 D7-0 / 2\nwith 4-Byte Address\nFast Read Quad Output 6Bh Dummy Dummy Dummy Dummy D7-0 / 4 D7-0 / 4 D7-0 / 4 D7-0 / 4\nFast Read Quad Output\n6Ch Dummy Dummy Dummy Dummy Dummy D7-0 / 4 D7-0 / 4 D7-0 / 4"
+  },
+  {
+    "faiss_index_id": 121,
+    "text": "with 4-Byte Address\nFast Read Dual I/O BBh Dummy / 2 Dummy / 2 Dummy / 2 Dummy / 2 D7-0 / 2 D7-0 / 2 D7-0 / 2 D7-0 / 2\nFast Read Dual I/O\nBCh Dummy / 2 Dummy / 2 Dummy / 2 Dummy / 2 Dummy / 2 D7-0 / 2 D7-0 / 2 D7-0 / 2\nwith 4-Byte Address\nFast Read Quad I/O EBh Dummy / 4 Dummy / 4 Dummy / 4 Dummy / 4 Dummy / 4 Dummy / 4 D7-0 / 4 D7-0 / 4\nFast Read Quad I/O\nECh Dummy / 4 Dummy / 4 Dummy / 4 Dummy / 4 Dummy / 4 Dummy / 4 Dummy / 4 D7-0 / 4\nwith 4-Byte Address\n- 23 -W25N01GVxxIG/IT"
+  },
+  {
+    "faiss_index_id": 122,
+    "text": "with 4-Byte Address\n- 23 -W25N01GVxxIG/IT\n8.1.3 Instruction Set Table 2 (Buffer Read, BUF = 1, xxIG Default Power Up Mode)(12)\nCommands OpCode Byte2 Byte3 Byte4 Byte5 Byte6 Byte7 Byte8 Byte9\nDevice RESET FFh\nJEDEC ID 9Fh Dummy EFh AAh 21h\nRead Status Register 0Fh / 05h SR Addr S7-0 S7-0 S7-0 S7-0 S7-0 S7-0 S7-0\nWrite Status Register 1Fh / 01h SR Addr S7-0\nWrite Enable 06h\nWrite Disable 04h\nBB Management\nA1h LBA LBA PBA PBA\n(Swap Blocks)\nRead BBM LUT A5h Dummy LBA0 LBA0 PBA0 PBA0 LBA1 LBA1 PBA1"
+  },
+  {
+    "faiss_index_id": 123,
+    "text": "Last ECC failure\nA9h Dummy PA15-8 PA7-0\nPage Address\nBlock Erase D8h Dummy PA15-8 PA7-0\nProgram Data Load\n02h CA15-8 CA7-0 Data-0 Data-1 Data-2 Data-3 Data-4 Data-5\n(Reset Buffer)\nRandom Program\n84h CA15-8 CA7-0 Data-0 Data-1 Data-2 Data-3 Data-4 Data-5\nData Load\nQuad Program\n32h CA15-8 CA7-0 Data-0 / 4 Data-1 / 4 Data-2 / 4 Data-3 / 4 Data-4 / 4 Data-5 / 4\nData Load (Reset Buffer)\nRandom Quad Program\n34h CA15-8 CA7-0 Data-0 / 4 Data-1 / 4 Data-2 / 4 Data-3 / 4 Data-4 / 4 Data-5 / 4\nData Load"
+  },
+  {
+    "faiss_index_id": 124,
+    "text": "Data Load\nProgram Execute 10h Dummy PA15-8 PA7-0\nPage Data Read 13h Dummy PA15-8 PA7-0\nRead 03h CA15-8 CA7-0 Dummy D7-0 D7-0 D7-0 D7-0 D7-0\nFast Read 0Bh CA15-8 CA7-0 Dummy D7-0 D7-0 D7-0 D7-0 D7-0\nFast Read\n0Ch CA15-8 CA7-0 Dummy Dummy Dummy D7-0 D7-0 D7-0\nwith 4-Byte Address\nFast Read Dual Output 3Bh CA15-8 CA7-0 Dummy D7-0 / 2 D7-0 / 2 D7-0 / 2 D7-0 / 2 D7-0 / 2\nFast Read Dual Output\n3Ch CA15-8 CA7-0 Dummy Dummy Dummy D7-0 / 2 D7-0 / 2 D7-0 / 2\nwith 4-Byte Address"
+  },
+  {
+    "faiss_index_id": 125,
+    "text": "with 4-Byte Address\nFast Read Quad Output 6Bh CA15-8 CA7-0 Dummy D7-0 / 4 D7-0 / 4 D7-0 / 4 D7-0 / 4 D7-0 / 4\nFast Read Quad Output\n6Ch CA15-8 CA7-0 Dummy Dummy Dummy D7-0 / 4 D7-0 / 4 D7-0 / 4\nwith 4-Byte Address\nFast Read Dual I/O BBh CA15-8 / 2 CA7-0 / 2 Dummy / 2 D7-0 / 2 D7-0 / 2 D7-0 / 2 D7-0 / 2 D7-0 / 2\nFast Read Dual I/O\nBCh CA15-8 / 2 CA7-0 / 2 Dummy / 2 Dummy / 2 Dummy / 2 D7-0 / 2 D7-0 / 2 D7-0 / 2\nwith 4-Byte Address"
+  },
+  {
+    "faiss_index_id": 126,
+    "text": "with 4-Byte Address\nFast Read Quad I/O EBh CA15-8 / 4 CA7-0 / 4 Dummy / 4 Dummy / 4 D7-0 / 4 D7-0 / 4 D7-0 / 4 D7-0 / 4\nFast Read Quad I/O\nECh CA15-8 / 4 CA7-0 / 4 Dummy / 4 Dummy / 4 Dummy / 4 Dummy / 4 Dummy / 4 D7-0 / 4\nwith 4-Byte Address\nPublication Release Date: March 21, 2016\n- 24 - Revision GW25N01GVxxIG/IT\nNotes:\n1. Output designates data output from the device.\n2. Column Address (CA) only requires CA[11:0], CA[15:12] are considered as dummy bits."
+  },
+  {
+    "faiss_index_id": 127,
+    "text": "3. Page Address (PA) requires 16 bits. PA[15:6] is the address for 128KB blocks (total 1,024 blocks), PA[5:0] is\nthe address for 2KB pages (total 64 pages for each block).\n4. Logical and Physical Block Address (LBA & PBA) each consists of 16 bits. LBA[9:0] & PBA[9:0] are effective\nBlock Addresses. LBA[15:14] is used for additional information.\n5. Status Register Addresses:\nStatus Register 1 / Protection Register: Addr = Axh\nStatus Register 2 / Configuration Register: Addr = Bxh"
+  },
+  {
+    "faiss_index_id": 128,
+    "text": "Status Register 3 / Status Register: Addr = Cxh\n6. Dual SPI Address Input (CA15-8 / 2 and CA7-0 / 2) format:\nIO0 = x, x, CA10, CA8, CA6, CA4, CA2, CA0\nIO1 = x, x, CA11, CA9, CA7, CA5, CA3, CA1\n7. Dual SPI Data Output (D7-0 / 2) format:\nIO0 = D6, D4, D2, D0, ……\nIO1 = D7, D5, D3, D1, ……\n8. Quad SPI Address Input (CA15-8 / 4 and CA7-0 / 4) format:\nIO0 = x, CA8, CA4, CA0\nIO1 = x, CA9, CA5, CA1\nIO2 = x, CA10, CA6, CA2\nIO3 = x, CA11, CA7, CA3\n9. Quad SPI Data Input/Output (D7-0 / 4) format:"
+  },
+  {
+    "faiss_index_id": 129,
+    "text": "9. Quad SPI Data Input/Output (D7-0 / 4) format:\nIO0 = D4, D0, ……\nIO1 = D5, D1, ……\nIO2 = D6, D2, ……\nIO3 = D7, D3, ……\n10. All Quad Program/Read commands are disabled when WP-E bit is set to 1 in the Protection Register.\n11. For all Read operations in the Continuous Read Mode, once the /CS signal is brought to high to terminate\nthe read operation, the device will still remain busy for ~5us (BUSY=1), and all the data inside the Data"
+  },
+  {
+    "faiss_index_id": 130,
+    "text": "buffer will be lost and un-reliable to use. A new Page Data Read instruction must be issued to reload the\ncorrect page data into the Data Buffer.\n12. For all Read operations in the Buffer Read Mode, as soon as /CS signal is brought to high to terminate the\nread operation, the device will be ready to accept new instructions and all the data inside the Data Buffer will\nremain unchanged from the previous Page Data Read instruction.\n- 25 -W25N01GVxxIG/IT\n8.2 Instruction Descriptions"
+  },
+  {
+    "faiss_index_id": 131,
+    "text": "8.2 Instruction Descriptions\n8.2.1 Device Reset (FFh)\nBecause of the small package and the limitation on the number of pins, the W25N01GV provide a software\nReset instruction instead of a dedicated RESET pin. Once the Reset instruction is accepted, any on-going\ninternal operations will be terminated and the device will return to its default power-on state and lose all the\ncurrent volatile settings, such as Volatile Status Register bits. Once the Reset command is accepted by the"
+  },
+  {
+    "faiss_index_id": 132,
+    "text": "device, the device will take approximately tRST to reset, depending on the current operation the device is\nperforming, tRST can be 5us~500us. During this period, no command will be accepted.\nData corruption may happen if there is an on-going internal Erase or Program operation when Reset\ncommand sequence is accepted by the device. It is recommended to check the BUSY bit in Status Register\nbefore issuing the Reset command.\n/CS\nMode 3 0 1 2 3 4 5 6 7 Mode 3\nCLK Mode 0 Mode 0\nInstruction (FFh)\nDI"
+  },
+  {
+    "faiss_index_id": 133,
+    "text": "CLK Mode 0 Mode 0\nInstruction (FFh)\nDI\n(IO)\n0\nDO High Impedance\n(IO\n1\n)\nFigure 5. Device Reset Instruction\nDefault values of the Status Registers after power up and Device Reset\nPublication Release Date: March 21, 2016\n- 26 - Revision GW25N01GVxxIG/IT\n8.2.2 Read JEDEC ID (9Fh)\nThe Read JEDEC ID instruction is compatible with the JEDEC standard for SPI compatible serial memories\nthat was adopted in 2003. The instruction is initiated by driving the /CS pin low and shifting the instruction"
+  },
+  {
+    "faiss_index_id": 134,
+    "text": "code “9Fh” followed by 8 dummy clocks. The JEDEC assigned Manufacturer ID byte for Winbond (EFh)\nand two Device ID bytes are then shifted out on the falling edge of CLK with most significant bit (MSB) first\nas shown in Figure 6. For memory type and capacity values refer to Manufacturer and Device Identification\ntable.\nFigure 6. Read JEDEC ID Instruction\n- 27 -W25N01GVxxIG/IT\n8.2.3 Read Status Register (0Fh / 05h)"
+  },
+  {
+    "faiss_index_id": 135,
+    "text": "8.2.3 Read Status Register (0Fh / 05h)\nThe Read Status Register instructions allow the 8-bit Status Registers to be read. The instruction is entered\nby driving /CS low and shifting the instruction code “0Fh or 05h” into the DI pin on the rising edge of CLK\nfollowed by an 8-bit Status Register Address. The status register bits are then shifted out on the DO pin at\nthe falling edge of CLK with most significant bit (MSB) first as shown in Figure 7. Refer to section 7.1-3 for"
+  },
+  {
+    "faiss_index_id": 136,
+    "text": "Status Register descriptions.\nThe Read Status Register instruction may be used at any time, even while a Program or Erase cycle is in\nprogress. This allows the BUSY status bit to be checked to determine when the cycle is complete and if the\ndevice can accept another instruction. The Status Register can be read continuously. The instruction is\ncompleted by driving /CS high.\nFigure 7. Read Status Register Instruction\nPublication Release Date: March 21, 2016\n- 28 - Revision GW25N01GVxxIG/IT"
+  },
+  {
+    "faiss_index_id": 137,
+    "text": "- 28 - Revision GW25N01GVxxIG/IT\n8.2.4 Write Status Register (1Fh / 01h)\nThe Write Status Register instruction allows the Status Registers to be written. The writable Status Register\nbits include: SRP[1:0], TB, BP[3:0] and WP-E bit in Status Register-1; OTP-L, OTP-E, SR1-L, ECC-E and\nBUF bit in Status Register-2. All other Status Register bit locations are read-only and will not be affected\nby the Write Status Register instruction."
+  },
+  {
+    "faiss_index_id": 138,
+    "text": "by the Write Status Register instruction.\nTo write the Status Register bits, the instruction is entered by driving /CS low, sending the instruction code\n“1Fh or 01h”, followed by an 8-bit Status Register Address, and then writing the status register data byte\nas illustrated in Figure 8.\nRefer to section 7.1-3 for Status Register descriptions. After power up, factory default for BP[3:0], TB, ECC-\nE bits are 1, while other bits are 0.\nFigure 8. Write Status Register-1/2/3 Instruction"
+  },
+  {
+    "faiss_index_id": 139,
+    "text": "Figure 8. Write Status Register-1/2/3 Instruction\n- 29 -W25N01GVxxIG/IT\n8.2.5 Write Enable (06h)\nThe Write Enable instruction (Figure 9) sets the Write Enable Latch (WEL) bit in the Status Register to a 1.\nThe WEL bit must be set prior to every Page Program, Quad Page Program and Block Erase instruction.\nThe Write Enable instruction is entered by driving /CS low, shifting the instruction code “06h” into the Data\nInput (DI) pin on the rising edge of CLK, and then driving /CS high."
+  },
+  {
+    "faiss_index_id": 140,
+    "text": "Figure 9. Write Enable Instruction\n8.2.6 Write Disable (04h)\nThe Write Disable instruction (Figure 10) resets the Write Enable Latch (WEL) bit in the Status Register to\na 0. The Write Disable instruction is entered by driving /CS low, shifting the instruction code “04h” into the\nDI pin and then driving /CS high. Note that the WEL bit is automatically reset after Power-up and upon\ncompletion of the Page Program, Quad Page Program, Block Erase and Reset instructions."
+  },
+  {
+    "faiss_index_id": 141,
+    "text": "Figure 10. Write Disable Instruction\nPublication Release Date: March 21, 2016\n- 30 - Revision GW25N01GVxxIG/IT\n8.2.7 Bad Block Management (A1h)\nDue to large NAND memory density size and the technology limitation, NAND memory devices are allowed\nto be shipped to the end customers with certain amount of “Bad Blocks” found in the factory testing. Up to\n2% of the memory blocks can be marked as “Bad Blocks” upon shipment, which is a maximum of 20 blocks"
+  },
+  {
+    "faiss_index_id": 142,
+    "text": "for W25N01GV. In order to identify these bad blocks, it is recommended to scan the entire memory array\nfor bad block markers set in the factory. A “Bad Block Marker” is a non-FFh data byte stored at Byte 0 of\nPage 0 for each bad block. An additional marker is also stored in the first byte of the 64-Byte spare area.\nW25N01GV offers a convenient method to manage the bad blocks typically found in NAND flash memory"
+  },
+  {
+    "faiss_index_id": 143,
+    "text": "after extensive use. The “Bad Block Management” command is initiated by shifting the instruction code\n“A1h” into the DI pin and followed by the 16-bit “Logical Block Address” and 16-bit “Physical Block Address”\nas illustrated in Figure 11. The logical block address is the address for the “bad” block that will be replaced\nby the “good” block indicated by the physical block address.\nOnce a Bad Block Management command is successfully executed, the specified LBA-PBA link will be"
+  },
+  {
+    "faiss_index_id": 144,
+    "text": "added to the internal Look Up Table (LUT). Up to 20 links can be established in the non-volatile LUT. If all\n20 links have been written, the LUT-F bit in the Status Register will become a 1, and no more LBA-PBA\nlinks can be established. Therefore, prior to issuing the Bad Block Management command, the LUT-F bit\nvalue can be checked or a “Read BBM Look Up Table” command can be issued to confirm if spare links\nare still available in the LUT.\nFigure 11. Bad Block Management Instruction"
+  },
+  {
+    "faiss_index_id": 145,
+    "text": "Figure 11. Bad Block Management Instruction\n- 31 -W25N01GVxxIG/IT\n8.2.8 Read BBM Look Up Table (A5h)\nThe internal Look Up Table (LUT) consists of 20 Logical-Physical memory block links (from LBA0/PBA0 to\nLBA19/PBA19). The “Read BBM Look Up Table” command can be used to check the existing address links\nstored inside the LUT.\nThe “Read BBM Look Up Table” command is initiated by shifting the instruction code “A5h” into the DI pin"
+  },
+  {
+    "faiss_index_id": 146,
+    "text": "and followed by 8-bit dummy clocks, at the falling edge of the 16th clocks, the device will start to output the\n16-bit “Logical Block Address” and the 16-bit “Physical Block Address” as illustrated in Figure 12. All block\naddress links will be output sequentially starting from the first link (LBA0 & PBA0) in the LUT. If there are\navailable links that are unused, the output will contain all “00h” data.\nThe MSB bits LBA[15:14] of each link are used to indicate the status of the link."
+  },
+  {
+    "faiss_index_id": 147,
+    "text": "LBA[15] LBA[14]\nDescriptions\n(Enable) (Invalid)\n0 0 This link is available to use.\n1 0 This link is enabled and it is a valid link.\n1 1 This link was enabled, but it is not valid any more.\n0 1 Not applicable.\nFigure 12. Read BBM Look Up Table Instruction\nPublication Release Date: March 21, 2016\n- 32 - Revision GW25N01GVxxIG/IT\n8.2.9 Last ECC Failure Page Address (A9h)\nTo better manage the data integrity, W25N01GV implements internal ECC correction for the entire memory"
+  },
+  {
+    "faiss_index_id": 148,
+    "text": "array. When the ECC-E bit in the Status/Configuration Register is set to 1 (also power up default), the\ninternal ECC algorithm is enabled for all Program and Read operations. During a “Program Execute”\ncommand for a specific page, the ECC algorithm will calculate the ECC information based on the data\ninside the 2K-Byte data buffer and write the ECC data into the extra 64-Byte ECC area in the same physical\nmemory page."
+  },
+  {
+    "faiss_index_id": 149,
+    "text": "memory page.\nDuring the Read operations, ECC information will be used to verify the data read out from the physical\nmemory array and possible corrections can be made to limited amount of data bits that contain errors. The\nECC Status Bits (ECC-1 & ECC-0) will also be set indicating the result of ECC calculation.\nFor the “Continuous Read Mode (BUF=0)” operation, multiple pages of main array data can be read out"
+  },
+  {
+    "faiss_index_id": 150,
+    "text": "continuously by issuing a single read command. Upon finishing the read operation, the ECC status bits\nshould be check to verify if there’s any ECC correction or un-correctable errors existed in the read out data.\nIf ECC-1 & ECC-0 equal to (1, 0) or (1, 1), the previous read out data contain one or more pages that\ncontain ECC un-correctable errors. The failure page address (or the last page address if it’s multiple pages)"
+  },
+  {
+    "faiss_index_id": 151,
+    "text": "can be obtained by issuing the “Last ECC failure Page Address” command as illustrated in Figure 13. The\n16-bit Page Address that contains un-correctable ECC errors will be presented on the DO pin following the\ninstruction code “A9h” and 8-bit dummy clocks on the DI pin.\nFigure 13. Last ECC Failure Page Address Instruction\n- 33 -W25N01GVxxIG/IT\n8.2.10 128KB Block Erase (D8h)\nThe 128KB Block Erase instruction sets all memory within a specified block (64-Pages, 128K-Bytes) to the"
+  },
+  {
+    "faiss_index_id": 152,
+    "text": "erased state of all 1s (FFh). A Write Enable instruction must be executed before the device will accept the\nBlock Erase Instruction (Status Register bit WEL must equal 1). The instruction is initiated by driving the\n/CS pin low and shifting the instruction code “D8h” followed by 8-bit dummy clocks and the 16-bit page\naddress. The Block Erase instruction sequence is shown in Figure 14.\nThe /CS pin must be driven high after the eighth bit of the last byte has been latched. If this is not done the"
+  },
+  {
+    "faiss_index_id": 153,
+    "text": "Block Erase instruction will not be executed. After /CS is driven high, the self-timed Block Erase instruction\nwill commence for a time duration of tBE (See AC Characteristics). While the Block Erase cycle is in\nprogress, the Read Status Register instruction may still be accessed for checking the status of the BUSY\nbit. The BUSY bit is a 1 during the Block Erase cycle and becomes a 0 when the cycle is finished and the"
+  },
+  {
+    "faiss_index_id": 154,
+    "text": "device is ready to accept other instructions again. After the Block Erase cycle has finished the Write Enable\nLatch (WEL) bit in the Status Register is cleared to 0. The Block Erase instruction will not be executed if\nthe addressed block is protected by the Block Protect (TB, BP2, BP1, and BP0) bits.\nFigure 14. 128KB Block Erase Instruction\nPublication Release Date: March 21, 2016\n- 34 - Revision GW25N01GVxxIG/IT\n8.2.11 Load Program Data (02h) / Random Load Program Data (84h)"
+  },
+  {
+    "faiss_index_id": 155,
+    "text": "The Program operation allows from one byte to 2,112 bytes (a page) of data to be programmed at previously\nerased (FFh) memory locations. A Program operation involves two steps: 1. Load the program data into\nthe Data Buffer. 2. Issue “Program Execute” command to transfer the data from Data Buffer to the specified\nmemory page.\nA Write Enable instruction must be executed before the device will accept the Load Program Data"
+  },
+  {
+    "faiss_index_id": 156,
+    "text": "Instructions (Status Register bit WEL= 1). The “Load Program Data” or “Random Load Program Data”\ninstruction is initiated by driving the /CS pin low then shifting the instruction code “02h” or “84h” followed by\na 16-bit column address (only CA[11:0] is effective) and at least one byte of data into the DI pin. The /CS\npin must be held low for the entire length of the instruction while data is being sent to the device. If the"
+  },
+  {
+    "faiss_index_id": 157,
+    "text": "number of data bytes sent to the device exceeds the number of data bytes in the Data Buffer, the extra\ndata will be ignored by the device. The Load Program Data instruction sequence is shown in Figure 15.\nBoth “Load Program Data” and “Random Load Program Data” instructions share the same command\nsequence. The difference is that “Load Program Data” instruction will reset the unused the data bytes in"
+  },
+  {
+    "faiss_index_id": 158,
+    "text": "the Data Buffer to FFh value, while “Random Load Program Data” instruction will only update the data bytes\nthat are specified by the command input sequence, the rest of the Data Buffer will remain unchanged.\nIf internal ECC algorithm is enabled, all 2,112 bytes of data will be accepted, but the bytes designated for\nECC parity bits in the extra 64 bytes section will be overwritten by the ECC calculation. If the ECC-E bit is"
+  },
+  {
+    "faiss_index_id": 159,
+    "text": "set to a 0 to disable the internal ECC, the extra 64 bytes section can be used for external ECC purpose or\nother usage.\nFigure 15. Load / Random Load Program Data Instruction\n- 35 -W25N01GVxxIG/IT\n8.2.12 Quad Load Program Data (32h) / Quad Random Load Program Data (34h)\nThe “Quad Load Program Data” and “Quad Random Load Program Data” instructions are identical to the\n“Load Program Data” and “Random Load Program Data” in terms of operation sequence and functionality."
+  },
+  {
+    "faiss_index_id": 160,
+    "text": "The only difference is that “Quad Load” instructions will input the data bytes from all four IO pins instead of\nthe single DI pin. This method will significantly shorten the data input time when a large amount of data\nneeds to be loaded into the Data Buffer. The instruction sequence is illustrated in Figure 16.\nBoth “Quad Load Program Data” and “Quad Random Load Program Data” instructions share the same"
+  },
+  {
+    "faiss_index_id": 161,
+    "text": "command sequence. The difference is that “Quad Load Program Data” instruction will reset the unused the\ndata bytes in the Data Buffer to FFh value, while “Quad Random Load Program Data” instruction will only\nupdate the data bytes that are specified by the command input sequence, the rest of the Data Buffer will\nremain unchanged.\nWhen WP-E bit in the Status Register is set to a 1, all Quad SPI instructions are disabled.\nFigure 16. Quad Load / Quad Random Load Program Data Instruction"
+  },
+  {
+    "faiss_index_id": 162,
+    "text": "Publication Release Date: March 21, 2016\n- 36 - Revision GW25N01GVxxIG/IT\n8.2.13 Program Execute (10h)\nThe Program Execute instruction is the second step of the Program operation. After the program data are\nloaded into the 2,112-Byte Data Buffer (or 2,048 bytes when ECC is enabled), the Program Execute\ninstruction will program the Data Buffer content into the physical memory page that is specified in the"
+  },
+  {
+    "faiss_index_id": 163,
+    "text": "instruction. The instruction is initiated by driving the /CS pin low then shifting the instruction code “10h”\nfollowed by 8-bit dummy clocks and the 16-bit Page Address into the DI pin as shown in Figure 17.\nAfter /CS is driven high to complete the instruction cycle, the self-timed Program Execute instruction will\ncommence for a time duration of tpp (See AC Characteristics). While the Program Execute cycle is in"
+  },
+  {
+    "faiss_index_id": 164,
+    "text": "progress, the Read Status Register instruction may still be used for checking the status of the BUSY bit.\nThe BUSY bit is a 1 during the Program Execute cycle and becomes a 0 when the cycle is finished and the\ndevice is ready to accept other instructions again. After the Program Execute cycle has finished, the Write\nEnable Latch (WEL) bit in the Status Register is cleared to 0. The Program Execute instruction will not be"
+  },
+  {
+    "faiss_index_id": 165,
+    "text": "executed if the addressed page is protected by the Block Protect (TB, BP2, BP1, and BP0) bits.\nFigure 17. Program Execute Instruction\n- 37 -W25N01GVxxIG/IT\n8.2.14 Page Data Read (13h)\nThe Page Data Read instruction will transfer the data of the specified memory page into the 2,112-Byte\nData Buffer. The instruction is initiated by driving the /CS pin low then shifting the instruction code “13h”\nfollowed by 8-bit dummy clocks and the 16-bit Page Address into the DI pin as shown in Figure 18."
+  },
+  {
+    "faiss_index_id": 166,
+    "text": "After /CS is driven high to complete the instruction cycle, the self-timed Read Page Data instruction will\ncommence for a time duration of tRD (See AC Characteristics). While the Read Page Data cycle is in\nprogress, the Read Status Register instruction may still be used for checking the status of the BUSY bit.\nThe BUSY bit is a 1 during the Read Page Data cycle and becomes a 0 when the cycle is finished and the\ndevice is ready to accept other instructions again."
+  },
+  {
+    "faiss_index_id": 167,
+    "text": "After the 2,112 bytes of page data are loaded into the Data Buffer, several Read instructions can be issued\nto access the Data Buffer and read out the data. Depending on the BUF bit setting in the Status Register,\neither “Buffer Read Mode” or “Continuous Read Mode” may be used to accomplish the read operations.\nFigure 18. Page Data Read Instruction\nPublication Release Date: March 21, 2016\n- 38 - Revision GW25N01GVxxIG/IT\n8.2.15 Read Data (03h)"
+  },
+  {
+    "faiss_index_id": 168,
+    "text": "8.2.15 Read Data (03h)\nThe Read Data instruction allows one or more data bytes to be sequentially read from the Data Buffer after\nexecuting the Read Page Data instruction. The Read Data instruction is initiated by driving the /CS pin low\nand then shifting the instruction code “03h” followed by the 16-bit Column Address and 8-bit dummy clocks\nor a 24-bit dummy clocks into the DI pin. After the address is received, the data byte of the addressed Data"
+  },
+  {
+    "faiss_index_id": 169,
+    "text": "Buffer location will be shifted out on the DO pin at the falling edge of CLK with most significant bit (MSB)\nfirst. The address is automatically incremented to the next higher address after each byte of data is shifted\nout allowing for a continuous stream of data. The instruction is completed by driving /CS high.\nThe Read Data instruction sequence is shown in Figure 19a & 19b. When BUF=1, the device is in the Buffer"
+  },
+  {
+    "faiss_index_id": 170,
+    "text": "Read Mode. The data output sequence will start from the Data Buffer location specified by the 16-bit Column\nAddress and continue to the end of the Data Buffer. Once the last byte of data is output, the output pin will\nbecome Hi-Z state. When BUF=0, the device is in the Continuous Read Mode, the data output sequence\nwill start from the first byte of the Data Buffer and increment to the next higher address. When the end of"
+  },
+  {
+    "faiss_index_id": 171,
+    "text": "the Data Buffer is reached, the data of the first byte of next memory page will be following and continues\nthrough the entire memory array. This allows using a single Read instruction to read out the entire memory\narray and is also compatible to Winbond’s SpiFlash NOR flash memory command sequence.\nFigure 19a. Read Data Instruction (Buffer Read Mode, BUF=1)\nFigure 19b. Read Data Instruction (Continuous Read Mode, BUF=0)\n- 39 -W25N01GVxxIG/IT\n8.2.16 Fast Read (0Bh)"
+  },
+  {
+    "faiss_index_id": 172,
+    "text": "- 39 -W25N01GVxxIG/IT\n8.2.16 Fast Read (0Bh)\nThe Fast Read instruction allows one or more data bytes to be sequentially read from the Data Buffer after\nexecuting the Read Page Data instruction. The Fast Read instruction is initiated by driving the /CS pin low\nand then shifting the instruction code “0Bh” followed by the 16-bit Column Address and 8-bit dummy clocks\nor a 32-bit dummy clocks into the DI pin. After the address is received, the data byte of the addressed Data"
+  },
+  {
+    "faiss_index_id": 173,
+    "text": "Buffer location will be shifted out on the DO pin at the falling edge of CLK with most significant bit (MSB)\nfirst. The address is automatically incremented to the next higher address after each byte of data is shifted\nout allowing for a continuous stream of data. The instruction is completed by driving /CS high.\nThe Fast Read instruction sequence is shown in Figure 20a & 20b. When BUF=1, the device is in the Buffer"
+  },
+  {
+    "faiss_index_id": 174,
+    "text": "Read Mode. The data output sequence will start from the Data Buffer location specified by the 16-bit Column\nAddress and continue to the end of the Data Buffer. Once the last byte of data is output, the output pin will\nbecome Hi-Z state. When BUF=0, the device is in the Continuous Read Mode, the data output sequence\nwill start from the first byte of the Data Buffer and increment to the next higher address. When the end of"
+  },
+  {
+    "faiss_index_id": 175,
+    "text": "the Data Buffer is reached, the data of the first byte of next memory page will be following and continues\nthrough the entire memory array. This allows using a single Read instruction to read out the entire memory\narray and is also compatible to Winbond’s SpiFlash NOR flash memory command sequence.\nFigure 20a. Fast Read Instruction (Buffer Read Mode, BUF=1)\nFigure 20b. Fast Read Instruction (Continuous Read Mode, BUF=0)\nPublication Release Date: March 21, 2016\n- 40 - Revision GW25N01GVxxIG/IT"
+  },
+  {
+    "faiss_index_id": 176,
+    "text": "- 40 - Revision GW25N01GVxxIG/IT\n8.2.17 Fast Read with 4-Byte Address (0Ch)\nThe Fast Read instruction allows one or more data bytes to be sequentially read from the Data Buffer after\nexecuting the Read Page Data instruction. The Fast Read instruction is initiated by driving the /CS pin low\nand then shifting the instruction code “0Ch” followed by the 16-bit Column Address and 24-bit dummy clocks"
+  },
+  {
+    "faiss_index_id": 177,
+    "text": "(when BUF=1) or a 40-bit dummy clocks (when BUF=0) into the DI pin. After the address is received, the\ndata byte of the addressed Data Buffer location will be shifted out on the DO pin at the falling edge of CLK\nwith most significant bit (MSB) first. The address is automatically incremented to the next higher address\nafter each byte of data is shifted out allowing for a continuous stream of data. The instruction is completed\nby driving /CS high."
+  },
+  {
+    "faiss_index_id": 178,
+    "text": "by driving /CS high.\nThe Fast Read instruction sequence is shown in Figure 21a & 21b. When BUF=1, the device is in the Buffer\nRead Mode. The data output sequence will start from the Data Buffer location specified by the 16-bit Column\nAddress and continue to the end of the Data Buffer. Once the last byte of data is output, the output pin will\nbecome Hi-Z state. When BUF=0, the device is in the Continuous Read Mode, the data output sequence"
+  },
+  {
+    "faiss_index_id": 179,
+    "text": "will start from the first byte of the Data Buffer and increment to the next higher address. When the end of\nthe Data Buffer is reached, the data of the first byte of next memory page will be following and continues\nthrough the entire memory array. This allows using a single Read instruction to read out the entire memory\narray and is also compatible to Winbond’s SpiFlash NOR flash memory command sequence.\nFigure 21a. Fast Read with 4-Byte Address Instruction (Buffer Read Mode, BUF=1)"
+  },
+  {
+    "faiss_index_id": 180,
+    "text": "Figure 21b. Fast Read with 4-Byte Address Instruction (Continuous Read Mode, BUF=0)\n- 41 -W25N01GVxxIG/IT\n8.2.18 Fast Read Dual Output (3Bh)\nThe Fast Read Dual Output (3Bh) instruction is similar to the standard Fast Read (0Bh) instruction except\nthat data is output on two pins; IO and IO . This allows data to be transferred at twice the rate of standard\n0 1\nSPI devices.\nThe Fast Read Dual Output instruction sequence is shown in Figure 22a & 22b. When BUF=1, the device"
+  },
+  {
+    "faiss_index_id": 181,
+    "text": "is in the Buffer Read Mode. The data output sequence will start from the Data Buffer location specified by\nthe 16-bit Column Address and continue to the end of the Data Buffer. Once the last byte of data is output,\nthe output pin will become Hi-Z state. When BUF=0, the device is in the Continuous Read Mode, the data\noutput sequence will start from the first byte of the Data Buffer and increment to the next higher address."
+  },
+  {
+    "faiss_index_id": 182,
+    "text": "When the end of the Data Buffer is reached, the data of the first byte of next memory page will be following\nand continues through the entire memory array. This allows using a single Read instruction to read out the\nentire memory array and is also compatible to Winbond’s SpiFlash NOR flash memory command sequence.\nFigure 22a. Fast Read Dual Output Instruction (Buffer Read Mode, BUF=1)\nFigure 22b. Fast Read Dual Output Instruction (Continuous Read Mode, BUF=0)"
+  },
+  {
+    "faiss_index_id": 183,
+    "text": "Publication Release Date: March 21, 2016\n- 42 - Revision GW25N01GVxxIG/IT\n8.2.19 Fast Read Dual Output with 4-Byte Address (3Ch)\nThe Fast Read Dual Output (3Ch) instruction is similar to the standard Fast Read (0Bh) instruction except\nthat data is output on two pins; IO and IO . This allows data to be transferred at twice the rate of standard\n0 1\nSPI devices.\nThe Fast Read Dual Output instruction sequence is shown in Figure 23a & 23b. When BUF=1, the device"
+  },
+  {
+    "faiss_index_id": 184,
+    "text": "is in the Buffer Read Mode. The data output sequence will start from the Data Buffer location specified by\nthe 16-bit Column Address and continue to the end of the Data Buffer. Once the last byte of data is output,\nthe output pin will become Hi-Z state. When BUF=0, the device is in the Continuous Read Mode, the data\noutput sequence will start from the first byte of the Data Buffer and increment to the next higher address."
+  },
+  {
+    "faiss_index_id": 185,
+    "text": "When the end of the Data Buffer is reached, the data of the first byte of next memory page will be following\nand continues through the entire memory array. This allows using a single Read instruction to read out the\nentire memory array and is also compatible to Winbond’s SpiFlash NOR flash memory command sequence.\nFigure 23a. Fast Read Dual Output with 4-Byte Address Instruction (Buffer Read Mode, BUF=1)"
+  },
+  {
+    "faiss_index_id": 186,
+    "text": "Figure 23b. Fast Read Dual Output with 4-Byte Address Instruction (Continuous Read Mode, BUF=0)\n- 43 -W25N01GVxxIG/IT\n8.2.20 Fast Read Quad Output (6Bh)\nThe Fast Read Quad Output (6Bh) instruction is similar to the Fast Read Dual Output (3Bh) instruction\nexcept that data is output on four pins, IO , IO , IO , and IO . The Fast Read Quad Output Instruction allows\n0 1 2 3\ndata to be transferred at four times the rate of standard SPI devices."
+  },
+  {
+    "faiss_index_id": 187,
+    "text": "The Fast Read Quad Output instruction sequence is shown in Figure 24a & 24b. When BUF=1, the device\nis in the Buffer Read Mode. The data output sequence will start from the Data Buffer location specified by\nthe 16-bit Column Address and continue to the end of the Data Buffer. Once the last byte of data is output,\nthe output pin will become Hi-Z state. When BUF=0, the device is in the Continuous Read Mode, the data"
+  },
+  {
+    "faiss_index_id": 188,
+    "text": "output sequence will start from the first byte of the Data Buffer and increment to the next higher address.\nWhen the end of the Data Buffer is reached, the data of the first byte of next memory page will be following\nand continues through the entire memory array. This allows using a single Read instruction to read out the\nentire memory array and is also compatible to Winbond’s SpiFlash NOR flash memory command sequence."
+  },
+  {
+    "faiss_index_id": 189,
+    "text": "When WP-E bit in the Status Register is set to a 1, this instruction is disabled.\nFigure 24a. Fast Read Quad Output Instruction (Buffer Read Mode, BUF=1)\nFigure 24b. Fast Read Quad Output Instruction (Continuous Read Mode, BUF=0)\nPublication Release Date: March 21, 2016\n- 44 - Revision GW25N01GVxxIG/IT\n8.2.21 Fast Read Quad Output with 4-Byte Address (6Ch)\nThe Fast Read Quad Output (6Ch) instruction is similar to the Fast Read Dual Output (3Bh) instruction"
+  },
+  {
+    "faiss_index_id": 190,
+    "text": "except that data is output on four pins, IO , IO , IO , and IO . The Fast Read Quad Output Instruction allows\n0 1 2 3\ndata to be transferred at four times the rate of standard SPI devices.\nThe Fast Read Quad Output instruction sequence is shown in Figure 25a & 25b. When BUF=1, the device\nis in the Buffer Read Mode. The data output sequence will start from the Data Buffer location specified by"
+  },
+  {
+    "faiss_index_id": 191,
+    "text": "the 16-bit Column Address and continue to the end of the Data Buffer. Once the last byte of data is output,\nthe output pin will become Hi-Z state. When BUF=0, the device is in the Continuous Read Mode, the data\noutput sequence will start from the first byte of the Data Buffer and increment to the next higher address.\nWhen the end of the Data Buffer is reached, the data of the first byte of next memory page will be following"
+  },
+  {
+    "faiss_index_id": 192,
+    "text": "and continues through the entire memory array. This allows using a single Read instruction to read out the\nentire memory array and is also compatible to Winbond’s SpiFlash NOR flash memory command sequence.\nWhen WP-E bit in the Status Register is set to a 1, this instruction is disabled.\nFigure 25a. Fast Read Quad Output with 4-Byte Address Instruction (Buffer Read Mode, BUF=1)\nFigure 25b. Fast Read Quad Output with 4-Byte Address Instruction (Continuous Read Mode, BUF=0)\n- 45 -W25N01GVxxIG/IT"
+  },
+  {
+    "faiss_index_id": 193,
+    "text": "- 45 -W25N01GVxxIG/IT\n8.2.22 Fast Read Dual I/O (BBh)\nThe Fast Read Dual I/O (BBh) instruction allows for improved random access while maintaining two IO\npins, IO and IO . It is similar to the Fast Read Dual Output (3Bh) instruction but with the capability to input\n0 1\nthe Column Address or the dummy clocks two bits per clock. This reduced instruction overhead may allow\nfor code execution (XIP) directly from the Dual SPI in some applications."
+  },
+  {
+    "faiss_index_id": 194,
+    "text": "The Fast Read Quad Output instruction sequence is shown in Figure 26a & 26b. When BUF=1, the device\nis in the Buffer Read Mode. The data output sequence will start from the Data Buffer location specified by\nthe 16-bit Column Address and continue to the end of the Data Buffer. Once the last byte of data is output,\nthe output pin will become Hi-Z state. When BUF=0, the device is in the Continuous Read Mode, the data"
+  },
+  {
+    "faiss_index_id": 195,
+    "text": "output sequence will start from the first byte of the Data Buffer and increment to the next higher address.\nWhen the end of the Data Buffer is reached, the data of the first byte of next memory page will be following\nand continues through the entire memory array. This allows using a single Read instruction to read out the\nentire memory array and is also compatible to Winbond’s SpiFlash NOR flash memory command sequence.\n/CS\nMode 3 0 7 8 9 13 14 15 19 20 21 22 23 24 25 26 27 28\nCLK Mode 0"
+  },
+  {
+    "faiss_index_id": 196,
+    "text": "CLK Mode 0\n4 Dummy\nInstruction Column Address[15:0]\nClocks\nDI\nBBh 14 12 10 4 2 0 6 4 2 0 6 4 2 0 6\n(IO0)\nData Out 1 Data Out 2\nDO High Impedance\n15 13 11 5 3 1 7 5 3 1 7 5 3 1 7\n(IO1)\n* * *\n*= MSB\nFigure 26a. Fast Read Dual I/O Instruction (Buffer Read Mode, BUF=1)\nFigure 26b. Fast Read Dual I/O Instruction (Continuous Read Mode, BUF=0)\nPublication Release Date: March 21, 2016\n- 46 - Revision GW25N01GVxxIG/IT\n8.2.23 Fast Read Dual I/O with 4-Byte Address (BCh)"
+  },
+  {
+    "faiss_index_id": 197,
+    "text": "The Fast Read Dual I/O (BCh) instruction allows for improved random access while maintaining two IO\npins, IO and IO . It is similar to the Fast Read Dual Output (3Bh) instruction but with the capability to input\n0 1\nthe Column Address or the dummy clocks two bits per clock. This reduced instruction overhead may allow\nfor code execution (XIP) directly from the Dual SPI in some applications.\nThe Fast Read Quad Output instruction sequence is shown in Figure 27a & 27b. When BUF=1, the device"
+  },
+  {
+    "faiss_index_id": 198,
+    "text": "is in the Buffer Read Mode. The data output sequence will start from the Data Buffer location specified by\nthe 16-bit Column Address and continue to the end of the Data Buffer. Once the last byte of data is output,\nthe output pin will become Hi-Z state. When BUF=0, the device is in the Continuous Read Mode, the data\noutput sequence will start from the first byte of the Data Buffer and increment to the next higher address."
+  },
+  {
+    "faiss_index_id": 199,
+    "text": "When the end of the Data Buffer is reached, the data of the first byte of next memory page will be following\nand continues through the entire memory array. This allows using a single Read instruction to read out the\nentire memory array and is also compatible to Winbond’s SpiFlash NOR flash memory command sequence.\nFigure 27a. Fast Read Dual I/O with 4-Byte Address Instruction (Buffer Read Mode, BUF=1)\n/CS\nMode 3 0 7 8 9 19 20 21 27 28 29 30 31 32 33 34 35 36\nCLK Mode 0"
+  },
+  {
+    "faiss_index_id": 200,
+    "text": "CLK Mode 0\nInstruction 20 Dummy Clocks\nDI\nBCh 38 36 34 16 14 12 0 6 4 2 0 6 4 2 0 6\n(IO0)\nData Out 1 Data Out 2\nDO High Impedance\n39 37 35 17 15 13 1 7 5 3 1 7 5 3 1 7\n(IO1)\n* * *\n*= MSB\nFigure 27b. Fast Read Dual I/O with 4-Byte Address Instruction (Continuous Read Mode, BUF=0)\n- 47 -W25N01GVxxIG/IT\n8.2.24 Fast Read Quad I/O (EBh)\nThe Fast Read Quad I/O (EBh) instruction is similar to the Fast Read Dual I/O (BBh) instruction except that"
+  },
+  {
+    "faiss_index_id": 201,
+    "text": "address and data bits are input and output through four pins IO , IO , IO and IO prior to the data output.\n0 1 2 3\nThe Quad I/O dramatically reduces instruction overhead allowing faster random access for code execution\n(XIP) directly from the Quad SPI.\nThe Fast Read Quad Output instruction sequence is shown in Figure 28a & 28b. When BUF=1, the device\nis in the Buffer Read Mode. The data output sequence will start from the Data Buffer location specified by"
+  },
+  {
+    "faiss_index_id": 202,
+    "text": "the 16-bit Column Address and continue to the end of the Data Buffer. Once the last byte of data is output,\nthe output pin will become Hi-Z state. When BUF=0, the device is in the Continuous Read Mode, the data\noutput sequence will start from the first byte of the Data Buffer and increment to the next higher address.\nWhen the end of the Data Buffer is reached, the data of the first byte of next memory page will be following"
+  },
+  {
+    "faiss_index_id": 203,
+    "text": "and continues through the entire memory array. This allows using a single Read instruction to read out the\nentire memory array and is also compatible to Winbond’s SpiFlash NOR flash memory command sequence.\nWhen WP-E bit in the Status Register is set to a 1, this instruction is disabled.\nFigure 28a. Fast Read Quad I/O Instruction (Buffer Read Mode, BUF=1)\nPublication Release Date: March 21, 2016\n- 48 - Revision GW25N01GVxxIG/IT\n/CS\nMode 3 0 7 8 9 13 14 15 19 20 21 22 23 24 25 26 27 28"
+  },
+  {
+    "faiss_index_id": 204,
+    "text": "CLK Mode 0\nInstruction 12 Dummy Clocks\nDI\nEBh 44 40 36 24 20 16 0 4 0 4 0 4 0 4 0 4\n(IO0)\nDO High Impedance\n45 41 37 25 21 17 1 5 1 5 1 5 1 5 1 5\n(IO1)\nHigh Impedance\nIO2 46 42 38 26 22 18 2 6 2 6 2 6 2 6 2 6\nHigh Impedance\nIO3 47 43 39 27 23 19 3 7 3 7 3 7 3 7 3 7\n* * * * *\nData Data Data Data Data\n*= MSB Out 1 Out 2 Out 3 Out 4 Out 5\nFigure 28b. Fast Read Quad I/O Instruction (Continuous Read Mode, BUF=0)\n- 49 -W25N01GVxxIG/IT\n8.2.25 Fast Read Quad I/O with 4-Byte Address (ECh)"
+  },
+  {
+    "faiss_index_id": 205,
+    "text": "The Fast Read Quad I/O (ECh) instruction is similar to the Fast Read Dual I/O (BBh) instruction except that\naddress and data bits are input and output through four pins IO , IO , IO and IO prior to the data output.\n0 1 2 3\nThe Quad I/O dramatically reduces instruction overhead allowing faster random access for code execution\n(XIP) directly from the Quad SPI.\nThe Fast Read Quad Output instruction sequence is shown in Figure 29a & 29b. When BUF=1, the device"
+  },
+  {
+    "faiss_index_id": 206,
+    "text": "is in the Buffer Read Mode. The data output sequence will start from the Data Buffer location specified by\nthe 16-bit Column Address and continue to the end of the Data Buffer. Once the last byte of data is output,\nthe output pin will become Hi-Z state. When BUF=0, the device is in the Continuous Read Mode, the data\noutput sequence will start from the first byte of the Data Buffer and increment to the next higher address."
+  },
+  {
+    "faiss_index_id": 207,
+    "text": "When the end of the Data Buffer is reached, the data of the first byte of next memory page will be following\nand continues through the entire memory array. This allows using a single Read instruction to read out the\nentire memory array and is also compatible to Winbond’s SpiFlash NOR flash memory command sequence.\nWhen WP-E bit in the Status Register is set to a 1, this instruction is disabled.\nFigure 29a. Fast Read Quad I/O with 4-Byte Address Instruction (Buffer Read Mode, BUF=1)"
+  },
+  {
+    "faiss_index_id": 208,
+    "text": "Publication Release Date: March 21, 2016\n- 50 - Revision GW25N01GVxxIG/IT\n/CS\nMode 3 0 7 8 9 15 16 17 21 22 23 24 25 26 27 28 29 30\nCLK Mode 0\nInstruction 14 Dummy Clocks\nDI\nECh 52 48 44 24 20 16 0 4 0 4 0 4 0 4 0 4\n(IO0)\nDO High Impedance\n53 49 45 25 21 17 1 5 1 5 1 5 1 5 1 5\n(IO1)\nHigh Impedance\nIO2 54 50 46 26 22 18 2 6 2 6 2 6 2 6 2 6\nHigh Impedance\nIO3 55 51 47 27 23 19 3 7 3 7 3 7 3 7 3 7\n* * * * *\nData Data Data Data Data\n*= MSB Out 1 Out 2 Out 3 Out 4 Out 5"
+  },
+  {
+    "faiss_index_id": 209,
+    "text": "*= MSB Out 1 Out 2 Out 3 Out 4 Out 5\nFigure 29b. Fast Read Quad I/O with 4-Byte Address Instruction (Continuous Read Mode, BUF=0)\n- 51 -W25N01GVxxIG/IT\n8.2.26 Accessing Unique ID / Parameter / OTP Pages (OTP-E=1)\nIn addition to the main memory array, the W25N01GV is also equipped with one Unique ID Page, one\nParameter Page, and ten OTP Pages.\nPage Address Page Name Descriptions Data Length\n00h Unique ID Page Factory programmed, Read Only 32-Byte x 16"
+  },
+  {
+    "faiss_index_id": 210,
+    "text": "01h Parameter Page Factory programmed, Read Only 256-Byte x 3\n02h OTP Page [0] Program Only, OTP lockable 2,112-Byte\n… OTP Pages [1:8] Program Only, OTP lockable 2,112-Byte\n0Bh OTP Page [9] Program Only, OTP lockable 2,112-Byte\nTo access these additional data pages, the OTP-E bit in Status Register-2 must be set to “1” first. Then,\nRead operations can be performed on Unique ID and Parameter Pages, Read and Program operations can"
+  },
+  {
+    "faiss_index_id": 211,
+    "text": "be performed on the OTP pages if it’s not already locked. To return to the main memory array operation,\nOTP-E bit needs to be to set to 0.\nRead Operations\nA “Page Data Read” command must be issued followed by a specific page address shown in the table\nabove to load the page data into the main Data Buffer. After the device finishes the data loading (BUSY=0),\nall Read commands may be used to read the Data Buffer starting from any specified Column Address."
+  },
+  {
+    "faiss_index_id": 212,
+    "text": "Please note all Read commands must now follow the “Buffer Read Mode” command structure (CA[15:0],\nnumber of dummy clocks) regardless the previous BUF bit setting. ECC can also be enabled for the OTP\npage read operations to ensure the data integrity.\nProgram and OTP Lock Operations\nOTP pages provide the additional space (2K-Byte x 10) to store important data or security information that\ncan be locked to prevent further modification in the field. These OTP pages are in an erased state set in"
+  },
+  {
+    "faiss_index_id": 213,
+    "text": "the factory, and can only be programmed (change data from “1” to “0”) until being locked by OTP-L bit in\nthe Configuration/Status Register-2. OTP-E must be first set to “1” to enable the access to these OTP\npages, then the program data must be loaded into the main Data Buffer using any “Program Data Load”\ncommands. The “Program Execute” command followed by a specific OTP Page Address is used to initiate"
+  },
+  {
+    "faiss_index_id": 214,
+    "text": "the data transfer from the Data Buffer to the OTP page. When ECC is enabled, ECC calculation will be\nperformed during “Program Execute”, and the ECC information will be stored into the 64-Byte spare area.\nOnce the OTP pages are correctly programmed, OTP-L bit can be used to permanently lock these pages\nso that no further modification is possible. While still in the “OTP Access Mode” (OTP-E=1), user needs to"
+  },
+  {
+    "faiss_index_id": 215,
+    "text": "set OTP-L bit in the Configuration/Status Register-2 to “1”, and issue a “Program Execute” command\nwithout any Page Address. After the device finishes the OTP lock setting (BUSY=0), the user can set OTP-\nE to “0” to return to the main memory array operation.\nSR1-L OTP Lock Operation\nThe Protection/Status Register-1 contains protection bits that can be set to protect either a portion or the\nentire memory array from being Programmed/Erased or set the device to either Software Write Protection"
+  },
+  {
+    "faiss_index_id": 216,
+    "text": "(WP-E=0) or Hardware Write Protection (WP-E=1). Once the BP[3:0], TB, WP-E bits are set correctly,\nSRP1 and SRP0 should also be set to “1”s as well to allow SR1-L bit being set to “1” to permanently lock\nthe protection settings in the Status Register-1 (SR1). Similar to the OTP-L setting procedure above, in\norder to set SR1-L lock bit, the device must enter the “OTP Access Mode” (OTP-E=1) first, and SR1-L bit"
+  },
+  {
+    "faiss_index_id": 217,
+    "text": "should be set to “1” prior to the “Program Execute” command without any Page Address. Once SR1-L is\nset to “1” (BUSY=0), the user can set OTP-E to “0” to return to the main memory array operation.\nPublication Release Date: March 21, 2016\n- 52 - Revision GW25N01GVxxIG/IT\n8.2.27 Parameter Page Data Definitions\nThe Parameter Page contains 3 identical copies of the 256-Byte Parameter Data. The table below lists all"
+  },
+  {
+    "faiss_index_id": 218,
+    "text": "the key data byte locations. All other unspecified byte locations have 00h data as default.\nByte\nDescriptions Values\nNumber\n0~3 Parameter page signature 4Fh, 4Eh, 46h, 49h\n4~5 Revision number 00h, 00h\n6~7 Feature supported 00h, 00h\n8~9 Optional command supported 02h, 00h\n10~31 Reserved All 00h\n32~43 Device manufacturer 57h, 49h, 4Eh, 42h, 4Fh, 4Eh, 44h, 20h, 20h, 20h, 20h, 20h\n57h, 32h, 35h, 4Eh, 30h, 31h, 47h, 56h, 20h, 20h,\n44~63 Device model\n20h, 20h, 20h, 20h, 20h, 20h, 20h, 20h, 20h, 20h"
+  },
+  {
+    "faiss_index_id": 219,
+    "text": "20h, 20h, 20h, 20h, 20h, 20h, 20h, 20h, 20h, 20h\n64 JEDEC manufacturer ID EFh\n65~66 Date code 00h, 00h\n67~79 Reserved All 00h\n80~83 Number of data bytes per page 00h, 08h, 00h, 00h\n84~85 Number of spare bytes per page 40h, 00h\n86~91 Reserved All 00h\n92~95 Number of pages per block 40h, 00h, 00h, 00h\n96~99 Number of blocks per logical unit 00h, 04h, 00h, 00h\n100 Number of logical units 01h\n101 Number of address bytes 00h\n102 Number of bits per cell 01h"
+  },
+  {
+    "faiss_index_id": 220,
+    "text": "102 Number of bits per cell 01h\n103~104 Bad blocks maximum per unit 14h, 00h\n105~106 Block endurance 01h, 06h\n107 Guaranteed valid blocks at beginning of target 01h\n108~109 Block endurance for guaranteed valid blocks 00h, 00h\n110 Number of programs per page 04h\n111 Reserved 00h\n112 Number of ECC bits 00h\n113 Number of plane address bits 00h\n114 Multi-plane operation attributes 00h\n115~127 Reserved All 00h\n128 I/O pin capacitance, maximum 08h\n129~132 Reserved All 00h"
+  },
+  {
+    "faiss_index_id": 221,
+    "text": "129~132 Reserved All 00h\n133~134 Maximum page program time (us) BCh, 02h\n135~136 Maximum block erase time (us) 10h, 27h\n137~138 Maximum page read time (us) 32h, 00h\n139~163 Reserved All 00h\n164~165 Vendor specific revision number 00h, 00h\n166~253 Vendor specific All 00h\n254~255 Integrity CRC Set at test\n256~511 Value of bytes 0~255\n512~767 Value of bytes 0~255\n768+ Reserved\n- 53 -W25N01GVxxIG/IT\n9. ELECTRICAL CHARACTERISTICS\n9.1 Absolute Maximum Ratings (1)"
+  },
+  {
+    "faiss_index_id": 222,
+    "text": "9.1 Absolute Maximum Ratings (1)\nPARAMETERS SYMBOL CONDITIONS RANGE UNIT\nSupply Voltage VCC –0.6 to +4.6 V\nVoltage Applied to Any Pin VIO Relative to Ground –0.6 to +4.6 V\n<20nS Transient\nTransient Voltage on any Pin VIOT –2.0V to VCC+2.0V V\nRelative to Ground\nShort Circuit Output Crrent, IOs 5 mA\nStorage Temperature TSTG –65 to +150 °C\nLead Temperature TLEAD See Note (2) °C\nElectrostatic Discharge Voltage VESD Human Body Model(3) –2000 to +2000 V\nNotes:"
+  },
+  {
+    "faiss_index_id": 223,
+    "text": "Notes:\n1. This device has been designed and tested for the specified operation ranges. Proper operation outside\nof these levels is not guaranteed. Exposure to absolute maximum ratings may affect device reliability.\nExposure beyond absolute maximum ratings may cause permanent damage.\n2. Compliant with JEDEC Standard J-STD-20C for small body Sn-Pb or Pb-free (Green) assembly and the\nEuropean directive on restrictions on hazardous substances (RoHS) 2002/95/EU."
+  },
+  {
+    "faiss_index_id": 224,
+    "text": "3. JEDEC Standard JESD22-A114A (C1=100pF, R1=1500 ohms, R2=500 ohms).\n9.2 Operating Ranges\nSPEC\nPARAMETER SYMBOL CONDITIONS UNIT\nMIN MAX\nSupply Voltage VCC 2.7 3.6 V\nAmbient Temperature,\nTA Industrial –40 +85 °C\nOperating\nPublication Release Date: March 21, 2016\n- 54 - Revision GW25N01GVxxIG/IT\n9.3 Power-up Power-down Timing Requirements\nSPEC\nPARAMETER SYMBOL UNIT\nMIN MAX\nVCC (min) to /CS Low tVSL(1) 50 500 µs\nTime Delay Before Write Instruction tPUW(1) 5 ms"
+  },
+  {
+    "faiss_index_id": 225,
+    "text": "Time Delay Before Write Instruction tPUW(1) 5 ms\nWrite Inhibit Threshold Voltage VWI(1) 1.0 2.0 V\nNote:\n1. These parameters are characterized only.\nVCC\nVCC(max)\n0Fh/05h/9Fh/FFhare\nthe only commands allowed.\n/CS must track VCC Device is fully accessible\n(Page 0 with ECC is ready in Buffer)\nVCC(min)\ntVSL\nReset State\nVWI\ntPUW\nTime\nFigure 30a. Power-up Timing and Voltage Levels\n/CS must track VCC\nduring VCC Ramp Up/Down\nVCC\n/CS\nTime\nFigure 30b. Power-up, Power-Down Requirement\n- 55 -W25N01GVxxIG/IT"
+  },
+  {
+    "faiss_index_id": 226,
+    "text": "- 55 -W25N01GVxxIG/IT\n9.4 DC Electrical Characteristics\nSPEC\nPARAMETER SYMBOL CONDITIONS UNIT\nMIN TYP MAX\nInput Capacitance CIN(1) VIN = 0V(1) 6 pF\nOutput Capacitance Cout(1) VOUT = 0V(1) 8 pF\nInput Leakage ILI ±2 µA\nI/O Leakage ILO ±2 µA\n/CS = VCC,\nStandby Current ICC1 10 50 µA\nVIN = GND or VCC\nC = 0.1 VCC / 0.9 VCC\nRead Current ICC2 25 35 mA\nDO = Open\nCurrent Page Program ICC3 /CS = VCC 25 35 mA\nCurrent Block Erase ICC4 /CS = VCC 25 35 mA\nInput Low Voltage VIL VCC x 0.3 V"
+  },
+  {
+    "faiss_index_id": 227,
+    "text": "Input Low Voltage VIL VCC x 0.3 V\nInput High Voltage VIH VCC x 0.7 V\nOutput Low Voltage VOL IOL = 2.1mA 0.4 V\nOutput High Voltage VOH IOH = –400 µA 2.4 V\nNotes:\n1. Tested on sample basis and specified through design and characterization data. TA = 25° C, VCC = 3.0V.\nPublication Release Date: March 21, 2016\n- 56 - Revision GW25N01GVxxIG/IT\n9.5 AC Measurement Conditions\nSPEC\nPARAMETER SYMBOL UNIT\nMIN MAX\nLoad Capacitance CL 30 pF\nInput Rise and Fall Times TR, TF 5 ns"
+  },
+  {
+    "faiss_index_id": 228,
+    "text": "Input Rise and Fall Times TR, TF 5 ns\nInput Pulse Voltages VIN 0.1 VCC to 0.9 VCC V\nInput Timing Reference Voltages IN 0.3 VCC to 0.7 VCC V\nOutput Timing Reference Voltages OUT 0.5 VCC V\nInput and Output\nInput Levels Timing Reference Levels\n0.9 VCC\n0.5 VCC\n0.1 VCC\nFigure 31. AC Measurement I/O Waveform\n- 57 -W25N01GVxxIG/IT\n9.6 AC Electrical Characteristics(3)\nSPEC\nDESCRIPTION SYMBOL ALT UNIT\nMIN TYP MAX\nClock frequency for all instructions F R f C1 D.C. 104 MHz\nClock High, Low Time tCLH,\n4 ns"
+  },
+  {
+    "faiss_index_id": 229,
+    "text": "Clock High, Low Time tCLH,\n4 ns\nfor all instructions tCLL (1)\nClock Rise Time peak to peak tCLCH (2) 0.1 V/ns\nClock Fall Time peak to peak tCHCL (2) 0.1 V/ns\n/CS Active Setup Time relative to CLK tSLCH tCSS 5 ns\n/CS Not Active Hold Time relative to CLK tCHSL 5 ns\nData In Setup Time tDVCH tDSU 2 ns\nData In Hold Time tCHDX tDH 3 ns\n/CS Active Hold Time relative to CLK tCHSH 3 ns\n/CS Not Active Setup Time relative to CLK tSHCH 3 ns"
+  },
+  {
+    "faiss_index_id": 230,
+    "text": "/CS Deselect Time (for Array Read (cid:198) Array Read) tSHSL1 tCSH 10 ns\n/CS Deselect Time (for Erase, Program or Read\ntSHSL2 tCSH 50 ns\nStatus Registers (cid:198) Read Status Registers)\nOutput Disable Time tSHQZ (2) tDIS 7 ns\nClock Low to Output Valid tCLQV tV 7 ns\nOutput Hold Time tCLQX tHO 2 ns\n/HOLD Active Setup Time relative to CLK tHLCH 5 ns\n/HOLD Active Hold Time relative to CLK tCHHH 5 ns\nContinued – next page\nPublication Release Date: March 21, 2016\n- 58 - Revision GW25N01GVxxIG/IT"
+  },
+  {
+    "faiss_index_id": 231,
+    "text": "- 58 - Revision GW25N01GVxxIG/IT\nAC Electrical Characteristics (cont’d)\nSPEC\nDESCRIPTION SYMBOL ALT UNIT\nMIN TYP MAX\n/HOLD Not Active Setup Time relative to CLK tHHCH 5 ns\n/HOLD Not Active Hold Time relative to CLK tCHHL 5 ns\n/HOLD to Output Low-Z tHHQX (2) tLZ 7 ns\n/HOLD to Output High-Z tHLQZ (2) tHZ 12 ns\nWrite Protect Setup Time Before /CS Low tWHSL 20 ns\nWrite Protect Hold Time After /CS High tSHWL 100 ns\nStatus Register Write Time tW 50 ns\n/CS High to next Instruction after Reset during"
+  },
+  {
+    "faiss_index_id": 232,
+    "text": "/CS High to next Instruction after Reset during\ntRST (2) 5/10/500 µs\nPage Data Read / Program Execute / Block Erase\nRead Page Data Time (ECC disabled) tRD1 25 µs\nRead Page Data Time (ECC enabled) tRD2 60 µs\nPage Program, OTP Lock, BBM Management Time tPP 250 700 us\nBlock Erase Time tBE 2 10 ms\nNumber of partial page programs NoP 4 times\nNotes:\n1. Clock high + Clock low must be less than or equal to 1/fC.\n2. Value guaranteed by design and/or characterization, not 100% tested in production."
+  },
+  {
+    "faiss_index_id": 233,
+    "text": "3. Tested on sample basis and specified through design and characterization data. TA = 25° C, VCC = 3.0V.\n- 59 -W25N01GVxxIG/IT\n9.7 Serial Output Timing\n/CS\ntCLH\nCLK\ntCLQV tCLQV tCLL tSHQZ\ntCLQX tCLQX\nIO\nMSB OUT LSB OUT\noutput\n9.8 Serial Input Timing\n/CS\ntSHSL\ntCHSL tSLCH tCHSH tSHCH\nCLK\ntDVCH tCHDX tCLCH tCHCL\nIO\nMSB IN LSB IN\ninput\n9.9 /HOLD Timing\n/CS\ntCHHL tHLCH tHHCH\nCLK\ntCHHH\n/HOLD\ntHLQZ tHHQX\nIO\noutput\nIO\ninput\n9.10 /WP Timing\n/CS\ntWHSL tSHWL\n/WP\nCLK\nIO\ninput"
+  },
+  {
+    "faiss_index_id": 234,
+    "text": "9.10 /WP Timing\n/CS\ntWHSL tSHWL\n/WP\nCLK\nIO\ninput\nWrite Status Register is allowed Write Status Register is not allowed\nPublication Release Date: March 21, 2016\n- 60 - Revision GW25N01GVxxIG/IT\n10. PACKAGE SPECIFICATIONS\n10.1 8-Pad WSON 8x6-mm (Package Code ZE)\nMillimeters Inches\nSymbol\nMin Nom Max Min Nom Max\nA 0.70 0.75 0.80 0.028 0.030 0.031\nA1 0.00 0.02 0.05 0.000 0.001 0.002\nb 0.35 0.40 0.48 0.014 0.016 0.019\nC --- 0.20 REF --- --- 0.008 REF ---\nD 7.90 8.00 8.10 0.311 0.315 0.319"
+  },
+  {
+    "faiss_index_id": 235,
+    "text": "D 7.90 8.00 8.10 0.311 0.315 0.319\nD2 3.35 3.40 3.45 0.132 0.134 0.136\nE 5.90 6.00 6.10 0.232 0.236 0.240\nE2 4.25 4.30 4.35 0.167 0.169 0.171\ne --- 1.27 --- --- 0.050 ---\nL 0.45 0.50 0.55 0.018 0.020 0.022\ny 0.00 --- 0.050 0.000 --- 0.002\n- 61 -W25N01GVxxIG/IT\n10.2 16-Pin SOIC 300-mil (Package Code SF)\nMillimeters Inches\nSymbol\nMin Nom Max Min Nom Max\nA 2.36 2.49 2.64 0.093 0.098 0.104\nA1 0.10 --- 0.30 0.004 --- 0.012\nA2 --- 2.31 --- --- 0.091 ---\nb 0.33 0.41 0.51 0.013 0.016 0.020"
+  },
+  {
+    "faiss_index_id": 236,
+    "text": "b 0.33 0.41 0.51 0.013 0.016 0.020\nC 0.18 0.23 0.28 0.007 0.009 0.011\nD 10.08 10.31 10.49 0.397 0.406 0.413\nE 10.01 10.31 10.64 0.394 0.406 0.419\nE1 7.39 7.49 7.59 0.291 0.295 0.299\ne 1.27 BSC 0.050 BSC\nL 0.38 0.81 1.27 0.015 0.032 0.050\ny --- --- 0.076 --- --- 0.003\nθ 0° --- 8° 0° --- 8°\nPublication Release Date: March 21, 2016\n- 62 - Revision GW25N01GVxxIG/IT\n10.3 24-Ball TFBGA 8x6-mm (Package Code TB, 5x5-1 Ball Array)\nNote:\nBall land: 0.45mm. Ball Opening: 0.35mm"
+  },
+  {
+    "faiss_index_id": 237,
+    "text": "Note:\nBall land: 0.45mm. Ball Opening: 0.35mm\nPCB ball land suggested <= 0.35mm\nMillimeters Inches\nSymbol\nMin Nom Max Min Nom Max\nA --- --- 1.20 --- --- 0.047\nA1 0.25 0.30 0.35 0.010 0.012 0.014\nA2 --- 0.85 --- --- 0.033 ---\nb 0.35 0.40 0.45 0.014 0.016 0.018\nD 7.90 8.00 8.10 0.311 0.315 0.319\nD1 4.00 BSC 0.157 BSC\nE 5.90 6.00 6.10 0.232 0.236 0.240\nE1 4.00 BSC 0.157 BSC\nSE 1.00 TYP 0.039 TYP\nSD 1.00 TYP 0.039 TYP\ne 1.00 BSC 0.039 BSC\n- 63 -W25N01GVxxIG/IT"
+  },
+  {
+    "faiss_index_id": 238,
+    "text": "e 1.00 BSC 0.039 BSC\n- 63 -W25N01GVxxIG/IT\n10.4 24-Ball TFBGA 8x6-mm (Package Code TC, 6x4 Ball Array)\nNote:\nBall land: 0.45mm. Ball Opening: 0.35mm\nPCB ball land suggested <= 0.35mm\nMillimeters Inches\nSymbol\nMin Nom Max Min Nom Max\nA --- --- 1.20 --- --- 0.047\nA1 0.25 0.30 0.35 0.010 0.012 0.014\nb 0.35 0.40 0.45 0.014 0.016 0.018\nD 7.95 8.00 8.05 0.313 0.315 0.317\nD1 5.00 BSC 0.197 BSC\nE 5.95 6.00 6.05 0.234 0.236 0.238\nE1 3.00 BSC 0.118 BSC\ne 1.00 BSC 0.039 BSC"
+  },
+  {
+    "faiss_index_id": 239,
+    "text": "E1 3.00 BSC 0.118 BSC\ne 1.00 BSC 0.039 BSC\nPublication Release Date: March 21, 2016\n- 64 - Revision GW25N01GVxxIG/IT\n11. ORDERING INFORMATION\nW(1) 25N 01G V xx I(1)\nW = Winbond\n25N = Serial SLC NAND Memory\n01G = 1G-bit\nV = 2.7V to 3.6V\nSF = 16-pin SOIC 300-mil ZE = 8-pad WSON 8x6mm\nTB = 24-ball TFBGA 8x6-mm (5x5 ball array) TC = 24-ball TFBGA 8x6-mm (6x4 ball array)\nI = Industrial (-40°C to +85°C)\n(2)\nG = Green Package (Lead-free, RoHS Compliant, Halogen-free (TBBA), Antimony-Oxide-free Sb\n2\nO"
+  },
+  {
+    "faiss_index_id": 240,
+    "text": "2\nO\n3\n)\nand BUF=1 is the default value after power up\nT = Green Package (Lead-free, RoHS Compliant, Halogen-free (TBBA), Antimony-Oxide-free Sb\n2\nO\n3\n)\nand BUF=0 is the default value after power up\nNotes:\n1. The “W” prefix is not included on the part marking.\n2. Standard bulk shipments are in tray for WSON and TFBGA packages. For other packing options, please specify\nwhen placing orders.\n- 65 -W25N01GVxxIG/IT\n11.1 Valid Part Numbers and Top Side Marking"
+  },
+  {
+    "faiss_index_id": 241,
+    "text": "11.1 Valid Part Numbers and Top Side Marking\nThe following table provides the valid part numbers for the W25N01GV SpiFlash Memory. Please contact\nWinbond for specific availability by density and package type. Winbond SpiFlash memories use a 12-digit\nProduct Number for ordering. However, due to limited space, the Top Side Marking on all packages uses\nan abbreviated 11-digit number.\nIndustrial Temperature:\nPACKAGE TYPE DENSITY PRODUCT NUMBER TOP SIDE MARKING\nSF W25N01GVSFIG 25N01GVSFIG\n1G-bit"
+  },
+  {
+    "faiss_index_id": 242,
+    "text": "SF W25N01GVSFIG 25N01GVSFIG\n1G-bit\nSOIC-16 300mil W25N01GVSFIT 25N01GVSFIT\nZE W25N01GVZEIG 25N01GVZEIG\n1G-bit\nWSON-8 8x6mm W25N01GVZEIT 25N01GVZEIT\nTB\nW25N01GVTBIG 25N01GVTBIG\nTFBGA-24 8x6mm 1G-bit\nW25N01GVTBIT 25N01GVTBIT\n(5x5-1 Ball Array)\nTC\nW25N01GVTCIG 25N01GVTCIG\nTFBGA-24 8x6mm 1G-bit\nW25N01GVTCIT 25N01GVTCIT\n(6x4 Ball Array)\nNote:\nW25N01GVxxIG: BUF=1 (Buffer Read Mode) is the default value after power up. BUF bit can be written to 0."
+  },
+  {
+    "faiss_index_id": 243,
+    "text": "W25N01GVxxIT: BUF=0 (Continuous Read Mode) is the default value after power up. BUF bit can be written to 1.\nPublication Release Date: March 21, 2016\n- 66 - Revision GW25N01GVxxIG/IT\n12. REVISION HISTORY\nVERSION DATE PAGE DESCRIPTION\nA 06/13/2013 New Create Preliminary\nB 11/26/2013 Overall updates\n63, 65, 66 Removed SOIC-16 package, updated order information\nC 12/13/2014 11 Updated Figure.3 for device operation\n17, 26 Changed BUF bit default value to 1 after power up\n6, 10-11, 25,"
+  },
+  {
+    "faiss_index_id": 244,
+    "text": "6, 10-11, 25,\nD 03/23/2015 Updated W25N01GVxxIG/IT part number definitions\n63-64\n25 Updated FFh Reset command description\nE 06/08/2015 58 Updated tRD2 in AC parameter table\n60 Updated WSON 8x6mm dimensions\n34 Updated instruction description\nF 07/08/2015\nAll Removed Preliminary designator\nG 03/21/2016 8, 62, 65, 66 Added SOIC-16 package, updated order information\nTrademarks\nWinbond and SpiFlash are trademarks of Winbond Electronics Corporation."
+  },
+  {
+    "faiss_index_id": 245,
+    "text": "All other marks are the property of their respective owner.\nImportant Notice\nWinbond products are not designed, intended, authorized or warranted for use as components in systems\nor equipment intended for surgical implantation, atomic energy control instruments, airplane or spaceship\ninstruments, transportation instruments, traffic signal instruments, combustion control instruments, or for\nother applications intended to support or sustain life. Furthermore, Winbond products are not intended for"
+  },
+  {
+    "faiss_index_id": 246,
+    "text": "applications wherein failure of Winbond products could result or lead to a situation wherein personal injury,\ndeath or severe property or environmental damage could occur. Winbond customers using or selling these\nproducts for use in such applications do so at their own risk and agree to fully indemnify Winbond for any\ndamages resulting from such improper use or sales.\nInformation in this document is provided solely in connection with Winbond products. Winbond"
+  },
+  {
+    "faiss_index_id": 247,
+    "text": "reserves the right to make changes, corrections, modifications or improvements to this document\nand the products and services described herein at any time, without notice.\n- 67 -"
+  }
+]

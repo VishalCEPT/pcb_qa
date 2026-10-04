@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component SS2040FL have a maximum reverse voltage of 40V according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The part number SS2040FL typically denotes a Schottky barrier diode with a 40V maximum repetitive peak reverse voltage (VRRM) as indicated by the '40' in the naming convention.",
+        "is_final": true
+    }
+}

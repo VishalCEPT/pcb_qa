@@ -1,0 +1,178 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "DATA SHEET\nGENERAL PURPOSE CHIP RESISTORS\nRC_L series\n±0.1%, ±0.5%, ±1%, ±5%\nSizes 0075/0100/0201/0402/0603/0805/\n1206/1210/1218/2010/2512\nRoHS compliant & Halogen free\n4\n1\n.V\n5\n2\n0\n2\n,4\n1\nr\ne\nb\nm\ne\nv\no\nN\n–\nn\no\nit\na\nc\nific\ne\np\ns\nt\nc\nu\nd\no\nr\nPProduct specification 2\nChip Resistor Surface Mount RC_L SERIES 0075 to 2512 11\nSCOPE ORDERING INFORMATION - GLOBAL PART NUMBER\nThis specification describes RC\nGlobal part numbers are identified by the series, size, tolerance, packing"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "series chip resistors with lead\ntype, temperature coefficient, taping reel and resistance value.\nfree terminations made by thick\nfilm process. GLOBAL PART NUMBER\nRC XXXX X X X XX XXXX L\n(1) (2) (3) (4) (5) (6) (7)\nAPPLICATIONS\n All general purpose application (1) SIZE\n0075/0100/0201/0402/0603/0805/1206/1210/1218/2010/2512\nFEATURES\n(2) TOLERANCE\n Halogen Free Epoxy\nB = ±0.1%\n RoHS compliant\nD = ±0.5%\n Products with lead free F = ±1.0%"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "D = ±0.5%\n Products with lead free F = ±1.0%\nterminations meet RoHS J = ±5.0% (for jumper ordering, use code of J)\nrequirements\n(3) PACKAGING TYPE\n Pb-glass contained in\nelectrodes, resistors element R = Paper taping reel\nand glass are exempted by K = Embossed taping reel\nRoHS S = ESD safe reel (0075/0100 only)\n Reducing environmentally\n(4) TEMPERATURE COEFFICIENT OF RESISTANCE\nhazardous wastes\n－ = Based on spec.\n High component and equipment\nreliability (5) TAPING REEL & POWER"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "reliability (5) TAPING REEL & POWER\n Saving of PCB space 07 = 7 inch dia. Reel & Standard power\n None forbidden-materials used in 10 = 10 inch dia. Reel\nproducts/production\n13 = 13 inch dia. Reel\n MSL class: MSL 1\n7W = 7 inch dia. Reel & 2 x standard power\n7D = 7 inch dia. Reel & 2 x Standard Quantity (0201/0402 only)\n7N = 7 inch dia. Reel, ESD safe reel (0075/0100 only)\n3W = 13 inch dia. Reel & 2 x standard power\n(6) RESISTANCE VALUE\nThere are 2~4 digits indicated the resistance value."
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "Letter R/K/M is decimal point\nExample:\n97R6 = 97.6Ω\n9K76 = 9760Ω\n1M = 1,000,000Ω\n(7) DEFAULT CODE\nLetter L is the system default code for ordering only.(Note)\nORDERING EXAMPLE\nThe ordering code for a RC0402 0.0625W chip resistor value 100KΩ\nwith ± 5% tolerance, supplied in 7-inch tape reel of 10,000 units per reel\nis: RC0402JR-07100KL.\nNOTE\n1. All our RSMD products meet RoHS compliant and Halogen Free. \"LFP\" of the internal 2D\nreel label mentions \"Lead Free Process\"."
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "reel label mentions \"Lead Free Process\".\n2. On customized label, \"LFP\" or specific symbol can be printed.\nwww.yageogroup.com\nNov. 14, 2025 V.14Product specification 3\nChip Resistor Surface Mount RC_L SERIES 0075 to 2512 11\nMARKING\nRC0075 / RC0100 / RC0201 / RC0402\nNo Marking\nynsc007\nFig. 1\nRC0603\n0\n1%, 0.5%,E24 exception values 10/11/13/15/20/75 of E24 series\nYNSC037\nFig. 2 240 = 24 × 100 = 24\n1%, 0.5%, E96 refer to EIA-96 marking method, including values\n10/11/13/15/20/75 of E24 series"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "10/11/13/15/20/75 of E24 series\n5%, E24 series : 3 digits\nFirst two digits for significant figure and 3rd digit for number of zeros\nRC0805 / RC1206 / RC1210 / RC2010 / RC2512\n1%, 0.5%, E24/E96 series : 4 digits\nFirst three digits for significant figure and 4th digit for number of zeros\n5%, E24 series : 3 digits\nFirst two digits for significant figure and 3rd digit for number of zeros\nRC1218\nE-24 series: 3 digits, ±5%\nFirst two digits for significant figure and 3rd digit for number of zeros"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "Fig. 7 Value = 10 KΩ\nBoth E-24 and E-96 series: 4 digits, ±1% & ±0.5%\nFirst three digits for significant figure and 4th digit for number of zeros\nFor further marking information, please see special data sheet \"Chip resistors marking\".\nwww.yageogroup.com\nNov. 14, 2025 V.14\nYNSC099\nFig. 8 Value = 10 KΩ\n0 0\nYNSC103\nFig. 6 Value = 10 KΩ\n0 3\nYNSC001\nFig. 3 88A = 806 × 100 = 806 Ω\n8 8\nYNSC038\nFig. 4 Value = 10 KΩ\n0 3\nYNSC001\nFig. 5 Value = 10 KΩ\n0 0\nYNSC004Product specification 4"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "0 0\nYNSC004Product specification 4\nChip Resistor Surface Mount RC_L SERIES 0075 to 2512 11\nCONSTRUCTION OOuuttlliinneess\nThe resistor is constructed on top of a high-grade\nFor dimensions, please refer to Table 1\nceramic body. Internal metal electrodes are added\non each end to make the contacts to the thick marking layer\nfilm resistive element. The composition of the overcoat\nresistive element is a noble metal imbedded into a primary glass layer"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "glass and covered by a second glass to prevent resistive layer\n(Jumper chip is a conductor)\nenvironmental influences. The resistor is laser inner electrode\nH termination(Ni/matte tin)\ntrimmed to the rated resistance value. The inner electrode\nresistor is covered with a protective epoxy I2 ceramic substrate\ncoat, finally the two external terminations (matte\novercoat\ntin on Ni-barrier) are added, as shown in Fig.9. I1\nW\nYNSC086\nL\n9\nDIMENSION Fig. 9 Chip resistor outlines\nTable 1"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "9\nDIMENSION Fig. 9 Chip resistor outlines\nTable 1\nT Y PE L (mm) W (mm) H (mm) I (mm) I (mm)\n1 2\nRC0075 0.30±0.01 0.15±0.01 0.13±0.01 0.08±0.03 0.08±0.03\nR C0100 0.40±0.02 0.20±0.02 0.13±0.02 0.10±0.03 0.10±0.03\nR C0201 0.60±0.03 0.30±0.03 0.23±0.03 0.10±0.05 0.15±0.05\nRC0402 1.00±0.05 0.50±0.05 0.35±0.05 0.20±0.10 0.25±0.10\nR C0603 1.60±0.10 0.80±0.10 0.45±0.10 0.25±0.15 0.25±0.15\nR C0805 2.00±0.10 1.25±0.10 0.50±0.10 0.35±0.20 0.35±0.20\nR C1206 3.10±0.10 1.60±0.10 0.55±0.10 0.45±0.20 0.45±0.20"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "R C1210 3.10±0.10 2.60±0.15 0.55±0.10 0.45±0.15 0.50±0.20\nRC1218 3.10±0.10 4.60±0.10 0.55±0.10 0.45±0.20 0.40±0.20\nR C2010 5.00±0.10 2.50±0.15 0.55±0.10 0.60±0.20 0.55±0.20\nR C2512 6.35±0.10 3.10±0.15 0.55±0.10 0.60±0.20 0.60±0.20\nELECTRICAL CHARACTERISTICS\nTable 2\nCHARAC- POWER OPERATING MAXIMUM MAXIMUM DIELECTRIC RESISTANCE TEMPERATURE JUMPER\nTERISTICS TEMPERATURE WORKING OVERLOAD WITHSTANDING RANGE COEFFICIENT CRITERIA\nRANGE VOLTAGE VOLTAGE VOLTAGE\n5% (E24) 10Ω≦R<100Ω Rated Current"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "5% (E24) 10Ω≦R<100Ω Rated Current\n10Ω≦R≦1MΩ -200~+600ppm°C 0.5A\nRC0075 1/50 W -55℃ to 125℃ 10V 25V 25V 1% (E24/E96) 100Ω≦R≦1MΩ Maximum\nFig. 4 Chip resistor outlines 10Ω≦R≦1MΩ ±200ppm°C Current\nJumper<50mΩ 1.0A\n5% (E24) 1Ω≦R<10Ω Rated Current\n1Ω≦R≦22MΩ -200~+600ppm°C 0.5A\n1% (E24/E96) 10Ω≤ R < 100Ω: Maximum\nRC0100 1/32 W -55℃ to 125℃ 15V 30V 30V 1Ω≦R≦10MΩ ±300ppm/°C Current\n0.5% (E24/E96)\n100Ω≤ R ≤ 10MΩ:\n1.0A\n±200ppm/°C\n33Ω≦R≦470KΩ\n10MΩ< R ≤ 22MΩ:\nJumper<50mΩ ±250ppm/°C\nwww.yageogroup.com"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "Jumper<50mΩ ±250ppm/°C\nwww.yageogroup.com\nNov. 14, 2025 V.14Product specification 5\nChip Resistor Surface Mount RC_L SERIES 0075 to 2512 11\nTable 2\nCHARAC- POWER OPERATING MAXIMUM MAXIMUM DIELECTRIC RESISTANCE TEMPERATURE JUMPER\nTERISTICS TEMPERATURE WORKING OVERLOAD WITHSTANDING RANGE COEFFICIENT CRITERIA\nRANGE VOLTAGE VOLTAGE VOLTAGE\n5% (E24) 1Ω≦R≦10Ω Rated Current\n1Ω≦R≦100MΩ -100~+350ppm°C 0.5A\n1% (E24/E96) 10Ω<R≦100MΩ Maximum\n1Ω≦R≦10MΩ ±200ppm°C Current"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "1Ω≦R≦10MΩ ±200ppm°C Current\nRC0201 1/20 W -55℃ to 125℃ 25V 50V 50V 0.5% (E24/E96) 1.0A\n1Ω≦R≦1MΩ\n0.1% (E24/E96)\n10Ω≦R≦1MΩ\nJumper<50mΩ\n5% (E24) 1Ω≦R≦10Ω R a t e d Current\n1Ω≦R≦100MΩ ±200ppm°C 1.0A\n1% (E24/E96) 10Ω<R≦10MΩ Maximum\n1Ω≦R≦10MΩ ±100ppm°C Current\n1/16 W -55℃ to 155℃ 50V 100V 100V 0.5% (E24/E96) 10MΩ<R≦ 2.0A\n1Ω≦R≦1MΩ 100MΩ\nRC0402 0.1% (E24/E96) ±200ppm°C\n10Ω≦R≦1MΩ\nJumper<50mΩ\n5% (E24)\n1Ω≦R≦1MΩ 1Ω≦R≦1MΩ\n1/8W -55℃ to 155℃ 50V 100V 100V\n1% (E24/E96) ±200ppm°C\n1Ω≦R≦1MΩ"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "1% (E24/E96) ±200ppm°C\n1Ω≦R≦1MΩ\n5% (E24) 1Ω≦R≦10Ω R a t e d Current\n1Ω≦R≦22MΩ ±200ppm°C 1.0A\n1% (E24/E96) 10Ω<R≦10MΩ Maximum\n1Ω≦R≦10MΩ ±100ppm°C Current\n1/10 W -55℃ to 155℃ 75V 150V 150V 0.5% (E24/E96) 10MΩ<R≦22MΩ 2.0A\n1Ω≦R≦1MΩ ±200ppm°C\nRC0603 0.1% (E24/E96)\n10Ω≦R≦1MΩ\nJumper<50mΩ\n5% (E24) 1Ω≦R≦1MΩ\n1Ω≦R≦1MΩ ±200ppm°C\n1/5 W -55℃ to 155℃ 75V 150V 150V\n1% (E24/E96)\n1Ω≦R≦1MΩ\n5% (E24) 1Ω≦R≦10Ω R a t e d Current\n1Ω≦R≦100MΩ ±200ppm°C 2.0A\n1% (E24/E96) 10Ω<R≦10MΩ Maximum\n1Ω≦R≦10MΩ ±100ppm°C Current"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "1Ω≦R≦10MΩ ±100ppm°C Current\n0.5% (E24/E96) 10MΩ<R≦22MΩ 5.0A\n1/8 W -55℃ to 155℃ 150V 300V 300V 1Ω≦R≦1MΩ ±200ppm°C\n0.1% (E24/E96) 24MΩ<R≦\nRC0805 10Ω≦R≦1MΩ 100MΩ\n10%, 20% (E24) ±300ppm°C\n24MΩ≦R≦100MΩ\nJumper<50mΩ\n5% (E24) 1Ω≦R≦1MΩ\n1Ω≦R≦1MΩ ±200ppm℃\n1/4 W -55℃ to 155℃ 150V 300V 300V\n1% (E24/E96)\n1Ω≦R≦1MΩ\nwww.yageogroup.com\nNov. 14, 2025 V.14Product specification 6\nChip Resistor Surface Mount RC_L SERIES 0075 to 2512 11\nFOOTPRINT AND SOLDERING PROFILES"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "FOOTPRINT AND SOLDERING PROFILES\nFor recommended footprint and soldering profiles, please refer to data sheet “Chip resistors mounting”\nTable 3\nCHARAC- POWER OPERATING MAXIMUM MAXIMUM DIELECTRIC RESISTANCE TEMPERATURE JUMPER\nTERISTICS TEMPERATURE WORKING OVERLOAD WITHSTANDING RANGE COEFFICIENT CRITERIA\nRANGE VOLTAGE VOLTAGE VOLTAGE\n5% (E24) 1Ω≦R≦10Ω R a t e d Current\n1Ω≦R≦100MΩ ±200ppm°C 2.0A\n1% (E24/E96) 10Ω<R≦10MΩ Maximum\n1Ω≦R≦10MΩ ±100ppm°C Current\n0.5% (E24/E96) 10MΩ<R≦22MΩ 10.0A"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "0.5% (E24/E96) 10MΩ<R≦22MΩ 10.0A\n1/4 W -55℃ to 155℃ 200V 400V 500V 1Ω≦R≦1MΩ ±200ppm°C\n0.1% (E24/E96) 24MΩ≦R≦\n10Ω≦R≦1MΩ 100MΩ\nRC1206\n10%, 20% (E24) ±300ppm°C\n24MΩ≦R≦100MΩ\nJumper<50mΩ\n5% (E24) 1Ω≦R≦1MΩ\n1Ω≦R≦1MΩ ±200ppm°C\n1/2 W -55℃ to 155℃ 200V 400V 500V 1% (E24/E96)\n1Ω≦R≦1MΩ\n5% (E24) 1Ω≦R≦10Ω R a t e d Current\n1Ω≦R≦22MΩ ±200ppm°C 2.0A\n1% (E24/E96) 10Ω<R≦10MΩ Maximum\nRC1210 1/2 W -55℃ to 155℃ 200V 500V 500V 1Ω≦R≦10MΩ ±100ppm°C Current\n0.1%, 0.5% (E24/E96) 10MΩ<R≦22MΩ 10.0A\n10Ω≦R≦1MΩ ±200ppm°C"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "10Ω≦R≦1MΩ ±200ppm°C\nJumper<50mΩ\n5% (E24) 1Ω≦R≦10Ω R a t e d Current\n1Ω≦R≦1MΩ ±200ppm°C 6.0A\n1% (E24/E96) 10Ω<R≦1MΩ Maximum\nRC1218 1 W -55℃ to 155℃ 200V 500V 500V 1Ω≦R≦1MΩ ±100ppm°C Current\n0.1%, 0.5% (E24/E96) 10.0A\n10Ω≦R≦1MΩ\nJumper<50mΩ\n5% (E24) 1Ω≦R≦10Ω R a t e d Current\n1Ω≦R≦22MΩ ±200ppm°C 2.0A\n1% (E24/E96) 10Ω<R≦10MΩ Maximum\nRC2010 3/4 W -55℃ to 155℃ 200V 500V 500V 1Ω≦R≦10MΩ ±100ppm°C Current\n0.1%, 0.5% (E24/E96) 10MΩ<R≦22MΩ 10.0A\n10Ω≦R≦1MΩ ±200ppm°C\nJumper<50mΩ"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "10Ω≦R≦1MΩ ±200ppm°C\nJumper<50mΩ\n5% (E24) 1Ω≦R≦10Ω R a t e d Current\n1Ω≦R≦22MΩ ±200ppm°C 2.0A\n1% (E24/E96) 10Ω<R≦10MΩ Maximum\n1 W -55℃ to 155℃ 200V 500V 500V 1Ω≦R≦10MΩ ±100ppm°C Current\n0.1%, 0.5% (E24/E96) 10MΩ<R≦22MΩ 10.0A\nRC2512 10Ω≦R≦1MΩ ±200ppm°C\nJumper<50mΩ\n5% (E24) 1Ω≦R≦1MΩ\n1Ω≦R≦1MΩ ±200ppm°C\n2 W -55℃ to 155℃ 200V 400V 500V\n1% (E24/E96)\n1Ω≦R≦1MΩ\nwww.yageogroup.com\nNov. 14, 2025 V.14Product specification 7\nChip Resistor Surface Mount RC_L SERIES 0075 to 2512 11"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "PACKING STYLE AND PACKAGING QUANTITY\nTable 4 Packing style and packaging quantity\nESD SAFE REEL (S)\n(4MM WIDTH, 1MM\nPITCH PLASTIC\nPACKING STYLE PAPER TAPING REEL (R) EMBOSSED) EMBOSSED TAPING REEL\nREEL DIMENSION 7\" (178 mm) 10\" (254mm) 13\" (330 mm) 7\" (178 mm) 7\" (178 mm) 13\" (330 mm)\nRC0075 --- --- --- 20000 --- ---\nRC0100 20000 --- 80000 40000 --- ---\nRC0201 10000 20000 50000 --- --- ---\nRC0402 10000 20000 50000 --- --- ---\nRC0603 5000 10000 20000 --- --- ---"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "RC0603 5000 10000 20000 --- --- ---\nRC0805 5000 10000 20000 --- --- ---\nRC1206 5000 10000 20000 --- --- ---\nRC1210 5000 10000 20000 --- --- ---\nRC1218 --- --- --- --- 4000 ---\nRC2010 --- --- --- --- 4000 16000\nRC2512 --- --- --- --- 4000 ---\nNOTE\nFor tape and reel specification/dimensions, please refer to data sheet “Chip resistors packing”.\nFUNCTIONAL DESCRIPTION\nOOPPEERRAATTIINNGG TTEEMMPPEERRAATTUURREE RRAANNGGEE\nRC0402 to RC2512 Range: -55℃ to +155℃ (Fig. 10-1)\nPmax MRA632\n(%Prated)"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "Pmax MRA632\n(%Prated)\nRC0075 to RC0201 Range: -55℃ to +125℃ (Fig. 10-2)\n100\nPPOOWWEERR RRAATTIINNGG\nEach type rated power at 70℃: 50\nRC0075=1/50W\nRC0100=1/32W\nRC0201=1/20W 0\n-55 0 50 70 100 155\nRC0402=1/16W, 1/8W\nRC0603=1/10W, 1/5W\nTamb(°C)\nRC0805=1/8W, 1/4W Fig. 10-1 Maximum dissipation (P) in percentage of rated\nRC1206=1/4W, 1/2W poweras a function o f the operating ambient\ntemperature (Tamb)\nRC1210=1/2W\nRC1218=1W\nRC2010=3/4W\nhandboPomk, ahxalfpage MLB206\nRC2512=1W, 2W (%Pr a t e d )"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "RC2512=1W, 2W (%Pr a t e d )\nRATED VOLTAGE 100\nThe DC or AC (rms) continuous working voltage\ncorresponding to the rated power is determined by the\n50\nfollowing formula:\nV = (PxR)\n0\nor max. working voltage whichever is less 55 0 50 70 100 125\nWhere\nTamb(o C)\nV = Continuous rated DC or AC (rms) working voltage (V) Fig. 10-2 Maximum dissipation (P) in percentage of rated\nP = Rated power (W) poweras a function o f the operating ambient\ntemperature (Tamb)\nR = Resistance value (Ω)\nwww.yageogroup.com"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "R = Resistance value (Ω)\nwww.yageogroup.com\nNov. 14, 2025 V.14Product specification 8\nChip Resistor Surface Mount RC_L SERIES 0075 to 2512 11\nTESTS AND REQUIREMENTS\nTable 5 Test condition, procedure and requirements\nTEST TEST METHOD PROCEDURE REQUIREMENTS\nTemperature MIL-STD-202 Method 304 At +25/–55°C and +25/+125°C Refer to table 2\nCoefficient of\nResistance Formula:\n(T.C.R.)\nR2−R1\nT.C.R= ×106 (ppm/°C)\nR1(t2−t1)\nWhere\nt =+25 °C or specified room temperature\n1"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "Where\nt =+25 °C or specified room temperature\n1\nt =–55 °C or +125 °C test temperature\n2\nR =resistance at reference temperature in ohms\n1\nR =resistance at test temperature in ohms\n2\nLife/ MIL-STD-202 Method 108 At 70±2°C for 1,000 hours; RCWV applied for 0075: ± (5%+100mΩ)\nEndurance IEC 60115-1 7.1 1.5 hours on and 0.5 hour off, still air required <100mΩ for jumper\n01005: ±(3% +50mΩ)\n<100mΩ for jumper\nOthers:\n±(1%+50mΩ) for B/D/F tol\n±(3%+50mΩ) for J tol\n<100mR for jumper"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "±(3%+50mΩ) for J tol\n<100mR for jumper\nHigh MIL-STD-202 Method 108 1,000 hours at maximum operating temperature 0075: ± (5%+100mΩ)\nTemperature depending on specification, unpowered. <100mΩ for jumper\nExposure 01005: ±(1% +50mΩ)\n< 50mΩ for jumper\nOthers:\n±(1%+50mΩ) for B/D/F tol\n±(2%+50mΩ) for J tol\n<50mR for jumper\nMoisture MIL-STD-202 Method 106 Each temperature / humidity cycle is defined at 0075: ± (2%+100mΩ)\nResistance 8 hours, 3 cycles / 24 hours for <100mΩ for jumper\n01005: ±(2% +50mΩ)"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "01005: ±(2% +50mΩ)\n10d with 25°C / 65°C 95% R.H, without steps\n< 100mΩ for jumper\n7a & 7b, unpowered\nOthers:\nParts mounted on test-boards, without\n±(0.5%+50mΩ) for B/ D/F tol\ncondensation on parts\n±(2%+50mΩ) for J tol\n<100mR for jumper\nHumidity IEC 60115-1 10.4 Steady state for 1000 hours at 40°C / 95% R.H. 0075: ± (5%+100mΩ)\nRCWV applied for 1.5 hours on and 01005: ±(3% +50mΩ)\n< 100mΩ for jumper\n0.5 hour off\nOthers:\n±(1%+50mΩ) for B/D/F tol\n±(2%+50mΩ) for J tol\n±(5%+50mΩ) for"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "±(2%+50mΩ) for J tol\n±(5%+50mΩ) for\n10MΩ≦R≦100MΩ (0201 J tol)\n<100mR for jumper\nwww.yageogroup.com\nNov. 14, 2025 V.14Product specification 9\nChip Resistor Surface Mount RC_L SERIES 0075 to 2512 11\nTEST TEST METHOD PROCEDURE REQUIREMENTS\nThermal MIL-STD-202 Method 107 -55/+125°C 0075/01005: ±(1% +50mΩ)\nShock Note Number of cycles required is 300. < 50mΩ for jumper\nDevices mounted Others:\nMaximum transfer time is 20 seconds. ±(0.5%+50mΩ) for B/D/F tol"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "Dwell time is 15 minutes. Air - Air ±(1%+50mΩ) for J tol\n< 50mR for jumper\nShort Time IEC 60115-1 8.1 2.5 times RCWV or maximum overload voltage 0075/01005: ±(2% +50mΩ)\nOverload which is less for 5 seconds at room temperature < 50mΩ for jumper\nOthers:\n±(1%+50mΩ) for B/D/F tol\n±(2%+50mΩ) for J tol\n<50mR for jumper\nNo visible damage\nBoard Flex/ IEC 60115-1 9.8 Device mounted or as described only 1 board 0075/01005: ±(1% +50mΩ)\nBending bending required < 50mΩ for jumper"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "Bending bending required < 50mΩ for jumper\nbending time: 60±5 seconds Others:\n±(1%+50mΩ) for B/D/F/J tol\n0075/0100/0201/0402:5mm;\n0603/0805:3mm; <50mR for jumper\n1206 and above:2mm No visible damage\nSolderability J-STD-002 test B1 Electrical Test not required Magnification 50X SMD Well tinned\n- Wetting conditions: (>95% covered)\n1st step: aging 4 hours at 155°C dry heat No visible damage\n2nd step: method B1, leadfree solder bath at\n245± 3°C\nDipping time: 3± 0.5 seconds"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "245± 3°C\nDipping time: 3± 0.5 seconds\n-Leaching J-STD-002 test D Leadfree solder ,260°C, 30 seconds immersion time No visible damage\n-Resistance to MIL-STD-202 Method 210 Condition B, no pre-heat of samples 0075: ± (3%+50mΩ)\nSoldering Leadfree solder, 260°C ±5°C, 10 ±1 seconds <50mΩ for jumper\nHeat immersion time 01005: ±(1% +50mΩ)\n< 50mΩ for jumper\nProcedure 2 for SMD: devices fluxed and\nOthers:\ncleaned with isopropanol\n±(0.5% +50mΩ) for B/D/F tol.\n±(1% +50mΩ) for J tol.\n<50mR for jumper"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "±(1% +50mΩ) for J tol.\n<50mR for jumper\nNo visible damage\nwww.yageogroup.com\nNov. 14, 2025 V.14Product specification 10\nChip Resistor Surface Mount RC_L SERIES 0075 to 2512 11\nR EVISION HISTORY\nREVISION DATE CHANGE NOTIFICATION DESCRIPTION\nTEMPERATURE COEFFICIENT\nVersion 1T4 YPE Oct. 22, 2025 - POWER TOL- EERxAteNndC REC 040R2E rSeISsiTstAanNceC rEa nRgAe NtoG 1E0 0Mohm\nOF RESISTANCE\nVersion 13 Aug. 13, 2025 - - Extend RC0201 resistance range to 100Mohm"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "0603 1/10W, 1/5W, 3/10W, 2/5W, 1/2W 5 mΩ≦ R < 100 mΩ\nVersion 12 Aug. 02, 2022 - - I2 dimension updated, for size 1206, size 2010, size 2512.\n0805 1/8W, 1/4W, 1/3W, 1/2W - Extend RC02014, RmC Ω 04 ≦ 02 ,R R <C 100600 3m, Ω RC 0805, RC1206 D tol resistance\nVersion 11 May 15, 2020 -\n1206 1/4W, 1/2W range to 1ohm 3 mΩ ≦ R < 100 mΩ\nVersion 10 Dec. 12, 2018 - - Updated 0075 dimensions\n1/2W, 1W\n- Add 0.5%/1% marking rule for RC0603 ~ RC2512 based on marking"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "Version 9 Mar.T 0h6e, 2r0e1s8is to-r s are constructed\ndatasheet\nusing outstanding TCR level\nVersion 8 July 10, 2017 - - Add \"3W\" part number coding for 13\" Reel & double power\nmaterial, which makes Yageo PF\nVersion 7 Mar.r 7e,s 2is0t1o7r s ex-c ellent for current - Add 10\" packing\nsensing application in battery\nVersion 6 Feb.15, 2017 - - Extend RC0805 and RC1206 resistance range to 100Mohm\ncharger circuit & DC-DC"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "charger circuit & DC-DC\nVersion 5 Oct.c 0o6n, v2e0r1t6e r. - - Description: Update Dimension of I2 of RC2512 (2W)\nVersion 4 Jan. 2T2h, e2 0c1o6m po-s ition of the resistive ±- U1%p date resistance range\nP Ver F sio n 3 2 01 D 0 ec m . 2 a 4 t , e 2 r 0 i 1 al 5 is a - djusted to give the -± U2%pd ated test an 5 d m re Ω qu ≦ ire m R e < n 1 ts 0 0 mΩ ± 75 ppm/°C\napproximate required resistance\n±5%\nVersion 2 Jul. 2a3n, d2 0is1 5c over- ed with a protective - Updated test and requirements"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "Version 1 Jan. 2c1o,a 2t0in1g5, wh-i ch printed with the - ESD Safe Reel update\nresistance value.\nVersion 0 Dec. 15, 2014 - - First issue of this specification\nFinally, the three external\nterminations (Ni / matte Tin) are\nadded, as shown in Fig. 4.\n1W, 2W 1 mΩ ≦ R < 100 mΩ\n2512\n3W 1 mΩ ≦ R ≦ 50 mΩ\n4527 2W, 3W, 5W 6 mΩ ≦ R < 1Ω\nNOTE: 1. PLEASE CONTACT WITH SALES OFFICES, DISTRIBUTORS AND REPRESENTATIVES IN YOUR REGION BEFORE ORDERING\nwww.yageogroup.com\nNov. 14, 2025 V.14Product specification 11"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "Nov. 14, 2025 V.14Product specification 11\nChip Resistor Surface Mount RC_L SERIES 0075 to 2512 11\nLEGAL DISCLAIMER\nYAGEO, its distributors and agents (collectively, “YAGEO”), hereby disclaims any and all liabilities for any\nerrors, inaccuracies or incompleteness contained in any product related information, including but not limited\nto product specifications, datasheets, pictures and/or graphics. YAGEO may make changes, modifications and/or"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "improvements to product related information at any time and without notice.\nYAGEO makes no representation, warranty, and/or guarantee about the fitness of its products for any\nparticular purpose or the continuing production of any of its products. To the maximum extent permitted by\nlaw, YAGEO disclaims (i) any and all liability arising out of the application or use of any YAGEO product, (ii)"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "any and all liability, including without limitation special, consequential or incidental damages, and (iii) any and all\nimplied warranties, including warranties of fitness for a particular purpose, non -infringement and\nmerchantability.\nYAGEO products are designed for general purpose applications under normal operation and usage conditions.\nPlease contact YAGEO for the applications listed below which require especially high reliability for the"
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "prevention of defects which might directly cause damage to the third party's life, body or property: Aerospace\nequipment (artificial satellite, rocket, etc.), Atomic energy-related equipment, Aviation equipment, Disaster\nprevention equipment, crime prevention equipment, Electric heating apparatus, burning equipment, Highly\npublic information network equipment, data-processing equipment , Medical devices, Military equipment, Power"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "generation control equipment, Safety equipment, Traffic signal equipment, Transportation equipment and\nUndersea equipment, or for any other application or use in which the failure of YAGEO products could result\nin personal injury or death, or serious property damage. Particularly YAGEO Corporation and its affiliates\ndo not recommend the use of commercial or automotive grade products for high reliability\napplications or manned space flight."
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "applications or manned space flight.\nInformation provided here is intended to indicate product specifications only. YAGEO reserves all the rights\nfor revising this content without further notification, as long as products are unchanged. Any product change\nwill be announced by PCN.\nwww.yageogroup.com\nNov. 14, 2025 V.14"
+  }
+]

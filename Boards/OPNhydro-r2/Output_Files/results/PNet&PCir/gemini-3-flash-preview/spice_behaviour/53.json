@@ -1,0 +1,13 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /float_high maintain a voltage of 0V for the entire simulation?",
+    "tool_calls": {
+        "arguments": "{\"net_name\":\"/float_high\",\"expected_voltage\":\"0V\",\"spice_circuit_file\":\"./outputs/OPNhydro-r2/OPNhydro_r2_SPICE_circuit.json\"}",
+        "name": "calculate_spice_behaviour"
+    },
+    "response": {
+        "answer": "NO",
+        "reasoning": "The SPICE simulation results indicate that the voltage on the /float_high net does not remain at a constant 0V throughout the entire duration of the simulation.",
+        "is_final": true
+    }
+}

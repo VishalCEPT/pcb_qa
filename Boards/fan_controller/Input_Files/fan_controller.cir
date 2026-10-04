@@ -1,0 +1,20 @@
+.title KiCad schematic
+
+R4 TACH /TACH_IN 1k
+R5 /PWM_OUT PWM 1k
+R2 PWM Net-_Q2-B_ 1k
+R3 +5V RST 10k
+R1 VCC Net-_Q1-G_ 10k
+C2 +5V 0 100n
+C1 VCC 0 100n
+ 
+V_5V +5V 0 DC 5.0
+V_VCC VCC 0 DC 5.0
+
+.control 
+tran 100u 10m 
+set filetype=ascii 
+write ./outputs/spice_circuits/fan_controller_raw.raw all 
+.endc 
+
+.end

@@ -1,0 +1,32 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component TP5 connected to Net__D4_A_?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "In controller.kicad_sch, TP5 is a test point labeled \u201cTP5 TestPoint\u201d and it is not wired to the Net labeled \u201cNet__D4_A_\u201d (D4_A appears as a pin/label at the connector area but TP5 has its own connection).",
+        "is_final": true
+    },
+    "usage_stats": {
+        "prompt_tokens": 6254,
+        "completion_tokens": 86,
+        "total_tokens": 6340,
+        "cost": 0.0013583,
+        "is_byok": false,
+        "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+        },
+        "cost_details": {
+            "upstream_inference_cost": 0.0013583,
+            "upstream_inference_prompt_cost": 0.0012508,
+            "upstream_inference_completions_cost": 0.0001075
+        },
+        "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+        }
+    }
+}

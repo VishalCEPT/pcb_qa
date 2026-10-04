@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component Q2 connected to Display_Power_Switch?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to net 9 in the netlist, pin 3 (Drain) of component Q2 is connected to the 'Display_Power_Switch' net.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,606 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "IIS2MDC\nHigh-accuracy, ultra-low-power, 3-axis\ndigital output magnetometer\nDatasheet - production data\nDescription\nThe IIS2MDC is a high-accuracy, ultra-low-power\n3-axis digital magnetic sensor.\nThe IIS2MDC has a magnetic field dynamic range\nup to ±50 gauss.\nThe IIS2MDC includes an I2C serial bus interface\n(cid:47)(cid:42)(cid:36)(cid:16)(cid:20)(cid:21)(cid:3)(cid:11)(cid:21)(cid:17)(cid:19)(cid:91)(cid:21)(cid:17)(cid:19)(cid:91)(cid:19)(cid:17)(cid:26)(cid:3)(cid:80)(cid:80)(cid:12)"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "that supports standard, fast mode, fast mode\nplus, and high-speed (100 kHz, 400 kHz,\n1 MHz, and 3.4 MHz) and an SPI serial standard\nFeatures\ninterface.\n 3 magnetic field channels The device can be configured to generate an\ninterrupt signal for magnetic field detection.\n Up to ±50 gauss magnetic dynamic range\n 16-bit data output The IIS2MDC is available in a plastic land grid\narray package (LGA) and is guaranteed to\n SPI/I2C serial interfaces\noperate over an extended temperature range"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "operate over an extended temperature range\n Analog supply voltage 1.71 V to 3.6 V from -40 °C to +85 °C.\n Selectable power mode/resolution\nTable 1. Device summary\n Single measurement mode up to 150 Hz\nTemp.\n Support for hard-iron compensation Part number Package Packaging\nrange [°C]\n Programmable interrupt generator\nTape and\n Embedded self-test IIS2MDCTR -40 to +85 LGA-12\nreel\n Embedded temperature sensor\n ECOPACK®, RoHS and “Green” compliant\nApplications"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "Applications\n Anti-tampering in smart meters\n Positional and distance sensors\n Compasses for Inertial Measurement Unit\n(IMU)\n Presence detection, magnetic switches\n Variable magnetic field monitoring\nSeptember 2017 DocID030986 Rev 1 1/40\nThis is information on a product in full production. www.st.comContents IIS2MDC\nContents\n1 Block diagram and pin description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "1.1 Block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7\n1.2 Pin description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7\n2 Module specifications . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9\n2.1 Sensor characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "2.2 Temperature sensor characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10\n2.3 Electrical characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10\n2.4 Communication interface characteristics . . . . . . . . . . . . . . . . . . . . . . . . . 11\n2.4.1 SPI - serial peripheral interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "2.4.2 I2C - inter-IC control interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .12\n2.5 Absolute maximum ratings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14\n3 Terminology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15\n3.1 Sensitivity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "3.2 Zero-gauss level . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15\n3.3 Magnetic dynamic range . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15\n4 Functionality . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16\n4.1 Power modes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "4.2 IC interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18\n4.3 Factory calibration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18\n5 Application hints . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19\n5.1 Soldering information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "5.2 High-current wiring effects . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21\n5.3 Startup sequence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21\n6 Digital interfaces . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22\n6.1 I2C serial interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "6.1.1 I2C operation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .23\n6.2 SPI bus interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25\n6.2.1 SPI write . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .25\n2/40 DocID030986 Rev 1IIS2MDC Contents\n6.2.2 SPI read . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .26"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "7 Register mapping . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27\n8 Register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29\n8.1 OFFSET_X_REG_L (45h) and OFFSET_X_REG_H (46h) . . . . . . . . . . . 29\n8.2 OFFSET_Y_REG_L (47h) and OFFSET_Y_REG_H (48h) . . . . . . . . . . . 29\n8.3 OFFSET_Z_REG_L (49h) and OFFSET_Z_REG_H (4Ah) . . . . . . . . . . . 29"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "8.4 WHO_AM_I (4Fh) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29\n8.5 CFG_REG_A (60h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30\n8.6 CFG_REG_B (61h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31\n8.7 CFG_REG_C (62h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "8.8 INT_CTRL_REG (63h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32\n8.9 INT_SOURCE_REG (64h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33\n8.10 INT_THS_L_REG (65h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33\n8.11 INT_THS_H_REG (66h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "8.12 STATUS_REG (67h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34\n8.13 OUTX_L_REG, OUTX_H_REG (68h - 69h) . . . . . . . . . . . . . . . . . . . . . . . 34\n8.14 OUTY_L_REG, OUTY_H_REG (6Ah - 6Bh) . . . . . . . . . . . . . . . . . . . . . . 35\n8.15 OUTZ_L_REG, OUTZ_H_REG (6Ch - 6Dh) . . . . . . . . . . . . . . . . . . . . . . 35\n8.16 TEMP_OUT_L_REG (6Eh), TEMP_OUT_H_REG (6Fh) . . . . . . . . . . . . . 35"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "9 Package information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36\n9.1 LGA-12 package information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36\n9.2 LGA-12 packing information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37\n10 Revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39\nDocID030986 Rev 1 3/40\n40List of tables IIS2MDC\nList of tables"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "40List of tables IIS2MDC\nList of tables\nTable 1. Device summary. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .1\nTable 2. Pin description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .8\nTable 3. Sensor characteristics. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .9"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "Table 4. Temperature sensor characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .10\nTable 5. Electrical characteristics. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .10\nTable 6. SPI slave timing values. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .11"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "Table 7. I2C slave timing values (standard and fast mode) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .12\nTable 8. I2C slave timing values (fast mode plus and high speed). . . . . . . . . . . . . . . . . . . . . . . . . .12\nTable 9. Absolute maximum ratings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .14"
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "Table 10. RMS noise of operating modes. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .16\nTable 11. Current consumption of operating modes. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .16\nTable 12. Operating mode and turn-on time. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .17\nTable 13. Maximum ODR in single measurement mode (HR and LP modes). . . . . . . . . . . . . . . . . .17"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "Table 14. Internal pin status. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .20\nTable 15. Serial interface pin description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .22\nTable 16. I2C terminology. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .22"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "Table 17. Transfer when master is writing one byte to slave . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .23\nTable 18. Transfer when master is writing multiple bytes to slave . . . . . . . . . . . . . . . . . . . . . . . . . . .23\nTable 19. Transfer when master is receiving (reading) one byte of data from slave . . . . . . . . . . . . .23\nTable 20. Transfer when master is receiving (reading) multiple bytes of data from slave . . . . . . . . .23"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "Table 21. SAD + Read/Write patterns . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .24\nTable 22. Register address map. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .27\nTable 23. CFG_REG_A register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .30"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "Table 24. CFG_REG_A register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .30\nTable 25. Output data rate configuration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .30\nTable 26. Mode of operation. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .30"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "Table 27. CFG_REG_B_M register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .31\nTable 28. CFG_REG_B_M register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .31\nTable 29. Digital low-pass filter. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .31"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "Table 30. CFG_REG_C register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .32\nTable 31. CFG_REG_C register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .32\nTable 32. INT_CRTL_REG register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .32"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "Table 33. INT_CTRL_REG register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .32\nTable 34. INT_SOURCE_REG register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .33\nTable 35. INT_SOURCE_REG register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .33"
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "Table 36. INT_THS_L_REG register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .33\nTable 37. INT_THS_L_REG register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .33\nTable 38. INT_THS_H_REG register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .33"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "Table 39. INT_THS_H_REG register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .33\nTable 40. STATUS_REG register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .34\nTable 41. STATUS_REG register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .34"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "Table 42. OUTX_L_REG register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .34\nTable 43. OUTX_H_REG register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .34\nTable 44. OUTY_L_REG register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .35"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "Table 45. OUTY_H_REG register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .35\nTable 46. OUTZ_L_REG register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .35\nTable 47. OUTZ_H_REG register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .35"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "Table 48. Reel dimensions for carrier tape of LGA-12 package. . . . . . . . . . . . . . . . . . . . . . . . . . . . .38\n4/40 DocID030986 Rev 1IIS2MDC List of tables\nTable 49. Document revision history. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .39\nDocID030986 Rev 1 5/40\n40List of figures IIS2MDC\nList of figures"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "40List of figures IIS2MDC\nList of figures\nFigure 1. Block diagram. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .7\nFigure 2. Pin connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .7\nFigure 3. SPI slave timing diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .11"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "Figure 4. I2C slave timing diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .13\nFigure 5. IIS2MDC electrical connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .19\nFigure 6. SPI write protocol . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .25"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "Figure 7. Multiple byte SPI write protocol (2-byte example). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .25\nFigure 8. SPI read protocol . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .26\nFigure 9. LGA-12 2.0 x 2.0 x 0.7 mm package outline and mechanical data. . . . . . . . . . . . . . . . . . .36"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "Figure 10. Carrier tape information for LGA-12 package. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .37\nFigure 11. LGA-12 package orientation in carrier tape . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .37\nFigure 12. Reel information for carrier tape of LGA-12 package. . . . . . . . . . . . . . . . . . . . . . . . . . . . .38\n6/40 DocID030986 Rev 1IIS2MDC Block diagram and pin description\n1 Block diagram and pin description\n1.1 Block diagram"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "1.1 Block diagram\nFigure 1. Block diagram\n(cid:59)(cid:14)\n(cid:60)(cid:14) (cid:38)(cid:43)(cid:36)(cid:53)(cid:42)(cid:40) (cid:44)(cid:21)(cid:38) (cid:38)(cid:54)\n(cid:61)(cid:14) (cid:36)(cid:48)(cid:51)(cid:47)(cid:44)(cid:41)(cid:44)(cid:40)(cid:53) (cid:54)(cid:38)(cid:47)(cid:18)(cid:54)(cid:51)(cid:38)\n(cid:44)(cid:3)(cid:11)(cid:48)(cid:12) (cid:54)(cid:51)(cid:44) (cid:54)(cid:39)(cid:36)(cid:18)(cid:54)(cid:39)(cid:44)(cid:18)(cid:54)(cid:39)(cid:50)"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "(cid:36)(cid:18)(cid:39)(cid:3) (cid:38)(cid:50)(cid:49)(cid:55)(cid:53)(cid:50)(cid:3)(cid:47)\n(cid:48)(cid:56)(cid:59) (cid:38)(cid:50)(cid:49)(cid:57)(cid:40)(cid:53)(cid:55)(cid:40)(cid:53) (cid:47)(cid:50)(cid:42)(cid:44)(cid:38)\n(cid:61)(cid:16)\n(cid:60)(cid:16) (cid:44)(cid:49)(cid:55)(cid:18)(cid:39)(cid:53)(cid:39)(cid:60)\n(cid:59)(cid:16)\n(cid:55)(cid:53)(cid:44)(cid:48)(cid:48)(cid:44)(cid:49)(cid:42)(cid:3) (cid:44)(cid:49)(cid:55)(cid:40)(cid:53)(cid:53)(cid:56)(cid:51)(cid:55)"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "(cid:55)(cid:40)(cid:48)(cid:51)(cid:17)(cid:3)(cid:54)(cid:40)(cid:49)(cid:54)(cid:50)(cid:53) (cid:54)(cid:40)(cid:47)(cid:41)(cid:3)(cid:55)(cid:40)(cid:54)(cid:55) (cid:38)(cid:44)(cid:53)(cid:38)(cid:56)(cid:44)(cid:55)(cid:54) (cid:38)(cid:47)(cid:50)(cid:38)(cid:46) (cid:42)(cid:40)(cid:49)(cid:40)(cid:53)(cid:36)(cid:55)(cid:50)(cid:53)\n1.2 Pin description\nFigure 2. Pin connections\n(cid:61)"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "Figure 2. Pin connections\n(cid:61)\n(cid:57)(cid:71)(cid:71)(cid:66)(cid:44)(cid:50) (cid:20)(cid:19) (cid:20)(cid:20) (cid:20)(cid:21) (cid:20) (cid:54)(cid:38)(cid:47)(cid:18)(cid:54)(cid:51)(cid:38)\n(cid:57)(cid:71)(cid:71) (cid:49)(cid:38)\n(cid:42)(cid:49)(cid:39) (cid:38)(cid:54)\n(cid:60)\n(cid:59)\n(cid:44)(cid:49)(cid:55)(cid:18)(cid:39)(cid:53)(cid:39)(cid:60) (cid:26) (cid:25) (cid:24) (cid:23) (cid:54)(cid:39)(cid:36)(cid:18)(cid:54)(cid:39)(cid:44)(cid:18)(cid:54)(cid:39)(cid:50)"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "(cid:55)(cid:50)(cid:51)(cid:3)(cid:57)(cid:44)(cid:40)(cid:58)\n(cid:39)(cid:44)(cid:53)(cid:40)(cid:38)(cid:55)(cid:44)(cid:50)(cid:49)(cid:3)(cid:50)(cid:41)\n(cid:39)(cid:40)(cid:55)(cid:40)(cid:38)(cid:55)(cid:36)(cid:37)(cid:47)(cid:40)\n(cid:48)(cid:36)(cid:42)(cid:49)(cid:40)(cid:55)(cid:44)(cid:38)(cid:3)(cid:41)(cid:44)(cid:40)(cid:47)(cid:39)(cid:54)\n(cid:11)(cid:37)(cid:50)(cid:55)(cid:55)(cid:50)(cid:48)(cid:3)(cid:57)(cid:44)(cid:40)(cid:58)(cid:12)\nDocID030986 Rev 1 7/40\n40"
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "DocID030986 Rev 1 7/40\n40\n(cid:38)(cid:49)\n(cid:39)(cid:49)(cid:42)\n(cid:38)(cid:49)\n(cid:20)(cid:38)Block diagram and pin description IIS2MDC\nTable 2. Pin description\nPin# Name Function\nSCL I2C serial clock (SCL)\n1\nSPC SPI serial port clock (SPC)\n2 NC Internally not connected. Can be tied to Vdd, Vdd_IO or GND.\nI2C/SPI mode selection\n3 CS (1: SPI idle mode / I2C communication enabled;\n0: SPI communication mode / I2C disabled)\nSDA I2C serial data (SDA)\n4 SDI SPI serial data input (SDI)"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "4 SDI SPI serial data input (SDI)\nSDO 3-wire interface serial data output (SDO)\n5 C1 Capacitor connection (C1 = 220 nF)\n6 GND Connected to GND\n7 INT/DRDY Interrupt/data-ready signal\n8 GND 0 V\n9 Vdd Power supply\n10 Vdd_IO Power supply for I/O pins\n11 NC Internally not connected. Can be tied to Vdd, Vdd_IO or GND.\n12 NC Internally not connected. Can be tied to Vdd, Vdd_IO or GND.\n8/40 DocID030986 Rev 1IIS2MDC Module specifications\n2 Module specifications\n2.1 Sensor characteristics"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "2.1 Sensor characteristics\n@ Vdd = 2.5 V, T = 25 °C unless otherwise noted(a).\nTable 3. Sensor characteristics\nSymbol Parameter Test conditions Min.(1) Typ.(2) Max.(1) Unit\nFS Magnetic dynamic range(3) ±25 ±49.152 gauss\nmgauss/\nSo Sensitivity(4) -7% 1.5 +7%\nLSB\nSensitivity change vs.\nTCSo ±0.03 %/°C\ntemperature(5)\nTyOff Magnetic sensor offset With offset cancellation(6)(7) -60 +60 mgauss\nMagnetic sensor offset\nTCOff With offset cancellation -0.3 +0.3 mgauss/°C\nchange vs. temp.(6)\nmgauss"
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "change vs. temp.(6)\nmgauss\nRMS RMS noise(8) High-resolution mode 3 4.6\n(RMS)\n10\n20\nODR Output data rate 50 Hz\n100\n150(9)\nST Self-test(10) 15 500 mgauss\nTop Operating temperature range -40 +85 °C\n1. Min/Max values are based on characterization results, not tested in production and not guaranteed.\n2. Typical specifications are not guaranteed.\n3. The typical value of the magnetic dynamic range applies when the magnetic field is fully aligned with one of the sensitive"
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "axes. In presence of a stray field in the cross-axis direction, the magnetic dynamic range (max module) can decrease down\nto the min value.\n4. Values after factory calibration test and trimming.\n5. Measurements are performed in a uniform temperature setup and they are based on characterization data in a limited\nnumber of samples, not measured during final test for production.\n6. Based on characterization data on a limited number of samples, not measured during final test for production."
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "7. Excluding drift due to magnetic shock.\n8. With low-pass filter or offset cancellation enabled.\n9. LP, single measurement mode.\n10. “Self-test” is defined as: OUTPUT[gauss] - OUTPUT[gauss]\n(Self-test enabled) (Self-test disabled).\na. The product is factory calibrated at 2.5 V. The operational power supply range is from 1.71 V to 3.6 V.\nDocID030986 Rev 1 9/40\n40Module specifications IIS2MDC\n2.2 Temperature sensor characteristics\n@ Vdd = 2.5 V, T = 25 °C unless otherwise noted (b)."
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "Table 4. Temperature sensor characteristics\nSymbol Parameter Test conditions Min. Typ.(1) Max. Unit\nTSDr Temperature sensor output change vs. temp. 8 digit/°C(2)\nTODR Temperature refresh rate ODR(3) Hz\nTop Operating temperature range -40 +85 °C\n1. Typical specifications are not guaranteed.\n2. 12-bit resolution.\n3. Refer to Table 25.\n2.3 Electrical characteristics\n@ Vdd = 2.5 V, T = 25 °C unless otherwise noted.(b)\nTable 5. Electrical characteristics"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "Table 5. Electrical characteristics\nSymbol Parameter Test conditions Min. Typ.(1) Max. Unit\nVdd Supply voltage 1.71 2.5 3.6 V\nVdd_IO Module power supply for I/O 1.71 3.6 V\nCurrent consumption in\nIdd_HR ODR = 100 Hz 1130 μA\nhigh-resolution mode(2)\nCurrent consumption in\nIdd_LP ODR = 10 Hz 25 μA\nlow-power mode(3)\nIdd_PD Current consumption in power-down 1.5 μA\nVIH Digital high-level input voltage 0.8*Vdd_IO V\nVIL Digital low-level input voltage 0.2*Vdd_IO V"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "VIL Digital low-level input voltage 0.2*Vdd_IO V\nVOH High-level output voltage IOH = 4 mA Vdd_IO - 0.2 V\nVOL Low-level output voltage IOL = 4 mA 0.2 V\nT Operating temperature range -40 +85 °C\nOP\n1. Typical specifications are not guaranteed.\n2. Offset cancellation turned on.\n3. Offset cancellation turned off.\nb. The product is factory calibrated at 2.5 V.The operational power supply range is from 1.71 V to 3.6 V.\n10/40 DocID030986 Rev 1IIS2MDC Module specifications"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "2.4 Communication interface characteristics\n2.4.1 SPI - serial peripheral interface\nSubject to general operating conditions for Vdd and Top.\nTable 6. SPI slave timing values\nValue (1)\nSymbol Parameter Unit\nMin Max\nt c(SPC) SPI clock cycle 100 ns\nf c(SPC) SPI clock frequency 10 MHz\nt su(CS) CS setup time 5\nt h(CS) CS hold time 20\nt su(SI) SDI input setup time 5\nt h(SI) SDI input hold time 15 ns\nt v(SO) SDO valid output time 50\nt h(SO) SDO output hold time 5\nt dis(SO) SDO output disable time 50"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "t dis(SO) SDO output disable time 50\nFigure 3. SPI slave timing diagram\nNote: Values are guaranteed at 10 MHz clock frequency for SPI with 3 wires, based on\ncharacterization results, not tested in production.\nMeasurement points are done at 0.2·Vdd_IO and 0.8·Vdd_IO, for both input and output\nports.\nDocID030986 Rev 1 11/40\n40Module specifications IIS2MDC\n2.4.2 I2C - inter-IC control interface\nSubject to general operating conditions for Vdd and Top."
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "Table 7. I2C slave timing values (standard and fast mode)\nI2C standard mode (1) I2C fast mode (1)\nSymbol Parameter Unit\nMin Max Min Max\nf (SCL) SCL clock frequency 0 100 0 400 kHz\nt w(SCLL) Low period of the SCL clock 4.7 1.3\nμs\nt w(SCLH) High period of the SCL clock 4.0 0.6\nt su(SDA) Data setup time 250 100 ns\nt h(SDA) Data hold time 0 3.45 0 0.9\nt h(ST) START condition hold time 4 0.6\nt su(SR) Setup time for a repeated START condition 4.7 0.6 μs\nt su(SP) Setup time for STOP condition 4 0.6"
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "t su(SP) Setup time for STOP condition 4 0.6\nt w(SP:SR) Bus free time between STOP and START condition 4.7 1.3\n1. Data based on standard I2C protocol requirement, not tested in production.\nTable 8. I2C slave timing values (fast mode plus and high speed)\nI2C fast mode\nI2C high speed(1)\nplus(1)\nSymbol Parameter Unit\nMin Max Min Max\nf SCL clock frequency 0 1 0 3.4 MHz\n(SCL)\nt Low period of the SCL clock 0.5 0.16\nw(SCLL)\nμs\nt High period of the SCL clock 0.26 0.06\nw(SCLH)\nt Data setup time 50 10 ns"
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "w(SCLH)\nt Data setup time 50 10 ns\nsu(SDA)\nt Data hold time 0 0 0.07\nh(SDA)\nt START condition hold time 0.26 0.16\nh(ST)\nt su(SR) Setup time for a repeated START condition 0.26 0.16 μs\nt Setup time for STOP condition 0.26 0.16\nsu(SP)\nt w(SP:SR) Bus free time between STOP and START condition 0.5\n1. Data based on standard I2C protocol requirement, not tested in production.\n12/40 DocID030986 Rev 1IIS2MDC Module specifications\nFigure 4. I2C slave timing diagram"
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "Figure 4. I2C slave timing diagram\n(cid:53)(cid:40)(cid:51)(cid:40)(cid:36)(cid:55)(cid:40)(cid:39)\n(cid:54)(cid:55)(cid:36)(cid:53)(cid:55)\n(cid:54)(cid:55)(cid:36)(cid:53)(cid:55)\n(cid:87)\n(cid:86)(cid:88)(cid:11)(cid:54)(cid:53)(cid:12)\n(cid:54)(cid:39)(cid:36)\n(cid:87)(cid:90)(cid:11)(cid:54)(cid:51)(cid:29)(cid:54)(cid:53)(cid:12) (cid:54)(cid:55)(cid:36)(cid:53)(cid:55)\n(cid:87)\n(cid:86)(cid:88)(cid:11)(cid:54)(cid:39)(cid:36)(cid:12)"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "(cid:87)(cid:75)(cid:11)(cid:54)(cid:39)(cid:36)(cid:12)\n(cid:87) (cid:54)(cid:55)(cid:50)(cid:51)\n(cid:86)(cid:88)(cid:11)(cid:54)(cid:51)(cid:12)\n(cid:54)(cid:38)(cid:47)\n(cid:87)(cid:75)(cid:11)(cid:54)(cid:55)(cid:12) (cid:87)(cid:90)(cid:11)(cid:54)(cid:38)(cid:47)(cid:47)(cid:12) (cid:87)(cid:90)(cid:11)(cid:54)(cid:38)(cid:47)(cid:43)(cid:12)\nNote: Measurement points are done at 0.2·Vdd_IO and 0.8·Vdd_IO, for both ports.\nDocID030986 Rev 1 13/40\n40Module specifications IIS2MDC"
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "40Module specifications IIS2MDC\n2.5 Absolute maximum ratings\nStresses above those listed as “absolute maximum ratings” may cause permanent damage\nto the device. This is a stress rating only and functional operation of the device under these\nconditions is not implied. Exposure to maximum rating conditions for extended periods may\naffect device reliability.\nTable 9. Absolute maximum ratings\nSymbol Ratings Maximum value Unit\nVdd Supply voltage -0.3 to 4.8 V"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "Vdd Supply voltage -0.3 to 4.8 V\nVdd_IO I/O pins supply voltage -0.3 to 4.8 V\nInput voltage on any control pin\nVin -0.3 to Vdd_IO +0.3 V\n(CS, SCL/SPC, SDA/SDI/SDO)\nM Maximum exposed field 10000 gauss\nEF\nT Operating temperature range -40 to +85 °C\nOP\nT Storage temperature range -40 to +125 °C\nSTG\nESD Electrostatic discharge protection (HBM) 2 kV\nNote: Supply voltage on any pin should never exceed 4.8 V.\nThis device is sensitive to mechanical shock, improper handling can cause"
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "permanent damage to the part.\nThis device is sensitive to electrostatic discharge (ESD), improper handling can\ncause permanent damage to the part.\n14/40 DocID030986 Rev 1IIS2MDC Terminology\n3 Terminology\n3.1 Sensitivity\nSensitivity describes the ratio of the output digital data expressed in LSB units and the\napplied magnetic field expressed in mG (milligauss). It can be measured, for example, by\napplying a known magnetic field along one axis and measuring the digital output of the\ndevice."
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "device.\n3.2 Zero-gauss level\nZero-gauss level offset (TyOff) describes the deviation of an actual output signal from the\nideal output if no magnetic field is present.\n3.3 Magnetic dynamic range\nThe magnetic dynamic range of the sensor can be fully exploited when the applied magnetic\nfield is entirely aligned with one of the sensitive axes of the sensor.\nIn the presence of a stray field in the cross-axis direction, the exploitable magnetic dynamic\nrange (maximum module) can decrease."
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "range (maximum module) can decrease.\nDocID030986 Rev 1 15/40\n40Functionality IIS2MDC\n4 Functionality\n4.1 Power modes\nThe IIS2MDC provides two different power modes: high-resolution and low-power modes.\nThe tables below summarize the RMS noise values and current consumption in different\nproduct configurations.\nWhen the low-pass filter is enabled, the bandwidth is reduced while noise performance is\nimproved without any increase in power consumption.\nTable 10. RMS noise of operating modes"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "Table 10. RMS noise of operating modes\n(CFG_REG_A[LP = 0]) (CFG_REG_A[LP = 1])\nCFG_REG_B[LPF]\nhigh-resolution mode low-power mode\nor\nCFG_REG_B[OFF_CANC]\nBW [Hz] Noise RMS [mg] BW [Hz] Noise RMS [mg]\n0 (disable) ODR/2 4.5 ODR/2 9\n1 (enable) ODR/4 3 ODR/4 6\nTable 11. Current consumption of operating modes\nCurrent consumption Current consumption Current consumption Current consumption\n(μA) (μA) (μA) (μA)\n(CFG_REG_A (CFG_REG_A (CFG_REG_A (CFG_REG_A\nODR\n[LP] = 0) [LP] = 1) [LP] = 0) [LP] = 1)\n(Hz)"
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "ODR\n[LP] = 0) [LP] = 1) [LP] = 0) [LP] = 1)\n(Hz)\nhigh-resolution low-power high-resolution low-power\nCFG_REG_B CFG_REG_B CFG_REG_B CFG_REG_B\n[OFF_CANC] = 0 [OFF_CANC] = 0 [OFF_CANC] = 1 [OFF_CANC] = 1\n10 100 25 120 50\n20 200 50 235 100\n50 475 125 575 235\n100 950 250 1130 460\n16/40 DocID030986 Rev 1IIS2MDC Functionality\nThe following table summarizes the turn-on time of the device in the two different power\nmodes with the offset cancellation function enabled or disabled (see Section : Where"
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "Current_consumption_in_power_down and Current_consumption_10Hz can be found,\nrespectively, in Table 5 and Table 11.).\nTable 12. Operating mode and turn-on time\nOperating mode Turn-on time\nCFG_REG_A[LP] CFG_REG_A[OFF_CANC = 0] CFG_REG_A[OFF_CANC = 1]\n0 (high-resolution) 9.4 ms 9.4 ms + 1/ODR\n1 (low-power) 6.4 ms 6.4 ms + 1/ODR\nThe IIS2MDC offers single measurement mode in both high-resolution and low-power\nmodes."
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "modes.\nSingle measurement mode is enabled by writing bits MD[1:0] to '01' in CFG_REG_A (60h).\nIn single measurement mode, once the measurement has been performed, the DRDY pin is\nset to high, data is available in the output register and the IIS2MDC is automatically\nconfigured in idle mode by setting the MD[1] bit to '1'.\nSingle measurement is independent of the programmed ODR but depends on the frequency\nat which the MD[1:0] bits are written by the microcontroller/application processor."
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "Maximum ODR frequency achievable in single mode measurement is given in the following\ntable.\nTable 13. Maximum ODR in single measurement mode (HR and LP modes)\nMaximum ODR Power mode (CFG_REG_A[LP])\n100 Hz High resolution (LP = ‘0’)\n150 Hz Low power (LP = ‘1’)\nIn single measurement mode, for ODR < 10 Hz, current consumption can be calculated with\nthe following formula:\n(Current_consumption_10Hz - Current_consumption_in_power_down) / (10 Hz / ODR) +\nCurrent_consumption_in_power_down"
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "Current_consumption_in_power_down\nWhere Current_consumption_in_power_down and Current_consumption_10Hz can be\nfound, respectively, in Table 5 and Table 11.\nDocID030986 Rev 1 17/40\n40Functionality IIS2MDC\n4.2 IC interface\nThe complete measurement chain is composed of a low-noise capacitive amplifier which\nconverts the capacitive unbalancing of the MEMS sensor into an analog voltage using an\nanalog-to-digital converter."
+  },
+  {
+    "faiss_index_id": 68,
+    "text": "analog-to-digital converter.\nThe magnetic data may be accessed through an I2C/SPI interface thus making the device\nparticularly suitable for direct interfacing with a microcontroller.\nThe IIS2MDC features a data-ready signal which indicates when new sets of measured\nmagnetic data are available, thus simplifying data synchronization in the digital system that\nuses the device.\n4.3 Factory calibration\nThe IC interface is factory calibrated for sensitivity (So) and Zero-gauss level (TyOff)."
+  },
+  {
+    "faiss_index_id": 69,
+    "text": "The trim values are stored inside the device in nonvolatile memory. Anytime the device is\nturned on, the trim parameters are downloaded into the registers to be used during active\noperation. This allows using the device without further calibration.\n18/40 DocID030986 Rev 1IIS2MDC Application hints\n5 Application hints\nFigure 5. IIS2MDC electrical connections\n(cid:57)(cid:71)(cid:71)(cid:66)(cid:44)(cid:50)\n(cid:57)(cid:71)(cid:71)\n(cid:38)(cid:21)(cid:32)(cid:20)(cid:19)(cid:151)(cid:41)"
+  },
+  {
+    "faiss_index_id": 70,
+    "text": "(cid:38)(cid:22)(cid:32)(cid:20)(cid:19)(cid:19)(cid:81)(cid:41)\n(cid:42)(cid:49)(cid:39)"
+  },
+  {
+    "faiss_index_id": 71,
+    "text": "(cid:39)(cid:76)(cid:74)(cid:76)(cid:87)(cid:68)(cid:79)(cid:3)(cid:86)(cid:76)(cid:74)(cid:81)(cid:68)(cid:79)(cid:3)(cid:73)(cid:85)(cid:82)(cid:80)(cid:18)(cid:87)(cid:82)(cid:3)(cid:86)(cid:76)(cid:74)(cid:81)(cid:68)(cid:79)(cid:3)(cid:70)(cid:82)(cid:81)(cid:87)(cid:85)(cid:82)(cid:79)(cid:79)(cid:72)(cid:85)(cid:17)(cid:3)(cid:54)(cid:76)(cid:74)(cid:81)(cid:68)(cid:79)(cid:79)(cid:72)(cid:89)(cid:72)(cid:79)(cid:86)(cid:3)(cid:68)(cid:85)(cid:72)(cid:3)(cid:71)(cid:72)(cid:73)(cid:76)(c"
+  },
+  {
+    "faiss_index_id": 72,
+    "text": ")(cid:72)(cid:3)(cid:71)(cid:72)(cid:73)(cid:76)(cid:81)(cid:72)(cid:71)(cid:3)(cid:69)(cid:92)(cid:3)(cid:83)(cid:85)(cid:82)(cid:83)(cid:72)(cid:85)(cid:3)(cid:86)(cid:72)(cid:79)(cid:72)(cid:70)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:82)(cid:73)(cid:3)(cid:57)(cid:71)(cid:71)(cid:66)(cid:44)(cid:50)(cid:17)"
+  },
+  {
+    "faiss_index_id": 73,
+    "text": "The device core is supplied through the Vdd line while the I/O pads are supplied through the\nVdd_IO line. Power supply decoupling capacitors (100 nF ceramic, 10 μF aluminum) should\nbe placed as near as possible to pin 9 of the device (common design practice).\nIt is possible to remove Vdd, maintaining Vdd_IO, without blocking the communication bus,\nin this condition the measurement chain is powered off.\nThe following recommendations apply to capacitor C1:"
+  },
+  {
+    "faiss_index_id": 74,
+    "text": " It must be connected as close as possible to pins 5 and 6 since very high current\npulses flow from C1 to pin 5 and 6. This avoids problems caused by inductive effects\ndue to the length of the copper strips.\n It is highly recommended to use low ESR (max 200 mOhm)\nThe functionality of the device and the measured acceleration data are selectable and\naccessible through the I2C or SPI interfaces. When using the I2C, CS must be tied high (i.e.\nconnected to Vdd_IO)."
+  },
+  {
+    "faiss_index_id": 75,
+    "text": "connected to Vdd_IO).\nThe functions, the threshold and the timing of the interrupt pin (INT) can be completely\nprogrammed by the user through the I2C/SPI interface.\nDocID030986 Rev 1 19/40\n40\n(cid:20)(cid:38)\n(cid:54)(cid:38)(cid:47)(cid:18)(cid:54)(cid:51)(cid:38)\n(cid:38)(cid:54)\n(cid:54)(cid:39)(cid:36)(cid:18)(cid:54)(cid:39)(cid:44)(cid:18)(cid:54)(cid:39)(cid:50)\n(cid:39)(cid:49)(cid:42)\n(cid:38)(cid:23)(cid:32)(cid:20)(cid:19)(cid:19)(cid:81)(cid:41)"
+  },
+  {
+    "faiss_index_id": 76,
+    "text": "(cid:20)(cid:21) (cid:20)(cid:20) (cid:57)(cid:71)(cid:71)(cid:66)(cid:44)(cid:50)\n(cid:20) (cid:20)(cid:19)\n(cid:57)(cid:71)(cid:71)\n(cid:49)(cid:38)\n(cid:55)(cid:50)(cid:51)(cid:3)(cid:57)(cid:44)(cid:40)(cid:58)\n(cid:42)(cid:49)(cid:39)\n(cid:44)(cid:49)(cid:55)(cid:18)(cid:39)(cid:53)(cid:39)(cid:60)\n(cid:23) (cid:26)\n(cid:24) (cid:25)\n(cid:38)(cid:20)(cid:38)(cid:3)(cid:32) (cid:20)(cid:32)(cid:3)(cid:21)(cid:20)(cid:21)(cid:19)(cid:19)(cid:19)(cid:81)(cid:81)(cid:41)(cid:41)"
+  },
+  {
+    "faiss_index_id": 77,
+    "text": "(cid:38)(cid:49) (cid:38)(cid:49)Application hints IIS2MDC\nTable 14. Internal pin status\nPin# Name Function Pin status\nSCL I2C serial clock (SCL)\n1 Default: input without pull-up\nSPC SPI serial port clock (SPC)\n2 NC Internally not connected\nI2C/SPI mode selection\n3 CS (1: SPI idle mode / I2C communication enabled; Default: input without pull-up\n0: SPI communication mode / I2C disabled)\nSDA I2C serial data (SDA)\n4 SDI SPI serial data input (SDI) Default: (SDA) input without pull-up"
+  },
+  {
+    "faiss_index_id": 78,
+    "text": "SDO 3-wire interface serial data output (SDO)\nExternal capacitor, voltage forced\n5 C1 Capacitor connection (C1 = 220 nF)\nby the device\n6 GND 0 V\n7 INT/DRDY Interrupt/data-ready signal Default: output high impedance\n8 GND 0 V\n9 Vdd Power supply\n10 Vdd_IO Power supply for I/O pins\n11 NC Internally not connected\n12 NC Internally not connected\nNote: In order to program INT/DRDY as a push-pull output, write the INT_on_PIN or\nDRDY_on_PIN bit to '1' in CFG_REG_C (62h)."
+  },
+  {
+    "faiss_index_id": 79,
+    "text": "DRDY_on_PIN bit to '1' in CFG_REG_C (62h).\nPlease refer to AN5080 for more information (magnetometer offset cancellation,\nmagnetometer hard-iron compensation, interrupt generation, self-test procedure,\nTemperature sensor).\n20/40 DocID030986 Rev 1IIS2MDC Application hints\n5.1 Soldering information\nThe LGA package is compliant with the ECOPACK®, RoHS and “Green” standards.\nIt is qualified for soldering heat resistance according to JEDEC J-STD-020."
+  },
+  {
+    "faiss_index_id": 80,
+    "text": "Land pattern and soldering recommendations are available at www.st.com.\n5.2 High-current wiring effects\nHigh current in wiring and printed circuit traces can be culprits in causing errors in magnetic\nfield measurements for compassing.\nConductor-generated magnetic fields will add to the Earth’s magnetic field, leading to errors\nin compass heading computation.\nKeep currents higher than 10 mA a few millimeters away from the sensor IC.\n5.3 Startup sequence"
+  },
+  {
+    "faiss_index_id": 81,
+    "text": "5.3 Startup sequence\nThe following general-purpose sequence can be used to configure the device:\n1. Write CFG_REG_A = 80h // Enable temperature compensation\n2. Write CFG_REG_C = 01h // Mag data-ready interrupt enable\nDocID030986 Rev 1 21/40\n40Digital interfaces IIS2MDC\n6 Digital interfaces\nThe registers embedded inside the IIS2MDC may be accessed through both the I2C and\n3-wire SPI serial interfaces.\nThe serial interfaces are mapped onto the same pads. To select/exploit the I2C interface, the"
+  },
+  {
+    "faiss_index_id": 82,
+    "text": "CS line must be tied high (i.e. connected to Vdd_IO).\nTable 15. Serial interface pin description\nPin name Pin description\nSPI enable\nCS I2C/SPI mode selection (1: SPI idle mode / I2C communication\nenabled; 0: SPI communication mode / I2C disabled)\nSCL I2C serial clock (SCL)\nSPC SPI serial port clock (SPC)\nSDA I2C serial data (SDA)\nSDI SPI serial data input (SDI)\nSDO 3-wire SPI interface serial data output (SDO)\n2\n6.1 I C serial interface"
+  },
+  {
+    "faiss_index_id": 83,
+    "text": "2\n6.1 I C serial interface\nThe IIS2MDC I2C is a bus slave. The I2C is employed to write data into registers whose\ncontent can also be read back.\nThe relevant I2C terminology is given in the table below.\nTable 16. I2C terminology\nTerm Description\nTransmitter The device which sends data to the bus\nReceiver The device which receives data from the bus\nThe device which initiates a transfer, generates clock signals and terminates a\nMaster\ntransfer\nSlave The device addressed by the master"
+  },
+  {
+    "faiss_index_id": 84,
+    "text": "transfer\nSlave The device addressed by the master\nThere are two signals associated with the I2C bus: the serial clock line (SCL) and the serial\ndata line (SDA). The latter is a bidirectional line used for sending and receiving the data\nto/from the interface. Both the lines must be connected to Vdd_IO through an external pull-\nup resistor. When the bus is free, both the lines are high.\nThe I2C interface is compliant with standard mode (100 kHz), fast mode (400 kHz), fast"
+  },
+  {
+    "faiss_index_id": 85,
+    "text": "mode plus (1 MHz) and high speed mode (3.4 MHz).\n22/40 DocID030986 Rev 1IIS2MDC Digital interfaces\n6.1.1 I2C operation\nThe transaction on the bus is started through a START (ST) signal. A START condition is\ndefined as a high-to-low transition on the data line while the SCL line is held high. After this\nhas been transmitted by the master, the bus is considered busy. The next byte of data\ntransmitted after the start condition contains the address of the slave in the first 7 bits and"
+  },
+  {
+    "faiss_index_id": 86,
+    "text": "the eighth bit tells whether the master is receiving data from the slave or transmitting data to\nthe slave. When an address is sent, each device in the system compares the first seven bits\nafter a start condition with its address. If they match, the device considers itself addressed\nby the master.\nData transfer with acknowledge is mandatory. The transmitter must release the SDA line\nduring the acknowledge pulse. The receiver must then pull the data line LOW so that it"
+  },
+  {
+    "faiss_index_id": 87,
+    "text": "remains stable low during the high period of the acknowledge clock pulse. A receiver which\nhas been addressed is obliged to generate an acknowledge after each byte of data\nreceived.\nThe I2C embedded inside the IIS2MDC behaves like a slave device and the following\nprotocol must be adhered to. After the start condition (ST) a slave address is sent, once a\nslave acknowledge (SAK) has been returned, an 8-bit sub-address (SUB) is transmitted: the"
+  },
+  {
+    "faiss_index_id": 88,
+    "text": "7 LSb represent the actual register address while the MSB enables address auto increment.\nIf the MSb of the SUB field is ‘1’, the SUB (register address) is automatically increased to\nallow multiple data read/writes.\nThe slave address is completed with a Read/Write bit. If the bit was ‘1’ (Read), a repeated\nSTART (SR) condition must be issued after the two sub-address bytes; if the bit is ‘0’ (Write)\nthe master will transmit to the slave with direction unchanged. Table 21 explains how the"
+  },
+  {
+    "faiss_index_id": 89,
+    "text": "SAD+read/write bit pattern is composed, listing all the possible configurations.\nTable 17. Transfer when master is writing one byte to slave\nMaster ST SAD + W SUB DATA SP\nSlave SAK SAK SAK\nTable 18. Transfer when master is writing multiple bytes to slave\nMaster ST SAD + W SUB DATA DATA SP\nSlave SAK SAK SAK SAK\nTable 19. Transfer when master is receiving (reading) one byte of data from slave\nMaster ST SAD + W SUB SR SAD + R NMAK SP\nSlave SAK SAK SAK DATA"
+  },
+  {
+    "faiss_index_id": 90,
+    "text": "Slave SAK SAK SAK DATA\nTable 20. Transfer when master is receiving (reading) multiple bytes of data from slave\nMaster ST SAD+W SUB SR SAD+R MAK MAK NMAK SP\nDAT\nSlave SAK SAK SAK DATA DATA\nA\nData are transmitted in byte format (DATA). Each data transfer contains 8 bits. The number\nof bytes transferred per transfer is unlimited. Data is transferred with the Most Significant bit\nDocID030986 Rev 1 23/40\n40Digital interfaces IIS2MDC"
+  },
+  {
+    "faiss_index_id": 91,
+    "text": "40Digital interfaces IIS2MDC\n(MSb) first. If a receiver can’t receive another complete byte of data until it has performed\nsome other function, it can hold the clock line SCL low to force the transmitter into a wait\nstate. Data transfer only continues when the receiver is ready for another byte and releases\nthe data line. If a slave receiver doesn’t acknowledge the slave address (i.e. it is not able to\nreceive because it is performing some real-time function) the data line must be left high by"
+  },
+  {
+    "faiss_index_id": 92,
+    "text": "the slave. The master can then abort the transfer. A low-to-high transition on the SDA line\nwhile the SCL line is high is defined as a STOP condition. Each data transfer must be\nterminated by the generation of a STOP (SP) condition.\nIn the presented communication format MAK is Master acknowledge and NMAK is No\nMaster Acknowledge.\nDefault address:\nThe slave address is 0011110b.\nThe slave address is completed with a Read/Write bit. If the bit was ‘1’ (Read), a repeated"
+  },
+  {
+    "faiss_index_id": 93,
+    "text": "START (SR) condition must be issued after the sub-address byte. If the bit is ‘0’ (Write) the\nmaster will transmit to the slave with direction unchanged. Table 21 explains how the\nSAD+Read/Write bit patterns are composed, listing all the possible configurations.\nTable 21. SAD + Read/Write patterns\nCommand SAD[6:0] R/W SAD + R/W\nRead 0011110 1 00111101 (3Dh)\nWrite 0011110 0 00111100 (3Ch)\n24/40 DocID030986 Rev 1IIS2MDC Digital interfaces\n6.2 SPI bus interface"
+  },
+  {
+    "faiss_index_id": 94,
+    "text": "6.2 SPI bus interface\nThe IIS2MDC SPI is a bus slave. The SPI allows writing and reading the registers of the\ndevice.\nThe serial interface interacts with the application using 3 wires: CS, SPC, SDI/O.\n6.2.1 SPI write\nFigure 6. SPI write protocol\nCS\nSPC\nSDI\nRW DI7 DI6 DI5 DI4 DI3 DI2 DI1 DI0\nAD6 AD5 AD4 AD3 AD2 AD1AD0\nThe SPI write command is performed with 16 clock pulses. The multiple byte write\ncommand is performed by adding blocks of 8 clock pulses to the previous one."
+  },
+  {
+    "faiss_index_id": 95,
+    "text": "bit 0: WRITE bit. The value is 0.\nbit 1-7: address AD(6:0). This is the address field of the indexed register.\nbit 8-15: data DI(7:0) (write mode). This is the data that is written inside the device (MSb\nfirst).\nbit 16-... : data DI(...-8). Further data in multiple byte writes.\nFigure 7. Multiple byte SPI write protocol (2-byte example)\nCS\nSPC\nSDI\nDI7 DI6 DI5 DI4 DI3 DI2 DI1 DI0 DI15 DI14 DI13 DI12 DI11 DI10 DI9 DI8\nRW\nAD6AD5 AD4AD3 AD2 AD1 AD0\nDocID030986 Rev 1 25/40"
+  },
+  {
+    "faiss_index_id": 96,
+    "text": "AD6AD5 AD4AD3 AD2 AD1 AD0\nDocID030986 Rev 1 25/40\n40Digital interfaces IIS2MDC\n6.2.2 SPI read\nFigure 8. SPI read protocol\nCS\nSPC\nSDI/O\nRW DO7 DO6 DO5 DO4 DO3 DO2 DO1 DO0\nAD6 AD5 AD4 AD3 AD2 AD1 AD0\nThe SPI read command is performed with 16 clock pulses. A multiple read is performed by\nadding blocks of 8 clock pulses to the previous one. The reading address is automatically\nincremented.\nbit 0: WRITE bit. The value is 1.\nbit 1-7: address AD(6:0). This is the address field of the indexed register."
+  },
+  {
+    "faiss_index_id": 97,
+    "text": "bit 8-15: data DO(7:0) (read mode). This is the data that is read from the device (MSb first).\nA multiple read command is available in 3-wire mode.\n26/40 DocID030986 Rev 1IIS2MDC Register mapping\n7 Register mapping\nThe table given below provides a list of the 8-bit registers embedded in the device and the\ncorresponding addresses.\nTable 22. Register address map\nRegister address\nName Type(1) Default Comment\nHex Binary\nReserved 00 - 44 Reserved\nOFFSET_X_REG_L R/W 45 01000101 00000000"
+  },
+  {
+    "faiss_index_id": 98,
+    "text": "OFFSET_X_REG_L R/W 45 01000101 00000000\nOFFSET_X_REG_H R/W 46 01000110 00000000\nOFFSET_Y_REG_L R/W 47 01000111 00000000\nHard-iron registers\nOFFSET_Y_REG_H R/W 48 01001000 00000000\nOFFSET_Z_REG_L R/W 49 01001001 00000000\nOFFSET_Z_REG_H R/W 4A 01001010 00000000\nRESERVED 4B-4C\nWHO_AM_I R 4F 01001111 01000000\nRESERVED 50-5F\nCFG_REG_A R/W 60 01100000 00000011\nConfiguration\nCFG_REG_B R/W 61 01100001 00000000\nregisters\nCFG_REG_C R/W 62 01100010 00000000\nINT_CRTL_REG R/W 63 01100011 11100000"
+  },
+  {
+    "faiss_index_id": 99,
+    "text": "INT_CRTL_REG R/W 63 01100011 11100000\nINT_SOURCE_REG R 64 01100100\nInterrupt\nINT_THS_L_REG R/W 65 01100101 00000000 configuration registers\nINT_THS_H_REG R/W 66 01100110 00000000\nSTATUS_REG R 67 01100111\nOUTX_L_REG R 68 01101000 output\nOUTX_H_REG R 69 01101001 output\nOUTY_L_REG R 6A 01101010 output\nOutput registers\nOUTY_H_REG R 6B 01101010 output\nOUTZ_L_REG R 6C 01101100 output\nOUTZ_H_REG R 6D 01101101 output\nTEMP_OUT_L_REG R 6E 01101110 output Temperature sensor"
+  },
+  {
+    "faiss_index_id": 100,
+    "text": "TEMP_OUT_H_REG R 6F 01101111 output registers\n1. R = read-only register, R/W = readable/writable register\nDocID030986 Rev 1 27/40\n40Register mapping IIS2MDC\nRegisters marked as Reserved must not be changed. Writing to those registers may cause\npermanent damage to the device.\nThe content of the registers that are loaded at boot should not be changed. They contain the\nfactory calibration values. Their content is automatically restored when the device is\npowered up."
+  },
+  {
+    "faiss_index_id": 101,
+    "text": "powered up.\n28/40 DocID030986 Rev 1IIS2MDC Register description\n8 Register description\n8.1 OFFSET_X_REG_L (45h) and OFFSET_X_REG_H (46h)\nThese registers comprise a 16-bit register and represent X hard-iron offset in order to\ncompensate environmental effects (data in two’s complement). These values act on the\nmagnetic output data value in order to delete the environmental offset.\n8.2 OFFSET_Y_REG_L (47h) and OFFSET_Y_REG_H (48h)"
+  },
+  {
+    "faiss_index_id": 102,
+    "text": "8.2 OFFSET_Y_REG_L (47h) and OFFSET_Y_REG_H (48h)\nThese registers comprise a 16-bit register and represent Y hard-iron offset in order to\ncompensate environmental effects (data in two’s complement). These values act on the\nmagnetic output data value in order to delete the environmental offset.\n8.3 OFFSET_Z_REG_L (49h) and OFFSET_Z_REG_H (4Ah)\nThese registers comprise a 16-bit register and represent Z hard-iron offset in order to"
+  },
+  {
+    "faiss_index_id": 103,
+    "text": "compensate environmental effects (data in two’s complement). These values act on the\nmagnetic output data value in order to delete the environmental offset.\n8.4 WHO_AM_I (4Fh)\nThe identification register is used to identify the device.\n0 1 0 0 0 0 0 0\nDocID030986 Rev 1 29/40\n40Register description IIS2MDC\n8.5 CFG_REG_A (60h)\nThe configuration register is used to configure the output data rate and the measurement\nconfiguration.\nTable 23. CFG_REG_A register\nCOMP_"
+  },
+  {
+    "faiss_index_id": 104,
+    "text": "configuration.\nTable 23. CFG_REG_A register\nCOMP_\nREBOOT SOFT_RST LP ODR1 ODR0 MD1 MD0\nTEMP_EN\nTable 24. CFG_REG_A register description\nCOMP_ Enables the magnetometer temperature compensation. Default value: 0\nTEMP_EN(1) (0: temperature compensation disabled; 1: temperature compensation enabled)\nREBOOT Reboot magnetometer memory content. Default value: 0\n(0: normal mode; 1: reboot memory content)\nSOFT_RST When this bit is set, the configuration registers and user registers are reset."
+  },
+  {
+    "faiss_index_id": 105,
+    "text": "Flash registers keep their values. Default value: 0\nLP Enables low-power mode. Default value: 0\n0: high-resolution mode 1: low-power mode enabled\nODR[1:0] Output data rate configuration (see Table 25: Output data rate configuration).\nDefault value: 00\nMD[1:0] These bits select the mode of operation of the device (see Table 26: Mode of\noperation). Default value: 11\n1. For proper operation, this bit must be set to '1'.\nTable 25. Output data rate configuration\nODR1 ODR0 ODR (Hz)\n0 0 10 (default)"
+  },
+  {
+    "faiss_index_id": 106,
+    "text": "ODR1 ODR0 ODR (Hz)\n0 0 10 (default)\n0 1 20\n1 0 50\n1 1 100\nTable 26. Mode of operation\nMD1 MD0 Mode\nContinuous mode. In continuous mode the device continuously performs\nmeasurements and places the result in the data register. The data-ready\n0 0 signal is generated when a new data set is ready to be read. This signal can\nbe available on the external pin by setting the DRDY_on_PIN bit in\nCFG_REG_C (62h).\nSingle mode. When single mode is selected, the device performs a single"
+  },
+  {
+    "faiss_index_id": 107,
+    "text": "0 1 measurement, sets DRDY high and returns to idle mode. Mode register\nreturn to idle mode bit values.\n1 0 Idle mode. Device is placed in idle mode. I2C and SPI active.\n1 1 Idle mode. Device is placed in idle mode. I2C and SPI active (default).\n30/40 DocID030986 Rev 1IIS2MDC Register description\n8.6 CFG_REG_B (61h)\nTable 27. CFG_REG_B_M register\nOFF_\nCANC_ INT_on_\n0 0 0 Set_FREQ OFF_CANC LPF\nONE_ DataOFF\nSHOT\nTable 28. CFG_REG_B_M register description"
+  },
+  {
+    "faiss_index_id": 108,
+    "text": "SHOT\nTable 28. CFG_REG_B_M register description\nOFF_CANC_ Enables offset cancellation in single measurement mode. The OFF_CANC bit\nONE_SHOT must be set to 1 when enabling offset cancellation in single measurement mode.\nDefault value: 0\n(0: offset cancellation in single measurement mode disabled;\n1: offset cancellation in single measurement mode enabled)\nINT_on_ If ‘1’, the interrupt block recognition checks data after the hard-iron correction to\nDataOFF discover the interrupt. Default value: 0"
+  },
+  {
+    "faiss_index_id": 109,
+    "text": "DataOFF discover the interrupt. Default value: 0\nSet_FREQ Selects the frequency of the set pulse. Default value: 0\n(0: set pulse is released every 63 ODR;\n1: set pulse is released only at power-on after PD condition)\nOFF_CANC Enables offset cancellation. Default value: 0\n(0: offset cancellation disabled; 1: offset cancellation enabled)\nLPF Enables low-pass filter (see Table 29). Default value: 0\n(0: digital filter disabled; 1: digital filter enabled)\nTable 29. Digital low-pass filter"
+  },
+  {
+    "faiss_index_id": 110,
+    "text": "Table 29. Digital low-pass filter\nCFG_REG_B[LPF] BW [Hz]\n0 (disable) ODR/2\n1 (enable) ODR/4\nDocID030986 Rev 1 31/40\n40Register description IIS2MDC\n8.7 CFG_REG_C (62h)\nTable 30. CFG_REG_C register\n0 INT_on_PIN I2C_DIS BDU BLE 0(1) Self_test DRDY_on_PIN\n1. This bit must be set to ‘0’ for the correct operation of the device.\nTable 31. CFG_REG_C register description\nINT_on_PIN If '1', the INTERRUPT signal (INT bit in INT_SOURCE_REG (64h)) is driven"
+  },
+  {
+    "faiss_index_id": 111,
+    "text": "on the INT/DRDY pin. The INT/DRDY pin is configured in push-pull output mode.\nDefault value: 0\nI2C_DIS If ‘1’, the I2C interface is inhibited. Only the SPI interface can be used.\nBDU If enabled, reading of incorrect data is avoided when the user reads asynchro-\nnously. In fact if the read request arrives during an update of the output data, a\nlatch is possible, reading incoherent high and low parts of the same register. Only\none part is updated and the other one remains old."
+  },
+  {
+    "faiss_index_id": 112,
+    "text": "BLE If ‘1’, an inversion of the low and high parts of the data occurs.\nSelf_test If ‘1’, the self-test is enabled.\nDRDY_on_PIN If '1', the data-ready signal (Zyxda bit in STATUS_REG (67h)) is driven on the\nINT/DRDY pin. The INT/DRDY pin is configured in push-pull output mode.\nDefault value: 0\n8.8 INT_CTRL_REG (63h)\nThe interrupt control register is used to enable and to configure the interrupt recognition.\nTable 32. INT_CRTL_REG register\nXIEN YIEN ZIEN 0(1) 0(1) IEA IEL IEN"
+  },
+  {
+    "faiss_index_id": 113,
+    "text": "XIEN YIEN ZIEN 0(1) 0(1) IEA IEL IEN\n1. This bit must be set to ‘0’ for the correct operation of the device.\nTable 33. INT_CTRL_REG register description\nXIEN Enables the interrupt detection for the X-axis. Default: 1\n(1: enabled; 0: disabled)\nYIEN Enables the interrupt detection for the Y-axis. Default: 1\n(1: enabled; 0: disabled)\nZIEN Enables the interrupt detection for the Z-axis. Default: 1\n(1: enabled; 0: disabled)"
+  },
+  {
+    "faiss_index_id": 114,
+    "text": "(1: enabled; 0: disabled)\nIEA Controls the polarity of the INT bit (INT_SOURCE_REG (64h)) when an interrupt\noccurs. Default: 0\nIf IEA = 0, then INT = 0 signals an interrupt.\nIf IEA = 1, then INT = 1 signals an interrupt.\nIEL Controls whether the INT bit (INT_SOURCE_REG (64h)) is latched or pulsed. Default: 0\nIf IEL = 0, then INT is pulsed.\nIf IEL = 1, then INT is latched.\nOnce latched, INT remains in the same state until INT_SOURCE_REG (64h) is read."
+  },
+  {
+    "faiss_index_id": 115,
+    "text": "IEN Interrupt enable. When set, enables the interrupt generation. The INT bit\nis in INT_SOURCE_REG (64h). Default: 0\n32/40 DocID030986 Rev 1IIS2MDC Register description\n8.9 INT_SOURCE_REG (64h)\nWhen interrupt latched is selected, reading this register resets all the bits in this register.\nTable 34. INT_SOURCE_REG register\nP_TH_S_ P_TH_S_ P_TH_S_ N_TH_S_ N_TH_S_ N_TH_S_\nMROI INT\nX Y Z X Y Z\nTable 35. INT_SOURCE_REG register description\nP_TH_S_X X-axis value exceeds the threshold positive side"
+  },
+  {
+    "faiss_index_id": 116,
+    "text": "P_TH_S_Y Y-axis value exceeds the threshold positive side\nP_TH_S_Z Z-axis value exceeds the threshold positive side\nN_TH_S_X X-axis value exceeds the threshold negative side\nN_TH_S_Y Y-axis value exceeds the threshold negative side\nN_TH_S_Z Z-axis value exceeds the threshold negative side\nMROI MROI flag generation is alway enabled.This flag is reset by reading\nINT_SOURCE_REG (64h).\nINT This bit signals when the interrupt event occurs.\n8.10 INT_THS_L_REG (65h)"
+  },
+  {
+    "faiss_index_id": 117,
+    "text": "8.10 INT_THS_L_REG (65h)\nThis register contains the least significant bits of the threshold value chosen for the interrupt.\nTable 36. INT_THS_L_REG register\nTH7 TH6 TH5 TH4 TH3 TH2 TH1 TH0\nTable 37. INT_THS_L_REG register description\nTH[7:0] Threshold value for the interrupt.\n8.11 INT_THS_H_REG (66h)\nThis register contains the most significant bits of the threshold value chosen for the\ninterrupt.\nTable 38. INT_THS_H_REG register\nTH15 TH14 TH13 TH12 TH11 TH10 TH9 TH8"
+  },
+  {
+    "faiss_index_id": 118,
+    "text": "TH15 TH14 TH13 TH12 TH11 TH10 TH9 TH8\nTable 39. INT_THS_H_REG register description\nTH[15:8] Threshold value for the interrupt.\nThese registers set the threshold value for the output to generate the interrupt (INT bit in\nINT_SOURCE_REG (64h)). This threshold is common to all three (axes) output values and\nis unsigned unipolar. The threshold value is correlated to the current gain and it is unsigned\nbecause the threshold is considered as an absolute value, but crossing the threshold is"
+  },
+  {
+    "faiss_index_id": 119,
+    "text": "detected for both positive and negative sides.\nDocID030986 Rev 1 33/40\n40Register description IIS2MDC\n8.12 STATUS_REG (67h)\nThe status register is an 8-bit read-only register. This register is used to indicate device\nstatus.\nTable 40. STATUS_REG register\nZyxor zor yor xor Zyxda zda yda xda\nTable 41. STATUS_REG register description\nZyxor X-, Y- and Z-axis data overrun. Default value: 0\n(0: no overrun has occurred; 1: a new set of data has overwritten the previous set)."
+  },
+  {
+    "faiss_index_id": 120,
+    "text": "zor Z-axis data overrun. Default value: 0\n(0: no overrun has occurred; 1: new data for the Z-axis has overwritten the previous data).\nyor Y-axis data overrun. Default value: 0\n(0: no overrun has occurred; 1: new data for the Y-axis has overwritten the previous data).\nxor X-axis data overrun. Default value: 0\n(0: no overrun has occurred; 1: new data for the X-axis has overwritten the previous data).\nZyxda X-, Y- and Z-axis new data available. Default value: 0"
+  },
+  {
+    "faiss_index_id": 121,
+    "text": "(0: a new set of data is not yet available; 1: a new set of data is available).\nzda Z-axis new data available. Default value: 0\n(0: a new data for the Z-axis is not yet available; 1: a new data for the Z-axis is available)\nyda Y-axis new data available. Default value: 0\n(0: a new data for the Y-axis is not yet available; 1: a new data for the Y-axis is available)\nxda X-axis new data available. Default value: 0"
+  },
+  {
+    "faiss_index_id": 122,
+    "text": "xda X-axis new data available. Default value: 0\n(0: a new data for the X-axis is not yet available; 1: a new data for the X-axis is available)\n8.13 OUTX_L_REG, OUTX_H_REG (68h - 69h)\nThe data output X registers are two 8-bit registers, data output X MSB register (69h) and\noutput X LSB register (68h).\nThe output data represents the raw magnetic data only if OFFSET_X_REG is equal to zero,\notherwise hard-iron calibration is included.\nTable 42. OUTX_L_REG register\n0 0 0 0 0 0 0 0"
+  },
+  {
+    "faiss_index_id": 123,
+    "text": "Table 42. OUTX_L_REG register\n0 0 0 0 0 0 0 0\nTable 43. OUTX_H_REG register\n0 0 0 0 0 0 0 0\nThe value of the magnetic field is expressed in two’s complement. This register contains the\nX component of the magnetic data.\n34/40 DocID030986 Rev 1IIS2MDC Register description\n8.14 OUTY_L_REG, OUTY_H_REG (6Ah - 6Bh)\nThe data output Y registers are two 8-bit registers, data output Y MSB register (6Bh) and\noutput Y LSB register (6Ah)."
+  },
+  {
+    "faiss_index_id": 124,
+    "text": "output Y LSB register (6Ah).\nThe output data represents the raw magnetic data only if OFFSET_Y_REG is equal to zero,\notherwise hard-iron calibration is included.\nTable 44. OUTY_L_REG register\n0 0 0 0 0 0 0 0\nTable 45. OUTY_H_REG register\n0 0 0 0 0 0 0 0\nThe value of the magnetic field is expressed in two’s complement. This register contains the\nY component of the magnetic data.\n8.15 OUTZ_L_REG, OUTZ_H_REG (6Ch - 6Dh)"
+  },
+  {
+    "faiss_index_id": 125,
+    "text": "8.15 OUTZ_L_REG, OUTZ_H_REG (6Ch - 6Dh)\nThe data output Z registers are two 8-bit registers, data output Z MSB register (6Bh) and\noutput Z LSB register (6Ah).\nThe output data represents the raw magnetic data only if OFFSET_Z_REG is equal to zero,\notherwise hard-iron calibration is included.\nTable 46. OUTZ_L_REG register\n0 0 0 0 0 0 0 0\nTable 47. OUTZ_H_REG register\n0 0 0 0 0 0 0 0\nThe value of the magnetic field is expressed in two’s complement. This register contains the"
+  },
+  {
+    "faiss_index_id": 126,
+    "text": "Z component of the magnetic data.\n8.16 TEMP_OUT_L_REG (6Eh), TEMP_OUT_H_REG (6Fh)\nTemperature sensor data.\nThese registers contain temperature values from the internal temperature sensor. The\noutput value is expressed as a signed 16-bit byte in 2’s complement. The four most\nsignificant bits contain a copy of the sign bit.\nThe nominal sensitivity is 8 LSB/°C.\nDocID030986 Rev 1 35/40\n40Package information IIS2MDC\n9 Package information"
+  },
+  {
+    "faiss_index_id": 127,
+    "text": "9 Package information\nIn order to meet environmental requirements, ST offers these devices in different grades of\nECOPACK® packages, depending on their level of environmental compliance. ECOPACK®\nspecifications, grade definitions and product status are available at: www.st.com.\nECOPACK is an ST trademark.\n9.1 LGA-12 package information\nFigure 9. LGA-12 2.0 x 2.0 x 0.7 mm package outline and mechanical data\n(cid:3)\n(cid:3)\n(cid:3)\n(cid:3)"
+  },
+  {
+    "faiss_index_id": 128,
+    "text": "(cid:3)\n(cid:3)\n(cid:3)\n(cid:3)\n(cid:39)(cid:76)(cid:80)(cid:72)(cid:81)(cid:86)(cid:76)(cid:82)(cid:81)(cid:86)(cid:3)(cid:68)(cid:85)(cid:72)(cid:3)(cid:76)(cid:81)(cid:3)(cid:80)(cid:76)(cid:79)(cid:79)(cid:76)(cid:80)(cid:72)(cid:87)(cid:72)(cid:85)(cid:3)(cid:88)(cid:81)(cid:79)(cid:72)(cid:86)(cid:86)(cid:3)(cid:82)(cid:87)(cid:75)(cid:72)(cid:85)(cid:90)(cid:76)(cid:86)(cid:72)(cid:3)(cid:86)(cid:83)(cid:72)(cid:70)(cid:76)(cid:73)(cid:76)(cid:72)(cid:71)(cid:3)"
+  },
+  {
+    "faiss_index_id": 129,
+    "text": "(cid:42)(cid:72)(cid:81)(cid:72)(cid:85)(cid:68)(cid:79)(cid:3)(cid:55)(cid:82)(cid:79)(cid:72)(cid:85)(cid:68)(cid:81)(cid:70)(cid:72)(cid:3)(cid:76)(cid:86)(cid:3)(cid:14)(cid:18)(cid:16)(cid:19)(cid:17)(cid:20)(cid:24)(cid:80)(cid:80)(cid:3)(cid:88)(cid:81)(cid:79)(cid:72)(cid:86)(cid:86)(cid:3)(cid:82)(cid:87)(cid:75)(cid:72)(cid:85)(cid:90)(cid:76)(cid:86)(cid:72)(cid:3)(cid:86)(cid:83)(cid:72)(cid:70)(cid:76)(cid:73)(cid:76)(cid:72)(cid:71)(cid:3)\n(cid:3)"
+  },
+  {
+    "faiss_index_id": 130,
+    "text": "(cid:3)\n(cid:50)(cid:56)(cid:55)(cid:40)(cid:53)(cid:3)(cid:39)(cid:44)(cid:48)(cid:40)(cid:49)(cid:54)(cid:44)(cid:50)(cid:49)(cid:54)(cid:3)\n(cid:3)\n(cid:44)(cid:55)(cid:40)(cid:48)(cid:3) (cid:39)(cid:44)(cid:48)(cid:40)(cid:49)(cid:54)(cid:44)(cid:50)(cid:49)(cid:3)(cid:62)(cid:80)(cid:80)(cid:64)(cid:3) (cid:55)(cid:50)(cid:47)(cid:40)(cid:53)(cid:36)(cid:49)(cid:38)(cid:40)(cid:3)(cid:62)(cid:80)(cid:80)(cid:64)(cid:3)"
+  },
+  {
+    "faiss_index_id": 131,
+    "text": "(cid:47)(cid:72)(cid:81)(cid:74)(cid:87)(cid:75)(cid:3)(cid:62)(cid:47)(cid:64)(cid:3) (cid:21)(cid:3) (cid:147)(cid:19)(cid:17)(cid:20)(cid:3)\n(cid:58)(cid:76)(cid:71)(cid:87)(cid:75)(cid:3)(cid:62)(cid:58)(cid:64)(cid:3) (cid:21)(cid:3) (cid:147)(cid:19)(cid:17)(cid:20)(cid:3)\n(cid:43)(cid:72)(cid:76)(cid:74)(cid:75)(cid:87)(cid:3)(cid:62)(cid:43)(cid:64)(cid:3) (cid:19)(cid:17)(cid:26)(cid:3)(cid:48)(cid:36)(cid:59)(cid:3) (cid:18)(cid:3)"
+  },
+  {
+    "faiss_index_id": 132,
+    "text": "(cid:39)(cid:48)(cid:19)(cid:19)(cid:20)(cid:26)(cid:19)(cid:24)(cid:25)(cid:27)(cid:66)(cid:21)\n36/40 DocID030986 Rev 1IIS2MDC Package information\n9.2 LGA-12 packing information\nFigure 10. Carrier tape information for LGA-12 package\n(cid:3)(cid:23)(cid:17)(cid:19)(cid:19)(cid:3) (cid:14)(cid:19)(cid:17)(cid:20)"
+  },
+  {
+    "faiss_index_id": 133,
+    "text": "(cid:3)(cid:19)(cid:17)(cid:22)(cid:19)(cid:147)(cid:19)(cid:17)(cid:19)(cid:24)(cid:3) (cid:3)(cid:21)(cid:17)(cid:19)(cid:19)(cid:147)(cid:19)(cid:17)(cid:19)(cid:24)(cid:3)(cid:54)(cid:40)(cid:40)(cid:3)(cid:49)(cid:50)(cid:55)(cid:40)(cid:3)(cid:21)(cid:3)\n(cid:3) (cid:20)(cid:17)(cid:24)(cid:19)(cid:3)(cid:19)(cid:17)(cid:19)(cid:3)\n(cid:37)\n(cid:3) (cid:20)(cid:17)(cid:19)(cid:19)(cid:3)(cid:48)(cid:44)(cid:49)(cid:3)"
+  },
+  {
+    "faiss_index_id": 134,
+    "text": "(cid:3)(cid:23)(cid:17)(cid:19)(cid:19)(cid:3)(cid:54)(cid:40)(cid:40)(cid:3)(cid:49)(cid:50)(cid:55)(cid:40)(cid:3)(cid:20)(cid:3)\n(cid:3)(cid:20)(cid:17)(cid:26)(cid:24)(cid:147)(cid:19)(cid:17)(cid:20)(cid:3)\n(cid:36) (cid:36)\n(cid:24)(cid:17)(cid:24)(cid:19)(cid:147)(cid:19)(cid:17)(cid:19)(cid:24)\n(cid:54)(cid:40)(cid:40)(cid:3)(cid:49)(cid:50)(cid:55)(cid:40)(cid:3)(cid:21)\n(cid:3)(cid:37)(cid:82)(cid:3) (cid:14)(cid:19)(cid:17)(cid:22)"
+  },
+  {
+    "faiss_index_id": 135,
+    "text": "(cid:3)(cid:20)(cid:21)(cid:17)(cid:19)(cid:19)(cid:16)(cid:19)(cid:17)(cid:20)(cid:3)\n(cid:3)(cid:53)(cid:19)(cid:17)(cid:21)(cid:19)(cid:3)(cid:48)(cid:36)(cid:59)(cid:3)\n(cid:53)(cid:19)(cid:17)(cid:21)(cid:24)(cid:3)(cid:55)(cid:60)(cid:51)\n(cid:3)(cid:46)(cid:82)(cid:3)\n(cid:37)\n(cid:54)(cid:40)(cid:38)(cid:55)(cid:44)(cid:50)(cid:49)(cid:3)(cid:37)(cid:16)(cid:37)\n(cid:3)(cid:36)(cid:82)(cid:3)\n(cid:39)(cid:44)(cid:48) (cid:147)"
+  },
+  {
+    "faiss_index_id": 136,
+    "text": "(cid:39)(cid:44)(cid:48) (cid:147)\n(cid:36)(cid:82) (cid:21)(cid:17)(cid:22)(cid:19) (cid:19)(cid:17)(cid:19)(cid:24)\n(cid:54)(cid:40)(cid:38)(cid:55)(cid:44)(cid:50)(cid:49)(cid:3)(cid:36)(cid:16)(cid:36)\n(cid:37)(cid:82) (cid:21)(cid:17)(cid:22)(cid:19) (cid:19)(cid:17)(cid:19)(cid:24)\n(cid:54)(cid:38)(cid:36)(cid:47)(cid:40)(cid:3)(cid:20)(cid:29)(cid:20)\n(cid:46)(cid:82) (cid:20)(cid:17)(cid:19)(cid:19) (cid:19)(cid:17)(cid:20)\n(cid:49)(cid:50)(cid:55)(cid:40)(cid:54)(cid:29)"
+  },
+  {
+    "faiss_index_id": 137,
+    "text": "(cid:49)(cid:50)(cid:55)(cid:40)(cid:54)(cid:29)\n(cid:20)(cid:17) (cid:20)(cid:19)(cid:3)(cid:54)(cid:51)(cid:53)(cid:50)(cid:38)(cid:46)(cid:40)(cid:55)(cid:3)(cid:43)(cid:50)(cid:47)(cid:40)(cid:3)(cid:51)(cid:44)(cid:55)(cid:38)(cid:43)(cid:3)(cid:38)(cid:56)(cid:48)(cid:56)(cid:47)(cid:36)(cid:55)(cid:44)(cid:57)(cid:40)(cid:3)(cid:55)(cid:50)(cid:47)(cid:40)(cid:53)(cid:36)(cid:49)(cid:38)(cid:40)(cid:3)(cid:147)(cid:19)(cid:17)(cid:21)"
+  },
+  {
+    "faiss_index_id": 138,
+    "text": "(cid:21)(cid:17)"
+  },
+  {
+    "faiss_index_id": 139,
+    "text": "(cid:51)(cid:50)(cid:38)(cid:46)(cid:40)(cid:55)(cid:3)(cid:51)(cid:50)(cid:54)(cid:44)(cid:55)(cid:44)(cid:50)(cid:49)(cid:3)(cid:53)(cid:40)(cid:47)(cid:36)(cid:55)(cid:44)(cid:57)(cid:40)(cid:3)(cid:55)(cid:50)(cid:3)(cid:54)(cid:51)(cid:53)(cid:50)(cid:38)(cid:46)(cid:40)(cid:55)(cid:3)(cid:43)(cid:50)(cid:47)(cid:40)(cid:3)(cid:48)(cid:40)(cid:36)(cid:54)(cid:56)(cid:53)(cid:40)(cid:39)(cid:3)(cid:36)(cid:54)(cid:3)(cid:55)(cid:53)(cid:56)(cid:40)(cid:3)(cid:51)(cid:50)(cid:54)(cid:44)(cid"
+  },
+  {
+    "faiss_index_id": 140,
+    "text": "cid:40)(cid:3)(cid:51)(cid:50)(cid:54)(cid:44)(cid:55)(cid:44)(cid:50)(cid:49)(cid:3)(cid:50)(cid:41)(cid:3)(cid:51)(cid:50)(cid:38)(cid:46)(cid:40)(cid:55)(cid:15)(cid:3)(cid:49)(cid:50)(cid:55)(cid:3)(cid:3)"
+  },
+  {
+    "faiss_index_id": 141,
+    "text": "(cid:51)(cid:50)(cid:38)(cid:46)(cid:40)(cid:55)(cid:3)(cid:43)(cid:50)(cid:47)(cid:40)(cid:17)"
+  },
+  {
+    "faiss_index_id": 142,
+    "text": "(cid:22)(cid:17)"
+  },
+  {
+    "faiss_index_id": 143,
+    "text": "(cid:36)(cid:82)(cid:3)(cid:36)(cid:49)(cid:39)(cid:3)(cid:37)(cid:82)(cid:3)(cid:36)(cid:53)(cid:40)(cid:3)(cid:38)(cid:36)(cid:47)(cid:38)(cid:56)(cid:47)(cid:36)(cid:55)(cid:40)(cid:39)(cid:3)(cid:50)(cid:49)(cid:3)(cid:36)(cid:3)(cid:51)(cid:47)(cid:36)(cid:49)(cid:40)(cid:3)(cid:36)(cid:55)(cid:3)(cid:36)(cid:3)(cid:39)(cid:44)(cid:54)(cid:55)(cid:36)(cid:49)(cid:38)(cid:40)(cid:3)(cid:5)(cid:53)(cid:5)(cid:3)(cid:36)(cid:37)(cid:50)(cid:57)(cid:40)(cid:3)(cid:55)(cid:43)(cid:40)(cid:3)(ci"
+  },
+  {
+    "faiss_index_id": 144,
+    "text": ")(cid:40)(cid:3)(cid:55)(cid:43)(cid:40)(cid:3)(cid:37)(cid:50)(cid:55)(cid:55)(cid:50)(cid:48)(cid:3)(cid:50)(cid:41)(cid:3)(cid:55)(cid:43)(cid:40)(cid:3)(cid:51)(cid:50)(cid:38)(cid:46)(cid:40)(cid:55)(cid:17)"
+  },
+  {
+    "faiss_index_id": 145,
+    "text": "Figure 11. LGA-12 package orientation in carrier tape\nDocID030986 Rev 1 37/40\n40Package information IIS2MDC\nFigure 12. Reel information for carrier tape of LGA-12 package\n(cid:55)\n(cid:23)(cid:19)(cid:80)(cid:80)(cid:3)(cid:80)(cid:76)(cid:81)(cid:17)\n(cid:36)(cid:70)(cid:70)(cid:72)(cid:86)(cid:86)(cid:3)(cid:75)(cid:82)(cid:79)(cid:72)(cid:3)(cid:68)(cid:87)(cid:3)\n(cid:86)(cid:79)(cid:82)(cid:87)(cid:3)(cid:79)(cid:82)(cid:70)(cid:68)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)\n(cid:37)\n(cid:38)"
+  },
+  {
+    "faiss_index_id": 146,
+    "text": "(cid:37)\n(cid:38)\n(cid:39) (cid:49)\n(cid:36)\n(cid:42)(cid:3)(cid:80)(cid:72)(cid:68)(cid:86)(cid:88)(cid:85)(cid:72)(cid:71)(cid:3)(cid:68)(cid:87)(cid:3)(cid:75)(cid:88)(cid:69)(cid:3)\n(cid:41)(cid:88)(cid:79)(cid:79)(cid:3)(cid:85)(cid:68)(cid:71)(cid:76)(cid:88)(cid:86)(cid:3)\n(cid:55)(cid:68)(cid:83)(cid:72)(cid:3)(cid:86)(cid:79)(cid:82)(cid:87)(cid:3)\n(cid:76)(cid:81)(cid:3)(cid:70)(cid:82)(cid:85)(cid:72)(cid:3)(cid:73)(cid:82)(cid:85)(cid:3)"
+  },
+  {
+    "faiss_index_id": 147,
+    "text": "(cid:87)(cid:68)(cid:83)(cid:72)(cid:3)(cid:86)(cid:87)(cid:68)(cid:85)(cid:87)\n(cid:21)(cid:17)(cid:24)(cid:80)(cid:80)(cid:3)(cid:80)(cid:76)(cid:81)(cid:17)(cid:3)(cid:90)(cid:76)(cid:71)(cid:87)(cid:75)(cid:3)\nTable 48. Reel dimensions for carrier tape of LGA-12 package\nReel dimensions (mm)\nA (max) 330\nB (min) 1.5\nC 13 ±0.25\nD (min) 20.2\nN (min) 60\nG 12.4 +2/-0\nT (max) 18.4\n38/40 DocID030986 Rev 1IIS2MDC Revision history\n10 Revision history\nTable 49. Document revision history"
+  },
+  {
+    "faiss_index_id": 148,
+    "text": "Table 49. Document revision history\nDate Revision Changes\n22-Sep-2017 1 Initial release\nDocID030986 Rev 1 39/40\n40IIS2MDC\nIMPORTANT NOTICE – PLEASE READ CAREFULLY\nSTMicroelectronics NV and its subsidiaries (“ST”) reserve the right to make changes, corrections, enhancements, modifications, and\nimprovements to ST products and/or to this document at any time without notice. Purchasers should obtain the latest relevant information on"
+  },
+  {
+    "faiss_index_id": 149,
+    "text": "ST products before placing orders. ST products are sold pursuant to ST’s terms and conditions of sale in place at the time of order\nacknowledgement.\nPurchasers are solely responsible for the choice, selection, and use of ST products and ST assumes no liability for application assistance or\nthe design of Purchasers’ products.\nNo license, express or implied, to any intellectual property right is granted by ST herein."
+  },
+  {
+    "faiss_index_id": 150,
+    "text": "Resale of ST products with provisions different from the information set forth herein shall void any warranty granted by ST for such product.\nST and the ST logo are trademarks of ST. All other product or service names are the property of their respective owners.\nInformation in this document supersedes and replaces information previously supplied in any prior versions of this document.\n© 2017 STMicroelectronics – All rights reserved\n40/40 DocID030986 Rev 1"
+  }
+]

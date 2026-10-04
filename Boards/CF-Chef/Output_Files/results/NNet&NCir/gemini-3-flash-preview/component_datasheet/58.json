@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component AP63203WU have a maximum input voltage of 32V according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The AP63203WU datasheet specifies a wide input voltage range of 3.8V to 32V, making 32V its maximum rated operating input voltage.",
+        "is_final": true
+    }
+}

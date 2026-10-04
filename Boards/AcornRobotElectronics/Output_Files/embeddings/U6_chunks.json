@@ -1,0 +1,346 @@
+[
+  {
+    "faiss_index_id": 0,
+    "text": "LTC4412\nLow Loss PowerPath™\nController in ThinSOT\nFeaTures DescripTion\nn Very Low Loss Replacement for Power Supply The LTC®4412 controls an external P-channel MOSFET to\nOR’ing Diodes create a near ideal diode function for power switchover\nn Minimal External Components or load sharing. This permits highly efficient OR’ing of\nn Automatic Switching Between DC Sources multiple power sources for extended battery life and low"
+  },
+  {
+    "faiss_index_id": 1,
+    "text": "n Simplifies Load Sharing with Multiple Batteries self-heating. When conducting, the voltage drop across\nn Low Quiescent Current: 11µA the MOSFET is typically 20mV. For applications with a\nn 3V to 28V AC/DC Adapter Voltage Range wall adapter or other auxiliary power source, the load is\nn 2.5V to 28V Battery Voltage Range automatically disconnected from the battery when the\nn Reverse Battery Protection auxiliary source is connected. Two or more LTC4412s"
+  },
+  {
+    "faiss_index_id": 2,
+    "text": "may be interconnected to allow load sharing between\nn Drives Almost Any Size MOSFET for Wide Range of\nmultiple batteries or charging of multiple batteries from\nCurrent Requirements\na single charger.\nn MOSFET Gate Protection Clamp\nn Manual Control Input The wide supply operating range supports operation\nn Low Profile (1mm) ThinSOT™ Package from one to six Li-Ion cells in series. The low quiescent\ncurrent (11µA typical) is independent of the load current.\napplicaTions"
+  },
+  {
+    "faiss_index_id": 3,
+    "text": "applicaTions\nThe gate driver includes an internal voltage clamp for\nMOSFET protection.\nn Cellular Phones\nn Notebook and Handheld Computers The STAT pin can be used to enable an auxiliary P-channel\nMOSFET power switch when an auxiliary supply is\nn Digital Cameras\ndetected. This pin may also be used to indicate to a mi-\nn USB-Powered Peripherals\ncrocontroller that an auxiliary supply is connected. The\nn Uninterruptible Power Supplies\ncontrol (CTL) input enables the user to force the primary"
+  },
+  {
+    "faiss_index_id": 4,
+    "text": "n Logic Controlled Power Switch\nMOSFET off and the STAT pin low.\nThe LTC4412 is available in a low profile (1mm) ThinSOT\npackage.\nTypical applicaTion\nLTC4412 vs Schottky Diode\nForward Voltage Drop\nWALL\nADAPTER\nINPUT\nTO LOAD\nBATTERY\nCELL(S)\nCOUT\nLTC4412\nVIN SENSE\nVCC\nGND GATE 470k\nSTATUS OUTPUT\nCTL STAT LOW WHEN WALL\n4412 F01 ADAPTER PRESENT\nFigure 1. Automatic Switchover of Load Between a Battery and a Wall Adapter 0\n0.02\nFORWARD VOLTAGE (V)\n4412fb\n1\nFor more information www.linear.com/LTC4412"
+  },
+  {
+    "faiss_index_id": 5,
+    "text": "1\nFor more information www.linear.com/LTC4412\n)A(\nTNERRUC\nL, LT, LTC, LTM, Linear Technology and the Linear logo are registered trademarks and\nPowerPath and ThinSOT are trademarks of Linear Technology Corporation. All other trademarks\nare the property of their respective owners.\n1\nCONSTANT\nRON\nLTC4412\nCONSTANT\nVOLTAGE\nSCHOTTKY\nDIODE\n0.5\n4412 F01bLTC4412\nabsoluTe MaxiMuM raTings pin conFiguraTion\n(Note 1)\nSupply Voltage (V ) .................................. –14V to 36V\nIN"
+  },
+  {
+    "faiss_index_id": 6,
+    "text": "IN\nVoltage from V to SENSE ........................ –28V to 28V\nIN\nTOP VIEW\nInput Voltage\nCTL ........................................................–0.3V to 36V\nVIN 1 6 SENSE\nGND 2 5 GATE\nSENSE ....................................................–14V to 36V\nCTL 3 4 STAT\nOutput Voltage\nS6 PACKAGE\nGATE .....................–0.3V to the Higher of V + 0.3V\nIN 6-LEAD PLASTIC TSOT-23\nor SENSE + 0.3V\nTJMAX = 150°C, θJA = 230°C/W\nSTAT ......................................................–0.3V to 36V"
+  },
+  {
+    "faiss_index_id": 7,
+    "text": "Operating Junction Temperature Range\n(Note 2) ........................................... –55°C to 150°C\nStorage Temperature Range ...................–65°C to 150°C\nLead Temperature (Soldering, 10 sec) ..................300°C\norDer inForMaTion\nLEAD FREE FINISH TAPE AND REEL PART MARKING* PACKAGE DESCRIPTION TEMPERATURE RANGE\nLTC4412ES6#PBF LTC4412ES6#TRPBF LTA2 6-Lead Plastic TSOT-23 –40°C to 85°C\nLTC4412IS6#PBF LTC4412IS6#TRPBF LTA2 6-Lead Plastic TSOT-23 –40°C to 85°C"
+  },
+  {
+    "faiss_index_id": 8,
+    "text": "LTC4412HS6#PBF LTC4412HS6#TRPBF LTA2 6-Lead Plastic TSOT-23 –40°C to 150°C\nLTC4412MPS6#PBF LTC4412MPS6#TRPBF LTA2 6-Lead Plastic TSOT-23 –55°C to 150°C\nLEAD BASED FINISH TAPE AND REEL PART MARKING* PACKAGE DESCRIPTION TEMPERATURE RANGE\nLTC4412ES6 LTC4412ES6#TR LTA2 6-Lead Plastic TSOT-23 –40°C to 85°C\nLTC4412IS6 LTC4412IS6#TR LTA2 6-Lead Plastic TSOT-23 –40°C to 85°C\nLTC4412HS6 LTC4412HS6#TR LTA2 6-Lead Plastic TSOT-23 –40°C to 150°C"
+  },
+  {
+    "faiss_index_id": 9,
+    "text": "LTC4412MPS6 LTC4412MPS6#TR LTA2 6-Lead Plastic TSOT-23 –55°C to 150°C\nConsult LTC Marketing for parts specified with wider operating temperature ranges. *The temperature grade is identified by a label on the shipping container.\nFor more information on lead free part marking, go to: http://www.linear.com/leadfree/\nFor more information on tape and reel specifications, go to: http://www.linear.com/tapeandreel/\n4412fb\n2\nFor more information www.linear.com/LTC4412LTC4412\nelecTrical characTerisTics"
+  },
+  {
+    "faiss_index_id": 10,
+    "text": "elecTrical characTerisTics\nThe l denotes the specifications which apply over the full operating\njunction temperature range, unless otherwise noted specifications are at T = 25°C, V = 12V, CTL and GND = 0V. Current into a pin is\nA IN\npositive and current out of a pin is negative. All voltages are referenced to GND, unless otherwise specified.\nSYMBOL PARAMETER CONDITIONS MIN TYP MAX UNITS\nV , Operating Supply Range V and/or V Must Be in This Range l 2.5 28 V\nIN IN SENSE\nV for Proper Operation"
+  },
+  {
+    "faiss_index_id": 11,
+    "text": "IN IN SENSE\nV for Proper Operation\nSENSE\nI Quiescent Supply Current at Low Supply V = 3.6V. Measure Combined Current l 11 19 µA\nQFL IN\nWhile in Forward Regulation at V and SENSE Pins Averaged with\nIN\nV = 3.5V and V = 3.6V (Note 3)\nSENSE SENSE\nI Quiescent Supply Current at High Supply V = 28V. Measure Combined Current l 15 26 µA\nQFH IN\nWhile in Forward Regulation at V and SENSE Pins Averaged with\nIN\nV = 27.9V and V = 28V (Note 3)\nSENSE SENSE"
+  },
+  {
+    "faiss_index_id": 12,
+    "text": "IN\nV = 27.9V and V = 28V (Note 3)\nSENSE SENSE\nI Quiescent Supply Current at Low Supply V = 3.6V, V = 3.7V. Measure 10 19 µA\nQRL IN SENSE\nWhile in Reverse Turn-Off Combined Current of V and SENSE Pins\nIN\nI Quiescent Supply Current at High Supply V = 27.9V, V = 28V. Measure 16 28 µA\nQRH IN SENSE\nWhile in Reverse Turn-Off Combined Current of V and SENSE Pins\nIN\nI Quiescent Supply Current at Low Supply V = 3.6V, V = 0V, V = 1V 7 13 µA\nQCL IN SENSE CTL\nwith CTL Active"
+  },
+  {
+    "faiss_index_id": 13,
+    "text": "QCL IN SENSE CTL\nwith CTL Active\nI Quiescent Supply Current at High Supply V = 28V, V = 0V, V = 1V 12 20 µA\nQCH IN SENSE CTL\nwith CTL Active\nI V and SENSE Pin Leakage Currents V = 28V, V = 0V; V = 28V, V = 0V –3 0 1 µA\nLEAK IN IN SENSE SENSE IN\nWhen Other Pin Supplies Power V = 14V, V = –14V; V = 14V, V = –14V\nIN SENSE SENSE IN\nPowerPath Controller\nV PowerPath Switch Forward Regulation V – V , 2.5V ≤ V ≤ 28V l 10 20 32 mV\nFR IN SENSE IN\nVoltage"
+  },
+  {
+    "faiss_index_id": 14,
+    "text": "FR IN SENSE IN\nVoltage\nV PowerPath Switch Reverse Turn-Off V – V , 2.5V ≤ V ≤ 28V l 10 20 32 mV\nRTO SENSE IN IN\nThreshold Voltage\nGATE and STAT Outputs\nGATE Active Forward Regulation (Note 4)\nI Source Current –1 –2.5 –5 µA\nG(SRC)\nI Sink Current 25 50 85 µA\nG(SNK)\nV GATE Clamp Voltage Apply I = 1µA, V = 12V, 6.3 7 7.7 V\nG(ON) GATE IN\nV = 11.9V, Measure V – V\nSENSE IN GATE\nV GATE Off Voltage Apply I = –5µA, V = 12V, 0.13 0.25 V\nG(OFF) GATE IN\nV = 12.1V, Measure V – V\nSENSE SENSE GATE"
+  },
+  {
+    "faiss_index_id": 15,
+    "text": "V = 12.1V, Measure V – V\nSENSE SENSE GATE\nt GATE Turn-On Time V < –3V, C = 1nF (Note 5) 110 175 µs\nG(ON) GS GATE\nt GATE Turn-Off Time V > –1.5V, C = 1nF (Note 6) 13 22 µs\nG(OFF) GS GATE\nI STAT Off Current 2.5V ≤ V ≤ 28V (Note 7) l –1 0 1 µA\nS(OFF) IN\nI STAT Sink Current 2.5V ≤ V ≤ 28V (Note 7) l 6 10 17 µA\nS(SNK) IN\nt STAT Turn-On Time (Note 8) 4.5 25 µs\nS(ON)\nt STAT Turn-Off Time (Note 8) 40 75 µs\nS(OFF)\nCTL Input\nV CTL Input Low Voltage 2.5V ≤ V ≤ 28V l 0.5 0.35 V\nIL IN"
+  },
+  {
+    "faiss_index_id": 16,
+    "text": "IL IN\nV CTL Input High Voltage 2.5V ≤ V ≤ 28V l 0.9 0.635 V\nIH IN\nI CTL Input Pull-Down Current 0.35V ≤ V ≤ 28V 1 3.5 5.5 µA\nCTL CTL\nH CTL Hysteresis 2.5V ≤ V ≤ 28V 135 mV\nCTL IN\n4412fb\n3\nFor more information www.linear.com/LTC4412LTC4412\nelecTrical characTerisTics\nNote 1: Stresses beyond those listed under Absolute Maximum Ratings Note 3: This results in the same supply current as would be observed with"
+  },
+  {
+    "faiss_index_id": 17,
+    "text": "may cause permanent damage to the device. Exposure to any Absolute an external P-channel MOSFET connected to the LTC4412 and operating in\nMaximum Rating condition for extended periods may affect device forward regulation.\nreliability and lifetime. Note 4: V is held at 12V and GATE is forced to 10.5V. SENSE is set at\nIN\nNote 2: The LTC4412 is tested under pulsed load conditions such that T ≈ 12V to measure the source current at GATE. SENSE is set at 11.9V to\nJ"
+  },
+  {
+    "faiss_index_id": 18,
+    "text": "J\nT . The LTC4412E is guaranteed to meet performance specifications from measure sink current at GATE.\nA\n0°C to 85°C operating junction temperature range. Specifications over Note 5: V is held at 12V and SENSE is stepped from 12.2V to 11.8V to\nIN\nthe –40°C to 85°C operating junction temperature range are assured by trigger the event. GATE voltage is initially V .\nG(OFF)\ndesign, characterization and correlation with statistical process controls."
+  },
+  {
+    "faiss_index_id": 19,
+    "text": "Note 6: V is held at 12V and SENSE is stepped from 11.8V to 12.2V to\nIN\nThe LTC4412I is guaranteed over the –40°C to 85°C operating junction\ntrigger the event. GATE voltage is initially internally clamped at V .\nG(ON)\ntemperature range. The LTC4412MP is tested and guaranteed over the\nNote 7: STAT is forced to V – 1.5V. SENSE is set at V – 0.1V to\n–55°C to 150°C operating junction temperature range. High junction IN IN\nmeasure the off current at STAT. SENSE is set V + 0.1V to measure the"
+  },
+  {
+    "faiss_index_id": 20,
+    "text": "temperatures degrade operating lifetimes; operating lifetime is degraded IN\nsink current at STAT.\nfor junction temperatures greater than 125°C. Note that the maximum\nambient temperature consistent with these specifications is determined Note 8: STAT is forced to 9V and V IN is held at 12V. SENSE is stepped\nby specific operating conditions in conjunction with board layout, the from 11.8V to 12.2V to measure the STAT turn-on time defined when I STAT"
+  },
+  {
+    "faiss_index_id": 21,
+    "text": "rated package thermal impedance and other environmental factors. T J reaches one half the measured I S(SNK). SENSE is stepped from 12.2V to\nis calculated from the ambient temperature T A and power dissipation P D 11.8V to measure the STAT turn-off time defined when I STAT reaches one\naccording to the following formula: T J = T A + (P D • ΘJA ), where ΘJA = half the measured I S(SNK) .\n230°C/W for the TSOT-23 package.\n4412fb\n4\nFor more information www.linear.com/LTC4412LTC4412"
+  },
+  {
+    "faiss_index_id": 22,
+    "text": "Typical perForMance characTerisTics\n25\n20\n15\n–75 –25 25 75 125 175\nTEMPERATURE (°C)\n4412fb\n5\nFor more information www.linear.com/LTC4412\n)Vm(\nRFV\nV vs Temperature and\nFR\nSupply Voltage\n25\nVIN = 2.5V\nVIN = 28V 20\n15\n–75 –25 25 75 125 175\nTEMPERATURE (°C)\n4412 G01\n)Vm(\nOTRV\nV vs Temperature and\nRTO\nSupply Voltage\n1.15\n1.10\nVIN = 28V\n1.05\nVIN = 2.5V\n1.00\n0.95\n–75 –25 25 75 125 175\nTEMPERATURE (°C)\n4412 G02\n)Aµ(\nTNERRUC\nNormalized Quiescent Supply\nCurrent vs Temperature\n3.6V ≤ VIN ≤ 28V\n4412 G03"
+  },
+  {
+    "faiss_index_id": 23,
+    "text": "Current vs Temperature\n3.6V ≤ VIN ≤ 28V\n4412 G03\n–0.2\n–0.25\n–0.3\n–0.35\n–0.4\n–75 –25 25 75 125 175\nTEMPERATURE (°C)\n)Aµ(\nTNERRUC\nI vs Temperature\nLEAK\n7.05\n6.95\n6.85\n–75 –25 25 75 125 175\nTEMPERATURE (°C)\n4412 G04\n)V(\nEGATLOV\nV vs Temperature\nG(ON)\n0.30\n8V ≤ VIN ≤ 28V\nIGATE = 1µA\n0.20\n0.10\n0.00\n–75 –25 25 75 125 175\nTEMPERATURE (°C)\n4412 G05\n)V(\nEGATLOV\nV vs Temperature and I\nG(OFF) GATE\n2.5V ≤ VIN ≤ 28V\nIGATE = –10µA\nIGATE = –5µA\nIGATE = 0µA\n4412 G06\n106\n100\n94\n–75 –25 25 75 125 175"
+  },
+  {
+    "faiss_index_id": 24,
+    "text": "4412 G06\n106\n100\n94\n–75 –25 25 75 125 175\nTEMPERATURE (°C)\n)sµ(\nEMIT\nt vs Temperature\nG(ON)\n13.0\n3.6V ≤ VIN ≤ 28V\nCGATE = 1nF\n12.5\n12.0\n–75 –25 25 75 125 175\nTEMPERATURE (°C)\n4412 G07\n)sµ(\nEMIT\nt vs Temperature\nG(OFF)\n11.5\n3.6V ≤ VIN ≤ 28V\nCGATE = 1nF\n11.0\n10.5\n10.0\n–75 –25 25 75 125 175\nTEMPERATURE (°C)\n4412 G08\n)Aµ(\nTNERRUC\nI vs Temperature and V\nS(SNK) IN\nVSTAT = VIN – 1.5V\nVIN = 28V\nVIN = 2.5V\n4412 G09LTC4412\npin FuncTions"
+  },
+  {
+    "faiss_index_id": 25,
+    "text": "VIN = 2.5V\n4412 G09LTC4412\npin FuncTions\nV (Pin 1): Primary Input Supply Voltage. Supplies power STAT (Pin 4): Open-Drain Output Status Pin. When the\nIN\nto the internal circuitry and is one of two voltage sense SENSE pin is pulled above the V pin with an auxiliary\nIN\ninputs to the internal analog controller (The other input power source by about 20mV or more, the reverse turn-\nto the controller is the SENSE pin). This input is usually off threshold (V ) is reached. The STAT pin will then go\nRTO"
+  },
+  {
+    "faiss_index_id": 26,
+    "text": "RTO\nsupplied power from a battery or other power source which from an open state to a 10µA current sink (I ). The\nS(SNK)\nsupplies current to the load. This pin can be bypassed to STAT pin current sink can be used, along with an external\nground with a capacitor in the range of 0.1µF to 10µF if resistor, to turn on an auxiliary P-channel power switch\nneeded to suppress load transients. and/or signal the presence of an auxiliary power source\nto a microcontroller."
+  },
+  {
+    "faiss_index_id": 27,
+    "text": "to a microcontroller.\nGND (Pin 2): Ground. Provides a power return for all the\ninternal circuits. GATE (Pin 5): Primary P-Channel MOSFET Power Switch\nGate Drive Pin. This pin is directed by the power controller\nCTL (Pin 3): Digital Control Input. A logical high input\nto maintain a forward regulation voltage (V ) of 20mV\n(V ) on this pin forces the gate to source voltage of the FR\nIH\nbetween the V and SENSE pins when an auxiliary power\nprimary P-channel MOSFET power switch to a small voltage IN"
+  },
+  {
+    "faiss_index_id": 28,
+    "text": "source is not present. When an auxiliary power source\n(V ). This will turn the MOSFET off and no current will\nGOFF\nis connected, the GATE pin will pull up to the SENSE pin\nflow from the primary power input at V if the MOSFET\nIN\nvoltage, turning off the primary P-channel power switch.\nis configured so that the drain to source diode does not\nforward bias. A high input also forces the STAT pin to SENSE (Pin 6): Power Sense Input Pin. Supplies power"
+  },
+  {
+    "faiss_index_id": 29,
+    "text": "sink 10µA of current (I ). If the STAT pin is used to to the internal circuitry and is a voltage sense input to the\nS(SNK)\ncontrol an auxiliary P-channel power switch, then a second internal analog controller (The other input to the controller\nactive source of power, such as an AC wall adaptor, will is the V pin). This input is usually supplied power from\nIN\nbe connected to the load (see Applications Information). an auxiliary source such as an AC adapter or back-up"
+  },
+  {
+    "faiss_index_id": 30,
+    "text": "An internal current sink will pull the CTL pin voltage to battery which also supplies current to the load.\nground (logical low) if the pin is open.\nblock DiagraM\nAUXILIARY+\nSUPPLY–\nPRIMARY+ +OUTPUT\nSUPPLY– –TO LOAD\n1 6\nVIN SENSE\n– +\nPOWER SOURCE\nSELECTOR A1\nPOWER\nVOLTAGE/CURRENT LINEAR GATE GATE\nREFERENCE DRIVER AND 5\n0.5V VOLTAGE CLAMP\nVCC\nON/OFF 3 CTL + STAT STATUS\n4\nOUTPUT\n3.5µA C1 ANALOG CONTROLLER ON/OFF\n10µA\n–\nGND\n2 4412 BD\n*DRAIN-SOURCE DIODE OF MOSFET\n4412fb\n6"
+  },
+  {
+    "faiss_index_id": 31,
+    "text": "2 4412 BD\n*DRAIN-SOURCE DIODE OF MOSFET\n4412fb\n6\nFor more information www.linear.com/LTC4412LTC4412\noperaTion\nOperation can best be understood by referring to the Block The Power Source Selector will power the LTC4412 from\nDiagram, which illustrates the internal circuit blocks along the SENSE pin. As the SENSE voltage pulls above V –\nIN\nwith the few external components, and the graph that 20mV, the Analog Controller will instruct the Linear Gate"
+  },
+  {
+    "faiss_index_id": 32,
+    "text": "accompanies Figure 1. The terms primary and auxiliary Driver and Voltage Clamp block to pull the GATE voltage\nare arbitrary and may be changed to suit the application. up to turn off the P-channel MOSFET. When the voltage\nOperation begins when either or both power sources are on SENSE is higher than V + 20mV (V ),the Analog\nIN RTO\napplied and the CTL control pin is below the input low Controller will instruct the Linear Gate Driver and Voltage"
+  },
+  {
+    "faiss_index_id": 33,
+    "text": "voltage of 0.35V (V ). If only the primary supply is pres- Clamp block to rapidly pull the GATE pin voltage to the\nIL\nent, the Power Source Selector will power the LTC4412 SENSE pin voltage. This action will quickly finish turning\nfrom the V pin. Amplifier A1 will deliver a current to off the external P-channel MOSFET if it hasn’t already\nIN\nthe Analog Controller block that is proportional to the turned completely off. For a clean transition, the reverse"
+  },
+  {
+    "faiss_index_id": 34,
+    "text": "voltage difference in the V and SENSE pins. While the turn-off threshold has hysteresis to prevent uncertainty.\nIN\nvoltage on SENSE is lower than V – 20mV (V ), the The system is now in the reverse turn-off mode. Power to\nIN FR\nAnalog Controller will instruct the Linear Gate Driver and the load is being delivered through the external diode and\nVoltage Clamp block to pull down the GATE pin voltage no current is drawn from the primary supply. The external"
+  },
+  {
+    "faiss_index_id": 35,
+    "text": "and turn on the external P-channel MOSFET. The dynamic diode provides protection in case the auxiliary supply is\npull-down current of 50µA (I ) stops when the GATE below the primary supply, sinks current to ground or is\nG(SNK)\nvoltage reaches ground or the gate clamp voltage. The connected reverse polarity. During the reverse turn-off\ngate clamp voltage is 7V (V ) below the higher of V mode of operation the STAT pin will sink 10µA of current\nG(ON) IN"
+  },
+  {
+    "faiss_index_id": 36,
+    "text": "G(ON) IN\nor V . As the SENSE voltage pulls up to V – 20mV, (I ) if connected. Note that the external MOSFET is\nSENSE IN S(SNK)\nthe LTC4412 will regulate the GATE voltage to maintain wired so that the drain to source diode will momentarily\na 20mV difference between V and V which is also forward bias when power is first applied to V and will\nIN SENSE IN\nthe V of the MOSFET. The system is now in the forward become reverse biased when an auxiliary supply is applied.\nDS"
+  },
+  {
+    "faiss_index_id": 37,
+    "text": "DS\nregulation mode and the load will be powered from the\nWhen the CTL (control) input is asserted high, the external\nprimary supply. As the load current varies, the GATE volt-\nMOSFET will have its gate to source voltage forced to a\nage will be controlled to maintain the 20mV difference. If\nsmall voltage V and the STAT pin will sink 10µA of\nG(OFF)\nthe load current exceeds the P-channel MOSFET’s ability\ncurrent if connected. This feature is useful to allow control"
+  },
+  {
+    "faiss_index_id": 38,
+    "text": "to deliver the current with a 20mV V the GATE voltage\nDS input switching of the load between two power sources\nwill clamp, the MOSFET will behave as a fixed resistor\nas shown in Figure 4 or as a switchable high side driver\nand the forward voltage will increase slightly. While the\nas shown in Figure 7. A 3.5µA internal pull-down current\nMOSFET is on the STAT pin is an open circuit.\n(I ) on the CTL pin will insure a low level input if the pin\nCTL"
+  },
+  {
+    "faiss_index_id": 39,
+    "text": "CTL\nWhen an auxiliary supply is applied, the SENSE pin will be should become open.\npulled higher than the V pin through the external diode.\nIN\n4412fb\n7\nFor more information www.linear.com/LTC4412LTC4412\napplicaTions inForMaTion\nIntroduction If a forward voltage drop of more than 20mV is accept-\nable then a smaller MOSFET can be used, but must be\nThe system designer will find the LTC4412 useful in a\nsized compatible with the higher power dissipation. Care"
+  },
+  {
+    "faiss_index_id": 40,
+    "text": "variety of cost and space sensitive power control applica-\nshould be taken to ensure that the power dissipated is\ntions that include low loss diode OR’ing, fully automatic\nnever allowed to rise above the manufacturer’s recom-\nswitchover from a primary to an auxiliary source of power,\nmended maximum level. The auxiliary MOSFET power\nmicrocontroller controlled switchover from a primary to\nswitch, if used, has similar considerations, but its V"
+  },
+  {
+    "faiss_index_id": 41,
+    "text": "an auxiliary source of power, load sharing between two GS\ncan be tailored by resistor selection. When choosing the\nor more batteries, charging of multiple batteries from a\nresistor value consider the full range of STAT pin current\nsingle charger and high side power switching.\n(I ) that may flow through it.\nS(SNK)\nExternal P-Channel MOSFET Transistor Selection\nV and SENSE Pin Bypass Capacitors\nIN\nImportant parameters for the selection of MOSFETs are"
+  },
+  {
+    "faiss_index_id": 42,
+    "text": "Many types of capacitors, ranging from 0.1µF to 10µF and\nthe maximum drain-source voltage V threshold\nDS(MAX),\nlocated close to the LTC4412, will provide adequate V\nvoltage V and on-resistance R . IN\nGS(VT) DS(ON)\nbypassing if needed. Voltage droop can occur at the load\nThe maximum allowable drain-source voltage, V DS(MAX), during a supply switchover because some time is required\nmust be high enough to withstand the maximum drain- to turn on the MOSFET power switch. Factors that determine"
+  },
+  {
+    "faiss_index_id": 43,
+    "text": "source voltage seen in the application. the magnitude of the voltage droop include the supply rise\nand fall times, the MOSFET’s characteristics, the value of\nThe maximum gate drive voltage for the primary MOSFET is\nC and the load current. Droop can be made insignificant\nset by the smaller of the V supply voltage or the internal OUT\nIN\nby the proper choice of C ,since the droop is inversely\nclamping voltage V A logic level MOSFET is commonly OUT\nG(ON)."
+  },
+  {
+    "faiss_index_id": 44,
+    "text": "G(ON).\nproportional to the capacitance. Bypass capacitance for\nused, but if a low supply voltage limits the gate voltage, a\nthe load also depends on the application’s dynamic load\nsub-logic level threshold MOSFET should be considered.\nrequirements and typically ranges from 1µF to 47µF. In all\nThe maximum gate drive voltage for the auxiliary MOSFET,\ncases, the maximum droop is limited to the drain source\nif used, is determined by the external resistor connected"
+  },
+  {
+    "faiss_index_id": 45,
+    "text": "diode forward drop inside the MOSFET.\nto the STAT pin and the STAT pin sink current.\nCaution must be exercised when using multilayer ceramic\nAs a general rule, select a MOSFET with a low enough\ncapacitors. Because of the self resonance and high Q\nR to obtain the desired V while operating at full\nDS(ON) DS\ncharacteristics of some types of ceramic capacitors, high\nload current and an achievable V . The MOSFET nor-\nGS\nvoltage transients can be generated under some start-up"
+  },
+  {
+    "faiss_index_id": 46,
+    "text": "mally operates in the linear region and acts like a voltage\nconditions such as connecting a supply input to a hot\ncontrolled resistor. If the MOSFET is grossly undersized,\npower source. To reduce the Q and prevent these transients\nit can enter the saturation region and a large V may\nDS\nfrom exceeding the LTC4412’s absolute maximum voltage\nresult. However, the drain-source diode of the MOSFET,\nrating, the capacitor’s ESR can be increased by adding up"
+  },
+  {
+    "faiss_index_id": 47,
+    "text": "if forward biased, will limit V . A large V , combined\nDS DS\nto several ohms of resistance in series with the ceramic\nwith the load current, will likely result in excessively high\ncapacitor. Refer to Application Note 88.\nMOSFET power dissipation. Keep in mind that the LTC4412\nwill regulate the forward voltage drop across the primary The selected capacitance value and capacitor’s ESR can\nMOSFET at 20mV if R DS(ON) is low enough. The required be verified by observing V IN and SENSE for acceptable"
+  },
+  {
+    "faiss_index_id": 48,
+    "text": "R DS(ON) can be calculated by dividing 0.02V by the load voltage transitions during dynamic conditions over the\ncurrent in amps. Achieving forward regulation will minimize full load current range. This should be checked with each\npower loss and heat dissipation, but it is not a necessity. power source as well. Ringing may indicate an incorrect\nbypass capacitor value and/or too low an ESR.\n4412fb\n8\nFor more information www.linear.com/LTC4412LTC4412\napplicaTions inForMaTion"
+  },
+  {
+    "faiss_index_id": 49,
+    "text": "applicaTions inForMaTion\nV and SENSE Pin Usage leakage currents, if significant, should be accounted for\nIN\nwhen determining the voltage across the resistor when\nSince the analog controller’s thresholds are small (±20mV),\nthe STAT pin is either on or off.\nthe V and SENSE pin connections should be made in a\nIN\nway to avoid unwanted I • R drops in the power path. Both\nControl Pin Usage\npins are protected from negative voltages.\nThis is a digital control input pin with low threshold voltages"
+  },
+  {
+    "faiss_index_id": 50,
+    "text": "GATE Pin Usage (V V ) for use with logic powered from as little as 1V.\nIL, IH\nDuring normal operation, the CTL pin can be biased at any\nThe GATE pin controls the external P-channel MOSFET\nvoltage between ground and 28V, regardless of the supply\nconnected between the V and SENSE pins when the\nIN\nvoltage to the LTC4412. A logical high input on this pin\nload current is supplied by the power source at V . In\nIN\nforces the gate to source voltage of the primary P-channel"
+  },
+  {
+    "faiss_index_id": 51,
+    "text": "this mode of operation, the internal current source, which\nMOSFET power switch to a small voltage (V ). This\nis responsible for pulling the GATE pin up, is limited to GOFF\nwill turn the MOSFET off and no current will flow from the\na few microamps (I ). If external opposing leakage\nG(SRC)\nprimary power input at V if the MOSFET is configured\ncurrents exceed this, the GATE pin voltage will reach the IN\nso that the drain to source diode is not forward biased."
+  },
+  {
+    "faiss_index_id": 52,
+    "text": "clamp voltage (V ) and V will be smaller. The internal\nGON DS\nThe high input also forces the STAT pin to sink 10µA of\ncurrent sink, which is responsible for pulling the GATE pin\ncurrent (I ). See the Typical Applications for various\ndown, has a higher current capability (I ). With an S(SNK)\nG(SNK)\nexamples on using the STAT pin. A 3.5µA internal pull-\nauxiliary supply input pulling up on the SENSE pin and\ndown current (I ) on the CTL pin will insure a logical"
+  },
+  {
+    "faiss_index_id": 53,
+    "text": "exceeding the V pin voltage by 20mV (V ), the device CTL\nIN RTO\nlow level input if the pin should be open.\nenters the reverse turn-off mode and a much stronger\ncurrent source is available to oppose external leakage\nProtection\ncurrents and turn off the MOSFET (V ).\nGOFF\nMost of the application circuits shown provide some\nWhile in forward regulation, if the on resistance of the\nprotection against supply faults such as shorted, low or\nMOSFET is too high to maintain forward regulation, the"
+  },
+  {
+    "faiss_index_id": 54,
+    "text": "reversed supply inputs. The fault protection does not protect\nGATE pin will maximize the MOSFET’s V to that of the\nGS shorted supplies but can isolate other supplies and the load\nclamp voltage (V ). The clamping action takes place\nGON from faults. A necessary condition of this protection is for\nbetween the higher of V or V and the GATE pin.\nIN SENSE all components to have sufficient breakdown voltages. In\nsome cases, if protection of the auxiliary input (sometimes\nStatus Pin Usage"
+  },
+  {
+    "faiss_index_id": 55,
+    "text": "Status Pin Usage\nreferred to as the wall adapter input) is not required, then\nDuring normal operation, the open-drain STAT pin can be the series diode or MOSFET may be eliminated.\nbiased at any voltage between ground and 28V regard-\nInternal protection for the LTC4412 is provided to prevent\nless of the supply voltage to the LTC4412. It is usually\ndamaging pin currents and excessive internal self heating\nconnected to a resistor whose other end connects to a"
+  },
+  {
+    "faiss_index_id": 56,
+    "text": "during a fault condition. These fault conditions can be\nvoltage source. In the forward regulation mode, the STAT\na result of any LTC4412 pins shorted to ground or to a\npin will be open (I ). When a wall adaptor input or\nS(OFF)\npower source that is within the pin’s absolute maximum\nother auxiliary supply is connected to that input, and the\nvoltage limits. Both the V and SENSE pins are capable\nvoltage on SENSE is higher than V + 20mV (V ),the IN\nIN RTO"
+  },
+  {
+    "faiss_index_id": 57,
+    "text": "IN RTO\nof being taken significantly below ground without current\nsystem is in the reverse turn-off mode. During this mode of\ndrain or damage to the IC (see Absolute Maximum Voltage\noperation the STAT pin will sink 10µA of current (I ).\nS(SNK)\nLimits). This feature allows for reverse-battery condition\nThis will result in a voltage change across the resistor,\nwithout current drain or damage. This internal protection\ndepending on the resistance, which is useful to turn on an"
+  },
+  {
+    "faiss_index_id": 58,
+    "text": "is not designed to prevent overcurrent or overheating of\nauxiliary P-channel MOSFET or signal to a microcontroller\nexternal components.\nthat an auxiliary power source is connected. External\n4412fb\n9\nFor more information www.linear.com/LTC4412LTC4412\nTypical applicaTions\nAutomatic PowerPath Control Figure 2 illustrates an application circuit for automatic\nswitchover of load between a battery and a wall adapter\nThe applications shown in Figures 1, 2 and 3 are automatic"
+  },
+  {
+    "faiss_index_id": 59,
+    "text": "that features lowest power loss. Operation is similar\nideal diode controllers that require no assistance from a\nto Figure 1 except that an auxiliary P-channel MOSFET\nmicrocontroller. Each of these will automatically connect\nreplaces the diode. The STAT pin is used to turn on the\nthe higher supply voltage, after accounting for certain\nMOSFET once the SENSE pin voltage exceeds the battery\ndiode forward voltage drops, to the load with application"
+  },
+  {
+    "faiss_index_id": 60,
+    "text": "voltage by 20mV. When the wall adapter input is applied,\nof the higher supply voltage.\nthe drain-source diode of the auxiliary MOSFET will turn\nFigure 1 illustrates an application circuit for automatic on first to pull up the SENSE pin and turn off the primary\nswitchover of a load between a battery and a wall adapter MOSFET followed by turning on of the auxiliary MOSFET.\nor other power input. With application of the battery, the Once the auxiliary MOSFET has turned on the voltage drop"
+  },
+  {
+    "faiss_index_id": 61,
+    "text": "load will initially be pulled up by the drain-source diode across it can be very low depending on the MOSFET’s\nof the P-channel MOSFET. As the LTC4412 comes into characteristics.\naction, it will control the MOSFET’s gate to turn it on and\nFigure 3 illustrates an application circuit for the automatic\nreduce the MOSFET’s voltage drop from a diode drop to\nswitchover of a load between a battery and a wall adapter\n20mV. The system is now in the low loss forward regula-"
+  },
+  {
+    "faiss_index_id": 62,
+    "text": "in the comparator mode. It also shows how a battery char-\ntion mode. Should the wall adapter input be applied, the\nger can be connected. This circuit differs from Figure 1\nSchottky diode will pull up the SENSE pin, connected to\nin the way the SENSE pin is connected. The SENSE pin is\nthe load, above the battery voltage and the LTC4412 will\nconnected directly to the auxiliary power input and not the\nturn the MOSFET off. The STAT pin will then sink current"
+  },
+  {
+    "faiss_index_id": 63,
+    "text": "load. This change forces the LTC4412’s control circuitry\nindicating an auxiliary input is connected. The battery is\nto operate in an open-loop comparator mode. While the\nnow supplying no load current and all the load current\nbattery supplies the system, the GATE pin voltage will be\nflows through the Schottky diode. A silicon diode could\nforced to its lowest clamped potential, instead of being\nbe used instead of the Schottky, but will result in higher"
+  },
+  {
+    "faiss_index_id": 64,
+    "text": "regulated to maintain a 20mV drop across the MOSFET.\npower dissipation and heating due to the higher forward\nThis has the advantages of minimizing power loss in the\nvoltage drop.\nMOSFET by minimizing its R and not having the influence\nON\nof a linear control loop’s dynamics. A possible disadvantage\nAUXILIARY is if the auxiliary input ramps up slow enough the load\nP-CHANNEL\nvoltage will initially droop before rising. This is due to the\nMOSFET\n*\nWALL\nADAPTER\nINPUT\nWALL\nADAPTER\nPRIMARY INPUT"
+  },
+  {
+    "faiss_index_id": 65,
+    "text": "*\nWALL\nADAPTER\nINPUT\nWALL\nADAPTER\nPRIMARY INPUT\nP-CHANNEL P-CHANNEL\nBATTERY\nMOSFET MOSFET\nCHARGER\n* *\nTO LOAD TO LOAD\nBATTERY BATTERY\nCELL(S) COUT CELL(S) COUT\nLTC4412 LTC4412\n1\nVIN SENSE\n6 1\nVIN SENSE\n6 VCC\n2 5 2 5\nGND GATE 470k STATUS OUTPUT GND GATE 470k STATUS OUTPUT\n3 4 DROPS WHEN A 3 4 IS LOW WHEN A\nCTL STAT CTL STAT\n4412 F02WALL ADAPTER 4412 F03WALL ADAPTER\n*DRAIN-SOURCE DIODE OF MOSFET IS PRESENT *DRAIN-SOURCE DIODE OF MOSFET IS PRESENT"
+  },
+  {
+    "faiss_index_id": 66,
+    "text": "Figure 2. Automatic Switchover of Load Between a Battery and a Figure 3. Automatic Switchover of Load Between\nWall Adapter with Auxiliary P-Channel MOSFET for Lowest Loss a Battery and a Wall Adapter in Comparator Mode\n4412fb\n10\nFor more information www.linear.com/LTC4412LTC4412\nTypical applicaTions\nSENSE pin voltage rising above the battery voltage and the auxiliary stays connected. When the primary power"
+  },
+  {
+    "faiss_index_id": 67,
+    "text": "turning off the MOSFET before the Schottky diode turns is disconnected and V falls below V , it will turn\nIN LOAD\non. The factors that determine the magnitude of the voltage on the auxiliary MOSFET if CTL is low, but V must\nLOAD\ndroop are the auxiliary input rise time, the type of diode stay up long enough for the MOSFET to turn on. At a\nused, the value of C and the load current. minimum, C capacitance must be sized to hold up\nOUT OUT\nV until the transition between the sets of MOSFETs\nLOAD"
+  },
+  {
+    "faiss_index_id": 68,
+    "text": "LOAD\nIdeal Diode Control with a Microcontroller is complete. Sufficient capacitance on the load and low\nor no capacitance on V will help ensure this. If desired,\nFigure 4 illustrates an application circuit for microcon- IN\nthis can be avoided by use of a capacitor on V to ensure\ntroller monitoring and control of two power sources. The IN\nthat V falls more slowly than V .\nmicrocontroller’s analog inputs, perhaps with the aid of a IN LOAD\nresistor voltage divider, monitors each supply input and"
+  },
+  {
+    "faiss_index_id": 69,
+    "text": "Load Sharing\ncommands the LTC4412 through the CTL input. Back-to-\nback MOSFETs are used so that the drain-source diode will Figure 5 illustrates an application circuit for dual battery\nnot power the load when the MOSFET is turned off (dual load sharing with automatic switchover of load from\nMOSFETs in one package are commercially available). batteries to wall adapter. Whichever battery can supply\nthe higher voltage will provide the load current until it is"
+  },
+  {
+    "faiss_index_id": 70,
+    "text": "With a logical low input on the CTL pin, the primary input\ndischarged to the voltage of the other battery. The load will\nsupplies power to the load regardless of the auxiliary\nthen be shared between the two batteries according to the\nvoltage. When CTL is switched high, the auxiliary input\ncapacity of each battery. The higher capacity battery will\nwill power the load whether or not it is higher or lower\nprovide proportionally higher current to the load. When"
+  },
+  {
+    "faiss_index_id": 71,
+    "text": "than the primary power voltage. Once the auxiliary is\na wall adapter input is applied, both MOSFETs will turn\non, the primary power can be removed and the auxiliary\noff and no load current will be drawn from the batteries.\nwill continue to power the load. Only when the primary\nThe STAT pins provide information as to which input is\nvoltage is higher than the auxiliary voltage will taking\nsupplying the load current. This concept can be expanded\nCTL low switch back to the primary power, otherwise"
+  },
+  {
+    "faiss_index_id": 72,
+    "text": "to more power inputs.\nWALL\nADAPTER\nINPUT *\nAUXILIARY\nP-CHANNEL MOSFETS TO LOAD\n* * BAT1 COUT\nAUX\nS\nIL\nO\nIA\nU\nR\nR\nY\nC E\nP\nI\nO\nN\nW\nP\nE\nU\nR\nT\n1\nV\nL\nIN\nTC\nS\n44\nE\n1\nN\n2\nSE\n6 VCC\n470k 2 5\nGND GATE 470k STATUS IS HIGH\n3 4 WHEN BAT1 IS\nCTL STAT\nMICROCONTROLLER PRIMARY SUPPLYING\nP-CHANNEL MOSFETS LOAD CURRENT\n* * WHEN BOTH STATUS LINES ARE\nTO LOAD HIGH, THEN BOTH BATTERIES ARE\n0.1µF COUT * S B U O P TH P L S Y T I A N T G U L S O L A I D N E C S U A R R R E E N L T O S W . W TH H E E N N"
+  },
+  {
+    "faiss_index_id": 73,
+    "text": "WALL ADAPTER IS PRESENT\nBAT2\nPRIMARY 1 LTC4412 6 LTC4412\nSOURCE\nP\nI\nO\nN\nW\nP\nE\nU\nR\nT 2\nVIN SENSE\n5\n1\nVIN SENSE\n6 VCC\nGND GATE 2 5\n3 4 GND GATE 470k STATUS IS HIGH\nCTL STAT 3 4 WHEN BAT2 IS\n4412 F04 CTL STAT\n4412 F05 SUPPLYING\n*DRAIN-SOURCE DIODE OF MOSFET LOAD CURRENT\n*DRAIN-SOURCE DIODE OF MOSFET\nFigure 4. Microcontroller Monitoring and Control Figure 5. Dual Battery Load Sharing with Automatic\nof Two Power Sources Switchover of Load from Batteries to Wall Adapter\n4412fb\n11"
+  },
+  {
+    "faiss_index_id": 74,
+    "text": "4412fb\n11\nFor more information www.linear.com/LTC4412LTC4412\nTypical applicaTions\nMultiple Battery Charging High Side Power Switch\nFigure 6 illustrates an application circuit for automatic Figure 7 illustrates an application circuit for a logic con-\ndual battery charging from a single charger. Whichever trolled high side power switch. When the CTL pin is a logical\nbattery has the lower voltage will receive the charging low, the LTC4412 will turn on the MOSFET. Because the"
+  },
+  {
+    "faiss_index_id": 75,
+    "text": "current until both battery voltages are equal, then both SENSE pin is grounded, the LTC4412 will apply maximum\nwill be charged. When both are charged simultaneously, clamped gate drive voltage to the MOSFET. When the CTL\nthe higher capacity battery will get proportionally higher pin is a logical high, the LTC4412 will turn off the MOSFET\ncurrent from the charger. For Li-Ion batteries, both batteries by pulling its gate voltage up to the supply input voltage"
+  },
+  {
+    "faiss_index_id": 76,
+    "text": "will achieve the float voltage minus the forward regulation and thus deny power to the load. The MOSFET is con-\nvoltage of 20mV. This concept can apply to more than nected with its source connected to the power source. This\ntwo batteries. The STAT pins provide information as to disables the drain-source diode from supplying voltage\nwhich batteries are being charged. For intelligent control, to the load when the MOSFET is off. Note that if the load"
+  },
+  {
+    "faiss_index_id": 77,
+    "text": "the CTL pin input can be used with a microcontroller and is powered from another source, then the drain-source\nback-to-back MOSFETs as shown in Figure 4. This allows diode can forward bias and deliver current to the power\ncomplete control for disconnection of the charger from supply connected to the V pin.\nIN\neither battery.\n*\nBATTERY TO LOAD OR P-CHANNEL\nCHARGER PowerPath MOSFET\nINPUT BAT1 CONTROLLER *\n1\nV\nL\nIN\nTC\nS\n44\nE\n1\nN\n2\nSE\n6 VCC SU\nIN\nP\nP\nP\nU\nLY\nT\nTO LOAD\n2 5 COUT\nGND GATE 470k LTC4412"
+  },
+  {
+    "faiss_index_id": 78,
+    "text": "P\nP\nU\nLY\nT\nTO LOAD\n2 5 COUT\nGND GATE 470k LTC4412\n3 CTL STAT 4 S W T H A E T N U S B A IS T 1 H I I S G H 0.1µF 1 VIN SENSE 6\n0.1µF CHARGING 2 GND GATE 5\n* TO LOAD OR LOGIC 3 CTL STAT 4\nPowerPath INPUT 4412 F07\nBAT2 CONTROLLER *DRAIN-SOURCE DIODE OF MOSFET\nLTC4412\n1\nVIN SENSE\n6 VCC\n2 GND GATE 5 470k Figure 7. Logic Controlled High Side Power Switch\n3 4 STATUS IS HIGH\nCTL STAT WHEN BAT2 IS\n4412 F06CHARGING\n*DRAIN-SOURCE DIODE OF MOSFET\nFigure 6. Automatic Dual Battery Charging"
+  },
+  {
+    "faiss_index_id": 79,
+    "text": "Figure 6. Automatic Dual Battery Charging\nfrom Single Charging Source\n4412fb\n12\nFor more information www.linear.com/LTC4412LTC4412\nrevision hisTory\n(Revision history begins at Rev B)\nREV DATE DESCRIPTION PAGE NUMBER\nB 02/15 Added H and MP-grade options. Throughout\n4412fb\nInformation furnished by Linear Technology Corporation is believed to be accurate and reliable. 13\nHowever, no responsibility is assumed for its use. Linear Technology Corporation makes no representa-"
+  },
+  {
+    "faiss_index_id": 80,
+    "text": "tion that the interconneFcotior nm oof irtse ciinrcfouirtms aast dioensc wribwedw h.leinreeina rw.cilol nmot/ LinTfCrin4g4e1 o2n existing patent rights.LTC4412\npackage DescripTion\nPlease refer to http://www.linear.com/designtools/packaging/ for the most recent package drawings.\nSS66 P Paacckkaaggee\n66--LLeeaadd P Plalasstitcic T TSSOOT-T2-233\n((RReeffeerreennccee L LTTCC DDWWGG # # 0 055-0-08-81-613663)6)\n0.62 0.95 2.90 BSC\nMAX REF (NOTE 4)\n1.22 REF"
+  },
+  {
+    "faiss_index_id": 81,
+    "text": "0.62 0.95 2.90 BSC\nMAX REF (NOTE 4)\n1.22 REF\n3.85 MAX 2.62 REF 1.4 MIN 2.80 BSC 1 ( .5 N 0 O T – E 1 4 .7 ) 5\nPIN ONE ID\nRECOMMENDED SOLDER PAD LAYOUT 0.30 – 0.45\n0.95 BSC\nPER IPC CALCULATOR 6 PLCS (NOTE 3)\n0.80 – 0.90\n0.20 BSC\n0.01 – 0.10\n1.00 MAX\nDATUM ‘A’\n0.30 – 0.50 REF\n0.09 – 0.20 1.90 BSC\n(NOTE 3) S6 TSOT-23 0302\nNOTE:\n1. DIMENSIONS ARE IN MILLIMETERS\n2. DRAWING NOT TO SCALE\n3. DIMENSIONS ARE INCLUSIVE OF PLATING\n4. DIMENSIONS ARE EXCLUSIVE OF MOLD FLASH AND METAL BURR"
+  },
+  {
+    "faiss_index_id": 82,
+    "text": "5. MOLD FLASH SHALL NOT EXCEED 0.254mm\n6. JEDEC PACKAGE REFERENCE IS MO-193\nrelaTeD parTs\nPART NUMBER DESCRIPTION COMMENTS\nLTC1473 Dual PowerPath Switch Driver Switches and Isolates Sources Up to 30V\nLTC1479 PowerPath Controller for Dual Battery Systems Complete PowerPath Management for Two Batteries; DC Power Source,\nCharger and Backup\nLTC1558/LTC1559 Back-Up Battery Controller with Programmable Output Adjustable Backup Voltage from 1.2V NiCd Button Cell,\nIncludes Boost Converter"
+  },
+  {
+    "faiss_index_id": 83,
+    "text": "Includes Boost Converter\nLT®1579 300mA Dual Input Smart Battery Back-Up Regulator Maintains Output Regulation with Dual Inputs, 0.4V Dropout at 300mA\nLTC1733/LTC1734 Monolithic Linear Li-Ion Chargers Thermal Regulation, No External MOSFET/Sense Resistor\nLTC1960 Dual Battery Charger Selector with SPI Complete Dual Battery Charger/Selector System, 36-Lead SSOP\nLTC1998 2.5µA, 1% Accurate Programmable Battery Detector Adjustable Trip Voltage/Hysteresis, ThinSOT"
+  },
+  {
+    "faiss_index_id": 84,
+    "text": "LTC4350 Hot Swappable Load Share Controller Allows N + 1 Redundant Supply, Equally Loads Multiple Power Supplies\nConnected in Parallel\nLTC4410 USB Power Manager in ThinSOT Enables Simultaneous Battery Charging and\nOperation of USB Component Peripheral Devices\n4412fb\n14 Linear Technology Corporation LT 0215 REV B • PRINTED IN USA\n1630 McCarthy Blvd., Milpitas, CA 95035-7417\nFor more information www.linear.com/LTC4412"
+  },
+  {
+    "faiss_index_id": 85,
+    "text": "For more information www.linear.com/LTC4412\n(408) 432-1900 ● FAX: (408) 434-0507 ● www.linear.com/LTC4412  LINEAR TECHNOLOGY CORPORATION 2002"
+  }
+]

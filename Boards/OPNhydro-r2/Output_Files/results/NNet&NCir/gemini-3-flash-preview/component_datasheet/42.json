@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ATLAS_EZO_EC have a UART baud rate of 9600 according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The ATLAS_EZO_EC (EZO-EC) datasheet specifies a default UART baud rate of 9600 bps.",
+        "is_final": true
+    }
+}

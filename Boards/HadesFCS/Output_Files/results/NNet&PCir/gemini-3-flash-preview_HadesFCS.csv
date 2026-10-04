@@ -1,0 +1,18 @@
+Model,Question,Category,Actual_Response,Predicted_Response
+gemini-3-flash-preview,Q1,component_datasheet,YES,NO
+gemini-3-flash-preview,Q2,theory_layout,NO,NO
+gemini-3-flash-preview,Q3,component_datasheet,NO,NO
+gemini-3-flash-preview,Q4,spice_behaviour,NO,NO
+gemini-3-flash-preview,Q5,component_datasheet,NO,NO
+gemini-3-flash-preview,Q6,spice_behaviour,NO,NO
+gemini-3-flash-preview,Q7,component_datasheet,NO,NO
+gemini-3-flash-preview,Q8,theory_layout,YES,YES
+gemini-3-flash-preview,Q9,component_datasheet,NO,NO
+gemini-3-flash-preview,Q10,spice_behaviour,NO,NO
+gemini-3-flash-preview,Q11,theory_layout,YES,YES
+gemini-3-flash-preview,Q12,component_datasheet,YES,NO
+gemini-3-flash-preview,Q13,spice_behaviour,YES,YES
+gemini-3-flash-preview,Q14,theory_layout,YES,YES
+gemini-3-flash-preview,Q15,spice_behaviour,YES,YES
+Accuracy,Precision,Recall,F1 Score
+0.8666666666666667,0.9,0.8571428571428572,0.8611111111111112

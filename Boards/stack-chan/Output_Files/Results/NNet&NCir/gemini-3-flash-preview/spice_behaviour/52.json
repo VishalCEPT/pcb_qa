@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net-_j3-pin_3_ signal maintain a voltage of 0V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net-_j3-pin_3_ signal is connected to the /PWM1 signal through resistor R3 and to the /TTL signal via R13 and R14, both of which are active signals that will drive the net away from 0V.",
+        "is_final": true
+    }
+}

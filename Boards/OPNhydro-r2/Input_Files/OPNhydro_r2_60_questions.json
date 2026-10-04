@@ -1,0 +1,302 @@
+[
+  {
+    "category": "spice_behaviour",
+    "question": "Is the net i2c_scl at 0V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component R6 connected to FLOAT_LOW?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M3 have a maximum operating voltage of 5V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component M2 connected to V__pH_?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /bstbk maintain a voltage of 5V for the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component M4 connected to PRB__T_?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component M4 connected to PRB__EC_?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /vcpnb maintain a voltage of 18V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M1 have a USB connection according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component M3 connected to PRB__EC_?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /sdaec maintain a voltage of 0V for the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component J4 connected to PGND__T_?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M4 have I2C capabilities according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component J4 connected to GND__pH_?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /cp0na maintain a voltage of 5V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M3 have UART capabilities according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /cp0na maintain a voltage of 0V for the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component M2 connected to GND__pH_?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component U5 have a maximum input voltage of 29V according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U5 connected to CP1__pH_?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M2 have I2C capabilities according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /0v8bk maintain a voltage of 0V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U6 connected to STEP_PDIS?",
+    "answer": "YES"
+  },  
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M3 have UART capabilities according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /sdaec maintain a voltage of 3.3V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U7 connected to STEP_PDIS?",
+    "answer": "YES"
+  },    
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M1 have Wifi capabilities according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M4 have a maximum operating temperature of 150°C according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component M1 connected to STEP_PDIS?",
+    "answer": "NO"
+  },   
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /0v8bk maintain a voltage of 0.8V for the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M3 have a 3.6kΩ pull-up resistor between its data channels according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /vrefph maintain a voltage of 0.8V for the entire simulation?",
+    "answer": "NO"
+  },
+  { 
+    "category": "component_datasheet",
+    "question": "Does the component M2 have Wifi capabilities according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component C3 connected to I2C_SDA?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /vrefph maintain a voltage of 0V for the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component M4 connected to I2C_SCL?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M4 have a minimum operating temperature of -40°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /0isoec maintain a voltage of 0V for the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component H5 connected to GND?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M2 have a maximum operating temperature of 85°C according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component D2 connected to GND?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M3 have a UART baud rate of 9600 according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /float_low reach a steady state voltage of 2.5V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component J1 connected to GND?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /vselph maintain a voltage of 3.3V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M1 have flash capabilities according to its datasheet?",
+    "answer": "YES"
+  },
+  { 
+    "category": "component_datasheet",
+    "question": "Does the component M4 have UART capabilities according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component R15 connected to _0V8__BK_?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /vselph maintain a voltage of 0V for the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M2 have a minimum Vcc as 5V according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to _0V8__BK_?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /gpump maintain a voltage of 3.3V for the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /float_high maintain a voltage of 0V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "theory_layout",
+    "question": "Is the component F1 connected to _p_24V__FB_?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M1 have a flash size of 128kB according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /brbna maintain a voltage of 0V for the entire simulation?",
+    "answer": "YES"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M3 have a typical operating temperature of 30°C according to its datasheet?",
+    "answer": "NO"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /gpump maintain a voltage of 0V for the entire simulation?",
+    "answer": "NO"
+  },
+  {
+    "category": "component_datasheet",
+    "question": "Does the component M1 have a UART port according to its datasheet?",
+    "answer": "YES"
+  },
+  {
+    "category": "spice_behaviour",
+    "question": "Does the net /float_low reach a steady state voltage of 3.3V for the entire simulation?",
+    "answer": "YES"
+  }
+]

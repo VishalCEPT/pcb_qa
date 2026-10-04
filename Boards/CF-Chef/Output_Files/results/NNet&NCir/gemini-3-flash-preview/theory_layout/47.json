@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component R5 connected to Net__U1_EN_slash_CHIP_PU_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The netlist and SPICE file both show R5 pin 1 connected to the net 'Net-(U1-EN{slash}CHIP_PU)' (or 'Net-_U1-EN/CHIP_PU_').",
+        "is_final": true
+    }
+}

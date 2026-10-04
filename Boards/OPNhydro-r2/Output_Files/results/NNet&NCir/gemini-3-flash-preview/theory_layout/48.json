@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component R15 connected to _0V8__BK_?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist and SPICE file, resistor R15 is connected between GND (node 0) and the net labeled /0V8_BK.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component MAX3485 have a shutdown current of 2nA according to its datasheet?",
+    "tool_calls": {
+        "arguments": "{\"project_context\":{\"circuit_json_file\":\"./outputs/stack-chan/m5-pantilt.json\",\"spice_json_file\":\"./outputs/stack-chan/m5-pantilt_SPICE_circuit.json\",\"datasheet_files\":[\"./outputs/stack-chan/datasheets/U1.pdf\"]},\"question\":\"Does the component MAX3485 have a shutdown current of 2nA according to its datasheet?\",\"component_ref\":\"U1\"}",
+        "name": "get_relevant_context_from_question"
+    },
+    "response": {
+        "answer": "YES",
+        "reasoning": "The datasheet context explicitly states that in shutdown mode, the devices (including the MAX3485) typically draw only 2nA of supply current.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Is the net net-_c5-pad1_ at 0V for the entire simulation?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The SPICE netlist defines C5 between the node 'Net-_C5-Pad1_' and '0' (GND), but since there is no voltage source or active path connected to 'Net-_C5-Pad1_' in the provided SPICE file, it remains at the default 0V reference.",
+        "is_final": true
+    }
+}

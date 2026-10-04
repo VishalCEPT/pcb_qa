@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the /ttl signal maintain a voltage of 10V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The /TTL signal is connected to the +3V3 rail via pull-up resistor R6 and to the MAX3485 transceiver, which operates at a 3.3V logic level, making a 10V state impossible in this circuit.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /vcpnb maintain a voltage of 18V for the entire simulation?",
+    "tool_calls": {
+        "arguments": "{\"expected_voltage\":\"18V\",\"net_name\":\"VCP__NB_\",\"spice_circuit_file\":\"./outputs/OPNhydro-r2/OPNhydro_r2_SPICE_circuit.json\"}",
+        "name": "calculate_spice_behaviour"
+    },
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net /vcpnb is connected to the VCP pin of the TMC2209 motor driver (U7), which is a charge pump output typically used to drive high-side MOSFETs and does not maintain a static 18V DC level throughout all simulation phases.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component SW1 connected to Net__Q2_B_?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "According to the netlist and SPICE file, SW1 is connected to Net-(Q1-G) and GND, while Net-(Q2-B) is connected to R2 and Q2 pin 1.",
+        "is_final": true
+    }
+}

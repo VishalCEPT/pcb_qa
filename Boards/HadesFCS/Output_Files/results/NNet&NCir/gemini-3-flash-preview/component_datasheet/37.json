@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component IIS2MDCTR have a minimum analog supply voltage of 2.2V according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The IIS2MDCTR datasheet specifies a typical analog supply voltage (Vdd) range of 1.71 V to 3.6 V, making the minimum 1.71 V rather than 2.2 V.",
+        "is_final": true
+    }
+}

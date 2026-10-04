@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net sbus_rx maintain a voltage of 3.3V during the entire simulation?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The net sbus_rx is connected to the +3.3V supply through a 10k pull-up resistor (R12) and is only connected to the drain of NMOS Q5, which remains off as its gate (RC_SBUS) is not driven by any active source in the provided SPICE simulation setup.",
+        "is_final": true
+    }
+}

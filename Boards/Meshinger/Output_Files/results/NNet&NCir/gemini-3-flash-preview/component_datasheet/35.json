@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component 1825232-1 have a maximum operating current of 2A according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The component description in the netlist explicitly states that the 1825232-1 is a slide switch rated for 0.2A, not 2A.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /0v8bk maintain a voltage of 0V for the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net /0v8bk is connected to a voltage divider between +5V and GND (via R14 and R15), which results in a non-zero steady-state voltage of approximately 0.8V.",
+        "is_final": true
+    }
+}

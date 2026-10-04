@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /float_high maintain a voltage of 0V for the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The net /float_high is connected to the +3V3 supply through capacitor C5 and to ground through resistor R9, which will cause it to reach a non-zero steady-state voltage or experience a transient during the simulation.",
+        "is_final": true
+    }
+}

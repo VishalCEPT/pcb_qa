@@ -1,0 +1,13 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /microcontroller/heater maintain a voltage of 3.3V for the entire simulation?",
+    "tool_calls": {
+        "arguments": "{\"expected_voltage\":\"3.3V\",\"net_name\":\"/microcontroller/heater\",\"spice_circuit_file\":\"./outputs/CF-Chef/CF-Chef_SPICE_circuit.json\"}",
+        "name": "calculate_spice_behaviour"
+    },
+    "response": {
+        "answer": "NO",
+        "reasoning": "The SPICE simulation results indicate that the voltage on the /microcontroller/heater net does not remain constant at 3.3V throughout the entire duration of the simulation.",
+        "is_final": true
+    }
+}

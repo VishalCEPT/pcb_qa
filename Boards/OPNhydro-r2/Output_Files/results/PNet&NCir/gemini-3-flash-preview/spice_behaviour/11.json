@@ -1,0 +1,13 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /sdaec maintain a voltage of 0V for the entire simulation?",
+    "tool_calls": {
+        "arguments": "{\"expected_voltage\":\"0V\",\"spice_circuit_file\":\"./outputs/OPNhydro-r2/OPNhydro_r2_spice.json\",\"net_name\":\"/SDAEC\"}",
+        "name": "calculate_spice_behaviour"
+    },
+    "response": {
+        "answer": "NO",
+        "reasoning": "The SPICE simulation results indicate that the net /sdaec does not maintain a constant voltage of 0V throughout the simulation period.",
+        "is_final": true
+    }
+}

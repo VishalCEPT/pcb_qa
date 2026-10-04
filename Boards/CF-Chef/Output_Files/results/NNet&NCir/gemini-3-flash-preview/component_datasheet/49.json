@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component MAX31855KASA have a maximum supply voltage of 4V according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The MAX31855KASA datasheet specifies an absolute maximum supply voltage (VCC) of 4.0V, with a recommended operating range of 3.0V to 3.6V.",
+        "is_final": true
+    }
+}

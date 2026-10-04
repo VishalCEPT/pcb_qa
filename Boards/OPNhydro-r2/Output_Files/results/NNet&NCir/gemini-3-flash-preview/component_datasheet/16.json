@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ATLAS_EZO_EC have UART capabilities according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The ATLAS_EZO_EC component (EZO-EC) is part of the Atlas Scientific EZO platform, which supports both UART and I2C communication protocols as indicated by its pin descriptions (TX/SCL and RX/SDA).",
+        "is_final": true
+    }
+}

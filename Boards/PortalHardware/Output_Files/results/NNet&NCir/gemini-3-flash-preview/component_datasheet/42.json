@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component Conn_ARM_SWD_TagConnect_TC2030 have a current rating of 1A per pin according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The TC2030-CTX datasheet specifies a current rating of 1 Amp per pin for the Tag-Connect connector.",
+        "is_final": true
+    }
+}

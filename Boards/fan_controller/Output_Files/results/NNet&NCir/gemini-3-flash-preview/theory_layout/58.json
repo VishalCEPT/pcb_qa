@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component C2 connected to RST?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "According to the netlist and SPICE file, C2 is connected between the +5V and GND nets, while RST is connected to +5V through resistor R3 and to various pins on J1, J4, U2, and U3.",
+        "is_final": true
+    }
+}

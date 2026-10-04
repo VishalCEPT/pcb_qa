@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the /pwm2_c2 signal maintain a voltage of 5V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The /PWM2_C2 signal is connected to /PWM2 via resistor R12, and /PWM2 is a pulse-width modulated signal which by definition alternates between high and low voltage states.",
+        "is_final": true
+    }
+}

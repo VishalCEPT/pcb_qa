@@ -1,0 +1,22 @@
+{
+    "category": "component_datasheet",
+    "question": "Is the component TDD01H0SB1R a memory chip according to its datasheet?",
+    "tool_calls": {
+        "function_name": "get_relevant_context_from_question",
+        "function_args": {
+            "question": "Is the component TDD01H0SB1R a memory chip?",
+            "project_context": {
+                "circuit_json_file": "./outputs/HadesFCS/Hades.json",
+                "spice_json_file": "./outputs/HadesFCS/Hades_SPICE_circuit.json",
+                "datasheet_files": [
+                    "./outputs/HadesFCS/datasheets/SW2.pdf"
+                ]
+            }
+        }
+    },
+    "response": {
+        "answer": "NO",
+        "reasoning": "According to the datasheet, the TDD01H0SB1R is part of the TDD Series Jumper Switch. It is described as a SPDT (Single Pole Double Throw) jumper switch used for applications like hand-held electronic devices, instrumentation, and controls, rather than a memory chip.",
+        "is_final": true
+    }
+}

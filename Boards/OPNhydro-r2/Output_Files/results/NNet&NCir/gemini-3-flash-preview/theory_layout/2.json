@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component R6 connected to FLOAT_LOW?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The netlist and SPICE file both show that resistor R6 is connected between the FLOAT_LOW net and the +3V3 power rail.",
+        "is_final": true
+    }
+}

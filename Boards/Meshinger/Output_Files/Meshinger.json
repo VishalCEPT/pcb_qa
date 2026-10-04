@@ -1,0 +1,2440 @@
+{
+    "name": "top",
+    "description": "",
+    "source_file": "Meshinger.kicad_sch",
+    "tstamps": "",
+    "components": {},
+    "nets": {},
+    "subcircuits": [
+        {
+            "name": "SkylabModule",
+            "description": "",
+            "source_file": "SkylabModule.kicad_sch",
+            "tstamps": "",
+            "components": {
+                "J2": {
+                    "symbol": "Connector",
+                    "ref": "J2",
+                    "value": "Micro_SD_Card",
+                    "footprint": "Connector_Card:microSD_HC_Hirose_DM3D-SF",
+                    "datasheet": "http://katalog.we-online.de/em/datasheet/693072010801.pdf",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "SkylabModule",
+                        "Sheetfile": "SkylabModule.kicad_sch",
+                        "ki_keywords": "connector SD microsd",
+                        "ki_fp_filters": "microSD*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-00006041bae4",
+                    "fields": {
+                        "Footprint": "Connector_Card:microSD_HC_Hirose_DM3D-SF",
+                        "Datasheet": "http://katalog.we-online.de/em/datasheet/693072010801.pdf",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "Q2": {
+                    "symbol": "Transistor_FET",
+                    "ref": "Q2",
+                    "value": "NTR2101P",
+                    "footprint": "Package_TO_SOT_SMD:SOT-23",
+                    "datasheet": "http://www.onsemi.com/pub/Collateral/NTR2101P-D.PDF",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "SkylabModule",
+                        "Sheetfile": "SkylabModule.kicad_sch",
+                        "ki_keywords": "P-Channel MOSFET",
+                        "ki_fp_filters": "SOT?23*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603ed400",
+                    "fields": {
+                        "Footprint": "Package_TO_SOT_SMD:SOT-23",
+                        "Datasheet": "http://www.onsemi.com/pub/Collateral/NTR2101P-D.PDF",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "R2": {
+                    "symbol": "Device",
+                    "ref": "R2",
+                    "value": "10k",
+                    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "SkylabModule",
+                        "Sheetfile": "SkylabModule.kicad_sch",
+                        "ki_keywords": "R res resistor",
+                        "ki_fp_filters": "R_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000617be3ea",
+                    "fields": {
+                        "Footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "U4": {
+                    "symbol": "Keyboard",
+                    "ref": "U4",
+                    "value": "BBQ10KBD",
+                    "footprint": "BBQ10KBD:BM14B(0.8)-24DS-0.4V(53)",
+                    "datasheet": "",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "SkylabModule",
+                        "Sheetfile": "SkylabModule.kicad_sch"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-000060461e86",
+                    "fields": {
+                        "Footprint": "",
+                        "Datasheet": "",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "U5": {
+                    "symbol": "SKW92A",
+                    "ref": "U5",
+                    "value": "SKW92A",
+                    "footprint": "SKW92A:SKYLAB_SKW92A",
+                    "datasheet": "http://www.skylab.com.cn/uploadfile/Download/SkyLab_SKW92A_V1.04_datasheet.pdf",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "SkylabModule",
+                        "Sheetfile": "SkylabModule.kicad_sch"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-000060415f24",
+                    "fields": {
+                        "Footprint": "SKW92A:SKYLAB_SKW92A",
+                        "Datasheet": "http://www.skylab.com.cn/uploadfile/Download/SkyLab_SKW92A_V1.04_datasheet.pdf",
+                        "Description": ""
+                    },
+                    "pins": []
+                }
+            },
+            "nets": {
+                "_p_3V3": [
+                    {
+                        "component": "J2",
+                        "pin": {
+                            "name": "J2",
+                            "number": "4",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "Q2",
+                        "pin": {
+                            "name": "Q2",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "R2",
+                        "pin": {
+                            "name": "R2",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "2",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "28",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "29",
+                            "type": "power_in"
+                        }
+                    }
+                ],
+                "COL1": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "7",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "5",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "COL2": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "9",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "6",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "COL3": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "10",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "7",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "COL4": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "17",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "8",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "COL5": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "19",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "9",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "Display_Power_Switch": [
+                    {
+                        "component": "Q2",
+                        "pin": {
+                            "name": "Q2",
+                            "number": "3",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "EINK_CHIP_SELECT": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "41",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "EINK_DATA_COMMAND": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "42",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "EINK_DISPLAY_BUSY": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "43",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "EINK_DISPLAY_RESET": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "44",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "GND": [
+                    {
+                        "component": "J2",
+                        "pin": {
+                            "name": "J2",
+                            "number": "6",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "J2",
+                        "pin": {
+                            "name": "J2",
+                            "number": "9",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "1",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "11",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "12",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "13",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "14",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "15",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "16",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "28",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "4",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "5",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "13",
+                            "type": "bidirectional"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "14",
+                            "type": "bidirectional"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "17",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "20",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "27",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "30",
+                            "type": "power_in"
+                        }
+                    }
+                ],
+                "GPIO": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "26",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "46",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "HW_RESET": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "45",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "LAN1_RX_p": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "1",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "LAN1_RX_n": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "2",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "LAN1_TX_p": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "3",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "LAN1_TX_n": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "4",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "LED0": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "35",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "LED1": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "24",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "34",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "LED2": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "25",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "33",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "LED3": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "23",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "32",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "Net__J2_CLK_": [
+                    {
+                        "component": "J2",
+                        "pin": {
+                            "name": "J2",
+                            "number": "5",
+                            "type": "input"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "21",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "Net__J2_CMD_": [
+                    {
+                        "component": "J2",
+                        "pin": {
+                            "name": "J2",
+                            "number": "3",
+                            "type": "input"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "22",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "Net__J2_DAT0_": [
+                    {
+                        "component": "J2",
+                        "pin": {
+                            "name": "J2",
+                            "number": "7",
+                            "type": "bidirectional"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "16",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "Net__J2_DAT1_": [
+                    {
+                        "component": "J2",
+                        "pin": {
+                            "name": "J2",
+                            "number": "8",
+                            "type": "bidirectional"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "15",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "Net__J2_DAT2_": [
+                    {
+                        "component": "J2",
+                        "pin": {
+                            "name": "J2",
+                            "number": "1",
+                            "type": "bidirectional"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "24",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "Net__J2_DAT3_slash_CD_": [
+                    {
+                        "component": "J2",
+                        "pin": {
+                            "name": "J2",
+                            "number": "2",
+                            "type": "bidirectional"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "23",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "Net__Q2_G_": [
+                    {
+                        "component": "Q2",
+                        "pin": {
+                            "name": "Q2",
+                            "number": "1",
+                            "type": "input"
+                        }
+                    },
+                    {
+                        "component": "R2",
+                        "pin": {
+                            "name": "R2",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "31",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "PWM": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "3",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "10",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "ROW1": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "6",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "48",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "ROW2": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "8",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "47",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "ROW3": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "18",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "40",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "ROW4": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "20",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "39",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "ROW5": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "21",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "38",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "ROW6": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "22",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "37",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "ROW7": [
+                    {
+                        "component": "U4",
+                        "pin": {
+                            "name": "U4",
+                            "number": "27",
+                            "type": "output"
+                        }
+                    },
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "36",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "SPI_CLK": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "11",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "SPI_MOSI": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "12",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "UART_RX": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "25",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "UART_TX": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "26",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "USB_p": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "18",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "USB_n": [
+                    {
+                        "component": "U5",
+                        "pin": {
+                            "name": "U5",
+                            "number": "19",
+                            "type": "bidirectional"
+                        }
+                    }
+                ]
+            },
+            "subcircuits": [],
+            "annotations": []
+        },
+        {
+            "name": "EPD_Driver",
+            "description": "",
+            "source_file": "EPD_Driver.kicad_sch",
+            "tstamps": "",
+            "components": {
+                "C1": {
+                    "symbol": "Device",
+                    "ref": "C1",
+                    "value": "0.1uF/16V",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603ea9b9",
+                    "fields": {
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "C2": {
+                    "symbol": "Device",
+                    "ref": "C2",
+                    "value": "1uF/6.3V",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603e7751",
+                    "fields": {
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "C3": {
+                    "symbol": "Device",
+                    "ref": "C3",
+                    "value": "4.7uF/25V",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603d970c",
+                    "fields": {
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "C4": {
+                    "symbol": "Device",
+                    "ref": "C4",
+                    "value": "1uF/25V",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603d5d81",
+                    "fields": {
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "C5": {
+                    "symbol": "Device",
+                    "ref": "C5",
+                    "value": "1uF/25V",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603b710e",
+                    "fields": {
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "C6": {
+                    "symbol": "Device",
+                    "ref": "C6",
+                    "value": "1uF/25V",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603dfe10",
+                    "fields": {
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "C7": {
+                    "symbol": "Device",
+                    "ref": "C7",
+                    "value": "1uF/25V",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603b9bb7",
+                    "fields": {
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "C8": {
+                    "symbol": "Device",
+                    "ref": "C8",
+                    "value": "1uF/25V",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603b48fb",
+                    "fields": {
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "C9": {
+                    "symbol": "Device",
+                    "ref": "C9",
+                    "value": "1uF/25V",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603b635f",
+                    "fields": {
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "C10": {
+                    "symbol": "Device",
+                    "ref": "C10",
+                    "value": "1uF/25V",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603b9407",
+                    "fields": {
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "J1": {
+                    "symbol": "FH34SRJ-24S",
+                    "ref": "J1",
+                    "value": "FH34SRJ-24S-0.5SH(99)",
+                    "footprint": "FH34SRJ-24S:HRS_FH34SRJ-24S-0.5SH(99)",
+                    "datasheet": "",
+                    "description": "",
+                    "properties": {
+                        "MAXIMUM_PACKAGE_HEIGHT": "1.75mm",
+                        "MANUFACTURER": "HIROSE ELECTRIC",
+                        "PARTREV": "NA",
+                        "STANDARD": "Manufacturer Recommendations",
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-00006039d9c4",
+                    "fields": {
+                        "MAXIMUM_PACKAGE_HEIGHT": "1.75mm",
+                        "MANUFACTURER": "HIROSE ELECTRIC",
+                        "PARTREV": "NA",
+                        "STANDARD": "Manufacturer Recommendations",
+                        "Footprint": "",
+                        "Datasheet": "",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "L1": {
+                    "symbol": "Device",
+                    "ref": "L1",
+                    "value": "10uH",
+                    "footprint": "Inductor_SMD:IND_LQH44PN100MJ0L",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch",
+                        "ki_keywords": "inductor choke coil reactor magnetic",
+                        "ki_fp_filters": "Choke_* *Coil* Inductor_* L_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603d1e04",
+                    "fields": {
+                        "Footprint": "Inductor_SMD:IND_LQH44PN100MJ0L",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "Q1": {
+                    "symbol": "MCH3478-TL-W",
+                    "ref": "Q1",
+                    "value": "MCH3478-TL-W",
+                    "footprint": "MCH3478-TL-W:On_Semiconductor-MCH3478-TL-H-Manufacturer_Recommended",
+                    "datasheet": "http://www.onsemi.cn/pub_link/Collateral/ENAA1353-D.PDF",
+                    "description": "",
+                    "properties": {
+                        "Channel Polarity": "N Channel",
+                        "Ciss Typ pF": "130",
+                        "Component Link 1 Description": "Manufacturer URL",
+                        "Component Link 1 URL": "http://www.onsemi.com/",
+                        "Component Link 3 Description": "Package Specification",
+                        "Component Link 3 URL": "http://www.onsemi.com/pub_link/Collateral/EN7354-D.PDF",
+                        "Configuration": "Single",
+                        "Coss Typ pF": "21",
+                        "Crss Typ pF": "14",
+                        "Mounting Technology": "Surface Mount",
+                        "Package Description": "3-Pin Small Outline Transistor, Body 2 x 1.6 mm, Pitch 0.65 mm",
+                        "Package Type": "SC-70FL / MCPH-3",
+                        "Packing": "Tape and Reel",
+                        "VBRDSS Min V": "30",
+                        "VGS Max V": "12",
+                        "VGSth Max V": "1.3",
+                        "category": "Trans",
+                        "ciiva ids": "837008",
+                        "library id": "1afd2ccbcc2ba532",
+                        "manufacturer": "On Semiconductor",
+                        "package": "MCPH-3",
+                        "release date": "1407149804",
+                        "rohs": "No",
+                        "vault revision": "4F433114-B412-42D1-93FA-4D10C81BF666",
+                        "imported": "yes",
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603a48b7",
+                    "fields": {
+                        "Channel Polarity": "N Channel",
+                        "Ciss Typ pF": "130",
+                        "Component Link 1 Description": "Manufacturer URL",
+                        "Component Link 1 URL": "http://www.onsemi.com/",
+                        "Component Link 3 Description": "Package Specification",
+                        "Component Link 3 URL": "http://www.onsemi.com/pub_link/Collateral/EN7354-D.PDF",
+                        "Configuration": "Single",
+                        "Coss Typ pF": "21",
+                        "Crss Typ pF": "14",
+                        "Mounting Technology": "Surface Mount",
+                        "Package Description": "3-Pin Small Outline Transistor, Body 2 x 1.6 mm, Pitch 0.65 mm",
+                        "Package Type": "SC-70FL / MCPH-3",
+                        "Packing": "Tape and Reel",
+                        "VBRDSS Min V": "30",
+                        "VGS Max V": "12",
+                        "VGSth Max V": "1.3",
+                        "category": "Trans",
+                        "ciiva ids": "837008",
+                        "library id": "1afd2ccbcc2ba532",
+                        "manufacturer": "On Semiconductor",
+                        "package": "MCPH-3",
+                        "release date": "1407149804",
+                        "rohs": "No",
+                        "vault revision": "4F433114-B412-42D1-93FA-4D10C81BF666",
+                        "imported": "yes",
+                        "Footprint": "MCH3478-TL-W:On_Semiconductor-MCH3478-TL-H-Manufacturer_Recommended",
+                        "Datasheet": "http://www.onsemi.cn/pub_link/Collateral/ENAA1353-D.PDF",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "R1": {
+                    "symbol": "Device",
+                    "ref": "R1",
+                    "value": "0.47ohm",
+                    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch",
+                        "ki_keywords": "R res resistor",
+                        "ki_fp_filters": "R_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603b3719",
+                    "fields": {
+                        "Footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "U1": {
+                    "symbol": "SS2040FL",
+                    "ref": "U1",
+                    "value": "SS2040FL",
+                    "footprint": "SOD-123FL",
+                    "datasheet": "",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603dad37",
+                    "fields": {
+                        "Footprint": "SOD-123FL",
+                        "Datasheet": "",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "U2": {
+                    "symbol": "SS2040FL",
+                    "ref": "U2",
+                    "value": "SS2040FL",
+                    "footprint": "SOD-123FL",
+                    "datasheet": "",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603c0f68",
+                    "fields": {
+                        "Footprint": "SOD-123FL",
+                        "Datasheet": "",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "U3": {
+                    "symbol": "SS2040FL",
+                    "ref": "U3",
+                    "value": "SS2040FL",
+                    "footprint": "SOD-123FL",
+                    "datasheet": "",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EPD_Driver",
+                        "Sheetfile": "EPD_Driver.kicad_sch"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000603db8de",
+                    "fields": {
+                        "Footprint": "SOD-123FL",
+                        "Datasheet": "",
+                        "Description": ""
+                    },
+                    "pins": []
+                }
+            },
+            "nets": {
+                "Display_Power_Switch": [
+                    {
+                        "component": "C1",
+                        "pin": {
+                            "name": "C1",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C2",
+                        "pin": {
+                            "name": "C2",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "15",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "16",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "L1",
+                        "pin": {
+                            "name": "L1",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "EINK_CHIP_SELECT": [
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "12",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "EINK_DATA_COMMAND": [
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "11",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "EINK_DISPLAY_BUSY": [
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "9",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "EINK_DISPLAY_RESET": [
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "10",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "GND": [
+                    {
+                        "component": "C1",
+                        "pin": {
+                            "name": "C1",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C10",
+                        "pin": {
+                            "name": "C10",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C2",
+                        "pin": {
+                            "name": "C2",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C4",
+                        "pin": {
+                            "name": "C4",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C5",
+                        "pin": {
+                            "name": "C5",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C6",
+                        "pin": {
+                            "name": "C6",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C7",
+                        "pin": {
+                            "name": "C7",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C8",
+                        "pin": {
+                            "name": "C8",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C9",
+                        "pin": {
+                            "name": "C9",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "17",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "8",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "S1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "S2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "R1",
+                        "pin": {
+                            "name": "R1",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__C5_Pad1_": [
+                    {
+                        "component": "C5",
+                        "pin": {
+                            "name": "C5",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "20",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__C7_Pad1_": [
+                    {
+                        "component": "C7",
+                        "pin": {
+                            "name": "C7",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "24",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__C8_Pad1_": [
+                    {
+                        "component": "C8",
+                        "pin": {
+                            "name": "C8",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "5",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__C9_Pad1_": [
+                    {
+                        "component": "C9",
+                        "pin": {
+                            "name": "C9",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "18",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__C10_Pad1_": [
+                    {
+                        "component": "C10",
+                        "pin": {
+                            "name": "C10",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "22",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__Q1_D_": [
+                    {
+                        "component": "C3",
+                        "pin": {
+                            "name": "C3",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "L1",
+                        "pin": {
+                            "name": "L1",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "Q1",
+                        "pin": {
+                            "name": "Q1",
+                            "number": "3",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U2",
+                        "pin": {
+                            "name": "U2",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__Q1_G_": [
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "Q1",
+                        "pin": {
+                            "name": "Q1",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__Q1_S_": [
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "3",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "Q1",
+                        "pin": {
+                            "name": "Q1",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "R1",
+                        "pin": {
+                            "name": "R1",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__U1_A_": [
+                    {
+                        "component": "C3",
+                        "pin": {
+                            "name": "C3",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U1",
+                        "pin": {
+                            "name": "U1",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U3",
+                        "pin": {
+                            "name": "U3",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__U2_K_": [
+                    {
+                        "component": "C4",
+                        "pin": {
+                            "name": "C4",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "21",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U2",
+                        "pin": {
+                            "name": "U2",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__U3_A_": [
+                    {
+                        "component": "C6",
+                        "pin": {
+                            "name": "C6",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "23",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U3",
+                        "pin": {
+                            "name": "U3",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "SPI_CLK": [
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "13",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "SPI_MOSI": [
+                    {
+                        "component": "J1",
+                        "pin": {
+                            "name": "J1",
+                            "number": "14",
+                            "type": "passive"
+                        }
+                    }
+                ]
+            },
+            "subcircuits": [],
+            "annotations": []
+        },
+        {
+            "name": "EthernetAndPower",
+            "description": "",
+            "source_file": "EthernetAndPower.kicad_sch",
+            "tstamps": "",
+            "components": {
+                "C11": {
+                    "symbol": "Device",
+                    "ref": "C11",
+                    "value": "0.1uF",
+                    "footprint": "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EthernetAndPower",
+                        "Sheetfile": "EthernetAndPower.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000606c8fa0",
+                    "fields": {
+                        "Footprint": "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "C12": {
+                    "symbol": "Device",
+                    "ref": "C12",
+                    "value": "2.2uF",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EthernetAndPower",
+                        "Sheetfile": "EthernetAndPower.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-00006071c327",
+                    "fields": {
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "C13": {
+                    "symbol": "Device",
+                    "ref": "C13",
+                    "value": "10uF",
+                    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EthernetAndPower",
+                        "Sheetfile": "EthernetAndPower.kicad_sch",
+                        "ki_keywords": "cap capacitor",
+                        "ki_fp_filters": "C_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000607397ad",
+                    "fields": {
+                        "Footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "IC1": {
+                    "symbol": "SamacSys_Parts",
+                    "ref": "IC1",
+                    "value": "FAN53610AUC33X",
+                    "footprint": "BGA6C40P2X3_86X116X62",
+                    "datasheet": "https://www.onsemi.com/pub/Collateral/FAN53610-D.pdf",
+                    "description": "Switching Voltage Regulators 3MHz, 1A Sync Buck Regulator",
+                    "properties": {
+                        "Height": "0.625",
+                        "Mouser Part Number": "512-FAN53610AUC33X",
+                        "Mouser Price/Stock": "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FAN53610AUC33X?qs=g6T3zOPhKMDb0u%252B%252BoMr5xw%3D%3D",
+                        "Manufacturer_Name": "ON Semiconductor",
+                        "Manufacturer_Part_Number": "FAN53610AUC33X",
+                        "Sheetname": "EthernetAndPower",
+                        "Sheetfile": "EthernetAndPower.kicad_sch"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-000060736531",
+                    "fields": {
+                        "Height": "0.625",
+                        "Mouser Part Number": "512-FAN53610AUC33X",
+                        "Mouser Price/Stock": "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FAN53610AUC33X?qs=g6T3zOPhKMDb0u%252B%252BoMr5xw%3D%3D",
+                        "Manufacturer_Name": "ON Semiconductor",
+                        "Manufacturer_Part_Number": "FAN53610AUC33X",
+                        "Footprint": "BGA6C40P2X3_86X116X62",
+                        "Datasheet": "https://www.onsemi.com/pub/Collateral/FAN53610-D.pdf",
+                        "Description": "Switching Voltage Regulators 3MHz, 1A Sync Buck Regulator"
+                    },
+                    "pins": []
+                },
+                "J3": {
+                    "symbol": "Connector",
+                    "ref": "J3",
+                    "value": "USB_A",
+                    "footprint": "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EthernetAndPower",
+                        "Sheetfile": "EthernetAndPower.kicad_sch",
+                        "ki_keywords": "connector USB",
+                        "ki_fp_filters": "USB*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000606d792e",
+                    "fields": {
+                        "Footprint": "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "J4": {
+                    "symbol": "SamacSys_Parts",
+                    "ref": "J4",
+                    "value": "Barrel_Jack_Switch",
+                    "footprint": "SamacSys_Parts:PJ079BH",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EthernetAndPower",
+                        "Sheetfile": "EthernetAndPower.kicad_sch"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000606e6957",
+                    "fields": {
+                        "Footprint": "SamacSys_Parts:PJ079BH",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "J5": {
+                    "symbol": "Connector",
+                    "ref": "J5",
+                    "value": "RJ45_Amphenol_RJMG1BD3B8K1ANR",
+                    "footprint": "Connector_RJ:RJ45_Amphenol_RJMG1BD3B8K1ANR",
+                    "datasheet": "https://www.amphenolcanada.com/ProductSearch/Drawings/AC/RJMG1BD3B8K1ANR.PDF",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EthernetAndPower",
+                        "Sheetfile": "EthernetAndPower.kicad_sch",
+                        "ki_keywords": "RJ45 Magjack Socket",
+                        "ki_fp_filters": "RJ45*Amphenol*RJMG1BD3B8K1ANR*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000606c8f96",
+                    "fields": {
+                        "Footprint": "Connector_RJ:RJ45_Amphenol_RJMG1BD3B8K1ANR",
+                        "Datasheet": "https://www.amphenolcanada.com/ProductSearch/Drawings/AC/RJMG1BD3B8K1ANR.PDF",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "J6": {
+                    "symbol": "Connector_Generic",
+                    "ref": "J6",
+                    "value": "Conn_02x01",
+                    "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EthernetAndPower",
+                        "Sheetfile": "EthernetAndPower.kicad_sch",
+                        "ki_keywords": "connector",
+                        "ki_fp_filters": "Connector*:*_2x??_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000606c8f7a",
+                    "fields": {
+                        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "J7": {
+                    "symbol": "Connector_Generic",
+                    "ref": "J7",
+                    "value": "Conn_01x03",
+                    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+                    "datasheet": "~",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EthernetAndPower",
+                        "Sheetfile": "EthernetAndPower.kicad_sch",
+                        "ki_keywords": "connector",
+                        "ki_fp_filters": "Connector*:*_1x??_*"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000607590c9",
+                    "fields": {
+                        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+                        "Datasheet": "~",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "L2": {
+                    "symbol": "SamacSys_Parts",
+                    "ref": "L2",
+                    "value": "LQM2MPN1R0MGHL",
+                    "footprint": "LQM2MPN1R0NG0L",
+                    "datasheet": "https://componentsearchengine.com/Datasheets/1/LQM2MPN1R0MGHL.pdf",
+                    "description": "",
+                    "properties": {
+                        "Height": "1",
+                        "Mouser Part Number": "81-LQM2MPN1R0MGHL",
+                        "Mouser Price/Stock": "https://www.mouser.com/Search/Refine.aspx?Keyword=81-LQM2MPN1R0MGHL",
+                        "Manufacturer_Name": "Murata Electronics",
+                        "Manufacturer_Part_Number": "LQM2MPN1R0MGHL",
+                        "Sheetname": "EthernetAndPower",
+                        "Sheetfile": "EthernetAndPower.kicad_sch"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-0000606bd2e5",
+                    "fields": {
+                        "Height": "1",
+                        "Mouser Part Number": "81-LQM2MPN1R0MGHL",
+                        "Mouser Price/Stock": "https://www.mouser.com/Search/Refine.aspx?Keyword=81-LQM2MPN1R0MGHL",
+                        "Manufacturer_Name": "Murata Electronics",
+                        "Manufacturer_Part_Number": "LQM2MPN1R0MGHL",
+                        "Footprint": "LQM2MPN1R0NG0L",
+                        "Datasheet": "https://componentsearchengine.com/Datasheets/1/LQM2MPN1R0MGHL.pdf",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "S1": {
+                    "symbol": "SamacSys_Parts",
+                    "ref": "S1",
+                    "value": "1825232-1",
+                    "footprint": "18252321",
+                    "datasheet": "https://componentsearchengine.com/Datasheets/1/1825232-1.pdf",
+                    "description": "TE CONNECTIVITY - 1825232-1 - SLIDE SWITCH, SPDT, 0.2A, 30VDC, SOLDER",
+                    "properties": {
+                        "Height": "3.7",
+                        "Mouser Part Number": "655-1825232-1",
+                        "Mouser Price/Stock": "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/1825232-1?qs=kTKVN3NWb5FosGxaNC1%252BtA%3D%3D",
+                        "Manufacturer_Name": "TE Connectivity",
+                        "Manufacturer_Part_Number": "1825232-1",
+                        "Sheetname": "EthernetAndPower",
+                        "Sheetfile": "EthernetAndPower.kicad_sch"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-00006215eb45",
+                    "fields": {
+                        "Height": "3.7",
+                        "Mouser Part Number": "655-1825232-1",
+                        "Mouser Price/Stock": "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/1825232-1?qs=kTKVN3NWb5FosGxaNC1%252BtA%3D%3D",
+                        "Manufacturer_Name": "TE Connectivity",
+                        "Manufacturer_Part_Number": "1825232-1",
+                        "Footprint": "18252321",
+                        "Datasheet": "https://componentsearchengine.com/Datasheets/1/1825232-1.pdf",
+                        "Description": "TE CONNECTIVITY - 1825232-1 - SLIDE SWITCH, SPDT, 0.2A, 30VDC, SOLDER"
+                    },
+                    "pins": []
+                },
+                "U6": {
+                    "symbol": "SS2040FL",
+                    "ref": "U6",
+                    "value": "SS2040FL",
+                    "footprint": "SOD-123FL",
+                    "datasheet": "",
+                    "description": "",
+                    "properties": {
+                        "Sheetname": "EthernetAndPower",
+                        "Sheetfile": "EthernetAndPower.kicad_sch"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-000060fb3a37",
+                    "fields": {
+                        "Footprint": "SOD-123FL",
+                        "Datasheet": "",
+                        "Description": ""
+                    },
+                    "pins": []
+                },
+                "U7": {
+                    "symbol": "SamacSys_Parts",
+                    "ref": "U7",
+                    "value": "1043",
+                    "footprint": "1043",
+                    "datasheet": "http://www.keyelco.com/product-pdf.cfm?p=919",
+                    "description": "KEYSTONE - 1043 - BATTERY HOLDER, 18650, TH",
+                    "properties": {
+                        "Height": "14.86",
+                        "Mouser Part Number": "534-1043",
+                        "Mouser Price/Stock": "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/1043?qs=%2F7TOpeL5Mz6j%2FnxeOA1rsg%3D%3D",
+                        "Manufacturer_Name": "Keystone Electronics",
+                        "Manufacturer_Part_Number": "1043",
+                        "Sheetname": "EthernetAndPower",
+                        "Sheetfile": "EthernetAndPower.kicad_sch"
+                    },
+                    "tstamps": "00000000-0000-0000-0000-000060752788",
+                    "fields": {
+                        "Height": "14.86",
+                        "Mouser Part Number": "534-1043",
+                        "Mouser Price/Stock": "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/1043?qs=%2F7TOpeL5Mz6j%2FnxeOA1rsg%3D%3D",
+                        "Manufacturer_Name": "Keystone Electronics",
+                        "Manufacturer_Part_Number": "1043",
+                        "Footprint": "1043",
+                        "Datasheet": "http://www.keyelco.com/product-pdf.cfm?p=919",
+                        "Description": "KEYSTONE - 1043 - BATTERY HOLDER, 18650, TH"
+                    },
+                    "pins": []
+                }
+            },
+            "nets": {
+                "_p_3V3": [
+                    {
+                        "component": "C13",
+                        "pin": {
+                            "name": "C13",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "IC1",
+                        "pin": {
+                            "name": "IC1",
+                            "number": "C1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "L2",
+                        "pin": {
+                            "name": "L2",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "BAT_p": [
+                    {
+                        "component": "C12",
+                        "pin": {
+                            "name": "C12",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "IC1",
+                        "pin": {
+                            "name": "IC1",
+                            "number": "A2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "IC1",
+                        "pin": {
+                            "name": "IC1",
+                            "number": "B2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J3",
+                        "pin": {
+                            "name": "J3",
+                            "number": "1",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "J4",
+                        "pin": {
+                            "name": "J4",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J6",
+                        "pin": {
+                            "name": "J6",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U6",
+                        "pin": {
+                            "name": "U6",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "BAT_n": [
+                    {
+                        "component": "J4",
+                        "pin": {
+                            "name": "J4",
+                            "number": "3",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J6",
+                        "pin": {
+                            "name": "J6",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U7",
+                        "pin": {
+                            "name": "U7",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "GND": [
+                    {
+                        "component": "C11",
+                        "pin": {
+                            "name": "C11",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C12",
+                        "pin": {
+                            "name": "C12",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "C13",
+                        "pin": {
+                            "name": "C13",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "IC1",
+                        "pin": {
+                            "name": "IC1",
+                            "number": "A1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "IC1",
+                        "pin": {
+                            "name": "IC1",
+                            "number": "C2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J3",
+                        "pin": {
+                            "name": "J3",
+                            "number": "4",
+                            "type": "power_in"
+                        }
+                    },
+                    {
+                        "component": "J3",
+                        "pin": {
+                            "name": "J3",
+                            "number": "5",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J4",
+                        "pin": {
+                            "name": "J4",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J4",
+                        "pin": {
+                            "name": "J4",
+                            "number": "MH1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J4",
+                        "pin": {
+                            "name": "J4",
+                            "number": "MH2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "J7",
+                        "pin": {
+                            "name": "J7",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "S1",
+                        "pin": {
+                            "name": "S1",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "S1",
+                        "pin": {
+                            "name": "S1",
+                            "number": "MH1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "S1",
+                        "pin": {
+                            "name": "S1",
+                            "number": "MH2",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "HW_RESET": [
+                    {
+                        "component": "S1",
+                        "pin": {
+                            "name": "S1",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__IC1_SW_": [
+                    {
+                        "component": "IC1",
+                        "pin": {
+                            "name": "IC1",
+                            "number": "B1",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "L2",
+                        "pin": {
+                            "name": "L2",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "Net__U6_A_": [
+                    {
+                        "component": "U6",
+                        "pin": {
+                            "name": "U6",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    },
+                    {
+                        "component": "U7",
+                        "pin": {
+                            "name": "U7",
+                            "number": "1",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "UART_RX": [
+                    {
+                        "component": "J7",
+                        "pin": {
+                            "name": "J7",
+                            "number": "3",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "UART_TX": [
+                    {
+                        "component": "J7",
+                        "pin": {
+                            "name": "J7",
+                            "number": "2",
+                            "type": "passive"
+                        }
+                    }
+                ],
+                "USB_p": [
+                    {
+                        "component": "J3",
+                        "pin": {
+                            "name": "J3",
+                            "number": "3",
+                            "type": "bidirectional"
+                        }
+                    }
+                ],
+                "USB_n": [
+                    {
+                        "component": "J3",
+                        "pin": {
+                            "name": "J3",
+                            "number": "2",
+                            "type": "bidirectional"
+                        }
+                    }
+                ]
+            },
+            "subcircuits": [],
+            "annotations": []
+        }
+    ],
+    "annotations": []
+}

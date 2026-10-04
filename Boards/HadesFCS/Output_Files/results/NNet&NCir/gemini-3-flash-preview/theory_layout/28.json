@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component FB1 connected to VDDA_FCC?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "According to the netlist, net 'VDDA_FCC' (code 165) is connected to pin 1 of component FB1.",
+        "is_final": true
+    }
+}

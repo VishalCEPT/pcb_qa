@@ -1,0 +1,13 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the net /microcontroller/heater maintain a voltage of 12V for the entire simulation?",
+    "tool_calls": {
+        "arguments": "{\"net_name\":\"/microcontroller/heater\",\"spice_circuit_file\":\"./outputs/CF-Chef/CF-Chef_SPICE_circuit.json\",\"expected_voltage\":\"12V\"}",
+        "name": "calculate_spice_behaviour"
+    },
+    "response": {
+        "answer": "NO",
+        "reasoning": "Running the SPICE behaviour simulation indicates that the net /microcontroller/heater does not stay at a constant 12V throughout the entire simulation interval.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ATLAS_EZO_pH have a maximum operating temperature of 85\u00b0C according to its datasheet?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The provided datasheet link for the ATLAS_EZO_pH (EZO-PH) specifies an operating temperature range of -40\u00b0C to 125\u00b0C, not a maximum of 85\u00b0C.",
+        "is_final": true
+    }
+}

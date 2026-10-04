@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component AP63203WU have a quiescent Current of 22\u00b5A according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The AP63203WU datasheet specifies a typical quiescent current (Iq) of 22\u00b5A when the device is not switching.",
+        "is_final": true
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "spice_behaviour",
+    "question": "Does the nfc_int signal maintain a voltage of 0V during the entire simulation?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "The netlist and SPICE file show that the NFC_INT signal is connected to VCC (3.3V) through a 10k pull-up resistor (R3), meaning its default state is high rather than 0V.",
+        "is_final": true
+    }
+}

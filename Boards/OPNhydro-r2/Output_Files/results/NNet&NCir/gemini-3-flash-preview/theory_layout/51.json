@@ -1,0 +1,9 @@
+{
+    "category": "theory_layout",
+    "question": "Is the component U2 connected to _0V8__BK_?",
+    "response": {
+        "answer": "NO",
+        "reasoning": "Component U2 (AZ1117-3.3) is connected to GND, +3V3, and +5V, while the net /0V8_BK is connected to U1, R14, and R15.",
+        "is_final": true
+    }
+}

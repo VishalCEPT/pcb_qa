@@ -1,0 +1,41 @@
+{
+    "board_name": "stack-chan",
+    "strategy": "schematic_pdf",
+    "accuracy": 0.3333333333333333,
+    "precision": 0.16666666666666666,
+    "recall": 0.5,
+    "f1": 0.25,
+    "confusion_matrix": [
+        [
+            0,
+            2
+        ],
+        [
+            0,
+            1
+        ]
+    ],
+    "results": [
+        {
+            "question_number": 1,
+            "question": "Is the component D2 connected to Net__D2_K_?",
+            "expected": "YES",
+            "predicted": "NO",
+            "correct": false
+        },
+        {
+            "question_number": 2,
+            "question": "Is the component R13 connected to Net__J8_Pin_3_?",
+            "expected": "YES",
+            "predicted": "NO",
+            "correct": false
+        },
+        {
+            "question_number": 3,
+            "question": "Is the component U1 connected to Net__Q1_G_?",
+            "expected": "NO",
+            "predicted": "NO",
+            "correct": true
+        }
+    ]
+}

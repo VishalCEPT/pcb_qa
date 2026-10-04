@@ -1,0 +1,9 @@
+{
+    "category": "component_datasheet",
+    "question": "Does the component ESP32-C3-MINI-1 have a Bluetooth module according to its datasheet?",
+    "response": {
+        "answer": "YES",
+        "reasoning": "The component description in the netlist explicitly states that the ESP32-C3-MINI-1 family supports 2.4 GHz Wi-Fi and Bluetooth Low Energy (Bluetooth LE).",
+        "is_final": true
+    }
+}
