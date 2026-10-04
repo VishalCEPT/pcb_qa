@@ -1,2 +1,6 @@
 # Excluded only because it exceeds GitHub's 100MB per-file push limit
 .venv/Lib/site-packages/torch/lib/torch_cpu.dll
+
+# Contains real secrets locally; never commit (a scrubbed placeholder is
+# already in git history as a template, see .env on first commit)
+.env
