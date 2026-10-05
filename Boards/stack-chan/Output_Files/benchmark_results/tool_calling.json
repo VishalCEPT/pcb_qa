@@ -2,17 +2,17 @@
     "board_name": "stack-chan",
     "strategy": "tool_calling",
     "accuracy": 0.8,
-    "precision": 0.8333333333333333,
-    "recall": 0.8333333333333333,
-    "f1": 0.8,
+    "precision": 1.0,
+    "recall": 0.7946428571428572,
+    "f1": 0.8833333333333333,
     "confusion_matrix": [
         [
-            2,
-            1
+            5,
+            0
         ],
         [
             0,
-            2
+            7
         ]
     ],
     "results": [
@@ -34,7 +34,7 @@
             "question_number": 3,
             "question": "Does the /txd2 signal maintain a voltage of 3.3V during the entire simulation?",
             "expected": "YES",
-            "predicted": "NO",
+            "predicted": "UNKNOWN",
             "correct": false
         },
         {
@@ -50,6 +50,83 @@
             "expected": "YES",
             "predicted": "YES",
             "correct": true
+        },
+        {
+            "question_number": 6,
+            "question": "Does the net-_q2-b_ signal maintain a voltage of 3.3V during the entire simulation?",
+            "expected": "YES",
+            "predicted": "UNKNOWN",
+            "correct": false
+        },
+        {
+            "question_number": 7,
+            "question": "Does the component U1 have flash capabilities according to its datasheet?",
+            "expected": "NO",
+            "predicted": "NO",
+            "correct": true
+        },
+        {
+            "question_number": 8,
+            "question": "Does the net-_q2-b_ signal maintain a voltage of 5V during the entire simulation?",
+            "expected": "NO",
+            "predicted": "NO",
+            "correct": true
+        },
+        {
+            "question_number": 9,
+            "question": "Does the component Q1 have a maximum drain voltage of 35V according to its datasheet?",
+            "expected": "NO",
+            "predicted": "NO",
+            "correct": true
+        },
+        {
+            "question_number": 10,
+            "question": "Does the net-_j5-pin_1_ signal maintain a voltage of 5V during the entire simulation?",
+            "expected": "NO",
+            "predicted": "UNKNOWN",
+            "correct": false
+        },
+        {
+            "question_number": 11,
+            "question": "Is the component U1 connected to Net__Q1_G_?",
+            "expected": "NO",
+            "predicted": "NO",
+            "correct": true
+        },
+        {
+            "question_number": 12,
+            "question": "Does the component Q2 have a collector current of -100mA according to its datasheet?",
+            "expected": "YES",
+            "predicted": "YES",
+            "correct": true
+        },
+        {
+            "question_number": 13,
+            "question": "Does the net-_j5-pin_1_ signal maintain a voltage of 0V during the entire simulation?",
+            "expected": "YES",
+            "predicted": "YES",
+            "correct": true
+        },
+        {
+            "question_number": 14,
+            "question": "Is the component SW1 connected to GND?",
+            "expected": "YES",
+            "predicted": "YES",
+            "correct": true
+        },
+        {
+            "question_number": 15,
+            "question": "Does the component U1 have a supply voltage of 10V according to its datasheet?",
+            "expected": "NO",
+            "predicted": "NO",
+            "correct": true
         }
-    ]
+    ],
+    "rag_metrics": {
+        "recall_at_k": 0.8,
+        "precision_at_k": 0.6,
+        "mrr": 0.7,
+        "k": 3,
+        "num_questions": 5
+    }
 }

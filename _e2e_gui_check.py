@@ -48,11 +48,27 @@ def pump_until(root, predicate, timeout=90.0):
 
 
 def shot(name):
+    # Must NOT use subprocess.run() (blocking) here: screenshot.ps1 uses
+    # PrintWindow, which sends the target window a WM_PRINT message that its
+    # owning thread's message loop must process to respond. That thread is
+    # *this* one -- so blocking it on subprocess.run() while waiting for
+    # PrintWindow to return deadlocks forever (confirmed: the window then
+    # shows as "Not Responding" in Task Manager / Get-Process). Use Popen +
+    # a polling loop that keeps calling root.update() instead, so the
+    # message loop stays alive while the screenshot is being taken.
     out_path = f"{SHOT_DIR}\\{name}.png"
-    result = subprocess.run(
+    proc = subprocess.Popen(
         ["powershell.exe", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", PS_SCRIPT, "-OutPath", out_path],
-        capture_output=True, text=True,
+        stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
     )
+    deadline = time.monotonic() + 15.0
+    while proc.poll() is None and time.monotonic() < deadline:
+        root.update()
+        time.sleep(0.02)
+    if proc.poll() is None:
+        proc.kill()
+    stdout, stderr = proc.communicate(timeout=5)
+    result = subprocess.CompletedProcess(proc.args, proc.returncode, stdout, stderr)
     ok = "OK" in result.stdout
     check(f"screenshot captured: {name}", ok)
     if not ok:
