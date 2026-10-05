@@ -1,0 +1,23 @@
+# Windows-specific venv (wrong OS/arch for a Linux container, and 1GB+);
+# the image installs its own Linux-native dependencies instead.
+.venv/
+
+# VCS / editor / agent metadata
+.git/
+.claude/
+.github/
+
+# Secrets: never baked into the image, always supplied at `docker run` time
+# via --env-file .env (see DOCKER.md).
+.env
+
+# Byte-code caches, regenerated on first import
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Duplicate of the already-extracted Boards/ directory
+Boards.zip
+
+# Local pytest/tool caches
+.pytest_cache/

@@ -30,7 +30,7 @@ V_3V3 +3V3 0 DC 3.3
 .control 
 tran 100u 10m 
 set filetype=ascii 
-write C:\Users\vishalkr\cept\pcb_qa\CODE_BASE\Boards\stack-chan\Output_Files/m5-pantilt_generated_raw.raw all 
+write m5-pantilt_generated_raw.raw all 
 .endc 
 
 .end

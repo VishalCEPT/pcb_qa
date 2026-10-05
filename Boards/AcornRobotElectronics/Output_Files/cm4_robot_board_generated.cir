@@ -141,7 +141,7 @@ V_12V +12V 0 DC 12.0
 .control 
 tran 100u 10m 
 set filetype=ascii 
-write C:\Users\vishalkr\cept\pcb_qa\CODE_BASE\Boards\AcornRobotElectronics\Output_Files/cm4_robot_board_generated_raw.raw all 
+write cm4_robot_board_generated_raw.raw all 
 .endc 
 
 .end

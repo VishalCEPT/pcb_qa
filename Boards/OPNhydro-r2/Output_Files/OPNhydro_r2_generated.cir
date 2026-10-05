@@ -115,7 +115,7 @@ V_24VF /+24VF 0 DC 24.0
 .control 
 tran 100u 10m 
 set filetype=ascii 
-write C:\Users\vishalkr\cept\pcb_qa\CODE_BASE\Boards\OPNhydro-r2\Output_Files/OPNhydro_r2_generated_raw.raw all 
+write OPNhydro_r2_generated_raw.raw all 
 .endc 
 
 .end

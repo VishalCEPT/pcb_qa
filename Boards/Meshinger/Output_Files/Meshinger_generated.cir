@@ -32,7 +32,7 @@ V_BAT BAT+ 0 DC 25.0
 .control 
 tran 100u 10m 
 set filetype=ascii 
-write C:\Users\vishalkr\cept\pcb_qa\CODE_BASE\Boards\Meshinger\Output_Files/Meshinger_generated_raw.raw all 
+write Meshinger_generated_raw.raw all 
 .endc 
 
 .end

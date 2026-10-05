@@ -37,7 +37,7 @@ V_VCC VCC 0 DC 3.3
 .control 
 tran 100u 10m 
 set filetype=ascii 
-write C:\Users\vishalkr\cept\pcb_qa\CODE_BASE\Boards\PortalHardware\Output_Files/PortalHardware_generated_raw.raw all 
+write PortalHardware_generated_raw.raw all 
 .endc 
 
 .end

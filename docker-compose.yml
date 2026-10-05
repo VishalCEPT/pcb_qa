@@ -1,0 +1,28 @@
+networks:
+  default:
+    name: pcb-qa-net
+
+services:
+  pcb-qa:
+    build: .
+    image: pcb-qa:latest
+    container_name: pcb-qa
+    # Loaded if present; the app itself works without it (Board/SPICE tabs
+    # need no key; Q&A/Benchmark show a clear in-app error instead of
+    # crashing). Run `cp .env.example .env` and fill in your key first.
+    env_file:
+      - .env
+    environment:
+      # Default here targets a Linux host's X server (see the X11 socket
+      # volume below). Override to host.docker.internal:0.0 on Windows
+      # (VcXsrv) or macOS (XQuartz) -- see DOCKER.md.
+      - DISPLAY=${DISPLAY}
+    volumes:
+      # X11 socket forwarding so the Tkinter window can render on the host
+      # display (Linux only; remove/replace per DOCKER.md on Windows/macOS).
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      # Generated/cached board artifacts (circuit JSON, SPICE output,
+      # embeddings, benchmark results) persist on the host across container
+      # recreations instead of being rebuilt into the image each time.
+      - ./Boards:/app/Boards
+      - ./outputs:/app/outputs

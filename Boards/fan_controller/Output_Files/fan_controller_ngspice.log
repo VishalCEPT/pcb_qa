@@ -47,5 +47,5 @@ v_5v#branch                       -4.99867e-12
 
 
 No. of Data Rows : 108
-ASCII raw file "C:\Users\vishalkr\cept\pcb_qa\CODE_BASE\Boards\fan_controller\Output_Files/fan_controller_generated_raw.raw"
+ASCII raw file "fan_controller_generated_raw.raw"
 Note: Simulation executed from .control section 

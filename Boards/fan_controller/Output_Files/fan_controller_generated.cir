@@ -21,7 +21,7 @@ V_VCC VCC 0 DC 5.0
 .control 
 tran 100u 10m 
 set filetype=ascii 
-write C:\Users\vishalkr\cept\pcb_qa\CODE_BASE\Boards\fan_controller\Output_Files/fan_controller_generated_raw.raw all 
+write fan_controller_generated_raw.raw all 
 .endc 
 
 .end

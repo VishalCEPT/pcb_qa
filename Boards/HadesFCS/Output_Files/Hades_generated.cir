@@ -166,7 +166,7 @@ V_3V3 +3V3 0 DC 3.3
 .control 
 tran 100u 10m 
 set filetype=ascii 
-write C:\Users\vishalkr\cept\pcb_qa\CODE_BASE\Boards\HadesFCS\Output_Files/Hades_generated_raw.raw all 
+write Hades_generated_raw.raw all 
 .endc 
 
 .end

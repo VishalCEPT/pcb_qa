@@ -271,11 +271,23 @@ class KiCadSPICECircuitProcesser:
             magnitude_str = power.split("+", 1)[-1]
             spice_commands = spice_commands + f"V_{magnitude_str} {power} 0 DC {self._convert_voltage_str(magnitude_str)}" + "\n"
 
+        # The write path is kept relative (just the filename) rather than
+        # embedding self.output_dir: this .cir text is cached/committed to
+        # disk and reused across runs (convert_to_simulation_ready_cir skips
+        # regenerating it unless force_regenerate is set), but self.output_dir
+        # is an absolute path computed from wherever *this* machine's repo
+        # happens to be checked out. Baking that absolute path in would make
+        # the cached .cir permanently tied to this exact machine/clone path
+        # -- breaking for any other user, OS, or container (e.g. Docker's
+        # /app) that reuses the same cached file from a different location.
+        # run_ngspice_simulation() runs ngspice with cwd=self.output_dir so
+        # this relative filename always resolves correctly regardless of
+        # where the repo lives on the machine actually running it.
         spice_commands = spice_commands + "\n\n" \
         ".control \n" + \
         "tran 100u 10m \n" + \
         "set filetype=ascii \n" + \
-        f"write {self.output_dir}/{output_file_name}_raw.raw all \n" + \
+        f"write {output_file_name}_raw.raw all \n" + \
         ".endc \n\n"
  
         new_lines = first_line + "\n" + "\n".join(map(str, spice_model_defs)) + "\n\n" + "".join(map(str, new_lines)) + spice_commands + last_line
@@ -292,17 +304,29 @@ class KiCadSPICECircuitProcesser:
         embedded in that .cir) and persists the result to self.spice_json_file
         so check_steady_state_average_matches_expected_voltage can read it back.
         """
-        subprocess.run(
+        result = subprocess.run(
             [ngspice_executable, "-b", "-o", output_spice_logs, input_spice_path],
             capture_output=True,
-            check=True,
             timeout=120,
+            # The .cir's embedded `write` command uses a relative filename
+            # (see convert_project_spice_to_circuit), so ngspice must be run
+            # from output_dir for it to land at output_raw_path below.
+            cwd=self.output_dir,
         )
         if not os.path.exists(output_raw_path):
             # ngspice's batch mode (`-b`) commonly exits 0 even when it aborts
             # partway through the .control script (e.g. a component references
-            # a .model that was never defined), so a missing .raw file is the
-            # only reliable signal that the simulation never actually ran.
+            # a .model that was never defined); conversely, some ngspice
+            # builds (e.g. Debian/Ubuntu's ngspice-39 package) exit nonzero
+            # merely because the .control script has no .plot/.print/.fourier
+            # directive, even though its `write` command already completed
+            # successfully. So the .raw file's existence -- not the process's
+            # exit code either way -- is the only reliable signal of whether
+            # the simulation actually produced output.
+            if result.returncode != 0:
+                raise subprocess.CalledProcessError(
+                    result.returncode, result.args, output=result.stdout, stderr=result.stderr
+                )
             log_tail = ""
             if os.path.exists(output_spice_logs):
                 with open(output_spice_logs, 'r', encoding="utf-8", errors="replace") as f:
