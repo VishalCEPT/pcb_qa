@@ -108,6 +108,18 @@ class BenchmarkTab(ttk.Frame):
             f"Recall: {report.recall:.2f}",
             f"F1: {report.f1:.2f}",
             f"Confusion matrix (rows/cols = YES, NO): {report.confusion}",
+        ]
+        if report.rag is not None:
+            lines += [
+                "",
+                f"RAG retrieval metrics (k={report.rag.k}, {report.rag.num_questions} "
+                "component_datasheet question(s), document-level relevance):",
+                f"  Recall@K: {report.rag.recall_at_k:.2f}",
+                f"  Precision@K: {report.rag.precision_at_k:.2f}",
+                f"  MRR: {report.rag.mrr:.2f}",
+            ]
+        lines += [
+            "",
             f"Results saved to: {report.results_path}",
             "",
             "Per-question results:",

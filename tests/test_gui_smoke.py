@@ -86,6 +86,27 @@ def test_benchmark_tab_runs_through_real_async_runner(app, monkeypatch):
     assert "Accuracy:" in app.benchmark_tab.output.get("1.0", tk.END)
 
 
+def test_benchmark_tab_shows_rag_metrics_for_tool_calling_strategy(app, monkeypatch):
+    from backend import benchmark_service
+    prompt_strategies = benchmark_service.prompt_strategies
+    monkeypatch.setattr(prompt_strategies, "answer_with_tool_calling", lambda _board, _q: "YES")
+    monkeypatch.setattr(
+        benchmark_service.ToolCaller, "get_relevant_context_across_all_datasheets",
+        lambda self, question, datasheets, k=3: [{"datasheet": "U1", "text": "...", "distance": 0.0}],
+    )
+
+    app.benchmark_tab.strategy_var.set("tool_calling")
+    app.benchmark_tab.limit_entry.delete(0, tk.END)
+    app.benchmark_tab.limit_entry.insert(0, "10")
+    app.benchmark_tab._on_run()
+
+    assert pump_until(app.root, lambda: app.benchmark_tab.status_label.cget("text") == "Benchmark complete.", timeout=30.0)
+    assert not app.dialogs
+    assert "RAG retrieval metrics" in app.benchmark_tab.output.get("1.0", tk.END)
+    assert "Recall@K:" in app.benchmark_tab.output.get("1.0", tk.END)
+
+
+
 def test_reload_refreshes_board_list(app, boards_dir):
     (boards_dir / "new-board" / "Input_Files").mkdir(parents=True)
     app._on_reload()

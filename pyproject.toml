@@ -20,6 +20,9 @@ dependencies = [
     "truststore",
     # Offline evaluation / scoring
     "scikit-learn",
+    # Optional LLM/RAG observability (backend/observability.py); no-ops if
+    # LANGFUSE_PUBLIC_KEY/LANGFUSE_SECRET_KEY aren't configured
+    "langfuse",
     # Backend facade retry/backoff
     "tenacity",
     # .env configuration loading
@@ -42,9 +45,6 @@ py-modules = ["main"]
 [tool.setuptools.packages.find]
 include = ["backend*", "core*", "gui*", "evaluation*", "llm_evaluation*", "validation*"]
 
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-markers = [
-    "integration: needs real external tools/services (ngspice on PATH, GEMINI_API_KEY); skipped when unavailable",
-]
-addopts = "-p no:cacheprovider"
+# Pytest config lives in pytest.ini (which pytest prioritizes over
+# pyproject.toml when both exist), not here, to avoid the two silently
+# diverging.

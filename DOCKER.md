@@ -83,6 +83,44 @@ docker compose run --rm pcb-qa python -m pytest -q
 This needs no display at all (pytest doesn't open any windows), so it works
 regardless of the X11 setup above.
 
+## 5. Optional: self-hosted observability dashboard (Langfuse)
+
+Every Gemini call, datasheet retrieval, and benchmark run is traced via
+[Langfuse](https://langfuse.com) (see `backend/observability.py`) when it's
+configured — this is entirely optional; the app works identically without
+it, just without traces. `docker-compose.langfuse.yml` brings up a full
+self-hosted Langfuse instance (web UI + worker + Postgres + ClickHouse +
+Redis + MinIO) alongside the app:
+
+```
+docker compose -f docker-compose.yml -f docker-compose.langfuse.yml up --build
+```
+
+As long as `GEMINI_API_KEY` is already set in `.env` as per step 1, this is
+genuinely zero-extra-setup: `LANGFUSE_PUBLIC_KEY`/`LANGFUSE_SECRET_KEY` in
+`.env` (defaulting to `pk-lf-pcbqa-local`/`sk-lf-pcbqa-local` if left unset)
+are used both by the app *and* by `docker-compose.langfuse.yml` itself,
+which auto-provisions a matching project with those exact keys on first
+boot — no manual "create a project, copy its keys" step. Once it's up:
+
+- Dashboard: <http://localhost:3000> (sign in with `LANGFUSE_INIT_USER_EMAIL`
+  / `LANGFUSE_INIT_USER_PASSWORD` from `.env.example`'s defaults, or
+  whatever you set them to).
+- Every Q&A question, benchmark run, and the Gemini/retrieval calls inside
+  them show up as traces, with accuracy/F1/RAG Recall@K/Precision@K/MRR
+  attached as scores on each benchmark trace.
+
+To run just the dashboard without the app container:
+```
+docker compose -f docker-compose.langfuse.yml up
+```
+
+The defaults in `.env.example` (`LANGFUSE_SALT`, `LANGFUSE_ENCRYPTION_KEY`,
+`*_PASSWORD` values, etc.) are fine for local, single-user use only —
+regenerate all of them (each is marked `# CHANGEME` in
+`docker-compose.langfuse.yml`) before ever exposing this stack beyond
+`localhost`.
+
 ## Troubleshooting
 
 - **`_tkinter.TclError: couldn't connect to display` (or window never
@@ -98,3 +136,9 @@ regardless of the X11 setup above.
   check `GEMINI_API_KEY` is set correctly in `.env` and that `docker-compose.yml`
   (or your `--env-file .env` flag) actually picked it up — `docker compose
   run --rm pcb-qa env | grep GEMINI` should show it.
+- **Langfuse web container logs `Applying clickhouse migrations failed`
+  mentioning Zookeeper:** this means `CLICKHOUSE_CLUSTER_ENABLED` wasn't
+  set to `false` somewhere in the stack's config — it's required even for
+  this single-node setup, or Langfuse tries to create replicated tables
+  that need a Zookeeper cluster this stack doesn't have.
+

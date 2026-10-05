@@ -21,6 +21,9 @@ class AppConfig:
     gemini_model: str
     ngspice_path: str
     kicad_cli_path: str | None
+    langfuse_public_key: str | None
+    langfuse_secret_key: str | None
+    langfuse_host: str
 
 
 def load_config() -> AppConfig:
@@ -31,6 +34,13 @@ def load_config() -> AppConfig:
         gemini_model=os.getenv("GEMINI_MODEL", "gemini-3.8-flash"),
         ngspice_path=os.getenv("NGSPICE_PATH", "ngspice"),
         kicad_cli_path=os.getenv("KICAD_CLI_PATH") or None,
+        # Observability (backend/observability.py) is fully optional: unset,
+        # it silently no-ops rather than disabling anything else, the same
+        # way a missing GEMINI_API_KEY only breaks the Q&A/Benchmark tabs
+        # rather than the whole app.
+        langfuse_public_key=os.getenv("LANGFUSE_PUBLIC_KEY") or None,
+        langfuse_secret_key=os.getenv("LANGFUSE_SECRET_KEY") or None,
+        langfuse_host=os.getenv("LANGFUSE_HOST", "http://localhost:3000"),
     )
 
 

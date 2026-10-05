@@ -125,3 +125,41 @@ def test_spice_strategy_requires_simulation_results(board):
 def test_unknown_strategy(board):
     with pytest.raises(ValueError):
         benchmark_service.run_benchmark(board, "telepathy")
+
+
+def test_run_benchmark_tool_calling_computes_rag_metrics(board, monkeypatch):
+    monkeypatch.setattr(prompt_strategies, "answer_with_tool_calling", lambda _board, _q: "YES")
+
+    def fake_retrieval(question, datasheets, k=3):
+        # Every question's correct datasheet retrieved first -> perfect
+        # retrieval, so Recall@K/MRR should come out to exactly 1.0.
+        correct = benchmark_service._component_for_question(question, datasheets)
+        name = os.path.splitext(os.path.basename(correct))[0] if correct else "NONE"
+        return [{"datasheet": name, "text": "...", "distance": 0.0}]
+
+    monkeypatch.setattr(
+        benchmark_service.ToolCaller, "get_relevant_context_across_all_datasheets",
+        lambda self, question, datasheets, k=3: fake_retrieval(question, datasheets, k),
+    )
+
+    report = benchmark_service.run_benchmark(board, "tool_calling", limit=10)
+
+    assert report.rag is not None
+    assert report.rag.num_questions > 0
+    assert report.rag.recall_at_k == 1.0
+    assert report.rag.mrr == 1.0
+
+    with open(report.results_path) as f:
+        saved = json.load(f)
+    assert saved["rag_metrics"]["recall_at_k"] == 1.0
+
+
+def test_run_benchmark_non_tool_calling_strategy_has_no_rag_metrics(board, monkeypatch):
+    monkeypatch.setattr(prompt_strategies, "answer_with_circuit_json", lambda _q, _c: "YES")
+
+    report = benchmark_service.run_benchmark(board, "circuit_json", limit=3)
+
+    assert report.rag is None
+    with open(report.results_path) as f:
+        saved = json.load(f)
+    assert "rag_metrics" not in saved

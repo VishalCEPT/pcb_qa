@@ -14,7 +14,7 @@ from dataclasses import dataclass, field
 from google.genai import types
 from tool_caller import ToolCaller
 
-from backend import board_service, gemini_client, paths
+from backend import board_service, gemini_client, observability, paths
 
 # File-path arguments are deliberately not exposed to Gemini: it can't know the
 # real on-disk paths and would hallucinate them. _inject_board_paths() supplies
@@ -114,17 +114,20 @@ def _model_turn(response):
 def _run_tool(tool_caller: ToolCaller, function_call, project_context: dict) -> ToolCallRecord:
     args = _inject_board_paths(function_call.name, dict(function_call.args or {}), project_context)
 
-    handler = tool_caller.available_functions.get(function_call.name)
-    if handler is None:
-        result = {"error": f"Unknown tool '{function_call.name}'"}
-    elif function_call.name == "calculate_spice_behaviour" and not os.path.exists(args["spice_json_file"]):
-        # The tool would return False here, which reads as "voltage doesn't match".
-        result = {"error": "No SPICE simulation results exist for this board yet, so voltages can't be checked."}
-    else:
-        try:
-            result = handler(**args)
-        except TypeError as exc:
-            result = {"error": str(exc)}
+    with observability.observation("tool", name=function_call.name, input=args) as tool_span:
+        handler = tool_caller.available_functions.get(function_call.name)
+        if handler is None:
+            result = {"error": f"Unknown tool '{function_call.name}'"}
+        elif function_call.name == "calculate_spice_behaviour" and not os.path.exists(args["spice_json_file"]):
+            # The tool would return False here, which reads as "voltage doesn't match".
+            result = {"error": "No SPICE simulation results exist for this board yet, so voltages can't be checked."}
+        else:
+            try:
+                result = handler(**args)
+            except TypeError as exc:
+                result = {"error": str(exc)}
+
+        tool_span.update(output=result)
 
     return ToolCallRecord(name=function_call.name, args=args, result=result)
 
@@ -144,31 +147,34 @@ def ask(board_name: str, question: str, on_tool_call=None) -> QAResult:
     contents = [types.Content(role="user", parts=[types.Part.from_text(text=question)])]
     tool_calls: list[ToolCallRecord] = []
 
-    for _ in range(_MAX_TOOL_TURNS):
-        response = gemini_client.generate_content(contents=contents, tools=_TOOLS)
-        model_content, function_calls = _model_turn(response)
+    with observability.observation("chain", name="qa.ask", input={"board": board_name, "question": question}) as chain:
+        for _ in range(_MAX_TOOL_TURNS):
+            response = gemini_client.generate_content(contents=contents, tools=_TOOLS)
+            model_content, function_calls = _model_turn(response)
 
-        if not function_calls:
-            return QAResult(answer=response.text or "", tool_calls=tool_calls)
+            if not function_calls:
+                chain.update(output=response.text or "")
+                return QAResult(answer=response.text or "", tool_calls=tool_calls)
 
-        records = [_run_tool(tool_caller, call, project_context) for call in function_calls]
-        tool_calls.extend(records)
-        if on_tool_call is not None:
-            for record in records:
-                on_tool_call(record)
+            records = [_run_tool(tool_caller, call, project_context) for call in function_calls]
+            tool_calls.extend(records)
+            if on_tool_call is not None:
+                for record in records:
+                    on_tool_call(record)
 
-        # Echo the model's turn back unmodified: Gemini 3 rejects function calls
-        # whose thought_signature was dropped by rebuilding the part.
-        contents.append(model_content)
-        contents.append(types.Content(
-            role="user",
-            parts=[
-                types.Part.from_function_response(name=record.name, response={"result": record.result})
-                for record in records
-            ],
-        ))
+            # Echo the model's turn back unmodified: Gemini 3 rejects function calls
+            # whose thought_signature was dropped by rebuilding the part.
+            contents.append(model_content)
+            contents.append(types.Content(
+                role="user",
+                parts=[
+                    types.Part.from_function_response(name=record.name, response={"result": record.result})
+                    for record in records
+                ],
+            ))
 
-    return QAResult(
-        answer="Reached the maximum number of tool-call turns without a final answer.",
-        tool_calls=tool_calls,
-    )
+        chain.update(output="Reached the maximum number of tool-call turns without a final answer.")
+        return QAResult(
+            answer="Reached the maximum number of tool-call turns without a final answer.",
+            tool_calls=tool_calls,
+        )

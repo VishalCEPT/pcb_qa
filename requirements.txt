@@ -16,6 +16,10 @@ truststore
 # Offline evaluation / scoring
 scikit-learn
 
+# Optional LLM/RAG observability (backend/observability.py); no-ops if
+# LANGFUSE_PUBLIC_KEY/LANGFUSE_SECRET_KEY aren't configured
+langfuse
+
 # Backend facade retry/backoff
 tenacity
 

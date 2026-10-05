@@ -234,6 +234,61 @@ class ToolCaller:
 
         return index_file_path, chunks_store_file_path
 
+    def get_relevant_context_across_all_datasheets(self,
+                                                    question: str,
+                                                    datasheet_files: list,
+                                                    k: int = 3) -> list:
+        """
+        Evaluation-only retrieval path for evaluation.rag_metrics.
+
+        get_relevant_context_from_question() is told the correct datasheet up
+        front via component_ref, matching how the real Q&A/benchmark
+        tool-calling flow works -- but that means it can never measure
+        whether retrieval would have found the right document among the
+        board's other datasheets, since it's never given the chance to pick
+        the wrong one. This method instead searches every datasheet in
+        datasheet_files independently, pools all candidate chunks together,
+        and returns the overall top-k by embedding distance with each
+        chunk's source datasheet attached, so callers can check whether the
+        correct datasheet was actually retrieved.
+        """
+        model = _embedding_model()
+        query_embedding = model.encode([question], convert_to_numpy=True)
+
+        candidates = []  # (distance, datasheet_name, chunk_text)
+
+        for datasheet_file in datasheet_files:
+            try:
+                index_file_path, chunks_store_file_path = (
+                    self._ensure_datasheet_index(datasheet_file)
+                )
+            except Exception as e:
+                print(f"Skipping {datasheet_file} for cross-datasheet retrieval: {e}")
+                continue
+
+            datasheet_name = os.path.splitext(os.path.basename(datasheet_file))[0]
+
+            loaded_index = faiss.read_index(index_file_path)
+            with open(chunks_store_file_path, "r", encoding="utf-8") as f:
+                stored_data = json.load(f)
+
+            if loaded_index.ntotal == 0:
+                continue
+
+            distances, indices = loaded_index.search(query_embedding, min(k, loaded_index.ntotal))
+
+            for distance, idx in zip(distances[0], indices[0]):
+                if idx < 0:
+                    continue
+                candidates.append((float(distance), datasheet_name, stored_data[idx]["text"]))
+
+        candidates.sort(key=lambda candidate: candidate[0])
+
+        return [
+            {"datasheet": datasheet_name, "text": text, "distance": distance}
+            for distance, datasheet_name, text in candidates[:k]
+        ]
+
     def find_and_embed_datasheets_for_project(self, project_files: dict, project_name: str):
         for datasheet_file in project_files[project_name]["datasheet_files"]:
             self._ensure_datasheet_index(datasheet_file)
@@ -242,66 +297,74 @@ class ToolCaller:
                                            question: str,
                                            project_context: dict,
                                            component_ref: str) -> list:
+        from backend import observability
 
-        try:
-            print("Project context:", project_context)
+        with observability.observation(
+            "retriever", name="datasheet_rag_retrieval",
+            input={"question": question, "component_ref": component_ref},
+        ) as retrieval:
+            try:
+                print("Project context:", project_context)
 
-            # Find the datasheet corresponding to this component
-            datasheet_file = None
+                # Find the datasheet corresponding to this component
+                datasheet_file = None
 
-            for file_path in project_context["datasheet_files"]:
-                file_name = os.path.splitext(
-                    os.path.basename(file_path)
-                )[0]
+                for file_path in project_context["datasheet_files"]:
+                    file_name = os.path.splitext(
+                        os.path.basename(file_path)
+                    )[0]
 
-                if file_name == component_ref:
-                    datasheet_file = file_path
-                    break
+                    if file_name == component_ref:
+                        datasheet_file = file_path
+                        break
 
-            if datasheet_file is None:
-                raise FileNotFoundError(
-                    f"No datasheet found for component {component_ref}"
+                if datasheet_file is None:
+                    raise FileNotFoundError(
+                        f"No datasheet found for component {component_ref}"
+                    )
+
+                # Make sure the FAISS index exists.
+                index_file_path, chunks_store_file_path = (
+                    self._ensure_datasheet_index(datasheet_file)
                 )
 
-            # Make sure the FAISS index exists.
-            index_file_path, chunks_store_file_path = (
-                self._ensure_datasheet_index(datasheet_file)
-            )
+                # Load FAISS index
+                loaded_index = faiss.read_index(
+                    index_file_path
+                )
 
-            # Load FAISS index
-            loaded_index = faiss.read_index(
-                index_file_path
-            )
+                # Load corresponding chunks
+                with open(
+                    chunks_store_file_path,
+                    "r",
+                    encoding="utf-8"
+                ) as f:
+                    stored_data = json.load(f)
 
-            # Load corresponding chunks
-            with open(
-                chunks_store_file_path,
-                "r",
-                encoding="utf-8"
-            ) as f:
-                stored_data = json.load(f)
+                model = _embedding_model()
+                query_embedding = model.encode([question], convert_to_numpy=True)
 
-            model = _embedding_model()
-            query_embedding = model.encode([question], convert_to_numpy=True)
+                # Search for the top 3 nearest neighbors
+                distances, indices = loaded_index.search(query_embedding, 3)
 
-            # Search for the top 3 nearest neighbors
-            distances, indices = loaded_index.search(query_embedding, 3)
+                relevant_context = []
 
-            relevant_context = []
+                for i, idx in enumerate(indices[0]):
+                    item = stored_data[idx]
+                    relevant_context.append(item["text"])
 
-            for i, idx in enumerate(indices[0]):
-                item = stored_data[idx] 
-                relevant_context.append(item["text"])
+                retrieval.update(output=relevant_context, metadata={"datasheet": component_ref})
+                return relevant_context
 
-            return relevant_context
-        
-        except Exception as e:
-            print(
-                f"Error retrieving context for datasheets in "
-                f"{project_context['datasheet_files']}:",
-                e
-            )
-            return []
+            except Exception as e:
+                print(
+                    f"Error retrieving context for datasheets in "
+                    f"{project_context['datasheet_files']}:",
+                    e
+                )
+                retrieval.update(level="ERROR", status_message=str(e))
+                return []
+
 
     def calculate_spice_behaviour(self,
                                   spice_json_file: str,

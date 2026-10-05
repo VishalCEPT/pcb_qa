@@ -12,6 +12,7 @@ from google.genai import errors as genai_errors
 from google.genai import types
 from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential
 
+from backend import observability
 from backend.config import config
 from backend.errors import LLMConfigError, LLMRequestError
 
@@ -52,6 +53,29 @@ def _generate_with_retry(client: genai.Client, **kwargs):
         raise _RetryableError(str(exc)) from exc
 
 
+def _summarize_contents(contents) -> str:
+    """
+    A text-only summary of `contents` suitable for an observability trace:
+    some strategies (answer_with_schematic_pdf, answer_with_datasheet_pdf)
+    pass raw PDF bytes inline, which would otherwise get base64-dumped into
+    every trace as a huge, unreadable blob.
+    """
+    if isinstance(contents, str):
+        return contents
+
+    parts = contents if isinstance(contents, list) else [contents]
+    summarized = []
+    for part in parts:
+        if isinstance(part, str):
+            summarized.append(part)
+        elif isinstance(part, dict) and "inline_data" in part:
+            mime_type = part["inline_data"].get("mime_type", "unknown")
+            summarized.append(f"[inline_data: {mime_type}]")
+        else:
+            summarized.append(str(part))
+    return "\n".join(summarized)
+
+
 def generate_content(contents, tools: list | None = None, model: str | None = None):
     """
     Call Gemini's generate_content with retry/backoff.
@@ -59,15 +83,37 @@ def generate_content(contents, tools: list | None = None, model: str | None = No
     Raises LLMConfigError if no API key is configured, LLMRequestError if the
     request is rejected outright (4xx) or all retry attempts are exhausted.
     """
-    client = _get_client()
-    gen_config = types.GenerateContentConfig(tools=tools) if tools else None
+    resolved_model = model or config.gemini_model
 
-    try:
-        return _generate_with_retry(
-            client,
-            model=model or config.gemini_model,
-            contents=contents,
-            config=gen_config,
-        )
-    except _RetryableError as exc:
-        raise LLMRequestError(f"Gemini request failed after retries: {exc}") from exc
+    with observability.observation(
+        "generation", name="gemini.generate_content", model=resolved_model,
+        input=_summarize_contents(contents),
+    ) as generation:
+        client = _get_client()
+        gen_config = types.GenerateContentConfig(tools=tools) if tools else None
+
+        try:
+            response = _generate_with_retry(
+                client,
+                model=resolved_model,
+                contents=contents,
+                config=gen_config,
+            )
+        except _RetryableError as exc:
+            generation.update(level="ERROR", status_message=str(exc))
+            raise LLMRequestError(f"Gemini request failed after retries: {exc}") from exc
+        except LLMRequestError as exc:
+            generation.update(level="ERROR", status_message=str(exc))
+            raise
+
+        usage = getattr(response, "usage_metadata", None)
+        usage_details = None
+        if usage is not None:
+            usage_details = {
+                "input": getattr(usage, "prompt_token_count", None),
+                "output": getattr(usage, "candidates_token_count", None),
+                "total": getattr(usage, "total_token_count", None),
+            }
+        generation.update(output=response.text, usage_details=usage_details)
+        return response
+
