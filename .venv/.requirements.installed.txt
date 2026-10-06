@@ -1,0 +1,30 @@
+# Core netlist / SPICE processing
+skidl
+simp-sexp
+
+# RAG pipeline (datasheet retrieval)
+pdfplumber
+sentence-transformers
+langchain-text-splitters
+faiss-cpu
+
+# LLM access
+google-genai
+# OS certificate store for TLS (corporate proxies)
+truststore
+
+# Offline evaluation / scoring
+scikit-learn
+
+# Optional LLM/RAG observability (backend/observability.py); no-ops if
+# LANGFUSE_PUBLIC_KEY/LANGFUSE_SECRET_KEY aren't configured
+langfuse
+
+# Backend facade retry/backoff
+tenacity
+
+# .env configuration loading
+python-dotenv
+
+# Tests
+pytest

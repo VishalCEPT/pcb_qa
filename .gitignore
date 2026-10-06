@@ -4,3 +4,7 @@
 # Contains real secrets locally; never commit (a scrubbed placeholder is
 # already in git history as a template, see .env on first commit)
 .env
+
+# Runtime state for start.bat/end.bat (PID file, logs); regenerated on
+# every launch, nothing here is meant to be shared/tracked
+/run/

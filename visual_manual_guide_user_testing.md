@@ -5,6 +5,14 @@ through starting the app and clicking through every screen, step by step, so
 you can confirm with your own eyes that everything works. No coding knowledge
 required — just follow the steps in order.
 
+> **Windows shortcut:** if you'd rather not type any commands, double-click
+> **`start.bat`** in the project folder instead of doing Part 0 manually —
+> it sets up everything (a Python environment, dependencies, a starter
+> `.env`) the first time, then launches the app, on every run after that.
+> Double-click **`end.bat`** to close it again. No Docker needed. See
+> `DOCKER.md` if you specifically want the Docker-based setup instead (e.g.
+> for the optional Langfuse dashboard).
+
 There are **8 real circuit boards** already loaded in the `Boards` folder that
 you can test with:
 
